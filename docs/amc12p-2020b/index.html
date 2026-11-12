@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<meta charset="utf-8">
+<title>2020B AMC 12 真题（P版） · 竞赛资料库</title>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) { /* 隐私模式下忽略 */ }
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="2020B AMC 12 真题（P版）：数学 · AMC12(P版)，2020B 年，共 25 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+
+<link rel="canonical" href="https://t.fengg.net/docs/amc12p-2020b/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="竞赛资料库">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="2020B AMC 12 真题（P版）">
+<meta property="og:description" content="2020B AMC 12 真题（P版）：数学 · AMC12(P版)，2020B 年，共 25 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+<meta property="og:url" content="https://t.fengg.net/docs/amc12p-2020b/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f7f9">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1318">
+
+
+<link rel="prev" href="/docs/amc12p-2020a/">
+<link rel="next" href="/docs/amc12p-2021a/">
+<link rel="stylesheet" href="/css/style.css?v=20261110e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+
+<link rel="stylesheet" href="/katex/katex.min.css">
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (!window.renderMathInElement) return;
+  var el = document.querySelector('.doc') || document.body;
+  try {
+    renderMathInElement(el, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false }
+      ],
+      throwOnError: false
+    });
+  } catch (e) { /* 公式渲染失败不影响正文 */ }
+});
+</script>
+
+
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/">竞赛资料库</a>
+    <nav class="nav"><a class="nav-a" href="/">首页</a><div class="nav-drop nav-mega"><a class="nav-a has-caret" href="/all/" title="按科目浏览全部题库">题库<i class="caret" aria-hidden="true"></i></a><div class="drop mega"><div class="mega-col" style="--accent:#3776c4"><a class="mega-h" href="/c/astronomy/"><i class="mega-dot" aria-hidden="true"></i>天文<span class="cnt">52</span></a><a class="mega-l" href="/c/astronomy/cnao/">CNAO<span class="cnt">28</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/cnao/prelim/">预赛</a><a class="mega-c" href="/c/astronomy/cnao/final/">决赛</a><a class="mega-c" href="/c/astronomy/cnao/primary/">小学组</a></span><a class="mega-l" href="/c/astronomy/provincial/">省赛<span class="cnt">15</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/provincial/beijing/">北京</a><a class="mega-c" href="/c/astronomy/provincial/guangdong/">广东</a><a class="mega-c" href="/c/astronomy/provincial/zhejiang/">浙江</a><a class="mega-c" href="/c/astronomy/provincial/jiangsu/">江苏</a><a class="mega-c" href="/c/astronomy/provincial/shandong/">山东</a><a class="mega-c" href="/c/astronomy/provincial/taiwan/">中国台湾</a></span><a class="mega-l" href="/c/astronomy/practice/">练习<span class="cnt">9</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/practice/primary/">小学组练习</a><a class="mega-c" href="/c/astronomy/practice/bank/">题库合集</a></span></div><div class="mega-col" style="--accent:#0f8a5f"><a class="mega-h" href="/c/math/"><i class="mega-dot" aria-hidden="true"></i>数学<span class="cnt">290</span></a><a class="mega-l" href="/c/math/amc8/">AMC8<span class="cnt">26</span></a><a class="mega-l" href="/c/math/amc8p/">AMC8(P版)<span class="cnt">41</span></a><a class="mega-l" href="/c/math/amc10p/">AMC10(P版)<span class="cnt">52</span></a><a class="mega-l" href="/c/math/amc12p/">AMC12(P版)<span class="cnt">102</span></a><a class="mega-l" href="/c/math/gzl/">全国中学生数学奥林匹克竞赛<span class="cnt">69</span></a><span class="mega-cs"><a class="mega-c" href="/c/math/gzl/liansai/">联赛（预赛）</a><a class="mega-c" href="/c/math/gzl/final/">决赛（CMO）</a><a class="mega-c" href="/c/math/gzl/province/">各赛区预赛</a></span></div><div class="mega-col" style="--accent:#6c4bb6"><a class="mega-h" href="/c/physics/"><i class="mega-dot" aria-hidden="true"></i>物理<span class="cnt">73</span></a><a class="mega-l" href="/c/physics/national/">全国竞赛<span class="cnt">49</span></a><a class="mega-l" href="/c/physics/asian/">亚洲竞赛<span class="cnt">11</span></a><a class="mega-l" href="/c/physics/international/">国际竞赛<span class="cnt">13</span></a></div><div class="mega-col" style="--accent:#3f8f46"><a class="mega-h" href="/c/biology/"><i class="mega-dot" aria-hidden="true"></i>生物<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/league/">全国中学生生物学联赛<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/competition/">全国中学生生物学竞赛</a></div><div class="mega-col" style="--accent:#c05a2b"><a class="mega-h" href="/c/chemistry/"><i class="mega-dot" aria-hidden="true"></i>化学<span class="cnt">10</span></a><a class="mega-l" href="/c/chemistry/ccho/">全国中学生化学奥林匹克竞赛<span class="cnt">10</span></a></div><div class="mega-col" style="--accent:#1f7a8c"><a class="mega-h" href="/c/earth/"><i class="mega-dot" aria-hidden="true"></i>地球科学<span class="cnt">22</span></a><a class="mega-l" href="/c/earth/national/">全国竞赛<span class="cnt">17</span></a><a class="mega-l" href="/c/earth/international/">国际竞赛<span class="cnt">5</span></a></div><div class="mega-col" style="--accent:#2c8a6e"><a class="mega-h" href="/c/geography/"><i class="mega-dot" aria-hidden="true"></i>地理<span class="cnt">11</span></a><a class="mega-l" href="/c/geography/geokids/">地球小博士<span class="cnt">11</span></a></div><div class="mega-col" style="--accent:#4a5fd0"><a class="mega-h" href="/c/info/"><i class="mega-dot" aria-hidden="true"></i>信息学<span class="cnt">9</span></a><a class="mega-l" href="/c/info/noi/">全国青少年信息学奥林匹克竞赛<span class="cnt">3</span></a><a class="mega-l" href="/c/info/noip/">全国青少年信息学奥林匹克联赛<span class="cnt">1</span></a><a class="mega-l" href="/c/info/csp/">CSP-J/S 非专业级软件能力认证<span class="cnt">1</span></a><a class="mega-l" href="/c/info/apio/">亚洲和太平洋地区信息学奥林匹克<span class="cnt">1</span></a><a class="mega-l" href="/c/info/winter/">NOI 冬令营<span class="cnt">1</span></a><a class="mega-l" href="/c/info/camp/">IOI 中国国家集训队集训<span class="cnt">2</span></a></div><a class="mega-all" href="/all/">全部文档（474 套）<i class="arr" aria-hidden="true">›</i></a></div></div><a class="nav-a" href="/whitelist/">白名单竞赛</a><a class="nav-a" href="/about/">使用说明</a><a class="nav-a nav-s" href="/search/" title="站内搜索（按 / 或 Ctrl+K）"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.9 12.1l4.3 4.3-1.4 1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z" fill="currentColor"/></svg>搜索</a></nav>
+    <div class="head-tools">
+      <button class="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式">
+        <svg class="ic-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12.7 3a8.5 8.5 0 108.3 10.6A7 7 0 0112.7 3z" fill="currentColor"/></svg>
+        <svg class="ic-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12 17a5 5 0 110-10 5 5 0 010 10zm0-13a1 1 0 011 1v1a1 1 0 01-2 0V5a1 1 0 011-1zm0 14a1 1 0 011 1v1a1 1 0 01-2 0v-1a1 1 0 011-1zM4 11h1a1 1 0 010 2H4a1 1 0 010-2zm15 0h1a1 1 0 010 2h-1a1 1 0 010-2zM6.3 5.5l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm11 11l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm.7-11a1 1 0 010 1.4l-.7.7A1 1 0 0115.9 6.2l.7-.7a1 1 0 011.4 0zm-11 11a1 1 0 010 1.4l-.7.7a1 1 0 01-1.4-1.4l.7-.7a1 1 0 011.4 0z" fill="currentColor"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-label="打开分类菜单" aria-expanded="false">分类 ▾</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main" tabindex="-1">
+
+<article class="doc">
+  <nav class="crumb">
+    <a href="/">首页</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/">数学</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/amc12p/">AMC12(P版)</a>
+    
+    <span class="sep">/</span><span>2020B AMC 12 真题（P版）</span>
+  </nav>
+
+  <h1>2020B AMC 12 真题（P版）</h1>
+
+  <div class="meta">
+    <span class="tag">数学</span>
+    <span>2020B 年</span>
+    <span>25 题</span>
+    <span>144 KB</span>
+    <span class="ok">含答案解析</span>
+  </div>
+
+  <div class="toolbar">
+    
+    <a class="btn quiz-btn" href="/quiz/amc12p-2020b/">开始答题 →</a>
+    
+    
+    <a class="btn ghost" href="#answer">跳到答案解析 ↓</a>
+    
+    <button class="btn ghost" type="button" onclick="document.querySelectorAll('details').forEach(function(x){x.open=true});setTimeout(function(){window.print()},60)">打印（含答案）</button>
+    <a class="btn" href="https://t.fengg.net/docs-dl/public/download/%E6%95%B0%E5%AD%A6/AMC12(P%E7%89%88)/2020B%20AMC%2012%20%E7%9C%9F%E9%A2%98%E4%B8%8E%E8%A7%A3%E7%AD%94.docx" download="2020B AMC 12 真题与解答.docx" title="2020B AMC 12 真题与解答.docx">下载 Word 文件</a>
+  </div>
+
+  <section class="paper">
+    <p class="paper-tip">中英双语：每题先中文，后附英文原题；解答在同页下方「查看答案解析与下载」里。</p>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">1</span></p>
+<p>下列表达式的最简值是多少？</p>
+<p>\[ \begin{aligned} &amp;\sqrt{1} + \sqrt{1+3} + \sqrt{1+3+5} \\ &amp;\quad {}+ \sqrt{1+3+5+7} \end{aligned} \]</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(5\)</span>
+<span class="amc-opt"><b>B</b>\(4 + \sqrt{7} + \sqrt{10}\)</span>
+<span class="amc-opt"><b>C</b>\(10\)</span>
+<span class="amc-opt"><b>D</b>\(15\)</span>
+<span class="amc-opt"><b>E</b>\(4 + 3\sqrt{3} + 2\sqrt{5} + \sqrt{7}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">What is the value in simplest form of the following expression?</p>
+<p class="amc-en">\[ \begin{aligned} &amp;\sqrt{1} + \sqrt{1+3} + \sqrt{1+3+5} \\ &amp;\quad {}+ \sqrt{1+3+5+7} \end{aligned} \]</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(5\)</span><span class="amc-opt"><b>(B)</b> \(4 + \sqrt{7} + \sqrt{10}\)</span><span class="amc-opt"><b>(C)</b> \(10\)</span><span class="amc-opt"><b>(D)</b> \(15\)</span><span class="amc-opt"><b>(E)</b> \(4 + 3\sqrt{3} + 2\sqrt{5} + \sqrt{7}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">2</span></p>
+<p>下列表达式的值是多少？</p>
+<p>\[\frac{100^2 - 7^2}{70^2 - 11^2} \cdot \frac{(70 - 11)(70 + 11)}{(100 - 7)(100 + 7)}\]</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{9951}{9950}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{4780}{4779}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{108}{107}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{81}{80}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">What is the value of the following expression?</p>
+<p class="amc-en">\[\frac{100^2 - 7^2}{70^2 - 11^2} \cdot \frac{(70 - 11)(70 + 11)}{(100 - 7)(100 + 7)}\]</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{9951}{9950}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{4780}{4779}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{108}{107}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{81}{80}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">3</span></p>
+<p>\(w\) 与 \(x\) 的比为 \(4 : 3\)，\(y\) 与 \(z\) 的比为 \(3 : 2\)，且 \(z\) 与 \(x\) 的比为 \(1 : 6\)。\(w\) 与 \(y\) 的比是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(4 : 3\)</span>
+<span class="amc-opt"><b>B</b>\(3 : 2\)</span>
+<span class="amc-opt"><b>C</b>\(8 : 3\)</span>
+<span class="amc-opt"><b>D</b>\(4 : 1\)</span>
+<span class="amc-opt"><b>E</b>\(16 : 3\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The ratio of \(w\) to \(x\) is \(4 : 3,\) the ratio of \(y\) to \(z\) is \(3 : 2,\) and the ratio of \(z\) to \(x\) is \(1 : 6.\) What is the ratio of \(w\) to \(y?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(4 : 3\)</span><span class="amc-opt"><b>(B)</b> \(3 : 2\)</span><span class="amc-opt"><b>(C)</b> \(8 : 3\)</span><span class="amc-opt"><b>(D)</b> \(4 : 1\)</span><span class="amc-opt"><b>(E)</b> \(16 : 3\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">4</span></p>
+<p>一个直角三角形的两个锐角分别是 \(a^\circ\) 和 \(b^\circ\)，其中 \(a \gt b\)，且 \(a\) 和 \(b\) 都是质数。\(b\) 的最小可能值是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(2\)</span>
+<span class="amc-opt"><b>B</b>\(3\)</span>
+<span class="amc-opt"><b>C</b>\(5\)</span>
+<span class="amc-opt"><b>D</b>\(7\)</span>
+<span class="amc-opt"><b>E</b>\(11\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The acute angles of a right triangle are \(a^\circ\) and \(b^\circ,\) where \(a \gt b\) and both \(a\) and \(b\) are prime numbers. What is the least possible value of \(b?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(2\)</span><span class="amc-opt"><b>(B)</b> \(3\)</span><span class="amc-opt"><b>(C)</b> \(5\)</span><span class="amc-opt"><b>(D)</b> \(7\)</span><span class="amc-opt"><b>(E)</b> \(11\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">5</span></p>
+<p>\(A\) 队和 \(B\) 队在一个篮球联赛中比赛，每场比赛必有一队胜、一队负。\(A\) 队赢了自己所有比赛的 \(\tfrac23\)，\(B\) 队赢了自己所有比赛的 \(\tfrac58\)。此外，\(B\) 队比 \(A\) 队多赢 \(7\) 场，也多输 \(7\) 场。\(A\) 队一共打了多少场比赛？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(21\)</span>
+<span class="amc-opt"><b>B</b>\(27\)</span>
+<span class="amc-opt"><b>C</b>\(42\)</span>
+<span class="amc-opt"><b>D</b>\(48\)</span>
+<span class="amc-opt"><b>E</b>\(63\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Teams \(A\) and \(B\) are playing in a basketball league where each game results in a win for one team and a loss for the other team. Team \(A\) has won \(\tfrac23\) of its games and team \(B\) has won \(\tfrac58\) of its games. Also, team \(B\) has won \(7\) more games and lost \(7\) more games than team \(A.\) How many games has team \(A\) played?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(21\)</span><span class="amc-opt"><b>(B)</b> \(27\)</span><span class="amc-opt"><b>(C)</b> \(42\)</span><span class="amc-opt"><b>(D)</b> \(48\)</span><span class="amc-opt"><b>(E)</b> \(63\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">6</span></p>
+<p>对所有整数 \(n \ge 9\)，</p>
+<p>\[\frac{(n + 2)! - (n + 1)!}{n!}\]</p>
+<p>的值总是下列哪一种？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(4\) 的倍数</span>
+<span class="amc-opt"><b>B</b>\(10\) 的倍数</span>
+<span class="amc-opt"><b>C</b>质数</span>
+<span class="amc-opt"><b>D</b>完全平方数</span>
+<span class="amc-opt"><b>E</b>完全立方数</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For all integers \(n \ge 9,\) the value of</p>
+<p class="amc-en">\[\frac{(n + 2)! - (n + 1)!}{n!}\]</p>
+<p class="amc-en">is always which of the following?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> a multiple of \(4\)</span><span class="amc-opt"><b>(B)</b> a multiple of \(10\)</span><span class="amc-opt"><b>(C)</b> a prime number</span><span class="amc-opt"><b>(D)</b> a perfect square</span><span class="amc-opt"><b>(E)</b> a perfect cube</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">7</span></p>
+<p>\(xy\)-坐标平面中两条既不水平也不竖直的直线相交，形成一个 \(45^\circ\) 角。其中一条直线的斜率等于另一条直线斜率的 \(6\) 倍。这两条直线斜率乘积的最大可能值是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac16\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac23\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac32\)</span>
+<span class="amc-opt"><b>D</b>\(3\)</span>
+<span class="amc-opt"><b>E</b>\(6\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Two nonhorizontal, non-vertical lines in the \(xy\)-coordinate plane intersect to form a \(45^\circ\) angle. One line has slope equal to \(6\) times the slope of the other line. What is the greatest possible value of the product of the slopes of the two lines?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac16\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac23\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac32\)</span><span class="amc-opt"><b>(D)</b> \(3\)</span><span class="amc-opt"><b>(E)</b> \(6\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">8</span></p>
+<p>有多少个整数有序对 \((x, y)\) 满足方程</p>
+<p>\[x^{2020} + y^2 = 2y\text{？}\]</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1\)</span>
+<span class="amc-opt"><b>B</b>\(2\)</span>
+<span class="amc-opt"><b>C</b>\(3\)</span>
+<span class="amc-opt"><b>D</b>\(4\)</span>
+<span class="amc-opt"><b>E</b>无限多个</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">How many ordered pairs of integers \((x, y)\) satisfy the equation</p>
+<p class="amc-en">\[x^{2020} + y^2 = 2y?\]</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1\)</span><span class="amc-opt"><b>(B)</b> \(2\)</span><span class="amc-opt"><b>(C)</b> \(3\)</span><span class="amc-opt"><b>(D)</b> \(4\)</span><span class="amc-opt"><b>(E)</b> infinitely many</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">9</span></p>
+<p>一个半径为 \(4\) 英寸的圆的四分之三扇形及其内部，可以沿图中所示的两条半径粘合卷成一个直圆锥的侧面。这个圆锥的体积是多少立方英寸？</p>
+<p><img class="amc-fig" src="/img/papers/amc12p/2020B/problem/q09-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(3\pi \sqrt{5}\)</span>
+<span class="amc-opt"><b>B</b>\(4\pi \sqrt{3}\)</span>
+<span class="amc-opt"><b>C</b>\(3\pi \sqrt{7}\)</span>
+<span class="amc-opt"><b>D</b>\(6\pi \sqrt{3}\)</span>
+<span class="amc-opt"><b>E</b>\(6\pi \sqrt{7}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A three-quarter sector of a circle of radius \(4\) inches together with its interior can be rolled up to form the lateral surface of a right circular cone by taping together along the two radii shown. What is the volume of the cone in cubic inches?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc12p/2020B/problem/q09-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(3\pi \sqrt{5}\)</span><span class="amc-opt"><b>(B)</b> \(4\pi \sqrt{3}\)</span><span class="amc-opt"><b>(C)</b> \(3\pi \sqrt{7}\)</span><span class="amc-opt"><b>(D)</b> \(6\pi \sqrt{3}\)</span><span class="amc-opt"><b>(E)</b> \(6\pi \sqrt{7}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">10</span></p>
+<p>在单位正方形 \(ABCD\) 中，内切圆 \(\omega\) 与 \(\overline{CD}\) 相交于 \(M\)，\(\overline{AM}\) 与 \(\omega\) 还相交于不同于 \(M\) 的点 \(P\)。\(AP\) 等于多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{\sqrt{5}}{12}\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{\sqrt{5}}{10}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{\sqrt{5}}{9}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{\sqrt{5}}{8}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{2\sqrt{5}}{15}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In unit square \(ABCD,\) the inscribed circle \(\omega\) intersects \(\overline{CD}\) at \(M,\) and \(\overline{AM}\) intersects \(\omega\) at a point \(P\) different from \(M.\) What is \(AP?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{\sqrt{5}}{12}\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{\sqrt{5}}{10}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{\sqrt{5}}{9}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{\sqrt{5}}{8}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{2\sqrt{5}}{15}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">11</span></p>
+<p>如下图，六个半圆位于边长为 \(2\) 的正六边形内部，且这些半圆的直径分别与六边形的各边重合。阴影区域在六边形内部、但在所有半圆外部。阴影区域的面积是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc12p/2020B/problem/q11-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(6\sqrt{3} - 3\pi\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{9\sqrt{3}}{2} - 2\pi\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{3\sqrt{3}}{2} - \dfrac{\pi}{3}\)</span>
+<span class="amc-opt"><b>D</b>\(3\sqrt{3} - \pi\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{9\sqrt{3}}{2} - \pi\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">As shown in the figure below, six semicircles lie in the interior of a regular hexagon with side length \(2\) so that the diameters of the semicircles coincide with the sides of the hexagon. What is the area of the shaded region—inside the hexagon but outside all of the semicircles?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc12p/2020B/problem/q11-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(6\sqrt{3} - 3\pi\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{9\sqrt{3}}{2} - 2\pi\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{3\sqrt{3}}{2} - \dfrac{\pi}{3}\)</span><span class="amc-opt"><b>(D)</b> \(3\sqrt{3} - \pi\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{9\sqrt{3}}{2} - \pi\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">12</span></p>
+<p>\(\overline{AB}\) 是半径为 \(5\sqrt2\) 的圆的一条直径。\(\overline{CD}\) 是圆中的一条弦，与 \(\overline{AB}\) 相交于点 \(E\)，且满足 \(BE = 2\sqrt5\)、\(\angle AEC = 45^\circ\)。求 \(CE^2 + DE^2\)。</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(96\)</span>
+<span class="amc-opt"><b>B</b>\(98\)</span>
+<span class="amc-opt"><b>C</b>\(44\sqrt{5}\)</span>
+<span class="amc-opt"><b>D</b>\(70\sqrt{2}\)</span>
+<span class="amc-opt"><b>E</b>\(100\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(\overline{AB}\) be a diameter in a circle of radius \(5\sqrt2.\) Let \(\overline{CD}\) be a chord in the circle that intersects \(\overline{AB}\) at a point \(E\) such that \(BE = 2\sqrt5\) and \(\angle AEC = 45^\circ.\) What is \(CE^2 + DE^2?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(96\)</span><span class="amc-opt"><b>(B)</b> \(98\)</span><span class="amc-opt"><b>(C)</b> \(44\sqrt{5}\)</span><span class="amc-opt"><b>(D)</b> \(70\sqrt{2}\)</span><span class="amc-opt"><b>(E)</b> \(100\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">13</span></p>
+<p>下列哪一个等于表达式 \(\sqrt{\log_2 6 + \log_3 6}\)？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1\)</span>
+<span class="amc-opt"><b>B</b>\(\sqrt{\log_5 6}\)</span>
+<span class="amc-opt"><b>C</b>\(2\)</span>
+<span class="amc-opt"><b>D</b>\(\sqrt{\log_2 3} + \sqrt{\log_3 2}\)</span>
+<span class="amc-opt"><b>E</b>\(\sqrt{\log_2 6} + \sqrt{\log_3 6}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Which of the following is the value of \(\sqrt{\log_2 6 + \log_3 6}?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1\)</span><span class="amc-opt"><b>(B)</b> \(\sqrt{\log_5 6}\)</span><span class="amc-opt"><b>(C)</b> \(2\)</span><span class="amc-opt"><b>(D)</b> \(\sqrt{\log_2 3} + \sqrt{\log_3 2}\)</span><span class="amc-opt"><b>(E)</b> \(\sqrt{\log_2 6} + \sqrt{\log_3 6}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">14</span></p>
+<p>Bela 和 Jenn 在实数轴闭区间 \([0, n]\) 上玩如下游戏，其中 \(n\) 是大于 \(4\) 的固定整数。两人轮流行动，Bela 先手。Bela 第一次可以在区间 \([0, n]\) 中任选一个实数。此后，轮到的玩家必须选择一个与此前任一玩家选过的所有数都相距大于一的实数。无法选择者失败。在最优策略下，谁会获胜？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>Bela 总会获胜。</span>
+<span class="amc-opt"><b>B</b>Jenn 总会获胜。</span>
+<span class="amc-opt"><b>C</b>Bela 获胜当且仅当 \(n\) 为奇数。</span>
+<span class="amc-opt"><b>D</b>Jenn 获胜当且仅当 \(n\) 为奇数。</span>
+<span class="amc-opt"><b>E</b>Jenn 获胜当且仅当 \(n \gt 8\)。</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Bela and Jenn play the following game on the closed interval \([0, n]\) of the real number line, where \(n\) is a fixed integer greater than \(4.\) They take turns playing, with Bela going first. At his first turn, Bela chooses any real number in the interval \([0, n].\) Thereafter, the player whose turn it is chooses a real number that is more than one unit away from all numbers previously chosen by either player. A player unable to choose such a number loses. Using optimal strategy, which player will win the game?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> Bela will always win.</span><span class="amc-opt"><b>(B)</b> Jenn will always win.</span><span class="amc-opt"><b>(C)</b> Bela will win if and only if \(n\) is odd.</span><span class="amc-opt"><b>(D)</b> Jenn will win if and only if \(n\) is odd.</span><span class="amc-opt"><b>(E)</b> Jenn will win if and only if \(n \gt 8.\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">15</span></p>
+<p>\(10\) 个人等间隔地站成一圈。每个人恰好认识其他 \(9\) 个人中的 \(3\) 个：站在其两侧的 \(2\) 个人，以及正对面的人。将这 \(10\) 个人分成 \(5\) 对，且每对的两人互相认识，一共有多少种分法？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(11\)</span>
+<span class="amc-opt"><b>B</b>\(12\)</span>
+<span class="amc-opt"><b>C</b>\(13\)</span>
+<span class="amc-opt"><b>D</b>\(14\)</span>
+<span class="amc-opt"><b>E</b>\(15\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">There are \(10\) people standing equally spaced around a circle. Each person knows exactly \(3\) of the other \(9\) people: the \(2\) people standing next to her or him, as well as the person directly across the circle. How many ways are there for the \(10\) people to split up into \(5\) pairs so that the members of each pair know each other?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(11\)</span><span class="amc-opt"><b>(B)</b> \(12\)</span><span class="amc-opt"><b>(C)</b> \(13\)</span><span class="amc-opt"><b>(D)</b> \(14\)</span><span class="amc-opt"><b>(E)</b> \(15\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">16</span></p>
+<p>一个罐子中有一个红球和一个蓝球，旁边有一盒额外的红球和蓝球。George 重复如下操作四次：从罐子中随机取出一个球，然后从盒中取一个相同颜色的球，把这两个同色球都放回罐子。四次操作后，罐子中有六个球。罐子中红球和蓝球各有三个的概率是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac16\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac15\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac14\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac13\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac12\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">An urn contains one red ball and one blue ball. A box of extra red and blue balls lies nearby. George performs the following operation four times: he draws a ball from the urn at random and then takes a ball of the same color from the box and returns those two matching balls to the urn. After the four iterations the urn contains six balls. What is the probability that the urn contains three balls of each color?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac16\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac15\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac14\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac13\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac12\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">17</span></p>
+<p>有多少个形如 \(x^5 + ax^4 + bx^3 + cx^2 + dx\) \(+ 2020\) 的多项式，其中 \(a\)，\(b\)，\(c\) 和 \(d\) 都是实数，满足如下性质：只要 \(r\) 是一个根，那么 \(\dfrac{-1 + i\sqrt3}{2}\cdot r\) 也是一个根？（注：\(i = \sqrt{-1}\)。）</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(0\)</span>
+<span class="amc-opt"><b>B</b>\(1\)</span>
+<span class="amc-opt"><b>C</b>\(2\)</span>
+<span class="amc-opt"><b>D</b>\(3\)</span>
+<span class="amc-opt"><b>E</b>\(4\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">How many polynomials of the form \(x^5 + ax^4 + bx^3 + cx^2 + dx\) \(+ 2020,\) where \(a,\) \(b,\) \(c,\) and \(d\) are real numbers, have the property that whenever \(r\) is a root, so is \(\dfrac{-1 + i\sqrt3}{2}\cdot r?\) (Note that \(i = \sqrt{-1}.\))</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(0\)</span><span class="amc-opt"><b>(B)</b> \(1\)</span><span class="amc-opt"><b>(C)</b> \(2\)</span><span class="amc-opt"><b>(D)</b> \(3\)</span><span class="amc-opt"><b>(E)</b> \(4\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">18</span></p>
+<p>在正方形 \(ABCD\) 中，点 \(E\) 和 \(H\) 分别在 \(\overline{AB}\) 和 \(\overline{DA}\) 上，且 \(AE = AH\)。点 \(F\) 和 \(G\) 分别在 \(\overline{BC}\) 和 \(\overline{CD}\) 上，点 \(I\) 和 \(J\) 在 \(\overline{EH}\) 上，并满足 \(\overline{FI} \perp \overline{EH}\)、\(\overline{GJ} \perp \overline{EH}\)。见下图。三角形 \(AEH\)、四边形 \(BFIE\)、四边形 \(DHJG\) 和五边形 \(FCGJI\) 的面积都为 \(1\)。求 \(FI^2\)。</p>
+<p><img class="amc-fig" src="/img/papers/amc12p/2020B/problem/q18-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac73\)</span>
+<span class="amc-opt"><b>B</b>\(8 - 4\sqrt{2}\)</span>
+<span class="amc-opt"><b>C</b>\(1 + \sqrt{2}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac74 \sqrt{2}\)</span>
+<span class="amc-opt"><b>E</b>\(2\sqrt{2}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In square \(ABCD,\) points \(E\) and \(H\) lie on \(\overline{AB}\) and \(\overline{DA},\) respectively, so that \(AE = AH.\) Points \(F\) and \(G\) lie on \(\overline{BC}\) and \(\overline{CD},\) respectively, and points \(I\) and \(J\) lie on \(\overline{EH}\) so that \(\overline{FI} \perp \overline{EH}\) and \(\overline{GJ} \perp \overline{EH}.\) See the figure below. Triangle \(AEH,\) quadrilateral \(BFIE,\) quadrilateral \(DHJG,\) and pentagon \(FCGJI\) each has area \(1.\) What is \(FI^2?\)</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc12p/2020B/problem/q18-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac73\)</span><span class="amc-opt"><b>(B)</b> \(8 - 4\sqrt{2}\)</span><span class="amc-opt"><b>(C)</b> \(1 + \sqrt{2}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac74 \sqrt{2}\)</span><span class="amc-opt"><b>(E)</b> \(2\sqrt{2}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">19</span></p>
+<p>坐标平面中的正方形 \(ABCD\) 的顶点为 \(A(1, 1)\)、\(B(-1, 1)\)、\(C(-1, -1)\) 和 \(D(1, -1)\)。考虑以下四个变换：</p>
+<p>\(L\)，绕原点逆时针旋转 \(90^\circ\)；</p>
+<p>\(R\)，绕原点顺时针旋转 \(90^\circ\)；</p>
+<p>\(H\)，关于 \(x\)-轴反射；</p>
+<p>\(V\)，关于 \(y\)-轴反射。</p>
+<p>每个变换都会把正方形映到自身，但标记顶点的位置会改变。例如，先做 \(R\) 再做 \(V\)，会把顶点 \(A\) 从 \((1, 1)\) 送到 \((-1, -1)\)，并把顶点 \(B\) 从 \((-1, 1)\) 送回原位。从 \(\{L, R, H, V\}\) 中选出长度为 \(20\) 的变换序列，有多少个会把所有标记顶点都送回原位？（例如，\(R\)，\(R\)，\(V\)，\(H\) 是一个长度为 \(4\) 的有效序列。）</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(2^{37}\)</span>
+<span class="amc-opt"><b>B</b>\(3 \cdot 2^{36}\)</span>
+<span class="amc-opt"><b>C</b>\(2^{38}\)</span>
+<span class="amc-opt"><b>D</b>\(3 \cdot 2^{37}\)</span>
+<span class="amc-opt"><b>E</b>\(2^{39}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Square \(ABCD\) in the coordinate plane has vertices at the points \(A(1, 1),\) \(B(-1, 1),\) \(C(-1, -1),\) and \(D(1, -1).\) Consider the following four transformations:</p>
+<p class="amc-en">\(L,\) a rotation of \(90^\circ\) counterclockwise around the origin;</p>
+<p class="amc-en">\(R,\) a rotation of \(90^\circ\) clockwise around the origin;</p>
+<p class="amc-en">\(H,\) a reflection across the \(x\)-axis; and</p>
+<p class="amc-en">\(V,\) a reflection across the \(y\)-axis.</p>
+<p class="amc-en">Each of these transformations maps the square onto itself, but the positions of the labeled vertices will change. For example, applying \(R\) and then \(V\) would send the vertex \(A\) at \((1, 1)\) to \((-1, -1)\) and would send the vertex \(B\) at \((-1, 1)\) to itself. How many sequences of \(20\) transformations chosen from \(\{L, R, H, V\}\) will send all of the labeled vertices back to their original positions? (For example, \(R,\) \(R,\) \(V,\) \(H\) is one sequence of \(4\) transformations that will send the vertices back to their original positions.)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(2^{37}\)</span><span class="amc-opt"><b>(B)</b> \(3 \cdot 2^{36}\)</span><span class="amc-opt"><b>(C)</b> \(2^{38}\)</span><span class="amc-opt"><b>(D)</b> \(3 \cdot 2^{37}\)</span><span class="amc-opt"><b>(E)</b> \(2^{39}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">20</span></p>
+<p>两个大小相同但彼此不同的立方体要被涂色，每个面的颜色独立随机选择为黑色或白色。涂色后，这两个立方体可以通过旋转变得外观相同的概率是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{9}{64}\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{289}{2048}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{73}{512}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{147}{1024}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{589}{4096}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Two different cubes of the same size are to be painted, with the color of each face being chosen independently and at random to be either black or white. What is the probability that after they are painted, the cubes can be rotated to be identical in appearance?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{9}{64}\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{289}{2048}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{73}{512}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{147}{1024}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{589}{4096}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">21</span></p>
+<p>有多少个正整数 \(n\) 满足</p>
+<p>\[\frac{n + 1000}{70} = \lfloor \sqrt{n} \rfloor\text{？}\]</p>
+<p>（\(\lfloor x \rfloor\) 表示不超过 \(x\) 的最大整数。）</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(2\)</span>
+<span class="amc-opt"><b>B</b>\(4\)</span>
+<span class="amc-opt"><b>C</b>\(6\)</span>
+<span class="amc-opt"><b>D</b>\(30\)</span>
+<span class="amc-opt"><b>E</b>\(32\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">How many positive integers \(n\) satisfy</p>
+<p class="amc-en">\[\frac{n + 1000}{70} = \lfloor \sqrt{n} \rfloor?\]</p>
+<p class="amc-en">(Recall that \(\lfloor x \rfloor\) is the greatest integer not exceeding \(x.\))</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(2\)</span><span class="amc-opt"><b>(B)</b> \(4\)</span><span class="amc-opt"><b>(C)</b> \(6\)</span><span class="amc-opt"><b>(D)</b> \(30\)</span><span class="amc-opt"><b>(E)</b> \(32\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">22</span></p>
+<p>下列表达式的最大值是多少？</p>
+<p>\[\frac{(2^t - 3t)\,t}{4^t}\]</p>
+<p>其中 \(t\) 取遍所有实数。</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{1}{16}\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{1}{15}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{1}{12}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{1}{10}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac19\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">What is the maximum value of</p>
+<p class="amc-en">\[\frac{(2^t - 3t)\,t}{4^t}\]</p>
+<p class="amc-en">for real values of \(t?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{1}{16}\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{1}{15}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{1}{12}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{1}{10}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac19\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">23</span></p>
+<p>有多少个整数 \(n \ge 2\) 具有如下性质：只要复数 \(z_1\)、\(z_2\)、\(\ldots\)、\(z_n\) 满足 \[ |z_1| = |z_2| = \cdots = |z_n| = 1 \] 以及 \[ z_1 + z_2 + \cdots + z_n = 0\text{，} \] 那么 \(z_1\)、\(z_2\)、\(\ldots\)、\(z_n\) 在复平面的单位圆上等间隔分布？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1\)</span>
+<span class="amc-opt"><b>B</b>\(2\)</span>
+<span class="amc-opt"><b>C</b>\(3\)</span>
+<span class="amc-opt"><b>D</b>\(4\)</span>
+<span class="amc-opt"><b>E</b>\(5\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">How many integers \(n \ge 2\) are there such that whenever \(z_1,\) \(z_2,\) \(\ldots,\) \(z_n\) are complex numbers such that \[ |z_1| = |z_2| = \cdots = |z_n| = 1 \] and \[ z_1 + z_2 + \cdots + z_n = 0, \] then the numbers \(z_1,\) \(z_2,\) \(\ldots,\) \(z_n\) are equally spaced on the unit circle in the complex plane?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1\)</span><span class="amc-opt"><b>(B)</b> \(2\)</span><span class="amc-opt"><b>(C)</b> \(3\)</span><span class="amc-opt"><b>(D)</b> \(4\)</span><span class="amc-opt"><b>(E)</b> \(5\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">24</span></p>
+<p>令 \(D(n)\) 表示将正整数 \(n\) 写成乘积 \[n = f_1 \cdot f_2 \cdots f_k\] 的方法数，其中 \(k \ge 1\)，每个 \(f_i\) 都是严格大于 \(1\) 的整数，并且因子的排列顺序有区别 （也就是说，两个只在因子顺序上不同的表示也算作不同的方法）。例如，数 \(6\) 可以写成 \(6\)、 \(2 \cdot 3\) 和 \(3 \cdot 2\)，所以 \(D(6) = 3\)。求 \(D(96)\)。</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(112\)</span>
+<span class="amc-opt"><b>B</b>\(128\)</span>
+<span class="amc-opt"><b>C</b>\(144\)</span>
+<span class="amc-opt"><b>D</b>\(172\)</span>
+<span class="amc-opt"><b>E</b>\(184\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(D(n)\) denote the number of ways of writing the positive integer \(n\) as a product \[n = f_1 \cdot f_2 \cdots f_k,\] where \(k \ge 1,\) the \(f_i\) are integers strictly greater than \(1,\) and the order in which the factors are listed matters (that is, two representations that differ only in the order of the factors are counted as distinct). For example, the number \(6\) can be written as \(6,\) \(2 \cdot 3,\) and \(3 \cdot 2,\) so \(D(6) = 3.\) What is \(D(96)?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(112\)</span><span class="amc-opt"><b>(B)</b> \(128\)</span><span class="amc-opt"><b>(C)</b> \(144\)</span><span class="amc-opt"><b>(D)</b> \(172\)</span><span class="amc-opt"><b>(E)</b> \(184\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">25</span></p>
+<p>对每个满足 \(0 \le a \le 1\) 的实数 \(a\)，从区间 \([0, a]\) 和 \([0, 1]\) 中分别独立随机选择 \(x\) 和 \(y\)。令 \(P(a)\) 为下列不等式成立的概率： \[\sin^2(\pi x) + \sin^2(\pi y) \gt 1\text{。}\] \(P(a)\) 的最大值是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{7}{12}\)</span>
+<span class="amc-opt"><b>B</b>\(2 - \sqrt{2}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{1 + \sqrt{2}}{4}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{\sqrt{5} - 1}{2}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac58\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For each real number \(a\) with \(0 \le a \le 1,\) let numbers \(x\) and \(y\) be chosen independently at random from the intervals \([0, a]\) and \([0, 1],\) respectively, and let \(P(a)\) be the probability that \[\sin^2(\pi x) + \sin^2(\pi y) \gt 1.\] What is the maximum value of \(P(a)?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{7}{12}\)</span><span class="amc-opt"><b>(B)</b> \(2 - \sqrt{2}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{1 + \sqrt{2}}{4}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{\sqrt{5} - 1}{2}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac58\)</span></p>
+</div>
+  </section>
+
+  
+  <details class="answer" id="answer">
+    <summary>
+      <span class="s-title">查看答案解析与下载</span>
+    </summary>
+    <div class="answer-body">
+      <h3>答案速查</h3>
+<table class="tbl"><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>答案</td><td>C</td><td>A</td><td>E</td><td>D</td><td>C</td><td>D</td><td>C</td><td>D</td><td>C</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr><tr><td>答案</td><td>B</td><td>D</td><td>E</td><td>D</td><td>A</td><td>C</td><td>B</td><td>C</td><td>B</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr><tr><td>答案</td><td>C</td><td>D</td><td>C</td><td>C</td><td>B</td><td>A</td><td>B</td></tr></table>
+<p class="muted">答案串：CAEDCDCDCBDEDACBCBCDCCBAB</p>
+<h3>逐题解析</h3>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">1</span> 答案 <b>C</b></p>
+<p>前 \(k\) 个正奇数的和等于 \(k^2\)，所以每个根号内都是完全平方数：\[ \begin{aligned} &amp;\sqrt{1} + \sqrt{4} + \sqrt{9} + \sqrt{16} \\ &amp;= 1 + 2 + 3 + 4 = 10 \end{aligned}\text{。}\]</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The sum of the first \(k\) odd numbers equals \(k^2,\) so each radicand is a perfect square: \[ \begin{aligned} &amp;\sqrt{1} + \sqrt{4} + \sqrt{9} + \sqrt{16} \\ &amp;= 1 + 2 + 3 + 4 = 10. \end{aligned} \]</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">2</span> 答案 <b>A</b></p>
+<p>由平方差公式，\(100^2 - 7^2 = (100 - 7)(100 + 7)\)，且 \(70^2 - 11^2 = (70 - 11)(70 + 11)\)。原式变为 \[ \begin{aligned} &amp;\frac{(100 - 7)(100 + 7)}{(70 - 11)(70 + 11)} \\ &amp;\quad {}\cdot \frac{(70 - 11)(70 + 11)}{(100 - 7)(100 + 7)} = 1 \end{aligned}\text{。}\]</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Using the difference of squares, \(100^2 - 7^2 = (100 - 7)(100 + 7)\) and \(70^2 - 11^2 = (70 - 11)(70 + 11).\) The expression becomes \[ \begin{aligned} &amp;\frac{(100 - 7)(100 + 7)}{(70 - 11)(70 + 11)} \\ &amp;\quad {}\cdot \frac{(70 - 11)(70 + 11)}{(100 - 7)(100 + 7)} = 1. \end{aligned} \]</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">3</span> 答案 <b>E</b></p>
+<p>令 \(x = 6\)。由 \(z : x = 1 : 6\)，得 \(z = 1\)；由 \(w : x = 4 : 3\)，得 \(w = \tfrac43 \cdot 6 = 8\)；由 \(y : z = 3 : 2\)，得 \(y = \tfrac32 \cdot 1 = \tfrac32\)。</p>
+<p>因此 \(w : y = 8 : \tfrac32 = 16 : 3\)。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(x = 6.\) From \(z : x = 1 : 6,\) we get \(z = 1.\) From \(w : x = 4 : 3,\) we get \(w = \tfrac43 \cdot 6 = 8.\) From \(y : z = 3 : 2,\) we get \(y = \tfrac32 \cdot 1 = \tfrac32.\)</p>
+<p class="amc-en">Therefore \(w : y = 8 : \tfrac32 = 16 : 3.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">4</span> 答案 <b>D</b></p>
+<p>直角三角形的两个锐角互余，所以 \(a + b = 90\)。要使 \(b\) 尽可能小，可依次检查较小的质数，并要求 \(90 - b\) 也是质数。</p>
+<p>当 \(b = 2, 3, 5\) 时，\(90 - b = 88, 87, 85\) 都不是质数。当 \(b = 7\) 时，\(90 - 7 = 83\) 是质数。因此最小可能值是 \(b = 7\)。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since the angles are complementary, \(a + b = 90.\) To minimize \(b,\) try small primes and require \(90 - b\) to be prime as well.</p>
+<p class="amc-en">For \(b = 2, 3, 5,\) the value \(90 - b = 88, 87, 85\) is not prime. For \(b = 7,\) we get \(90 - 7 = 83,\) which is prime. So the least possible value is \(b = 7.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">5</span> 答案 <b>C</b></p>
+<p>设 \(A\) 队打了 \(a\) 场，\(B\) 队打了 \(b\) 场。\(A\) 队的胜场数和负场数分别为 \(\tfrac23 a\) 和 \(\tfrac13 a\)，\(B\) 队的胜场数和负场数分别为 \(\tfrac58 b\) 和 \(\tfrac38 b\)。题意给出 \[ \tfrac58 b = \tfrac23 a + 7 \] 以及 \[ \tfrac38 b = \tfrac13 a + 7\text{。} \]</p>
+<p>两式相减得 \(\tfrac14 b = \tfrac13 a\)，所以 \(b = \tfrac43 a\)。代回负场方程，得 \(\tfrac38 \cdot \tfrac43 a = \tfrac13 a + 7\)，即 \(\tfrac12 a = \tfrac13 a + 7\)。因此 \(\tfrac16 a = 7\)，所以 \(a = 42\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(a\) be the number of games team \(A\) played and \(b\) the number team \(B\) played. Team \(A\) wins \(\tfrac23 a\) and loses \(\tfrac13 a;\) team \(B\) wins \(\tfrac58 b\) and loses \(\tfrac38 b.\) The conditions give \[ \tfrac58 b = \tfrac23 a + 7 \] and \[ \tfrac38 b = \tfrac13 a + 7. \]</p>
+<p class="amc-en">Subtracting the equations gives \(\tfrac14 b = \tfrac13 a,\) so \(b = \tfrac43 a.\) Substituting into the loss equation: \(\tfrac38 \cdot \tfrac43 a = \tfrac13 a + 7,\) i.e. \(\tfrac12 a = \tfrac13 a + 7,\) so \(\tfrac16 a = 7\) and \(a = 42.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">6</span> 答案 <b>D</b></p>
+<p>从分子中提出 \((n + 1)!\)：\[ \begin{gathered} (n + 2)! - (n + 1)! \\ {}= (n + 1)!\,\big[(n + 2) - 1\big] \\ {}= (n + 1)!\,(n + 1) \end{gathered}\text{。}\]</p>
+<p>除以 \(n!\) 后得 \(\dfrac{(n + 1)!\,(n + 1)}{n!}\) \(= (n + 1)(n + 1)\) \(= (n + 1)^2\)，它总是完全平方数。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Factor \((n + 1)!\) from the numerator: \[ \begin{gathered} (n + 2)! - (n + 1)! \\ {}= (n + 1)!\,\big[(n + 2) - 1\big] \\ {}= (n + 1)!\,(n + 1). \end{gathered} \]</p>
+<p class="amc-en">Dividing by \(n!\) leaves \(\dfrac{(n + 1)!\,(n + 1)}{n!}\) \(= (n + 1)(n + 1)\) \(= (n + 1)^2,\) which is always a perfect square.</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">7</span> 答案 <b>C</b></p>
+<p>设两条直线的斜率为 \(m\) 和 \(6m\)。它们的夹角满足 \[\left|\frac{6m - m}{1 + 6m^2}\right| = \tan 45^\circ = 1\text{，}\] 所以 \(5m = \pm(1 + 6m^2)\)，从而 \(6m^2 - 5m + 1 = 0\) 或 \(6m^2 + 5m + 1 = 0\)。</p>
+<p>第一个方程给出 \(m = \tfrac12\) 或 \(m = \tfrac13\)，第二个方程给出它们的相反数。斜率乘积为 \(6m^2\)，并在 \(m = \tfrac12\) 时达到最大值 \(6 \cdot \tfrac14 = \tfrac32\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let the slopes be \(m\) and \(6m.\) The angle between the lines satisfies \[\left|\frac{6m - m}{1 + 6m^2}\right| = \tan 45^\circ = 1,\] so \(5m = \pm(1 + 6m^2),\) giving \(6m^2 - 5m + 1 = 0\) or \(6m^2 + 5m + 1 = 0.\)</p>
+<p class="amc-en">The first yields \(m = \tfrac12\) or \(m = \tfrac13;\) the second yields the negatives of these. The product of the slopes is \(6m^2,\) which is largest when \(m = \tfrac12,\) giving \(6 \cdot \tfrac14 = \tfrac32.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">8</span> 答案 <b>D</b></p>
+<p>配方得 \(x^{2020} + (y - 1)^2 = 1\)。两项都非负，所以 \(x^{2020} \le 1\)，从而 \(x \in \{-1, 0, 1\}\)。</p>
+<p>若 \(x = 0\)，则 \((y - 1)^2 = 1\)，所以 \(y = 0\) 或 \(y = 2\)。若 \(x = \pm 1\)，则 \(x^{2020} = 1\)，从而 \((y - 1)^2 = 0\)，故 \(y = 1\)。所有解为 \((0, 0), (0, 2), (1, 1)\) 和 \((-1, 1)\)，一共四个。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Completing the square gives \(x^{2020} + (y - 1)^2 = 1.\) Both terms are nonnegative, so \(x^{2020} \le 1,\) forcing \(x \in \{-1, 0, 1\}.\)</p>
+<p class="amc-en">If \(x = 0,\) then \((y - 1)^2 = 1,\) giving \(y = 0\) or \(y = 2.\) If \(x = \pm 1,\) then \(x^{2020} = 1,\) so \((y - 1)^2 = 0\) and \(y = 1.\) The solutions are \((0, 0), (0, 2), (1, 1),\) and \((-1, 1)\) — four in all.</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">9</span> 答案 <b>C</b></p>
+<p>扇形弧长为 \(\tfrac34 \cdot 2\pi \cdot 4 = 6\pi\)，它等于底面周长。因此 \(2\pi r = 6\pi\)，所以 \(r = 3\)。</p>
+<p>母线长是 \(4\)，因此由勾股定理可得高为 \(h = \sqrt{4^2 - 3^2} = \sqrt{7}\)。圆锥体积为 \[\frac13 \pi r^2 h = \frac13 \pi \cdot 9 \cdot \sqrt{7} = 3\pi\sqrt{7}\text{。}\]</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The sector’s arc length is \(\tfrac34 \cdot 2\pi \cdot 4 = 6\pi,\) which becomes the base circumference: \(2\pi r = 6\pi,\) so \(r = 3.\)</p>
+<p class="amc-en">The slant height is the sector radius \(4,\) so the height is \(h = \sqrt{4^2 - 3^2} = \sqrt{7}.\) The volume is \[\frac13 \pi r^2 h = \frac13 \pi \cdot 9 \cdot \sqrt{7} = 3\pi\sqrt{7}.\]</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">10</span> 答案 <b>B</b></p>
+<p>令 \(A = (0, 0)\)、\(B = (1, 0)\)、\(C = (1, 1)\)、\(D = (0, 1)\)。内切圆圆心为 \(\left(\tfrac12, \tfrac12\right)\)，半径为 \(\tfrac12\)，并在 \(M = \left(\tfrac12, 1\right)\) 处与 \(\overline{CD}\) 相切。</p>
+<p>直线 \(AM\) 为 \(y = 2x\)。代入 \(\left(x - \tfrac12\right)^2 + \left(y - \tfrac12\right)^2 = \tfrac14\)，得到 \(20x^2 - 12x + 1 = 0\)，其根为 \(x = \tfrac12\)（点 \(M\)）和 \(x = \tfrac{1}{10}\)（点 \(P\)）。</p>
+<p>因此 \(P = \left(\tfrac{1}{10}, \tfrac15\right)\)，且 \(AP = \sqrt{\left(\tfrac{1}{10}\right)^2 + \left(\tfrac15\right)^2} = \frac{\sqrt5}{10}\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(A = (0, 0),\) \(B = (1, 0),\) \(C = (1, 1),\) \(D = (0, 1).\) The inscribed circle has center \(\left(\tfrac12, \tfrac12\right)\) and radius \(\tfrac12,\) touching \(\overline{CD}\) at \(M = \left(\tfrac12, 1\right).\)</p>
+<p class="amc-en">Line \(AM\) is \(y = 2x.\) Substituting into \(\left(x - \tfrac12\right)^2 + \left(y - \tfrac12\right)^2 = \tfrac14\) gives \(20x^2 - 12x + 1 = 0,\) with roots \(x = \tfrac12\) (point \(M\)) and \(x = \tfrac{1}{10}\) (point \(P\)).</p>
+<p class="amc-en">So \(P = \left(\tfrac{1}{10}, \tfrac15\right)\) and \(AP = \sqrt{\left(\tfrac{1}{10}\right)^2 + \left(\tfrac15\right)^2} = \frac{\sqrt5}{10}.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">11</span> 答案 <b>D</b></p>
+<p>六边形的面积为 \(\tfrac{3\sqrt3}{2}\cdot 2^2 = 6\sqrt3\)。每个半圆的半径为 \(1\)，面积为 \(\tfrac{\pi}{2}\)，所以六个半圆的面积之和为 \(3\pi\)。</p>
+<p>相邻半圆的圆心距离为 \(\sqrt3\)，因此每对相邻半圆的重叠透镜形面积为 \(2\cos^{-1}\!\left(\tfrac{\sqrt3}{2}\right) - \tfrac{\sqrt3}{2} = \tfrac{\pi}{3} - \tfrac{\sqrt3}{2}\)。</p>
+<p>共有六个这样的透镜形，所以六个半圆的并集面积为 \[3\pi - 6\left(\frac{\pi}{3} - \frac{\sqrt3}{2}\right) = \pi + 3\sqrt3\text{。}\] 从六边形面积中减去它，得到阴影面积 \(6\sqrt3 - (\pi + 3\sqrt3) = 3\sqrt3 - \pi\)。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The hexagon has area \(\tfrac{3\sqrt3}{2}\cdot 2^2 = 6\sqrt3.\) Each semicircle has radius \(1\) and area \(\tfrac{\pi}{2},\) totaling \(3\pi.\)</p>
+<p class="amc-en">Adjacent semicircle centers (side midpoints) are a distance \(\sqrt3\) apart, so each adjacent pair overlaps in a lens of area \(2\cos^{-1}\!\left(\tfrac{\sqrt3}{2}\right) - \tfrac{\sqrt3}{2} = \tfrac{\pi}{3} - \tfrac{\sqrt3}{2}.\) There are six such lenses.</p>
+<p class="amc-en">The union of the semicircles is \[3\pi - 6\left(\frac{\pi}{3} - \frac{\sqrt3}{2}\right) = \pi + 3\sqrt3.\] Subtracting from the hexagon gives the shaded area \(6\sqrt3 - (\pi + 3\sqrt3) = 3\sqrt3 - \pi.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">12</span> 答案 <b>E</b></p>
+<p>将圆心置于原点，\(\overline{AB}\) 放在 \(x\)-轴上；半径为 \(R = 5\sqrt2\)，所以 \(R^2 = 50\)。于是 \(E = (x_E, 0)\)，其中 \(x_E = R - 2\sqrt5\)，但它的具体值不需要算出。</p>
+<p>把弦参数化为 \(E + t\left(\tfrac{1}{\sqrt2}, \tfrac{1}{\sqrt2}\right)\)。代入圆方程 \(x^2 + y^2 = 50\) 得到 \(t^2 + \sqrt2\,x_E\, t + (x_E^2 - 50) = 0\)，其根 \(t_1, t_2\) 是到 \(C\) 和 \(D\) 的有向距离。</p>
+<p>由韦达定理，\(t_1 + t_2 = -\sqrt2\,x_E\)，且 \(t_1 t_2 = x_E^2 - 50\)，所以 \[ \begin{gathered} CE^2 + DE^2 = t_1^2 + t_2^2 \\ {}= (t_1 + t_2)^2 - 2t_1 t_2 \\ {}= 2x_E^2 - 2(x_E^2 - 50) \\ {}= 100 \end{gathered}\text{。}\]</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Place the center at the origin with \(\overline{AB}\) on the \(x\)-axis; the radius is \(R = 5\sqrt2,\) so \(R^2 = 50.\) Then \(E = (x_E, 0)\) with \(x_E = R - 2\sqrt5\) (its exact value is not needed).</p>
+<p class="amc-en">Parametrize the chord as \(E + t\left(\tfrac{1}{\sqrt2}, \tfrac{1}{\sqrt2}\right).\) Substituting into \(x^2 + y^2 = 50\) gives \(t^2 + \sqrt2\,x_E\, t + (x_E^2 - 50) = 0,\) whose roots are the signed distances \(t_1, t_2\) to \(C\) and \(D.\)</p>
+<p class="amc-en">By Vieta, \(t_1 + t_2 = -\sqrt2\,x_E\) and \(t_1 t_2 = x_E^2 - 50,\) so \[ \begin{gathered} CE^2 + DE^2 = t_1^2 + t_2^2 \\ {}= (t_1 + t_2)^2 - 2t_1 t_2 \\ {}= 2x_E^2 - 2(x_E^2 - 50) \\ {}= 100. \end{gathered} \]</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">13</span> 答案 <b>D</b></p>
+<p>令 \(a = \log_2 3\)，则 \(\log_3 2 = \tfrac1a\)。于是 \[ \begin{gathered} \log_2 6 + \log_3 6 \\ {}= (1 + \log_2 3) \\ \quad {}+ (1 + \log_3 2) \\ {}= 2 + a + \frac1a \end{gathered}\text{。}\]</p>
+<p>另一方面，\(\left(\sqrt{\log_2 3} + \sqrt{\log_3 2}\right)^2\) \(= a + \frac1a + 2\sqrt{a \cdot \tfrac1a}\) \(= a + \frac1a + 2\)，与上式相等。</p>
+<p>两边取平方根，得 \(\sqrt{\log_2 6 + \log_3 6}\) \(= \sqrt{\log_2 3} + \sqrt{\log_3 2}\)。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(a = \log_2 3,\) so \(\log_3 2 = \tfrac1a.\) Then \[ \begin{gathered} \log_2 6 + \log_3 6 \\ {}= (1 + \log_2 3) \\ \quad {}+ (1 + \log_3 2) \\ {}= 2 + a + \frac1a. \end{gathered} \]</p>
+<p class="amc-en">Meanwhile \(\left(\sqrt{\log_2 3} + \sqrt{\log_3 2}\right)^2\) \(= a + \frac1a + 2\sqrt{a \cdot \tfrac1a}\) \(= a + \frac1a + 2,\) which equals the expression above.</p>
+<p class="amc-en">Taking square roots, \(\sqrt{\log_2 6 + \log_3 6}\) \(= \sqrt{\log_2 3} + \sqrt{\log_3 2}.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">14</span> 答案 <b>A</b></p>
+<p>Bela 第一步选择区间中点 \(\tfrac{n}{2}\)。这样，局面关于区间中心对称。</p>
+<p>此后，每当 Jenn 选择一个数 \(x\)，Bela 就选择它关于中点的镜像 \(n - x\)。因为 Bela 已经选了 \(\tfrac n2\)，Jenn 的合法选择必满足 \(\left|x-\tfrac n2\right|&gt;1\)。因此 \(|x-(n-x)|=2\left|x-\tfrac n2\right|&gt;2\)，所以 Bela 的回应与 Jenn 刚选的点相距足够远。 由对称性，它与先前的每个点也相距足够远。因此，只要 Jenn 有合法行动，Bela 就一定也有合法行动， 所以 Jenn 会先无路可走。Bela 总会获胜。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Bela first plays the midpoint \(\tfrac{n}{2}.\) This choice makes the configuration symmetric about the center of the interval.</p>
+<p class="amc-en">Thereafter, whenever Jenn picks a number \(x,\) Bela responds with its mirror image \(n - x.\) Since Bela has already chosen \(\tfrac n2,\) Jenn’s legal move satisfies \(\left|x-\tfrac n2\right|&gt;1.\) Therefore \(|x-(n-x)|=2\left|x-\tfrac n2\right|&gt;2,\) so Bela’s response is far enough from Jenn’s new point. Symmetry shows that it is also far enough from every earlier point. Thus Bela always has a move whenever Jenn does, so Jenn is the first to be stuck. Bela always wins.</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">15</span> 答案 <b>C</b></p>
+<p>将人编号为 \(0\) 到 \(9\)。允许的配对是相邻边 \((i, i + 1)\) 或直径边 \((i, i + 5)\)。我们按使用的直径边数量分类计算完美匹配。</p>
+<p>不使用直径边时，相邻的人可以按两种交错方式配对，共有 \(2\) 种。恰用一条直径边时，选择这条直径有 \(5\) 种，其余的人随后被唯一配对，因此共有 \(5\) 种。使用全部五条直径边时有 \(1\) 种。</p>
+<p>只要使用了直径边，沿圆周考察被迫出现的相邻配对，就可看出直径边数必须是奇数。恰用三条直径边时，余下四人必须组成两对彼此对置的相邻配对；其中一对的位置唯一确定整个匹配，所以有 \(5\) 种。综上，总数为 \(2+5+5+1=13\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Label the people \(0\) through \(9.\) Allowed pairings use neighbor edges \((i, i + 1)\) or diameter edges \((i, i + 5).\) Count perfect matchings by the number of diameter edges used.</p>
+<p class="amc-en">Using no diameters, the ten people split into adjacent pairs in \(2\) ways (all “even” edges or all “odd” edges). Using exactly one diameter, choose it in \(5\) ways; the remaining two arcs of four people each pair up uniquely, giving \(5.\) Using all five diameters gives \(1\) matching.</p>
+<p class="amc-en">If at least one diameter is used, following the forced adjacent pairings around the circle shows that the number of diameters must be odd. With exactly three diameters, the four remaining people must be two opposite adjacent pairs. The position of one such opposite pair determines the matching, giving \(5\) possibilities. Hence the total is \(2+5+5+1=13.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">16</span> 答案 <b>B</b></p>
+<p>要最后两种颜色各有三个，四次新增的球中必须恰有两个红球。当罐中有 \(k\) 个球，其中有 \(c\) 个某色球时，下一次抽到该色的概率为 \(\tfrac{c}{k}\)。</p>
+<p>每个恰含两次红球和两次蓝球的指定序列，其概率都为 \(\tfrac{1\cdot 2\cdot 1\cdot 2}{2\cdot 3\cdot 4\cdot 5}\)。这样的序列有 \(\binom42 = 6\) 个，所以总概率为 \(\tfrac{6\cdot 4}{120} = \tfrac15\)。（等价地，四次后红球数在 \(\{1, 2, 3, 4, 5\}\) 中均匀分布；其中目标值为 \(3\)，概率也为 \(\tfrac15\)。）</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">To end with three of each color, exactly two of the four added balls must be red. Consider any sequence of draws. When the urn holds \(k\) balls, drawing a particular color with count \(c\) has probability \(\tfrac{c}{k}.\)</p>
+<p class="amc-en">Any ordering with two red and two blue additions gives the same product \(\tfrac{1\cdot 2\cdot 1\cdot 2}{2\cdot 3\cdot 4\cdot 5},\) and there are \(\binom42 = 6\) such orderings, for probability \(\tfrac{6\cdot 4}{120} = \tfrac15.\) (Equivalently, the number of red balls after four steps is uniform on \(\{1, 2, 3, 4, 5\},\) so \(3\) red occurs with probability \(\tfrac15.\))</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">17</span> 答案 <b>C</b></p>
+<p>设 \(\omega = \tfrac{-1 + i\sqrt3}{2}\)，它是本原三次单位根。由于 \(0\) 不是根，不同根的集合在乘以 \(\omega\) 后保持不变，所以根按 \(\{r, \omega r, \omega^2 r\}\) 这样的三元组出现。五个根无法填满两个三元组，因此只有一个三元组，其重数 \(m_1, m_2, m_3 \ge 1\) 之和为 \(5\)。</p>
+<p>实系数要求根的多重集在共轭下不变。这只可能发生在三元组的辐角关于实轴对称时，即 \(\{0^\circ, 120^\circ, 240^\circ\}\) 或 \(\{60^\circ, 180^\circ, 300^\circ\}\)。</p>
+<p>全部根的乘积必须为 \(-2020\)。第一种构型中的实根为正，会导致乘积为正，不可能。第二种构型中的实根为负，乘积为 \(-\rho^5\)；取 \(\rho^5 = 2020\) 即可。共轭对称的重数方案为 \((1, 3, 1)\) 和 \((2, 1, 2)\)，因此有 \(2\) 个多项式。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Here \(\omega = \tfrac{-1 + i\sqrt3}{2}\) is a primitive cube root of unity. Since \(0\) is not a root, the set of distinct roots is closed under multiplication by \(\omega,\) so it consists of triples \(\{r, \omega r, \omega^2 r\}\) equally spaced in argument. Five roots cannot fill two such triples, so there is exactly one triple, with multiplicities \(m_1, m_2, m_3 \ge 1\) summing to \(5.\)</p>
+<p class="amc-en">Real coefficients require the root multiset to be closed under conjugation. This is possible only when the triple’s arguments are symmetric about the real axis, which happens for the two configurations \(\{0^\circ, 120^\circ, 240^\circ\}\) and \(\{60^\circ, 180^\circ, 300^\circ\}.\)</p>
+<p class="amc-en">The product of the roots must equal \(-2020.\) In the first configuration the real root is positive, forcing a positive product, which is impossible. In the second, the real root is negative and the product is \(-\rho^5;\) setting \(\rho^5 = 2020\) works, and the two conjugate-symmetric multiplicity patterns \((1, 3, 1)\) and \((2, 1, 2)\) each give a valid polynomial. Hence there are \(2.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">18</span> 答案 <b>B</b></p>
+<p>四个区域总面积为 \(4\)，所以正方形边长为 \(2\)。取 \(A = (0, 0)\)、\(B = (2, 0)\)、\(C = (2, 2)\)、\(D = (0, 2)\)。由于 \(\triangle AEH\) 是面积为 \(1\) 的等腰直角三角形，所以 \(AE = AH = \sqrt2\)，从而 \(E = (\sqrt2, 0)\)，\(H = (0, \sqrt2)\)。直线 \(EH\) 的方程为 \(x + y = \sqrt2\)。</p>
+<p>设 \(F = (2, t)\)。它到直线 \(EH\) 的垂直距离为 \(FI = \tfrac{2 + t - \sqrt2}{\sqrt2}\)。令 \(s=\frac{FI}{\sqrt2}=\tfrac{2+t-\sqrt2}{2}\)，则垂足为 \(I=(2-s,t-s)\)。对 \(B=(2,0)\)、\(F\)、\(I\)、\(E=(\sqrt2,0)\) 使用鞋带公式，得到 \([BFIE]=s^2-(3-2\sqrt2)\)。由于该面积为 \(1\)，所以 \(s^2=4-2\sqrt2\)。</p>
+<p>因此 \(FI^2 = 2s^2 = 8 - 4\sqrt2\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The four regions have total area \(4,\) so the square has side \(2.\) Put \(A = (0, 0),\) \(B = (2, 0),\) \(C = (2, 2),\) \(D = (0, 2).\) Since \(\triangle AEH\) is an isosceles right triangle with area \(1,\) we get \(AE = AH = \sqrt2,\) so \(E = (\sqrt2, 0)\) and \(H = (0, \sqrt2).\) Line \(EH\) is \(x + y = \sqrt2.\)</p>
+<p class="amc-en">Let \(F = (2, t).\) Its perpendicular distance to line \(EH\) is \(FI = \tfrac{2 + t - \sqrt2}{\sqrt2}.\) Write \(s=\frac{FI}{\sqrt2}=\tfrac{2+t-\sqrt2}{2},\) so the foot of the perpendicular is \(I=(2-s,t-s).\) The shoelace formula on \(B=(2,0),\) \(F,\) \(I,\) and \(E=(\sqrt2,0)\) gives \([BFIE]=s^2-(3-2\sqrt2).\) Since this area is \(1,\) we get \(s^2=4-2\sqrt2.\)</p>
+<p class="amc-en">Then \(FI^2 = 2s^2 = 8 - 4\sqrt2.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">19</span> 答案 <b>C</b></p>
+<p>将顶点依次标为 \(0,1,2,3\)。每个允许的变换都形如 \(j\mapsto \varepsilon j+\delta\pmod 4\)，其中 \(\varepsilon\in\{1,-1\}\) 且 \(\delta\in\{1,-1\}\)。这四种选择恰好给出两个四分之一周旋转和题中所述的两个反射。</p>
+<p>在复合时，\(\delta\) 的奇偶性在每一步都会改变。因此，\(19\) 个允许变换的复合仍有奇数的 \(\delta\)，所以它仍是四个允许变换之一。它的逆变换也被允许。因此，前 \(19\) 步的每个序列都恰有一种最后一步的选择，共得到 \(4^{19}=2^{38}\) 个成功序列。</p>
+<p>因此，正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Label the vertices \(0,1,2,3\) cyclically. Each allowed transformation has the form \(j\mapsto \varepsilon j+\delta\pmod 4,\) where \(\varepsilon\in\{1,-1\}\) and \(\delta\in\{1,-1\}.\) These four choices give exactly the two quarter-turns and the two stated reflections.</p>
+<p class="amc-en">Under composition, the parity of \(\delta\) changes at every move. Thus a composition of \(19\) allowed transformations again has odd \(\delta,\) and so is one of the four allowed transformations. Its inverse is also allowed. Consequently every sequence of the first \(19\) moves has exactly one choice for the final move, giving \(4^{19}=2^{38}\) successful sequences.</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">20</span> 答案 <b>D</b></p>
+<p>固定第一个立方体后，与它旋转后相同的第二个立方体数等于其旋转轨道的大小。因此所求概率为 \(\tfrac{1}{64^2}\sum_{\mathcal O} |\mathcal O|^2\)。</p>
+<p>按黑色面数量分类：\(0\) 或 \(6\) 个黑面时 \(\to 1\)；\(1\) 或 \(5\) 个黑面时 \(\to 6\)；\(2\) 或 \(4\) 个黑面时，对面情形 \(\to 3\)，相邻情形为 \(12\)；\(3\) 个黑面时，共顶点情形 \(\to 8\)，环带情形为 \(12\)。于是 \[ \begin{gathered} \sum_{\mathcal O} |\mathcal O|^2 \\ {}= 1 + 36 + (9 + 144) \\ \quad {}+ (64 + 144) + (9 + 144) \\ \quad {}+ 36 + 1 = 588 \end{gathered}\text{。}\]</p>
+<p>因此概率为 \(\tfrac{588}{4096} = \tfrac{147}{1024}\)。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For a fixed first cube, the number of second cubes matching it (up to rotation) equals the size of its rotation orbit. So the desired probability is \(\tfrac{1}{64^2}\sum_{\mathcal O} |\mathcal O|^2.\)</p>
+<p class="amc-en">Grouping by black-face count, the orbit sizes are: \(0\) or \(6\) black \(\to 1;\) \(1\) or \(5\) black \(\to 6;\) \(2\) or \(4\) black \(\to 3\) (opposite) and \(12\) (adjacent); \(3\) black \(\to 8\) (corner) and \(12\) (band). Then \[ \begin{gathered} \sum_{\mathcal O} |\mathcal O|^2 \\ {}= 1 + 36 + (9 + 144) \\ \quad {}+ (64 + 144) + (9 + 144) \\ \quad {}+ 36 + 1 = 588. \end{gathered} \]</p>
+<p class="amc-en">The probability is \(\tfrac{588}{4096} = \tfrac{147}{1024}.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">21</span> 答案 <b>C</b></p>
+<p>右边是整数，令 \(k = \lfloor \sqrt{n} \rfloor\)。则 \(n = 70k - 1000\)，而 \(k = \lfloor \sqrt{n} \rfloor\) 要求 \(k^2 \le n \lt (k + 1)^2\)。</p>
+<p>下界 \(k^2 \le 70k - 1000\) 给出 \(k^2 - 70k + 1000 \le 0\)，即 \(20 \le k \le 50\)。上界 \(70k - 1000 \lt (k + 1)^2\) 给出 \(k^2 - 68k + 1001 \gt 0\)，即 \(k \le 21\) 或 \(k \ge 47\)。</p>
+<p>取交集得 \(k \in \{20, 21, 47, 48, 49, 50\}\)，因此有 \(6\) 个 \(n\) 值。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The right side is an integer, so let \(k = \lfloor \sqrt{n} \rfloor.\) Then \(n = 70k - 1000,\) and \(k = \lfloor \sqrt{n} \rfloor\) requires \(k^2 \le n \lt (k + 1)^2.\)</p>
+<p class="amc-en">The lower bound \(k^2 \le 70k - 1000\) gives \(k^2 - 70k + 1000 \le 0,\) i.e. \(20 \le k \le 50.\) The upper bound \(70k - 1000 \lt (k + 1)^2\) gives \(k^2 - 68k + 1001 \gt 0,\) i.e. \(k \le 21\) or \(k \ge 47.\)</p>
+<p class="amc-en">Intersecting, \(k \in \{20, 21, 47, 48, 49, 50\},\) giving \(6\) values of \(n.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">22</span> 答案 <b>C</b></p>
+<p>拆开分式：\(\dfrac{(2^t - 3t)t}{4^t} = \dfrac{t}{2^t} - \dfrac{3t^2}{4^t}\)。令 \(u = \dfrac{t}{2^t}\)，则 \(\dfrac{t^2}{4^t} = u^2\)，原式变为 \(u - 3u^2\)。</p>
+<p>这个抛物线在 \(u = \tfrac16\) 时取得最大值 \(\tfrac16 - 3\cdot\tfrac1{36} = \tfrac1{12}\)。由于 \(u = \tfrac{t}{2^t}\) 连续且能取到 \(\tfrac16\)，该最大值确实可以达到。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Split the fraction: \(\dfrac{(2^t - 3t)t}{4^t} = \dfrac{t}{2^t} - \dfrac{3t^2}{4^t}.\) Let \(u = \dfrac{t}{2^t},\) so \(\dfrac{t^2}{4^t} = u^2\) and the expression is \(u - 3u^2.\)</p>
+<p class="amc-en">This parabola has maximum at \(u = \tfrac16,\) with value \(\tfrac16 - 3\cdot\tfrac1{36} = \tfrac1{12}.\) Since \(u = \tfrac{t}{2^t}\) is continuous and attains the value \(\tfrac16,\) the maximum is achieved.</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">23</span> 答案 <b>B</b></p>
+<p>当 \(n = 2\) 时，\(z_1 + z_2 = 0\) 强制 \(z_2 = -z_1\)，所以两点等间隔分布。当 \(n = 3\) 时，三个和为零的单位向量必须构成等边三角形，所以也等间隔分布。</p>
+<p>对每个偶数 \(n\ge4\)，取 \(\frac{n}{2}\) 对处于一般位置、且不构成正 \(n\) 边形的对径点。对每个奇数 \(n\ge5\)，取一个等边三角形的三个顶点，再加上 \(\frac{n-3}{2}\) 对处于一般位置的对径点。每种构造的各数之和都是 \(0\)，但它们并不等间隔分布。</p>
+<p>因此只有 \(n = 2\) 和 \(n = 3\) 满足条件，共 \(2\) 个值。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For \(n = 2,\) \(z_1 + z_2 = 0\) forces \(z_2 = -z_1,\) which is equally spaced. For \(n = 3,\) three unit vectors summing to zero must form an equilateral triangle, so they are equally spaced.</p>
+<p class="amc-en">For every even \(n\ge4,\) choose \(\frac{n}{2}\) antipodal pairs at generic angles that do not form a regular \(n\)-gon. For every odd \(n\ge5,\) choose the vertices of an equilateral triangle together with \(\frac{n-3}{2}\) generic antipodal pairs. Each construction has sum \(0\) but is not equally spaced.</p>
+<p class="amc-en">Hence only \(n = 2\) and \(n = 3\) work, giving \(2\) values.</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">24</span> 答案 <b>A</b></p>
+<p>第一个因子 \(f_1\) 可以是任意因子 \(d \gt 1\)，之后剩余部分是 \(\frac{n}{d}\) 的有序分解。因此 \(D(n) = \sum_{d \mid n,\, d \gt 1} D(\frac{n}{d})\)，并设 \(D(1) = 1\)。</p>
+<p>在 \(96 = 2^5\cdot 3\) 的因子上逐步计算：\(D(2) = D(3) = 1\)，\(D(4) = 2\)，\(D(6) = 3\)，\(D(8) = 4\)，\(D(12) = 8\)，\(D(16) = 8\)，\(D(24) = 20\)，\(D(32) = 16\)，\(D(48) = 48\)。</p>
+<p>最后 \[ \begin{gathered} D(96) = D(48) + D(32) \\ {}+ D(24) + D(16) + D(12) \\ {}+ D(8) + D(6) + D(4) \\ {}+ D(3) + D(2) + D(1) \\ = 48 + 16 + 20 + 8 \\ {}+ 8 + 4 + 3 + 2 \\ {}+ 1 + 1 + 1 = 112 \end{gathered}\text{。}\]</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The first factor \(f_1\) can be any divisor \(d \gt 1,\) after which the rest is an ordered factorization of \(\frac{n}{d}.\) So \(D(n) = \sum_{d \mid n,\, d \gt 1} D(\frac{n}{d}),\) with \(D(1) = 1.\)</p>
+<p class="amc-en">Computing over the divisors of \(96 = 2^5\cdot 3:\) \(D(2) = D(3) = 1,\) \(D(4) = 2,\) \(D(6) = 3,\) \(D(8) = 4,\) \(D(12) = 8,\) \(D(16) = 8,\) \(D(24) = 20,\) \(D(32) = 16,\) \(D(48) = 48.\)</p>
+<p class="amc-en">Finally \[ \begin{gathered} D(96) = D(48) + D(32) \\ {}+ D(24) + D(16) + D(12) \\ {}+ D(8) + D(6) + D(4) \\ {}+ D(3) + D(2) + D(1) \\ = 48 + 16 + 20 + 8 \\ {}+ 8 + 4 + 3 + 2 \\ {}+ 1 + 1 + 1 = 112. \end{gathered} \]</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">25</span> 答案 <b>B</b></p>
+<p>由 \(\sin^2(\pi y) = 1 - \cos^2(\pi y)\)，条件等价于 \(|\sin \pi x| \gt |\cos \pi y|\)。固定 \(x\)，当 \(y \in [0, 1]\) 时，所求概率在 \(0 \le x \le \tfrac12\) 时为 \(g(x) = 2x\)，在 \(\tfrac12 \le x \le 1\) 时为 \(g(x) = 2 - 2x\)。</p>
+<p>因此 \(P(a) = \tfrac1a \int_0^a g(x)\,dx\)。当 \(a \le \tfrac12\) 时，\(P(a) = a\)，并递增到 \(\tfrac12\)。当 \(a \ge \tfrac12\) 时， \[ \begin{gathered} P(a) = \frac{2a - a^2 - \tfrac12}{a} \\ {}= 2 - a - \frac{1}{2a} \end{gathered}\text{。}\]</p>
+<p>将导数令为零得 \(2a^2 = 1\)，所以 \(a = \tfrac{1}{\sqrt2}\)，且 \(P\!\left(\tfrac{1}{\sqrt2}\right) = 2 - \sqrt2\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since \(\sin^2(\pi y) = 1 - \cos^2(\pi y),\) the condition is \(|\sin \pi x| \gt |\cos \pi y|.\) For fixed \(x,\) the probability over \(y \in [0, 1]\) is \(g(x) = 2x\) for \(0 \le x \le \tfrac12\) and \(g(x) = 2 - 2x\) for \(\tfrac12 \le x \le 1.\)</p>
+<p class="amc-en">Then \(P(a) = \tfrac1a \int_0^a g(x)\,dx.\) For \(a \le \tfrac12,\) \(P(a) = a,\) increasing to \(\tfrac12.\) For \(a \ge \tfrac12,\) \[ \begin{gathered} P(a) = \frac{2a - a^2 - \tfrac12}{a} \\ {}= 2 - a - \frac{1}{2a}. \end{gathered} \]</p>
+<p class="amc-en">Setting the derivative to zero gives \(2a^2 = 1,\) so \(a = \tfrac{1}{\sqrt2},\) and \(P\!\left(\tfrac{1}{\sqrt2}\right) = 2 - \sqrt2.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+    </div>
+    <p class="dl-row">
+      
+      <a class="btn" href="https://t.fengg.net/docs-dl/public/download/%E6%95%B0%E5%AD%A6/AMC12(P%E7%89%88)/2020B%20AMC%2012%20%E7%9C%9F%E9%A2%98%E4%B8%8E%E8%A7%A3%E7%AD%94.docx" download="2020B AMC 12 真题与解答.docx" title="2020B AMC 12 真题与解答.docx">下载本题 Word 原文件（含答案解析）</a>
+      
+    </p>
+  </details>
+  
+
+  <nav class="siblings" aria-label="同分类的上一套与下一套">
+    
+    <a class="sib prev" href="/docs/amc12p-2020a/" rel="prev">
+      <i aria-hidden="true">←</i>
+      <span><b>上一套</b><em>2020A AMC 12 真题（P版）</em></span>
+    </a>
+    
+    
+    <a class="sib next" href="/docs/amc12p-2021a/" rel="next">
+      <span><b>下一套</b><em>2021A AMC 12 真题（P版）</em></span>
+      <i aria-hidden="true">→</i>
+    </a>
+    
+  </nav>
+
+  <p class="back"><a href="/c/math/">← 返回数学</a></p>
+</article>
+
+<button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 8.8V19h-2V8.8L6.4 13.4 5 12z" fill="currentColor"/></svg>
+</button>
+
+<script>
+(function () {
+  function openIfHash() {
+    if (location.hash === '#answer') {
+      var el = document.getElementById('answer');
+      if (el) { el.open = true; el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    }
+  }
+  openIfHash();
+  window.addEventListener('hashchange', openIfHash);
+
+  var top = document.querySelector('.to-top');
+  if (top) {
+    function onScroll() {
+      if (window.scrollY > 420) top.classList.add('show');
+      else top.classList.remove('show');
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    top.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // 同分类翻页快捷键：[ 上一套，] 下一套
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var sel = e.key === '[' ? '.sib.prev[href]' : (e.key === ']' ? '.sib.next[href]' : null);
+    if (!sel) return;
+    var a = document.querySelector(sel);
+    if (a) { e.preventDefault(); location.href = a.href; }
+  });
+})();
+</script>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-line">
+      <span>© 2026 Feng</span>
+      <span class="dot">·</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></span>
+    </div>
+    <p class="foot-note">本站内容均来源于网络，版权归原作者所有，仅供学习交流使用，请勿用于商业用途。</p>
+  </div>
+</footer>
+<script>
+(function () {
+  /* ---------- 深色模式 ---------- */
+  var root = document.documentElement;
+  var toggle = document.querySelector('.theme-toggle');
+  function osDark() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function isDark() {
+    var t = root.getAttribute('data-theme');
+    if (t === 'dark') return true;
+    if (t === 'light') return false;
+    return osDark();
+  }
+  function label() {
+    if (!toggle) return;
+    var d = isDark();
+    toggle.setAttribute('aria-label', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('title', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('aria-pressed', d ? 'true' : 'false');
+  }
+  if (toggle) {
+    label();
+    toggle.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) { /* noop */ }
+      label();
+    });
+  }
+  if (window.matchMedia) {
+    var mqDark = window.matchMedia('(prefers-color-scheme: dark)');
+    if (mqDark.addEventListener) mqDark.addEventListener('change', label);
+  }
+
+  /* ---------- 顶部导航 ---------- */
+  var nav = document.querySelector('.nav');
+  var navToggle = document.querySelector('.nav-toggle');
+  if (!nav || !navToggle) return;
+  var mq = window.matchMedia('(max-width: 720px)');
+  function closeAll() {
+    nav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    Array.prototype.forEach.call(nav.querySelectorAll('.open'), function (x) { x.classList.remove('open'); });
+  }
+  navToggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var on = nav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', on ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) {
+    if (!mq.matches) return;
+    var a = e.target.closest ? e.target.closest('a') : null;
+    if (!a) return;
+    var host = a.parentNode;
+    if (host && host.classList.contains('nav-drop') && a.classList.contains('has-caret')) {
+      e.preventDefault();
+      host.classList.toggle('open');
+    }
+  });
+  document.addEventListener('click', function (e) {
+    if (mq.matches && !nav.contains(e.target) && !navToggle.contains(e.target)) closeAll();
+  });
+  // 键盘 Esc 收起移动端菜单
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mq.matches && nav.classList.contains('open')) {
+      closeAll();
+      navToggle.focus();
+    }
+  });
+
+  /* ---------- 搜索快捷键：/ 聚焦，Ctrl(⌘)+K 打开 ---------- */
+  var searchLink = document.querySelector('.nav-s');
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    var typing = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable);
+    if ((e.ctrlKey || e.metaKey) && !e.shiftKey && (e.key === 'k' || e.key === 'K')) {
+      e.preventDefault();
+      var box = document.querySelector('.sbox-input');
+      if (box) { box.focus(); box.select(); }
+      else if (searchLink) location.href = searchLink.href;
+      return;
+    }
+    if (typing || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.key === '/') {
+      var box2 = document.querySelector('.sbox-input');
+      if (box2) { e.preventDefault(); box2.focus(); box2.select(); }
+      else if (searchLink) { e.preventDefault(); location.href = searchLink.href; }
+    }
+  });
+})();
+</script>
+</body>
+</html>

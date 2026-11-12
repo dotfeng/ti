@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="物理：单摆、磁场与棱镜色散">
+  <defs>
+    <linearGradient id="pBg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#f7f4fd"/>
+      <stop offset="0.55" stop-color="#eee8fa"/>
+      <stop offset="1" stop-color="#e0d7f4"/>
+    </linearGradient>
+    <linearGradient id="pBob" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#8f74e0"/>
+      <stop offset="1" stop-color="#5b3fb0"/>
+    </linearGradient>
+    <linearGradient id="pPrism" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#cfc2f0"/>
+      <stop offset="1" stop-color="#a891e0"/>
+    </linearGradient>
+    <linearGradient id="pBeam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd166" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#ff9a3c" stop-opacity="0.9"/>
+    </linearGradient>
+    <pattern id="pGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#b9a9df" stroke-opacity="0.32" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="640" height="400" fill="url(#pBg)"/>
+  <rect width="640" height="400" fill="url(#pGrid)"/>
+
+  <!-- 单摆 -->
+  <g stroke="#5b3fb0" fill="none" stroke-linecap="round">
+    <path d="M120 46 L262 46" stroke-width="6" stroke-opacity="0.55"/>
+    <path d="M120 46 L78 330" stroke-width="4" stroke-dasharray="7 7" stroke-opacity="0.28"/>
+    <path d="M120 46 L166 316" stroke-width="4" stroke-dasharray="7 7" stroke-opacity="0.28"/>
+    <line x1="120" y1="46" x2="150" y2="196" stroke-width="3.4" stroke-opacity="0.75"/>
+  </g>
+  <circle cx="150" cy="206" r="21" fill="url(#pBob)"/>
+  <circle cx="143" cy="199" r="6.5" fill="#ffffff" opacity="0.35"/>
+  <path d="M78 330 A 116 116 0 0 1 166 316" fill="none" stroke="#5b3fb0" stroke-width="2.5" stroke-opacity="0.35" stroke-dasharray="5 6"/>
+  <text x="196" y="264" font-family="Georgia,serif" font-size="22" font-style="italic" fill="#5b3fb0" opacity="0.6">θ</text>
+  <text x="46" y="352" font-family="Georgia,serif" font-size="20" font-style="italic" fill="#5b3fb0" opacity="0.4">T=2π√(l/g)</text>
+
+  <!-- 磁场线 -->
+  <g transform="translate(352 116)">
+    <rect x="-52" y="-22" width="18" height="44" rx="4" fill="#5b3fb0" opacity="0.85"/>
+    <rect x="34" y="-22" width="18" height="44" rx="4" fill="#8f74e0" opacity="0.85"/>
+    <g fill="none" stroke="#6c4bb6" stroke-opacity="0.45" stroke-width="2.4" stroke-linecap="round">
+      <path d="M-30 -10 C -6 -46, 20 -46, 30 -10"/>
+      <path d="M-30 0 C -6 -18, 20 -18, 30 0"/>
+      <path d="M-30 10 C -6 46, 20 46, 30 10"/>
+    </g>
+    <text x="-26" y="-30" font-family="Georgia,serif" font-size="19" fill="#5b3fb0" opacity="0.6">N</text>
+    <text x="30" y="-30" font-family="Georgia,serif" font-size="19" fill="#7a5fc8" opacity="0.6">S</text>
+  </g>
+
+  <!-- 棱镜与色散 -->
+  <g transform="translate(430 268)">
+    <path d="M0 -54 L56 44 L-56 44 Z" fill="url(#pPrism)" opacity="0.9"/>
+    <path d="M0 -54 L56 44 L-56 44 Z" fill="none" stroke="#8b72d4" stroke-width="2.6" stroke-linejoin="round" opacity="0.9"/>
+    <line x1="-116" y1="-8" x2="-14" y2="4" stroke="url(#pBeam)" stroke-width="5" stroke-linecap="round"/>
+    <g stroke-linecap="round" stroke-width="4" fill="none">
+      <path d="M26 16 L128 -2" stroke="#e5484d" opacity="0.85"/>
+      <path d="M26 20 L132 20" stroke="#f5a524" opacity="0.85"/>
+      <path d="M26 24 L136 42" stroke="#2fa84f" opacity="0.8"/>
+      <path d="M26 27 L138 64" stroke="#3b82f6" opacity="0.75"/>
+      <path d="M26 30 L136 86" stroke="#8b5cf6" opacity="0.7"/>
+    </g>
+  </g>
+  <text x="556" y="352" font-family="Georgia,serif" font-size="20" font-style="italic" fill="#5b3fb0" opacity="0.4">λ = h/p</text>
+
+  <!-- 公式与符号 -->
+  <text x="486" y="72" font-family="Georgia,serif" font-size="26" font-style="italic" fill="#5b3fb0" opacity="0.32">F=ma</text>
+  <text x="252" y="92" font-family="Georgia,serif" font-size="20" font-style="italic" fill="#2a9d8f" opacity="0.32">E=mc²</text>
+  <text x="238" y="356" font-family="Georgia,serif" font-size="18" fill="#6c4bb6" opacity="0.3">ΔS≥0</text>
+  <text x="44" y="70" font-family="Georgia,serif" font-size="17" fill="#6c4bb6" opacity="0.28">Ω  Φ  η</text>
+
+  <!-- 电磁波形 -->
+  <path d="M0 372 C 40 340, 80 372, 120 372 S 200 340, 240 372 S 320 340, 360 372 S 440 340, 480 372 S 560 340, 600 372 S 660 340, 700 372"
+        fill="none" stroke="#2a9d8f" stroke-width="3.2" stroke-opacity="0.35" stroke-linecap="round"/>
+</svg>

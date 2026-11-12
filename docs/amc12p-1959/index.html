@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<meta charset="utf-8">
+<title>1959 AMC 12 真题（P版） · 竞赛资料库</title>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) { /* 隐私模式下忽略 */ }
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="1959 AMC 12 真题（P版）：数学 · AMC12(P版)，1959 年，共 50 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+
+<link rel="canonical" href="https://t.fengg.net/docs/amc12p-1959/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="竞赛资料库">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="1959 AMC 12 真题（P版）">
+<meta property="og:description" content="1959 AMC 12 真题（P版）：数学 · AMC12(P版)，1959 年，共 50 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+<meta property="og:url" content="https://t.fengg.net/docs/amc12p-1959/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f7f9">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1318">
+
+
+<link rel="prev" href="/docs/amc12p-1958/">
+<link rel="next" href="/docs/amc12p-1960/">
+<link rel="stylesheet" href="/css/style.css?v=20261110e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+
+<link rel="stylesheet" href="/katex/katex.min.css">
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (!window.renderMathInElement) return;
+  var el = document.querySelector('.doc') || document.body;
+  try {
+    renderMathInElement(el, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false }
+      ],
+      throwOnError: false
+    });
+  } catch (e) { /* 公式渲染失败不影响正文 */ }
+});
+</script>
+
+
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/">竞赛资料库</a>
+    <nav class="nav"><a class="nav-a" href="/">首页</a><div class="nav-drop nav-mega"><a class="nav-a has-caret" href="/all/" title="按科目浏览全部题库">题库<i class="caret" aria-hidden="true"></i></a><div class="drop mega"><div class="mega-col" style="--accent:#3776c4"><a class="mega-h" href="/c/astronomy/"><i class="mega-dot" aria-hidden="true"></i>天文<span class="cnt">52</span></a><a class="mega-l" href="/c/astronomy/cnao/">CNAO<span class="cnt">28</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/cnao/prelim/">预赛</a><a class="mega-c" href="/c/astronomy/cnao/final/">决赛</a><a class="mega-c" href="/c/astronomy/cnao/primary/">小学组</a></span><a class="mega-l" href="/c/astronomy/provincial/">省赛<span class="cnt">15</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/provincial/beijing/">北京</a><a class="mega-c" href="/c/astronomy/provincial/guangdong/">广东</a><a class="mega-c" href="/c/astronomy/provincial/zhejiang/">浙江</a><a class="mega-c" href="/c/astronomy/provincial/jiangsu/">江苏</a><a class="mega-c" href="/c/astronomy/provincial/shandong/">山东</a><a class="mega-c" href="/c/astronomy/provincial/taiwan/">中国台湾</a></span><a class="mega-l" href="/c/astronomy/practice/">练习<span class="cnt">9</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/practice/primary/">小学组练习</a><a class="mega-c" href="/c/astronomy/practice/bank/">题库合集</a></span></div><div class="mega-col" style="--accent:#0f8a5f"><a class="mega-h" href="/c/math/"><i class="mega-dot" aria-hidden="true"></i>数学<span class="cnt">290</span></a><a class="mega-l" href="/c/math/amc8/">AMC8<span class="cnt">26</span></a><a class="mega-l" href="/c/math/amc8p/">AMC8(P版)<span class="cnt">41</span></a><a class="mega-l" href="/c/math/amc10p/">AMC10(P版)<span class="cnt">52</span></a><a class="mega-l" href="/c/math/amc12p/">AMC12(P版)<span class="cnt">102</span></a><a class="mega-l" href="/c/math/gzl/">全国中学生数学奥林匹克竞赛<span class="cnt">69</span></a><span class="mega-cs"><a class="mega-c" href="/c/math/gzl/liansai/">联赛（预赛）</a><a class="mega-c" href="/c/math/gzl/final/">决赛（CMO）</a><a class="mega-c" href="/c/math/gzl/province/">各赛区预赛</a></span></div><div class="mega-col" style="--accent:#6c4bb6"><a class="mega-h" href="/c/physics/"><i class="mega-dot" aria-hidden="true"></i>物理<span class="cnt">73</span></a><a class="mega-l" href="/c/physics/national/">全国竞赛<span class="cnt">49</span></a><a class="mega-l" href="/c/physics/asian/">亚洲竞赛<span class="cnt">11</span></a><a class="mega-l" href="/c/physics/international/">国际竞赛<span class="cnt">13</span></a></div><div class="mega-col" style="--accent:#3f8f46"><a class="mega-h" href="/c/biology/"><i class="mega-dot" aria-hidden="true"></i>生物<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/league/">全国中学生生物学联赛<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/competition/">全国中学生生物学竞赛</a></div><div class="mega-col" style="--accent:#c05a2b"><a class="mega-h" href="/c/chemistry/"><i class="mega-dot" aria-hidden="true"></i>化学<span class="cnt">10</span></a><a class="mega-l" href="/c/chemistry/ccho/">全国中学生化学奥林匹克竞赛<span class="cnt">10</span></a></div><div class="mega-col" style="--accent:#1f7a8c"><a class="mega-h" href="/c/earth/"><i class="mega-dot" aria-hidden="true"></i>地球科学<span class="cnt">22</span></a><a class="mega-l" href="/c/earth/national/">全国竞赛<span class="cnt">17</span></a><a class="mega-l" href="/c/earth/international/">国际竞赛<span class="cnt">5</span></a></div><div class="mega-col" style="--accent:#2c8a6e"><a class="mega-h" href="/c/geography/"><i class="mega-dot" aria-hidden="true"></i>地理<span class="cnt">11</span></a><a class="mega-l" href="/c/geography/geokids/">地球小博士<span class="cnt">11</span></a></div><div class="mega-col" style="--accent:#4a5fd0"><a class="mega-h" href="/c/info/"><i class="mega-dot" aria-hidden="true"></i>信息学<span class="cnt">9</span></a><a class="mega-l" href="/c/info/noi/">全国青少年信息学奥林匹克竞赛<span class="cnt">3</span></a><a class="mega-l" href="/c/info/noip/">全国青少年信息学奥林匹克联赛<span class="cnt">1</span></a><a class="mega-l" href="/c/info/csp/">CSP-J/S 非专业级软件能力认证<span class="cnt">1</span></a><a class="mega-l" href="/c/info/apio/">亚洲和太平洋地区信息学奥林匹克<span class="cnt">1</span></a><a class="mega-l" href="/c/info/winter/">NOI 冬令营<span class="cnt">1</span></a><a class="mega-l" href="/c/info/camp/">IOI 中国国家集训队集训<span class="cnt">2</span></a></div><a class="mega-all" href="/all/">全部文档（474 套）<i class="arr" aria-hidden="true">›</i></a></div></div><a class="nav-a" href="/whitelist/">白名单竞赛</a><a class="nav-a" href="/about/">使用说明</a><a class="nav-a nav-s" href="/search/" title="站内搜索（按 / 或 Ctrl+K）"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.9 12.1l4.3 4.3-1.4 1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z" fill="currentColor"/></svg>搜索</a></nav>
+    <div class="head-tools">
+      <button class="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式">
+        <svg class="ic-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12.7 3a8.5 8.5 0 108.3 10.6A7 7 0 0112.7 3z" fill="currentColor"/></svg>
+        <svg class="ic-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12 17a5 5 0 110-10 5 5 0 010 10zm0-13a1 1 0 011 1v1a1 1 0 01-2 0V5a1 1 0 011-1zm0 14a1 1 0 011 1v1a1 1 0 01-2 0v-1a1 1 0 011-1zM4 11h1a1 1 0 010 2H4a1 1 0 010-2zm15 0h1a1 1 0 010 2h-1a1 1 0 010-2zM6.3 5.5l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm11 11l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm.7-11a1 1 0 010 1.4l-.7.7A1 1 0 0115.9 6.2l.7-.7a1 1 0 011.4 0zm-11 11a1 1 0 010 1.4l-.7.7a1 1 0 01-1.4-1.4l.7-.7a1 1 0 011.4 0z" fill="currentColor"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-label="打开分类菜单" aria-expanded="false">分类 ▾</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main" tabindex="-1">
+
+<article class="doc">
+  <nav class="crumb">
+    <a href="/">首页</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/">数学</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/amc12p/">AMC12(P版)</a>
+    
+    <span class="sep">/</span><span>1959 AMC 12 真题（P版）</span>
+  </nav>
+
+  <h1>1959 AMC 12 真题（P版）</h1>
+
+  <div class="meta">
+    <span class="tag">数学</span>
+    <span>1959 年</span>
+    <span>50 题</span>
+    <span>59 KB</span>
+    <span class="ok">含答案解析</span>
+  </div>
+
+  <div class="toolbar">
+    
+    <a class="btn quiz-btn" href="/quiz/amc12p-1959/">开始答题 →</a>
+    
+    
+    <a class="btn ghost" href="#answer">跳到答案解析 ↓</a>
+    
+    <button class="btn ghost" type="button" onclick="document.querySelectorAll('details').forEach(function(x){x.open=true});setTimeout(function(){window.print()},60)">打印（含答案）</button>
+    <a class="btn" href="https://t.fengg.net/docs-dl/public/download/%E6%95%B0%E5%AD%A6/AMC12(P%E7%89%88)/1959%20AMC%2012%20%E7%9C%9F%E9%A2%98%E4%B8%8E%E8%A7%A3%E7%AD%94.docx" download="1959 AMC 12 真题与解答.docx" title="1959 AMC 12 真题与解答.docx">下载 Word 文件</a>
+  </div>
+
+  <section class="paper">
+    <p class="paper-tip">中英双语：每题先中文，后附英文原题；解答在同页下方「查看答案解析与下载」里。</p>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">1</span></p>
+<p>一个立方体的每条棱都增加 \(50\%\)。其表面积增加的百分数为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(50\)</span>
+<span class="amc-opt"><b>B</b>\(125\)</span>
+<span class="amc-opt"><b>C</b>\(150\)</span>
+<span class="amc-opt"><b>D</b>\(300\)</span>
+<span class="amc-opt"><b>E</b>\(750\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Each edge of a cube is increased by \(50\%.\) The percent of increase of the surface area of the cube is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(50\)</span><span class="amc-opt"><b>(B)</b> \(125\)</span><span class="amc-opt"><b>(C)</b> \(150\)</span><span class="amc-opt"><b>(D)</b> \(300\)</span><span class="amc-opt"><b>(E)</b> \(750\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">2</span></p>
+<p>过三角形 \(ABC\) 内一点 \(P\) 作一条平行于底边 \(\overline{AB}\) 的直线，将三角形分成面积相等的两部分。若 \(\overline{AB}\) 边上的高为 \(1\)，则点 \(P\) 到 \(\overline{AB}\) 的距离为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac12\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac14\)</span>
+<span class="amc-opt"><b>C</b>\(2-\sqrt2\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{2-\sqrt2}{2}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{2+\sqrt2}{8}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Through a point \(P\) inside triangle \(ABC\) a line is drawn parallel to the base \(\overline{AB},\) dividing the triangle into two equal areas. If the altitude to \(\overline{AB}\) has length \(1,\) then the distance from \(P\) to \(\overline{AB}\) is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac12\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac14\)</span><span class="amc-opt"><b>(C)</b> \(2-\sqrt2\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{2-\sqrt2}{2}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{2+\sqrt2}{8}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">3</span></p>
+<p>若一个四边形的两条对角线互相垂直，则该图形一定属于下列哪一大类：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>菱形</span>
+<span class="amc-opt"><b>B</b>矩形</span>
+<span class="amc-opt"><b>C</b>正方形</span>
+<span class="amc-opt"><b>D</b>等腰梯形</span>
+<span class="amc-opt"><b>E</b>以上都不是</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If the diagonals of a quadrilateral are perpendicular to each other, the figure would always be included under the general classification:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> rhombus</span><span class="amc-opt"><b>(B)</b> rectangle</span><span class="amc-opt"><b>(C)</b> square</span><span class="amc-opt"><b>(D)</b> isosceles trapezoid</span><span class="amc-opt"><b>(E)</b> none of these</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">4</span></p>
+<p>将 \(78\) 分成与 \(1\)、\(\dfrac13\)、\(\dfrac16\) 成比例的三部分，其中间一部分为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(9\dfrac13\)</span>
+<span class="amc-opt"><b>B</b>\(13\)</span>
+<span class="amc-opt"><b>C</b>\(17\dfrac13\)</span>
+<span class="amc-opt"><b>D</b>\(18\dfrac13\)</span>
+<span class="amc-opt"><b>E</b>\(26\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If \(78\) is divided into three parts which are proportional to \(1,\) \(\dfrac13,\) \(\dfrac16,\) the middle part is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(9\dfrac13\)</span><span class="amc-opt"><b>(B)</b> \(13\)</span><span class="amc-opt"><b>(C)</b> \(17\dfrac13\)</span><span class="amc-opt"><b>(D)</b> \(18\dfrac13\)</span><span class="amc-opt"><b>(E)</b> \(26\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">5</span></p>
+<p>\((256)^{0.16}\cdot(256)^{0.09}\) 的值为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(4\)</span>
+<span class="amc-opt"><b>B</b>\(16\)</span>
+<span class="amc-opt"><b>C</b>\(64\)</span>
+<span class="amc-opt"><b>D</b>\(256.25\)</span>
+<span class="amc-opt"><b>E</b>\(-16\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The value of \((256)^{0.16}\cdot(256)^{0.09}\) is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(4\)</span><span class="amc-opt"><b>(B)</b> \(16\)</span><span class="amc-opt"><b>(C)</b> \(64\)</span><span class="amc-opt"><b>(D)</b> \(256.25\)</span><span class="amc-opt"><b>(E)</b> \(-16\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">6</span></p>
+<p>已知真命题：“若一个四边形是正方形，则它是矩形。”关于该真命题的逆命题和否命题，可以推出：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>只有逆命题为真</span>
+<span class="amc-opt"><b>B</b>只有否命题为真</span>
+<span class="amc-opt"><b>C</b>二者都为真</span>
+<span class="amc-opt"><b>D</b>二者都不为真</span>
+<span class="amc-opt"><b>E</b>否命题为真，但逆命题有时为真</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Given the true statement: If a quadrilateral is a square, then it is a rectangle. It follows that, of the converse and the inverse of this true statement:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> only the converse is true</span><span class="amc-opt"><b>(B)</b> only the inverse is true</span><span class="amc-opt"><b>(C)</b> both are true</span><span class="amc-opt"><b>(D)</b> neither is true</span><span class="amc-opt"><b>(E)</b> the inverse is true, but the converse is sometimes true</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">7</span></p>
+<p>一个直角三角形的三边为 \(a\)、\(a+d\)、\(a+2d\)，其中 \(a\) 和 \(d\) 均为正数。\(a\) 与 \(d\) 的比为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1{:}3\)</span>
+<span class="amc-opt"><b>B</b>\(1{:}4\)</span>
+<span class="amc-opt"><b>C</b>\(2{:}1\)</span>
+<span class="amc-opt"><b>D</b>\(3{:}1\)</span>
+<span class="amc-opt"><b>E</b>\(3{:}4\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The sides of a right triangle are \(a,\) \(a+d,\) and \(a+2d,\) with \(a\) and \(d\) both positive. The ratio of \(a\) to \(d\) is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1{:}3\)</span><span class="amc-opt"><b>(B)</b> \(1{:}4\)</span><span class="amc-opt"><b>(C)</b> \(2{:}1\)</span><span class="amc-opt"><b>(D)</b> \(3{:}1\)</span><span class="amc-opt"><b>(E)</b> \(3{:}4\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">8</span></p>
+<p>\(x^2-6x+13\) 的值不可能小于：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(4\)</span>
+<span class="amc-opt"><b>B</b>\(4.5\)</span>
+<span class="amc-opt"><b>C</b>\(5\)</span>
+<span class="amc-opt"><b>D</b>\(7\)</span>
+<span class="amc-opt"><b>E</b>\(13\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The value of \(x^2-6x+13\) can never be less than:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(4\)</span><span class="amc-opt"><b>(B)</b> \(4.5\)</span><span class="amc-opt"><b>(C)</b> \(5\)</span><span class="amc-opt"><b>(D)</b> \(7\)</span><span class="amc-opt"><b>(E)</b> \(13\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">9</span></p>
+<p>一位农场主把共有 \(n\) 头的牛群分给四个儿子：第一个儿子得到牛群的一半，第二个得到四分之一，第三个得到五分之一，第四个得到 \(7\) 头牛。则 \(n\) 为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(80\)</span>
+<span class="amc-opt"><b>B</b>\(100\)</span>
+<span class="amc-opt"><b>C</b>\(140\)</span>
+<span class="amc-opt"><b>D</b>\(180\)</span>
+<span class="amc-opt"><b>E</b>\(240\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A farmer divides his herd of \(n\) cows among his four sons so that one son gets one-half the herd, a second son one-fourth, a third son one-fifth, and the fourth son \(7\) cows. Then \(n\) is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(80\)</span><span class="amc-opt"><b>(B)</b> \(100\)</span><span class="amc-opt"><b>(C)</b> \(140\)</span><span class="amc-opt"><b>(D)</b> \(180\)</span><span class="amc-opt"><b>(E)</b> \(240\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">10</span></p>
+<p>在三角形 \(ABC\) 中，\(\overline{AB}=\overline{AC}=3.6\)。在 \(\overline{AB}\) 上取一点 \(D\)，使其到 \(A\) 的距离为 \(1.2\)。连接点 \(D\) 与 \(\overline{AC}\) 延长线上的点 \(E\)，使三角形 \(AED\) 与三角形 \(ABC\) 面积相等。则 \(\overline{AE}\) 等于：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(4.8\)</span>
+<span class="amc-opt"><b>B</b>\(5.4\)</span>
+<span class="amc-opt"><b>C</b>\(7.2\)</span>
+<span class="amc-opt"><b>D</b>\(10.8\)</span>
+<span class="amc-opt"><b>E</b>\(12.6\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In triangle \(ABC,\) with \(\overline{AB}=\overline{AC}=3.6,\) a point \(D\) is taken on \(\overline{AB}\) at a distance \(1.2\) from \(A.\) Point \(D\) is joined to point \(E\) in the prolongation of \(\overline{AC}\) so that triangle \(AED\) is equal in area to triangle \(ABC.\) Then \(\overline{AE}\) equals:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(4.8\)</span><span class="amc-opt"><b>(B)</b> \(5.4\)</span><span class="amc-opt"><b>(C)</b> \(7.2\)</span><span class="amc-opt"><b>(D)</b> \(10.8\)</span><span class="amc-opt"><b>(E)</b> \(12.6\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">11</span></p>
+<p>以 \(2\) 为底的 \(0.0625\) 的对数为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(0.025\)</span>
+<span class="amc-opt"><b>B</b>\(0.25\)</span>
+<span class="amc-opt"><b>C</b>\(5\)</span>
+<span class="amc-opt"><b>D</b>\(-4\)</span>
+<span class="amc-opt"><b>E</b>\(-2\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The logarithm of \(0.0625\) to the base \(2\) is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(0.025\)</span><span class="amc-opt"><b>(B)</b> \(0.25\)</span><span class="amc-opt"><b>(C)</b> \(5\)</span><span class="amc-opt"><b>(D)</b> \(-4\)</span><span class="amc-opt"><b>(E)</b> \(-2\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">12</span></p>
+<p>分别给 \(20\)、\(50\)、\(100\) 加上同一个常数后，所得三数构成等比数列。其公比为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac53\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac43\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac32\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac12\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac13\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">By adding the same constant to each of \(20,\) \(50,\) \(100\) a geometric progression results. The common ratio is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac53\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac43\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac32\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac12\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac13\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">13</span></p>
+<p>一组 \(50\) 个数的算术平均数为 \(38\)。若去掉 \(45\) 和 \(55\) 这两个数，则其余各数的平均数为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(36.5\)</span>
+<span class="amc-opt"><b>B</b>\(37\)</span>
+<span class="amc-opt"><b>C</b>\(37.2\)</span>
+<span class="amc-opt"><b>D</b>\(37.5\)</span>
+<span class="amc-opt"><b>E</b>\(37.52\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The arithmetic mean (average) of a set of \(50\) numbers is \(38.\) If two numbers, namely, \(45\) and \(55,\) are discarded, the mean of the remaining set of numbers is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(36.5\)</span><span class="amc-opt"><b>(B)</b> \(37\)</span><span class="amc-opt"><b>(C)</b> \(37.2\)</span><span class="amc-opt"><b>(D)</b> \(37.5\)</span><span class="amc-opt"><b>(E)</b> \(37.52\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">14</span></p>
+<p>给定集合 \(S\)，其元素为零以及所有正、负偶数。对其中任意两个元素施行以下五种运算：\((1)\) 加法，\((2)\) 减法，\((3)\) 乘法，\((4)\) 除法，\((5)\) 求算术平均数。结果一定仍属于 \(S\) 的运算有：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>全部</span>
+<span class="amc-opt"><b>B</b>\(1\)、\(2\)、\(3\)、\(4\)</span>
+<span class="amc-opt"><b>C</b>\(1\)、\(2\)、\(3\)、\(5\)</span>
+<span class="amc-opt"><b>D</b>\(1\)、\(2\)、\(3\)</span>
+<span class="amc-opt"><b>E</b>\(1\)、\(3\)、\(5\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Given the set \(S\) whose elements are zero and the even integers, positive and negative. Of the five operations applied to any pair of elements: \((1)\) addition, \((2)\) subtraction, \((3)\) multiplication, \((4)\) division, \((5)\) finding the arithmetic mean (average), those operations that yield only elements of \(S\) are:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> all</span><span class="amc-opt"><b>(B)</b> \(1,\) \(2,\) \(3,\) \(4\)</span><span class="amc-opt"><b>(C)</b> \(1,\) \(2,\) \(3,\) \(5\)</span><span class="amc-opt"><b>(D)</b> \(1,\) \(2,\) \(3\)</span><span class="amc-opt"><b>(E)</b> \(1,\) \(3,\) \(5\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">15</span></p>
+<p>在一个直角三角形中，斜边的平方等于两条直角边乘积的两倍。该三角形的一个锐角为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(15^\circ\)</span>
+<span class="amc-opt"><b>B</b>\(30^\circ\)</span>
+<span class="amc-opt"><b>C</b>\(45^\circ\)</span>
+<span class="amc-opt"><b>D</b>\(60^\circ\)</span>
+<span class="amc-opt"><b>E</b>\(75^\circ\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In a right triangle the square of the hypotenuse is equal to twice the product of the legs. One of the acute angles of the triangle is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(15^\circ\)</span><span class="amc-opt"><b>(B)</b> \(30^\circ\)</span><span class="amc-opt"><b>(C)</b> \(45^\circ\)</span><span class="amc-opt"><b>(D)</b> \(60^\circ\)</span><span class="amc-opt"><b>(E)</b> \(75^\circ\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">16</span></p>
+<p>表达式 \[ \frac{x^2-3x+2}{x^2-5x+6}\div \frac{x^2-5x+4}{x^2-7x+12}\text{，}\]化简后为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{(x-1)(x-6)}{(x-3)(x-4)}\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{x+3}{x-3}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{x+1}{x-1}\)</span>
+<span class="amc-opt"><b>D</b>\(1\)</span>
+<span class="amc-opt"><b>E</b>\(2\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The expression \[ \frac{x^2-3x+2}{x^2-5x+6}\div \frac{x^2-5x+4}{x^2-7x+12}, \] when simplified, is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{(x-1)(x-6)}{(x-3)(x-4)}\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{x+3}{x-3}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{x+1}{x-1}\)</span><span class="amc-opt"><b>(D)</b> \(1\)</span><span class="amc-opt"><b>(E)</b> \(2\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">17</span></p>
+<p>若 \(y=a+\dfrac bx\)，其中 \(a\) 和 \(b\) 为常数；当 \(x=-1\) 时 \(y=1\)，当 \(x=-5\) 时 \(y=5\)，则 \(a+b\) 等于：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(-1\)</span>
+<span class="amc-opt"><b>B</b>\(0\)</span>
+<span class="amc-opt"><b>C</b>\(1\)</span>
+<span class="amc-opt"><b>D</b>\(10\)</span>
+<span class="amc-opt"><b>E</b>\(11\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If \(y=a+\dfrac bx,\) where \(a\) and \(b\) are constants, and if \(y=1\) when \(x=-1,\) and \(y=5\) when \(x=-5,\) then \(a+b\) equals:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(-1\)</span><span class="amc-opt"><b>(B)</b> \(0\)</span><span class="amc-opt"><b>(C)</b> \(1\)</span><span class="amc-opt"><b>(D)</b> \(10\)</span><span class="amc-opt"><b>(E)</b> \(11\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">18</span></p>
+<p>前 \(n\) 个正整数的算术平均数为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac n2\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{n^2}{2}\)</span>
+<span class="amc-opt"><b>C</b>\(n\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{n-1}{2}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{n+1}{2}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The arithmetic mean (average) of the first \(n\) positive integers is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac n2\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{n^2}{2}\)</span><span class="amc-opt"><b>(C)</b> \(n\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{n-1}{2}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{n+1}{2}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">19</span></p>
+<p>使用 \(1\) 磅、\(3\) 磅和 \(9\) 磅三个不同的砝码；若待称物体和这些砝码均可放在天平任意一盘中，可以称出多少种不同重量的物体？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(15\)</span>
+<span class="amc-opt"><b>B</b>\(13\)</span>
+<span class="amc-opt"><b>C</b>\(11\)</span>
+<span class="amc-opt"><b>D</b>\(9\)</span>
+<span class="amc-opt"><b>E</b>\(7\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">With the use of three different weights, namely, \(1\) lb., \(3\) lb., and \(9\) lb., how many objects of different weights can be weighed, if the objects to be weighed and the given weights may be placed in either pan of the scale?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(15\)</span><span class="amc-opt"><b>(B)</b> \(13\)</span><span class="amc-opt"><b>(C)</b> \(11\)</span><span class="amc-opt"><b>(D)</b> \(9\)</span><span class="amc-opt"><b>(E)</b> \(7\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">20</span></p>
+<p>已知 \(x\) 与 \(y\) 成正比、与 \(z\) 的平方成反比；当 \(y=4\) 且 \(z=14\) 时，\(x=10\)。那么当 \(y=16\) 且 \(z=7\) 时，\(x\) 等于：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(180\)</span>
+<span class="amc-opt"><b>B</b>\(160\)</span>
+<span class="amc-opt"><b>C</b>\(154\)</span>
+<span class="amc-opt"><b>D</b>\(140\)</span>
+<span class="amc-opt"><b>E</b>\(120\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">It is given that \(x\) varies directly as \(y\) and inversely as the square of \(z,\) and that \(x=10\) when \(y=4\) and \(z=14.\) Then, when \(y=16\) and \(z=7,\) \(x\) equals:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(180\)</span><span class="amc-opt"><b>(B)</b> \(160\)</span><span class="amc-opt"><b>(C)</b> \(154\)</span><span class="amc-opt"><b>(D)</b> \(140\)</span><span class="amc-opt"><b>(E)</b> \(120\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">21</span></p>
+<p>若内接于一个圆的等边三角形周长为 \(p\)，则该圆的面积为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{\pi p^2}{3}\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{\pi p^2}{9}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{\pi p^2}{27}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{\pi p^2}{81}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{\pi p^2\sqrt3}{27}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If \(p\) is the perimeter of an equilateral triangle inscribed in a circle, the area of the circle is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{\pi p^2}{3}\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{\pi p^2}{9}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{\pi p^2}{27}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{\pi p^2}{81}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{\pi p^2\sqrt3}{27}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">22</span></p>
+<p>连接一个梯形两条对角线中点的线段长为 \(3\)。若较长的底边长为 \(97\)，则较短的底边长为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(94\)</span>
+<span class="amc-opt"><b>B</b>\(92\)</span>
+<span class="amc-opt"><b>C</b>\(91\)</span>
+<span class="amc-opt"><b>D</b>\(90\)</span>
+<span class="amc-opt"><b>E</b>\(89\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The line joining the midpoints of the diagonals of a trapezoid has length \(3.\) If the longer base is \(97,\) then the shorter base is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(94\)</span><span class="amc-opt"><b>(B)</b> \(92\)</span><span class="amc-opt"><b>(C)</b> \(91\)</span><span class="amc-opt"><b>(D)</b> \(90\)</span><span class="amc-opt"><b>(E)</b> \(89\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">23</span></p>
+<p>方程 \(\log_{10}(a^2-15a)=2\) 的解集包含：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>两个整数</span>
+<span class="amc-opt"><b>B</b>一个整数和一个分数</span>
+<span class="amc-opt"><b>C</b>两个无理数</span>
+<span class="amc-opt"><b>D</b>两个非实数</span>
+<span class="amc-opt"><b>E</b>没有数，即空集</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The set of solutions for the equation \(\log_{10}(a^2-15a)=2\) consists of:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> two integers</span><span class="amc-opt"><b>(B)</b> one integer and one fraction</span><span class="amc-opt"><b>(C)</b> two irrational numbers</span><span class="amc-opt"><b>(D)</b> two non-real numbers</span><span class="amc-opt"><b>(E)</b> no numbers, that is, the set is empty</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">24</span></p>
+<p>一位化学家有 \(m\) 盎司含盐量为 \(m\%\) 的盐水。他必须加入多少盎司盐，才能使溶液的含盐量变为 \(2m\%\)？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{m}{100+m}\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{2m}{100-2m}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{m^2}{100-2m}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{m^2}{100+2m}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{2m}{100+m}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A chemist has \(m\) ounces of salt water that is \(m\%\) salt. How many ounces of salt must he add to make a solution that is \(2m\%\) salt?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{m}{100+m}\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{2m}{100-2m}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{m^2}{100-2m}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{m^2}{100+2m}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{2m}{100+m}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">25</span></p>
+<p>若 \(a\) 大于或等于零，符号 \(|a|\) 表示 \(+a\)；若 \(a\) 小于或等于零，则表示 \(-a\)。符号 \(\lt\) 表示“小于”，符号 \(\gt\) 表示“大于”。满足不等式 \(|3-x|\lt4\) 的 \(x\) 的取值集合，由所有满足下列条件的 \(x\) 组成：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(x^2\lt49\)</span>
+<span class="amc-opt"><b>B</b>\(x^2\gt1\)</span>
+<span class="amc-opt"><b>C</b>\(1\lt x^2\lt49\)</span>
+<span class="amc-opt"><b>D</b>\(-1\lt x\lt7\)</span>
+<span class="amc-opt"><b>E</b>\(-7\lt x\lt1\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The symbol \(|a|\) means \(+a\) if \(a\) is greater than or equal to zero, and \(-a\) if \(a\) is less than or equal to zero; the symbol \(\lt\) means “less than”; the symbol \(\gt\) means “greater than.” The set of values \(x\) satisfying the inequality \(|3-x|\lt4\) consists of all \(x\) such that:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(x^2\lt49\)</span><span class="amc-opt"><b>(B)</b> \(x^2\gt1\)</span><span class="amc-opt"><b>(C)</b> \(1\lt x^2\lt49\)</span><span class="amc-opt"><b>(D)</b> \(-1\lt x\lt7\)</span><span class="amc-opt"><b>(E)</b> \(-7\lt x\lt1\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">26</span></p>
+<p>一个等腰三角形的底边长为 \(\sqrt2\)。两条腰上的中线互相垂直。该三角形的面积为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1.5\)</span>
+<span class="amc-opt"><b>B</b>\(2\)</span>
+<span class="amc-opt"><b>C</b>\(2.5\)</span>
+<span class="amc-opt"><b>D</b>\(3.5\)</span>
+<span class="amc-opt"><b>E</b>\(4\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The base of an isosceles triangle is \(\sqrt2.\) The medians to the legs intersect each other at right angles. The area of the triangle is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1.5\)</span><span class="amc-opt"><b>(B)</b> \(2\)</span><span class="amc-opt"><b>(C)</b> \(2.5\)</span><span class="amc-opt"><b>(D)</b> \(3.5\)</span><span class="amc-opt"><b>(E)</b> \(4\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">27</span></p>
+<p>对于方程</p>
+<p>\[ ix^2-x+2i=0\text{，}\]</p>
+<p>其中 \(i=\sqrt{-1}\)，下列哪一个陈述不正确？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>两根之和为 \(2\)</span>
+<span class="amc-opt"><b>B</b>判别式为 \(9\)</span>
+<span class="amc-opt"><b>C</b>两根都是虚数</span>
+<span class="amc-opt"><b>D</b>可用求根公式求出两根</span>
+<span class="amc-opt"><b>E</b>可在虚数范围内因式分解来求出两根</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Which one of the following statements is not true for the equation</p>
+<p class="amc-en">\[ ix^2-x+2i=0, \]</p>
+<p class="amc-en">where \(i=\sqrt{-1}?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> The sum of the roots is \(2\)</span><span class="amc-opt"><b>(B)</b> The discriminant is \(9\)</span><span class="amc-opt"><b>(C)</b> The roots are imaginary</span><span class="amc-opt"><b>(D)</b> The roots can be found by using the quadratic formula</span><span class="amc-opt"><b>(E)</b> The roots can be found by factoring, using imaginary
+numbers</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">28</span></p>
+<p>在三角形 \(ABC\) 中，\(\overline{AL}\) 平分角 \(A\)，\(\overline{CM}\) 平分角 \(C\)。点 \(L\) 和 \(M\) 分别位于 \(\overline{BC}\) 和 \(\overline{AB}\) 上。三角形 \(ABC\) 的三边为 \(a\)、\(b\) 和 \(c\)。若 \(\dfrac{AM}{MB}=k\dfrac{CL}{LB}\)，则 \(k\) 为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{bc}{a^2}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{a^2}{bc}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac cb\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac ca\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In triangle \(ABC,\) \(\overline{AL}\) bisects angle \(A\) and \(\overline{CM}\) bisects angle \(C.\) Points \(L\) and \(M\) are on \(\overline{BC}\) and \(\overline{AB},\) respectively. The sides of triangle \(ABC\) are \(a,\) \(b,\) and \(c.\) Then \(\dfrac{AM}{MB}=k\dfrac{CL}{LB},\) where \(k\) is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{bc}{a^2}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{a^2}{bc}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac cb\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac ca\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">29</span></p>
+<p>一场考试共有 \(n\) 道题，一名学生在前 \(20\) 道题中答对了 \(15\) 道，其余题目中答对了三分之一。每道题分值相同。若该生得分为 \(50\%\)，则 \(n\) 有多少个不同的可能值？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(4\)</span>
+<span class="amc-opt"><b>B</b>\(3\)</span>
+<span class="amc-opt"><b>C</b>\(2\)</span>
+<span class="amc-opt"><b>D</b>\(1\)</span>
+<span class="amc-opt"><b>E</b>无法确定</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">On an examination of \(n\) questions a student answers correctly \(15\) of the first \(20.\) Of the remaining questions he answers one third correctly. All the questions have the same credit. If the student’s mark is \(50\%,\) how many different values of \(n\) can there be?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(4\)</span><span class="amc-opt"><b>(B)</b> \(3\)</span><span class="amc-opt"><b>(C)</b> \(2\)</span><span class="amc-opt"><b>(D)</b> \(1\)</span><span class="amc-opt"><b>(E)</b> the problem cannot be solved</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">30</span></p>
+<p>\(A\) 跑完一圈圆形跑道需 \(40\) 秒。\(B\) 沿相反方向跑，每隔 \(15\) 秒与 \(A\) 相遇一次。\(B\) 跑完一圈需多少秒？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(12\dfrac12\)</span>
+<span class="amc-opt"><b>B</b>\(24\)</span>
+<span class="amc-opt"><b>C</b>\(25\)</span>
+<span class="amc-opt"><b>D</b>\(27\dfrac12\)</span>
+<span class="amc-opt"><b>E</b>\(55\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">\(A\) can run around a circular track in \(40\) seconds. \(B,\) running in the opposite direction, meets \(A\) every \(15\) seconds. What is \(B\)’s time to run around the track, expressed in seconds?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(12\dfrac12\)</span><span class="amc-opt"><b>(B)</b> \(24\)</span><span class="amc-opt"><b>(C)</b> \(25\)</span><span class="amc-opt"><b>(D)</b> \(27\dfrac12\)</span><span class="amc-opt"><b>(E)</b> \(55\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">31</span></p>
+<p>一个面积为 \(40\) 的正方形内接于半圆。若在同一半径的整圆中内接一个正方形，则其面积为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(80\)</span>
+<span class="amc-opt"><b>B</b>\(100\)</span>
+<span class="amc-opt"><b>C</b>\(120\)</span>
+<span class="amc-opt"><b>D</b>\(160\)</span>
+<span class="amc-opt"><b>E</b>\(200\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A square, with an area of \(40,\) is inscribed in a semicircle. The area of a square that could be inscribed in the entire circle with the same radius is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(80\)</span><span class="amc-opt"><b>(B)</b> \(100\)</span><span class="amc-opt"><b>(C)</b> \(120\)</span><span class="amc-opt"><b>(D)</b> \(160\)</span><span class="amc-opt"><b>(E)</b> \(200\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">32</span></p>
+<p>从点 \(A\) 向一个圆所作切线段长 \(l\) 是半径 \(r\) 的 \(\dfrac43\)。点 \(A\) 到该圆的最短距离为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac12r\)</span>
+<span class="amc-opt"><b>B</b>\(r\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac12l\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac23l\)</span>
+<span class="amc-opt"><b>E</b>介于 \(r\) 与 \(l\) 之间的一个值</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The length \(l\) of a tangent, drawn from a point \(A\) to a circle, is \(\dfrac43\) of the radius \(r.\) The (shortest) distance from \(A\) to the circle is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac12r\)</span><span class="amc-opt"><b>(B)</b> \(r\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac12l\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac23l\)</span><span class="amc-opt"><b>(E)</b> a value between \(r\) and \(l\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">33</span></p>
+<p>调和数列是指其各项的倒数组成等差数列的数列。令 \(S_n\) 表示调和数列前 \(n\) 项之和；例如，\(S_3\) 表示前三项之和。若某调和数列前三项为 \(3\)、\(4\)、\(6\)，则：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(S_4=20\)</span>
+<span class="amc-opt"><b>B</b>\(S_4=25\)</span>
+<span class="amc-opt"><b>C</b>\(S_5=49\)</span>
+<span class="amc-opt"><b>D</b>\(S_6=49\)</span>
+<span class="amc-opt"><b>E</b>\(S_2=\dfrac12S_4\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A harmonic progression is a sequence of numbers such that their reciprocals are in arithmetic progression. Let \(S_n\) represent the sum of the first \(n\) terms of the harmonic progression; for example, \(S_3\) represents the sum of the first three terms. If the first three terms of a harmonic progression are \(3,\) \(4,\) \(6,\) then:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(S_4=20\)</span><span class="amc-opt"><b>(B)</b> \(S_4=25\)</span><span class="amc-opt"><b>(C)</b> \(S_5=49\)</span><span class="amc-opt"><b>(D)</b> \(S_6=49\)</span><span class="amc-opt"><b>(E)</b> \(S_2=\dfrac12S_4\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">34</span></p>
+<p>设 \(x^2-3x+1=0\) 的两根为 \(r\) 和 \(s\)。则表达式 \(r^2+s^2\) 是：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>正整数</span>
+<span class="amc-opt"><b>B</b>大于 \(1\) 的正分数</span>
+<span class="amc-opt"><b>C</b>小于 \(1\) 的正分数</span>
+<span class="amc-opt"><b>D</b>无理数</span>
+<span class="amc-opt"><b>E</b>虚数</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let the roots of \(x^2-3x+1=0\) be \(r\) and \(s.\) Then the expression \(r^2+s^2\) is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> a positive integer</span><span class="amc-opt"><b>(B)</b> a positive fraction greater than \(1\)</span><span class="amc-opt"><b>(C)</b> a positive fraction less than \(1\)</span><span class="amc-opt"><b>(D)</b> an irrational number</span><span class="amc-opt"><b>(E)</b> an imaginary number</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">35</span></p>
+<p>符号 \(\ge\) 表示“大于或等于”，符号 \(\le\) 表示“小于或等于”。在方程 \((x-m)^2-(x-n)^2=(m-n)^2\) 中，\(m\) 是固定正数，\(n\) 是固定负数。满足该方程的 \(x\) 的集合为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(x\ge0\)</span>
+<span class="amc-opt"><b>B</b>\(x\le n\)</span>
+<span class="amc-opt"><b>C</b>\(x=0\)</span>
+<span class="amc-opt"><b>D</b>所有实数的集合</span>
+<span class="amc-opt"><b>E</b>以上都不是</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The symbol \(\ge\) means “greater than or equal to”; the symbol \(\le\) means “less than or equal to.” In the equation \((x-m)^2-(x-n)^2=(m-n)^2,\) \(m\) is a fixed positive number, and \(n\) is a fixed negative number. The set of values \(x\) satisfying the equation is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(x\ge0\)</span><span class="amc-opt"><b>(B)</b> \(x\le n\)</span><span class="amc-opt"><b>(C)</b> \(x=0\)</span><span class="amc-opt"><b>(D)</b> the set of all real numbers</span><span class="amc-opt"><b>(E)</b> none of these</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">36</span></p>
+<p>一个三角形的底边长为 \(80\)，其中一个底角为 \(60^\circ\)，另两边长度之和为 \(90\)。最短边长为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(45\)</span>
+<span class="amc-opt"><b>B</b>\(40\)</span>
+<span class="amc-opt"><b>C</b>\(36\)</span>
+<span class="amc-opt"><b>D</b>\(17\)</span>
+<span class="amc-opt"><b>E</b>\(12\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The base of a triangle is \(80,\) and one of the base angles is \(60^\circ.\) The sum of the lengths of the other two sides is \(90.\) The shortest side is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(45\)</span><span class="amc-opt"><b>(B)</b> \(40\)</span><span class="amc-opt"><b>(C)</b> \(36\)</span><span class="amc-opt"><b>(D)</b> \(17\)</span><span class="amc-opt"><b>(E)</b> \(12\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">37</span></p>
+<p>乘积 \[ \begin{aligned} &amp;\left(1-\dfrac13\right)\left(1-\dfrac14\right)\\ &amp;\quad{}\cdot\left(1-\dfrac15\right)\cdots\left(1-\dfrac1n\right) \end{aligned} \] 化简后为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac1n\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac2n\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{2(n-1)}n\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{2}{n(n+1)}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{3}{n(n+1)}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">When simplified the product \[ \begin{aligned} &amp;\left(1-\dfrac13\right)\left(1-\dfrac14\right)\\ &amp;\quad{}\cdot\left(1-\dfrac15\right)\cdots\left(1-\dfrac1n\right) \end{aligned} \] becomes:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac1n\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac2n\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{2(n-1)}n\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{2}{n(n+1)}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{3}{n(n+1)}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">38</span></p>
+<p>若 \(4x+\sqrt{2x}=1\)，则 \(x\)：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>是整数</span>
+<span class="amc-opt"><b>B</b>是分数</span>
+<span class="amc-opt"><b>C</b>是无理数</span>
+<span class="amc-opt"><b>D</b>是虚数</span>
+<span class="amc-opt"><b>E</b>可能有两个不同的值</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If \(4x+\sqrt{2x}=1,\) then \(x:\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> is an integer</span><span class="amc-opt"><b>(B)</b> is fractional</span><span class="amc-opt"><b>(C)</b> is irrational</span><span class="amc-opt"><b>(D)</b> is imaginary</span><span class="amc-opt"><b>(E)</b> may have two different values</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">39</span></p>
+<p>设 \(S\) 为下列数列前九项之和：</p>
+<p>\[ \begin{gathered} x+a,\quad x^2+2a,\\ x^3+3a,\quad\ldots \end{gathered}\text{。}\]</p>
+<p>则 \(S\) 等于：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{50a+x+x^8}{x+1}\)</span>
+<span class="amc-opt"><b>B</b>\(50a-\dfrac{x+x^{10}}{x-1}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{x^9-1}{x+1}+45a\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{x^{10}-x}{x-1}+45a\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{x^{11}-x}{x-1}+45a\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(S\) be the sum of the first nine terms of the sequence</p>
+<p class="amc-en">\[ \begin{gathered} x+a,\quad x^2+2a,\\ x^3+3a,\quad\ldots. \end{gathered} \]</p>
+<p class="amc-en">Then \(S\) equals:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{50a+x+x^8}{x+1}\)</span><span class="amc-opt"><b>(B)</b> \(50a-\dfrac{x+x^{10}}{x-1}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{x^9-1}{x+1}+45a\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{x^{10}-x}{x-1}+45a\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{x^{11}-x}{x-1}+45a\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">40</span></p>
+<p>在三角形 \(ABC\) 中，\(\overline{BD}\) 是一条中线。\(\overline{CF}\) 与 \(\overline{BD}\) 相交于 \(E\)，且 \(BE=ED\)。点 \(F\) 位于 \(\overline{AB}\) 上。若 \(BF=5\)，则 \(BA\) 等于：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(10\)</span>
+<span class="amc-opt"><b>B</b>\(12\)</span>
+<span class="amc-opt"><b>C</b>\(15\)</span>
+<span class="amc-opt"><b>D</b>\(20\)</span>
+<span class="amc-opt"><b>E</b>以上都不是</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In triangle \(ABC,\) \(\overline{BD}\) is a median. \(\overline{CF}\) intersects \(\overline{BD}\) at \(E\) so that \(BE=ED.\) Point \(F\) is on \(\overline{AB}.\) Then, if \(BF=5,\) \(BA\) equals:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(10\)</span><span class="amc-opt"><b>(B)</b> \(12\)</span><span class="amc-opt"><b>(C)</b> \(15\)</span><span class="amc-opt"><b>(D)</b> \(20\)</span><span class="amc-opt"><b>(E)</b> none of these</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">41</span></p>
+<p>在一条直线的同一侧画三个圆：一个半径为 \(4\) 英寸的圆与该直线相切，另两个圆全等，且每个圆都与该直线及另外两个圆相切。两个全等圆的半径为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(24\)</span>
+<span class="amc-opt"><b>B</b>\(20\)</span>
+<span class="amc-opt"><b>C</b>\(18\)</span>
+<span class="amc-opt"><b>D</b>\(16\)</span>
+<span class="amc-opt"><b>E</b>\(12\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">On the same side of a straight line three circles are drawn as follows: a circle with a radius of \(4\) inches is tangent to the line, the other two circles are equal, and each is tangent to the line and to the other two circles. The radius of the equal circles is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(24\)</span><span class="amc-opt"><b>(B)</b> \(20\)</span><span class="amc-opt"><b>(C)</b> \(18\)</span><span class="amc-opt"><b>(D)</b> \(16\)</span><span class="amc-opt"><b>(E)</b> \(12\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">42</span></p>
+<p>给定三个正整数 \(a\)、\(b\) 和 \(c\)。它们的最大公因数为 \(D\)，最小公倍数为 \(M\)。下列哪两个陈述正确？</p>
+<p>\((1)\) 乘积 \(MD\) 不可能小于 \(abc\)。</p>
+<p>\((2)\) 乘积 \(MD\) 不可能大于 \(abc\)。</p>
+<p>\((3)\) 当且仅当 \(a\)、\(b\)、\(c\) 都是质数时，\(MD\) 等于 \(abc\)。</p>
+<p>\((4)\) 当且仅当 \(a\)、\(b\)、\(c\) 两两互质时，\(MD\) 等于 \(abc\)。（即任意两个数都没有大于 \(1\) 的公因数。）</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1\)、\(2\)</span>
+<span class="amc-opt"><b>B</b>\(1\)、\(3\)</span>
+<span class="amc-opt"><b>C</b>\(1\)、\(4\)</span>
+<span class="amc-opt"><b>D</b>\(2\)、\(3\)</span>
+<span class="amc-opt"><b>E</b>\(2\)、\(4\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Given three positive integers \(a,\) \(b,\) and \(c.\) Their greatest common divisor is \(D;\) their least common multiple is \(M.\) Then, which two of the following statements are true?</p>
+<p class="amc-en">\((1)\) The product \(MD\) cannot be less than \(abc.\)</p>
+<p class="amc-en">\((2)\) The product \(MD\) cannot be greater than \(abc.\)</p>
+<p class="amc-en">\((3)\) \(MD\) equals \(abc\) if and only if \(a,\) \(b,\) \(c\) are each prime.</p>
+<p class="amc-en">\((4)\) \(MD\) equals \(abc\) if and only if \(a,\) \(b,\) \(c\) are relatively prime in pairs. (This means: no two have a common factor greater than \(1.\))</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1,\) \(2\)</span><span class="amc-opt"><b>(B)</b> \(1,\) \(3\)</span><span class="amc-opt"><b>(C)</b> \(1,\) \(4\)</span><span class="amc-opt"><b>(D)</b> \(2,\) \(3\)</span><span class="amc-opt"><b>(E)</b> \(2,\) \(4\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">43</span></p>
+<p>一个三角形的三边长为 \(25\)、\(39\)、\(40\)。其外接圆直径为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{133}{3}\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{125}{3}\)</span>
+<span class="amc-opt"><b>C</b>\(42\)</span>
+<span class="amc-opt"><b>D</b>\(41\)</span>
+<span class="amc-opt"><b>E</b>\(40\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The sides of a triangle are \(25,\) \(39,\) and \(40.\) The diameter of the circumscribed circle is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{133}{3}\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{125}{3}\)</span><span class="amc-opt"><b>(C)</b> \(42\)</span><span class="amc-opt"><b>(D)</b> \(41\)</span><span class="amc-opt"><b>(E)</b> \(40\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">44</span></p>
+<p>方程 \(x^2+bx+c=0\) 的两根均为大于 \(1\) 的实数。令 \(s=b+c+1\)。则 \(s\)：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>可能小于零</span>
+<span class="amc-opt"><b>B</b>可能等于零</span>
+<span class="amc-opt"><b>C</b>必大于零</span>
+<span class="amc-opt"><b>D</b>必小于零</span>
+<span class="amc-opt"><b>E</b>必介于 \(-1\) 与 \(1\) 之间</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The roots of \(x^2+bx+c=0\) are both real and greater than \(1.\) Let \(s=b+c+1.\) Then \(s:\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> may be less than zero</span><span class="amc-opt"><b>(B)</b> may be equal to zero</span><span class="amc-opt"><b>(C)</b> must be greater than zero</span><span class="amc-opt"><b>(D)</b> must be less than zero</span><span class="amc-opt"><b>(E)</b> must be between \(-1\) and \(1\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">45</span></p>
+<p>若 \[ \begin{aligned} &amp;(\log_3x)(\log_x2x)(\log_{2x}y)\\ &amp;\qquad=\log_xx^2 \end{aligned}\text{，}\]则 \(y\) 等于：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac92\)</span>
+<span class="amc-opt"><b>B</b>\(9\)</span>
+<span class="amc-opt"><b>C</b>\(18\)</span>
+<span class="amc-opt"><b>D</b>\(27\)</span>
+<span class="amc-opt"><b>E</b>\(81\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If \[ \begin{aligned} &amp;(\log_3x)(\log_x2x)(\log_{2x}y)\\ &amp;\qquad=\log_xx^2, \end{aligned} \] then \(y\) equals:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac92\)</span><span class="amc-opt"><b>(B)</b> \(9\)</span><span class="amc-opt"><b>(C)</b> \(18\)</span><span class="amc-opt"><b>(D)</b> \(27\)</span><span class="amc-opt"><b>(E)</b> \(81\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">46</span></p>
+<p>一名学生在为期 \(d\) 天的假期中观察到：</p>
+<p>\((1)\) 上午或下午共下雨 \(7\) 次；</p>
+<p>\((2)\) 若下午下雨，则当天上午晴朗；</p>
+<p>\((3)\) 有五个晴朗的下午；</p>
+<p>\((4)\) 有六个晴朗的上午。</p>
+<p>则 \(d\) 等于：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(7\)</span>
+<span class="amc-opt"><b>B</b>\(9\)</span>
+<span class="amc-opt"><b>C</b>\(10\)</span>
+<span class="amc-opt"><b>D</b>\(11\)</span>
+<span class="amc-opt"><b>E</b>\(12\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A student on vacation for \(d\) days observed that</p>
+<p class="amc-en">\((1)\) it rained \(7\) times, morning or afternoon;</p>
+<p class="amc-en">\((2)\) when it rained in the afternoon, it was clear in the morning;</p>
+<p class="amc-en">\((3)\) there were five clear afternoons;</p>
+<p class="amc-en">\((4)\) there were six clear mornings.</p>
+<p class="amc-en">Then \(d\) equals:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(7\)</span><span class="amc-opt"><b>(B)</b> \(9\)</span><span class="amc-opt"><b>(C)</b> \(10\)</span><span class="amc-opt"><b>(D)</b> \(11\)</span><span class="amc-opt"><b>(E)</b> \(12\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">47</span></p>
+<p>假设下列三个陈述为真：</p>
+<p>I. 所有新生都是人。</p>
+<p>II. 所有学生都是人。</p>
+<p>III. 有些学生会思考。</p>
+<p>考虑下列四个陈述：</p>
+<p>\((1)\) 所有新生都是学生。</p>
+<p>\((2)\) 有些人会思考。</p>
+<p>\((3)\) 没有新生会思考。</p>
+<p>\((4)\) 有些会思考的人不是学生。</p>
+<p>其中可由 I、II、III 逻辑推出的是：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(2\)</span>
+<span class="amc-opt"><b>B</b>\(4\)</span>
+<span class="amc-opt"><b>C</b>\(2\)、\(3\)</span>
+<span class="amc-opt"><b>D</b>\(2\)、\(4\)</span>
+<span class="amc-opt"><b>E</b>\(1\)、\(2\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Assume that the following three statements are true:</p>
+<p class="amc-en">I. All freshmen are human.</p>
+<p class="amc-en">II. All students are human.</p>
+<p class="amc-en">III. Some students think.</p>
+<p class="amc-en">Given the following four statements:</p>
+<p class="amc-en">\((1)\) All freshmen are students.</p>
+<p class="amc-en">\((2)\) Some humans think.</p>
+<p class="amc-en">\((3)\) No freshmen think.</p>
+<p class="amc-en">\((4)\) Some humans who think are not students.</p>
+<p class="amc-en">Those which are logical consequences of I, II, and III are:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(2\)</span><span class="amc-opt"><b>(B)</b> \(4\)</span><span class="amc-opt"><b>(C)</b> \(2,\) \(3\)</span><span class="amc-opt"><b>(D)</b> \(2,\) \(4\)</span><span class="amc-opt"><b>(E)</b> \(1,\) \(2\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">48</span></p>
+<p>给定多项式 \[ \begin{aligned} &amp;a_0x^n+a_1x^{n-1}+\cdots\\ &amp;\qquad{}+a_{n-1}x+a_n \end{aligned}\text{，}\]其中 \(n\) 为正整数或零，\(a_0\) 为正整数，其余各个 \(a\) 为整数或零。令 \[ \begin{aligned} h={}&amp;n+a_0+|a_1|+|a_2|\\ &amp;{}+\cdots+|a_n| \end{aligned}\text{。}\]【例题 \(25\) 说明了 \(|x|\) 的含义。】满足 \(h=3\) 的多项式个数为：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(3\)</span>
+<span class="amc-opt"><b>B</b>\(5\)</span>
+<span class="amc-opt"><b>C</b>\(6\)</span>
+<span class="amc-opt"><b>D</b>\(7\)</span>
+<span class="amc-opt"><b>E</b>\(9\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Given the polynomial \[ \begin{aligned} &amp;a_0x^n+a_1x^{n-1}+\cdots\\ &amp;\qquad{}+a_{n-1}x+a_n, \end{aligned} \] where \(n\) is a positive integer or zero, and \(a_0\) is a positive integer. The remaining \(a\)’s are integers or zero. Set \[ \begin{aligned} h={}&amp;n+a_0+|a_1|+|a_2|\\ &amp;{}+\cdots+|a_n|. \end{aligned} \] [See example \(25\) for the meaning of \(|x|.\)] The number of polynomials with \(h=3\) is:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(3\)</span><span class="amc-opt"><b>(B)</b> \(5\)</span><span class="amc-opt"><b>(C)</b> \(6\)</span><span class="amc-opt"><b>(D)</b> \(7\)</span><span class="amc-opt"><b>(E)</b> \(9\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">49</span></p>
+<p>对无穷级数 \[ \begin{aligned} &amp;1-\dfrac12-\dfrac14+\dfrac18\\ &amp;{}-\dfrac1{16}-\dfrac1{32}+\dfrac1{64}\\ &amp;{}-\dfrac1{128}-\cdots \end{aligned}\text{，}\]设其极限和为 \(S\)。则 \(S\) 等于：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(0\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac27\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac67\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac9{32}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{27}{32}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For the infinite series \[ \begin{aligned} &amp;1-\dfrac12-\dfrac14+\dfrac18\\ &amp;{}-\dfrac1{16}-\dfrac1{32}+\dfrac1{64}\\ &amp;{}-\dfrac1{128}-\cdots, \end{aligned} \] let \(S\) be the (limiting) sum. Then \(S\) equals:</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(0\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac27\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac67\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac9{32}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{27}{32}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">50</span></p>
+<p>一个有 \(x\) 名成员的俱乐部按以下两条规则组成四个委员会：</p>
+<p>\((1)\) 每名成员属于且只属于两个委员会。</p>
+<p>\((2)\) 任意两个委员会恰有一名共同成员。</p>
+<p>则 \(x\)：</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>无法确定</span>
+<span class="amc-opt"><b>B</b>在 \(8\) 与 \(16\) 之间恰有一个值</span>
+<span class="amc-opt"><b>C</b>在 \(8\) 与 \(16\) 之间有两个值</span>
+<span class="amc-opt"><b>D</b>在 \(4\) 与 \(8\) 之间恰有一个值</span>
+<span class="amc-opt"><b>E</b>在 \(4\) 与 \(8\) 之间有两个值</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A club with \(x\) members is organized into four committees in accordance with these two rules:</p>
+<p class="amc-en">\((1)\) Each member belongs to two and only two committees.</p>
+<p class="amc-en">\((2)\) Each pair of committees has one and only one member in common.</p>
+<p class="amc-en">Then \(x:\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> cannot be determined</span><span class="amc-opt"><b>(B)</b> has a single value between \(8\) and \(16\)</span><span class="amc-opt"><b>(C)</b> has two values between \(8\) and \(16\)</span><span class="amc-opt"><b>(D)</b> has a single value between \(4\) and \(8\)</span><span class="amc-opt"><b>(E)</b> has two values between \(4\) and \(8\)</span></p>
+</div>
+  </section>
+
+  
+  <details class="answer" id="answer">
+    <summary>
+      <span class="s-title">查看答案解析与下载</span>
+    </summary>
+    <div class="answer-body">
+      <h3>答案速查</h3>
+<table class="tbl"><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>答案</td><td>B</td><td>D</td><td>E</td><td>C</td><td>A</td><td>D</td><td>D</td><td>A</td><td>C</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr><tr><td>答案</td><td>D</td><td>D</td><td>A</td><td>D</td><td>D</td><td>C</td><td>D</td><td>E</td><td>E</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr><tr><td>答案</td><td>B</td><td>B</td><td>C</td><td>C</td><td>A</td><td>C</td><td>D</td><td>A</td><td>A</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>28</td><td>29</td><td>30</td><td>31</td><td>32</td><td>33</td><td>34</td><td>35</td><td>36</td></tr><tr><td>答案</td><td>E</td><td>D</td><td>B</td><td>B</td><td>C</td><td>B</td><td>A</td><td>E</td><td>D</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>37</td><td>38</td><td>39</td><td>40</td><td>41</td><td>42</td><td>43</td><td>44</td><td>45</td></tr><tr><td>答案</td><td>B</td><td>B</td><td>D</td><td>C</td><td>D</td><td>E</td><td>B</td><td>C</td><td>B</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>46</td><td>47</td><td>48</td><td>49</td><td>50</td></tr><tr><td>答案</td><td>B</td><td>A</td><td>B</td><td>B</td><td>D</td></tr></table>
+<p class="muted">答案串：BDECADDACDDADDCDEEBBCCACDAAEDBBCBAEDBBDCDEBCBBABBD</p>
+<h3>逐题解析</h3>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">1</span> 答案 <b>B</b></p>
+<p>若原棱长为 \(s\)，则新棱长为 \(1.5s\)。因此表面积变为原来的 \[ (1.5)^2=2.25 \] 倍。增加量是原表面积的 \(1.25\) 倍，即 \(125\%\)。</p>
+<p>因此，正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If the original edge length is \(s,\) the new edge length is \(1.5s.\) Thus the surface area is multiplied by \[ (1.5)^2=2.25. \] The increase is \(1.25\) times the original area, or \(125\%.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">2</span> 答案 <b>D</b></p>
+<p>设所求距离为 \(x\)。平行线上方的三角形与原三角形相似，线性比为 \(1-x\)。其面积为原三角形的一半，所以 \[ (1-x)^2=\frac12\text{。}\]因为 \(0\lt x\lt1\)，所以 \(1-x=\frac{1}{\sqrt2}\)，从而 \[ x=1-\frac1{\sqrt2}=\frac{2-\sqrt2}{2}\text{。}\]</p>
+<p>因此，正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(x\) be the requested distance. The triangle above the parallel line is similar to the original triangle, with linear ratio \(1-x.\) Its area is half the original area, so \[ (1-x)^2=\frac12. \] Since \(0\lt x\lt1,\) we have \(1-x=\frac{1}{\sqrt2},\) and therefore \[ x=1-\frac1{\sqrt2}=\frac{2-\sqrt2}{2}. \]</p>
+<p class="amc-en">Therefore, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">3</span> 答案 <b>E</b></p>
+<p>筝形的对角线可以互相垂直，但它未必是菱形、矩形、正方形或等腰梯形。因此，仅有对角线垂直这一条件不能保证它属于前四类中的任何一类。</p>
+<p>因此，正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A kite can have perpendicular diagonals without being a rhombus, rectangle, square, or isosceles trapezoid. Therefore perpendicular diagonals alone do not force any of the first four classifications.</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">4</span> 答案 <b>C</b></p>
+<p>设三部分为 \(x,\frac{x}{3}\) 和 \(\frac{x}{6}\)。则 \[ x+\frac x3+\frac x6=\frac32x=78\text{，}\]所以 \(x=52\)。中间一部分为 \[ \frac{x}{3}=\frac{52}{3}=17\frac13\text{。}\]</p>
+<p>因此，正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let the parts be \(x,\frac{x}{3},\) and \(\frac{x}{6}.\) Then \[ x+\frac x3+\frac x6=\frac32x=78, \] so \(x=52.\) The middle part is \[ \frac{x}{3}=\frac{52}{3}=17\frac13. \]</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">5</span> 答案 <b>A</b></p>
+<p>利用同底数幂的乘法法则，\[ \begin{aligned} 256^{0.16}\cdot256^{0.09} &amp;=256^{0.25}\\ &amp;=256^{\frac{1}{4}}=4 \end{aligned}\text{。}\]</p>
+<p>因此，正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Using the product rule for powers, \[ \begin{aligned} 256^{0.16}\cdot256^{0.09} &amp;=256^{0.25}\\ &amp;=256^{\frac{1}{4}}=4. \end{aligned} \]</p>
+<p class="amc-en">Therefore, the correct answer is <b>A</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">6</span> 答案 <b>D</b></p>
+<p>逆命题声称每个矩形都是正方形，这是假的。否命题声称每个不是正方形的四边形都不是矩形，这也是假的，因为非正方形的矩形就是一个反例。</p>
+<p>因此两个命题都不为真，正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The converse says that every rectangle is a square, which is false. The inverse says that every quadrilateral that is not a square is not a rectangle, which is also false because a nonsquare rectangle is a counterexample.</p>
+<p class="amc-en">Thus neither statement is true, and the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">7</span> 答案 <b>D</b></p>
+<p>由勾股定理得 \[ a^2+(a+d)^2=(a+2d)^2\text{。}\]化简得 \[ \begin{aligned} a^2-2ad-3d^2 &amp;=0,\\ (a-3d)(a+d) &amp;=0 \end{aligned}\text{。}\]因为二者为正，所以排除 \(a=-d\)，故 \(a=3d\)。</p>
+<p>因此比为 \(3:1\)，正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The Pythagorean theorem gives \[ a^2+(a+d)^2=(a+2d)^2. \] Simplifying, \[ \begin{aligned} a^2-2ad-3d^2 &amp;=0,\\ (a-3d)(a+d) &amp;=0. \end{aligned} \] Positivity excludes \(a=-d,\) so \(a=3d.\)</p>
+<p class="amc-en">Thus the ratio is \(3:1,\) and the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">8</span> 答案 <b>A</b></p>
+<p>配方得 \[ x^2-6x+13=(x-3)^2+4\text{。}\]此式至少为 \(4\)，并在 \(x=3\) 时取等号。</p>
+<p>因此，正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Completing the square, \[ x^2-6x+13=(x-3)^2+4. \] This expression is at least \(4,\) with equality at \(x=3.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">9</span> 答案 <b>C</b></p>
+<p>前三个儿子共得到牛群的 \[ \frac12+\frac14+\frac15=\frac{19}{20}\text{。}\]因此剩余的 \(\frac{1}{20}\) 是 \(7\) 头牛，所以 \(n=140\)。</p>
+<p>因此，正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The first three sons receive \[ \frac12+\frac14+\frac15=\frac{19}{20} \] of the herd. Thus the remaining \(\frac{1}{20}\) of the herd is \(7,\) so \(n=140.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">10</span> 答案 <b>D</b></p>
+<p>三角形 \(AED\) 和 \(ABC\) 的底边位于同一直线 \(AC\) 上。由于 \[ \frac{AD}{AB}=\frac{1.2}{3.6}=\frac13\text{，}\]点 \(D\) 到直线 \(AC\) 的垂直距离是点 \(B\) 到该直线相应距离的三分之一。要使面积相等，必须有 \[ AE\left(\frac h3\right)=AC(h)\text{，}\]因此 \(AE=3AC=10.8\)。</p>
+<p>因此，正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Triangles \(AED\) and \(ABC\) use bases on the same line \(AC.\) Since \[ \frac{AD}{AB}=\frac{1.2}{3.6}=\frac13, \] the perpendicular distance from \(D\) to line \(AC\) is one-third the corresponding distance from \(B.\) Equality of areas therefore requires \[ AE\left(\frac h3\right)=AC(h), \] so \(AE=3AC=10.8.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">11</span> 答案 <b>D</b></p>
+<p>因为 \[ 0.0625=\frac1{16}=2^{-4}\text{，}\]所以 \(\log_2(0.0625)=-4\)。</p>
+<p>因此，正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since \[ 0.0625=\frac1{16}=2^{-4}, \] we have \(\log_2(0.0625)=-4.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">12</span> 答案 <b>A</b></p>
+<p>等比数列的条件为 \[ (50+c)^2=(20+c)(100+c)\text{。}\]展开并消去 \(c^2\) 得 \(500=20c\)，所以 \(c=25\)。公比为 \[ \frac{50+25}{20+25}=\frac{75}{45}=\frac53\text{。}\]</p>
+<p>因此，正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The geometric-progression condition is \[ (50+c)^2=(20+c)(100+c). \] Expanding and cancelling \(c^2\) gives \(500=20c,\) so \(c=25.\) The common ratio is \[ \frac{50+25}{20+25}=\frac{75}{45}=\frac53. \]</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">13</span> 答案 <b>D</b></p>
+<p>原来的总和为 \(50\cdot38=1900\)。去掉 \(45\) 和 \(55\) 后，剩余总和为 \(1800\)，所以新的平均数为 \[ \frac{1800}{48}=37.5\text{。}\]</p>
+<p>因此，正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The original sum is \(50\cdot38=1900.\) After removing \(45\) and \(55,\) the remaining sum is \(1800,\) so the new mean is \[ \frac{1800}{48}=37.5. \]</p>
+<p class="amc-en">Therefore, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">14</span> 答案 <b>D</b></p>
+<p>偶数在加法、减法和乘法下封闭。除法不成立，因为 \(\frac{2}{4}=\frac{1}{2}\notin S\)。求平均数也不成立，因为 \(0\) 与 \(2\) 的平均数是 \(1\notin S\)。</p>
+<p>因此只有运算 \(1\)、\(2\) 和 \(3\) 总是成立，正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Even integers are closed under addition, subtraction, and multiplication. Division fails, since \(\frac{2}{4}=\frac{1}{2}\notin S.\) Averaging fails, since the mean of \(0\) and \(2\) is \(1\notin S.\)</p>
+<p class="amc-en">Thus only operations \(1,\) \(2,\) and \(3\) always work, and the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">15</span> 答案 <b>C</b></p>
+<p>若两条直角边为 \(a,b\)，斜边为 \(c\)，则 \[ a^2+b^2=c^2=2ab\text{。}\]因此 \((a-b)^2=0\)，所以两条直角边相等。这个直角三角形是等腰三角形，其锐角均为 \(45^\circ\)。</p>
+<p>因此，正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If the legs are \(a,b\) and the hypotenuse is \(c,\) then \[ a^2+b^2=c^2=2ab. \] Hence \((a-b)^2=0,\) so the legs are equal. The right triangle is isosceles and its acute angles are \(45^\circ.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">16</span> 答案 <b>D</b></p>
+<p>因式分解并乘以倒数得 \[ \begin{aligned} &amp;\frac{(x-1)(x-2)}{(x-2)(x-3)}\\ &amp;\quad{}\cdot \frac{(x-3)(x-4)}{(x-1)(x-4)}=1 \end{aligned} \] 对原表达式定义域内的每个值都成立。</p>
+<p>因此，正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Factoring and multiplying by the reciprocal gives \[ \begin{aligned} &amp;\frac{(x-1)(x-2)}{(x-2)(x-3)}\\ &amp;\quad{}\cdot \frac{(x-3)(x-4)}{(x-1)(x-4)}=1 \end{aligned} \] for every value in the domain of the original expression.</p>
+<p class="amc-en">Therefore, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">17</span> 答案 <b>E</b></p>
+<p>两个条件给出 \[ a-b=1,\qquad a-\frac b5=5\text{。}\]两式相减得 \(\frac{4b}{5}=4\)，所以 \(b=5\) 且 \(a=6\)。因此 \(a+b=11\)。</p>
+<p>因此，正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The two conditions give \[ a-b=1,\qquad a-\frac b5=5. \] Subtracting yields \(\frac{4b}{5}=4,\) so \(b=5\) and \(a=6.\) Therefore \(a+b=11.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">18</span> 答案 <b>E</b></p>
+<p>前 \(n\) 个正整数之和为 \(\frac{n(n+1)}{2}\)。除以 \(n\) 得平均数 \[ \frac{n+1}{2}\text{。}\]</p>
+<p>因此，正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The sum of the first \(n\) positive integers is \(\frac{n(n+1)}{2}.\) Dividing by \(n\) gives the mean \[ \frac{n+1}{2}. \]</p>
+<p class="amc-en">Therefore, the correct answer is <b>E</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">19</span> 答案 <b>B</b></p>
+<p>对砝码 \(1,3,9\) 使用系数 \(-1,0,1\)，平衡三进制可以表示从 \(1\) 到 \[ 1+3+9=13 \] 的每个整数重量。因此可以称量 \(13\) 种不同的正重量。</p>
+<p>因此，正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Using coefficients \(-1,0,1\) for the weights \(1,3,9,\) balanced ternary represents every integer weight from \(1\) through \[ 1+3+9=13. \] Thus there are \(13\) different positive object weights that can be measured.</p>
+<p class="amc-en">Therefore, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">20</span> 答案 <b>B</b></p>
+<p>因为 \(x=\frac{ky}{z^2}\)，所以 \[ \frac{x_{\rm new}}{10} =\frac{16}{4}\left(\frac{14}{7}\right)^2 =4\cdot4=16\text{。}\]因此 \(x_{\rm new}=160\)。</p>
+<p>因此，正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Because \(x=\frac{ky}{z^2},\) \[ \frac{x_{\rm new}}{10} =\frac{16}{4}\left(\frac{14}{7}\right)^2 =4\cdot4=16. \] Hence \(x_{\rm new}=160.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">21</span> 答案 <b>C</b></p>
+<p>边长为 \(\frac{p}{3}\)，所以外接圆半径为 \[ R=\frac{\frac{p}{3}}{\sqrt3}=\frac{p}{3\sqrt3}\text{。}\]因此圆的面积为 \[ \pi R^2=\frac{\pi p^2}{27}\text{。}\]</p>
+<p>因此，正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The side length is \(\frac{p}{3},\) so the circumradius is \[ R=\frac{\frac{p}{3}}{\sqrt3}=\frac{p}{3\sqrt3}. \] Therefore the circle’s area is \[ \pi R^2=\frac{\pi p^2}{27}. \]</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">22</span> 答案 <b>C</b></p>
+<p>若较短底边为 \(b\)，则对角线中点连线的长度为两底边之差的一半：\[ \frac{97-b}{2}=3\text{。}\]因此 \(97-b=6\)，且 \(b=91\)。</p>
+<p>因此，正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If the shorter base is \(b,\) the diagonal-midpoint segment has length half the difference of the bases: \[ \frac{97-b}{2}=3. \] Thus \(97-b=6\) and \(b=91.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">23</span> 答案 <b>A</b></p>
+<p>该方程等价于 \[ a^2-15a=100\text{，}\]即 \((a-20)(a+5)=0\)。因此 \(a=20\) 或 \(a=-5\)。两种情况下对数的真数都是 \(100\)，所以两个解都是有效的整数。</p>
+<p>因此，正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The equation is equivalent to \[ a^2-15a=100, \] or \((a-20)(a+5)=0.\) Thus \(a=20\) or \(a=-5.\) In both cases the logarithm’s argument is \(100,\) so both solutions are valid integers.</p>
+<p class="amc-en">Therefore, the correct answer is <b>A</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">24</span> 答案 <b>C</b></p>
+<p>设加入 \(x\) 盎司盐。浓度方程为 \[ \frac{\frac{m^2}{100}+x}{m+x}=\frac{2m}{100}\text{。}\]两边同乘分母并合并含 \(x\) 的项，得 \[ x(100-2m)=m^2\text{，}\]所以 \(x=\frac{m^2}{100-2m}\)。</p>
+<p>因此，正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(x\) ounces of salt be added. The concentration equation is \[ \frac{\frac{m^2}{100}+x}{m+x}=\frac{2m}{100}. \] Multiplying through and collecting the \(x\)-terms gives \[ x(100-2m)=m^2, \] so \(x=\frac{m^2}{100-2m}.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">25</span> 答案 <b>D</b></p>
+<p>该绝对值不等式等价于 \[ -4\lt3-x\lt4\text{。}\]减去 \(3\) 后再乘以 \(-1\)，不等号方向反转，得到 \[ -1\lt x\lt7\text{。}\]</p>
+<p>因此，正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The absolute-value inequality is equivalent to \[ -4\lt3-x\lt4. \] Subtracting \(3\) and multiplying by \(-1\) reverses the inequalities, giving \[ -1\lt x\lt7. \]</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">26</span> 答案 <b>A</b></p>
+<p>将底边两端点置于 \(A=(-\frac{\sqrt2}{2},0)\) 和 \(B=(\frac{\sqrt2}{2},0)\)，并设第三个顶点为 \(C=(0,h)\)。从 \(A\) 出发的中线方向为 \[ \left(\frac{3\sqrt2}{4},\frac h2\right)\text{，}\]从 \(B\) 出发的中线方向为 \[ \left(-\frac{3\sqrt2}{4},\frac h2\right)\text{。}\]两者点积为零，所以 \[ -\frac98+\frac{h^2}{4}=0\text{，}\]且 \(h=\frac{3\sqrt2}{2}\)。因此面积为 \[ \frac12\cdot\sqrt2\cdot\frac{3\sqrt2}{2}=\frac32\text{。}\]</p>
+<p>因此，正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Put the base endpoints at \(A=(-\frac{\sqrt2}{2},0)\) and \(B=(\frac{\sqrt2}{2},0),\) and let the third vertex be \(C=(0,h).\) The median from \(A\) has direction \[ \left(\frac{3\sqrt2}{4},\frac h2\right), \] while the median from \(B\) has direction \[ \left(-\frac{3\sqrt2}{4},\frac h2\right). \] Their dot product is zero, so \[ -\frac98+\frac{h^2}{4}=0, \] and \(h=\frac{3\sqrt2}{2}.\) Thus the area is \[ \frac12\cdot\sqrt2\cdot\frac{3\sqrt2}{2}=\frac32. \]</p>
+<p class="amc-en">Therefore, the correct answer is <b>A</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">27</span> 答案 <b>A</b></p>
+<p>由韦达定理，两根之和为 \[ -\frac{-1}{i}=\frac1i=-i\text{，}\]而不是 \(2\)。判别式为 \[ (-1)^2-4(i)(2i)=1-8i^2=9\text{。}\]求根公式给出虚根 \(i\) 和 \(-2i\)，所以其余陈述都正确。</p>
+<p>因此，正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">By Vieta’s formula, the sum of the roots is \[ -\frac{-1}{i}=\frac1i=-i, \] not \(2.\) Also the discriminant is \[ (-1)^2-4(i)(2i)=1-8i^2=9. \] The quadratic formula gives the imaginary roots \(i\) and \(-2i,\) so the remaining statements are true.</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">28</span> 答案 <b>E</b></p>
+<p>由角平分线定理，\[ \begin{aligned} \frac{AM}{MB}&amp;=\frac{AC}{CB}=\frac ba,\\ \frac{CL}{LB}&amp;=\frac{AC}{AB}=\frac bc \end{aligned}\text{。}\]因此 \[ k=\frac{\frac{b}{a}}{\frac{b}{c}}=\frac ca\text{。}\]</p>
+<p>因此，正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">By the angle bisector theorem, \[ \begin{aligned} \frac{AM}{MB}&amp;=\frac{AC}{CB}=\frac ba,\\ \frac{CL}{LB}&amp;=\frac{AC}{AB}=\frac bc. \end{aligned} \] Therefore \[ k=\frac{\frac{b}{a}}{\frac{b}{c}}=\frac ca. \]</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">29</span> 答案 <b>D</b></p>
+<p>得分条件给出 \[ 15+\frac{n-20}{3}=\frac n2\text{。}\]两边乘以 \(6\) 得 \(90+2n-40=3n\)，所以 \(n=50\)。此值也使其余题目中答对的题数为整数。因此 \(n\) 恰有一个可能值。</p>
+<p>因此，正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The score condition gives \[ 15+\frac{n-20}{3}=\frac n2. \] Multiplying by \(6\) yields \(90+2n-40=3n,\) so \(n=50.\) This value also makes the number of remaining correct answers an integer. Hence there is exactly one possible value of \(n.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">30</span> 答案 <b>B</b></p>
+<p>若 \(B\) 跑一圈的时间为 \(t\)，则两人的相对速度为 \[ \frac1{40}+\frac1t=\frac1{15}\text{。}\]因此 \(\frac{1}{t}=\frac{1}{24}\)，所以 \(t=24\) 秒。</p>
+<p>因此，正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If \(B\)’s lap time is \(t,\) their relative speed is \[ \frac1{40}+\frac1t=\frac1{15}. \] Thus \(\frac{1}{t}=\frac{1}{24},\) so \(t=24\) seconds.</p>
+<p class="amc-en">Therefore, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">31</span> 答案 <b>B</b></p>
+<p>设半圆半径为 \(r\)，正方形边长为 \(s\)，其中 \(s^2=40\)。正方形一个上顶点相对圆心的水平距离为 \(\frac{s}{2}\)，竖直距离为 \(s\)，所以 \[ r^2=s^2+\left(\frac s2\right)^2=\frac54s^2=50\text{。}\]内接于整圆的正方形对角线长为 \(2r\)，故面积为 \(2r^2=100\)。</p>
+<p>因此，正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let the semicircle have radius \(r\) and the square have side \(s,\) where \(s^2=40.\) A top vertex of the square is \(\frac{s}{2}\) horizontally and \(s\) vertically from the center, so \[ r^2=s^2+\left(\frac s2\right)^2=\frac54s^2=50. \] A square inscribed in the full circle has diagonal \(2r,\) hence area \(2r^2=100.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">32</span> 答案 <b>C</b></p>
+<p>若 \(O\) 为圆心，\(T\) 为切点，则 \(OT\perp AT\)。因此 \[ \begin{aligned} AO &amp;=\sqrt{r^2+l^2}\\ &amp;=\sqrt{r^2+\frac{16r^2}{9}}\\ &amp;=\frac{5r}{3} \end{aligned}\text{。}\]点 \(A\) 到圆的最短距离为 \(AO-r=\frac{2r}{3}\)。由于 \(l=\frac{4r}{3}\)，此距离等于 \(\frac{l}{2}\)。</p>
+<p>因此，正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If \(O\) is the center and \(T\) the point of tangency, then \(OT\perp AT.\) Hence \[ \begin{aligned} AO &amp;=\sqrt{r^2+l^2}\\ &amp;=\sqrt{r^2+\frac{16r^2}{9}}\\ &amp;=\frac{5r}{3}. \end{aligned} \] The shortest distance from \(A\) to the circle is \(AO-r=\frac{2r}{3}.\) Since \(l=\frac{4r}{3},\) this distance equals \(\frac{l}{2}.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">33</span> 答案 <b>B</b></p>
+<p>各项的倒数开始为 \[ \frac13,\quad\frac14,\quad\frac16\text{，}\]公差为 \(-\frac{1}{12}\)。下一个倒数是 \(\frac{1}{12}\)，所以第四项为 \(12\)。因此 \[ S_4=3+4+6+12=25\text{。}\]</p>
+<p>因此，正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The reciprocals begin \[ \frac13,\quad\frac14,\quad\frac16, \] with common difference \(-\frac{1}{12}.\) The next reciprocal is \(\frac{1}{12},\) so the fourth term is \(12.\) Therefore \[ S_4=3+4+6+12=25. \]</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">34</span> 答案 <b>A</b></p>
+<p>由韦达定理，\(r+s=3\) 且 \(rs=1\)。因此 \[ \begin{aligned} r^2+s^2 &amp;=(r+s)^2-2rs\\ &amp;=9-2=7 \end{aligned}\text{，}\]它是正整数。</p>
+<p>因此，正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Vieta’s formulas give \(r+s=3\) and \(rs=1.\) Therefore \[ \begin{aligned} r^2+s^2 &amp;=(r+s)^2-2rs\\ &amp;=9-2=7, \end{aligned} \] which is a positive integer.</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">35</span> 答案 <b>E</b></p>
+<p>将左边因式分解得 \[ \begin{aligned} &amp;(n-m)(2x-m-n)\\ &amp;\qquad=(m-n)^2 \end{aligned}\text{。}\]因为 \(m\ne n\)，除以 \(n-m\) 得 \(2x-m-n=n-m\)，所以 \(x=n\)。这个唯一的负值不属于选项 A 至 D 中的任何一种情况。</p>
+<p>因此，正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Factoring the left side gives \[ \begin{aligned} &amp;(n-m)(2x-m-n)\\ &amp;\qquad=(m-n)^2. \end{aligned} \] Since \(m\ne n,\) division by \(n-m\) yields \(2x-m-n=n-m,\) so \(x=n.\) This single negative value is not any of choices A through D.</p>
+<p class="amc-en">Therefore, the correct answer is <b>E</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">36</span> 答案 <b>D</b></p>
+<p>设与 \(60^\circ\) 底角相邻的边长为 \(x\)，对边长为 \(90-x\)。由余弦定理 \[ \begin{aligned} (90-x)^2 &amp;=80^2+x^2\\ &amp;\quad{}-2(80)(x)\cos60^\circ \end{aligned}\text{。}\]化简得 \(8100-180x=6400-80x\)，所以 \(x=17\)。三边长为 \(17,\ 73\) 和 \(80\)，最短边为 \(17\)。</p>
+<p>因此，正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let the side adjacent to the \(60^\circ\) base angle be \(x,\) and let the opposite side be \(90-x.\) The law of cosines gives \[ \begin{aligned} (90-x)^2 &amp;=80^2+x^2\\ &amp;\quad{}-2(80)(x)\cos60^\circ. \end{aligned} \] Simplifying yields \(8100-180x=6400-80x,\) so \(x=17.\) The side lengths are \(17,\ 73,\) and \(80,\) and the shortest is \(17.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">37</span> 答案 <b>B</b></p>
+<p>该乘积逐项消去：\[ \frac23\cdot\frac34\cdot\frac45\cdots\frac{n-1}{n} =\frac2n\text{。}\]</p>
+<p>因此，正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The product telescopes: \[ \frac23\cdot\frac34\cdot\frac45\cdots\frac{n-1}{n} =\frac2n. \]</p>
+<p class="amc-en">Therefore, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">38</span> 答案 <b>B</b></p>
+<p>令 \(u=\sqrt{2x}\ge0\)。由于 \(x=\frac{u^2}{2}\)，方程变为 \[ 2u^2+u=1\text{，}\]即 \((2u-1)(u+1)=0\)。因此 \(u=\frac{1}{2}\) 且 \(x=\frac{u^2}{2}=\frac{1}{8}\)。另一个二次方程根因 \(u\ge0\) 而不合条件。故 \(x\) 是分数。</p>
+<p>因此，正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(u=\sqrt{2x}\ge0.\) Since \(x=\frac{u^2}{2},\) the equation becomes \[ 2u^2+u=1, \] or \((2u-1)(u+1)=0.\) Thus \(u=\frac{1}{2}\) and \(x=\frac{u^2}{2}=\frac{1}{8}.\) The other quadratic root is inadmissible because \(u\ge0.\) Hence \(x\) is fractional.</p>
+<p class="amc-en">Therefore, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">39</span> 答案 <b>D</b></p>
+<p>将前九项相加，得 \[ \begin{aligned} S={}&amp;(x+x^2+\cdots+x^9)\\ &amp;{}+(1+2+\cdots+9)a \end{aligned}\text{。}\]因此 \[ S=\frac{x^{10}-x}{x-1}+45a\text{。}\]当 \(x=1\) 时按连续性理解此表达式，此时两种形式都等于 \(9+45a\)。</p>
+<p>因此，正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Adding the first nine terms gives \[ \begin{aligned} S={}&amp;(x+x^2+\cdots+x^9)\\ &amp;{}+(1+2+\cdots+9)a. \end{aligned} \] Therefore \[ S=\frac{x^{10}-x}{x-1}+45a. \] The expression is understood by continuity at \(x=1,\) where both forms equal \(9+45a.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">40</span> 答案 <b>C</b></p>
+<p>使用向量，令 \(A=\mathbf0,\ B=\mathbf b\)，且 \(C=\mathbf c\)。因为 \(D=\frac{\mathbf c}{2}\)，且 \(E\) 是 \(BD\) 的中点，所以 \[ E=\frac12\mathbf b+\frac14\mathbf c\text{。}\]\(AB\) 上一点 \(F\) 可写成 \(F=t\mathbf b\)。由于 \(E\) 位于 \(CF\) 上，比较 \(\mathbf c\) 的系数可得 \(E=\tfrac14C+\tfrac34F\)。于是 \[ \frac34t=\frac12\text{，}\]所以 \(t=\frac{2}{3}\)。因此 \(\frac{AF}{AB}=\frac{2}{3}\)，且 \(\frac{BF}{BA}=\frac{1}{3}\)。由于 \(BF=5\)，所以 \(BA=15\)。</p>
+<p>因此，正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Use vectors with \(A=\mathbf0,\ B=\mathbf b,\) and \(C=\mathbf c.\) Since \(D=\frac{\mathbf c}{2}\) and \(E\) is the midpoint of \(BD,\) \[ E=\frac12\mathbf b+\frac14\mathbf c. \] A point \(F\) on \(AB\) has the form \(F=t\mathbf b.\) Since \(E\) lies on \(CF,\) comparison of the \(\mathbf c\)-coefficient shows that \(E=\tfrac14C+\tfrac34F.\) Hence \[ \frac34t=\frac12, \] so \(t=\frac{2}{3}.\) Thus \(\frac{AF}{AB}=\frac{2}{3},\) and \(\frac{BF}{BA}=\frac{1}{3}.\) Since \(BF=5,\) \(BA=15.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">41</span> 答案 <b>D</b></p>
+<p>设两个全等圆的半径为 \(R\)。它们的圆心相距 \(2R\)，所以半径为 \(4\) 的圆的圆心位于两者正中间。小圆圆心与任一大圆圆心的水平距离和竖直距离分别为 \(R\) 和 \(R-4\)。由相切条件得 \[ R^2+(R-4)^2=(R+4)^2\text{。}\]化简得 \(R^2-16R=0\)，由正性知 \(R=16\)。</p>
+<p>因此，正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let the equal circles have radius \(R.\) Their centers are \(2R\) apart, so the center of the radius-\(4\) circle lies midway between them. The horizontal and vertical separations between its center and either large center are \(R\) and \(R-4.\) Tangency gives \[ R^2+(R-4)^2=(R+4)^2. \] Simplifying yields \(R^2-16R=0,\) and positivity gives \(R=16.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">42</span> 答案 <b>E</b></p>
+<p>对任一质数，设它在 \(a,b,c\) 中的指数为 \(u\le v\le w\)。它在 \(MD\) 中的指数为 \(u+w\)，而在 \(abc\) 中的指数为 \(u+v+w\)。因此 \(MD\le abc\)，证明了陈述 \((2)\)。对每个质数都恰有 \(v=0\) 时等号成立，这意味着没有任何质数同时整除 \(a,b,c\) 中的两个数。这正是两两互质，证明了陈述 \((4)\)。</p>
+<p>因此，正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For any prime, let its exponents in \(a,b,c\) be \(u\le v\le w.\) Its exponent in \(MD\) is \(u+w,\) while its exponent in \(abc\) is \(u+v+w.\) Thus \(MD\le abc,\) proving statement \((2).\) Equality holds exactly when \(v=0\) for every prime, meaning no prime divides two of \(a,b,c.\) That is precisely pairwise relative primality, proving statement \((4).\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>E</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">43</span> 答案 <b>B</b></p>
+<p>半周长为 \(52\)，所以由海伦公式 \[ K=\sqrt{52\cdot27\cdot13\cdot12}=468\text{。}\]若 \(R\) 为外接圆半径，则 \[ R=\frac{25\cdot39\cdot40}{4\cdot468}=\frac{125}{6}\text{。}\]因此直径为 \(2R=\frac{125}{3}\)。</p>
+<p>因此，正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The semiperimeter is \(52,\) so Heron’s formula gives \[ K=\sqrt{52\cdot27\cdot13\cdot12}=468. \] If \(R\) is the circumradius, then \[ R=\frac{25\cdot39\cdot40}{4\cdot468}=\frac{125}{6}. \] Hence the diameter is \(2R=\frac{125}{3}.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">44</span> 答案 <b>C</b></p>
+<p>若两根为 \(u,v&gt;1\)，则 \(b=-(u+v)\) 且 \(c=uv\)。因此 \[ \begin{aligned} s&amp;=1-u-v+uv\\ &amp;=(u-1)(v-1)&gt;0 \end{aligned}\text{。}\]</p>
+<p>因此 \(s\) 必大于零，正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If the roots are \(u,v&gt;1,\) then \(b=-(u+v)\) and \(c=uv.\) Therefore \[ \begin{aligned} s&amp;=1-u-v+uv\\ &amp;=(u-1)(v-1)&gt;0. \end{aligned} \]</p>
+<p class="amc-en">Thus \(s\) must be greater than zero, and the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">45</span> 答案 <b>B</b></p>
+<p>这些对数逐项消去：\[ \begin{aligned} &amp;(\log_3x)(\log_x2x)(\log_{2x}y)\\ &amp;\qquad=\log_3y \end{aligned}\text{。}\]又因为 \(\log_xx^2=2\)，所以 \(\log_3y=2\)，且 \(y=3^2=9\)。</p>
+<p>因此，正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The logarithms telescope: \[ \begin{aligned} &amp;(\log_3x)(\log_x2x)(\log_{2x}y)\\ &amp;\qquad=\log_3y. \end{aligned} \] Also \(\log_xx^2=2,\) so \(\log_3y=2\) and \(y=3^2=9.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">46</span> 答案 <b>B</b></p>
+<p>下雨的上午有 \(d-6\) 个，下雨的下午有 \(d-5\) 个。由条件 \((2)\)，可知这些下雨时段互不重合，总数为 \(7\)。因此 \[ (d-6)+(d-5)=7\text{，}\]所以 \(2d=18\)，且 \(d=9\)。</p>
+<p>因此，正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">There are \(d-6\) rainy mornings and \(d-5\) rainy afternoons. By condition \((2),\) these are distinct rainy occasions, and their total is \(7.\) Hence \[ (d-6)+(d-5)=7, \] so \(2d=18\) and \(d=9.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">47</span> 答案 <b>A</b></p>
+<p>陈述 III 保证至少存在一名会思考的学生。由陈述 II，该学生是人，所以有些人会思考，从而推出陈述 \((2)\)。题设没有说明新生与学生的关系，也没有说明新生是否会思考，更不能保证存在不属于学生的、会思考的人。因此 \((1)\)、\((3)\) 或 \((4)\) 都不能推出。</p>
+<p>因此，正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Statement III supplies at least one student who thinks. By statement II, that student is human, so some human thinks and statement \((2)\) follows. Nothing relates freshmen to students, says whether freshmen think, or guarantees a thinking human outside the students. Thus none of \((1),\) \((3),\) or \((4)\) follows.</p>
+<p class="amc-en">Therefore, the correct answer is <b>A</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">48</span> 答案 <b>B</b></p>
+<p>按次数分类计数。若 \(n=0\)，则 \(a_0=3\)，得到一个多项式。若 \(n=1\)，则 \[ a_0+|a_1|=2\text{。}\]此时 \(a_0=2,a_1=0\) 或 \(a_0=1,a_1=\pm1\)，共有三个多项式。若 \(n=2\)，则 \(a_0=1\) 且 \(a_1=a_2=0\)，再得一个。次数不可能更高。总数为 \(1+3+1=5\)。</p>
+<p>因此，正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">We count by degree. If \(n=0,\) then \(a_0=3,\) giving one polynomial. If \(n=1,\) then \[ a_0+|a_1|=2. \] This gives \(a_0=2,a_1=0\) or \(a_0=1,a_1=\pm1,\) for three polynomials. If \(n=2,\) then \(a_0=1\) and \(a_1=a_2=0,\) giving one more. No higher degree is possible. The total is \(1+3+1=5.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">49</span> 答案 <b>B</b></p>
+<p>将级数分组为 \[ \begin{aligned} S={}&amp;\left(1-\frac12-\frac14\right)\\ &amp;+\left(\frac18-\frac1{16}-\frac1{32}\right) +\cdots \end{aligned}\text{。}\]第一组为 \(\frac{1}{4}\)，各组构成公比为 \(\frac{1}{8}\) 的等比级数。因此 \[ S=\frac{\frac{1}{4}}{1-\frac{1}{8}}=\frac27\text{。}\]</p>
+<p>因此，正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Group the series as \[ \begin{aligned} S={}&amp;\left(1-\frac12-\frac14\right)\\ &amp;+\left(\frac18-\frac1{16}-\frac1{32}\right) +\cdots. \end{aligned} \] The first block is \(\frac{1}{4},\) and successive blocks form a geometric series with ratio \(\frac{1}{8}.\) Hence \[ S=\frac{\frac{1}{4}}{1-\frac{1}{8}}=\frac27. \]</p>
+<p class="amc-en">Therefore, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">50</span> 答案 <b>D</b></p>
+<p>每名成员恰好对应一对无序的委员会。反之，每对委员会恰有一名共同成员。因此成员与四个委员会的两两组合一一对应，所以 \[ x=\binom42=6\text{。}\]这是 \(4\) 与 \(8\) 之间的唯一值。</p>
+<p>因此，正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Each member belongs to exactly one unordered pair of committees. Conversely, each pair of committees has exactly one common member. Thus the members are in one-to-one correspondence with the pairs of four committees, so \[ x=\binom42=6. \] This is a single value between \(4\) and \(8.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>D</b>.</p>
+</div>
+    </div>
+    <p class="dl-row">
+      
+      <a class="btn" href="https://t.fengg.net/docs-dl/public/download/%E6%95%B0%E5%AD%A6/AMC12(P%E7%89%88)/1959%20AMC%2012%20%E7%9C%9F%E9%A2%98%E4%B8%8E%E8%A7%A3%E7%AD%94.docx" download="1959 AMC 12 真题与解答.docx" title="1959 AMC 12 真题与解答.docx">下载本题 Word 原文件（含答案解析）</a>
+      
+    </p>
+  </details>
+  
+
+  <nav class="siblings" aria-label="同分类的上一套与下一套">
+    
+    <a class="sib prev" href="/docs/amc12p-1958/" rel="prev">
+      <i aria-hidden="true">←</i>
+      <span><b>上一套</b><em>1958 AMC 12 真题（P版）</em></span>
+    </a>
+    
+    
+    <a class="sib next" href="/docs/amc12p-1960/" rel="next">
+      <span><b>下一套</b><em>1960 AMC 12 真题（P版）</em></span>
+      <i aria-hidden="true">→</i>
+    </a>
+    
+  </nav>
+
+  <p class="back"><a href="/c/math/">← 返回数学</a></p>
+</article>
+
+<button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 8.8V19h-2V8.8L6.4 13.4 5 12z" fill="currentColor"/></svg>
+</button>
+
+<script>
+(function () {
+  function openIfHash() {
+    if (location.hash === '#answer') {
+      var el = document.getElementById('answer');
+      if (el) { el.open = true; el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    }
+  }
+  openIfHash();
+  window.addEventListener('hashchange', openIfHash);
+
+  var top = document.querySelector('.to-top');
+  if (top) {
+    function onScroll() {
+      if (window.scrollY > 420) top.classList.add('show');
+      else top.classList.remove('show');
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    top.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // 同分类翻页快捷键：[ 上一套，] 下一套
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var sel = e.key === '[' ? '.sib.prev[href]' : (e.key === ']' ? '.sib.next[href]' : null);
+    if (!sel) return;
+    var a = document.querySelector(sel);
+    if (a) { e.preventDefault(); location.href = a.href; }
+  });
+})();
+</script>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-line">
+      <span>© 2026 Feng</span>
+      <span class="dot">·</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></span>
+    </div>
+    <p class="foot-note">本站内容均来源于网络，版权归原作者所有，仅供学习交流使用，请勿用于商业用途。</p>
+  </div>
+</footer>
+<script>
+(function () {
+  /* ---------- 深色模式 ---------- */
+  var root = document.documentElement;
+  var toggle = document.querySelector('.theme-toggle');
+  function osDark() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function isDark() {
+    var t = root.getAttribute('data-theme');
+    if (t === 'dark') return true;
+    if (t === 'light') return false;
+    return osDark();
+  }
+  function label() {
+    if (!toggle) return;
+    var d = isDark();
+    toggle.setAttribute('aria-label', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('title', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('aria-pressed', d ? 'true' : 'false');
+  }
+  if (toggle) {
+    label();
+    toggle.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) { /* noop */ }
+      label();
+    });
+  }
+  if (window.matchMedia) {
+    var mqDark = window.matchMedia('(prefers-color-scheme: dark)');
+    if (mqDark.addEventListener) mqDark.addEventListener('change', label);
+  }
+
+  /* ---------- 顶部导航 ---------- */
+  var nav = document.querySelector('.nav');
+  var navToggle = document.querySelector('.nav-toggle');
+  if (!nav || !navToggle) return;
+  var mq = window.matchMedia('(max-width: 720px)');
+  function closeAll() {
+    nav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    Array.prototype.forEach.call(nav.querySelectorAll('.open'), function (x) { x.classList.remove('open'); });
+  }
+  navToggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var on = nav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', on ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) {
+    if (!mq.matches) return;
+    var a = e.target.closest ? e.target.closest('a') : null;
+    if (!a) return;
+    var host = a.parentNode;
+    if (host && host.classList.contains('nav-drop') && a.classList.contains('has-caret')) {
+      e.preventDefault();
+      host.classList.toggle('open');
+    }
+  });
+  document.addEventListener('click', function (e) {
+    if (mq.matches && !nav.contains(e.target) && !navToggle.contains(e.target)) closeAll();
+  });
+  // 键盘 Esc 收起移动端菜单
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mq.matches && nav.classList.contains('open')) {
+      closeAll();
+      navToggle.focus();
+    }
+  });
+
+  /* ---------- 搜索快捷键：/ 聚焦，Ctrl(⌘)+K 打开 ---------- */
+  var searchLink = document.querySelector('.nav-s');
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    var typing = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable);
+    if ((e.ctrlKey || e.metaKey) && !e.shiftKey && (e.key === 'k' || e.key === 'K')) {
+      e.preventDefault();
+      var box = document.querySelector('.sbox-input');
+      if (box) { box.focus(); box.select(); }
+      else if (searchLink) location.href = searchLink.href;
+      return;
+    }
+    if (typing || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.key === '/') {
+      var box2 = document.querySelector('.sbox-input');
+      if (box2) { e.preventDefault(); box2.focus(); box2.select(); }
+      else if (searchLink) { e.preventDefault(); location.href = searchLink.href; }
+    }
+  });
+})();
+</script>
+</body>
+</html>

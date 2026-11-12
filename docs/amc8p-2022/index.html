@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<meta charset="utf-8">
+<title>2022 年 AMC 8 真题（P版） · 竞赛资料库</title>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) { /* 隐私模式下忽略 */ }
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="2022 年 AMC 8 真题（P版）：数学 · AMC8(P版)，2022 年，共 25 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+
+<link rel="canonical" href="https://t.fengg.net/docs/amc8p-2022/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="竞赛资料库">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="2022 年 AMC 8 真题（P版）">
+<meta property="og:description" content="2022 年 AMC 8 真题（P版）：数学 · AMC8(P版)，2022 年，共 25 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+<meta property="og:url" content="https://t.fengg.net/docs/amc8p-2022/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f7f9">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1318">
+
+
+<link rel="prev" href="/docs/amc8p-2020/">
+<link rel="next" href="/docs/amc8p-2023/">
+<link rel="stylesheet" href="/css/style.css?v=20261110e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+
+<link rel="stylesheet" href="/katex/katex.min.css">
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (!window.renderMathInElement) return;
+  var el = document.querySelector('.doc') || document.body;
+  try {
+    renderMathInElement(el, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false }
+      ],
+      throwOnError: false
+    });
+  } catch (e) { /* 公式渲染失败不影响正文 */ }
+});
+</script>
+
+
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/">竞赛资料库</a>
+    <nav class="nav"><a class="nav-a" href="/">首页</a><div class="nav-drop nav-mega"><a class="nav-a has-caret" href="/all/" title="按科目浏览全部题库">题库<i class="caret" aria-hidden="true"></i></a><div class="drop mega"><div class="mega-col" style="--accent:#3776c4"><a class="mega-h" href="/c/astronomy/"><i class="mega-dot" aria-hidden="true"></i>天文<span class="cnt">52</span></a><a class="mega-l" href="/c/astronomy/cnao/">CNAO<span class="cnt">28</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/cnao/prelim/">预赛</a><a class="mega-c" href="/c/astronomy/cnao/final/">决赛</a><a class="mega-c" href="/c/astronomy/cnao/primary/">小学组</a></span><a class="mega-l" href="/c/astronomy/provincial/">省赛<span class="cnt">15</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/provincial/beijing/">北京</a><a class="mega-c" href="/c/astronomy/provincial/guangdong/">广东</a><a class="mega-c" href="/c/astronomy/provincial/zhejiang/">浙江</a><a class="mega-c" href="/c/astronomy/provincial/jiangsu/">江苏</a><a class="mega-c" href="/c/astronomy/provincial/shandong/">山东</a><a class="mega-c" href="/c/astronomy/provincial/taiwan/">中国台湾</a></span><a class="mega-l" href="/c/astronomy/practice/">练习<span class="cnt">9</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/practice/primary/">小学组练习</a><a class="mega-c" href="/c/astronomy/practice/bank/">题库合集</a></span></div><div class="mega-col" style="--accent:#0f8a5f"><a class="mega-h" href="/c/math/"><i class="mega-dot" aria-hidden="true"></i>数学<span class="cnt">290</span></a><a class="mega-l" href="/c/math/amc8/">AMC8<span class="cnt">26</span></a><a class="mega-l" href="/c/math/amc8p/">AMC8(P版)<span class="cnt">41</span></a><a class="mega-l" href="/c/math/amc10p/">AMC10(P版)<span class="cnt">52</span></a><a class="mega-l" href="/c/math/amc12p/">AMC12(P版)<span class="cnt">102</span></a><a class="mega-l" href="/c/math/gzl/">全国中学生数学奥林匹克竞赛<span class="cnt">69</span></a><span class="mega-cs"><a class="mega-c" href="/c/math/gzl/liansai/">联赛（预赛）</a><a class="mega-c" href="/c/math/gzl/final/">决赛（CMO）</a><a class="mega-c" href="/c/math/gzl/province/">各赛区预赛</a></span></div><div class="mega-col" style="--accent:#6c4bb6"><a class="mega-h" href="/c/physics/"><i class="mega-dot" aria-hidden="true"></i>物理<span class="cnt">73</span></a><a class="mega-l" href="/c/physics/national/">全国竞赛<span class="cnt">49</span></a><a class="mega-l" href="/c/physics/asian/">亚洲竞赛<span class="cnt">11</span></a><a class="mega-l" href="/c/physics/international/">国际竞赛<span class="cnt">13</span></a></div><div class="mega-col" style="--accent:#3f8f46"><a class="mega-h" href="/c/biology/"><i class="mega-dot" aria-hidden="true"></i>生物<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/league/">全国中学生生物学联赛<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/competition/">全国中学生生物学竞赛</a></div><div class="mega-col" style="--accent:#c05a2b"><a class="mega-h" href="/c/chemistry/"><i class="mega-dot" aria-hidden="true"></i>化学<span class="cnt">10</span></a><a class="mega-l" href="/c/chemistry/ccho/">全国中学生化学奥林匹克竞赛<span class="cnt">10</span></a></div><div class="mega-col" style="--accent:#1f7a8c"><a class="mega-h" href="/c/earth/"><i class="mega-dot" aria-hidden="true"></i>地球科学<span class="cnt">22</span></a><a class="mega-l" href="/c/earth/national/">全国竞赛<span class="cnt">17</span></a><a class="mega-l" href="/c/earth/international/">国际竞赛<span class="cnt">5</span></a></div><div class="mega-col" style="--accent:#2c8a6e"><a class="mega-h" href="/c/geography/"><i class="mega-dot" aria-hidden="true"></i>地理<span class="cnt">11</span></a><a class="mega-l" href="/c/geography/geokids/">地球小博士<span class="cnt">11</span></a></div><div class="mega-col" style="--accent:#4a5fd0"><a class="mega-h" href="/c/info/"><i class="mega-dot" aria-hidden="true"></i>信息学<span class="cnt">9</span></a><a class="mega-l" href="/c/info/noi/">全国青少年信息学奥林匹克竞赛<span class="cnt">3</span></a><a class="mega-l" href="/c/info/noip/">全国青少年信息学奥林匹克联赛<span class="cnt">1</span></a><a class="mega-l" href="/c/info/csp/">CSP-J/S 非专业级软件能力认证<span class="cnt">1</span></a><a class="mega-l" href="/c/info/apio/">亚洲和太平洋地区信息学奥林匹克<span class="cnt">1</span></a><a class="mega-l" href="/c/info/winter/">NOI 冬令营<span class="cnt">1</span></a><a class="mega-l" href="/c/info/camp/">IOI 中国国家集训队集训<span class="cnt">2</span></a></div><a class="mega-all" href="/all/">全部文档（474 套）<i class="arr" aria-hidden="true">›</i></a></div></div><a class="nav-a" href="/whitelist/">白名单竞赛</a><a class="nav-a" href="/about/">使用说明</a><a class="nav-a nav-s" href="/search/" title="站内搜索（按 / 或 Ctrl+K）"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.9 12.1l4.3 4.3-1.4 1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z" fill="currentColor"/></svg>搜索</a></nav>
+    <div class="head-tools">
+      <button class="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式">
+        <svg class="ic-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12.7 3a8.5 8.5 0 108.3 10.6A7 7 0 0112.7 3z" fill="currentColor"/></svg>
+        <svg class="ic-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12 17a5 5 0 110-10 5 5 0 010 10zm0-13a1 1 0 011 1v1a1 1 0 01-2 0V5a1 1 0 011-1zm0 14a1 1 0 011 1v1a1 1 0 01-2 0v-1a1 1 0 011-1zM4 11h1a1 1 0 010 2H4a1 1 0 010-2zm15 0h1a1 1 0 010 2h-1a1 1 0 010-2zM6.3 5.5l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm11 11l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm.7-11a1 1 0 010 1.4l-.7.7A1 1 0 0115.9 6.2l.7-.7a1 1 0 011.4 0zm-11 11a1 1 0 010 1.4l-.7.7a1 1 0 01-1.4-1.4l.7-.7a1 1 0 011.4 0z" fill="currentColor"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-label="打开分类菜单" aria-expanded="false">分类 ▾</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main" tabindex="-1">
+
+<article class="doc">
+  <nav class="crumb">
+    <a href="/">首页</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/">数学</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/amc8p/">AMC8(P版)</a>
+    
+    <span class="sep">/</span><span>2022 年 AMC 8 真题（P版）</span>
+  </nav>
+
+  <h1>2022 年 AMC 8 真题（P版）</h1>
+
+  <div class="meta">
+    <span class="tag">数学</span>
+    <span>2022 年</span>
+    <span>25 题</span>
+    <span>312 KB</span>
+    <span class="ok">含答案解析</span>
+  </div>
+
+  <div class="toolbar">
+    
+    <a class="btn quiz-btn" href="/quiz/amc8p-2022/">开始答题 →</a>
+    
+    
+    <a class="btn ghost" href="#answer">跳到答案解析 ↓</a>
+    
+    <button class="btn ghost" type="button" onclick="document.querySelectorAll('details').forEach(function(x){x.open=true});setTimeout(function(){window.print()},60)">打印（含答案）</button>
+    <a class="btn" href="https://t.fengg.net/docs-dl/public/download/%E6%95%B0%E5%AD%A6/AMC8(P%E7%89%88)/2022%20AMC%208%20%E7%9C%9F%E9%A2%98%E4%B8%8E%E8%A7%A3%E7%AD%94.docx" download="2022 AMC 8 真题与解答.docx" title="2022 AMC 8 真题与解答.docx">下载 Word 文件</a>
+  </div>
+
+  <section class="paper">
+    <p class="paper-tip">中英双语：每题先中文，后附英文原题；解答在同页下方「查看答案解析与下载」里。</p>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">1</span></p>
+<p>数学队设计了一个形状像乘号的标志，如下图所示，画在边长为 \(1\) 英寸的小方格网格上。这个标志的面积是多少平方英寸？</p>
+<p><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q01-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(10\)</span>
+<span class="amc-opt"><b>B</b>\(12\)</span>
+<span class="amc-opt"><b>C</b>\(13\)</span>
+<span class="amc-opt"><b>D</b>\(14\)</span>
+<span class="amc-opt"><b>E</b>\(15\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The Math Team designed a logo shaped like a multiplication symbol, shown below on a grid of \(1\)-inch squares. What is the area of the logo in square inches?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q01-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(10\)</span><span class="amc-opt"><b>(B)</b> \(12\)</span><span class="amc-opt"><b>(C)</b> \(13\)</span><span class="amc-opt"><b>(D)</b> \(14\)</span><span class="amc-opt"><b>(E)</b> \(15\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">2</span></p>
+<p>考虑下面两个运算：\[\begin{align*} a\,\blacklozenge\,b &amp;= a^2 - b^2 \\ a \star b &amp;= (a - b)^2 \end{align*}\]</p>
+<p>计算</p>
+<p>\[ (5\,\blacklozenge\,3) \star 6 \]</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(-20\)</span>
+<span class="amc-opt"><b>B</b>\(4\)</span>
+<span class="amc-opt"><b>C</b>\(16\)</span>
+<span class="amc-opt"><b>D</b>\(100\)</span>
+<span class="amc-opt"><b>E</b>\(220\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Consider these two operations: \[\begin{align*} a\,\blacklozenge\,b &amp;= a^2 - b^2 \\ a \star b &amp;= (a - b)^2 \end{align*}\]</p>
+<p class="amc-en">Compute the value:</p>
+<p class="amc-en">\[ (5\,\blacklozenge\,3) \star 6 \]</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(-20\)</span><span class="amc-opt"><b>(B)</b> \(4\)</span><span class="amc-opt"><b>(C)</b> \(16\)</span><span class="amc-opt"><b>(D)</b> \(100\)</span><span class="amc-opt"><b>(E)</b> \(220\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">3</span></p>
+<p>三个正整数 \(a\)、\(b\)、\(c\) 相乘，乘积为 \(100\)。假设 \(a &lt; b &lt; c\)。这些数有多少种选择方式？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(0\)</span>
+<span class="amc-opt"><b>B</b>\(1\)</span>
+<span class="amc-opt"><b>C</b>\(2\)</span>
+<span class="amc-opt"><b>D</b>\(3\)</span>
+<span class="amc-opt"><b>E</b>\(4\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">When three positive integers \(a,\) \(b,\) and \(c\) are multiplied together, their product is \(100.\) Suppose \(a &lt; b &lt; c.\) In how many ways can the numbers be chosen?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(0\)</span><span class="amc-opt"><b>(B)</b> \(1\)</span><span class="amc-opt"><b>(C)</b> \(2\)</span><span class="amc-opt"><b>(D)</b> \(3\)</span><span class="amc-opt"><b>(E)</b> \(4\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">4</span></p>
+<p>下图中的字母 <strong>M</strong> 先关于直线 \(q\) 反射，再关于直线 \(p\) 反射。得到的图像是哪一个？</p>
+<p><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q04-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q04-a-1.svg" alt="题图" loading="lazy"></span>
+<span class="amc-opt"><b>B</b><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q04-b-1.svg" alt="题图" loading="lazy"></span>
+<span class="amc-opt"><b>C</b><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q04-c-1.svg" alt="题图" loading="lazy"></span>
+<span class="amc-opt"><b>D</b><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q04-d-1.svg" alt="题图" loading="lazy"></span>
+<span class="amc-opt"><b>E</b><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q04-e-1.svg" alt="题图" loading="lazy"></span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The letter <strong>M</strong> in the figure below is first reflected over the line \(q\) and then reflected over the line \(p.\) What is the resulting image?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q04-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> <img class="amc-fig" src="/img/papers/amc8p/2022/problem/q04-a-1.svg" alt="题图" loading="lazy"></span><span class="amc-opt"><b>(B)</b> <img class="amc-fig" src="/img/papers/amc8p/2022/problem/q04-b-1.svg" alt="题图" loading="lazy"></span><span class="amc-opt"><b>(C)</b> <img class="amc-fig" src="/img/papers/amc8p/2022/problem/q04-c-1.svg" alt="题图" loading="lazy"></span><span class="amc-opt"><b>(D)</b> <img class="amc-fig" src="/img/papers/amc8p/2022/problem/q04-d-1.svg" alt="题图" loading="lazy"></span><span class="amc-opt"><b>(E)</b> <img class="amc-fig" src="/img/papers/amc8p/2022/problem/q04-e-1.svg" alt="题图" loading="lazy"></span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">5</span></p>
+<p>Anna 和 Bella 正在一起庆祝生日。五年前，Bella 满 \(6\) 岁时，她收到了一只刚出生的小猫作为生日礼物。今天两个孩子和这只小猫的年龄之和为 \(30\) 岁。Anna 比 Bella 大几岁？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1\)</span>
+<span class="amc-opt"><b>B</b>\(2\)</span>
+<span class="amc-opt"><b>C</b>\(3\)</span>
+<span class="amc-opt"><b>D</b>\(4\)</span>
+<span class="amc-opt"><b>E</b>\(5\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Anna and Bella are celebrating their birthdays together. Five years ago, when Bella turned \(6\) years old, she received a newborn kitten as a birthday present. Today the sum of the ages of the two children and the kitten is \(30\) years. How many years older than Bella is Anna?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1\)</span><span class="amc-opt"><b>(B)</b> \(2\)</span><span class="amc-opt"><b>(C)</b> \(3\)</span><span class="amc-opt"><b>(D)</b> \(4\)</span><span class="amc-opt"><b>(E)</b> \(5\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">6</span></p>
+<p>三个正整数在数轴上等距排列。中间的数是 \(15\)，最大的数是最小数的 \(4\) 倍。这三个数中最小的数是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(4\)</span>
+<span class="amc-opt"><b>B</b>\(5\)</span>
+<span class="amc-opt"><b>C</b>\(6\)</span>
+<span class="amc-opt"><b>D</b>\(7\)</span>
+<span class="amc-opt"><b>E</b>\(8\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Three positive integers are equally spaced on a number line. The middle number is \(15\) and the largest number is \(4\) times the smallest number. What is the smallest of these three numbers?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(4\)</span><span class="amc-opt"><b>(B)</b> \(5\)</span><span class="amc-opt"><b>(C)</b> \(6\)</span><span class="amc-opt"><b>(D)</b> \(7\)</span><span class="amc-opt"><b>(E)</b> \(8\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">7</span></p>
+<p>万维网在二十世纪九十年代刚流行时，下载速度最高约为每秒 \(56\) 千比特。以这个速度下载一首 \(4.2\) 兆字节的歌曲大约需要多少分钟？（注意一兆字节等于 \(8000\) 千比特。）</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(0.6\)</span>
+<span class="amc-opt"><b>B</b>\(10\)</span>
+<span class="amc-opt"><b>C</b>\(1800\)</span>
+<span class="amc-opt"><b>D</b>\(7200\)</span>
+<span class="amc-opt"><b>E</b>\(36000\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">When the World Wide Web first became popular in the 1990s, download speeds reached a maximum of about \(56\) kilobits per second. Approximately how many minutes would the download of a \(4.2\)-megabyte song have taken at that speed? (Note that there are \(8000\) kilobits in a megabyte.)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(0.6\)</span><span class="amc-opt"><b>(B)</b> \(10\)</span><span class="amc-opt"><b>(C)</b> \(1800\)</span><span class="amc-opt"><b>(D)</b> \(7200\)</span><span class="amc-opt"><b>(E)</b> \(36000\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">8</span></p>
+<p>下列表达式的值是多少？</p>
+<p>\[ \dfrac{1}{3} \cdot \dfrac{2}{4} \cdot \dfrac{3}{5} \cdots \dfrac{18}{20} \cdot \dfrac{19}{21} \cdot \dfrac{20}{22} \]</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\displaystyle \dfrac{1}{462}\)</span>
+<span class="amc-opt"><b>B</b>\(\displaystyle \dfrac{1}{231}\)</span>
+<span class="amc-opt"><b>C</b>\(\displaystyle \dfrac{1}{132}\)</span>
+<span class="amc-opt"><b>D</b>\(\displaystyle \dfrac{2}{213}\)</span>
+<span class="amc-opt"><b>E</b>\(\displaystyle \dfrac{1}{22}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">What is the value of:</p>
+<p class="amc-en">\[ \dfrac{1}{3} \cdot \dfrac{2}{4} \cdot \dfrac{3}{5} \cdots \dfrac{18}{20} \cdot \dfrac{19}{21} \cdot \dfrac{20}{22} \]</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\displaystyle \dfrac{1}{462}\)</span><span class="amc-opt"><b>(B)</b> \(\displaystyle \dfrac{1}{231}\)</span><span class="amc-opt"><b>(C)</b> \(\displaystyle \dfrac{1}{132}\)</span><span class="amc-opt"><b>(D)</b> \(\displaystyle \dfrac{2}{213}\)</span><span class="amc-opt"><b>(E)</b> \(\displaystyle \dfrac{1}{22}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">9</span></p>
+<p>一杯沸水（\(212^\circ\)F）放在一个温度保持 \(68^\circ\)F 的房间中冷却。假设水温与室温的差每 \(5\) 分钟减半。\(15\) 分钟后，水温是多少华氏度？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(77\)</span>
+<span class="amc-opt"><b>B</b>\(86\)</span>
+<span class="amc-opt"><b>C</b>\(92\)</span>
+<span class="amc-opt"><b>D</b>\(98\)</span>
+<span class="amc-opt"><b>E</b>\(104\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A cup of boiling water (\(212^\circ\) F) is placed to cool in a room whose temperature remains constant at \(68^\circ\) F. Suppose the difference between the water temperature and the room temperature is halved every \(5\) minutes. What is the water temperature, in degrees Fahrenheit, after \(15\) minutes?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(77\)</span><span class="amc-opt"><b>(B)</b> \(86\)</span><span class="amc-opt"><b>(C)</b> \(92\)</span><span class="amc-opt"><b>(D)</b> \(98\)</span><span class="amc-opt"><b>(E)</b> \(104\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">10</span></p>
+<p>一个晴天，Ling 决定去山里徒步。她上午 \(8\) 点离开家，以每小时 \(45\) 英里的恒定速度开车，上午 \(10\) 点到达步道入口。徒步 \(3\) 小时后，Ling 以每小时 \(60\) 英里的恒定速度开车回家。下列哪幅图最能表示整个行程中 Ling 的车与她家的距离？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q10-a-1.svg" alt="题图" loading="lazy"></span>
+<span class="amc-opt"><b>B</b><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q10-b-1.svg" alt="题图" loading="lazy"></span>
+<span class="amc-opt"><b>C</b><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q10-c-1.svg" alt="题图" loading="lazy"></span>
+<span class="amc-opt"><b>D</b><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q10-d-1.svg" alt="题图" loading="lazy"></span>
+<span class="amc-opt"><b>E</b><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q10-e-1.svg" alt="题图" loading="lazy"></span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">One sunny day, Ling decided to take a hike in the mountains. She left her house at \(8\) a.m., drove at a constant speed of \(45\) miles per hour, and arrived at the hiking trail at \(10\) a.m. After hiking for \(3\) hours, Ling drove home at a constant speed of \(60\) miles per hour. Which of the following graphs best illustrates the distance between Ling’s car and her house over the course of her trip?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> <img class="amc-fig" src="/img/papers/amc8p/2022/problem/q10-a-1.svg" alt="题图" loading="lazy"></span><span class="amc-opt"><b>(B)</b> <img class="amc-fig" src="/img/papers/amc8p/2022/problem/q10-b-1.svg" alt="题图" loading="lazy"></span><span class="amc-opt"><b>(C)</b> <img class="amc-fig" src="/img/papers/amc8p/2022/problem/q10-c-1.svg" alt="题图" loading="lazy"></span><span class="amc-opt"><b>(D)</b> <img class="amc-fig" src="/img/papers/amc8p/2022/problem/q10-d-1.svg" alt="题图" loading="lazy"></span><span class="amc-opt"><b>(E)</b> <img class="amc-fig" src="/img/papers/amc8p/2022/problem/q10-e-1.svg" alt="题图" loading="lazy"></span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">11</span></p>
+<p>驴 Henry 有一根很长的意大利面。他咬了若干口，每次都从某一段意大利面的中间吃掉 \(3\) 英寸。最后他有 \(10\) 段意大利面，总长度为 \(17\) 英寸。他最开始的那根意大利面长多少英寸？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(34\)</span>
+<span class="amc-opt"><b>B</b>\(38\)</span>
+<span class="amc-opt"><b>C</b>\(41\)</span>
+<span class="amc-opt"><b>D</b>\(44\)</span>
+<span class="amc-opt"><b>E</b>\(47\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Henry the donkey has a very long piece of pasta. He takes a number of bites of pasta, each time eating \(3\) inches of pasta from the middle of one piece. In the end, he has \(10\) pieces of pasta whose total length is \(17\) inches. How long, in inches, was the piece of pasta he started with?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(34\)</span><span class="amc-opt"><b>(B)</b> \(38\)</span><span class="amc-opt"><b>(C)</b> \(41\)</span><span class="amc-opt"><b>(D)</b> \(44\)</span><span class="amc-opt"><b>(E)</b> \(47\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">12</span></p>
+<p>旋转下图中两个转盘上的指针。令 \(N\) 等于转盘 A 上的数的 \(10\) 倍，再加上转盘 B 上的数。\(N\) 是完全平方数的概率是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q12-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\displaystyle \dfrac{1}{16}\)</span>
+<span class="amc-opt"><b>B</b>\(\displaystyle \dfrac{1}{8}\)</span>
+<span class="amc-opt"><b>C</b>\(\displaystyle \dfrac{1}{4}\)</span>
+<span class="amc-opt"><b>D</b>\(\displaystyle \dfrac{3}{8}\)</span>
+<span class="amc-opt"><b>E</b>\(\displaystyle \dfrac{1}{2}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The arrows on the two spinners shown below are spun. Let the number \(N\) equal \(10\) times the number on Spinner A, added to the number on Spinner B. What is the probability that \(N\) is a perfect square number?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q12-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\displaystyle \dfrac{1}{16}\)</span><span class="amc-opt"><b>(B)</b> \(\displaystyle \dfrac{1}{8}\)</span><span class="amc-opt"><b>(C)</b> \(\displaystyle \dfrac{1}{4}\)</span><span class="amc-opt"><b>(D)</b> \(\displaystyle \dfrac{3}{8}\)</span><span class="amc-opt"><b>(E)</b> \(\displaystyle \dfrac{1}{2}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">13</span></p>
+<p>有多少个正整数可以填入下面句子的空格？</p>
+<p>“一个正整数比另一个正整数的两倍多 ___，并且这两个数的和是 \(28\)。”</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(6\)</span>
+<span class="amc-opt"><b>B</b>\(7\)</span>
+<span class="amc-opt"><b>C</b>\(8\)</span>
+<span class="amc-opt"><b>D</b>\(9\)</span>
+<span class="amc-opt"><b>E</b>\(10\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">How many positive integers can fill the blank in the sentence below?</p>
+<p class="amc-en">“One positive integer is ___ more than twice another, and the sum of the two numbers is \(28\)”</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(6\)</span><span class="amc-opt"><b>(B)</b> \(7\)</span><span class="amc-opt"><b>(C)</b> \(8\)</span><span class="amc-opt"><b>(D)</b> \(9\)</span><span class="amc-opt"><b>(E)</b> \(10\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">14</span></p>
+<p>单词 <strong>BEEKEEPER</strong> 的字母有多少种重新排列方式，使得不会有两个或更多个 <strong>E</strong> 连在一起？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1\)</span>
+<span class="amc-opt"><b>B</b>\(4\)</span>
+<span class="amc-opt"><b>C</b>\(12\)</span>
+<span class="amc-opt"><b>D</b>\(24\)</span>
+<span class="amc-opt"><b>E</b>\(120\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In how many ways can the letters in <strong>BEEKEEPER</strong> be rearranged so that two or more <strong>E</strong>’s do not appear together?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1\)</span><span class="amc-opt"><b>(B)</b> \(4\)</span><span class="amc-opt"><b>(C)</b> \(12\)</span><span class="amc-opt"><b>(D)</b> \(24\)</span><span class="amc-opt"><b>(E)</b> \(120\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">15</span></p>
+<p>Laszlo 上网购买黑胡椒，找到了三十种不同的黑胡椒选项，重量和价格如下方散点图所示。按盎司计算，哪种重量的黑胡椒每盎司价格最低？</p>
+<p><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q15-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1\)</span>
+<span class="amc-opt"><b>B</b>\(2\)</span>
+<span class="amc-opt"><b>C</b>\(3\)</span>
+<span class="amc-opt"><b>D</b>\(4\)</span>
+<span class="amc-opt"><b>E</b>\(5\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Laszlo went online to shop for black pepper and found thirty different black pepper options varying in weight and price, shown in the scatter plot below. In ounces, what is the weight of the pepper that offers the lowest price per ounce?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q15-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1\)</span><span class="amc-opt"><b>(B)</b> \(2\)</span><span class="amc-opt"><b>(C)</b> \(3\)</span><span class="amc-opt"><b>(D)</b> \(4\)</span><span class="amc-opt"><b>(E)</b> \(5\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">16</span></p>
+<p>四个数排成一行。前两个数的平均数是 \(21\)，中间两个数的平均数是 \(26\)，后两个数的平均数是 \(30\)。第一个数和最后一个数的平均数是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(24\)</span>
+<span class="amc-opt"><b>B</b>\(25\)</span>
+<span class="amc-opt"><b>C</b>\(26\)</span>
+<span class="amc-opt"><b>D</b>\(27\)</span>
+<span class="amc-opt"><b>E</b>\(28\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Four numbers are written in a row. The average of the first two is \(21,\) the average of the middle two is \(26,\) and the average of the last two is \(30.\) What is the average of the first and last of the numbers?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(24\)</span><span class="amc-opt"><b>(B)</b> \(25\)</span><span class="amc-opt"><b>(C)</b> \(26\)</span><span class="amc-opt"><b>(D)</b> \(27\)</span><span class="amc-opt"><b>(E)</b> \(28\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">17</span></p>
+<p>若 \(n\) 是正偶数，双阶乘记号 \(n!!\) 表示从 \(2\) 到 \(n\) 的所有偶数的乘积。例如：</p>
+<p>\[ 8!! = 2 \times 4 \times 6 \times 8 \]</p>
+<p>下列和的个位数字是多少？</p>
+<p>\[ \begin{aligned} &amp;2!! + 4!! + 6!! + \cdots \\ &amp;\quad {}+ 2018!! + 2020!! + 2022!! \end{aligned} \]</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(0\)</span>
+<span class="amc-opt"><b>B</b>\(2\)</span>
+<span class="amc-opt"><b>C</b>\(4\)</span>
+<span class="amc-opt"><b>D</b>\(6\)</span>
+<span class="amc-opt"><b>E</b>\(8\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If \(n\) is an even positive integer, the double factorial notation \(n!!\) represents the product of all the even integers from \(2\) to \(n.\) For example:</p>
+<p class="amc-en">\[ 8!! = 2 \times 4 \times 6 \times 8 \]</p>
+<p class="amc-en">What is the units digit of the following sum?</p>
+<p class="amc-en">\[ \begin{aligned} &amp;2!! + 4!! + 6!! + \cdots \\ &amp;\quad {}+ 2018!! + 2020!! + 2022!! \end{aligned} \]</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(0\)</span><span class="amc-opt"><b>(B)</b> \(2\)</span><span class="amc-opt"><b>(C)</b> \(4\)</span><span class="amc-opt"><b>(D)</b> \(6\)</span><span class="amc-opt"><b>(E)</b> \(8\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">18</span></p>
+<p>一个矩形四条边的中点分别是 \((-3, 0)\)、\((2, 0)\)、\((5, 4)\)、\((0, 4)\)。这个矩形的面积是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(20\)</span>
+<span class="amc-opt"><b>B</b>\(25\)</span>
+<span class="amc-opt"><b>C</b>\(40\)</span>
+<span class="amc-opt"><b>D</b>\(50\)</span>
+<span class="amc-opt"><b>E</b>\(80\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The midpoints of the four sides of a rectangle are \((-3, 0),\) \((2, 0),\) \((5, 4),\) and \((0, 4).\) What is the area of the rectangle?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(20\)</span><span class="amc-opt"><b>(B)</b> \(25\)</span><span class="amc-opt"><b>(C)</b> \(40\)</span><span class="amc-opt"><b>(D)</b> \(50\)</span><span class="amc-opt"><b>(E)</b> \(80\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">19</span></p>
+<p>Ramos 老师给 \(20\) 名学生进行了一次测试。下面的点图显示了成绩分布。</p>
+<p><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q19-1.svg" alt="题图" loading="lazy"></p>
+<p>后来 Ramos 老师发现某题评分有误。他重新评分，给一些学生额外加了 \(5\) 分，使得测试成绩的中位数提高到 \(85\)。至少有多少名学生得到了额外分数？</p>
+<p>（注意，中位数等于中间 \(2\) 个成绩的平均数；这里 \(20\) 个成绩按从小到大排列。）</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(2\)</span>
+<span class="amc-opt"><b>B</b>\(3\)</span>
+<span class="amc-opt"><b>C</b>\(4\)</span>
+<span class="amc-opt"><b>D</b>\(5\)</span>
+<span class="amc-opt"><b>E</b>\(6\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Mr. Ramos gave a test to his class of \(20\) students. The dot plot below shows the distribution of test scores.</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q19-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-en">Later Mr. Ramos discovered that there was a scoring error on one of the questions. He regraded the tests, awarding some of the students \(5\) extra points, which increased the median test score to \(85.\) What is the minimum number of students who received extra points?</p>
+<p class="amc-en">(Note that the median test score equals the average of the \(2\) scores in the middle if the \(20\) test scores are arranged in increasing order.)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(2\)</span><span class="amc-opt"><b>(B)</b> \(3\)</span><span class="amc-opt"><b>(C)</b> \(4\)</span><span class="amc-opt"><b>(D)</b> \(5\)</span><span class="amc-opt"><b>(E)</b> \(6\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">20</span></p>
+<p>下方网格要填入整数，使得每一行的和与每一列的和都相同。四个数字缺失。左下角的数字 \(x\) 大于另外三个缺失数字。\(x\) 的最小可能值是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q20-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(-1\)</span>
+<span class="amc-opt"><b>B</b>\(5\)</span>
+<span class="amc-opt"><b>C</b>\(6\)</span>
+<span class="amc-opt"><b>D</b>\(8\)</span>
+<span class="amc-opt"><b>E</b>\(9\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The grid below is to be filled with integers in such a way that the sum of the numbers in each row and the sum of the numbers in each column are the same. Four numbers are missing. The number \(x\) in the lower left corner is larger than the other three missing numbers. What is the smallest possible value of \(x?\)</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q20-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(-1\)</span><span class="amc-opt"><b>(B)</b> \(5\)</span><span class="amc-opt"><b>(C)</b> \(6\)</span><span class="amc-opt"><b>(D)</b> \(8\)</span><span class="amc-opt"><b>(E)</b> \(9\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">21</span></p>
+<p>Steph 在一场比赛上半场投进 \(15\) 球，共出手 \(20\) 次；下半场投进 \(10\) 球，共出手 \(10\) 次。Candace 上半场出手 \(12\) 次，下半场出手 \(18\) 次。在每个半场中，Steph 的命中率都高于 Candace。令人惊讶的是，她们最终总命中率相同。Candace 下半场比上半场多进了多少球？</p>
+<p><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q21-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(7\)</span>
+<span class="amc-opt"><b>B</b>\(8\)</span>
+<span class="amc-opt"><b>C</b>\(9\)</span>
+<span class="amc-opt"><b>D</b>\(10\)</span>
+<span class="amc-opt"><b>E</b>\(11\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Steph scored \(15\) baskets out of \(20\) attempts in the first half of a game, and \(10\) baskets out of \(10\) attempts in the second half. Candace took \(12\) attempts in the first half and \(18\) attempts in the second. In each half, Steph scored a higher percentage of baskets than Candace. Surprisingly they ended with the same overall percentage of baskets scored. How many more baskets did Candace score in the second half than in the first?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q21-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(7\)</span><span class="amc-opt"><b>(B)</b> \(8\)</span><span class="amc-opt"><b>(C)</b> \(9\)</span><span class="amc-opt"><b>(D)</b> \(10\)</span><span class="amc-opt"><b>(E)</b> \(11\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">22</span></p>
+<p>公交车从一个站开到下一站需要 \(2\) 分钟，并在每站等 \(1\) 分钟让乘客上车。Zia 从一个公交站走到下一站需要 \(5\) 分钟。当 Zia 到达一个公交站时，如果公交车在前一站，或已经离开前一站，那么她会等公交车。否则她会继续走向下一站。假设公交车和 Zia 同时朝图书馆方向出发，公交车在 Zia 后面 \(3\) 站。多少分钟后 Zia 会上公交车？</p>
+<p><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q22-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(17\)</span>
+<span class="amc-opt"><b>B</b>\(19\)</span>
+<span class="amc-opt"><b>C</b>\(20\)</span>
+<span class="amc-opt"><b>D</b>\(21\)</span>
+<span class="amc-opt"><b>E</b>\(23\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A bus takes \(2\) minutes to drive from one stop to the next, and waits \(1\) minute at each stop to let passengers board. Zia takes \(5\) minutes to walk from one bus stop to the next. As Zia reaches a bus stop, if the bus is at the previous stop or has already left the previous stop, then she will wait for the bus. Otherwise she will start walking toward the next stop. Suppose the bus and Zia start at the same time toward the library, with the bus \(3\) stops behind. After how many minutes will Zia board the bus?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q22-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(17\)</span><span class="amc-opt"><b>(B)</b> \(19\)</span><span class="amc-opt"><b>(C)</b> \(20\)</span><span class="amc-opt"><b>(D)</b> \(21\)</span><span class="amc-opt"><b>(E)</b> \(23\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">23</span></p>
+<p>在九个小方格中，每格放入一个 \(\bigtriangleup\) 或 \(\bigcirc\)，这些方格组成一个 \(3 \times 3\) 网格。下面显示了一个有三个 \(\bigtriangleup\) 连成一线的示例。</p>
+<p><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q23-1.svg" alt="题图" loading="lazy"></p>
+<p>有多少种配置同时有三个 \(\bigtriangleup\) 连成一线，并且有三个 \(\bigcirc\) 连成一线？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(39\)</span>
+<span class="amc-opt"><b>B</b>\(42\)</span>
+<span class="amc-opt"><b>C</b>\(78\)</span>
+<span class="amc-opt"><b>D</b>\(84\)</span>
+<span class="amc-opt"><b>E</b>\(96\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A \(\bigtriangleup\) or \(\bigcirc\) is placed in each of the nine squares in a \(3 \times 3\) grid. Shown below is a sample configuration with three \(\bigtriangleup\)’s in a line.</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q23-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-en">How many configurations will have three \(\bigtriangleup\)’s in a line and three \(\bigcirc\)’s in a line?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(39\)</span><span class="amc-opt"><b>(B)</b> \(42\)</span><span class="amc-opt"><b>(C)</b> \(78\)</span><span class="amc-opt"><b>(D)</b> \(84\)</span><span class="amc-opt"><b>(E)</b> \(96\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">24</span></p>
+<p>下图显示了多边形 \(ABCDEFGH\)，由矩形和直角三角形组成。把它剪下并沿虚线折叠后，这个多边形形成一个三棱柱。已知</p>
+<p>\[ AH = EF = 8 \]</p>
+<p>且</p>
+<p>\[ GH = 14\text{。}\]</p>
+<p>这个棱柱的体积是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q24-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(112\)</span>
+<span class="amc-opt"><b>B</b>\(128\)</span>
+<span class="amc-opt"><b>C</b>\(192\)</span>
+<span class="amc-opt"><b>D</b>\(240\)</span>
+<span class="amc-opt"><b>E</b>\(288\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The figure below shows a polygon \(ABCDEFGH,\) consisting of rectangles and right triangles. When cut out and folded on the dotted lines, the polygon forms a triangular prism. Suppose that:</p>
+<p class="amc-en">\[ AH = EF = 8 \]</p>
+<p class="amc-en">and</p>
+<p class="amc-en">\[ GH = 14. \]</p>
+<p class="amc-en">What is the volume of the prism?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc8p/2022/problem/q24-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(112\)</span><span class="amc-opt"><b>(B)</b> \(128\)</span><span class="amc-opt"><b>(C)</b> \(192\)</span><span class="amc-opt"><b>(D)</b> \(240\)</span><span class="amc-opt"><b>(E)</b> \(288\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">25</span></p>
+<p>一只蟋蟀在 \(4\) 片叶子之间随机跳跃，每次跳到另外 \(3\) 片叶子中的一片，概率相等。跳 \(4\) 次后，蟋蟀回到起始叶子的概率是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\displaystyle \dfrac{2}{9}\)</span>
+<span class="amc-opt"><b>B</b>\(\displaystyle \dfrac{19}{80}\)</span>
+<span class="amc-opt"><b>C</b>\(\displaystyle \dfrac{20}{81}\)</span>
+<span class="amc-opt"><b>D</b>\(\displaystyle \dfrac{1}{4}\)</span>
+<span class="amc-opt"><b>E</b>\(\displaystyle \dfrac{7}{27}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A cricket randomly hops between \(4\) leaves, on each turn hopping to one of the other \(3\) leaves with equal probability. After \(4\) hops, what is the probability that the cricket has returned to the leaf where it started?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\displaystyle \dfrac{2}{9}\)</span><span class="amc-opt"><b>(B)</b> \(\displaystyle \dfrac{19}{80}\)</span><span class="amc-opt"><b>(C)</b> \(\displaystyle \dfrac{20}{81}\)</span><span class="amc-opt"><b>(D)</b> \(\displaystyle \dfrac{1}{4}\)</span><span class="amc-opt"><b>(E)</b> \(\displaystyle \dfrac{7}{27}\)</span></p>
+</div>
+  </section>
+
+  
+  <details class="answer" id="answer">
+    <summary>
+      <span class="s-title">查看答案解析与下载</span>
+    </summary>
+    <div class="answer-body">
+      <h3>答案速查</h3>
+<table class="tbl"><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>答案</td><td>A</td><td>D</td><td>E</td><td>E</td><td>C</td><td>C</td><td>B</td><td>B</td><td>B</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr><tr><td>答案</td><td>E</td><td>D</td><td>B</td><td>D</td><td>D</td><td>C</td><td>B</td><td>B</td><td>C</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr><tr><td>答案</td><td>C</td><td>D</td><td>C</td><td>A</td><td>D</td><td>C</td><td>E</td></tr></table>
+<p class="muted">答案串：ADEECCBBBEDBDDCBBCCDCADCE</p>
+<h3>逐题解析</h3>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">1</span> 答案 <b>A</b></p>
+<p>标志由 \(5\) 个全等的倾斜正方形组成。每个倾斜正方形的两条对角线长度均为 \(2\)，所以面积为 \(\frac{2\cdot2}{2}=2\) 平方英寸。</p>
+<p>总面积为 \(5\cdot2=10\)。</p>
+<p>正确答案是 <strong>A</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The logo is made from \(5\) congruent tilted squares. Each tilted square has both diagonals of length \(2\), so its area is \(\frac{2\cdot2}{2}=2\) square inches.</p>
+<p class="amc-en">The total area is \(5\cdot2=10\).</p>
+<p class="amc-en">Thus, the correct answer is <strong>A</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">2</span> 答案 <b>D</b></p>
+<p>根据定义，\[\begin{align*} (5\,\blacklozenge\,3) \star 6 &amp;= (5^2-3^2) \star 6 \\ &amp;=16 \star 6 \\ &amp;=(16-6)^2\\ &amp;= 100\end{align*}\]</p>
+<p>正确答案是 <strong>D</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Using the definitions, \[\begin{align*} (5\,\blacklozenge\,3) \star 6 &amp;= (5^2-3^2) \star 6 \\ &amp;=16 \star 6 \\ &amp;=(16-6)^2\\ &amp;= 100\end{align*}\]</p>
+<p class="amc-en">Thus, the correct answer is <strong>D</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">3</span> 答案 <b>E</b></p>
+<p>因为 \(a&lt; b&lt; c\) 且 \(abc=100\)，所以 \(a^3&lt;100\)，因此 \(a\le4\)。同时 \(a\) 必须整除 \(100\)，故 \(a\in\{1,2,4\}\)。</p>
+<p>若 \(a=1\)，则 \((b,c)\) 可为 \((2,50),(4,25),(5,20)\)。若 \(a=2\)，唯一可行的数对是 \((5,10)\)。若 \(a=4\)，则 \(bc=25\)，不存在整数 \(b\) 满足 \(4&lt; b&lt; c\)。</p>
+<p>共有 \(4\) 种可能的三元组。</p>
+<p>所以正确答案是 <strong>E</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since \(a&lt; b&lt; c\) and \(abc=100\), we have \(a^3&lt;100\), so \(a\le4\). Also \(a\) must divide \(100\), so \(a\in\{1,2,4\}\).</p>
+<p class="amc-en">If \(a=1\), the pairs \((b,c)\) are \((2,50),(4,25),(5,20)\). If \(a=2\), the only possible pair is \((5,10)\). If \(a=4\), then \(bc=25\), and there is no integer \(b\) with \(4&lt; b&lt; c\).</p>
+<p class="amc-en">There are \(4\) possible triples.</p>
+<p class="amc-en">Thus, the correct answer is <strong>E</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">4</span> 答案 <b>E</b></p>
+<p>先把字母关于斜线 \(q\) 镜像，再把得到的图像关于水平线 \(p\) 镜像。最终图像位于 \(p\) 下方、竖直线右侧，方向与选项 E 相同。</p>
+<p>正确答案是 <strong>E</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Reflecting over the diagonal line \(q\) changes the orientation of the letter as if the diagonal were a mirror. Reflecting that image over the horizontal line \(p\) then places the final letter below \(p\), to the right of the vertical line, with the orientation shown in choice E.</p>
+<p class="amc-en">Thus, the correct answer is <strong>E</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">5</span> 答案 <b>C</b></p>
+<p>Bella 五年前 \(6\) 岁，所以现在 \(11\) 岁。</p>
+<p>小猫五年前刚出生，所以现在 \(5\) 岁。</p>
+<p>三者共有 \(3\) 个年龄，总和为 \(30\)，所以 Anna 的年龄是 \[30-5-11 = 14\]</p>
+<p>Anna \(14\) 岁，Bella \(11\) 岁，所以 Anna 大 \(3\) 岁。</p>
+<p>正确答案是 <strong>C</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If Bella was \(6\) five years ago, then she is \(11\) right now.</p>
+<p class="amc-en">If the kitten was a newborn five years ago, then it is \(5\) right now.</p>
+<p class="amc-en">Since the sum of all \(3\) ages is \(30,\) Anna’s age is \[30-5-11 = 14\]</p>
+<p class="amc-en">Since Anna is \(14\) and Bella is \(11,\) she is \(3\) years older than Bella.</p>
+<p class="amc-en">Thus, the correct answer is <strong>C</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">6</span> 答案 <b>C</b></p>
+<p>设最小数为 \(x\)，则最大数为 \(4x\)。因为中间数是最小数和最大数的平均数，所以 \[ \frac{x+4x}{2}=15\text{。}\]因此 \(5x=30\)，\(x=6\)。</p>
+<p>正确答案是 <strong>C</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let the smallest number be \(x\). Then the largest is \(4x\). Since the three numbers are equally spaced, the middle number is the average of the smallest and largest: \[ \frac{x+4x}{2}=15. \] Thus \(5x=30\), so \(x=6\).</p>
+<p class="amc-en">Thus, the correct answer is <strong>C</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">7</span> 答案 <b>B</b></p>
+<p>歌曲大小为 \(4.2\cdot8000=33{,}600\) 千比特。以每秒 \(56\) 千比特下载，需要 \[ \frac{33{,}600}{56}=600 \] 秒，即 \(10\) 分钟。</p>
+<p>正确答案是 <strong>B</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The song has \(4.2\cdot8000=33{,}600\) kilobits. At \(56\) kilobits per second, the download takes \[ \frac{33{,}600}{56}=600 \] seconds, which is \(10\) minutes.</p>
+<p class="amc-en">Thus, the correct answer is <strong>B</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">8</span> 答案 <b>B</b></p>
+<p>从 \(3\) 到 \(20\) 的每个整数都既作为分母出现一次，也作为分子出现一次，所以全部相消。</p>
+<p>相消后，分子只剩 \(1\) 和 \(2\)，分母只剩 \(21\) 和 \(22\)。</p>
+<p>剩下的分数是 \(\dfrac{1 \cdot 2}{21 \cdot 22} \)，化简为 \(\dfrac{2}{462} = \dfrac{1}{231}\)。</p>
+<p>正确答案是 <strong>B</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since every integer from \(3\) to \(20\) occurs once as a denominator and once as a numerator, they cancel each other out.</p>
+<p class="amc-en">After canceling every number out, we have only \(1\) and \(2\) left as numerators and \(21\) and \(22\) left as denominators.</p>
+<p class="amc-en">The remaining fraction is \( \dfrac{1 \cdot 2}{21 \cdot 22} .\) This simplifies to \( \dfrac{2}{462} = \dfrac{1}{231} \)</p>
+<p class="amc-en">Thus, the correct answer is <strong>B</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">9</span> 答案 <b>B</b></p>
+<p>当前水温和室温的差为 \(212-68 = 144 \)。</p>
+<p>\(15\) 分钟包含三个 \(5\) 分钟，所以温差会减半 \(3\) 次。</p>
+<p>也就是说温差乘以 \((\dfrac{1}{2})^3 = \dfrac{1}{8} \)，新的温差是 \(\dfrac{1}{8}\cdot144=18\)。水温为 \(68+18=86\)。</p>
+<p>正确答案是 <strong>B</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The current difference is \(212-68 = 144 .\)</p>
+<p class="amc-en">Since we have \(15\) minutes while halving every \(5\) minutes, we halve the difference \(3\) times.</p>
+<p class="amc-en">This means the difference is multiplied by \((\dfrac{1}{2})^3 = \dfrac{1}{8} ,\) so our new difference is \(\dfrac{1}{8}\cdot144=18.\) This makes our final temperature \(68+18=86.\)</p>
+<p class="amc-en">Thus, the correct answer is <strong>B</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">10</span> 答案 <b>E</b></p>
+<p>她以每小时 \(45\) 英里的速度开 \(2\) 小时，所以步道入口离家 \(90\) 英里。图像应从 \(0\) 英里上升到 \(90\) 英里，对应上午 \(8\) 点到 \(10\) 点，然后在徒步的 \(3\) 小时内保持水平。</p>
+<p>她下午 \(1\) 点返程。返程路程为 \(90\) 英里，以每小时 \(60\) 英里的速度行驶需要 \(1.5\) 小时，所以下午 \(2{:}30\) 到家。符合的是选项 E。</p>
+<p>正确答案是 <strong>E</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">She drives \(45\) miles per hour for \(2\) hours, so the trail is \(90\) miles from her house. The graph must rise from \(0\) to \(90\) miles between \(8\) AM and \(10\) AM, then stay flat for the \(3\)-hour hike.</p>
+<p class="amc-en">She starts home at \(1\) PM. Driving \(90\) miles at \(60\) miles per hour takes \(1.5\) hours, so she gets home at \(2{:}30\) PM. This matches choice E.</p>
+<p class="amc-en">Thus, the correct answer is <strong>E</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">11</span> 答案 <b>D</b></p>
+<p>从一整段变成 \(10\) 段，需要咬 \(9\) 口。咬了 \(9\) 口，每口吃掉 \(3\) 英寸，所以共吃掉 \(27\) 英寸。</p>
+<p>已经吃掉 \(27\) 英寸，最后还剩 \(17\) 英寸，因此原长为 \(27+17 = 44\) 英寸。</p>
+<p>正确答案是 <strong>D</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since there are \(10\) pieces, there were \(9\) locations where a bite was made. Since we have \(9\) bites and \(3\) inches are removed per bite, a total of \(27\) inches were removed.</p>
+<p class="amc-en">With \(27\) inches removed and \(17\) inches remaining, we know we started with \(27+17 = 44 \) inches.</p>
+<p class="amc-en">Thus, the correct answer is <strong>D</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">12</span> 答案 <b>B</b></p>
+<p>转盘 A 决定十位数字，转盘 B 决定个位数字。共有 \(4\cdot4=16\) 个等可能的两位数。</p>
+<p>在 \(51\) 到 \(84\) 之间，可能的完全平方数是 \(64\) 和 \(81\)，且二者都可以由转盘得到。因此概率为 \[ \frac{2}{16}=\frac{1}{8}\text{。}\]</p>
+<p>正确答案是 <strong>B</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Spinner A gives the tens digit and Spinner B gives the ones digit. There are \(4\cdot4=16\) equally likely two-digit numbers.</p>
+<p class="amc-en">The possible perfect squares between \(51\) and \(84\) are \(64\) and \(81\), and both can occur. Thus the probability is \[ \frac{2}{16}=\frac{1}{8}. \]</p>
+<p class="amc-en">Thus, the correct answer is <strong>B</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">13</span> 答案 <b>D</b></p>
+<p>设较小的数为 \(x\)，空格中的数为 \(c\)。那么另一个数是 \(2x+c\)，其中 \(x\) 和 \(c\) 都是正整数。</p>
+<p>由两数之和得 \(x+(2x+c)=28\)，所以 \(c=28-3x\)。要使 \(c\) 为正数，需要 \(28-3x&gt;0\)，即 \(x&lt;\frac{28}{3}\)。</p>
+<p>因此 \(x\) 可以是从 \(1\) 到 \(9\) 的任意整数，对应 \(9\) 个可能的空格值。</p>
+<p>正确答案是 <strong>D</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let the smaller number be \(x\), and let the blank be \(c\). Then the other number is \(2x+c\), where both \(x\) and \(c\) are positive integers.</p>
+<p class="amc-en">The sum condition gives \(x+(2x+c)=28\), so \(c=28-3x\). For \(c\) to be positive, \(28-3x&gt;0\), so \(x&lt;\frac{28}{3}\).</p>
+<p class="amc-en">Thus \(x\) can be any integer from \(1\) through \(9\), giving \(9\) possible values of the blank.</p>
+<p class="amc-en">Thus, the correct answer is <strong>D</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">14</span> 答案 <b>D</b></p>
+<p>有 \(5\) 个 E 和 \(4\) 个非 E 字母 B、K、P、R。为了不让两个 E 相邻，唯一可能的排列形式是 \[ E\_E\_E\_E\_E\text{，}\]四个非 E 字母分别填入四个空隙。</p>
+<p>B、K、P、R 可以用 \(4!=24\) 种方式排列。</p>
+<p>正确答案是 <strong>D</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The word has \(5\) E’s and \(4\) other letters: B, K, P, and R. To keep no two E’s adjacent, the only possible pattern is \[ E\_E\_E\_E\_E, \] with the four non-E letters in the four gaps.</p>
+<p class="amc-en">The letters B, K, P, and R can be arranged in those gaps in \(4!=24\) ways.</p>
+<p class="amc-en">Thus, the correct answer is <strong>D</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">15</span> 答案 <b>C</b></p>
+<p>对于每种重量，只有价格最低的那个点才可能给出最低的每盎司价格。</p>
+<p>在 \(1\) 盎司时，最低价格超过 \(1\) 美元，所以每盎司价格超过 \(1\) 美元。</p>
+<p>在 \(2\) 盎司时，最低价格为 \(2\) 美元，所以每盎司价格为 \(1\) 美元。</p>
+<p>在 \(3\) 盎司时，最低价格约为 \(2.5\) 美元，所以每盎司价格约为 \(\frac{2.5}{3}\)，小于 \(1\) 美元。</p>
+<p>在 \(4\) 盎司时，最低价格接近 \(3.9\) 美元，每盎司约为 \(\frac{3.9}{4}\)，仍高于 \(3\) 盎司选项。</p>
+<p>在 \(5\) 盎司时，最低价格接近 \(4.5\) 美元，每盎司约为 \(\frac{4.5}{5}\)，也高于 \(3\) 盎司选项。</p>
+<p>所以每盎司价格最低的是 \(3\) 盎司。</p>
+<p>正确答案是 <strong>C</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For each weight, only the lowest-price point at that weight can give the lowest price per ounce.</p>
+<p class="amc-en">At \(1\) ounce, the lowest price is more than \(1\) dollar, so the price per ounce is more than \(1\).</p>
+<p class="amc-en">At \(2\) ounces, the lowest price is \(2\) dollars, so the price per ounce is \(1\).</p>
+<p class="amc-en">At \(3\) ounces, the lowest price is about \(2.5\) dollars, so the price per ounce is about \(\frac{2.5}{3}\), less than \(1\).</p>
+<p class="amc-en">At \(4\) ounces, the lowest price is close to \(3.9\) dollars, so the price per ounce is close to \(\frac{3.9}{4}\), still larger than the \(3\)-ounce option.</p>
+<p class="amc-en">At \(5\) ounces, the lowest price is close to \(4.5\) dollars, so the price per ounce is close to \(\frac{4.5}{5}\), also larger than the \(3\)-ounce option.</p>
+<p class="amc-en">The price per ounce is lowest at \(3\) ounces.</p>
+<p class="amc-en">Thus, the correct answer is <strong>C</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">16</span> 答案 <b>B</b></p>
+<p>设四个数依次为 \(a,b,c,d\)。</p>
+<p>因为 \(a\) 和 \(b\) 的平均数是 \(21\)，所以它们的和是 \(21\cdot2 = 42\)。<br/> 因为 \(c\) 和 \(d\) 的平均数是 \(30\)，所以它们的和是 \(30\cdot2 = 60\)。<br/> 也就是 \(a+b = 42\)，\(c+d = 60 \)，从而 \[\begin{align*} a+b+c+d &amp;= 42 + 60\\ &amp;= 102 \end{align*}\]</p>
+<p>现在中间两个数 \(b\) 和 \(c\) 的平均数是 \(26\)，所以它们的和是 \(26\cdot2=52\)。因此 \(b+c = 52\)。</p>
+<p>用所有数的总和减去这个结果，得 \(a+d =50\)。<br/> 所以第一个和最后一个数的平均数是 \(\dfrac{a+d}{2}=25\)，答案为 \(25\)。</p>
+<p>正确答案是 <strong>B</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let the numbers be \(a,b,c,d\) in order.</p>
+<p class="amc-en">Since the average of \(a\) and \(b\) is \(21,\) we know their sum is \(21\cdot2 = 42.\)<br/> Since the average of \(c\) and \(d\) is \(30,\) we know their sum is \(30\cdot2 = 60.\)<br/> Since \(a+b = 42\) and \(c+d = 60 ,\) we know \[\begin{align*} a+b+c+d &amp;= 42 + 60\\ &amp;= 102 \end{align*}\]</p>
+<p class="amc-en">Now, with the average of \(b\) and \(c\) being \(26,\) we know their sum is \(26\cdot2=52.\) This means \(b+c = 52.\)</p>
+<p class="amc-en">Subtracting this result from the sum of all the terms yields \(a+d =50.\)<br/> Since \(\dfrac{a+d}{2}=25,\) our answer is \(25.\)</p>
+<p class="amc-en">Thus, the correct answer is <strong>B</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">17</span> 答案 <b>B</b></p>
+<p>对于每个满足 \(n\ge10\) 的偶数，乘积 \(n!!\) 都含有因子 \(10\)，所以该项的个位数字是 \(0\)。只有前四项会影响个位数字。</p>
+<p>这四项的和为 \[ \begin{gathered} 2!!+4!!+6!!+8!!\\ =2+8+48+384\\ =442 \end{gathered}\text{。}\]因此整个和的个位数字为 \(2\)。</p>
+<p>正确答案是 <strong>B</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For every even \(n\ge10,\) the product \(n!!\) contains a factor of \(10,\) so that term has units digit \(0.\) Only the first four terms can affect the units digit.</p>
+<p class="amc-en">They sum to \[ \begin{gathered} 2!!+4!!+6!!+8!!\\ =2+8+48+384\\ =442. \end{gathered} \] Therefore the full sum has units digit \(2.\)</p>
+<p class="amc-en">Thus, the correct answer is <strong>B</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">18</span> 答案 <b>C</b></p>
+<p>四个中点形成一个平行四边形。它的一条水平底边长度为 \(2-(-3)=5\)，高度为 \(4\)，面积为 \(5\cdot4=20\)。</p>
+<p>连接任意矩形四边中点形成的平行四边形面积等于原矩形面积的一半，所以原矩形面积为 \(2\cdot20=40\)。</p>
+<p>正确答案是 <strong>C</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The four given midpoints form a parallelogram. Its horizontal base has length \(2-(-3)=5\), and its height is \(4\), so its area is \(5\cdot4=20\).</p>
+<p class="amc-en">For any rectangle, the parallelogram formed by joining the side midpoints has half the area of the rectangle. Therefore the rectangle’s area is \(2\cdot20=40\).</p>
+<p class="amc-en">Thus, the correct answer is <strong>C</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">19</span> 答案 <b>C</b></p>
+<p>所有成绩都是 \(5\) 的倍数，加上 \(5\) 分后仍然如此。如果第 \(10\) 和第 \(11\) 个成绩的平均数是 \(85\)，但两者不都是 \(85\)，那么第 \(11\) 个成绩至少为 \(90\)。这就要求至少有 \(10\) 个成绩不低于 \(90\)。</p>
+<p>可是重新评分后，只有原来不低于 \(85\) 的成绩才可能达到 \(90\)。点图中这样的成绩只有 \(7\) 个，所以中间两个成绩必须都是 \(85\)。</p>
+<p>点图中原来有 \(7\) 个不低于 \(85\) 的成绩。要使第 \(10\) 和第 \(11\) 个成绩都为 \(85\)，至少要有 \(11\) 个成绩不低于 \(85\)。把四个 \(80\) 分提高到 \(85\) 分既是必要的，也是充分的。</p>
+<p>所以正确答案是 <strong>C</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">All scores are multiples of \(5,\) and adding \(5\) preserves that fact. If the \(10\)th and \(11\)th scores average \(85\) but are not both \(85,\) then the \(11\)th score must be at least \(90.\) That would require at least \(10\) scores of \(90\) or more.</p>
+<p class="amc-en">However, even after regrading, only the original scores of \(85\) or more can reach \(90.\) The plot has only \(7\) such scores, so the two middle scores must both be \(85.\)</p>
+<p class="amc-en">The plot initially has \(7\) scores of at least \(85.\) To make the \(10\)th and \(11\)th scores both \(85,\) there must be at least \(11\) scores of at least \(85.\) Raising four of the \(80\)’s to \(85\) is both necessary and sufficient.</p>
+<p class="amc-en">Thus, the correct answer is <strong>C</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">20</span> 答案 <b>D</b></p>
+<p>由顶行可知每行、每列的和都必须为 \(12\)。</p>
+<p>在第一列中，\(x\) 上方的缺失数为 \(14-x\)。在底行中，\(x\) 右边的缺失数为 \(4-x\)。中间行剩下的缺失数为 \(x-1\)。</p>
+<p>因为 \(x\) 大于另外三个缺失数，需要 \(x&gt;14-x\)、\(x&gt;4-x\)、\(x&gt; x-1\)。最强条件是 \(x&gt;7\)，所以最小整数为 \(8\)。</p>
+<p>正确答案是 <strong>D</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Adding the numbers in the top row shows that every row and column must have sum \(12\).</p>
+<p class="amc-en">In the first column, the missing number above \(x\) is \(14-x\). In the bottom row, the missing number to the right of \(x\) is \(4-x\). In the middle row, the remaining missing number is \(x-1\).</p>
+<p class="amc-en">Since \(x\) is larger than the other missing numbers, we need \(x&gt;14-x\), \(x&gt;4-x\), and \(x&gt; x-1\). The strongest condition is \(x&gt;7\), so the smallest possible integer value is \(8\).</p>
+<p class="amc-en">Thus, the correct answer is <strong>D</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">21</span> 答案 <b>C</b></p>
+<p>Steph 总共进了 \(25\) 球，出手 \(30\) 次。Candace 也出手了 \(12+18=30\) 次，且两人的总命中率相同，所以 Candace 也进了 \(25\) 球。</p>
+<p>设 Candace 上半场进 \(f\) 球，下半场进 \(s\) 球，则 \(f+s=25\)。</p>
+<p>Steph 上半场命中率为 \(\frac{15}{20}=\frac34\)，所以 \(\frac{f}{12}&lt;\frac34\)，得到 \(f&lt;9\)。Steph 下半场命中率为 \(1\)，所以 \(s&lt;18\)。</p>
+<p>因此 \(f\le8\) 且 \(s\le17\)。又 \(f+s=25\)，唯一可能是 \(f=8\)、\(s=17\)，所以 \(s-f=9\)。</p>
+<p>正确答案是 <strong>C</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Steph made \(25\) baskets in \(30\) attempts. Candace also took \(12+18=30\) attempts, and their overall percentages were the same, so Candace also made \(25\) baskets.</p>
+<p class="amc-en">Let \(f\) be Candace’s first-half baskets and \(s\) be her second-half baskets. Then \(f+s=25\).</p>
+<p class="amc-en">Steph’s first-half percentage was \(\frac{15}{20}=\frac34\), so \(\frac{f}{12}&lt;\frac34\), giving \(f&lt;9\). Steph’s second-half percentage was \(1\), so \(s&lt;18\).</p>
+<p class="amc-en">Thus \(f\le8\) and \(s\le17\). Since \(f+s=25\), the only possibility is \(f=8\) and \(s=17\), so \(s-f=9\).</p>
+<p class="amc-en">Thus, the correct answer is <strong>C</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">22</span> 答案 <b>A</b></p>
+<p>公交车需要 \(2\) 分钟开到下一站，再等 \(1\) 分钟，所以每 \(3\) 分钟完成一个站距周期。</p>
+<p>Zia 只在到达公交站时做决定，也就是每 \(5\) 分钟一次。以公交车出发站为第零站，则 Zia 从第 \(3\) 站出发。</p>
+<p>\(5\) 分钟后，Zia 在第 \(4\) 站，公交车在第 \(2\) 站等待，她继续走。\(10\) 分钟后，Zia 在第 \(5\) 站，公交车在第 \(3\) 站和第 \(4\) 站之间，她继续走。\(15\) 分钟后，Zia 在第 \(6\) 站，公交车在第 \(5\) 站，正好是前一站，所以她停下等待。</p>
+<p>公交车再用 \(2\) 分钟到达她所在的站，所以她在 \(17\) 分钟后上车。</p>
+<p>正确答案是 <strong>A</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The bus takes \(2\) minutes to drive to the next stop and then waits \(1\) minute, so it moves through one-stop cycles every \(3\) minutes.</p>
+<p class="amc-en">Zia makes a decision only when she reaches a stop, every \(5\) minutes. Measure stops from the bus’s starting stop. Zia starts at stop \(3\).</p>
+<p class="amc-en">After \(5\) minutes, Zia is at stop \(4\), while the bus is waiting at stop \(2\), so she keeps walking. After \(10\) minutes, Zia is at stop \(5\), while the bus is between stops \(3\) and \(4\), so she keeps walking. After \(15\) minutes, Zia is at stop \(6\), while the bus is at stop \(5\), the previous stop, so she waits.</p>
+<p class="amc-en">The bus then takes \(2\) more minutes to reach her stop, so she boards after \(17\) minutes.</p>
+<p class="amc-en">Thus, the correct answer is <strong>A</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">23</span> 答案 <b>D</b></p>
+<p>设三角形个数为 \(k\)。要同时有三角形线和圆形线，必须有 \(3\le k\le6\)。</p>
+<p>若 \(k=3\)，三角形必须成一条线。行或列有效，因为剩下的六个圆形中仍有完整的一行或一列；对角线无效，因为其余位置没有完整的圆形线。因此共有 \(6\) 种 \(k=3\) 的配置。由对称性，也有 \(6\) 种 \(k=6\) 的配置。</p>
+<p>若 \(k=4\)，先选一条三角形线。若这条线是行或列，额外的三角形有 \(6\) 个位置可选，每一种都可行，因为总有一条平行的行或列全是圆形，共 \(6\cdot6=36\) 种；若这条线是对角线，则无论额外的三角形放在哪里，都不能留下完整的圆形线。由对称性，\(k=5\) 也有 \(36\) 种。</p>
+<p>总数为 \(6+36+36+6=84\)。</p>
+<p>正确答案是 <strong>D</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(k\) be the number of triangles. To have both a triangle line and a circle line, we need \(3\le k\le6\).</p>
+<p class="amc-en">If \(k=3\), the three triangles must form a line. A row or column works, because the remaining six circles contain a full circle row or column. A diagonal does not work, because its complement contains no full line of circles. Thus there are \(6\) configurations for \(k=3\). By symmetry, there are also \(6\) configurations for \(k=6\).</p>
+<p class="amc-en">If \(k=4\), choose the triangle line and then the extra triangle. If the line is a row or column, all \(6\) possible extra positions work, because one parallel row or column remains all circles. This gives \(6\cdot6=36\) configurations. If the triangle line is a diagonal, no extra position leaves a full circle line. By symmetry, \(k=5\) also gives \(36\) configurations.</p>
+<p class="amc-en">The total number of configurations is \(6+36+36+6=84\).</p>
+<p class="amc-en">Thus, the correct answer is <strong>D</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">24</span> 答案 <b>C</b></p>
+<p>折叠后匹配边长给出 \(GF=EF=8\)。因为 \(GFCB\) 是矩形，所以 \(BC=8\)。折叠时 \(AB\) 与 \(BC\) 对应，所以 \(AB=8\)。在矩形 \(HJBA\) 中，\(HJ=8\)，且 \(BJ\) 等于 \(AH=8\)。</p>
+<p>因为 \(GH=14\)，所以 \(GJ=14-8=6\)。一个三角形底面是直角三角形 \(BJG\)，面积为 \[ \frac{6\cdot8}{2}=24\text{。}\]棱柱长度为 \(GF=8\)，所以体积为 \(24\cdot8=192\)。</p>
+<p>正确答案是 <strong>C</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">When the net is folded, the matching side lengths give \(GF=EF=8\). Since \(GFCB\) is a rectangle, \(BC=8\). The fold identifies \(AB\) with \(BC\), so \(AB=8\). In rectangle \(HJBA\), this gives \(HJ=8\), and the opposite side \(BJ\) equals \(AH=8\).</p>
+<p class="amc-en">Since \(GH=14\), we have \(GJ=14-8=6\). Thus one triangular base of the prism is right triangle \(BJG\), with area \[ \frac{6\cdot8}{2}=24. \] The prism length is \(GF=8\), so the volume is \(24\cdot8=192\).</p>
+<p class="amc-en">Thus, the correct answer is <strong>C</strong>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">25</span> 答案 <b>E</b></p>
+<p>设 \(p_n\) 为跳 \(n\) 次后在起始叶子上的概率，\(p_0=1\)。</p>
+<p>若蟋蟀在起点，下一跳一定离开；若不在起点，下一跳有 \(3\) 个等可能选择，其中一个会回到起点。因此 \[ p_{n+1}=\frac{1-p_n}{3}\text{。}\]</p>
+<p>逐次计算得 \[ \begin{gathered} p_1=0,\quad p_2=\frac13,\quad p_3=\frac29,\quad \\ p_4=\frac{1-\frac29}{3}=\frac{7}{27} \end{gathered}\text{。}\]</p>
+<p>正确答案是 <strong>E</strong>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(p_n\) be the probability that the cricket is on its starting leaf after \(n\) hops. We have \(p_0=1\).</p>
+<p class="amc-en">If the cricket is on the starting leaf, the next hop must leave it. If the cricket is not on the starting leaf, exactly one of the \(3\) possible hops returns to the start. Therefore \[ p_{n+1}=\frac{1-p_n}{3}. \]</p>
+<p class="amc-en">Thus \[ \begin{gathered} p_1=0,\quad p_2=\frac13,\quad p_3=\frac29,\quad \\ p_4=\frac{1-\frac29}{3}=\frac{7}{27}. \end{gathered} \]</p>
+<p class="amc-en">Thus, the correct answer is <strong>E</strong>.</p>
+</div>
+    </div>
+    <p class="dl-row">
+      
+      <a class="btn" href="https://t.fengg.net/docs-dl/public/download/%E6%95%B0%E5%AD%A6/AMC8(P%E7%89%88)/2022%20AMC%208%20%E7%9C%9F%E9%A2%98%E4%B8%8E%E8%A7%A3%E7%AD%94.docx" download="2022 AMC 8 真题与解答.docx" title="2022 AMC 8 真题与解答.docx">下载本题 Word 原文件（含答案解析）</a>
+      
+    </p>
+  </details>
+  
+
+  <nav class="siblings" aria-label="同分类的上一套与下一套">
+    
+    <a class="sib prev" href="/docs/amc8p-2020/" rel="prev">
+      <i aria-hidden="true">←</i>
+      <span><b>上一套</b><em>2020 年 AMC 8 真题（P版）</em></span>
+    </a>
+    
+    
+    <a class="sib next" href="/docs/amc8p-2023/" rel="next">
+      <span><b>下一套</b><em>2023 年 AMC 8 真题（P版）</em></span>
+      <i aria-hidden="true">→</i>
+    </a>
+    
+  </nav>
+
+  <p class="back"><a href="/c/math/">← 返回数学</a></p>
+</article>
+
+<button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 8.8V19h-2V8.8L6.4 13.4 5 12z" fill="currentColor"/></svg>
+</button>
+
+<script>
+(function () {
+  function openIfHash() {
+    if (location.hash === '#answer') {
+      var el = document.getElementById('answer');
+      if (el) { el.open = true; el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    }
+  }
+  openIfHash();
+  window.addEventListener('hashchange', openIfHash);
+
+  var top = document.querySelector('.to-top');
+  if (top) {
+    function onScroll() {
+      if (window.scrollY > 420) top.classList.add('show');
+      else top.classList.remove('show');
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    top.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // 同分类翻页快捷键：[ 上一套，] 下一套
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var sel = e.key === '[' ? '.sib.prev[href]' : (e.key === ']' ? '.sib.next[href]' : null);
+    if (!sel) return;
+    var a = document.querySelector(sel);
+    if (a) { e.preventDefault(); location.href = a.href; }
+  });
+})();
+</script>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-line">
+      <span>© 2026 Feng</span>
+      <span class="dot">·</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></span>
+    </div>
+    <p class="foot-note">本站内容均来源于网络，版权归原作者所有，仅供学习交流使用，请勿用于商业用途。</p>
+  </div>
+</footer>
+<script>
+(function () {
+  /* ---------- 深色模式 ---------- */
+  var root = document.documentElement;
+  var toggle = document.querySelector('.theme-toggle');
+  function osDark() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function isDark() {
+    var t = root.getAttribute('data-theme');
+    if (t === 'dark') return true;
+    if (t === 'light') return false;
+    return osDark();
+  }
+  function label() {
+    if (!toggle) return;
+    var d = isDark();
+    toggle.setAttribute('aria-label', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('title', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('aria-pressed', d ? 'true' : 'false');
+  }
+  if (toggle) {
+    label();
+    toggle.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) { /* noop */ }
+      label();
+    });
+  }
+  if (window.matchMedia) {
+    var mqDark = window.matchMedia('(prefers-color-scheme: dark)');
+    if (mqDark.addEventListener) mqDark.addEventListener('change', label);
+  }
+
+  /* ---------- 顶部导航 ---------- */
+  var nav = document.querySelector('.nav');
+  var navToggle = document.querySelector('.nav-toggle');
+  if (!nav || !navToggle) return;
+  var mq = window.matchMedia('(max-width: 720px)');
+  function closeAll() {
+    nav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    Array.prototype.forEach.call(nav.querySelectorAll('.open'), function (x) { x.classList.remove('open'); });
+  }
+  navToggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var on = nav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', on ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) {
+    if (!mq.matches) return;
+    var a = e.target.closest ? e.target.closest('a') : null;
+    if (!a) return;
+    var host = a.parentNode;
+    if (host && host.classList.contains('nav-drop') && a.classList.contains('has-caret')) {
+      e.preventDefault();
+      host.classList.toggle('open');
+    }
+  });
+  document.addEventListener('click', function (e) {
+    if (mq.matches && !nav.contains(e.target) && !navToggle.contains(e.target)) closeAll();
+  });
+  // 键盘 Esc 收起移动端菜单
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mq.matches && nav.classList.contains('open')) {
+      closeAll();
+      navToggle.focus();
+    }
+  });
+
+  /* ---------- 搜索快捷键：/ 聚焦，Ctrl(⌘)+K 打开 ---------- */
+  var searchLink = document.querySelector('.nav-s');
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    var typing = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable);
+    if ((e.ctrlKey || e.metaKey) && !e.shiftKey && (e.key === 'k' || e.key === 'K')) {
+      e.preventDefault();
+      var box = document.querySelector('.sbox-input');
+      if (box) { box.focus(); box.select(); }
+      else if (searchLink) location.href = searchLink.href;
+      return;
+    }
+    if (typing || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.key === '/') {
+      var box2 = document.querySelector('.sbox-input');
+      if (box2) { e.preventDefault(); box2.focus(); box2.select(); }
+      else if (searchLink) { e.preventDefault(); location.href = searchLink.href; }
+    }
+  });
+})();
+</script>
+</body>
+</html>

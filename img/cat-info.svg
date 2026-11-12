@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="信息学：代码窗口、二叉树与二进制">
+  <defs>
+    <linearGradient id="iBg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#f3f5fe"/>
+      <stop offset="0.55" stop-color="#e2e7fa"/>
+      <stop offset="1" stop-color="#ccd5f2"/>
+    </linearGradient>
+    <linearGradient id="iWin" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#eef1fd" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="iBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5c6fe0"/>
+      <stop offset="1" stop-color="#3f4fb8"/>
+    </linearGradient>
+    <linearGradient id="iNode" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#8b9bf0"/>
+      <stop offset="1" stop-color="#4a5fd0"/>
+    </linearGradient>
+    <pattern id="iGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#9aa8e0" stroke-opacity="0.22" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="640" height="400" fill="url(#iBg)"/>
+  <rect width="640" height="400" fill="url(#iGrid)"/>
+
+  <!-- 左侧：二叉树 / 图结构 -->
+  <g stroke="#7b8ce8" stroke-opacity="0.55" stroke-width="2.2" fill="none">
+    <path d="M168 236 L96 300 M168 236 L240 300 M96 300 L60 352 M96 300 L132 352 M240 300 L204 352 M240 300 L276 352"/>
+    <path d="M168 236 L128 168 M168 236 L208 168"/>
+  </g>
+  <g fill="url(#iNode)">
+    <circle cx="168" cy="236" r="15"/>
+    <circle cx="96" cy="300" r="12"/>
+    <circle cx="240" cy="300" r="12"/>
+    <circle cx="128" cy="168" r="10"/>
+    <circle cx="208" cy="168" r="10"/>
+    <circle cx="60" cy="352" r="8"/>
+    <circle cx="132" cy="352" r="8"/>
+    <circle cx="204" cy="352" r="8"/>
+    <circle cx="276" cy="352" r="8"/>
+  </g>
+  <g fill="#ffffff" fill-opacity="0.85">
+    <circle cx="168" cy="236" r="4.5"/>
+    <circle cx="96" cy="300" r="3.6"/>
+    <circle cx="240" cy="300" r="3.6"/>
+  </g>
+
+  <!-- 右侧：代码窗口 -->
+  <g>
+    <rect x="286" y="62" width="290" height="212" rx="14" fill="url(#iWin)" stroke="#c3cbf0" stroke-width="1.4"/>
+    <path d="M286 92 H576" stroke="#d7ddf6" stroke-width="1.4"/>
+    <g fill="#b9c4ee">
+      <circle cx="306" cy="77" r="4.6"/>
+      <circle cx="322" cy="77" r="4.6"/>
+      <circle cx="338" cy="77" r="4.6"/>
+    </g>
+    <!-- 代码行 -->
+    <g>
+      <rect x="304" y="108" width="58" height="8" rx="4" fill="url(#iBar)"/>
+      <rect x="370" y="108" width="92" height="8" rx="4" fill="#a8b3ea"/>
+      <rect x="304" y="128" width="34" height="8" rx="4" fill="#c3cbf0"/>
+      <rect x="346" y="128" width="118" height="8" rx="4" fill="#8b9bf0"/>
+      <rect x="472" y="128" width="46" height="8" rx="4" fill="#d5dbf5"/>
+      <rect x="322" y="148" width="76" height="8" rx="4" fill="#a8b3ea"/>
+      <rect x="406" y="148" width="54" height="8" rx="4" fill="#c3cbf0"/>
+      <rect x="322" y="168" width="42" height="8" rx="4" fill="#d5dbf5"/>
+      <rect x="372" y="168" width="104" height="8" rx="4" fill="#8b9bf0"/>
+      <rect x="304" y="188" width="30" height="8" rx="4" fill="#c3cbf0"/>
+      <rect x="342" y="188" width="86" height="8" rx="4" fill="url(#iBar)"/>
+      <rect x="436" y="188" width="62" height="8" rx="4" fill="#d5dbf5"/>
+      <rect x="304" y="208" width="112" height="8" rx="4" fill="#a8b3ea"/>
+      <rect x="424" y="208" width="40" height="8" rx="4" fill="#c3cbf0"/>
+      <rect x="322" y="228" width="66" height="8" rx="4" fill="#d5dbf5"/>
+      <rect x="396" y="228" width="94" height="8" rx="4" fill="#8b9bf0"/>
+      <rect x="304" y="248" width="52" height="8" rx="4" fill="#c3cbf0"/>
+      <!-- 光标 -->
+      <rect x="362" y="246" width="3" height="12" rx="1.5" fill="#4a5fd0"/>
+    </g>
+  </g>
+
+  <!-- 二进制串 -->
+  <g font-family="'SF Mono', Consolas, monospace" font-size="15" fill="#8b9bf0" fill-opacity="0.5">
+    <text x="34" y="90">0 1 1 0</text>
+    <text x="34" y="112">1 0 1 1</text>
+    <text x="34" y="134">0 0 1 0</text>
+  </g>
+
+  <!-- 标题 -->
+  <g text-anchor="start" font-family="Georgia, 'Times New Roman', serif">
+    <text x="40" y="352" font-size="15" letter-spacing="1.2" fill="#3f4fb8" fill-opacity="0.62">algorithm · data structure</text>
+    <text x="40" y="382" font-size="26" letter-spacing="2.4" fill="#2b3880" fill-opacity="0.82">informatics</text>
+  </g>
+
+  <!-- 右侧渐隐 -->
+  <rect x="520" y="0" width="120" height="400" fill="url(#iBg)" fill-opacity="0"/>
+</svg>

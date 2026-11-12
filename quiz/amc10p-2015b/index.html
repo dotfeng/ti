@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<meta charset="utf-8">
+<title>答题 · 2015B AMC 10 真题（P版） · 竞赛资料库</title>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) { /* 隐私模式下忽略 */ }
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="2015B AMC 10 真题（P版）：数学 · AMC10(P版)，2015B 年，共 25 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+
+<link rel="canonical" href="https://t.fengg.net/quiz/amc10p-2015b/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="竞赛资料库">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="答题 · 2015B AMC 10 真题（P版）">
+<meta property="og:description" content="2015B AMC 10 真题（P版）：数学 · AMC10(P版)，2015B 年，共 25 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+<meta property="og:url" content="https://t.fengg.net/quiz/amc10p-2015b/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f7f9">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1318">
+
+
+<link rel="prev" href="/docs/amc10p-2015a/">
+<link rel="next" href="/docs/amc10p-2016a/">
+<link rel="stylesheet" href="/css/style.css?v=20261110e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+
+<link rel="stylesheet" href="/katex/katex.min.css">
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (!window.renderMathInElement) return;
+  var el = document.querySelector('.doc') || document.body;
+  try {
+    renderMathInElement(el, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false }
+      ],
+      throwOnError: false
+    });
+  } catch (e) { /* 公式渲染失败不影响正文 */ }
+});
+</script>
+
+
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/">竞赛资料库</a>
+    <nav class="nav"><a class="nav-a" href="/">首页</a><div class="nav-drop nav-mega"><a class="nav-a has-caret" href="/all/" title="按科目浏览全部题库">题库<i class="caret" aria-hidden="true"></i></a><div class="drop mega"><div class="mega-col" style="--accent:#3776c4"><a class="mega-h" href="/c/astronomy/"><i class="mega-dot" aria-hidden="true"></i>天文<span class="cnt">52</span></a><a class="mega-l" href="/c/astronomy/cnao/">CNAO<span class="cnt">28</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/cnao/prelim/">预赛</a><a class="mega-c" href="/c/astronomy/cnao/final/">决赛</a><a class="mega-c" href="/c/astronomy/cnao/primary/">小学组</a></span><a class="mega-l" href="/c/astronomy/provincial/">省赛<span class="cnt">15</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/provincial/beijing/">北京</a><a class="mega-c" href="/c/astronomy/provincial/guangdong/">广东</a><a class="mega-c" href="/c/astronomy/provincial/zhejiang/">浙江</a><a class="mega-c" href="/c/astronomy/provincial/jiangsu/">江苏</a><a class="mega-c" href="/c/astronomy/provincial/shandong/">山东</a><a class="mega-c" href="/c/astronomy/provincial/taiwan/">中国台湾</a></span><a class="mega-l" href="/c/astronomy/practice/">练习<span class="cnt">9</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/practice/primary/">小学组练习</a><a class="mega-c" href="/c/astronomy/practice/bank/">题库合集</a></span></div><div class="mega-col" style="--accent:#0f8a5f"><a class="mega-h" href="/c/math/"><i class="mega-dot" aria-hidden="true"></i>数学<span class="cnt">290</span></a><a class="mega-l" href="/c/math/amc8/">AMC8<span class="cnt">26</span></a><a class="mega-l" href="/c/math/amc8p/">AMC8(P版)<span class="cnt">41</span></a><a class="mega-l" href="/c/math/amc10p/">AMC10(P版)<span class="cnt">52</span></a><a class="mega-l" href="/c/math/amc12p/">AMC12(P版)<span class="cnt">102</span></a><a class="mega-l" href="/c/math/gzl/">全国中学生数学奥林匹克竞赛<span class="cnt">69</span></a><span class="mega-cs"><a class="mega-c" href="/c/math/gzl/liansai/">联赛（预赛）</a><a class="mega-c" href="/c/math/gzl/final/">决赛（CMO）</a><a class="mega-c" href="/c/math/gzl/province/">各赛区预赛</a></span></div><div class="mega-col" style="--accent:#6c4bb6"><a class="mega-h" href="/c/physics/"><i class="mega-dot" aria-hidden="true"></i>物理<span class="cnt">73</span></a><a class="mega-l" href="/c/physics/national/">全国竞赛<span class="cnt">49</span></a><a class="mega-l" href="/c/physics/asian/">亚洲竞赛<span class="cnt">11</span></a><a class="mega-l" href="/c/physics/international/">国际竞赛<span class="cnt">13</span></a></div><div class="mega-col" style="--accent:#3f8f46"><a class="mega-h" href="/c/biology/"><i class="mega-dot" aria-hidden="true"></i>生物<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/league/">全国中学生生物学联赛<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/competition/">全国中学生生物学竞赛</a></div><div class="mega-col" style="--accent:#c05a2b"><a class="mega-h" href="/c/chemistry/"><i class="mega-dot" aria-hidden="true"></i>化学<span class="cnt">10</span></a><a class="mega-l" href="/c/chemistry/ccho/">全国中学生化学奥林匹克竞赛<span class="cnt">10</span></a></div><div class="mega-col" style="--accent:#1f7a8c"><a class="mega-h" href="/c/earth/"><i class="mega-dot" aria-hidden="true"></i>地球科学<span class="cnt">22</span></a><a class="mega-l" href="/c/earth/national/">全国竞赛<span class="cnt">17</span></a><a class="mega-l" href="/c/earth/international/">国际竞赛<span class="cnt">5</span></a></div><div class="mega-col" style="--accent:#2c8a6e"><a class="mega-h" href="/c/geography/"><i class="mega-dot" aria-hidden="true"></i>地理<span class="cnt">11</span></a><a class="mega-l" href="/c/geography/geokids/">地球小博士<span class="cnt">11</span></a></div><div class="mega-col" style="--accent:#4a5fd0"><a class="mega-h" href="/c/info/"><i class="mega-dot" aria-hidden="true"></i>信息学<span class="cnt">9</span></a><a class="mega-l" href="/c/info/noi/">全国青少年信息学奥林匹克竞赛<span class="cnt">3</span></a><a class="mega-l" href="/c/info/noip/">全国青少年信息学奥林匹克联赛<span class="cnt">1</span></a><a class="mega-l" href="/c/info/csp/">CSP-J/S 非专业级软件能力认证<span class="cnt">1</span></a><a class="mega-l" href="/c/info/apio/">亚洲和太平洋地区信息学奥林匹克<span class="cnt">1</span></a><a class="mega-l" href="/c/info/winter/">NOI 冬令营<span class="cnt">1</span></a><a class="mega-l" href="/c/info/camp/">IOI 中国国家集训队集训<span class="cnt">2</span></a></div><a class="mega-all" href="/all/">全部文档（474 套）<i class="arr" aria-hidden="true">›</i></a></div></div><a class="nav-a" href="/whitelist/">白名单竞赛</a><a class="nav-a" href="/about/">使用说明</a><a class="nav-a nav-s" href="/search/" title="站内搜索（按 / 或 Ctrl+K）"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.9 12.1l4.3 4.3-1.4 1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z" fill="currentColor"/></svg>搜索</a></nav>
+    <div class="head-tools">
+      <button class="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式">
+        <svg class="ic-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12.7 3a8.5 8.5 0 108.3 10.6A7 7 0 0112.7 3z" fill="currentColor"/></svg>
+        <svg class="ic-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12 17a5 5 0 110-10 5 5 0 010 10zm0-13a1 1 0 011 1v1a1 1 0 01-2 0V5a1 1 0 011-1zm0 14a1 1 0 011 1v1a1 1 0 01-2 0v-1a1 1 0 011-1zM4 11h1a1 1 0 010 2H4a1 1 0 010-2zm15 0h1a1 1 0 010 2h-1a1 1 0 010-2zM6.3 5.5l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm11 11l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm.7-11a1 1 0 010 1.4l-.7.7A1 1 0 0115.9 6.2l.7-.7a1 1 0 011.4 0zm-11 11a1 1 0 010 1.4l-.7.7a1 1 0 01-1.4-1.4l.7-.7a1 1 0 011.4 0z" fill="currentColor"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-label="打开分类菜单" aria-expanded="false">分类 ▾</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main" tabindex="-1">
+
+<article class="doc quiz-page">
+  <nav class="crumb">
+    <a href="/">首页</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/">数学</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/amc10p/">AMC10(P版)</a>
+    
+    <span class="sep">/</span>
+    <a href="/docs/amc10p-2015b/">2015B AMC 10 真题（P版）</a>
+    <span class="sep">/</span><span>答题模式</span>
+  </nav>
+
+  <div class="qz-top" id="qzTop">
+    <div class="qz-top-l">
+      <h1 class="qz-title">2015B AMC 10 真题（P版）</h1>
+      <p class="qz-sub">
+        <span class="qz-pill">答题模式</span>
+        <span>共 25 题</span>
+      </p>
+    </div>
+    <div class="qz-top-r">
+      <div class="qz-timer" id="qzTimer">
+        <span class="qz-timer-k">答题耗时</span>
+        <b id="qzClock">00:00</b>
+      </div>
+      <div class="qz-side">
+        <span class="qz-progress" id="qzProgress">已答 0 / 25</span>
+        <a class="qz-back" href="/docs/amc10p-2015b/">← 返回展示模式</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="qz-note" id="qzNote">
+    <p class="qz-note-h">答题前请先了解</p>
+    <ul>
+      <li>本模式为<strong>一次性自测</strong>：不记录作答、不统计历史、不生成错题集，刷新或关闭本页即全部清空。</li>
+      <li>提交后立即判分，并在每题下方展开正确答案与解析；<strong>填空题只给参考答案，不参与判分</strong>。</li>
+      <li>没做完也可以提交：点「提交答卷」时会提示还剩几题，确认后照常判分，<strong>未作答的题目按答错计</strong>；原卷标注「作废 / 不计成绩」的题目不计分。</li>
+      <li>题目内容与展示模式完全一致，可随时点右上角返回展示模式查阅。</li>
+    </ul>
+    <button class="btn qz-start" id="qzStart" type="button">开始答题（点击后开始计时）</button>
+  </div>
+
+  <form class="qz-form" id="qzForm" hidden>
+    <section class="qz-q" id="q1" data-no="1" data-type="single" data-ans="C">
+<div class="qz-qhead"><span class="qz-badge">1</span><span class="qz-flag">单选</span></div>
+<p>求 \(2-(-2)^{-2}\) 的值。</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q1" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(-2\)</span></label>
+<label class="qz-opt"><input type="radio" name="q1" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(\dfrac{1}{16}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q1" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(\dfrac{7}{4}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q1" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(\dfrac{9}{4}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q1" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(6\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">What is the value of \(2-(-2)^{-2}?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>因为 \((-2)^{-2}=\frac{1}{(-2)^2}=\frac14\)，所以 \[2-\frac14=\frac74\text{。}\]</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since \((-2)^{-2}=\frac{1}{(-2)^2}=\frac14\), the expression is \[2-\frac14=\frac74.\]</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q2" data-no="2" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">2</span><span class="qz-flag">单选</span></div>
+<p>Marie 连续做三项耗时相同的任务，中间不休息。她下午 \(1\!:\!00\) 开始第一项任务，下午 \(2\!:\!40\) 完成第二项任务。她什么时候完成第三项任务？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q2" value="A"><span class="qz-mark">A</span><span class="qz-txt">下午 \(3{:}10\)</span></label>
+<label class="qz-opt"><input type="radio" name="q2" value="B"><span class="qz-mark">B</span><span class="qz-txt">下午 \(3{:}30\)</span></label>
+<label class="qz-opt"><input type="radio" name="q2" value="C"><span class="qz-mark">C</span><span class="qz-txt">下午 \(4{:}00\)</span></label>
+<label class="qz-opt"><input type="radio" name="q2" value="D"><span class="qz-mark">D</span><span class="qz-txt">下午 \(4{:}10\)</span></label>
+<label class="qz-opt"><input type="radio" name="q2" value="E"><span class="qz-mark">E</span><span class="qz-txt">下午 \(4{:}30\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Marie does three equally time-consuming tasks in a row without taking breaks. She begins the first task at \(1\!:\!00\) PM and finishes the second task at \(2\!:\!40\) PM. When does she finish the third task?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>完成 \(2\) 项任务共用 \(100\) 分钟。因此在 \(2:40\) 之后还需要 \(50\) 分钟，也就是 \(3:30\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The time it takes to do \(2\) tasks is \(100\) minutes. Thus, it takes \(50\) more minutes after \(2:40,\) which is \(3:30.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b> .</p>
+</div></div>
+</section>
+<section class="qz-q" id="q3" data-no="3" data-type="single" data-ans="A">
+<div class="qz-qhead"><span class="qz-badge">3</span><span class="qz-flag">单选</span></div>
+<p>Isaac 写下了某个整数两次，另一个整数三次。这五个数的和为 \(100\)，并且其中一个数是 \(28\)。另一个数是多少？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q3" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(8\)</span></label>
+<label class="qz-opt"><input type="radio" name="q3" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(11\)</span></label>
+<label class="qz-opt"><input type="radio" name="q3" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(14\)</span></label>
+<label class="qz-opt"><input type="radio" name="q3" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(15\)</span></label>
+<label class="qz-opt"><input type="radio" name="q3" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(18\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Isaac has written down one integer two times and another integer three times. The sum of the five numbers is \(100,\) and one of the numbers is \(28.\) What is the other number?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>设写了两次的数为 \(x\)，写了三次的数为 \(y\)。\(2x+3y=100\)。</p>
+<p>若 \(x=28\)，则 \(3y=100-56=44\)，所以 \(y\) 不可能是整数。因此 \(y=28\)，从而 \(2x=100-84=16\)，所以 \(x=8\)。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let the number written twice be \(x\), and let the number written three times be \(y\). Then \(2x+3y=100\).</p>
+<p class="amc-en">If \(x=28\), then \(3y=100-56=44\), impossible for an integer \(y\). Therefore \(y=28\), and \(2x=100-84=16\), so \(x=8\).</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q4" data-no="4" data-type="single" data-ans="C">
+<div class="qz-qhead"><span class="qz-badge">4</span><span class="qz-flag">单选</span></div>
+<p>四个兄弟姐妹点了一张特大披萨。Alex 吃了披萨的 \(\frac15\)，Beth 吃了 \(\frac13\)，Cyril 吃了 \(\frac14\)。Dan 吃了剩下的部分。按吃掉披萨的份额从大到小排列，顺序是什么？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q4" value="A"><span class="qz-mark">A</span><span class="qz-txt">Alex, Beth, Cyril, Dan</span></label>
+<label class="qz-opt"><input type="radio" name="q4" value="B"><span class="qz-mark">B</span><span class="qz-txt">Beth, Cyril, Alex, Dan</span></label>
+<label class="qz-opt"><input type="radio" name="q4" value="C"><span class="qz-mark">C</span><span class="qz-txt">Beth, Cyril, Dan, Alex</span></label>
+<label class="qz-opt"><input type="radio" name="q4" value="D"><span class="qz-mark">D</span><span class="qz-txt">Beth, Dan, Cyril, Alex</span></label>
+<label class="qz-opt"><input type="radio" name="q4" value="E"><span class="qz-mark">E</span><span class="qz-txt">Dan, Beth, Cyril, Alex</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Four siblings ordered an extra large pizza. Alex ate \(\frac15,\) Beth \(\frac13,\) and Cyril \(\frac14\) of the pizza. Dan got the leftovers. What is the sequence of the siblings in decreasing order of the part of the pizza they consumed?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>因为 \(\frac 13 &gt; \frac 14 &gt; \frac 15\)，所以 Beth 吃得比 Cyril 多，Cyril 吃得比 Alex 多。因此这三人的顺序已经确定。</p>
+<p>Dan 吃了 \[1- \dfrac 13 - \dfrac 14 - \dfrac 15 = \dfrac{13}{60}\text{。}\] 这大于 \(\frac 15\)，小于 \(\frac 14 \)，所以 Dan 排在 Cyril 和 Alex 之间，顺序为 Beth、Cyril、Dan、Alex。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since \(\frac 13 &gt; \frac 14 &gt; \frac 15,\) we know Beth ate more than Cyril and Cyril ate more than Alex. Thus, those three are in order.</p>
+<p class="amc-en">The amount Dan ate is \[1- \dfrac 13 - \dfrac 14 - \dfrac 15 = \dfrac{13}{60}.\] This is greater than \(\frac 15\) and less than \(\frac 14 ,\) so Dan is in between Cyril and Alex. This makes the order Beth, Cyril, Dan, Alex.</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b> .</p>
+</div></div>
+</section>
+<section class="qz-q" id="q5" data-no="5" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">5</span><span class="qz-flag">单选</span></div>
+<p>David、Hikmet、Jack、Marta、Rand 和 Todd 与另外 \(6\) 人参加了一场 \(12\) 人赛跑。Rand 比 Hikmet 早 \(6\) 个名次完成。Marta 比 Jack 晚 \(1\) 个名次。David 比 Hikmet 晚 \(2\) 个名次。Jack 比 Todd 晚 \(2\) 个名次。Todd 比 Rand 晚 \(1\) 个名次。Marta 得第 \(6\) 名。谁得第 \(8\) 名？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q5" value="A"><span class="qz-mark">A</span><span class="qz-txt">David</span></label>
+<label class="qz-opt"><input type="radio" name="q5" value="B"><span class="qz-mark">B</span><span class="qz-txt">Hikmet</span></label>
+<label class="qz-opt"><input type="radio" name="q5" value="C"><span class="qz-mark">C</span><span class="qz-txt">Jack</span></label>
+<label class="qz-opt"><input type="radio" name="q5" value="D"><span class="qz-mark">D</span><span class="qz-txt">Rand</span></label>
+<label class="qz-opt"><input type="radio" name="q5" value="E"><span class="qz-mark">E</span><span class="qz-txt">Todd</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">David, Hikmet, Jack, Marta, Rand, and Todd were in a \(12\)-person race with \(6\) other people. Rand finished \(6\) places ahead of Hikmet. Marta finished \(1\) place behind Jack. David finished \(2\) places behind Hikmet. Jack finished \(2\) places behind Todd. Todd finished \(1\) place behind Rand. Marta finished in \(6\)th place. Who finished in \(8\)th place?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>Marta 是第 \(6\) 名，所以 Jack 是第 \(5\) 名。Jack 比 Todd 晚 \(2\) 个名次，所以 Todd 是第 \(3\) 名；Todd 比 Rand 晚 \(1\) 个名次，所以 Rand 是第 \(2\) 名。</p>
+<p>Hikmet 比 Rand 晚 \(6\) 个名次，所以 Hikmet 是第 \(8\) 名。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Marta finished \(6\)th, so Jack finished \(5\)th. Since Jack finished \(2\) places behind Todd, Todd finished \(3\)rd. Since Todd finished \(1\) place behind Rand, Rand finished \(2\)nd.</p>
+<p class="amc-en">Hikmet finished \(6\) places behind Rand, so Hikmet finished \(8\)th.</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q6" data-no="6" data-type="single" data-ans="E">
+<div class="qz-qhead"><span class="qz-badge">6</span><span class="qz-flag">单选</span></div>
+<p>Marley 一周中每天恰好练习一项运动。她每周跑步三天，但从不连续两天跑步。星期一她打篮球，两天后打高尔夫。她还游泳和打网球，但她从不在跑步或游泳的后一天打网球。Marley 星期几游泳？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q6" value="A"><span class="qz-mark">A</span><span class="qz-txt">星期日</span></label>
+<label class="qz-opt"><input type="radio" name="q6" value="B"><span class="qz-mark">B</span><span class="qz-txt">星期二</span></label>
+<label class="qz-opt"><input type="radio" name="q6" value="C"><span class="qz-mark">C</span><span class="qz-txt">星期四</span></label>
+<label class="qz-opt"><input type="radio" name="q6" value="D"><span class="qz-mark">D</span><span class="qz-txt">星期五</span></label>
+<label class="qz-opt"><input type="radio" name="q6" value="E"><span class="qz-mark">E</span><span class="qz-txt">星期六</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Marley practices exactly one sport each day of the week. She runs three days a week but never on two consecutive days. On Monday she plays basketball and two days later golf. She swims and plays tennis, but she never plays tennis the day after running or swimming. Which day of the week does Marley swim?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>Marley 星期一打篮球，星期三打高尔夫。若星期二不跑步，则三天跑步只能安排在星期四到星期日之间，必然有连续两天跑步，所以星期二必须跑步。</p>
+<p>从星期四到星期日，她必须安排两天跑步、一天游泳和一天打网球。打网球不能排在跑步或游泳的后一天，所以只能在星期四。剩下两天跑步必须是星期五和星期日，因此星期六游泳。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Marley plays basketball on Monday and golf on Wednesday. She cannot fit all three running days among Thursday, Friday, Saturday, and Sunday without having two consecutive running days, so Tuesday must be a running day.</p>
+<p class="amc-en">From Thursday through Sunday, she must run twice, swim once, and play tennis once. Tennis cannot be the day after running or swimming, so tennis must be Thursday. Then the two remaining running days must be Friday and Sunday, leaving Saturday for swimming.</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q7" data-no="7" data-type="single" data-ans="A">
+<div class="qz-qhead"><span class="qz-badge">7</span><span class="qz-flag">单选</span></div>
+<p>定义运算“减去倒数”为 \(a\diamond b=a-\frac{1}{b}\)。求 \[((1\diamond2)\diamond3)-(1\diamond(2\diamond3))\text{？}\]</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q7" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(-\dfrac{7}{30}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q7" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(-\dfrac{1}{6}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q7" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(0\)</span></label>
+<label class="qz-opt"><input type="radio" name="q7" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(\dfrac{1}{6}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q7" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(\dfrac{7}{30}\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Consider the operation “minus the reciprocal of,” defined by \(a\diamond b=a-\frac{1}{b}.\) What is \[((1\diamond2)\diamond3)-(1\diamond(2\diamond3))?\]</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>\[\begin{aligned} &amp;((1\diamond2)\diamond3)-(1\diamond(2\diamond3)) \\ &amp;= \left(\dfrac 12- \dfrac 13\right) - \left(1 \diamond \dfrac 53\right)\\ &amp;= \left(\dfrac 12 - \dfrac 13\right) - \left(1-\dfrac 35\right)\\ &amp;= \dfrac 16 - \dfrac 25 \\&amp;= -\dfrac{7}{30} \end{aligned}\]</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">\[\begin{aligned} &amp;((1\diamond2)\diamond3)-(1\diamond(2\diamond3)) \\ &amp;= \left(\dfrac 12- \dfrac 13\right) - \left(1 \diamond \dfrac 53\right)\\ &amp;= \left(\dfrac 12 - \dfrac 13\right) - \left(1-\dfrac 35\right)\\ &amp;= \dfrac 16 - \dfrac 25 \\&amp;= -\dfrac{7}{30} \end{aligned}\]</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b> .</p>
+</div></div>
+</section>
+<section class="qz-q" id="q8" data-no="8" data-type="single" data-ans="E">
+<div class="qz-qhead"><span class="qz-badge">8</span><span class="qz-flag">单选</span></div>
+<p>下图中的字母 F 先绕原点顺时针旋转 \(90^\circ\)，再关于 \(y\) 轴反射，然后绕原点旋转半圈。最终图像是哪一个？</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2015B/problem/q08-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q8" value="A"><span class="qz-mark">A</span><span class="qz-txt"><img class="amc-fig" src="/img/papers/amc10p/2015B/problem/q08-1.svg" alt="题图" loading="lazy"></span></label>
+<label class="qz-opt"><input type="radio" name="q8" value="B"><span class="qz-mark">B</span><span class="qz-txt"><img class="amc-fig" src="/img/papers/amc10p/2015B/problem/q08-b-1.svg" alt="题图" loading="lazy"></span></label>
+<label class="qz-opt"><input type="radio" name="q8" value="C"><span class="qz-mark">C</span><span class="qz-txt"><img class="amc-fig" src="/img/papers/amc10p/2015B/problem/q08-c-1.svg" alt="题图" loading="lazy"></span></label>
+<label class="qz-opt"><input type="radio" name="q8" value="D"><span class="qz-mark">D</span><span class="qz-txt"><img class="amc-fig" src="/img/papers/amc10p/2015B/problem/q08-d-1.svg" alt="题图" loading="lazy"></span></label>
+<label class="qz-opt"><input type="radio" name="q8" value="E"><span class="qz-mark">E</span><span class="qz-txt"><img class="amc-fig" src="/img/papers/amc10p/2015B/problem/q08-e-1.svg" alt="题图" loading="lazy"></span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">The letter F shown below is rotated \(90^\circ\) clockwise around the origin, then reflected in the \(y\)-axis, and then rotated a half turn around the origin. What is the final image?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2015B/problem/q08-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>第一次旋转把字母 F 移到 \(x\) 轴下方。</p>
+<p>旋转半圈等价于依次关于两条坐标轴反射，因此最后的半圈旋转抵消了前面关于 \(y\) 轴的反射，只留下关于 \(x\) 轴的反射。</p>
+<p>把旋转后的图形关于 \(x\) 轴反射，就得到选项 E。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The first rotation puts the F below the \(x\)-axis.</p>
+<p class="amc-en">A half turn is equivalent to reflecting in both coordinate axes. Therefore the final half turn cancels the preceding reflection in the \(y\)-axis and leaves a reflection in the \(x\)-axis.</p>
+<p class="amc-en">Reflecting the rotated figure in the \(x\)-axis produces choice E.</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b> .</p>
+</div></div>
+</section>
+<section class="qz-q" id="q9" data-no="9" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">9</span><span class="qz-flag">单选</span></div>
+<p>下图阴影区域称为鲨鱼鳍形弓月，是 Leonardo da Vinci 研究过的图形。它由第一象限内圆心为 \((0,0)\)、半径为 \(3\) 的圆弧，第一象限内圆心为 \((0,\tfrac{3}{2})\)、半径为 \(\tfrac{3}{2}\) 的圆弧，以及从 \((0,0)\) 到 \((3,0)\) 的线段围成。该鲨鱼鳍形弓月的面积是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2015B/problem/q09-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q9" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(\dfrac{4\pi}{5}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q9" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(\dfrac{9\pi}{8}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q9" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(\dfrac{4\pi}{3}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q9" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(\dfrac{7\pi}{5}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q9" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(\dfrac{3\pi}{2}\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">The shaded region below is called a shark’s fin falcata, a figure studied by Leonardo da Vinci. It is bounded by the portion of the circle of radius \(3\) and center \((0,0)\) that lies in the first quadrant, the portion of the circle with radius \(\tfrac{3}{2}\) and center \((0,\tfrac{3}{2})\) that lies in the first quadrant, and the line segment from \((0,0)\) to \((3,0).\) What is the area of the shark’s fin falcata?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2015B/problem/q09-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>外边界是半径为 \(3\) 的四分之一圆，所以面积为 \(\frac14\pi\cdot3^2=\frac{9\pi}{4}\)。</p>
+<p>内边界是半径为 \(\frac32\) 的圆的右半部分，所以面积为 \(\frac12\pi\left(\frac32\right)^2=\frac{9\pi}{8}\)。</p>
+<p>阴影面积就是二者之差，\(\frac{9\pi}{4}-\frac{9\pi}{8}=\frac{9\pi}{8}\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The larger boundary is a quarter circle of radius \(3\), so its area is \(\frac14\pi\cdot3^2=\frac{9\pi}{4}\).</p>
+<p class="amc-en">The inner boundary is the right half of a circle of radius \(\frac32\), so its area is \(\frac12\pi\left(\frac32\right)^2=\frac{9\pi}{8}\).</p>
+<p class="amc-en">The shaded area is the difference, \(\frac{9\pi}{4}-\frac{9\pi}{8}=\frac{9\pi}{8}\).</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q10" data-no="10" data-type="single" data-ans="C">
+<div class="qz-qhead"><span class="qz-badge">10</span><span class="qz-flag">单选</span></div>
+<p>所有严格大于 \(-2015\) 的负奇整数的乘积，其符号和个位数字是什么？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q10" value="A"><span class="qz-mark">A</span><span class="qz-txt">它是一个个位为 \(1\) 的负数。</span></label>
+<label class="qz-opt"><input type="radio" name="q10" value="B"><span class="qz-mark">B</span><span class="qz-txt">它是一个个位为 \(1\) 的正数。</span></label>
+<label class="qz-opt"><input type="radio" name="q10" value="C"><span class="qz-mark">C</span><span class="qz-txt">它是一个个位为 \(5\) 的负数。</span></label>
+<label class="qz-opt"><input type="radio" name="q10" value="D"><span class="qz-mark">D</span><span class="qz-txt">它是一个个位为 \(5\) 的正数。</span></label>
+<label class="qz-opt"><input type="radio" name="q10" value="E"><span class="qz-mark">E</span><span class="qz-txt">它是一个个位为 \(0\) 的负数。</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">What are the sign and units digit of the product of all the odd negative integers strictly greater than \(-2015?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>大于 \(-2015\) 的负奇整数共有 \(1007\) 个。</p>
+<p>负因子个数为奇数，所以乘积为负。</p>
+<p>乘积包含因子 \(-5\)，所以是 \(5\) 的倍数，个位只能是 \(5\) 或 \(0\)。</p>
+<p>又因为所有因子都是奇数，所以乘积不可能是偶数，个位不能为零，只能为 \(5\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">There are \(1007\) odd numbers greater than \(-2015.\)</p>
+<p class="amc-en">Our product is of an odd number of negative numbers, so the result is negative.</p>
+<p class="amc-en">Also, we multiply by \(-5\) in there, so the product is a multiple of \(5,\) making it end in \(5\) or \(0.\) None of our factors are even, so the product can’t be even.</p>
+<p class="amc-en">Therefore, the product must end in \(5.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b> .</p>
+</div></div>
+</section>
+<section class="qz-q" id="q11" data-no="11" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">11</span><span class="qz-flag">单选</span></div>
+<p>在小于 \(100\) 的正整数中，每一位数字都是质数的数被等可能地选出一个。所选数是质数的概率是多少？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q11" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(\dfrac{8}{99}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q11" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(\dfrac{2}{5}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q11" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(\dfrac{9}{20}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q11" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(\dfrac{1}{2}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q11" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(\dfrac{9}{16}\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Among the positive integers less than \(100,\) each of whose digits is a prime number, one is selected at random. What is the probability that the selected number is prime?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>可用数字为 \(2,3,5,7\)。一位数有 \(4\) 个，两位数有 \(4^2=16\) 个，共 \(20\) 个选择。</p>
+<p>所有 \(4\) 个一位选择都是质数。两位质数不能以 \(2\) 或 \(5\) 结尾，所以检查以 \(3\) 和 \(7\) 结尾的情况，得到两位质数 \(23,37,53,73\)。</p>
+<p>因此共有 \(8\) 个质数；总选择数为 \(20\)，所以概率为 \(\frac{8}{20}=\frac25\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The available digits are \(2,3,5,7\). There are \(4\) one-digit numbers and \(4^2=16\) two-digit numbers, for \(20\) total choices.</p>
+<p class="amc-en">All \(4\) one-digit choices are prime. A two-digit prime cannot end in \(2\) or \(5\), so checking endings \(3\) and \(7\) gives the two-digit primes \(23,37,53,73\).</p>
+<p class="amc-en">Thus \(8\) of the \(20\) choices are prime, and the probability is \(\frac{8}{20}=\frac25\).</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q12" data-no="12" data-type="single" data-ans="A">
+<div class="qz-qhead"><span class="qz-badge">12</span><span class="qz-flag">单选</span></div>
+<p>有多少个整数 \(x\)，使点 \((x, -x)\) 位于以 \((5, 5)\) 为圆心、半径为 \(10\) 的圆内或圆上？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q12" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(11\)</span></label>
+<label class="qz-opt"><input type="radio" name="q12" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(12\)</span></label>
+<label class="qz-opt"><input type="radio" name="q12" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(13\)</span></label>
+<label class="qz-opt"><input type="radio" name="q12" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(14\)</span></label>
+<label class="qz-opt"><input type="radio" name="q12" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(15\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">For how many integers \(x\) is the point \((x, -x)\) inside or on the circle of radius \(10\) centered at \((5, 5)?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>点 \((x,-x)\) 到 \((5,5)\) 的距离平方为 \[ \begin{aligned} &amp;(x-5)^2+(-x-5)^2 \\ &amp;= 2x^2+50 \end{aligned}\text{。}\]</p>
+<p>由 \(2x^2+50\le100\) 得 \(x^2\le25\)，所以 \(-5\le x\le5\)，共有 \(11\) 个整数。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The squared distance from \((x,-x)\) to \((5,5)\) is \[ \begin{aligned} &amp;(x-5)^2+(-x-5)^2 \\ &amp;= 2x^2+50. \end{aligned} \]</p>
+<p class="amc-en">Being inside or on the circle means \(2x^2+50\le100\), so \(x^2\le25\). Thus \(-5\le x\le5\), giving \(11\) integer values.</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q13" data-no="13" data-type="single" data-ans="E">
+<div class="qz-qhead"><span class="qz-badge">13</span><span class="qz-flag">单选</span></div>
+<p>直线 \(12x+5y=60\) 与坐标轴围成一个三角形。这个三角形三条高的长度之和是多少？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q13" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(20\)</span></label>
+<label class="qz-opt"><input type="radio" name="q13" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(\dfrac{360}{17}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q13" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(\dfrac{107}{5}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q13" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(\dfrac{43}{2}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q13" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(\dfrac{281}{13}\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">The line \(12x+5y=60\) forms a triangle with the coordinate axes. What is the sum of the lengths of the altitudes of this triangle?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>这个三角形是直角三角形，两条直角边为 \(12\) 和 \(5\)，因此斜边为 \(13\)。</p>
+<p>两条直角边对应的高分别为 \(5\) 和 \(12\)。用面积公式 \(A = \frac{bh}2\)，其中 \(b\) 是底、\(h\) 是高。</p>
+<p>三角形面积为 \(\frac {12\cdot 5}2 = 30\)，设斜边上的高为 \(h\)，则 \(30 = \frac{13h}2\)，所以这条高为 \(\frac{60}{13}\)。</p>
+<p>三条高之和为 \[12+5+\dfrac{60}{13} = \dfrac{281}{13}\text{。}\]</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The triangle is a right triangle with legs of \(12\) and \(5.\) This makes the hypotenuse \(13.\)</p>
+<p class="amc-en">Two of the altitudes are then \(12\) and \(5.\) Also, for any side, \(A = \frac{bh}2\) where \(b\) is the base and \(h\) is the altitude.</p>
+<p class="amc-en">The area is \(\frac {12\cdot 5}2 = 30,\) so the other altitude \(h\) can be found with \(30 = \frac{13h}2.\) Thus, this altitude is \(\frac{60}{13}.\)</p>
+<p class="amc-en">Therefore, the sum is \[12+5+\dfrac{60}{13} = \dfrac{281}{13} .\]</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b> .</p>
+</div></div>
+</section>
+<section class="qz-q" id="q14" data-no="14" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">14</span><span class="qz-flag">单选</span></div>
+<p>设 \(a\)、\(b\)、\(c\) 是三个不同的一位数。下面方程的根之和的最大值是多少？\[ \begin{aligned} &amp;(x-a)(x-b) \\ &amp;\quad +(x-b)(x-c)=0 \end{aligned}\text{？}\]</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q14" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(15\)</span></label>
+<label class="qz-opt"><input type="radio" name="q14" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(15.5\)</span></label>
+<label class="qz-opt"><input type="radio" name="q14" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(16\)</span></label>
+<label class="qz-opt"><input type="radio" name="q14" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(16.5\)</span></label>
+<label class="qz-opt"><input type="radio" name="q14" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(17\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Let \(a,\) \(b,\) and \(c\) be three distinct one-digit numbers. What is the maximum value of the sum of the roots of the equation \[ \begin{aligned} &amp;(x-a)(x-b) \\ &amp;\quad +(x-b)(x-c)=0? \end{aligned} \]</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>将左边因式分解，得到 \[(x-b)(2x-a-c)=0\text{。}\]因此两根是 \(b\) 和 \(\frac{a+c}{2}\)，根之和为 \[b+\frac{a+c}{2}\text{。}\]</p>
+<p>在这个和中，\(b\) 的系数是 \(a\) 或 \(c\) 的系数的两倍，所以把最大的数字赋给 \(b\)。接下来两个最大的不同数字应赋给 \(a\) 和 \(c\)。</p>
+<p>取 \(b=9\)、\(\{a,c\}=\{7,8\}\)，得到 \[9+\frac{7+8}{2}=16.5\text{。}\]</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Factoring the left-hand side gives \[(x-b)(2x-a-c)=0.\] Thus the roots are \(b\) and \(\frac{a+c}{2},\) whose sum is \[b+\frac{a+c}{2}.\]</p>
+<p class="amc-en">The coefficient of \(b\) in this sum is twice the coefficient of either \(a\) or \(c,\) so assign the largest digit to \(b.\) The next two largest distinct digits should be \(a\) and \(c.\)</p>
+<p class="amc-en">Taking \(b=9\) and \(\{a,c\}=\{7,8\}\) gives \[9+\frac{7+8}{2}=16.5.\]</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b> .</p>
+</div></div>
+</section>
+<section class="qz-q" id="q15" data-no="15" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">15</span><span class="qz-flag">单选</span></div>
+<p>Hamlet 镇中，每一匹马对应 \(3\) 个人；每一头牛对应 \(4\) 只羊；每一个人对应 \(3\) 只鸭。下列哪个数不可能是 Hamlet 镇中人、马、羊、牛、鸭的总数？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q15" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(41\)</span></label>
+<label class="qz-opt"><input type="radio" name="q15" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(47\)</span></label>
+<label class="qz-opt"><input type="radio" name="q15" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(59\)</span></label>
+<label class="qz-opt"><input type="radio" name="q15" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(61\)</span></label>
+<label class="qz-opt"><input type="radio" name="q15" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(66\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">The town of Hamlet has \(3\) people for each horse, \(4\) sheep for each cow, and \(3\) ducks for each person. Which of the following could not possibly be the total number of people, horses, sheep, cows, and ducks in Hamlet?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>若有 \(h\) 匹马和 \(c\) 头牛，则有 \(3h\) 个人、\(9h\) 只鸭和 \(4c\) 只羊，总数为 \(13h+5c\)。</p>
+<p>除 \(47\) 外，其余选项都可表示为所需形式：\[ \begin{gathered} 41=13\cdot2+5\cdot3, \\ 59=13\cdot3+5\cdot4, \\ 61=13\cdot2+5\cdot7, \\ 66=13\cdot2+5\cdot8\text{。} \end{gathered} \] 对 \(47\)，减去 \(0,13,26,39\) 后分别得到 \(47,34,21,8\)，没有一个是 \(5\) 的倍数。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If there are \(h\) horses and \(c\) cows, then there are \(3h\) people, \(9h\) ducks, and \(4c\) sheep. The total is therefore \(13h+5c\).</p>
+<p class="amc-en">The listed values except \(47\) can be written in that form: \[ \begin{gathered} 41=13\cdot2+5\cdot3, \\ 59=13\cdot3+5\cdot4, \\ 61=13\cdot2+5\cdot7, \\ 66=13\cdot2+5\cdot8. \end{gathered} \] For \(47\), subtracting \(0,13,26,39\) leaves \(47,34,21,8\), none of which is divisible by \(5\).</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q16" data-no="16" data-type="single" data-ans="C">
+<div class="qz-qhead"><span class="qz-badge">16</span><span class="qz-flag">单选</span></div>
+<p>Al、Bill 和 Cal 将各自随机分到一个 \(1\) 到 \(10\) 之间的整数，且三人得到的数两两不同。Al 的数是 Bill 的数的正整数倍，并且 Bill 的数是 Cal 的数的正整数倍的概率是多少？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q16" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(\dfrac{9}{1000}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q16" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(\dfrac{1}{90}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q16" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(\dfrac{1}{80}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q16" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(\dfrac{1}{72}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q16" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(\dfrac{2}{121}\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Al, Bill, and Cal will each randomly be assigned a whole number from \(1\) to \(10,\) inclusive, with no two of them getting the same number. What is the probability that Al’s number will be a whole number multiple of Bill’s and Bill’s number will be a whole number multiple of Cal’s?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>设 Al、Bill、Cal 的数分别为 \((A,B,C)\)。需要 \(A\) 是 \(B\) 的倍数，且 \(B\) 是 \(C\) 的倍数，同时三个数互不相同。</p>
+<p>满足条件的三元组为\[ \begin{gathered} (4,2,1),(6,2,1),(8,2,1), \\ (10,2,1),(6,3,1),(9,3,1), \\ (8,4,1),(10,5,1),(8,4,2) \end{gathered}\text{。}\] 共有 \(9\) 种有利的分配。</p>
+<p>总分配数为 \(10\cdot9\cdot8=720\)，所以概率为 \(\frac9{720}=\frac1{80}\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \((A,B,C)\) be the numbers assigned to Al, Bill, and Cal. We need \(A\) to be a multiple of \(B\), and \(B\) to be a multiple of \(C\), with all three numbers distinct.</p>
+<p class="amc-en">The valid triples are \[ \begin{gathered} (4,2,1),(6,2,1),(8,2,1), \\ (10,2,1),(6,3,1),(9,3,1), \\ (8,4,1),(10,5,1),(8,4,2). \end{gathered} \] There are \(9\) favorable assignments.</p>
+<p class="amc-en">The total number of assignments is \(10\cdot9\cdot8=720\), so the probability is \(\frac9{720}=\frac1{80}\).</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q17" data-no="17" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">17</span><span class="qz-flag">单选</span></div>
+<p>如下图所示，把长方体各个面的中心连接起来，形成一个八面体。这个八面体的体积是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2015B/problem/q17-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q17" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(\dfrac{75}{12}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q17" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(10\)</span></label>
+<label class="qz-opt"><input type="radio" name="q17" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(12\)</span></label>
+<label class="qz-opt"><input type="radio" name="q17" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(10\sqrt{2}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q17" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(15\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">The centers of the faces of the right rectangular prism shown below are joined to create an octahedron. What is the volume of this octahedron?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2015B/problem/q17-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>这个八面体可看成两个全等棱锥，它们共用的底面是通过四个侧面中心的菱形。该菱形对角线为 \(4\) 和 \(5\)，面积为 \(\frac12\cdot4\cdot5=10\)。</p>
+<p>两个棱锥的高都为 \(\frac32\)，即长方体高的一半，所以八面体体积为 \[2\cdot\frac13\cdot10\cdot\frac32=10\text{。}\]</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The octahedron can be viewed as two congruent pyramids whose shared base is the rhombus through the centers of the four side faces. This rhombus has diagonals \(4\) and \(5\), so its area is \(\frac12\cdot4\cdot5=10\).</p>
+<p class="amc-en">Each pyramid has height \(\frac32\), half the prism’s height. Thus the total volume is \[2\cdot\frac13\cdot10\cdot\frac32=10.\]</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q18" data-no="18" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">18</span><span class="qz-flag">单选</span></div>
+<p>Johann 有 \(64\) 枚公平硬币。他抛所有硬币。任何反面朝上的硬币都再抛一次。第二次仍为反面的硬币再抛第三次。现在正面朝上的硬币的期望数量是多少？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q18" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(32\)</span></label>
+<label class="qz-opt"><input type="radio" name="q18" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(40\)</span></label>
+<label class="qz-opt"><input type="radio" name="q18" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(48\)</span></label>
+<label class="qz-opt"><input type="radio" name="q18" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(56\)</span></label>
+<label class="qz-opt"><input type="radio" name="q18" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(64\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Johann has \(64\) fair coins. He flips all the coins. Any coin that lands on tails is tossed again. Coins that land on tails on the second toss are tossed a third time. What is the expected number of coins that are now heads?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>一枚硬币最后仍为反面，当且仅当它连续 \(3\) 次都是反面，概率为 \(\frac 18\)。因此任意一枚硬币最后为正面的概率为 \(\frac 78 \)。</p>
+<p>由于一枚硬币为正面的概率是 \(\frac78\)，且一共有 \(64\) 枚硬币，所以现在正面朝上的硬币期望数为 \[64 \cdot \dfrac 78 = 56\text{。}\]</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A coin ends as tails if and only if it has \(3\) flips that are tails, which happens with probability \(\frac 18.\) Thus, the probability of any coin being heads is \(\frac 78 .\)</p>
+<p class="amc-en">Since each of the \(64\) coins ends as heads with probability \(\frac78,\) linearity of expectation gives the expected number of coins that are now heads: \[64 \cdot \dfrac 78 = 56.\]</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b> .</p>
+</div></div>
+</section>
+<section class="qz-q" id="q19" data-no="19" data-type="single" data-ans="C">
+<div class="qz-qhead"><span class="qz-badge">19</span><span class="qz-flag">单选</span></div>
+<p>在 \(\triangle{ABC}\) 中，\(\angle{C} = 90^{\circ}\)，且 \(AB = 12\)。在三角形外侧作正方形 \(ABXY\) 和 \(ACWZ\)。点 \(X\)，\(Y\)，\(Z\) 与 \(W\) 共圆。求该三角形的周长。</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q19" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(12+9\sqrt{3}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q19" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(18+6\sqrt{3}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q19" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(12+12\sqrt{2}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q19" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(30\)</span></label>
+<label class="qz-opt"><input type="radio" name="q19" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(32\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">In \(\triangle{ABC},\) \(\angle{C} = 90^{\circ}\) and \(AB = 12.\) Squares \(ABXY\) and \(ACWZ\) are constructed outside of the triangle. The points \(X,\) \(Y,\) \(Z,\) and \(W\) lie on a circle. What is the perimeter of the triangle?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>过 \(X,Y,Z,W\) 的圆心在 \(XY\) 和 \(ZW\) 的垂直平分线上，也就是在 \(AB\) 和 \(AC\) 的垂直平分线上，所以同一点也是直角三角形 \(ABC\) 的外心。</p>
+<p>因此圆心是斜边中点 \(O\)，其中斜边为 \(AB\)，所以 \(OA=OB=OC=6\)。令 \(a=\frac12BC\)、\(b=\frac12CA\)，则 \(a^2+b^2=6^2\)。</p>
+<p>由 \(AB\) 上的正方形可得 \(OX^2=6^2+12^2=180\)。由 \(AC\) 上的正方形可知，对应半径也给出 \(OW^2=b^2+(a+2b)^2\)。因此 \[b^2+(a+2b)^2=180\text{。}\] 从这个方程减去 \(a^2+b^2=36\)，得到 \(b(a+b)=36\)。但同样有 \(a^2+b^2=36\)，所以 \(ab=a^2\)。由于 \(a&gt;0\)，得到 \(a=b=3\sqrt{2}\)。</p>
+<p>于是 \(AC=BC=6\sqrt{2}\)，所以周长为 \(12+12\sqrt{2}\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The center of the circle through \(X,Y,Z,W\) lies on the perpendicular bisectors of \(XY\) and \(ZW\). These are also the perpendicular bisectors of \(AB\) and \(AC\), so the same point is the circumcenter of right triangle \(ABC\).</p>
+<p class="amc-en">Therefore the center is the midpoint \(O\) of hypotenuse \(AB\), so \(OA=OB=OC=6\). Let \(a=\frac12BC\) and \(b=\frac12CA\). Then \(a^2+b^2=6^2\).</p>
+<p class="amc-en">From the square on \(AB\), \(OX^2=6^2+12^2=180\). From the square on \(AC\), the corresponding radius also gives \(OW^2=b^2+(a+2b)^2\). Hence \[b^2+(a+2b)^2=180.\] Subtracting \(a^2+b^2=36\) from this equation gives \(b(a+b)=36\). But \(a^2+b^2=36\) as well, so \(ab=a^2\). Since \(a&gt;0\), we get \(a=b=3\sqrt{2}\).</p>
+<p class="amc-en">Thus \(AC=BC=6\sqrt{2}\), and the perimeter is \(12+12\sqrt{2}\).</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q20" data-no="20" data-type="single" data-ans="A">
+<div class="qz-qhead"><span class="qz-badge">20</span><span class="qz-flag">单选</span></div>
+<p>蚂蚁 Erin 从立方体的一个指定顶点出发，沿着恰好 \(7\) 条棱爬行，正好访问每个顶点一次，然后发现无法沿一条棱回到起点。有多少条路径满足这些条件？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q20" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(6\)</span></label>
+<label class="qz-opt"><input type="radio" name="q20" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(9\)</span></label>
+<label class="qz-opt"><input type="radio" name="q20" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(12\)</span></label>
+<label class="qz-opt"><input type="radio" name="q20" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(18\)</span></label>
+<label class="qz-opt"><input type="radio" name="q20" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(24\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Erin the ant starts at a given corner of a cube and crawls along exactly \(7\) edges in such a way that she visits every corner exactly once and then finds that she is unable to return along an edge to her starting point. How many paths are there meeting these conditions?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>前两条棱可用 \(3\cdot2=6\) 种方式选择。这两条棱确定了立方体的一个起始面。</p>
+<p>下一步必须访问该面上唯一尚未访问的顶点；否则以后到达它时，它的所有相邻顶点都已经访问过，路径将无法继续。剩余四个顶点都在对面，可以按两个环绕方向访问。</p>
+<p>这两个方向中，恰有一个会终止在与起点不相邻的顶点。因此共有 \(6\) 条合格路径。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The first two edges can be chosen in \(3\cdot2=6\) ways. These two edges determine an initial face of the cube. After those moves, there is one unvisited vertex on that initial face.</p>
+<p class="amc-en">That remaining vertex must be visited next; otherwise Erin would later reach it after all of its neighbors had already been visited, and the path could not continue. The last four vertices are then on the opposite face and can be visited in two cyclic orders.</p>
+<p class="amc-en">Of those two orders, exactly one ends at a vertex not adjacent to the starting point. Hence there are \(6\) valid paths.</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q21" data-no="21" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">21</span><span class="qz-flag">单选</span></div>
+<p>猫 Cozy 和狗 Dash 正在爬一段有若干台阶的楼梯。不过他们不是一级一级地走上去，而是跳着上。</p>
+<p>Cozy 每次跳上两级台阶（若有必要，他会只跳最后一级）。</p>
+<p>Dash 每次跳上五级台阶（若有必要，当剩下不足 \(5\) 级时，他会直接跳完剩下的台阶）。</p>
+<p>假设 Dash 到达楼顶所需跳数比 Cozy 少 \(19\) 次。令 \(s\) 为所有可能台阶数的和。求 \(s\) 的各位数字之和。</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q21" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(9\)</span></label>
+<label class="qz-opt"><input type="radio" name="q21" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(11\)</span></label>
+<label class="qz-opt"><input type="radio" name="q21" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(12\)</span></label>
+<label class="qz-opt"><input type="radio" name="q21" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(13\)</span></label>
+<label class="qz-opt"><input type="radio" name="q21" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(15\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Cozy the Cat and Dash the Dog are going up a staircase with a certain number of steps. However, instead of walking up the steps one at a time, both Cozy and Dash jump.</p>
+<p class="amc-en">Cozy goes two steps up with each jump (though if necessary, he will just jump the last step).</p>
+<p class="amc-en">Dash goes five steps up with each jump (though if necessary, he will just jump the last steps if there are fewer than \(5\) steps left).</p>
+<p class="amc-en">Suppose Dash takes \(19\) fewer jumps than Cozy to reach the top of the staircase. Let \(s\) denote the sum of all possible numbers of steps this staircase can have. What is the sum of the digits of \(s?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>设 Dash 跳 \(d+1\) 次，则台阶数 \(t\) 是 \[ \begin{gathered} 5d+1,5d+2,5d+3, \\ 5d+4,5d+5\text{。} \end{gathered} \] 中的一个。Cozy 多跳 \(19\) 次，所以 Cozy 跳 \(d+20\) 次，这意味着 \(t\) 是 \(2d+39\) 或 \(2d+40\)。</p>
+<p>匹配这些可能性，整数解来自 \[ \begin{gathered} 5d+3=2d+39, \\ 5d+1=2d+40, \\ 5d+4=2d+40\text{。} \end{gathered} \] 对应 \(t=63,66,64\)。</p>
+<p>因此 \(s=63+66+64=193\)，各位数字之和为 \(13\)。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Suppose Dash takes \(d+1\) jumps. Then the number of steps \(t\) is one of \[ \begin{gathered} 5d+1,5d+2,5d+3, \\ 5d+4,5d+5. \end{gathered} \] Cozy takes \(19\) more jumps, so Cozy takes \(d+20\) jumps, which means \(t\) is either \(2d+39\) or \(2d+40\).</p>
+<p class="amc-en">Matching these possibilities, the integer solutions are \[ \begin{gathered} 5d+3=2d+39, \\ 5d+1=2d+40, \\ 5d+4=2d+40. \end{gathered} \] They give \(t=63,66,64\), respectively.</p>
+<p class="amc-en">Thus \(s=63+66+64=193\), and the sum of its digits is \(13\).</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q22" data-no="22" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">22</span><span class="qz-flag">单选</span></div>
+<p>在下图中，\(ABCDE\) 是正五边形，且 \(AG=1\)。求 \(FG + JH + CD\) 的值。</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2015B/problem/q22-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q22" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(3\)</span></label>
+<label class="qz-opt"><input type="radio" name="q22" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(12-4\sqrt{5}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q22" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(\dfrac{5+2\sqrt{5}}{3}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q22" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(1+\sqrt{5}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q22" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(\dfrac{11+11\sqrt{5}}{10}\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">In the figure shown below, \(ABCDE\) is a regular pentagon and \(AG=1.\) What is \(FG + JH + CD?\)</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2015B/problem/q22-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>由对称性，\(AG=HC=HJ=1\)，且三角形 \(AFG\) 与三角形 \(BGH\) 全等，所以 \(FG=GH\)。设 \(FG=b\)、\(CD=d\)。</p>
+<p>正五边形中的相似三角形给出 \[\frac1b=1+b\] 和 \[\frac{1+b}{1}=d\text{。}\] 第一式为 \(b^2+b-1=0\)，所以 \(b=\frac{-1+\sqrt{5}}{2}\)。于是 \(d=1+b=\frac{1+\sqrt{5}}{2}\)。</p>
+<p>因此 \[ \begin{aligned} FG+JH+CD &amp;= b+1+d \\ &amp;= 1+\sqrt{5}\text{。} \end{aligned} \]</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">By symmetry, \(AG=HC=HJ=1\), and triangles \(AFG\) and \(BGH\) are congruent, so \(FG=GH\). Let \(FG=b\), and let \(CD=d\).</p>
+<p class="amc-en">The similar triangles in the pentagon give \[\frac1b=1+b\] and \[\frac{1+b}{1}=d.\] The first equation is \(b^2+b-1=0\), so \(b=\frac{-1+\sqrt{5}}{2}\). Then \(d=1+b=\frac{1+\sqrt{5}}{2}\).</p>
+<p class="amc-en">Therefore \[ \begin{aligned} FG+JH+CD &amp;= b+1+d \\ &amp;= 1+\sqrt{5}. \end{aligned} \]</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q23" data-no="23" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">23</span><span class="qz-flag">单选</span></div>
+<p>设 \(n\) 是大于 \(4\) 的正整数，\(n!\) 以十为底表示时末尾有 \(k\) 个零，而 \((2n)!\) 以十为底表示时末尾有 \(3k\) 个零。令 \(s\) 为四个最小可能的 \(n\) 值之和。求 \(s\) 的各位数字之和。</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q23" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(7\)</span></label>
+<label class="qz-opt"><input type="radio" name="q23" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(8\)</span></label>
+<label class="qz-opt"><input type="radio" name="q23" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(9\)</span></label>
+<label class="qz-opt"><input type="radio" name="q23" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(10\)</span></label>
+<label class="qz-opt"><input type="radio" name="q23" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(11\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Let \(n\) be a positive integer greater than \(4\) such that the decimal representation of \(n!\) ends in \(k\) zeros and the decimal representation of \((2n)!\) ends in \(3k\) zeros. Let \(s\) denote the sum of the four least possible values of \(n.\) What is the sum of the digits of \(s?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>阶乘末尾零的个数等于其中因子 \(5\) 的个数。对 \(5\le n\le9\)，\(n!\) 有 \(k=1\) 个零；要使 \((2n)!\) 有 \(3\) 个零，需要 \(15\le2n\le19\)，所以 \(n=8,9\)。</p>
+<p>对 \(10\le n\le14\)，\(n!\) 有 \(k=2\) 个零；要使 \((2n)!\) 有 \(6\) 个零，需要 \(25\le2n\le29\)，所以 \(n=13,14\)。</p>
+<p>这就是四个最小值，所以 \(s=8+9+13+14=44\)。\(s\) 的各位数字和为 \(8\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The number of trailing zeros is the number of factors of \(5\). For \(5\le n\le9\), \(n!\) has \(k=1\) zero. We need \((2n)!\) to have \(3\) zeros, which happens when \(15\le2n\le19\). Thus \(n=8,9\).</p>
+<p class="amc-en">For \(10\le n\le14\), \(n!\) has \(k=2\) zeros. We need \((2n)!\) to have \(6\) zeros, which happens when \(25\le2n\le29\). Thus \(n=13,14\).</p>
+<p class="amc-en">These are the four least possible values, so \(s=8+9+13+14=44\). The sum of the digits of \(s\) is \(8\).</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q24" data-no="24" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">24</span><span class="qz-flag">单选</span></div>
+<p>蚂蚁 Aaron 按如下规则在坐标平面上行走。</p>
+<p>他从原点 \(p_0=(0,0)\) 出发，面向东方，走一个单位到达 \(p_1=(1,0)\)。</p>
+<p>对 \(n=1\)，\(2\)，\(3\)，\(\dots\)，每次到达点 \(p_n\) 后，若 Aaron 可以向左转 \(90^\circ\) 并走一个单位到达一个尚未访问过的点 \(p_{n+1}\)，他就这样做。否则，他直走一个单位到达 \(p_{n+1}\)。因此点列继续为 \[ \begin{aligned} &amp;p_2=(1,1),\; p_3=(0,1), \\ &amp;p_4=(-1,1),\; p_5=(-1,0),\;\ldots \end{aligned} \] 如此形成逆时针螺旋。求 \(p_{2015}\)。</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q24" value="A"><span class="qz-mark">A</span><span class="qz-txt">\((-22,-13)\)</span></label>
+<label class="qz-opt"><input type="radio" name="q24" value="B"><span class="qz-mark">B</span><span class="qz-txt">\((-13,-22)\)</span></label>
+<label class="qz-opt"><input type="radio" name="q24" value="C"><span class="qz-mark">C</span><span class="qz-txt">\((-13,22)\)</span></label>
+<label class="qz-opt"><input type="radio" name="q24" value="D"><span class="qz-mark">D</span><span class="qz-txt">\((13,-22)\)</span></label>
+<label class="qz-opt"><input type="radio" name="q24" value="E"><span class="qz-mark">E</span><span class="qz-txt">\((22,-13)\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Aaron the ant walks on the coordinate plane according to the following rules.</p>
+<p class="amc-en">He starts at the origin \(p_0=(0,0)\) facing to the east and walks one unit, arriving at \(p_1=(1,0).\)</p>
+<p class="amc-en">For \(n=1,\) \(2,\) \(3,\) \(\dots,\) right after arriving at the point \(p_n,\) if Aaron can turn \(90^\circ\) left and walk one unit to an unvisited point \(p_{n+1},\) he does that. Otherwise, he walks one unit straight ahead to reach \(p_{n+1}.\) Thus the sequence of points continues \[ \begin{aligned} &amp;p_2=(1,1),\; p_3=(0,1), \\ &amp;p_4=(-1,1),\; p_5=(-1,0),\;\ldots \end{aligned} \] in a counterclockwise spiral pattern. What is \(p_{2015}?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>当 Aaron 到达 \((k,-k)\) 时，他刚好完成了包含所有坐标介于 \(-k\) 与 \(k\) 之间的格点的方形螺旋。因此 \[p_{(2k+1)^2-1}=(k,-k)\text{。}\]</p>
+<p>取 \(k=22\)，得到 \(p_{2024}=(22,-22)\)。因为 \(2024-2015=9\)，沿底边倒推时，\(x\) 坐标减去 \(9\)，所以 \[p_{2015}=(13,-22)\text{。}\]</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">When Aaron reaches \((k,-k)\), he has just completed the square spiral containing all grid points with coordinates between \(-k\) and \(k\). Therefore \[p_{(2k+1)^2-1}=(k,-k).\]</p>
+<p class="amc-en">With \(k=22\), this gives \(p_{2024}=(22,-22)\). Since \(2024-2015=9\), stepping backward along the bottom edge subtracts \(9\) from the \(x\)-coordinate, so \[p_{2015}=(13,-22).\]</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q25" data-no="25" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">25</span><span class="qz-flag">单选</span></div>
+<p>一个长方体尺寸为 \(a \times b \times c\)，其中 \(a\)、\(b\)、\(c\) 是整数，且 \[1\leq a \leq b \leq c\text{。}\] 该长方体的体积和表面积在数值上相等。可能的有序三元组 \((a,b,c)\) 有多少个？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q25" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(4\)</span></label>
+<label class="qz-opt"><input type="radio" name="q25" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(10\)</span></label>
+<label class="qz-opt"><input type="radio" name="q25" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(12\)</span></label>
+<label class="qz-opt"><input type="radio" name="q25" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(21\)</span></label>
+<label class="qz-opt"><input type="radio" name="q25" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(26\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">A rectangular box measures \(a \times b \times c,\) where \(a,\) \(b,\) and \(c\) are integers and \[1\leq a \leq b \leq c.\] The volume and the surface area of the box are numerically equal. How many ordered triples \((a,b,c)\) are possible?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>条件为 \[abc=2(ab+ac+bc)\text{。}\] 因为 \(abc\le6bc\)，所以 \(a\le6\)。此外，\(a=1\) 和 \(a=2\) 都没有正整数解，因此只需检查 \(a=3,4,5,6\)。</p>
+<p>当 \(a=3\) 时，\((b-6)(c-6)=36\)，得到 \((b,c)=(7,42),\) \((8,24),\) \((9,18),\) \((10,15),\) \((12,12)\)。当 \(a=4\) 时，\((b-4)(c-4)=16\)，得到 \((5,20),(6,12),(8,8)\)。</p>
+<p>当 \(a=5\) 时，\((3b-10)(3c-10)=100\)，满足 \(a\le b\le c\) 的唯一解是 \((b,c)=(5,10)\)。当 \(a=6\) 时，\((b-3)(c-3)=9\)，满足 \(a\le b\le c\) 的唯一解是 \((6,6)\)。</p>
+<p>所以三元组总数为 \(5+3+1+1=10\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The condition is \[abc=2(ab+ac+bc).\] Since \(abc\le6bc\), we have \(a\le6\). Also \(a=1\) and \(a=2\) give no positive solutions, so test \(a=3,4,5,6\).</p>
+<p class="amc-en">For \(a=3\), \((b-6)(c-6)=36\), giving \((b,c)=(7,42),\) \((8,24),\) \((9,18),\) \((10,15),\) \((12,12)\). For \(a=4\), \((b-4)(c-4)=16\), giving \((5,20),(6,12),(8,8)\).</p>
+<p class="amc-en">For \(a=5\), \((3b-10)(3c-10)=100\), and the only solution with \(a\le b\le c\) is \((b,c)=(5,10)\). For \(a=6\), \((b-3)(c-3)=9\), and the only solution with \(a\le b\le c\) is \((6,6)\).</p>
+<p class="amc-en">The total number of triples is \(5+3+1+1=10\).</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+  </form>
+
+  <div class="qz-foot" id="qzFoot" hidden>
+    <div class="qz-summary" id="qzSummary" hidden></div>
+    <button class="btn qz-submit" id="qzSubmit" type="button">提交答卷</button>
+    <p class="qz-tip" id="qzTip">提交前可随时修改选择；提交后不可更改，成绩不会保存。</p>
+  </div>
+
+  <p class="back"><a href="/docs/amc10p-2015b/">← 返回展示模式</a></p>
+</article>
+
+<button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 8.8V19h-2V8.8L6.4 13.4 5 12z" fill="currentColor"/></svg>
+</button>
+
+<script>
+(function () {
+  var form = document.getElementById('qzForm');
+  var note = document.getElementById('qzNote');
+  var startBtn = document.getElementById('qzStart');
+  var clock = document.getElementById('qzClock');
+  var foot = document.getElementById('qzFoot');
+  var submitBtn = document.getElementById('qzSubmit');
+  var summary = document.getElementById('qzSummary');
+  var tip = document.getElementById('qzTip');
+  var progEl = document.getElementById('qzProgress');
+  var topBar = document.getElementById('qzTop');
+  if (!form || !startBtn) return;
+
+  var qs = Array.prototype.slice.call(form.querySelectorAll('.qz-q'));
+  // 判分题：有选项且有答案（原卷作废 / 数据缺失的题不计分）
+  var graded = qs.filter(function (s) {
+    return s.getAttribute('data-type') !== 'blank' && s.getAttribute('data-ans');
+  });
+  var ungraded = qs.filter(function (s) { return s.getAttribute('data-type') !== 'blank' && !s.getAttribute('data-ans'); });
+  var blankN = qs.filter(function (s) { return s.getAttribute('data-type') === 'blank'; }).length;
+  var t0 = 0, tid = null, started = false, done = false;
+
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function fmt(ms) {
+    var s = Math.floor(ms / 1000);
+    var m = Math.floor(s / 60); s = s % 60;
+    var h = Math.floor(m / 60); m = m % 60;
+    return h ? (h + ':' + pad(m) + ':' + pad(s)) : (pad(m) + ':' + pad(s));
+  }
+  function tick() { clock.textContent = fmt(Date.now() - t0); }
+  function startTimer() {
+    t0 = Date.now(); tick();
+    tid = setInterval(tick, 1000);
+  }
+  function stopTimer() { if (tid) { clearInterval(tid); tid = null; } }
+
+  function picked(sec) {
+    var ins = sec.querySelectorAll('input');
+    var v = [];
+    for (var i = 0; i < ins.length; i++) if (ins[i].checked) v.push(ins[i].value);
+    return v.sort().join('');
+  }
+  function answeredCount() {
+    var n = 0;
+    graded.forEach(function (sec) {
+      if (sec.querySelector('input:checked')) n++;
+    });
+    return n;
+  }
+  function refreshProgress() {
+    var dn = answeredCount();
+    if (progEl) progEl.textContent = '已答 ' + dn + ' / ' + graded.length;
+    if (tip) {
+      tip.textContent = dn < graded.length
+        ? '还有 ' + (graded.length - dn) + ' 题未作答，未作答的题目提交后判为答错。'
+        : '已全部作答，提交前可随时修改；提交后不可更改，成绩不会保存。';
+    }
+    // 兼容不支持 :has() 的浏览器：把选中态同步到 label 的 class
+    var labels = form.querySelectorAll('.qz-opt');
+    for (var i = 0; i < labels.length; i++) {
+      var inp = labels[i].querySelector('input');
+      if (inp && inp.checked) labels[i].classList.add('on');
+      else labels[i].classList.remove('on');
+    }
+  }
+
+  // 开始答题
+  startBtn.addEventListener('click', function () {
+    note.hidden = true;
+    form.hidden = false;
+    foot.hidden = false;
+    started = true;
+    startTimer();
+    refreshProgress();
+    var y = topBar ? topBar.getBoundingClientRect().bottom + window.scrollY - 70 : 0;
+    window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+  });
+
+  form.addEventListener('change', refreshProgress);
+  form.addEventListener('input', refreshProgress);
+  form.addEventListener('submit', function (e) { e.preventDefault(); });
+
+  // 提交判分（只做一次，不存任何记录）
+  function grade() {
+    if (!started || done) return;
+    var blankCount = qs.length - graded.length;
+    done = true;
+    var right = 0, wrong = 0;
+    var used = Date.now() - t0;
+    stopTimer();
+
+    qs.forEach(function (sec) {
+      var type = sec.getAttribute('data-type');
+      var ans = (sec.getAttribute('data-ans') || '').toUpperCase();
+      var res = sec.querySelector('.qz-res');
+      var head = sec.querySelector('.qz-res-head');
+      var ins = sec.querySelectorAll('input');
+      var mine = type === 'blank' ? '' : picked(sec);
+
+      for (var i = 0; i < ins.length; i++) ins[i].disabled = true;
+
+      if (type === 'blank') {
+        sec.classList.add('is-skip');
+        if (head) head.innerHTML = '<span class="qz-tag skip">不判分</span>填空题：以下为参考答案与解析';
+        if (res) res.hidden = false;
+        return;
+      }
+      if (!ans) {
+        sec.classList.add('is-skip');
+        for (var k = 0; k < ins.length; k++) ins[k].disabled = true;
+        if (head) head.innerHTML = '<span class="qz-tag skip">不计分</span>本题无标准答案（原卷作废或缺项）';
+        if (res) res.hidden = false;
+        return;
+      }
+      var ok = mine !== '' && mine === ans.split('').sort().join('');
+      if (ok) {
+        right++;
+        sec.classList.add('is-right');
+        if (head) head.innerHTML = '<span class="qz-tag ok">答对</span>正确答案 <b>' + ans + '</b>';
+      } else {
+        wrong++;
+        sec.classList.add('is-wrong');
+        if (head) {
+          head.innerHTML = '<span class="qz-tag bad">答错</span>正确答案 <b>' + ans + '</b>' +
+            '<span class="qz-mine">你的答案 ' + (mine || '未作答') + '</span>';
+        }
+      }
+      if (res) res.hidden = false;
+    });
+
+    var total = graded.length;
+    var rate = total ? Math.round(right / total * 100) : 0;
+    summary.hidden = false;
+    summary.innerHTML =
+      '<div class="qz-score"><b>' + right + '</b><span>/ ' + total + '</span></div>' +
+      '<div class="qz-detail">' +
+        '<p>答对 <b class="c-ok">' + right + '</b> 题，答错 <b class="c-bad">' + wrong + '</b> 题' +
+        (blankCount ? '，另填空 <b>' + blankN + '</b> 题、无标准答案 <b>' + ungraded.length + '</b> 题不参与判分' : '') + '</p>' +
+        '<p>正确率 ' + rate + '% · 答题耗时 ' + fmt(used) + '</p>' +
+      '</div>';
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = '已提交';
+    tip.textContent = '本页仅作一次性判题：不记录作答、不生成错题集，成绩不会保存。需重做请刷新页面。';
+    window.scrollTo({ top: summary.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' });
+  }
+
+  // 点击提交：有未答题先确认一次，确认后照常判分（未答按答错计）
+  function trySubmit() {
+    if (!started || done) return;
+    var left = graded.length - answeredCount();
+    if (left > 0) {
+      if (!window.confirm('还有 ' + left + ' 题未作答，未作答的题目将按答错计算。确定提交吗？')) return;
+    }
+    grade();
+  }
+
+  submitBtn.addEventListener('click', trySubmit);
+
+  // 回到顶部
+  var top = document.querySelector('.to-top');
+  if (top) {
+    function onScroll() {
+      if (window.scrollY > 420) top.classList.add('show');
+      else top.classList.remove('show');
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    top.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  }
+})();
+</script>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-line">
+      <span>© 2026 Feng</span>
+      <span class="dot">·</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></span>
+    </div>
+    <p class="foot-note">本站内容均来源于网络，版权归原作者所有，仅供学习交流使用，请勿用于商业用途。</p>
+  </div>
+</footer>
+<script>
+(function () {
+  /* ---------- 深色模式 ---------- */
+  var root = document.documentElement;
+  var toggle = document.querySelector('.theme-toggle');
+  function osDark() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function isDark() {
+    var t = root.getAttribute('data-theme');
+    if (t === 'dark') return true;
+    if (t === 'light') return false;
+    return osDark();
+  }
+  function label() {
+    if (!toggle) return;
+    var d = isDark();
+    toggle.setAttribute('aria-label', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('title', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('aria-pressed', d ? 'true' : 'false');
+  }
+  if (toggle) {
+    label();
+    toggle.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) { /* noop */ }
+      label();
+    });
+  }
+  if (window.matchMedia) {
+    var mqDark = window.matchMedia('(prefers-color-scheme: dark)');
+    if (mqDark.addEventListener) mqDark.addEventListener('change', label);
+  }
+
+  /* ---------- 顶部导航 ---------- */
+  var nav = document.querySelector('.nav');
+  var navToggle = document.querySelector('.nav-toggle');
+  if (!nav || !navToggle) return;
+  var mq = window.matchMedia('(max-width: 720px)');
+  function closeAll() {
+    nav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    Array.prototype.forEach.call(nav.querySelectorAll('.open'), function (x) { x.classList.remove('open'); });
+  }
+  navToggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var on = nav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', on ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) {
+    if (!mq.matches) return;
+    var a = e.target.closest ? e.target.closest('a') : null;
+    if (!a) return;
+    var host = a.parentNode;
+    if (host && host.classList.contains('nav-drop') && a.classList.contains('has-caret')) {
+      e.preventDefault();
+      host.classList.toggle('open');
+    }
+  });
+  document.addEventListener('click', function (e) {
+    if (mq.matches && !nav.contains(e.target) && !navToggle.contains(e.target)) closeAll();
+  });
+  // 键盘 Esc 收起移动端菜单
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mq.matches && nav.classList.contains('open')) {
+      closeAll();
+      navToggle.focus();
+    }
+  });
+
+  /* ---------- 搜索快捷键：/ 聚焦，Ctrl(⌘)+K 打开 ---------- */
+  var searchLink = document.querySelector('.nav-s');
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    var typing = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable);
+    if ((e.ctrlKey || e.metaKey) && !e.shiftKey && (e.key === 'k' || e.key === 'K')) {
+      e.preventDefault();
+      var box = document.querySelector('.sbox-input');
+      if (box) { box.focus(); box.select(); }
+      else if (searchLink) location.href = searchLink.href;
+      return;
+    }
+    if (typing || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.key === '/') {
+      var box2 = document.querySelector('.sbox-input');
+      if (box2) { e.preventDefault(); box2.focus(); box2.select(); }
+      else if (searchLink) { e.preventDefault(); location.href = searchLink.href; }
+    }
+  });
+})();
+</script>
+</body>
+</html>

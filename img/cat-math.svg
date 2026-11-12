@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="几何与数学">
+  <defs>
+    <linearGradient id="mBg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#f3faf6"/>
+      <stop offset="0.55" stop-color="#e8f5ee"/>
+      <stop offset="1" stop-color="#d8eee4"/>
+    </linearGradient>
+    <linearGradient id="mTri" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#1aa06e"/>
+      <stop offset="1" stop-color="#0b6f4c"/>
+    </linearGradient>
+    <linearGradient id="mCir" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#f6c98a"/>
+      <stop offset="1" stop-color="#e0973f"/>
+    </linearGradient>
+    <pattern id="mGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#9dc9b3" stroke-opacity="0.35" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="640" height="400" fill="url(#mBg)"/>
+  <rect width="640" height="400" fill="url(#mGrid)"/>
+
+  <!-- 大圆 -->
+  <circle cx="452" cy="196" r="104" fill="none" stroke="url(#mTri)" stroke-width="7" stroke-opacity="0.85"/>
+  <circle cx="452" cy="196" r="104" fill="#0f8a5f" opacity="0.05"/>
+  <!-- 圆内三角形 -->
+  <path d="M452 118 L526 250 L378 250 Z" fill="url(#mTri)" opacity="0.16"/>
+  <path d="M452 118 L526 250 L378 250 Z" fill="none" stroke="#0b6f4c" stroke-width="4" stroke-linejoin="round" opacity="0.8"/>
+  <!-- 半径 -->
+  <line x1="452" y1="196" x2="556" y2="196" stroke="#0b6f4c" stroke-width="3" stroke-dasharray="7 6" opacity="0.6"/>
+  <circle cx="452" cy="196" r="5" fill="#0b6f4c"/>
+  <text x="486" y="188" font-family="Georgia,serif" font-size="20" font-style="italic" fill="#0b6f4c" opacity="0.8">r</text>
+
+  <!-- 方块 -->
+  <g transform="rotate(-9 150 250)">
+    <rect x="78" y="196" width="112" height="112" rx="6" fill="url(#mCir)" opacity="0.9"/>
+    <rect x="78" y="196" width="112" height="112" rx="6" fill="none" stroke="#c98228" stroke-width="3" opacity="0.8"/>
+    <text x="118" y="264" font-family="Georgia,serif" font-size="26" font-style="italic" fill="#7a4a10" opacity="0.85">a</text>
+  </g>
+
+  <!-- 小圆 -->
+  <circle cx="196" cy="112" r="40" fill="url(#mCir)" opacity="0.55"/>
+  <circle cx="196" cy="112" r="40" fill="none" stroke="#c98228" stroke-width="3" opacity="0.7"/>
+  <text x="188" y="122" font-family="Georgia,serif" font-size="24" font-style="italic" fill="#7a4a10">π</text>
+
+  <!-- 函数曲线 -->
+  <path d="M46 344 C 110 296, 150 392, 214 344 S 302 296, 366 344" fill="none" stroke="#1a6fd4" stroke-width="4" stroke-opacity="0.55" stroke-linecap="round"/>
+
+  <!-- 符号 -->
+  <text x="556" y="86" font-family="Georgia,serif" font-size="34" fill="#0b6f4c" opacity="0.45">√</text>
+  <text x="594" y="86" font-family="Georgia,serif" font-size="26" fill="#0b6f4c" opacity="0.3">∑</text>
+  <text x="238" y="72" font-family="Georgia,serif" font-size="22" fill="#1a6fd4" opacity="0.35">∞</text>
+  <text x="272" y="150" font-family="Georgia,serif" font-size="26" font-style="italic" fill="#0f8a5f" opacity="0.32">=</text>
+  <text x="96" y="60" font-family="Georgia,serif" font-size="18" fill="#0b6f4c" opacity="0.25">+ − × ÷</text>
+  <text x="520" y="330" font-family="Georgia,serif" font-size="24" font-style="italic" fill="#c98228" opacity="0.3">a²+b²</text>
+</svg>

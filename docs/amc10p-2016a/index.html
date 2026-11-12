@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<meta charset="utf-8">
+<title>2016A AMC 10 真题（P版） · 竞赛资料库</title>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) { /* 隐私模式下忽略 */ }
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="2016A AMC 10 真题（P版）：数学 · AMC10(P版)，2016A 年，共 25 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+
+<link rel="canonical" href="https://t.fengg.net/docs/amc10p-2016a/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="竞赛资料库">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="2016A AMC 10 真题（P版）">
+<meta property="og:description" content="2016A AMC 10 真题（P版）：数学 · AMC10(P版)，2016A 年，共 25 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+<meta property="og:url" content="https://t.fengg.net/docs/amc10p-2016a/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f7f9">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1318">
+
+
+<link rel="prev" href="/docs/amc10p-2015b/">
+<link rel="next" href="/docs/amc10p-2016b/">
+<link rel="stylesheet" href="/css/style.css?v=20261110e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+
+<link rel="stylesheet" href="/katex/katex.min.css">
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (!window.renderMathInElement) return;
+  var el = document.querySelector('.doc') || document.body;
+  try {
+    renderMathInElement(el, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false }
+      ],
+      throwOnError: false
+    });
+  } catch (e) { /* 公式渲染失败不影响正文 */ }
+});
+</script>
+
+
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/">竞赛资料库</a>
+    <nav class="nav"><a class="nav-a" href="/">首页</a><div class="nav-drop nav-mega"><a class="nav-a has-caret" href="/all/" title="按科目浏览全部题库">题库<i class="caret" aria-hidden="true"></i></a><div class="drop mega"><div class="mega-col" style="--accent:#3776c4"><a class="mega-h" href="/c/astronomy/"><i class="mega-dot" aria-hidden="true"></i>天文<span class="cnt">52</span></a><a class="mega-l" href="/c/astronomy/cnao/">CNAO<span class="cnt">28</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/cnao/prelim/">预赛</a><a class="mega-c" href="/c/astronomy/cnao/final/">决赛</a><a class="mega-c" href="/c/astronomy/cnao/primary/">小学组</a></span><a class="mega-l" href="/c/astronomy/provincial/">省赛<span class="cnt">15</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/provincial/beijing/">北京</a><a class="mega-c" href="/c/astronomy/provincial/guangdong/">广东</a><a class="mega-c" href="/c/astronomy/provincial/zhejiang/">浙江</a><a class="mega-c" href="/c/astronomy/provincial/jiangsu/">江苏</a><a class="mega-c" href="/c/astronomy/provincial/shandong/">山东</a><a class="mega-c" href="/c/astronomy/provincial/taiwan/">中国台湾</a></span><a class="mega-l" href="/c/astronomy/practice/">练习<span class="cnt">9</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/practice/primary/">小学组练习</a><a class="mega-c" href="/c/astronomy/practice/bank/">题库合集</a></span></div><div class="mega-col" style="--accent:#0f8a5f"><a class="mega-h" href="/c/math/"><i class="mega-dot" aria-hidden="true"></i>数学<span class="cnt">290</span></a><a class="mega-l" href="/c/math/amc8/">AMC8<span class="cnt">26</span></a><a class="mega-l" href="/c/math/amc8p/">AMC8(P版)<span class="cnt">41</span></a><a class="mega-l" href="/c/math/amc10p/">AMC10(P版)<span class="cnt">52</span></a><a class="mega-l" href="/c/math/amc12p/">AMC12(P版)<span class="cnt">102</span></a><a class="mega-l" href="/c/math/gzl/">全国中学生数学奥林匹克竞赛<span class="cnt">69</span></a><span class="mega-cs"><a class="mega-c" href="/c/math/gzl/liansai/">联赛（预赛）</a><a class="mega-c" href="/c/math/gzl/final/">决赛（CMO）</a><a class="mega-c" href="/c/math/gzl/province/">各赛区预赛</a></span></div><div class="mega-col" style="--accent:#6c4bb6"><a class="mega-h" href="/c/physics/"><i class="mega-dot" aria-hidden="true"></i>物理<span class="cnt">73</span></a><a class="mega-l" href="/c/physics/national/">全国竞赛<span class="cnt">49</span></a><a class="mega-l" href="/c/physics/asian/">亚洲竞赛<span class="cnt">11</span></a><a class="mega-l" href="/c/physics/international/">国际竞赛<span class="cnt">13</span></a></div><div class="mega-col" style="--accent:#3f8f46"><a class="mega-h" href="/c/biology/"><i class="mega-dot" aria-hidden="true"></i>生物<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/league/">全国中学生生物学联赛<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/competition/">全国中学生生物学竞赛</a></div><div class="mega-col" style="--accent:#c05a2b"><a class="mega-h" href="/c/chemistry/"><i class="mega-dot" aria-hidden="true"></i>化学<span class="cnt">10</span></a><a class="mega-l" href="/c/chemistry/ccho/">全国中学生化学奥林匹克竞赛<span class="cnt">10</span></a></div><div class="mega-col" style="--accent:#1f7a8c"><a class="mega-h" href="/c/earth/"><i class="mega-dot" aria-hidden="true"></i>地球科学<span class="cnt">22</span></a><a class="mega-l" href="/c/earth/national/">全国竞赛<span class="cnt">17</span></a><a class="mega-l" href="/c/earth/international/">国际竞赛<span class="cnt">5</span></a></div><div class="mega-col" style="--accent:#2c8a6e"><a class="mega-h" href="/c/geography/"><i class="mega-dot" aria-hidden="true"></i>地理<span class="cnt">11</span></a><a class="mega-l" href="/c/geography/geokids/">地球小博士<span class="cnt">11</span></a></div><div class="mega-col" style="--accent:#4a5fd0"><a class="mega-h" href="/c/info/"><i class="mega-dot" aria-hidden="true"></i>信息学<span class="cnt">9</span></a><a class="mega-l" href="/c/info/noi/">全国青少年信息学奥林匹克竞赛<span class="cnt">3</span></a><a class="mega-l" href="/c/info/noip/">全国青少年信息学奥林匹克联赛<span class="cnt">1</span></a><a class="mega-l" href="/c/info/csp/">CSP-J/S 非专业级软件能力认证<span class="cnt">1</span></a><a class="mega-l" href="/c/info/apio/">亚洲和太平洋地区信息学奥林匹克<span class="cnt">1</span></a><a class="mega-l" href="/c/info/winter/">NOI 冬令营<span class="cnt">1</span></a><a class="mega-l" href="/c/info/camp/">IOI 中国国家集训队集训<span class="cnt">2</span></a></div><a class="mega-all" href="/all/">全部文档（474 套）<i class="arr" aria-hidden="true">›</i></a></div></div><a class="nav-a" href="/whitelist/">白名单竞赛</a><a class="nav-a" href="/about/">使用说明</a><a class="nav-a nav-s" href="/search/" title="站内搜索（按 / 或 Ctrl+K）"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.9 12.1l4.3 4.3-1.4 1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z" fill="currentColor"/></svg>搜索</a></nav>
+    <div class="head-tools">
+      <button class="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式">
+        <svg class="ic-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12.7 3a8.5 8.5 0 108.3 10.6A7 7 0 0112.7 3z" fill="currentColor"/></svg>
+        <svg class="ic-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12 17a5 5 0 110-10 5 5 0 010 10zm0-13a1 1 0 011 1v1a1 1 0 01-2 0V5a1 1 0 011-1zm0 14a1 1 0 011 1v1a1 1 0 01-2 0v-1a1 1 0 011-1zM4 11h1a1 1 0 010 2H4a1 1 0 010-2zm15 0h1a1 1 0 010 2h-1a1 1 0 010-2zM6.3 5.5l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm11 11l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm.7-11a1 1 0 010 1.4l-.7.7A1 1 0 0115.9 6.2l.7-.7a1 1 0 011.4 0zm-11 11a1 1 0 010 1.4l-.7.7a1 1 0 01-1.4-1.4l.7-.7a1 1 0 011.4 0z" fill="currentColor"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-label="打开分类菜单" aria-expanded="false">分类 ▾</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main" tabindex="-1">
+
+<article class="doc">
+  <nav class="crumb">
+    <a href="/">首页</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/">数学</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/amc10p/">AMC10(P版)</a>
+    
+    <span class="sep">/</span><span>2016A AMC 10 真题（P版）</span>
+  </nav>
+
+  <h1>2016A AMC 10 真题（P版）</h1>
+
+  <div class="meta">
+    <span class="tag">数学</span>
+    <span>2016A 年</span>
+    <span>25 题</span>
+    <span>99 KB</span>
+    <span class="ok">含答案解析</span>
+  </div>
+
+  <div class="toolbar">
+    
+    <a class="btn quiz-btn" href="/quiz/amc10p-2016a/">开始答题 →</a>
+    
+    
+    <a class="btn ghost" href="#answer">跳到答案解析 ↓</a>
+    
+    <button class="btn ghost" type="button" onclick="document.querySelectorAll('details').forEach(function(x){x.open=true});setTimeout(function(){window.print()},60)">打印（含答案）</button>
+    <a class="btn" href="https://t.fengg.net/docs-dl/public/download/%E6%95%B0%E5%AD%A6/AMC10(P%E7%89%88)/2016A%20AMC%2010%20%E7%9C%9F%E9%A2%98%E4%B8%8E%E8%A7%A3%E7%AD%94.docx" download="2016A AMC 10 真题与解答.docx" title="2016A AMC 10 真题与解答.docx">下载 Word 文件</a>
+  </div>
+
+  <section class="paper">
+    <p class="paper-tip">中英双语：每题先中文，后附英文原题；解答在同页下方「查看答案解析与下载」里。</p>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">1</span></p>
+<p>求 \(\dfrac{11!-10!}{9!}\) 的值。</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(99\)</span>
+<span class="amc-opt"><b>B</b>\(100\)</span>
+<span class="amc-opt"><b>C</b>\(110\)</span>
+<span class="amc-opt"><b>D</b>\(121\)</span>
+<span class="amc-opt"><b>E</b>\(132\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">What is the value of \(\dfrac{11!-10!}{9!}?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(99\)</span><span class="amc-opt"><b>(B)</b> \(100\)</span><span class="amc-opt"><b>(C)</b> \(110\)</span><span class="amc-opt"><b>(D)</b> \(121\)</span><span class="amc-opt"><b>(E)</b> \(132\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">2</span></p>
+<p>求使下式成立的 \(x\) 值：\[10^{x} \cdot 100^{2x}=1000^{5}\text{？}\]</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1\)</span>
+<span class="amc-opt"><b>B</b>\(2\)</span>
+<span class="amc-opt"><b>C</b>\(3\)</span>
+<span class="amc-opt"><b>D</b>\(4\)</span>
+<span class="amc-opt"><b>E</b>\(5\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For what value of \(x\) does \[10^{x} \cdot 100^{2x}=1000^{5}?\]</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1\)</span><span class="amc-opt"><b>(B)</b> \(2\)</span><span class="amc-opt"><b>(C)</b> \(3\)</span><span class="amc-opt"><b>(D)</b> \(4\)</span><span class="amc-opt"><b>(E)</b> \(5\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">3</span></p>
+<p>Ben 每花一美元买贝果，David 就少花 \(25\) 美分。Ben 比 David 多付 \(\$12.50\)。他们两人在贝果店一共花了多少钱？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\$37.50\)</span>
+<span class="amc-opt"><b>B</b>\(\$50.00\)</span>
+<span class="amc-opt"><b>C</b>\(\$87.50\)</span>
+<span class="amc-opt"><b>D</b>\(\$90.00\)</span>
+<span class="amc-opt"><b>E</b>\(\$92.50\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For every dollar Ben spent on bagels, David spent \(25\) cents less. Ben paid \(\$12.50\) more than David. How much did they spend in the bagel store together?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\$37.50\)</span><span class="amc-opt"><b>(B)</b> \(\$50.00\)</span><span class="amc-opt"><b>(C)</b> \(\$87.50\)</span><span class="amc-opt"><b>(D)</b> \(\$90.00\)</span><span class="amc-opt"><b>(E)</b> \(\$92.50\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">4</span></p>
+<p>对所有实数 \(x\) 和满足 \(y \neq 0\) 的实数 \(y\)，余数函数定义为 \[\operatorname{rem}(x,y)=x-y\left\lfloor\frac{x}{y}\right\rfloor\text{，}\] 其中 \(\left \lfloor \frac{x}{y} \right \rfloor\) 表示小于或等于 \(\frac{x}{y}\) 的最大整数。求 \(\text{rem} \left(\frac{3}{8}, -\frac{2}{5} \right)\) 的值。</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(-\dfrac{3}{8}\)</span>
+<span class="amc-opt"><b>B</b>\(-\dfrac{1}{40}\)</span>
+<span class="amc-opt"><b>C</b>\(0\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{3}{8}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{31}{40}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The remainder function can be defined for all real numbers \(x\) and \(y\) with \(y \neq 0\) by \[\operatorname{rem}(x,y)=x-y\left\lfloor\frac{x}{y}\right\rfloor,\] where \(\left \lfloor \frac{x}{y} \right \rfloor\) denotes the greatest integer less than or equal to \(\frac{x}{y}.\) What is the value of \(\text{rem} \left(\frac{3}{8}, -\frac{2}{5} \right)?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(-\dfrac{3}{8}\)</span><span class="amc-opt"><b>(B)</b> \(-\dfrac{1}{40}\)</span><span class="amc-opt"><b>(C)</b> \(0\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{3}{8}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{31}{40}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">5</span></p>
+<p>一个长方体的整数边长之比为 \(1:3:4\)。下列哪个数可能是这个长方体的体积？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(48\)</span>
+<span class="amc-opt"><b>B</b>\(56\)</span>
+<span class="amc-opt"><b>C</b>\(64\)</span>
+<span class="amc-opt"><b>D</b>\(96\)</span>
+<span class="amc-opt"><b>E</b>\(144\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A rectangular box has integer side lengths in the ratio \(1:3:4.\) Which of the following could be the volume of the box?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(48\)</span><span class="amc-opt"><b>(B)</b> \(56\)</span><span class="amc-opt"><b>(C)</b> \(64\)</span><span class="amc-opt"><b>(D)</b> \(96\)</span><span class="amc-opt"><b>(E)</b> \(144\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">6</span></p>
+<p>Ximena 把整数 \(1\) 到 \(30\) 各列出一次。Emilio 抄写 Ximena 的数，但把每次出现的数字 \(2\) 都替换成数字 \(1\)。Ximena 把她的数相加，Emilio 把他的数相加。Ximena 的和比 Emilio 的和大多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(13\)</span>
+<span class="amc-opt"><b>B</b>\(26\)</span>
+<span class="amc-opt"><b>C</b>\(102\)</span>
+<span class="amc-opt"><b>D</b>\(103\)</span>
+<span class="amc-opt"><b>E</b>\(110\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Ximena lists the whole numbers \(1\) through \(30\) once. Emilio copies Ximena’s numbers, replacing each occurrence of the digit \(2\) by the digit \(1.\) Ximena adds her numbers and Emilio adds his numbers. How much larger is Ximena’s sum than Emilio’s?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(13\)</span><span class="amc-opt"><b>(B)</b> \(26\)</span><span class="amc-opt"><b>(C)</b> \(102\)</span><span class="amc-opt"><b>(D)</b> \(103\)</span><span class="amc-opt"><b>(E)</b> \(110\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">7</span></p>
+<p>\(7\) 个数据值 \[60, 100, x, 40, 50, 200, 90\] 的平均数、中位数和众数都等于 \(x\)。求 \(x\) 的值。</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(50\)</span>
+<span class="amc-opt"><b>B</b>\(60\)</span>
+<span class="amc-opt"><b>C</b>\(75\)</span>
+<span class="amc-opt"><b>D</b>\(90\)</span>
+<span class="amc-opt"><b>E</b>\(100\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The mean, median, and mode of the \(7\) data values \[60, 100, x, 40, 50, 200, 90\] are all equal to \(x.\) What is the value of \(x?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(50\)</span><span class="amc-opt"><b>(B)</b> \(60\)</span><span class="amc-opt"><b>(C)</b> \(75\)</span><span class="amc-opt"><b>(D)</b> \(90\)</span><span class="amc-opt"><b>(E)</b> \(100\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">8</span></p>
+<p>Trickster Rabbit 同意每次 Foolish Fox 经过 Rabbit 家旁边的桥时，都把 Fox 的钱翻倍，但 Fox 每次过桥后必须向 Rabbit 支付 \(40\) 枚硬币的过路费。付款在翻倍之后进行。Fox 起初很高兴，但他发现自己过桥三次后钱全没了。Fox 一开始有多少枚硬币？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(20\)</span>
+<span class="amc-opt"><b>B</b>\(30\)</span>
+<span class="amc-opt"><b>C</b>\(35\)</span>
+<span class="amc-opt"><b>D</b>\(40\)</span>
+<span class="amc-opt"><b>E</b>\(45\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Trickster Rabbit agrees with Foolish Fox to double Fox’s money every time Fox crosses the bridge by Rabbit’s house, as long as Fox pays \(40\) coins in toll to Rabbit after each crossing. The payment is made after the doubling. Fox is excited about his good fortune until he discovers that all his money is gone after crossing the bridge three times. How many coins did Fox have at the beginning?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(20\)</span><span class="amc-opt"><b>(B)</b> \(30\)</span><span class="amc-opt"><b>(C)</b> \(35\)</span><span class="amc-opt"><b>(D)</b> \(40\)</span><span class="amc-opt"><b>(E)</b> \(45\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">9</span></p>
+<p>一个由 \(2016\) 枚硬币组成的三角形阵列，第一行有 \(1\) 枚硬币，第二行有 \(2\) 枚，第三行有 \(3\) 枚，依此类推，第 \(N\) 行有 \(N\) 枚。求 \(N\) 的各位数字之和。</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(6\)</span>
+<span class="amc-opt"><b>B</b>\(7\)</span>
+<span class="amc-opt"><b>C</b>\(8\)</span>
+<span class="amc-opt"><b>D</b>\(9\)</span>
+<span class="amc-opt"><b>E</b>\(10\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A triangular array of \(2016\) coins has \(1\) coin in the first row, \(2\) coins in the second row, \(3\) coins in the third row, and so on up to \(N\) coins in the \(N\)th row. What is the sum of the digits of \(N?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(6\)</span><span class="amc-opt"><b>(B)</b> \(7\)</span><span class="amc-opt"><b>(C)</b> \(8\)</span><span class="amc-opt"><b>(D)</b> \(9\)</span><span class="amc-opt"><b>(E)</b> \(10\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">10</span></p>
+<p>一块地毯由如图所示的三种不同颜色组成。三种不同颜色区域的面积构成一个等差数列。最内层长方形宽为一英尺，外面的两个区域在四周各宽 \(1\) 英尺。最内层长方形的长度是多少英尺？</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2016A/problem/q10-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1\)</span>
+<span class="amc-opt"><b>B</b>\(2\)</span>
+<span class="amc-opt"><b>C</b>\(4\)</span>
+<span class="amc-opt"><b>D</b>\(6\)</span>
+<span class="amc-opt"><b>E</b>\(8\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A rug is made with three different colors as shown. The areas of the three differently colored regions form an arithmetic progression. The inner rectangle is one foot wide, and each of the two shaded regions is \(1\) foot wide on all four sides. What is the length in feet of the inner rectangle?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2016A/problem/q10-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1\)</span><span class="amc-opt"><b>(B)</b> \(2\)</span><span class="amc-opt"><b>(C)</b> \(4\)</span><span class="amc-opt"><b>(D)</b> \(6\)</span><span class="amc-opt"><b>(E)</b> \(8\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">11</span></p>
+<p>给定的 \(8\times5\) 长方形中，阴影区域的面积是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2016A/problem/q11-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(4\dfrac{3}{5}\)</span>
+<span class="amc-opt"><b>B</b>\(5\)</span>
+<span class="amc-opt"><b>C</b>\(5\dfrac{1}{4}\)</span>
+<span class="amc-opt"><b>D</b>\(6\dfrac{1}{2}\)</span>
+<span class="amc-opt"><b>E</b>\(8\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">What is the area of the shaded region of the given \(8\times5\) rectangle?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2016A/problem/q11-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(4\dfrac{3}{5}\)</span><span class="amc-opt"><b>(B)</b> \(5\)</span><span class="amc-opt"><b>(C)</b> \(5\dfrac{1}{4}\)</span><span class="amc-opt"><b>(D)</b> \(6\dfrac{1}{2}\)</span><span class="amc-opt"><b>(E)</b> \(8\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">12</span></p>
+<p>从 \(1\) 到 \(2016\) 之间随机选取三个不同的整数。下列哪一句正确描述了这三个整数乘积为奇数的概率 \(p\)？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(p \lt \dfrac{1}{8}\)</span>
+<span class="amc-opt"><b>B</b>\(p = \dfrac{1}{8}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{1}{8} \lt p \lt \dfrac{1}{3}\)</span>
+<span class="amc-opt"><b>D</b>\(p = \dfrac{1}{3}\)</span>
+<span class="amc-opt"><b>E</b>\(p \gt \dfrac{1}{3}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Three distinct integers are selected at random between \(1\) and \(2016,\) inclusive. Which of the following is a correct statement about the probability \(p\) that the product of the three integers is odd?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(p \lt \dfrac{1}{8}\)</span><span class="amc-opt"><b>(B)</b> \(p = \dfrac{1}{8}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{1}{8} \lt p \lt \dfrac{1}{3}\)</span><span class="amc-opt"><b>(D)</b> \(p = \dfrac{1}{3}\)</span><span class="amc-opt"><b>(E)</b> \(p \gt \dfrac{1}{3}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">13</span></p>
+<p>五位朋友坐在电影院一排 \(5\) 个座位中，从左到右编号为 \(1\) 到 \(5\)。（“左”和“右”是从坐在座位上的人的视角看。）</p>
+<p>电影期间 Ada 去大厅买爆米花。她回来时发现 Bea 向右移动了两个座位，Ceci 向左移动了一个座位，Dee 和 Edie 交换了座位，并且给 Ada 留下了一个端点座位。Ada 起身前坐在哪个座位？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1\)</span>
+<span class="amc-opt"><b>B</b>\(2\)</span>
+<span class="amc-opt"><b>C</b>\(3\)</span>
+<span class="amc-opt"><b>D</b>\(4\)</span>
+<span class="amc-opt"><b>E</b>\(5\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Five friends sat in a movie theater in a row containing \(5\) seats, numbered \(1\) to \(5\) from left to right. (The directions “left” and “right” are from the point of view of the people as they sit in the seats.)</p>
+<p class="amc-en">During the movie Ada went to the lobby to get some popcorn. When she returned, she found that Bea had moved two seats to the right, Ceci had moved one seat to the left, and Dee and Edie had switched seats, leaving an end seat for Ada. In which seat had Ada been sitting before she got up?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1\)</span><span class="amc-opt"><b>(B)</b> \(2\)</span><span class="amc-opt"><b>(C)</b> \(3\)</span><span class="amc-opt"><b>(D)</b> \(4\)</span><span class="amc-opt"><b>(E)</b> \(5\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">14</span></p>
+<p>有多少种方法把 \(2016\) 写成若干个二和若干个三的和，且不考虑顺序？例如，\(1008\cdot 2 + 0\cdot 3\) 和 \(402\cdot 2 + 404\cdot 3\) 是其中两种。</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(236\)</span>
+<span class="amc-opt"><b>B</b>\(336\)</span>
+<span class="amc-opt"><b>C</b>\(337\)</span>
+<span class="amc-opt"><b>D</b>\(403\)</span>
+<span class="amc-opt"><b>E</b>\(672\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">How many ways are there to write \(2016\) as the sum of twos and threes, ignoring order? (For example, \(1008\cdot 2 + 0\cdot 3\) and \(402\cdot 2 + 404\cdot 3\) are two such ways.)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(236\)</span><span class="amc-opt"><b>(B)</b> \(336\)</span><span class="amc-opt"><b>(C)</b> \(337\)</span><span class="amc-opt"><b>(D)</b> \(403\)</span><span class="amc-opt"><b>(E)</b> \(672\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">15</span></p>
+<p>如图，从一块圆形饼干面团中切出七块半径为 \(1\) 英寸的饼干。相邻饼干相切，除中心饼干外，其他饼干都与面团边缘相切。剩下的边角料被重新塑造成另一块同样厚度的饼干。边角料饼干的半径是多少英寸？</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2016A/problem/q15-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\sqrt{2}\)</span>
+<span class="amc-opt"><b>B</b>\(1.5\)</span>
+<span class="amc-opt"><b>C</b>\(\sqrt{\pi}\)</span>
+<span class="amc-opt"><b>D</b>\(\sqrt{2\pi}\)</span>
+<span class="amc-opt"><b>E</b>\(\pi\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Seven cookies of radius \(1\) inch are cut from a circle of cookie dough, as shown. Neighboring cookies are tangent, and all except the center cookie are tangent to the edge of the dough. The leftover scrap is reshaped to form another cookie of the same thickness. What is the radius in inches of the scrap cookie?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2016A/problem/q15-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\sqrt{2}\)</span><span class="amc-opt"><b>(B)</b> \(1.5\)</span><span class="amc-opt"><b>(C)</b> \(\sqrt{\pi}\)</span><span class="amc-opt"><b>(D)</b> \(\sqrt{2\pi}\)</span><span class="amc-opt"><b>(E)</b> \(\pi\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">16</span></p>
+<p>顶点为 \(A(0, 2)\)，\(B(-3, 2)\)，和 \(C(-3, 0)\) 的三角形先关于 \(x\) 轴反射，得到的像 \(\triangle A'B'C'\) 再绕原点逆时针旋转 \(90^{\circ}\)，得到 \(\triangle A''B''C''\)。下列哪个变换能把 \(\triangle A''B''C''\) 变回 \(\triangle ABC\)？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>绕原点逆时针旋转 \(90^{\circ}\)</span>
+<span class="amc-opt"><b>B</b>绕原点顺时针旋转 \(90^{\circ}\)</span>
+<span class="amc-opt"><b>C</b>关于 \(x\) 轴反射</span>
+<span class="amc-opt"><b>D</b>关于直线 \(y = x\) 反射</span>
+<span class="amc-opt"><b>E</b>关于 \(y\) 轴反射</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A triangle with vertices \(A(0, 2),\) \(B(-3, 2),\) and \(C(-3, 0)\) is reflected about the \(x\)-axis, then the image \(\triangle A'B'C'\) is rotated counterclockwise about the origin by \(90^{\circ}\) to produce \(\triangle A''B''C''.\) Which of the following transformations will return \(\triangle A''B''C''\) to \(\triangle ABC?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> counterclockwise rotation about the origin by
+\(90^{\circ}\)</span><span class="amc-opt"><b>(B)</b> clockwise rotation about the origin by \(90^{\circ}\)</span><span class="amc-opt"><b>(C)</b> reflection about the \(x\)-axis</span><span class="amc-opt"><b>(D)</b> reflection about the line \(y = x\)</span><span class="amc-opt"><b>(E)</b> reflection about the \(y\)-axis</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">17</span></p>
+<p>设 \(N\) 是 \(5\) 的正倍数。将一个红球和 \(N\) 个绿球随机排成一行。令 \(P(N)\) 为至少有 \(\frac{3}{5}\) 的绿球在红球同一侧的概率。注意 \(P(5)=1\)，且当 \(N\) 变大时 \(P(N)\) 趋近于 \(\frac{4}{5}\)。使 \(P(N) &lt; \dfrac{321}{400}\) 的最小 \(N\) 的各位数字之和是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(12\)</span>
+<span class="amc-opt"><b>B</b>\(14\)</span>
+<span class="amc-opt"><b>C</b>\(16\)</span>
+<span class="amc-opt"><b>D</b>\(18\)</span>
+<span class="amc-opt"><b>E</b>\(20\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(N\) be a positive multiple of \(5.\) One red ball and \(N\) green balls are arranged in a line in random order. Let \(P(N)\) be the probability that at least \(\frac{3}{5}\) of the green balls are on the same side of the red ball. Observe that \(P(5)=1\) and that \(P(N)\) approaches \(\frac{4}{5}\) as \(N\) grows large. What is the sum of the digits of the least value of \(N\) such that \(P(N) &lt; \dfrac{321}{400}?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(12\)</span><span class="amc-opt"><b>(B)</b> \(14\)</span><span class="amc-opt"><b>(C)</b> \(16\)</span><span class="amc-opt"><b>(D)</b> \(18\)</span><span class="amc-opt"><b>(E)</b> \(20\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">18</span></p>
+<p>一个立方体的每个顶点要标上从 \(1\) 到 \(8\) 的一个整数，每个整数用一次，使得每个面的四个顶点上的数之和都相同。通过立方体旋转可以互相得到的标法视为相同。有多少种不同标法？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1\)</span>
+<span class="amc-opt"><b>B</b>\(3\)</span>
+<span class="amc-opt"><b>C</b>\(6\)</span>
+<span class="amc-opt"><b>D</b>\(12\)</span>
+<span class="amc-opt"><b>E</b>\(24\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Each vertex of a cube is to be labeled with an integer \(1\) through \(8,\) with each integer being used once, in such a way that the sum of the four numbers on the vertices of a face is the same for each face. Arrangements that can be obtained from each other through rotations of the cube are considered to be the same. How many different arrangements are possible?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1\)</span><span class="amc-opt"><b>(B)</b> \(3\)</span><span class="amc-opt"><b>(C)</b> \(6\)</span><span class="amc-opt"><b>(D)</b> \(12\)</span><span class="amc-opt"><b>(E)</b> \(24\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">19</span></p>
+<p>在长方形 \(ABCD\) 中，\(AB=6\)，\(BC=3\)。点 \(E\) 在 \(B\) 与 \(C\) 之间，点 \(F\) 在 \(E\) 与 \(C\) 之间，且 \(BE=EF=FC\)。线段 \(\overline{AE}\) 和 \(\overline{AF}\) 分别与 \(\overline{BD}\) 相交于 \(P\) 和 \(Q\)。</p>
+<p>比值 \(BP:PQ:QD\) 可写成 \(r:s:t\)，其中 \(r\)，\(s\) 和 \(t\) 的最大公因数为 \(1\)。求 \(r+s+t\)。</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(7\)</span>
+<span class="amc-opt"><b>B</b>\(9\)</span>
+<span class="amc-opt"><b>C</b>\(12\)</span>
+<span class="amc-opt"><b>D</b>\(15\)</span>
+<span class="amc-opt"><b>E</b>\(20\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In rectangle \(ABCD,\) \(AB=6\) and \(BC=3.\) Point \(E\) between \(B\) and \(C,\) and point \(F\) between \(E\) and \(C\) are such that \(BE=EF=FC.\) Segments \(\overline{AE}\) and \(\overline{AF}\) intersect \(\overline{BD}\) at \(P\) and \(Q,\) respectively.</p>
+<p class="amc-en">The ratio \(BP:PQ:QD\) can be written as \(r:s:t\) where the greatest common factor of \(r,\) \(s,\) and \(t\) is \(1.\) What is \(r+s+t?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(7\)</span><span class="amc-opt"><b>(B)</b> \(9\)</span><span class="amc-opt"><b>(C)</b> \(12\)</span><span class="amc-opt"><b>(D)</b> \(15\)</span><span class="amc-opt"><b>(E)</b> \(20\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">20</span></p>
+<p>对某个特定的 \(N\)，展开 \((a+b+c+d+1)^N\) 并合并同类项后，所得表达式中恰好有 \(1001\) 项同时包含四个变量 \(a\)、\(b\)、\(c\) 和 \(d\)，且每个变量的指数都为正。求 \(N\)。</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(9\)</span>
+<span class="amc-opt"><b>B</b>\(14\)</span>
+<span class="amc-opt"><b>C</b>\(16\)</span>
+<span class="amc-opt"><b>D</b>\(17\)</span>
+<span class="amc-opt"><b>E</b>\(19\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For some particular value of \(N,\) when \((a+b+c+d+1)^N\) is expanded and like terms are combined, the resulting expression contains exactly \(1001\) terms that include all four variables \(a,\) \(b,\) \(c,\) and \(d,\) each to some positive power. What is \(N?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(9\)</span><span class="amc-opt"><b>(B)</b> \(14\)</span><span class="amc-opt"><b>(C)</b> \(16\)</span><span class="amc-opt"><b>(D)</b> \(17\)</span><span class="amc-opt"><b>(E)</b> \(19\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">21</span></p>
+<p>圆心为 \(P\)，\(Q\) 和 \(R\)、半径分别为 \(1\)，\(2\) 和 \(3\) 的三个圆位于直线 \(l\) 的同侧，并分别在 \(P'\)，\(Q'\) 和 \(R'\) 处与 \(l\) 相切，其中 \(Q'\) 在 \(P'\) 和 \(R'\) 之间。圆心为 \(Q\) 的圆与另外两个圆都外切。求 \(\triangle PQR\) 的面积。</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(0\)</span>
+<span class="amc-opt"><b>B</b>\(\sqrt{\dfrac{2}{3}}\)</span>
+<span class="amc-opt"><b>C</b>\(1\)</span>
+<span class="amc-opt"><b>D</b>\(\sqrt{6}-\sqrt{2}\)</span>
+<span class="amc-opt"><b>E</b>\(\sqrt{\dfrac{3}{2}}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Circles with centers \(P,\) \(Q\) and \(R,\) having radii \(1,\) \(2\) and \(3,\) respectively, lie on the same side of line \(l\) and are tangent to \(l\) at \(P',\) \(Q'\) and \(R',\) respectively, with \(Q'\) between \(P'\) and \(R'.\) The circle with center \(Q\) is externally tangent to each of the other two circles. What is the area of \(\triangle PQR?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(0\)</span><span class="amc-opt"><b>(B)</b> \(\sqrt{\dfrac{2}{3}}\)</span><span class="amc-opt"><b>(C)</b> \(1\)</span><span class="amc-opt"><b>(D)</b> \(\sqrt{6}-\sqrt{2}\)</span><span class="amc-opt"><b>(E)</b> \(\sqrt{\dfrac{3}{2}}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">22</span></p>
+<p>对某个正整数 \(n\)，数 \(110n^3\) 有 \(110\) 个正整数因数，包括 \(1\) 和 \(110n^3\) 本身。数 \(81n^4\) 有多少个正整数因数？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(110\)</span>
+<span class="amc-opt"><b>B</b>\(191\)</span>
+<span class="amc-opt"><b>C</b>\(261\)</span>
+<span class="amc-opt"><b>D</b>\(325\)</span>
+<span class="amc-opt"><b>E</b>\(425\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For some positive integer \(n,\) the number \(110n^3\) has \(110\) positive integer divisors, including \(1\) and the number \(110n^3.\) How many positive integer divisors does the number \(81n^4\) have?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(110\)</span><span class="amc-opt"><b>(B)</b> \(191\)</span><span class="amc-opt"><b>(C)</b> \(261\)</span><span class="amc-opt"><b>(D)</b> \(325\)</span><span class="amc-opt"><b>(E)</b> \(425\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">23</span></p>
+<p>二元运算 \(\diamondsuit\) 满足 \[a\,\diamondsuit\, (b\,\diamondsuit \,c) = (a\,\diamondsuit \,b)\cdot c\] 以及 \(a\,\diamondsuit \,a=1\)，对所有非零实数 \(a\)，\(b\) 和 \(c\) 都成立。（这里的点号 \(\cdot\) 表示通常的乘法运算。）方程 \[2016 \,\diamondsuit\, (6\,\diamondsuit\, x)=100\] 的解可写成 \(\frac{p}{q}\)，其中 \(p\) 和 \(q\) 为互质正整数。求 \(p+q\) 的值。</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(109\)</span>
+<span class="amc-opt"><b>B</b>\(201\)</span>
+<span class="amc-opt"><b>C</b>\(301\)</span>
+<span class="amc-opt"><b>D</b>\(3049\)</span>
+<span class="amc-opt"><b>E</b>\(33{,}601\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A binary operation \(\diamondsuit\) has the properties that \[a\,\diamondsuit\, (b\,\diamondsuit \,c) = (a\,\diamondsuit \,b)\cdot c\] and that \(a\,\diamondsuit \,a=1\) for all nonzero real numbers \(a,\) \(b,\) and \(c.\) (Here the dot \(\cdot\) represents the usual multiplication operation.) The solution to the equation \[2016 \,\diamondsuit\, (6\,\diamondsuit\, x)=100\] can be written as \(\frac{p}{q},\) where \(p\) and \(q\) are relatively prime positive integers. What is \(p+q?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(109\)</span><span class="amc-opt"><b>(B)</b> \(201\)</span><span class="amc-opt"><b>(C)</b> \(301\)</span><span class="amc-opt"><b>(D)</b> \(3049\)</span><span class="amc-opt"><b>(E)</b> \(33{,}601\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">24</span></p>
+<p>一个四边形内接于半径为 \(200\sqrt{2}\) 的圆。该四边形的三条边长为 \(200\)。第四条边长是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(200\)</span>
+<span class="amc-opt"><b>B</b>\(200\sqrt{2}\)</span>
+<span class="amc-opt"><b>C</b>\(200\sqrt{3}\)</span>
+<span class="amc-opt"><b>D</b>\(300\sqrt{2}\)</span>
+<span class="amc-opt"><b>E</b>\(500\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A quadrilateral is inscribed in a circle of radius \(200\sqrt{2}.\) Three of the sides of this quadrilateral have length \(200.\) What is the length of the fourth side?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(200\)</span><span class="amc-opt"><b>(B)</b> \(200\sqrt{2}\)</span><span class="amc-opt"><b>(C)</b> \(200\sqrt{3}\)</span><span class="amc-opt"><b>(D)</b> \(300\sqrt{2}\)</span><span class="amc-opt"><b>(E)</b> \(500\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">25</span></p>
+<p>有多少个正整数有序三元组 \((x,y,z)\) 同时满足 \[\text{lcm}(x,y) = 72\text{，}\] \[ \text{lcm}(x,z) = 600\text{，}\] 以及 \[\text{lcm}(y,z)=900\text{？}\]</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(15\)</span>
+<span class="amc-opt"><b>B</b>\(16\)</span>
+<span class="amc-opt"><b>C</b>\(24\)</span>
+<span class="amc-opt"><b>D</b>\(27\)</span>
+<span class="amc-opt"><b>E</b>\(64\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">How many ordered triples \((x,y,z)\) of positive integers satisfy \[\text{lcm}(x,y) = 72,\]\[ \text{lcm}(x,z) = 600,\] and \[\text{lcm}(y,z)=900?\]</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(15\)</span><span class="amc-opt"><b>(B)</b> \(16\)</span><span class="amc-opt"><b>(C)</b> \(24\)</span><span class="amc-opt"><b>(D)</b> \(27\)</span><span class="amc-opt"><b>(E)</b> \(64\)</span></p>
+</div>
+  </section>
+
+  
+  <details class="answer" id="answer">
+    <summary>
+      <span class="s-title">查看答案解析与下载</span>
+    </summary>
+    <div class="answer-body">
+      <h3>答案速查</h3>
+<table class="tbl"><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>答案</td><td>B</td><td>C</td><td>C</td><td>B</td><td>D</td><td>D</td><td>D</td><td>C</td><td>D</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr><tr><td>答案</td><td>B</td><td>D</td><td>A</td><td>B</td><td>C</td><td>A</td><td>D</td><td>A</td><td>C</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr><tr><td>答案</td><td>E</td><td>B</td><td>D</td><td>D</td><td>A</td><td>E</td><td>A</td></tr></table>
+<p class="muted">答案串：BCCBDDDCDBDABCADACEBDDAEA</p>
+<h3>逐题解析</h3>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">1</span> 答案 <b>B</b></p>
+<p>可以从分子中提取一个 \(9!\) 再化简。\[\begin{aligned} \dfrac{9!(11 \cdot 10 - 10)}{9!} &amp;=11 \cdot 10 - 10 \\&amp;= 110 - 10 \\&amp;= 100 \end{aligned}\text{。}\] 所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">We can factor a \(9!\) out of the numerator and simplify. \[\begin{aligned} \dfrac{9!(11 \cdot 10 - 10)}{9!} &amp;=11 \cdot 10 - 10 \\&amp;= 110 - 10 \\&amp;= 100. \end{aligned}\] Thus, the correct answer is <b>B</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">2</span> 答案 <b>C</b></p>
+<p>把所有底数写成 \(10\) 的幂：\[\small 10^x\cdot100^{2x}=10^x\cdot(10^2)^{2x}=10^{5x}\text{，}\] 同时 \[1000^5=(10^3)^5=10^{15}\text{。}\]</p>
+<p>因此 \(5x=15\)，所以 \(x=3\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Rewrite all bases as powers of \(10\): \[\small 10^x\cdot100^{2x}=10^x\cdot(10^2)^{2x}=10^{5x},\] and \[1000^5=(10^3)^5=10^{15}.\]</p>
+<p class="amc-en">Therefore \(5x=15\), so \(x=3\).</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">3</span> 答案 <b>C</b></p>
+<p>Ben 每花一美元，David 花 \(75\) 美分，所以两人的差额是 \(25\) 美分。总差额为 \(\$12.50\)，也就是 Ben 花费的四分之一。</p>
+<p>Ben 花了 \(12.50\div0.25=50\) 美元，David 花了 \(37.50\) 美元。两人共花 \(87.50\) 美元。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For each dollar Ben spent, David spent \(75\) cents, so the difference was \(25\) cents. The total difference \(\$12.50\) is therefore one quarter of Ben’s spending.</p>
+<p class="amc-en">Ben spent \(12.50\div0.25=50\) dollars, and David spent \(37.50\) dollars. Together they spent \(87.50\) dollars.</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">4</span> 答案 <b>B</b></p>
+<p>代入公式，得到 \[ \begin{aligned} \text{rem} \left(\dfrac{3}{8}, -\dfrac{2}{5}\right) &amp;= \dfrac{3}{8} \\ &amp;{}+ \dfrac{2}{5} \left \lfloor \dfrac{\frac{3}{8}}{-\frac{2}{5}}\right \rfloor \\ &amp;= \dfrac{3}{8} \\ &amp;{}+ \dfrac{2}{5} \left \lfloor -\dfrac{15}{16} \right \rfloor \\ &amp;= \dfrac{3}{8} + \dfrac{2}{5} \cdot -1 \\ &amp;= \dfrac{3}{8} - \dfrac{2}{5} \\ &amp;= - \dfrac{1}{40} \end{aligned} \] 所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Using the formula, we get \[ \begin{aligned} \text{rem} \left(\dfrac{3}{8}, -\dfrac{2}{5}\right) &amp;= \dfrac{3}{8} \\ &amp;{}+ \dfrac{2}{5} \left \lfloor \dfrac{\frac{3}{8}}{-\frac{2}{5}}\right \rfloor \\ &amp;= \dfrac{3}{8} \\ &amp;{}+ \dfrac{2}{5} \left \lfloor -\dfrac{15}{16} \right \rfloor \\ &amp;= \dfrac{3}{8} + \dfrac{2}{5} \cdot -1 \\ &amp;= \dfrac{3}{8} - \dfrac{2}{5} \\ &amp;= - \dfrac{1}{40} \end{aligned} \] Thus, the correct answer is <b>B</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">5</span> 答案 <b>D</b></p>
+<p>设最短边长为 \(s\)，则另外两边为 \(3s\) 和 \(4s\)。</p>
+<p>体积为 \[ s \cdot 3s \cdot 4s = 12s^3\text{。} \] 测试 \(s\) 的取值可知，当 \(s = 2\) 时，\(12s^3 = 96\)，这是一个选项。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(s\) be the side length of the smallest side. Then the other two sides are \(3s\) and \(4s.\)</p>
+<p class="amc-en">The volume is therefore \[ s \cdot 3s \cdot 4s = 12s^3. \] Testing out values of \(s,\) we see that if \(s = 2,\) then \(12s^3 = 96,\) which is an answer choice.</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">6</span> 答案 <b>D</b></p>
+<p>个位数字 \(2\) 被改成 \(1\) 时，数少 \(1\)。这发生在 \(2,12,22\)，总共少 \(3\)。</p>
+<p>十位数字 \(2\) 被改成 \(1\) 时，数少 \(10\)。这发生在 \(20,21,\ldots,29\)，总共少 \(100\)。</p>
+<p>因此 Emilio 的和比 Ximena 的和少 \(103\)，所以 Ximena 的和大 \(103\)。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">When Emilio changes a units digit \(2\) to \(1\), his copied number is smaller by \(1\). This happens in \(2,12,22\), for a loss of \(3\).</p>
+<p class="amc-en">When he changes a tens digit \(2\) to \(1\), his copied number is smaller by \(10\). This happens for \(20,21,\ldots,29\), for a loss of \(100\).</p>
+<p class="amc-en">Thus Emilio’s sum is \(103\) less than Ximena’s sum, so Ximena’s sum is \(103\) larger.</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">7</span> 答案 <b>D</b></p>
+<p>七个数的和为 \(540+x\)。如果平均数等于 \(x\)，则 \[\frac{540+x}{7}=x\text{，}\] 所以 \(540=6x\)，\(x=90\)。</p>
+<p>当 \(x=90\) 时，排序后的数据为 \(40,50,60,90,90,100,200\)。其中位数是 \(90\)，众数也是 \(90\)，所以符合条件。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The sum of the seven data values is \(540+x\). If the mean equals \(x\), then \[\frac{540+x}{7}=x,\] so \(540=6x\) and \(x=90\).</p>
+<p class="amc-en">With \(x=90\), the ordered data set is \(40,50,60,90,90,100,200\). Its median is \(90\), and its mode is also \(90\), so the value works.</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">8</span> 答案 <b>C</b></p>
+<p>最后 Fox 有 \(0\) 枚硬币，所以第三次付过路费之前有 \(40\) 枚。</p>
+<p>因此第三次翻倍前有 \(40 \div 2 = 20\) 枚；第二次付过路费之前有 \(20 + 40 = 60\) 枚。</p>
+<p>第二次翻倍前有 \(60 \div 2 = 30\) 枚；第一次付过路费之前有 \(30 + 40 = 70\) 枚。</p>
+<p>最后，第一次翻倍前 Fox 有 \(70 \div 2 = 35\) 枚硬币。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">We know that Fox has \(0\) coins at the end. Then before paying the final toll, Fox had \(40\) coins.</p>
+<p class="amc-en">Then he had \(40 \div 2 = 20\) coins before the doubling. Then before paying the toll for the second crossing, he had \(20 + 40 = 60\) coins.</p>
+<p class="amc-en">Before the doubling on the second crossing, he had \(60 \div 2 = 30\) coins. On the first crossing before the toll, Fox had \(30 + 40 = 70\) coins.</p>
+<p class="amc-en">Finally, before the first doubling, Fox had \(70 \div 2 = 35\) coins.</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">9</span> 答案 <b>D</b></p>
+<p>回忆前 \(N\) 个整数之和为 \(\dfrac{N(N + 1)}{2}\)。</p>
+<p>我们要找 \(N\)，使得 \[ \dfrac{N(N + 1)}{2} = 2016\text{。} \] 交叉相乘并化简，得到 \[ N^2 + N - 4032 = 0\text{。} \] 因式分解得 \[ (N - 63)(N + 64) = 0\text{。} \] 取正值，\(N = 63\)。各位数字和为 \(9\)。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Recall that the sum of the first \(N\) numbers is \(\dfrac{N(N + 1)}{2}.\)</p>
+<p class="amc-en">We want to find \(N\) such that \[ \dfrac{N(N + 1)}{2} = 2016. \] Cross-multiplying and simplifying gives us \[ N^2 + N - 4032 = 0. \] Factoring gives us \[ (N - 63)(N + 64) = 0. \] We want the positive value so \(N = 63.\) Adding together the digits gives us \(9.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">10</span> 答案 <b>B</b></p>
+<p>设内层长方形长度为 \(l\)，则内层面积为 \(l\)。</p>
+<p>中间区域面积为 \[ (l + 2) \cdot 3 - l = 2l + 6\text{。}\] 外层区域面积为 \[ (l + 4) \cdot 5 - (l + 2) \cdot 3 = 2l + 14\text{。}\]</p>
+<p>这 \(3\) 个面积构成等差数列，所以 \[\begin{aligned} l + 2l + 14 &amp;= 2(2l + 6) \\ 3l + 14 &amp;= 4l + 12 \\ l &amp;= 2\end{aligned}\]</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(l\) be the length of the inner rectangle. Then the area of the inner rectangle is \(l.\)</p>
+<p class="amc-en">The area of the middle region is going to be \[ (l + 2) \cdot 3 - l = 2l + 6. \] The area of the outer region is \[ (l + 4) \cdot 5 - (l + 2) \cdot 3 = 2l + 14. \]</p>
+<p class="amc-en">We know that these \(3\) values form an arithmetic sequence. That means that \[\begin{aligned} l + 2l + 14 &amp;= 2(2l + 6) \\ 3l + 14 &amp;= 4l + 12 \\ l &amp;= 2\end{aligned}\]</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">11</span> 答案 <b>D</b></p>
+<p>可将阴影区域分成 \(4\) 个底为 \(1\) 的三角形。</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2016A/solution/q11-sol-1.svg" alt="题图" loading="lazy"></p>
+<p>四个三角形的底都是 \(1\)。其中两个的高为 \(8\div2=4\)，另外两个的高为 \(5\div2=\dfrac52\)。</p>
+<p>面积总和为 \[ \begin{aligned} &amp;2 \cdot \dfrac{1}{2} \left(1 \cdot \dfrac{5}{2}\right) \\ &amp;\quad {}+ 2 \cdot \dfrac{1}{2} \left(1 \cdot 4\right) = 6\dfrac{1}{2} \end{aligned} \]</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">We can split the region into \(4\) triangles with bases of \(1.\)</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2016A/solution/q11-sol-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-en">All four triangles have base \(1.\) Two have height \(8\div2=4,\) and the other two have height \(5\div2=\dfrac52.\)</p>
+<p class="amc-en">The sum of the areas of the triangles is \[ \begin{aligned} &amp;2 \cdot \dfrac{1}{2} \left(1 \cdot \dfrac{5}{2}\right) \\ &amp;\quad {}+ 2 \cdot \dfrac{1}{2} \left(1 \cdot 4\right) = 6\dfrac{1}{2} \end{aligned} \]</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">12</span> 答案 <b>A</b></p>
+<p>乘积为奇数，当且仅当选出的三个整数全是奇数。从 \(1\) 到 \(2016\) 中有 \(1008\) 个奇数和 \(1008\) 个偶数。</p>
+<p>因为是不放回抽取， \[p=\frac{1008}{2016}\cdot\frac{1007}{2015}\cdot\frac{1006}{2014}\text{。}\] 第一个因子为 \(\frac12\)，后两个因子都略小于 \(\frac12\)，所以 \(p&lt;\frac18\)。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The product is odd exactly when all three selected integers are odd. There are \(1008\) odd and \(1008\) even integers from \(1\) to \(2016\).</p>
+<p class="amc-en">Because the integers are selected without replacement, \[p=\frac{1008}{2016}\cdot\frac{1007}{2015}\cdot\frac{1006}{2014}.\] The first factor is \(\frac12\), and each of the next two factors is slightly less than \(\frac12\). Therefore \(p&lt;\frac18\).</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">13</span> 答案 <b>B</b></p>
+<p>移动前后，被占用座位编号之和都是 \(1+2+3+4+5=15\)。Dee 和 Edie 只是交换座位，所以两人的合位移为 \(0\)。Bea 的位移为 \(+2\)，Ceci 的位移为 \(-1\)。因此 Ada 的位移必须为 \(-1\)，才能使总位移为 \(0\)。</p>
+<p>Ada 回到了一个端点座位。因为她向左移动了一个座位，所以她必定是从 \(2\) 号座位移到 \(1\) 号座位。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The sum of the occupied seat numbers is \(1+2+3+4+5=15\) both before and after the moves. Dee and Edie merely switch seats, so their combined displacement is \(0.\) Bea’s displacement is \(+2,\) and Ceci’s is \(-1.\) Therefore Ada’s displacement must be \(-1\) so that the total displacement is \(0.\)</p>
+<p class="amc-en">Ada returns to an end seat. Since she moves one seat left, she must move from seat \(2\) to seat \(1.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">14</span> 答案 <b>C</b></p>
+<p>题目可以写成方程 \(2x + 3y = 2016\)，其中 \(x\) 是二的个数，\(y\) 是三的个数。</p>
+<p>目标就是数出有多少个 \(3\) 的倍数，能从 \(2016\) 中减去后仍得到偶数。</p>
+<p>这对应于从 \((1008, 0)\) 到 \((0, 672)\) 的所有有序对，其中 \(y\) 每次增加 \(2\)。</p>
+<p>这样就有 \[\dfrac{672}{2} + 1 = 337\] 组 \(y\) 和 \(x\) 的解。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The problem can be rewritten as an equation \(2x + 3y = 2016,\) where \(x\) is the number of twos and \(y\) is the number of threes.</p>
+<p class="amc-en">The goal is to find the number of multiples of \(3\) that can be subtracted from \(2016\) to result in an even number.</p>
+<p class="amc-en">This can be achieved by the pairs of \((1008, 0)\) up to \((0, 672)\) with \(y\) being incremented by \(2.\)</p>
+<p class="amc-en">This gives us \[\dfrac{672}{2} + 1 = 337\] solutions for \(y\) and \(x.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">15</span> 答案 <b>A</b></p>
+<p>圆形面团半径为 \(3\) 英寸，因为从中心到边缘经过一个饼干直径再加一个饼干半径。</p>
+<p>面团面积为 \(3^2\pi = 9\pi\)，七块饼干的总面积为 \(7 \cdot 1^2\pi = 7\pi\)。</p>
+<p>剩余边角料的面积为 \(9\pi - 7\pi = 2\pi\)，所以它的半径为 \(\sqrt{2}\)。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The circle of cookie dough has a radius of \(3\) inches since it is the same as the diameter plus the radius of a cookie.</p>
+<p class="amc-en">The area of the cookie dough is \(3^2\pi = 9\pi,\) and the cookies have an area of \(7 \cdot 1^2\pi = 7\pi.\)</p>
+<p class="amc-en">The area of the leftover scrap is therefore \(9\pi - 7\pi = 2\pi.\) This means that its radius is \(\sqrt{2}.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">16</span> 答案 <b>D</b></p>
+<p>为判断如何逆转这些变换，可以跟踪一个任意点。</p>
+<p>设该点为 \((x, y)\)。关于 \(x\) 轴反射后，它变为 \((x, -y)\)。</p>
+<p>再逆时针旋转后得到 \((y, x)\)。要把它变回 \((x, y)\)，唯一的方法是关于 \(y = x\) 反射。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">To figure out how to reverse the transformations, we can analyze a single point and see what happens to it.</p>
+<p class="amc-en">Let \((x, y)\) be the point. After being reflected about the \(x\)-axis, the point would go to \((x, -y).\)</p>
+<p class="amc-en">Rotating this counterclockwise would put it at \((y, x).\) The only transformation that puts this back at \((x, y)\) is reflection about \(y = x.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">17</span> 答案 <b>A</b></p>
+<p>先排好 \(N\) 个绿球，再把红球放入 \(N+1\) 个空隙之一。若红球左侧有 \(k\) 个绿球，则右侧有 \(N-k\) 个。</p>
+<p>至少有 \(\frac35N\) 个绿球在一侧，等价于 \(k\le\frac25N\) 或 \(k\ge\frac35N\)。因此不满足条件的空隙为 \[\frac25N+1,\frac25N+2,\ldots,\frac35N-1\text{，}\] 共 \(\frac15N-1\) 个。</p>
+<p>所以 \[ \begin{aligned} P(N) &amp;= 1-\frac{\frac{N}{5}-1}{N+1} \\ &amp;= \frac{4N+10}{5N+5} \end{aligned}\text{。}\] 解不等式 \(\frac{4N+10}{5N+5}&lt;\frac{321}{400}\) 得 \(N&gt;479\)。最小的 \(5\) 的正倍数是 \(480\)，其各位数字之和为 \(12\)。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Think of first arranging the \(N\) green balls, then placing the red ball in one of the \(N+1\) gaps. If \(k\) green balls are to the left of the red ball, then \(N-k\) are to its right.</p>
+<p class="amc-en">At least \(\frac35N\) green balls are on one side exactly when \(k\le\frac25N\) or \(k\ge\frac35N\). Thus the bad gaps are \[\frac25N+1,\frac25N+2,\ldots,\frac35N-1,\] a total of \(\frac15N-1\) gaps.</p>
+<p class="amc-en">Therefore \[ \begin{aligned} P(N) &amp;= 1-\frac{\frac{N}{5}-1}{N+1} \\ &amp;= \frac{4N+10}{5N+5}. \end{aligned} \] Solving \(\frac{4N+10}{5N+5}&lt;\frac{321}{400}\) gives \(N&gt;479\). The least positive multiple of \(5\) is \(480\), whose digit sum is \(12\).</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">18</span> 答案 <b>C</b></p>
+<p>相对两个面包含全部八个标号，总和为 \(36\)，所以每个面的和必须为 \(18\)。</p>
+<p>把标号 \(1\) 放在一个顶点，设与它相邻的三个标号为 \(a,b,c\)。与这三个顶点隔面相邻的另外三个顶点于是被迫为 \[ \begin{gathered} 17-a-b, \\ \quad 17-a-c, \\ \quad 17-b-c \end{gathered}\text{，}\] 而对顶点为 \(a+b+c-16\)。</p>
+<p>假设三个相邻标号按递增顺序排列。把 \(2,3,\ldots,8\) 中的三元组代入上面四个被迫的表达式，恰好得到 \[ \begin{array}{c|c} \{a,b,c\} &amp; \text{四个被迫确定的标号} \\ \hline \{4,6,8\} &amp; \{7,5,3,2\} \\ \{4,7,8\} &amp; \{6,5,2,3\} \\ \{6,7,8\} &amp; \{4,3,2,5\} \end{array} \] 对每个相邻标号集合，绕过该顶点的对角线作 \(120^\circ\) 旋转，会把顶点周围的六种排列分成两组各三种。因此每个集合给出两种不能通过旋转互相得到的标法，共有 \(3\cdot2=6\) 种标法。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Opposite faces together use all eight labels, whose sum is \(36\), so every face must have sum \(18\).</p>
+<p class="amc-en">Put label \(1\) at one vertex, and let the three adjacent labels be \(a,b,c\). The three vertices adjacent to those across faces are then forced to be \[ \begin{gathered} 17-a-b, \\ \quad 17-a-c, \\ \quad 17-b-c, \end{gathered} \] and the opposite vertex is \(a+b+c-16\).</p>
+<p class="amc-en">Assume the three neighbor labels are listed in increasing order. Substituting triples from \(2,3,\ldots,8\) into the four forced expressions above gives exactly \[ \begin{array}{c|c} \{a,b,c\} &amp; \text{four forced labels} \\ \hline \{4,6,8\} &amp; \{7,5,3,2\} \\ \{4,7,8\} &amp; \{6,5,2,3\} \\ \{6,7,8\} &amp; \{4,3,2,5\} \end{array} \] For each neighbor set, the six orders around the vertex fall into two groups of three under the \(120^\circ\) rotations about the diagonal through that vertex. Thus each set gives two non-rotationally equivalent arrangements, for \(3\cdot2=6\) arrangements in all.</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">19</span> 答案 <b>E</b></p>
+<p>因为 \(BC=3\)，且 \(BE=EF=FC\)，所以 \(BE=1\)、\(BF=2\)。又 \(AD=3\)。</p>
+<p>由 \(\triangle APD\sim\triangle EPB\)， \[\frac{BP}{BD}=\frac{BE}{AD+BE}=\frac14\text{。}\] 由 \(\triangle AQD\sim\triangle FQB\)， \[\frac{BQ}{BD}=\frac{BF}{AD+BF}=\frac25\text{。}\]</p>
+<p>因此 \(BP=\frac14BD\)，\(PQ=\left(\frac25-\frac14\right)BD=\frac3{20}BD\)，且 \(QD=\frac35BD\)。于是 \[ \begin{aligned} BP:PQ:QD &amp;= \frac14:\frac3{20}:\frac35 \\ &amp;= 5:3:12\text{。} \end{aligned} \] 和为 \(5+3+12=20\)。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since \(BC=3\) and \(BE=EF=FC\), we have \(BE=1\) and \(BF=2\). Also \(AD=3\).</p>
+<p class="amc-en">From \(\triangle APD\sim\triangle EPB\), \[\frac{BP}{BD}=\frac{BE}{AD+BE}=\frac14.\] From \(\triangle AQD\sim\triangle FQB\), \[\frac{BQ}{BD}=\frac{BF}{AD+BF}=\frac25.\]</p>
+<p class="amc-en">Therefore \(BP=\frac14BD\), \(PQ=\left(\frac25-\frac14\right)BD=\frac3{20}BD\), and \(QD=\frac35BD\). Thus \[ \begin{aligned} BP:PQ:QD &amp;= \frac14:\frac3{20}:\frac35 \\ &amp;= 5:3:12. \end{aligned} \] The sum is \(5+3+12=20\).</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">20</span> 答案 <b>B</b></p>
+<p>同时包含四个变量的项形如 \(a^vb^wc^xd^y\)，其中 \(v,w,x,y\ge1\)，此外还要乘以 \(1\) 的某个幂。若这个幂是 \(z\)，则 \[v+w+x+y+z=N\text{。}\]</p>
+<p>从 \(v,w,x,y\) 各减去 \(1\) 后，得到 \(5\) 个非负整数，其和为 \(N-4\)。因此这样的项数为 \[\binom{N}{4}\text{。}\]</p>
+<p>由于 \(\binom{14}{4}=1001\)，所以 \(N=14\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A term that includes all four variables has form \(a^vb^wc^xd^y\), with \(v,w,x,y\ge1\), multiplied by some power of \(1\). If that power is \(z\), then \[v+w+x+y+z=N.\]</p>
+<p class="amc-en">After subtracting \(1\) from each of \(v,w,x,y\), this becomes a nonnegative stars-and-bars count with \(5\) variables summing to \(N-4\). The number of such terms is \[\binom{N}{4}.\]</p>
+<p class="amc-en">Since \(\binom{14}{4}=1001\), we get \(N=14\).</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">21</span> 答案 <b>D</b></p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2016A/solution/q21-sol-1.svg" alt="题图" loading="lazy"></p>
+<p>把这条公切线取作 \(x\) 轴，并令 \(P=(0,1)\)。因为 \(PQ=1+2=3\)，而两个圆心的高度相差 \(1\)，所以 \(P\) 到 \(Q\) 的水平距离为 \[\sqrt{3^2-1^2}=2\sqrt2\text{。}\]同理，\(QR=2+3=5\)，这两个圆心的高度也相差 \(1\)，因此它们的水平距离为 \(2\sqrt6\)。</p>
+<p>于是可以取 \[ \begin{aligned} P&amp;=(0,1),\qquad Q=(2\sqrt2,2), \\ R&amp;=(2\sqrt2+2\sqrt6,3) \end{aligned}\text{。}\]再由坐标面积公式得到 \[ \begin{aligned} [PQR] &amp;=\frac12\left|4\sqrt2-(2\sqrt2+2\sqrt6)\right| \\ &amp;=\sqrt6-\sqrt2 \end{aligned}\text{。}\]</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2016A/solution/q21-sol-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-en">Put the tangent line on the \(x\)-axis and take \(P=(0,1).\) Because \(PQ=1+2=3\) and the centers differ in height by \(1,\) the horizontal distance from \(P\) to \(Q\) is \[\sqrt{3^2-1^2}=2\sqrt2.\] Similarly, \(QR=2+3=5\) and its centers also differ in height by \(1,\) so their horizontal distance is \(2\sqrt6.\)</p>
+<p class="amc-en">Thus we may use \[ \begin{aligned} P&amp;=(0,1),\qquad Q=(2\sqrt2,2), \\ R&amp;=(2\sqrt2+2\sqrt6,3). \end{aligned} \] The coordinate-area formula gives \[ \begin{aligned} [PQR] &amp;=\frac12\left|4\sqrt2-(2\sqrt2+2\sqrt6)\right| \\ &amp;=\sqrt6-\sqrt2. \end{aligned} \]</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">22</span> 答案 <b>D</b></p>
+<p>质因数分解为 \(110=2\cdot5\cdot11\)。若 \(110n^3\) 有 \(110=2\cdot5\cdot11\) 个因数，则它恰有三个素因子，指数为 \(1,4,10\) 的某种排列。</p>
+<p>对于素数 \(2,5,11\)，它们在 \(110n^3\) 中的指数都是 \(1\) 加上 \(3\) 的倍数。指数 \(1,4,10\) 都满足这个形式，所以它们在 \(n\) 中对应为 \(0,1,3\) 的某种排列。</p>
+<p>在 \(81n^4=3^4n^4\) 中，来自 \(n^4\) 的指数为 \(0,4,12\) 的某种排列，另外素数 \(3\) 上还有指数 \(4\)。因数个数为 \[ \begin{aligned} &amp;(0+1)\cdot(4+1)\cdot(12+1) \\ &amp;\quad {}\cdot(4+1)=325 \end{aligned}\text{。}\]</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The prime factorization is \(110=2\cdot5\cdot11\). If \(110n^3\) has \(110=2\cdot5\cdot11\) divisors, then it has exactly three prime factors, with exponents \(1,4,10\) in some order.</p>
+<p class="amc-en">For each of the primes \(2,5,11\), its exponent in \(110n^3\) is \(1\) more than a multiple of \(3\). The exponents \(1,4,10\) all have this form, so the corresponding exponents in \(n\) are \(0,1,3\) in some order.</p>
+<p class="amc-en">In \(81n^4=3^4n^4\), the exponents from \(n^4\) are therefore \(0,4,12\), in some order, along with the exponent \(4\) on prime \(3\). Hence the divisor count is \[ \begin{aligned} &amp;(0+1)\cdot(4+1)\cdot(12+1) \\ &amp;\quad {}\cdot(4+1)=325. \end{aligned} \]</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">23</span> 答案 <b>A</b></p>
+<p>因为 \(a\diamondsuit a=1\)，在 \[a\diamondsuit(b\diamondsuit c)=(a\diamondsuit b)c\] 中令 \(b=c\)，得 \(a\diamondsuit1=(a\diamondsuit b)b\)。又由 \(a\diamondsuit(a\diamondsuit a)=(a\diamondsuit a)a\)，可得 \(a\diamondsuit1=a\)，因此 \(a\diamondsuit b=\frac ab\)。</p>
+<p>因此代入方程得到 \[ \begin{aligned} 2016\diamondsuit(6\diamondsuit x) &amp;= 2016\diamondsuit\frac6x \\ &amp;= \frac{2016}{\frac{6}{x}} \\ &amp;= 336x \\ &amp;= 100 \end{aligned}\text{。}\] 所以 \(x=\frac{25}{84}\)，\(p+q=25+84=109\)。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since \(a\diamondsuit a=1\), substituting \(b=c\) in \[a\diamondsuit(b\diamondsuit c)=(a\diamondsuit b)c\] gives \(a\diamondsuit1=(a\diamondsuit b)b\). Also, using \(a\diamondsuit(a\diamondsuit a)=(a\diamondsuit a)a\) gives \(a\diamondsuit1=a\). Therefore \(a\diamondsuit b=\frac ab\).</p>
+<p class="amc-en">The equation becomes \[ \begin{aligned} 2016\diamondsuit(6\diamondsuit x) &amp;= 2016\diamondsuit\frac6x \\ &amp;= \frac{2016}{\frac{6}{x}} \\ &amp;= 336x \\ &amp;= 100. \end{aligned} \] Thus \(x=\frac{25}{84}\), so \(p+q=25+84=109\).</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">24</span> 答案 <b>E</b></p>
+<p>把这个四边形记作 \(ABCD\)，其中 \(AB=BC=CD=200\)。设这三条等长弦各自所对的圆心角都是 \(2\theta\)。由弦长公式得 \[200=2(200\sqrt2)\sin\theta\text{，}\]所以 \(\sin\theta=\frac{1}{2\sqrt2}\)。特别地，\(\theta&lt;30^\circ\)，因此 \(AD\) 所对的较小圆心角是 \(6\theta&lt;180^\circ\)。</p>
+<p>于是再用一次弦长公式，得到 \[AD=2(200\sqrt2)\sin(3\theta)\text{。}\]再利用 \(\sin(3\theta)=3\sin\theta-4\sin^3\theta\)，我们求得 \[ \begin{aligned} \sin(3\theta) &amp;=\frac{3}{2\sqrt2}-\frac{1}{4\sqrt2} \\ &amp;=\frac{5}{4\sqrt2} \end{aligned}\text{。}\]</p>
+<p>因此 \[AD=400\sqrt2\cdot\frac{5}{4\sqrt2}=500\text{。}\]</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Label the quadrilateral \(ABCD\), with \(AB=BC=CD=200\). Let each of these equal chords subtend central angle \(2\theta\). The chord formula gives \[200=2(200\sqrt2)\sin\theta,\] so \(\sin\theta=\frac{1}{2\sqrt2}\). In particular, \(\theta&lt;30^\circ\), so the smaller central angle subtended by \(AD\) is \(6\theta&lt;180^\circ\).</p>
+<p class="amc-en">Therefore another use of the chord formula gives \[AD=2(200\sqrt2)\sin(3\theta).\] Using \(\sin(3\theta)=3\sin\theta-4\sin^3\theta\), we obtain \[ \begin{aligned} \sin(3\theta) &amp;=\frac{3}{2\sqrt2}-\frac{1}{4\sqrt2} \\ &amp;=\frac{5}{4\sqrt2}. \end{aligned} \]</p>
+<p class="amc-en">Hence \[AD=400\sqrt2\cdot\frac{5}{4\sqrt2}=500.\]</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">25</span> 答案 <b>A</b></p>
+<p>先分解给定的最小公倍数： \[ \begin{gathered} 72=2^3\cdot3^2, \\ \quad 600=2^3\cdot3\cdot5^2, \\ \quad 900=2^2\cdot3^2\cdot5^2\text{。} \end{gathered} \] 因为 \(\operatorname{lcm}(x,y)\) 没有因子 \(5\)，所以 \(x\) 和 \(y\) 都没有因子 \(5\)，而 \(z\) 必须含 \(5^2\)。</p>
+<p>写 \(x=2^a3^b\)，\(y=2^c3^d\)，\(z=2^e3^f5^2\)。\(\operatorname{lcm}(y,z)\) 中 \(3\) 的指数迫使 \(d=2\)，\(\operatorname{lcm}(x,z)\) 中 \(2\) 的指数迫使 \(a=3\)。</p>
+<p>剩余独立条件为 \(\max(b,f)=1\) 和 \(\max(c,e)=2\)。前者有 \(3\) 个有序选择，后者有 \(5\) 个有序选择，所以共有 \(3\cdot5=15\) 个三元组。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Factor the given least common multiples: \[ \begin{gathered} 72=2^3\cdot3^2, \\ \quad 600=2^3\cdot3\cdot5^2, \\ \quad 900=2^2\cdot3^2\cdot5^2. \end{gathered} \] Since \(\operatorname{lcm}(x,y)\) has no factor of \(5\), neither \(x\) nor \(y\) has a factor of \(5\), and \(z\) must contain \(5^2\).</p>
+<p class="amc-en">Write \(x=2^a3^b\), \(y=2^c3^d\), and \(z=2^e3^f5^2\). The power of \(3\) in \(\operatorname{lcm}(y,z)\) forces \(d=2\), and the power of \(2\) in \(\operatorname{lcm}(x,z)\) forces \(a=3\).</p>
+<p class="amc-en">The remaining independent conditions are \(\max(b,f)=1\) and \(\max(c,e)=2\). These have \(3\) and \(5\) ordered choices, respectively, so there are \(3\cdot5=15\) triples.</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div>
+    </div>
+    <p class="dl-row">
+      
+      <a class="btn" href="https://t.fengg.net/docs-dl/public/download/%E6%95%B0%E5%AD%A6/AMC10(P%E7%89%88)/2016A%20AMC%2010%20%E7%9C%9F%E9%A2%98%E4%B8%8E%E8%A7%A3%E7%AD%94.docx" download="2016A AMC 10 真题与解答.docx" title="2016A AMC 10 真题与解答.docx">下载本题 Word 原文件（含答案解析）</a>
+      
+    </p>
+  </details>
+  
+
+  <nav class="siblings" aria-label="同分类的上一套与下一套">
+    
+    <a class="sib prev" href="/docs/amc10p-2015b/" rel="prev">
+      <i aria-hidden="true">←</i>
+      <span><b>上一套</b><em>2015B AMC 10 真题（P版）</em></span>
+    </a>
+    
+    
+    <a class="sib next" href="/docs/amc10p-2016b/" rel="next">
+      <span><b>下一套</b><em>2016B AMC 10 真题（P版）</em></span>
+      <i aria-hidden="true">→</i>
+    </a>
+    
+  </nav>
+
+  <p class="back"><a href="/c/math/">← 返回数学</a></p>
+</article>
+
+<button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 8.8V19h-2V8.8L6.4 13.4 5 12z" fill="currentColor"/></svg>
+</button>
+
+<script>
+(function () {
+  function openIfHash() {
+    if (location.hash === '#answer') {
+      var el = document.getElementById('answer');
+      if (el) { el.open = true; el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    }
+  }
+  openIfHash();
+  window.addEventListener('hashchange', openIfHash);
+
+  var top = document.querySelector('.to-top');
+  if (top) {
+    function onScroll() {
+      if (window.scrollY > 420) top.classList.add('show');
+      else top.classList.remove('show');
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    top.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // 同分类翻页快捷键：[ 上一套，] 下一套
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var sel = e.key === '[' ? '.sib.prev[href]' : (e.key === ']' ? '.sib.next[href]' : null);
+    if (!sel) return;
+    var a = document.querySelector(sel);
+    if (a) { e.preventDefault(); location.href = a.href; }
+  });
+})();
+</script>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-line">
+      <span>© 2026 Feng</span>
+      <span class="dot">·</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></span>
+    </div>
+    <p class="foot-note">本站内容均来源于网络，版权归原作者所有，仅供学习交流使用，请勿用于商业用途。</p>
+  </div>
+</footer>
+<script>
+(function () {
+  /* ---------- 深色模式 ---------- */
+  var root = document.documentElement;
+  var toggle = document.querySelector('.theme-toggle');
+  function osDark() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function isDark() {
+    var t = root.getAttribute('data-theme');
+    if (t === 'dark') return true;
+    if (t === 'light') return false;
+    return osDark();
+  }
+  function label() {
+    if (!toggle) return;
+    var d = isDark();
+    toggle.setAttribute('aria-label', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('title', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('aria-pressed', d ? 'true' : 'false');
+  }
+  if (toggle) {
+    label();
+    toggle.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) { /* noop */ }
+      label();
+    });
+  }
+  if (window.matchMedia) {
+    var mqDark = window.matchMedia('(prefers-color-scheme: dark)');
+    if (mqDark.addEventListener) mqDark.addEventListener('change', label);
+  }
+
+  /* ---------- 顶部导航 ---------- */
+  var nav = document.querySelector('.nav');
+  var navToggle = document.querySelector('.nav-toggle');
+  if (!nav || !navToggle) return;
+  var mq = window.matchMedia('(max-width: 720px)');
+  function closeAll() {
+    nav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    Array.prototype.forEach.call(nav.querySelectorAll('.open'), function (x) { x.classList.remove('open'); });
+  }
+  navToggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var on = nav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', on ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) {
+    if (!mq.matches) return;
+    var a = e.target.closest ? e.target.closest('a') : null;
+    if (!a) return;
+    var host = a.parentNode;
+    if (host && host.classList.contains('nav-drop') && a.classList.contains('has-caret')) {
+      e.preventDefault();
+      host.classList.toggle('open');
+    }
+  });
+  document.addEventListener('click', function (e) {
+    if (mq.matches && !nav.contains(e.target) && !navToggle.contains(e.target)) closeAll();
+  });
+  // 键盘 Esc 收起移动端菜单
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mq.matches && nav.classList.contains('open')) {
+      closeAll();
+      navToggle.focus();
+    }
+  });
+
+  /* ---------- 搜索快捷键：/ 聚焦，Ctrl(⌘)+K 打开 ---------- */
+  var searchLink = document.querySelector('.nav-s');
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    var typing = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable);
+    if ((e.ctrlKey || e.metaKey) && !e.shiftKey && (e.key === 'k' || e.key === 'K')) {
+      e.preventDefault();
+      var box = document.querySelector('.sbox-input');
+      if (box) { box.focus(); box.select(); }
+      else if (searchLink) location.href = searchLink.href;
+      return;
+    }
+    if (typing || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.key === '/') {
+      var box2 = document.querySelector('.sbox-input');
+      if (box2) { e.preventDefault(); box2.focus(); box2.select(); }
+      else if (searchLink) { e.preventDefault(); location.href = searchLink.href; }
+    }
+  });
+})();
+</script>
+</body>
+</html>

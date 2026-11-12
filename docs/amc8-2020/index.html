@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<meta charset="utf-8">
+<title>2020 年 AMC 8 真题 · 竞赛资料库</title>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) { /* 隐私模式下忽略 */ }
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="2020 年 AMC 8 真题：数学 · AMC8，2020 年，共 25 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+
+<link rel="canonical" href="https://t.fengg.net/docs/amc8-2020/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="竞赛资料库">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="2020 年 AMC 8 真题">
+<meta property="og:description" content="2020 年 AMC 8 真题：数学 · AMC8，2020 年，共 25 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+<meta property="og:url" content="https://t.fengg.net/docs/amc8-2020/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f7f9">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1318">
+
+
+<link rel="prev" href="/docs/amc8-2019/">
+<link rel="next" href="/docs/amc8-2022/">
+<link rel="stylesheet" href="/css/style.css?v=20261110e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+
+
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/">竞赛资料库</a>
+    <nav class="nav"><a class="nav-a" href="/">首页</a><div class="nav-drop nav-mega"><a class="nav-a has-caret" href="/all/" title="按科目浏览全部题库">题库<i class="caret" aria-hidden="true"></i></a><div class="drop mega"><div class="mega-col" style="--accent:#3776c4"><a class="mega-h" href="/c/astronomy/"><i class="mega-dot" aria-hidden="true"></i>天文<span class="cnt">52</span></a><a class="mega-l" href="/c/astronomy/cnao/">CNAO<span class="cnt">28</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/cnao/prelim/">预赛</a><a class="mega-c" href="/c/astronomy/cnao/final/">决赛</a><a class="mega-c" href="/c/astronomy/cnao/primary/">小学组</a></span><a class="mega-l" href="/c/astronomy/provincial/">省赛<span class="cnt">15</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/provincial/beijing/">北京</a><a class="mega-c" href="/c/astronomy/provincial/guangdong/">广东</a><a class="mega-c" href="/c/astronomy/provincial/zhejiang/">浙江</a><a class="mega-c" href="/c/astronomy/provincial/jiangsu/">江苏</a><a class="mega-c" href="/c/astronomy/provincial/shandong/">山东</a><a class="mega-c" href="/c/astronomy/provincial/taiwan/">中国台湾</a></span><a class="mega-l" href="/c/astronomy/practice/">练习<span class="cnt">9</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/practice/primary/">小学组练习</a><a class="mega-c" href="/c/astronomy/practice/bank/">题库合集</a></span></div><div class="mega-col" style="--accent:#0f8a5f"><a class="mega-h" href="/c/math/"><i class="mega-dot" aria-hidden="true"></i>数学<span class="cnt">290</span></a><a class="mega-l" href="/c/math/amc8/">AMC8<span class="cnt">26</span></a><a class="mega-l" href="/c/math/amc8p/">AMC8(P版)<span class="cnt">41</span></a><a class="mega-l" href="/c/math/amc10p/">AMC10(P版)<span class="cnt">52</span></a><a class="mega-l" href="/c/math/amc12p/">AMC12(P版)<span class="cnt">102</span></a><a class="mega-l" href="/c/math/gzl/">全国中学生数学奥林匹克竞赛<span class="cnt">69</span></a><span class="mega-cs"><a class="mega-c" href="/c/math/gzl/liansai/">联赛（预赛）</a><a class="mega-c" href="/c/math/gzl/final/">决赛（CMO）</a><a class="mega-c" href="/c/math/gzl/province/">各赛区预赛</a></span></div><div class="mega-col" style="--accent:#6c4bb6"><a class="mega-h" href="/c/physics/"><i class="mega-dot" aria-hidden="true"></i>物理<span class="cnt">73</span></a><a class="mega-l" href="/c/physics/national/">全国竞赛<span class="cnt">49</span></a><a class="mega-l" href="/c/physics/asian/">亚洲竞赛<span class="cnt">11</span></a><a class="mega-l" href="/c/physics/international/">国际竞赛<span class="cnt">13</span></a></div><div class="mega-col" style="--accent:#3f8f46"><a class="mega-h" href="/c/biology/"><i class="mega-dot" aria-hidden="true"></i>生物<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/league/">全国中学生生物学联赛<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/competition/">全国中学生生物学竞赛</a></div><div class="mega-col" style="--accent:#c05a2b"><a class="mega-h" href="/c/chemistry/"><i class="mega-dot" aria-hidden="true"></i>化学<span class="cnt">10</span></a><a class="mega-l" href="/c/chemistry/ccho/">全国中学生化学奥林匹克竞赛<span class="cnt">10</span></a></div><div class="mega-col" style="--accent:#1f7a8c"><a class="mega-h" href="/c/earth/"><i class="mega-dot" aria-hidden="true"></i>地球科学<span class="cnt">22</span></a><a class="mega-l" href="/c/earth/national/">全国竞赛<span class="cnt">17</span></a><a class="mega-l" href="/c/earth/international/">国际竞赛<span class="cnt">5</span></a></div><div class="mega-col" style="--accent:#2c8a6e"><a class="mega-h" href="/c/geography/"><i class="mega-dot" aria-hidden="true"></i>地理<span class="cnt">11</span></a><a class="mega-l" href="/c/geography/geokids/">地球小博士<span class="cnt">11</span></a></div><div class="mega-col" style="--accent:#4a5fd0"><a class="mega-h" href="/c/info/"><i class="mega-dot" aria-hidden="true"></i>信息学<span class="cnt">9</span></a><a class="mega-l" href="/c/info/noi/">全国青少年信息学奥林匹克竞赛<span class="cnt">3</span></a><a class="mega-l" href="/c/info/noip/">全国青少年信息学奥林匹克联赛<span class="cnt">1</span></a><a class="mega-l" href="/c/info/csp/">CSP-J/S 非专业级软件能力认证<span class="cnt">1</span></a><a class="mega-l" href="/c/info/apio/">亚洲和太平洋地区信息学奥林匹克<span class="cnt">1</span></a><a class="mega-l" href="/c/info/winter/">NOI 冬令营<span class="cnt">1</span></a><a class="mega-l" href="/c/info/camp/">IOI 中国国家集训队集训<span class="cnt">2</span></a></div><a class="mega-all" href="/all/">全部文档（474 套）<i class="arr" aria-hidden="true">›</i></a></div></div><a class="nav-a" href="/whitelist/">白名单竞赛</a><a class="nav-a" href="/about/">使用说明</a><a class="nav-a nav-s" href="/search/" title="站内搜索（按 / 或 Ctrl+K）"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.9 12.1l4.3 4.3-1.4 1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z" fill="currentColor"/></svg>搜索</a></nav>
+    <div class="head-tools">
+      <button class="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式">
+        <svg class="ic-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12.7 3a8.5 8.5 0 108.3 10.6A7 7 0 0112.7 3z" fill="currentColor"/></svg>
+        <svg class="ic-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12 17a5 5 0 110-10 5 5 0 010 10zm0-13a1 1 0 011 1v1a1 1 0 01-2 0V5a1 1 0 011-1zm0 14a1 1 0 011 1v1a1 1 0 01-2 0v-1a1 1 0 011-1zM4 11h1a1 1 0 010 2H4a1 1 0 010-2zm15 0h1a1 1 0 010 2h-1a1 1 0 010-2zM6.3 5.5l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm11 11l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm.7-11a1 1 0 010 1.4l-.7.7A1 1 0 0115.9 6.2l.7-.7a1 1 0 011.4 0zm-11 11a1 1 0 010 1.4l-.7.7a1 1 0 01-1.4-1.4l.7-.7a1 1 0 011.4 0z" fill="currentColor"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-label="打开分类菜单" aria-expanded="false">分类 ▾</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main" tabindex="-1">
+
+<article class="doc">
+  <nav class="crumb">
+    <a href="/">首页</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/">数学</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/amc8/">AMC8</a>
+    
+    <span class="sep">/</span><span>2020 年 AMC 8 真题</span>
+  </nav>
+
+  <h1>2020 年 AMC 8 真题</h1>
+
+  <div class="meta">
+    <span class="tag">数学</span>
+    <span>2020 年</span>
+    <span>25 题</span>
+    <span>1733 KB</span>
+    <span class="ok">含答案解析</span>
+  </div>
+
+  <div class="toolbar">
+    
+    
+    <a class="btn ghost" href="#answer">跳到答案解析 ↓</a>
+    
+    <button class="btn ghost" type="button" onclick="document.querySelectorAll('details').forEach(function(x){x.open=true});setTimeout(function(){window.print()},60)">打印（含答案）</button>
+    <a class="btn" href="https://t.fengg.net/docs-dl/public/download/%E6%95%B0%E5%AD%A6/AMC8/2020%20AMC8.pdf" download="2020 AMC8.pdf" title="2020 AMC8.pdf">下载 PDF 原卷</a>
+  </div>
+
+  <section class="paper">
+    <p class="paper-tip">题目为原卷页面图，点击任意一页可查看原尺寸大图。</p><div class="paper-pages"><a class="pp" href="/img/papers/amc8/amc8-2020/p01.webp" target="_blank" rel="noopener"><img src="/img/papers/amc8/amc8-2020/p01.webp" alt="第 1 页" loading="lazy" width="993" height="1404"></a><a class="pp" href="/img/papers/amc8/amc8-2020/p02.webp" target="_blank" rel="noopener"><img src="/img/papers/amc8/amc8-2020/p02.webp" alt="第 2 页" loading="lazy" width="993" height="1404"></a><a class="pp" href="/img/papers/amc8/amc8-2020/p03.webp" target="_blank" rel="noopener"><img src="/img/papers/amc8/amc8-2020/p03.webp" alt="第 3 页" loading="lazy" width="993" height="1404"></a><a class="pp" href="/img/papers/amc8/amc8-2020/p04.webp" target="_blank" rel="noopener"><img src="/img/papers/amc8/amc8-2020/p04.webp" alt="第 4 页" loading="lazy" width="993" height="1404"></a><a class="pp" href="/img/papers/amc8/amc8-2020/p05.webp" target="_blank" rel="noopener"><img src="/img/papers/amc8/amc8-2020/p05.webp" alt="第 5 页" loading="lazy" width="993" height="1404"></a><a class="pp" href="/img/papers/amc8/amc8-2020/p06.webp" target="_blank" rel="noopener"><img src="/img/papers/amc8/amc8-2020/p06.webp" alt="第 6 页" loading="lazy" width="993" height="1404"></a><a class="pp" href="/img/papers/amc8/amc8-2020/p07.webp" target="_blank" rel="noopener"><img src="/img/papers/amc8/amc8-2020/p07.webp" alt="第 7 页" loading="lazy" width="993" height="1404"></a><a class="pp" href="/img/papers/amc8/amc8-2020/p08.webp" target="_blank" rel="noopener"><img src="/img/papers/amc8/amc8-2020/p08.webp" alt="第 8 页" loading="lazy" width="993" height="1404"></a><a class="pp" href="/img/papers/amc8/amc8-2020/p09.webp" target="_blank" rel="noopener"><img src="/img/papers/amc8/amc8-2020/p09.webp" alt="第 9 页" loading="lazy" width="993" height="1404"></a><a class="pp" href="/img/papers/amc8/amc8-2020/p10.webp" target="_blank" rel="noopener"><img src="/img/papers/amc8/amc8-2020/p10.webp" alt="第 10 页" loading="lazy" width="993" height="1404"></a><a class="pp" href="/img/papers/amc8/amc8-2020/p11.webp" target="_blank" rel="noopener"><img src="/img/papers/amc8/amc8-2020/p11.webp" alt="第 11 页" loading="lazy" width="993" height="1404"></a><a class="pp" href="/img/papers/amc8/amc8-2020/p12.webp" target="_blank" rel="noopener"><img src="/img/papers/amc8/amc8-2020/p12.webp" alt="第 12 页" loading="lazy" width="993" height="1404"></a><a class="pp" href="/img/papers/amc8/amc8-2020/p13.webp" target="_blank" rel="noopener"><img src="/img/papers/amc8/amc8-2020/p13.webp" alt="第 13 页" loading="lazy" width="993" height="1404"></a></div>
+  </section>
+
+  
+  <details class="answer" id="answer">
+    <summary>
+      <span class="s-title">查看答案解析与下载</span>
+    </summary>
+    <div class="answer-body">
+      <h2><strong>2020 AMC 8 真题答案与逐题解析</strong></h2>
+<p>本解析对应 MAA《2020 AMC 8》（美国数学竞赛 8 级）中英双语真题卷。全卷共 25 道单项选择题（选项 A–E），限时 40 分钟。以下先给出答案速查表，再逐题给出中文详细解析；解题思路以小学高年级到初中常用方法为主，便于学生自行复盘。全部答案与卷末答案表逐题核对一致，其中涉及图形、计数与概率的题目（第 4、9、10、16、17、19、21、22、25 题）另经程序穷举、坐标计算或逐像素读图独立复核。</p>
+<table class="tbl"><tr><td>图形题说明：本卷有 8 道题依赖图形（第 4、9、11、14、16、18、21、25 题）。原 PDF 文字层中的公式与图形数值无法直接提取，解析中已把图形信息完整翻译成文字（如六边形点阵的层数、棋盘上 P 与 Q 的位置、拼图各块的相邻关系），必要时给出可验算的数据，做到不看原图也能复核。</td></tr></table>
+<h3><strong>一、答案速查表</strong></h3>
+<table class="tbl"><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>答案</td><td>E</td><td>C</td><td>D</td><td>B</td><td>C</td><td>A</td><td>C</td><td>C</td><td>D</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr><tr><td>答案</td><td>C</td><td>E</td><td>A</td><td>B</td><td>D</td><td>C</td><td>E</td><td>B</td><td>A</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr><tr><td>答案</td><td>B</td><td>B</td><td>A</td><td>E</td><td>B</td><td>A</td><td>A</td></tr></table>
+<h3><strong>二、逐题解析</strong></h3>
+<p>以下按题号逐题解析。每题先用一段话把题意（含图形信息）说清楚，再给出完整推理；黑体标注的即为该题答案。</p>
+<h4><strong>第 1 题｜柠檬水的配比（答案 E）</strong></h4>
+<p><strong>题目：</strong>Luka 做柠檬水，配方要求水是糖的 4 倍，糖是柠檬汁的 2 倍。他用了 3 杯柠檬汁，需要多少杯水？选项：6、8、12、18、24。</p>
+<p><strong>解析：</strong>顺着&quot;倍数链&quot;一层层放大即可。柠檬汁 3 杯，糖是它的 2 倍，所以糖 = 3×2 = 6（杯）；水又是糖的 4 倍，所以水 = 6×4 = <strong>24</strong>（杯）。</p>
+<p>也可以一步算：水 = 3×2×4 = 24。选 E。</p>
+<h4><strong>第 2 题｜四人平分收入（答案 C）</strong></h4>
+<p><strong>题目：</strong>四个朋友周末帮邻居干活，分别赚了 15、20、25、40 美元。他们决定平分总收入。赚了 40 美元的那个人一共要给其他人多少美元？选项：5、10、15、20、25。</p>
+<p><strong>解析：</strong>总收入 = 15+20+25+40 = 100（美元），平分后每人应得 100÷4 = 25（美元）。赚 40 美元的人手里比&quot;应得&quot;多出 40−25 = <strong>15</strong>（美元），这 15 美元正好分给另外三人（每人 5 美元）。选 C。</p>
+<p>（易错点：题目问的是&quot;给出去多少&quot;，不是&quot;自己留下多少&quot;；也不是问每人能拿到多少。）</p>
+<h4><strong>第 3 题｜花园里的草莓（答案 D）</strong></h4>
+<p><strong>题目：</strong>Carrie 有一块 6 英尺 × 8 英尺的长方形花园，全部种上草莓。每平方英尺种 4 株，每株平均结 10 颗草莓。她一共可以收获多少颗草莓？选项：560、960、1120、1920、3840。</p>
+<p><strong>解析：</strong>先求面积：6×8 = 48（平方英尺）；再求株数：48×4 = 192（株，注意&quot;每平方英尺 4 株&quot;是乘，不是除）；最后求草莓数：192×10 = <strong>1920</strong>（颗）。选 D。</p>
+<h4><strong>第 4 题｜六边形点阵（答案 B）</strong></h4>
+<p><strong>题目：</strong>三个依次变大的六边形点阵如图：第 1 个是 1 个点；第 2 个是中心 1 点外面围一圈 6 点，共 7 点；第 3 个再加一层，共 19 点。按&quot;每次多一层点带&quot;的规律，下一个六边形有多少个点？选项：35、37、39、43、49。</p>
+<p><strong>解析：</strong>把每个图形看成&quot;中心 + 若干圈&quot;。第 k 圈有 6k 个点：</p>
+<p>1 层：1 = 1</p>
+<p>2 层：1 + 6 = 7</p>
+<p>3 层：1 + 6 + 12 = 19</p>
+<p>4 层：1 + 6 + 12 + 18 = <strong>37</strong></p>
+<p>关键规律：外圈的点数每次增加 6（因为每多一层，六条边上每条边多 1 个点，共 6 个）。所以答案是 37，选 B。</p>
+<p>（这类&quot;六边形数&quot;1, 7, 19, 37, 61… 的通项是 3n²−3n+1；本题只用到相邻两项差为 6、12、18 的等差数列，用小学生的&quot;找差值&quot;方法就够了。）</p>
+<h4><strong>第 5 题｜倒进 5 个杯子（答案 C）</strong></h4>
+<p><strong>题目：</strong>水罐里装了总容积四分之三的菠萝汁，把这些汁平均倒进 5 个杯子。每个杯子里的菠萝汁占水罐总容积的百分之几？选项：5、10、15、20、25。</p>
+<p><strong>解析：</strong>把水罐容积看作 1，汁有 3/4，平均分成 5 份，每份 = 3/4 ÷ 5 = 3/20 = 0.15 = <strong>15%</strong>。选 C。</p>
+<h4><strong>第 6 题｜小火车上的座位（答案 A）</strong></h4>
+<p><strong>题目：</strong>Aaron、Darren、Karen、Maren、Sharon 五个人坐一列五节车厢的小火车。Maren 坐最后一节；Aaron 紧挨在 Sharon 的后面一节；Darren 坐在 Aaron 前面的某一节；Karen 与 Darren 之间至少隔着一个人。谁坐在中间那节车厢？选项：Aaron、Darren、Karen、Maren、Sharon。</p>
+<p><strong>解析：</strong>把车厢从左到右编号 1～5，中间是 3 号。已知 Maren 在 5 号。设 Sharon 在 s 号，则 Aaron 在 s+1 号，且 Darren 在 Aaron 前面，即 Darren 的号数小于 s+1。</p>
+<p>若 s = 1：Aaron 在 2，Darren 只能在 1，与 Sharon 冲突，不行。</p>
+<p>若 s = 2：Aaron 在 3，Darren 在 1，Karen 在 4。Karen(4) 与 Darren(1) 之间有 2 人，满足&quot;至少一人&quot;，可行。此时排布为 1 Darren、2 Sharon、<strong>3 Aaron</strong>、4 Karen、5 Maren。</p>
+<p>若 s = 3：Aaron 在 4，Darren 与 Karen 只能占 1、2，无论怎样两人都相邻，不满足条件。</p>
+<p>只有第二种情形成立，中间 3 号是 <strong>Aaron</strong>。选 A。</p>
+<h4><strong>第 7 题｜数字递增的四位数（答案 C）</strong></h4>
+<p><strong>题目：</strong>2020 与 2400 之间有多少个整数，四个数位上的数字互不相同且按升序排列？（如 2347。）选项：9、10、15、21、28。</p>
+<p><strong>解析：</strong>千位只能是 2（区间是 2020～2400）。因为数字必须严格递增，百位必须大于 2；又因为整个数要小于 2400，百位不能大于 3，所以百位只能是 3。</p>
+<p>于是形如 23_ _，十位与个位从 {4,5,6,7,8,9} 中选两个且必须递增排列（选了就自动定序）。方法数 = C(6,2) = <strong>15</strong>。选 C。</p>
+<p>（若不确定，可枚举：2345、2346…共 5+4+3+2+1 = 15 个。）</p>
+<h4><strong>第 8 题｜2020 枚硬币（答案 C）</strong></h4>
+<p><strong>题目：</strong>Ricardo 有 2020 枚硬币，只有 1 美分和 5 美分两种，两种至少各一枚。他可能拥有的钱数，最大值与最小值相差多少美分？选项：8062、8068、8072、8076、8082。</p>
+<p><strong>解析：</strong>面值大的硬币越多，总额越大。最大值：2019 枚 5 分 + 1 枚 1 分 = 2019×5+1 = 10096（美分）。最小值：1 枚 5 分 + 2019 枚 1 分 = 5+2019 = 2024（美分）。</p>
+<p>差 = 10096 − 2024 = <strong>8072</strong>。选 C。</p>
+<p>（速算：每把一枚 1 分换成 5 分，总额增加 4 分；从最小到最大换了 2018 枚，差 = 2018×4 = 8072。这个算法更快且不易错。）</p>
+<h4><strong>第 9 题｜蛋糕上的冰（答案 D）</strong></h4>
+<p><strong>题目：</strong>4×4×4 英寸的立方体蛋糕，上面和 4 个侧面有糖霜，底面没有。把它切成 64 个 1 英寸小方块，恰好两面有糖霜的小方块有多少个？选项：12、16、18、20、24。</p>
+<p><strong>解析：</strong>分类数比&quot;总减各面&quot;更稳。有两面糖霜的小方块只可能出现在&quot;两个有糖霜的面相交的棱&quot;上：</p>
+<p><strong>4 条竖棱</strong>：每条竖棱上有 4 个小方块，但最顶上那个同时被&quot;上表面 + 两个侧面&quot;覆盖，是三面糖霜，要去掉。所以每条竖棱贡献 3 个，共 4×3 = 12 个；</p>
+<p><strong>上表面四周的棱</strong>：每条棱 4 个格，两端是角块（三面），中间 2 个只有&quot;上表面 + 一个侧面&quot;两面糖霜，共 4×2 = 8 个；</p>
+<p>底面没糖霜，与底面相接的棱不是两面糖霜。</p>
+<p>总数 = 12 + 8 = <strong>20</strong>。选 D。</p>
+<h4><strong>第 10 题｜玻璃球的排列（答案 C）</strong></h4>
+<p><strong>题目：</strong>4 个不同的玻璃球（Aggie、Bumblebee、Steelie、Tiger）排成一行，Steelie 与 Tiger 不相邻。共有多少种排法？选项：6、8、12、18、24。</p>
+<p><strong>解析：</strong>间接法最快。4 个球全排列 4! = 24 种；其中 S 与 T 相邻的排法把两者捆成一块：内部 2 种顺序 × 3 个&quot;整体&quot;排列 3! = 2×6 = 12 种。故合法 = 24 − 12 = <strong>12</strong>。选 C。</p>
+<h4><strong>第 11 题｜去海滩的两种方式（答案 E）</strong></h4>
+<p><strong>题目：</strong>学校到海滩 6 英里。图中实线是 Maya 骑车、虚线是 Naomi 坐公交的&quot;路程—时间&quot;折线：Naomi 用 10 分钟到达，Maya 用 30 分钟到达。两人的平均速度相差多少英里每小时？选项：6、12、18、20、24。</p>
+<p><strong>解析：</strong>平均速度 = 总路程 ÷ 总时间，读图取终点即可（中间的停顿不影响平均速度）。</p>
+<p>Naomi：6 英里 / 10 分钟 = 6 英里 / (1/6 小时) = 36 英里/小时；</p>
+<p>Maya：6 英里 / 30 分钟 = 6 英里 / 0.5 小时 = 12 英里/小时。</p>
+<p>差 = 36 − 12 = <strong>24</strong>（英里/小时）。选 E。</p>
+<h4><strong>第 12 题｜阶乘方程（答案 A）</strong></h4>
+<p><strong>题目：</strong>求满足 5! · 9! = 12 · N! 的正整数 N。选项：10、11、12、13、14。</p>
+<p><strong>解析：</strong>先把常数 12 拆进阶乘里。5! = 120，而 120 = 12×10，所以</p>
+<p>5! · 9! = 12 · 10 · 9! = 12 · 10!，</p>
+<p>比较得 N! = 10!，即 N = <strong>10</strong>。选 A。</p>
+<p>（关键：12 不要硬算成 479001600，而是&quot;凑&quot;出 10，把 9! 升成 10!。）</p>
+<h4><strong>第 13 题｜抽屉里的袜子（答案 B）</strong></h4>
+<p><strong>题目：</strong>抽屉里有 6 只绿袜、18 只紫袜、12 只橙袜。又放进若干只紫袜后，随机抽一只是紫色的概率变成 60%。问放进了多少只紫袜？选项：6、9、12、18、24。</p>
+<p><strong>解析：</strong>设放进 x 只紫袜，则紫色 18+x 只，总数 36+x 只，列方程 (18+x)/(36+x) = 0.6，即 18+x = 21.6+0.6x，得 0.4x = 3.6，x = <strong>9</strong>。选 B。</p>
+<p>验算：9 只紫袜时紫色 27、总数 45，27/45 = 0.6，正确。</p>
+<h4><strong>第 14 题｜20 座城市的人口（答案 D）</strong></h4>
+<p><strong>题目：</strong>图中 20 座城市的人口柱状图，图中虚线表示平均值（约 4700 人）。20 座城市的总人口最接近多少？选项：65000、75000、85000、95000、105000。</p>
+<p><strong>解析：</strong>总人口 = 平均人口 × 城市数。虚线略低于 5000 刻度的一半偏上位置，约 4700～4800，故总数约 20×4750 = 95000。</p>
+<p>逐柱粗算复核：8800+3900+4900+2900+6400+7500+4100+1500+2600+1300+2500+7000+4100+7500+6900+8100+1900+1300+5900+5700 ≈ 94800，与 <strong>95000</strong> 最接近。选 D。</p>
+<h4><strong>第 15 题｜百分数互化（答案 C）</strong></h4>
+<p><strong>题目：</strong>若 x 的 15% 等于 y 的 20%，那么 y 是 x 的百分之几？选项：5、35、75、133⅓、300。</p>
+<p><strong>解析：</strong>由 0.15x = 0.20y 得 y/x = 0.15/0.20 = 0.75，即 y 是 x 的 <strong>75%</strong>。选 C。</p>
+<p>（注意问的是&quot;y 占 x 的百分比&quot;，分子是 y；若反过来问就是 133⅓%，即选项 D 的干扰项。）</p>
+<h4><strong>第 16 题｜五条线求和（答案 E）</strong></h4>
+<p><strong>题目：</strong>A、B、C、D、E、F 分别代表 1～6 中不同的数字。图中 5 条直线各穿过其中若干个点：线①过 C、B、A；线②过 C、D、E；线③过 B、F；线④过 A、F、E；线⑤过 B、D。把 5 条线上的数字分别求和，五个和相加等于 47。求 B 所代表的数字。选项：1、2、3、4、5。</p>
+<p><strong>解析：</strong>关键是数&quot;每个点被算了几次&quot;。1+2+3+4+5+6 = 21。统计各点在 5 条线中出现的次数：B 出现 3 次（线①③⑤），其余 A、C、D、E、F 各出现 2 次。</p>
+<p>所以五个和的总和 = 2×(A+B+C+D+E+F) + B = 2×21 + B = 42 + B。</p>
+<p>由 42 + B = 47 得 B = <strong>5</strong>。选 E。</p>
+<p>（这类&quot;重数求和&quot;题只要把&quot;多算的那一份&quot;找出来，一步就出答案，不必逐一试 1～6。）</p>
+<h4><strong>第 17 题｜因子个数超过 3 的因子（答案 B）</strong></h4>
+<p><strong>题目：</strong>2020 有多少个正因子，其自身的因子个数大于 3？（例：12 有 6 个因子：1,2,3,4,6,12。）选项：6、7、8、9、10。</p>
+<p><strong>解析：</strong>先分解：2020 = 2² × 5 × 101，因子总数 = (2+1)(1+1)(1+1) = 12 个。再用&quot;倒扣&quot;：找出因子个数 ≤ 3 的那些因子。</p>
+<p>1 只有 1 个因子；</p>
+<p>2、5、101 都是质数，各只有 2 个因子；</p>
+<p>4 = 2² 有 3 个因子（1,2,4）；</p>
+<p>其余因子（如 10、20、101…等）因子个数都 ≥ 4。所以符合&quot;因子个数大于 3&quot;的有 12 − 5 = <strong>7</strong> 个。选 B。</p>
+<p>（易错点：题目问的是&quot;2020 的因子中，那些自身因子个数 &gt; 3 的因子有几个&quot;，不是&quot;2020 有几个大于 3 的因子&quot;。）</p>
+<h4><strong>第 18 题｜半圆内的矩形（答案 A）</strong></h4>
+<p><strong>题目：</strong>矩形 ABCD 内接于以 FE 为直径的半圆（A、D 在直径上，B、C 在半圆上）。DA = 16，FD = AE = 9。求矩形 ABCD 的面积。选项：240、248、256、264、272。</p>
+<p><strong>解析：</strong>直径 FE = 9+16+9 = 34，半径 r = 17。</p>
+<p>因为 FD = AE，圆心正好是 DA 的中点，所以从圆心到 D（或 A）的距离是 16÷2 = 8。设矩形的高为 h，则圆心到 C（或 B）的距离就是半径：h² + 8² = 17²，h² = 289 − 64 = 225，h = 15。</p>
+<p>面积 = 16 × 15 = <strong>240</strong>。选 A。</p>
+<p>（常见的 8-15-17 直角三角形，属于要记住的勾股数组。）</p>
+<h4><strong>第 19 题｜flippy 数（答案 B）</strong></h4>
+<p><strong>题目：</strong>若一个数的各位数字在两个不同数字之间交替出现，就称它为 flippy 数（如 2020、37373；而 3883、123123 不是）。有多少个 5 位 flippy 数能被 15 整除？选项：3、4、5、6、8。</p>
+<p><strong>解析：</strong>5 位 flippy 数的形式必为 ababa（两个数字 a、b 交替，顺序固定）。</p>
+<p><strong>被 5 整除</strong>：末位是 a，故 a = 5（a 是首位不能为 0）。</p>
+<p><strong>被 3 整除</strong>：数字和 = 3a + 2b = 15 + 2b 是 3 的倍数，故 2b 是 3 的倍数，即 b 是 3 的倍数：b ∈ {0,3,6,9}。</p>
+<p>b 只需与 a = 5 不同，0、3、6、9 都满足。</p>
+<p>共 4 个：50505、53535、56565、59595。选 B。</p>
+<h4><strong>第 20 题｜五棵树的高度（答案 B）</strong></h4>
+<p><strong>题目：</strong>科学家记录了一排 5 棵树的高度（都是整数），只记得&quot;每棵树的高度要么是右边那棵的 2 倍，要么是它的一半&quot;。笔记中第 2 棵树是 11 米，其余丢失；卷面给出的平均高度末位是&quot;．2 米&quot;。问这 5 棵树的平均高度。选项：22.2、24.2、33.2、35.2、37.2。</p>
+<p><strong>解析：</strong>逐步定值。第 2 棵是 11（奇数），它不能是&quot;右边那棵的 2 倍&quot;（那要求右边是 5.5，非整数），所以第 2 棵是第 3 棵的一半，第 3 棵 = 22。同理第 1 棵只能是 2×11 = 22（若取一半则为 5.5，不行）。</p>
+<p>第 4 棵可以是 11 或 44。若取 11，第 5 棵只能是 22（取一半 5.5 不行），五棵为 22、11、22、11、22，平均 17.6，不在选项内且与&quot;末位为 2&quot;矛盾；故第 4 棵 = 44，第 5 棵 = 22 或 88。</p>
+<p>取 22：总和 22+11+22+44+22 = 121，平均 121÷5 = <strong>24.2</strong>；取 88 时平均 37.4，不是选项。故选 B。</p>
+<h4><strong>第 21 题｜棋盘上的 7 步路径（答案 A）</strong></h4>
+<p><strong>题目：</strong>8×8 黑白相间的棋盘（64 格）。标记从底行的白格 P 出发，每一步移到&quot;上面一行中相邻的白色方格&quot;（即左上或右上）。P 在第 1 行第 6 列，Q 在第 8 行第 7 列。从 P 到 Q 有多少种 7 步路径？选项：28、30、32、33、35。</p>
+<p><strong>解析：</strong>走 7 步必然上升 7 行，恰好从第 1 行到第 8 行，所以路径数等于&quot;7 次左右横移&quot;的方案数。设向右移的次数为 r、向左为 l，则 r+l = 7，且列数变化 6→7 需 r−l = 1，解得 r = 4、l = 3。若不受棋盘边界限制，方案数 = C(7,3) = 35。</p>
+<p>再扣掉&quot;走出右边界&quot;的路径：从第 6 列出发，只要累计向右比向左多 2 次就会到第 9 列（出界）。用&quot;反射法&quot;计算这类路径有 7 种（也可用逐行递推确认：走到第 8 行第 7 列共 28 条，而走到第 8 行各列的条数为 6、21、34、28，其中左侧出界情形为 0，右侧出界 7 条）。</p>
+<p>合法路径 = 35 − 7 = <strong>28</strong>。选 A。</p>
+<h4><strong>第 22 题｜&quot;3x+1&quot;机器（答案 E）</strong></h4>
+<p><strong>题目：</strong>把正整数 N 输入机器：若 N 是偶数输出 N/2，若 N 是奇数输出 3N+1；把输出反复输入，共做 6 步。例如 N = 7 时依次得到 22→11→34→17→52→26。若某个初始值 N 经过同样的 6 步后输出 1，这些 N 的和是多少？选项：73、74、75、82、83。</p>
+<p><strong>解析：</strong>从 1 倒推（逆向更简单）。若输出是 m，则： ① 输入 2m（一定是偶数，符合规则）； ② 若 (m−1) 能被 3 整除且 (m−1)/3 是奇数，则输入 (m−1)/3 也行（它是奇数，3x+1 = m）。</p>
+<p>倒推 6 层：1 ← 2 ← 4 ← {8, 1} ← {16, 2} ← {32, 5, 4} ← {64, 10, 8, 1}。</p>
+<p>所以 6 步后到 1 的初始值有 4 个：1、8、10、64（例如 64→32→16→8→4→2→1）。它们的和 = 1+8+10+64 = <strong>83</strong>。选 E。</p>
+<p>（注意&quot;1&quot;本身也合格：1→4→2→1→4→2→1，正好 6 步，很多同学会漏掉它。）</p>
+<h4><strong>第 23 题｜五个奖章分给三人（答案 B）</strong></h4>
+<p><strong>题目：</strong>把 5 个不同的奖章分给 3 个学生，每人至少一个。共有多少种分法？选项：120、150、180、210、240。</p>
+<p><strong>解析：</strong>用容斥：先不管&quot;每人至少一个&quot;，每个奖章有 3 种去处，共 3⁵ = 243 种。</p>
+<p>减去&quot;有人没拿到&quot;的情形：选一个空手的人 3 种，其余奖章只分给另外 2 人，2⁵ = 32 种，得 3×32 = 96；</p>
+<p>但&quot;两人都空手&quot;（即全给一个人）的情形被减了两次，要加回一次：3 种。</p>
+<p>合法数 = 243 − 96 + 3 = <strong>150</strong>。选 B。</p>
+<p>另一种算法（按 3-1-1 与 2-2-1 两类分堆）：C(5,3)×3! + [C(5,2)C(3,2)/2]×3! = 60 + 90 = 150，结果一致。</p>
+<h4><strong>第 24 题｜瓷砖与边框（答案 A）</strong></h4>
+<p><strong>题目：</strong>用 n² 块边长 s 英寸的灰色正方形瓷砖铺成一个大正方形区域，每块瓷砖四周各有宽 d 英寸的边框。当 n = 24 时，这些瓷砖覆盖了大正方形面积的 64%。求 d/s 的比值。选项：6/25、1/4、9/25、7/16、9/16。</p>
+<p><strong>解析：</strong>大正方形的边长 = 24s + 25d（n 行瓷砖之间有 n+1 条边框，两侧最外也各有一条）。面积之比开平方：</p>
+<p>24s / (24s + 25d) = √0.64 = 0.8，即 24s = 19.2s + 20d，得 4.8s = 20d，d/s = 0.24 = <strong>6/25</strong>。选 A。</p>
+<p>（易错点：边框条数是 n+1 而不是 n−1；边长比要开平方，不能直接用面积比 0.64。）</p>
+<h4><strong>第 25 题｜拼成 3322 × 2020 的矩形（答案 A）</strong></h4>
+<p><strong>题目：</strong>两个矩形 R₁、R₂ 与三个正方形 S₁、S₂、S₃ 拼成一个宽 3322、高 2020 的大矩形。拼法：左上为 S₁，其下为 R₁（R₁ 从大矩形左边一直延伸到下方中部）；S₁ 右侧上方是 R₂，R₂ 下左方是 S₂，S₂ 右侧是 S₃，S₃ 紧贴大矩形的右边和底边。求 S₂ 的边长。选项：651、655、656、662、666。</p>
+<p><strong>解析：</strong>设 S₁ 边长 a，S₂ 边长 b，S₃ 边长 c，大矩形宽 W = 3322、高 H = 2020。用&quot;同一段长度的两种算法&quot;列式：</p>
+<p>S₃ 紧贴右边和底边，所以 S₃ 的左边在 x = W − c 处，S₂ 的右边在 x = a + b 处，两者重合：a + b = W − c。</p>
+<p>竖直方向：S₂ 的上边就是 R₂ 的下边，故 R₂ 的高 = H − (S₂ 上边的位置) = H − (H − a + b) = a − b；而 S₃ 的高 c = R₂ 下边到地面 = H − (a − b) = H − a + b。</p>
+<p>把 c 代入第一式：a + b = W − (H − a + b)，约去 a 得 2b = W − H = 3322 − 2020 = 1302，所以 b = <strong>651</strong>。选 A。</p>
+<p>（本题的巧妙之处：a 在方程中自动消掉，说明答案只取决于大矩形的长宽差，与 S₁ 的大小无关。可验算：取 a = 1000 也能拼出同样的 b = 651。）</p>
+<h3><strong>三、复盘建议</strong></h3>
+<p>本卷的难点集中在第 16、19、20、21、22、25 题。建议复盘顺序：先做第 1～10 题确保基础题不丢分（这 10 题的答案依次为 E、C、D、B、C、A、C、C、D、C）；再整理&quot;重数求和&quot;（第 16 题）、&quot;数字交替 + 整除&quot;（第 19 题）、&quot;逆向递推&quot;（第 22 题）三个模型；最后挑战第 21、25 题的路径计数与几何消元。第 25 题那种&quot;设多个未知数、让多余未知数自动消去&quot;的思路，是 AMC 后段几何题的通用武器，值得单独记在错题本上。</p>
+    </div>
+    <p class="dl-row">
+      
+      <a class="btn" href="https://t.fengg.net/docs-dl/public/download/%E6%95%B0%E5%AD%A6/AMC8/2020%20AMC8.pdf" download="2020 AMC8.pdf" title="2020 AMC8.pdf">下载 PDF 原卷</a>
+      
+      <a class="btn ghost" href="https://t.fengg.net/docs-dl/public/download/%E6%95%B0%E5%AD%A6/AMC8/2020%20AMC8%20%E7%AD%94%E6%A1%88%E8%A7%A3%E6%9E%90.docx" download="2020 AMC8 答案解析.docx" title="2020 AMC8 答案解析.docx">下载答案解析（Word）</a>
+      
+      
+    </p>
+  </details>
+  
+
+  <nav class="siblings" aria-label="同分类的上一套与下一套">
+    
+    <a class="sib prev" href="/docs/amc8-2019/" rel="prev">
+      <i aria-hidden="true">←</i>
+      <span><b>上一套</b><em>2019 年 AMC 8 真题</em></span>
+    </a>
+    
+    
+    <a class="sib next" href="/docs/amc8-2022/" rel="next">
+      <span><b>下一套</b><em>2022 年 AMC 8 真题</em></span>
+      <i aria-hidden="true">→</i>
+    </a>
+    
+  </nav>
+
+  <p class="back"><a href="/c/math/">← 返回数学</a></p>
+</article>
+
+<button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 8.8V19h-2V8.8L6.4 13.4 5 12z" fill="currentColor"/></svg>
+</button>
+
+<script>
+(function () {
+  function openIfHash() {
+    if (location.hash === '#answer') {
+      var el = document.getElementById('answer');
+      if (el) { el.open = true; el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    }
+  }
+  openIfHash();
+  window.addEventListener('hashchange', openIfHash);
+
+  var top = document.querySelector('.to-top');
+  if (top) {
+    function onScroll() {
+      if (window.scrollY > 420) top.classList.add('show');
+      else top.classList.remove('show');
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    top.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // 同分类翻页快捷键：[ 上一套，] 下一套
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var sel = e.key === '[' ? '.sib.prev[href]' : (e.key === ']' ? '.sib.next[href]' : null);
+    if (!sel) return;
+    var a = document.querySelector(sel);
+    if (a) { e.preventDefault(); location.href = a.href; }
+  });
+})();
+</script>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-line">
+      <span>© 2026 Feng</span>
+      <span class="dot">·</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></span>
+    </div>
+    <p class="foot-note">本站内容均来源于网络，版权归原作者所有，仅供学习交流使用，请勿用于商业用途。</p>
+  </div>
+</footer>
+<script>
+(function () {
+  /* ---------- 深色模式 ---------- */
+  var root = document.documentElement;
+  var toggle = document.querySelector('.theme-toggle');
+  function osDark() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function isDark() {
+    var t = root.getAttribute('data-theme');
+    if (t === 'dark') return true;
+    if (t === 'light') return false;
+    return osDark();
+  }
+  function label() {
+    if (!toggle) return;
+    var d = isDark();
+    toggle.setAttribute('aria-label', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('title', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('aria-pressed', d ? 'true' : 'false');
+  }
+  if (toggle) {
+    label();
+    toggle.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) { /* noop */ }
+      label();
+    });
+  }
+  if (window.matchMedia) {
+    var mqDark = window.matchMedia('(prefers-color-scheme: dark)');
+    if (mqDark.addEventListener) mqDark.addEventListener('change', label);
+  }
+
+  /* ---------- 顶部导航 ---------- */
+  var nav = document.querySelector('.nav');
+  var navToggle = document.querySelector('.nav-toggle');
+  if (!nav || !navToggle) return;
+  var mq = window.matchMedia('(max-width: 720px)');
+  function closeAll() {
+    nav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    Array.prototype.forEach.call(nav.querySelectorAll('.open'), function (x) { x.classList.remove('open'); });
+  }
+  navToggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var on = nav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', on ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) {
+    if (!mq.matches) return;
+    var a = e.target.closest ? e.target.closest('a') : null;
+    if (!a) return;
+    var host = a.parentNode;
+    if (host && host.classList.contains('nav-drop') && a.classList.contains('has-caret')) {
+      e.preventDefault();
+      host.classList.toggle('open');
+    }
+  });
+  document.addEventListener('click', function (e) {
+    if (mq.matches && !nav.contains(e.target) && !navToggle.contains(e.target)) closeAll();
+  });
+  // 键盘 Esc 收起移动端菜单
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mq.matches && nav.classList.contains('open')) {
+      closeAll();
+      navToggle.focus();
+    }
+  });
+
+  /* ---------- 搜索快捷键：/ 聚焦，Ctrl(⌘)+K 打开 ---------- */
+  var searchLink = document.querySelector('.nav-s');
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    var typing = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable);
+    if ((e.ctrlKey || e.metaKey) && !e.shiftKey && (e.key === 'k' || e.key === 'K')) {
+      e.preventDefault();
+      var box = document.querySelector('.sbox-input');
+      if (box) { box.focus(); box.select(); }
+      else if (searchLink) location.href = searchLink.href;
+      return;
+    }
+    if (typing || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.key === '/') {
+      var box2 = document.querySelector('.sbox-input');
+      if (box2) { e.preventDefault(); box2.focus(); box2.select(); }
+      else if (searchLink) { e.preventDefault(); location.href = searchLink.href; }
+    }
+  });
+})();
+</script>
+</body>
+</html>

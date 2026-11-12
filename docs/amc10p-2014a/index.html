@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<meta charset="utf-8">
+<title>2014A AMC 10 真题（P版） · 竞赛资料库</title>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) { /* 隐私模式下忽略 */ }
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="2014A AMC 10 真题（P版）：数学 · AMC10(P版)，2014A 年，共 25 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+
+<link rel="canonical" href="https://t.fengg.net/docs/amc10p-2014a/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="竞赛资料库">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="2014A AMC 10 真题（P版）">
+<meta property="og:description" content="2014A AMC 10 真题（P版）：数学 · AMC10(P版)，2014A 年，共 25 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+<meta property="og:url" content="https://t.fengg.net/docs/amc10p-2014a/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f7f9">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1318">
+
+
+<link rel="prev" href="/docs/amc10p-2013b/">
+<link rel="next" href="/docs/amc10p-2014b/">
+<link rel="stylesheet" href="/css/style.css?v=20261110e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+
+<link rel="stylesheet" href="/katex/katex.min.css">
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (!window.renderMathInElement) return;
+  var el = document.querySelector('.doc') || document.body;
+  try {
+    renderMathInElement(el, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false }
+      ],
+      throwOnError: false
+    });
+  } catch (e) { /* 公式渲染失败不影响正文 */ }
+});
+</script>
+
+
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/">竞赛资料库</a>
+    <nav class="nav"><a class="nav-a" href="/">首页</a><div class="nav-drop nav-mega"><a class="nav-a has-caret" href="/all/" title="按科目浏览全部题库">题库<i class="caret" aria-hidden="true"></i></a><div class="drop mega"><div class="mega-col" style="--accent:#3776c4"><a class="mega-h" href="/c/astronomy/"><i class="mega-dot" aria-hidden="true"></i>天文<span class="cnt">52</span></a><a class="mega-l" href="/c/astronomy/cnao/">CNAO<span class="cnt">28</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/cnao/prelim/">预赛</a><a class="mega-c" href="/c/astronomy/cnao/final/">决赛</a><a class="mega-c" href="/c/astronomy/cnao/primary/">小学组</a></span><a class="mega-l" href="/c/astronomy/provincial/">省赛<span class="cnt">15</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/provincial/beijing/">北京</a><a class="mega-c" href="/c/astronomy/provincial/guangdong/">广东</a><a class="mega-c" href="/c/astronomy/provincial/zhejiang/">浙江</a><a class="mega-c" href="/c/astronomy/provincial/jiangsu/">江苏</a><a class="mega-c" href="/c/astronomy/provincial/shandong/">山东</a><a class="mega-c" href="/c/astronomy/provincial/taiwan/">中国台湾</a></span><a class="mega-l" href="/c/astronomy/practice/">练习<span class="cnt">9</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/practice/primary/">小学组练习</a><a class="mega-c" href="/c/astronomy/practice/bank/">题库合集</a></span></div><div class="mega-col" style="--accent:#0f8a5f"><a class="mega-h" href="/c/math/"><i class="mega-dot" aria-hidden="true"></i>数学<span class="cnt">290</span></a><a class="mega-l" href="/c/math/amc8/">AMC8<span class="cnt">26</span></a><a class="mega-l" href="/c/math/amc8p/">AMC8(P版)<span class="cnt">41</span></a><a class="mega-l" href="/c/math/amc10p/">AMC10(P版)<span class="cnt">52</span></a><a class="mega-l" href="/c/math/amc12p/">AMC12(P版)<span class="cnt">102</span></a><a class="mega-l" href="/c/math/gzl/">全国中学生数学奥林匹克竞赛<span class="cnt">69</span></a><span class="mega-cs"><a class="mega-c" href="/c/math/gzl/liansai/">联赛（预赛）</a><a class="mega-c" href="/c/math/gzl/final/">决赛（CMO）</a><a class="mega-c" href="/c/math/gzl/province/">各赛区预赛</a></span></div><div class="mega-col" style="--accent:#6c4bb6"><a class="mega-h" href="/c/physics/"><i class="mega-dot" aria-hidden="true"></i>物理<span class="cnt">73</span></a><a class="mega-l" href="/c/physics/national/">全国竞赛<span class="cnt">49</span></a><a class="mega-l" href="/c/physics/asian/">亚洲竞赛<span class="cnt">11</span></a><a class="mega-l" href="/c/physics/international/">国际竞赛<span class="cnt">13</span></a></div><div class="mega-col" style="--accent:#3f8f46"><a class="mega-h" href="/c/biology/"><i class="mega-dot" aria-hidden="true"></i>生物<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/league/">全国中学生生物学联赛<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/competition/">全国中学生生物学竞赛</a></div><div class="mega-col" style="--accent:#c05a2b"><a class="mega-h" href="/c/chemistry/"><i class="mega-dot" aria-hidden="true"></i>化学<span class="cnt">10</span></a><a class="mega-l" href="/c/chemistry/ccho/">全国中学生化学奥林匹克竞赛<span class="cnt">10</span></a></div><div class="mega-col" style="--accent:#1f7a8c"><a class="mega-h" href="/c/earth/"><i class="mega-dot" aria-hidden="true"></i>地球科学<span class="cnt">22</span></a><a class="mega-l" href="/c/earth/national/">全国竞赛<span class="cnt">17</span></a><a class="mega-l" href="/c/earth/international/">国际竞赛<span class="cnt">5</span></a></div><div class="mega-col" style="--accent:#2c8a6e"><a class="mega-h" href="/c/geography/"><i class="mega-dot" aria-hidden="true"></i>地理<span class="cnt">11</span></a><a class="mega-l" href="/c/geography/geokids/">地球小博士<span class="cnt">11</span></a></div><div class="mega-col" style="--accent:#4a5fd0"><a class="mega-h" href="/c/info/"><i class="mega-dot" aria-hidden="true"></i>信息学<span class="cnt">9</span></a><a class="mega-l" href="/c/info/noi/">全国青少年信息学奥林匹克竞赛<span class="cnt">3</span></a><a class="mega-l" href="/c/info/noip/">全国青少年信息学奥林匹克联赛<span class="cnt">1</span></a><a class="mega-l" href="/c/info/csp/">CSP-J/S 非专业级软件能力认证<span class="cnt">1</span></a><a class="mega-l" href="/c/info/apio/">亚洲和太平洋地区信息学奥林匹克<span class="cnt">1</span></a><a class="mega-l" href="/c/info/winter/">NOI 冬令营<span class="cnt">1</span></a><a class="mega-l" href="/c/info/camp/">IOI 中国国家集训队集训<span class="cnt">2</span></a></div><a class="mega-all" href="/all/">全部文档（474 套）<i class="arr" aria-hidden="true">›</i></a></div></div><a class="nav-a" href="/whitelist/">白名单竞赛</a><a class="nav-a" href="/about/">使用说明</a><a class="nav-a nav-s" href="/search/" title="站内搜索（按 / 或 Ctrl+K）"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.9 12.1l4.3 4.3-1.4 1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z" fill="currentColor"/></svg>搜索</a></nav>
+    <div class="head-tools">
+      <button class="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式">
+        <svg class="ic-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12.7 3a8.5 8.5 0 108.3 10.6A7 7 0 0112.7 3z" fill="currentColor"/></svg>
+        <svg class="ic-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12 17a5 5 0 110-10 5 5 0 010 10zm0-13a1 1 0 011 1v1a1 1 0 01-2 0V5a1 1 0 011-1zm0 14a1 1 0 011 1v1a1 1 0 01-2 0v-1a1 1 0 011-1zM4 11h1a1 1 0 010 2H4a1 1 0 010-2zm15 0h1a1 1 0 010 2h-1a1 1 0 010-2zM6.3 5.5l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm11 11l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm.7-11a1 1 0 010 1.4l-.7.7A1 1 0 0115.9 6.2l.7-.7a1 1 0 011.4 0zm-11 11a1 1 0 010 1.4l-.7.7a1 1 0 01-1.4-1.4l.7-.7a1 1 0 011.4 0z" fill="currentColor"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-label="打开分类菜单" aria-expanded="false">分类 ▾</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main" tabindex="-1">
+
+<article class="doc">
+  <nav class="crumb">
+    <a href="/">首页</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/">数学</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/amc10p/">AMC10(P版)</a>
+    
+    <span class="sep">/</span><span>2014A AMC 10 真题（P版）</span>
+  </nav>
+
+  <h1>2014A AMC 10 真题（P版）</h1>
+
+  <div class="meta">
+    <span class="tag">数学</span>
+    <span>2014A 年</span>
+    <span>25 题</span>
+    <span>166 KB</span>
+    <span class="ok">含答案解析</span>
+  </div>
+
+  <div class="toolbar">
+    
+    <a class="btn quiz-btn" href="/quiz/amc10p-2014a/">开始答题 →</a>
+    
+    
+    <a class="btn ghost" href="#answer">跳到答案解析 ↓</a>
+    
+    <button class="btn ghost" type="button" onclick="document.querySelectorAll('details').forEach(function(x){x.open=true});setTimeout(function(){window.print()},60)">打印（含答案）</button>
+    <a class="btn" href="https://t.fengg.net/docs-dl/public/download/%E6%95%B0%E5%AD%A6/AMC10(P%E7%89%88)/2014A%20AMC%2010%20%E7%9C%9F%E9%A2%98%E4%B8%8E%E8%A7%A3%E7%AD%94.docx" download="2014A AMC 10 真题与解答.docx" title="2014A AMC 10 真题与解答.docx">下载 Word 文件</a>
+  </div>
+
+  <section class="paper">
+    <p class="paper-tip">中英双语：每题先中文，后附英文原题；解答在同页下方「查看答案解析与下载」里。</p>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">1</span></p>
+<p>下列表达式的值是多少？</p>
+<p>\[ 10\cdot\left(\dfrac{1}{2}+\dfrac{1}{5}+\dfrac{1}{10}\right)^{-1} \]</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(3\)</span>
+<span class="amc-opt"><b>B</b>\(8\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{25}{2}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{170}{3}\)</span>
+<span class="amc-opt"><b>E</b>\(170\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">What is the value of the following expression?</p>
+<p class="amc-en">\[ 10\cdot\left(\dfrac{1}{2}+\dfrac{1}{5}+\dfrac{1}{10}\right)^{-1} \]</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(3\)</span><span class="amc-opt"><b>(B)</b> \(8\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{25}{2}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{170}{3}\)</span><span class="amc-opt"><b>(E)</b> \(170\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">2</span></p>
+<p>Roy 的猫每天早上吃 \(\dfrac{1}{3}\) 罐猫粮，每天晚上吃 \(\dfrac{1}{4}\) 罐猫粮。星期一早上喂猫之前，Roy 打开一个装有 \(6\) 罐猫粮的盒子。这只猫在星期几吃完盒子里所有猫粮？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>星期二</span>
+<span class="amc-opt"><b>B</b>星期三</span>
+<span class="amc-opt"><b>C</b>星期四</span>
+<span class="amc-opt"><b>D</b>星期五</span>
+<span class="amc-opt"><b>E</b>星期六</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Roy’s cat eats \(\dfrac{1}{3}\) of a can of cat food every morning and \(\dfrac{1}{4}\) of a can of cat food every evening. Before feeding his cat on Monday morning, Roy opened a box containing \(6\) cans of cat food. On what day of the week did the cat finish eating all the cat food in the box?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> Tuesday</span><span class="amc-opt"><b>(B)</b> Wednesday</span><span class="amc-opt"><b>(C)</b> Thursday</span><span class="amc-opt"><b>(D)</b> Friday</span><span class="amc-opt"><b>(E)</b> Saturday</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">3</span></p>
+<p>Bridget 为她的面包店烤了 \(48\) 条面包。上午她以每条 \(\$ 2.50\) 卖出一半。下午她卖出剩余面包的三分之二；因为不新鲜了，她只收半价。傍晚她以每条一美元卖出剩下的面包。每条面包的制作成本为 \(\$ 0.75\)。她当天的利润是多少美元？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(24\)</span>
+<span class="amc-opt"><b>B</b>\(36\)</span>
+<span class="amc-opt"><b>C</b>\(44\)</span>
+<span class="amc-opt"><b>D</b>\(48\)</span>
+<span class="amc-opt"><b>E</b>\(52\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Bridget bakes \(48\) loaves of bread for her bakery. She sells half of them in the morning for \(\$ 2.50\) each. In the afternoon she sells two thirds of what she has left, and because they are not fresh, she charges only half price. In the late afternoon she sells the remaining loaves at a dollar each. Each loaf costs \(\$ 0.75\) for her to make. In dollars, what is her profit for the day?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(24\)</span><span class="amc-opt"><b>(B)</b> \(36\)</span><span class="amc-opt"><b>(C)</b> \(44\)</span><span class="amc-opt"><b>(D)</b> \(48\)</span><span class="amc-opt"><b>(E)</b> \(52\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">4</span></p>
+<p>Ralph 沿 Jane 街走过连续四栋房子，每栋房子颜色不同。他先经过橙色房子，再经过红色房子；他先经过蓝色房子，再经过黄色房子。蓝色房子不与黄色房子相邻。这些彩色房子的排列有多少种可能？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(2\)</span>
+<span class="amc-opt"><b>B</b>\(3\)</span>
+<span class="amc-opt"><b>C</b>\(4\)</span>
+<span class="amc-opt"><b>D</b>\(5\)</span>
+<span class="amc-opt"><b>E</b>\(6\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Walking down Jane Street, Ralph passed four houses in a row, each painted a different color. He passed the orange house before the red house, and he passed the blue house before the yellow house. The blue house was not next to the yellow house. How many orderings of the colored houses are possible?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(2\)</span><span class="amc-opt"><b>(B)</b> \(3\)</span><span class="amc-opt"><b>(C)</b> \(4\)</span><span class="amc-opt"><b>(D)</b> \(5\)</span><span class="amc-opt"><b>(E)</b> \(6\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">5</span></p>
+<p>一次代数测验中，\(10\%\) 的学生得 \(70\) 分，\(35\%\) 得 \(80\) 分，\(30\%\) 得 \(90\) 分，其余学生得 \(100\) 分。学生分数的平均数与中位数之差是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1\)</span>
+<span class="amc-opt"><b>B</b>\(2\)</span>
+<span class="amc-opt"><b>C</b>\(3\)</span>
+<span class="amc-opt"><b>D</b>\(4\)</span>
+<span class="amc-opt"><b>E</b>\(5\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">On an algebra quiz, \(10\%\) of the students scored \(70\) points, \(35\%\) scored \(80\) points, \(30\%\) scored \(90\) points, and the rest scored \(100\) points. What is the difference between the mean and the median of the students’ scores on this quiz?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1\)</span><span class="amc-opt"><b>(B)</b> \(2\)</span><span class="amc-opt"><b>(C)</b> \(3\)</span><span class="amc-opt"><b>(D)</b> \(4\)</span><span class="amc-opt"><b>(E)</b> \(5\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">6</span></p>
+<p>假设 \(a\) 头奶牛在 \(c\) 天里产 \(b\) 加仑牛奶。按这个速度，\(d\) 头奶牛在 \(e\) 天里会产多少加仑牛奶？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{bde}{ac}\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{ac}{bde}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{abde}{c}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{bcde}{a}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{abc}{de}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Suppose that \(a\) cows give \(b\) gallons of milk in \(c\) days. At this rate, how many gallons of milk will \(d\) cows give in \(e\) days?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{bde}{ac}\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{ac}{bde}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{abde}{c}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{bcde}{a}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{abc}{de}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">7</span></p>
+<p>非零实数 \(x\)、\(y\)、\(a\) 和 \(b\) 满足 \(x &lt; a\) 且 \(y &lt; b\)。下面四个不等式中有多少个必然成立？</p>
+<p><b>(I)</b> \(x + y \lt a + b\)</p>
+<p><b>(II)</b> \(x - y \lt a - b\)</p>
+<p><b>(III)</b> \(xy \lt ab\)</p>
+<p><b>(IV)</b> \(\dfrac{x}{y} \lt \dfrac{a}{b}\)</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(0\)</span>
+<span class="amc-opt"><b>B</b>\(1\)</span>
+<span class="amc-opt"><b>C</b>\(2\)</span>
+<span class="amc-opt"><b>D</b>\(3\)</span>
+<span class="amc-opt"><b>E</b>\(4\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Nonzero real numbers \(x,\) \(y,\) \(a,\) and \(b\) satisfy \(x &lt; a\) and \(y &lt; b.\) How many of the following inequalities must be true?</p>
+<p class="amc-en"><b>(I)</b> \(x + y \lt a + b\)</p>
+<p class="amc-en"><b>(II)</b> \(x - y \lt a - b\)</p>
+<p class="amc-en"><b>(III)</b> \(xy \lt ab\)</p>
+<p class="amc-en"><b>(IV)</b> \(\dfrac{x}{y} \lt \dfrac{a}{b}\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(0\)</span><span class="amc-opt"><b>(B)</b> \(1\)</span><span class="amc-opt"><b>(C)</b> \(2\)</span><span class="amc-opt"><b>(D)</b> \(3\)</span><span class="amc-opt"><b>(E)</b> \(4\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">8</span></p>
+<p>下列哪个数是完全平方数？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{14!15!}2\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{15!16!}2\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{16!17!}2\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{17!18!}2\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{18!19!}2\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Which of the following numbers is a perfect square?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{14!15!}2\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{15!16!}2\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{16!17!}2\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{17!18!}2\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{18!19!}2\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">9</span></p>
+<p>一个直角三角形的两条直角边也是高，长度分别为 \(2\sqrt3\) 和 \(6\)。这个三角形的第三条高有多长？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1\)</span>
+<span class="amc-opt"><b>B</b>\(2\)</span>
+<span class="amc-opt"><b>C</b>\(3\)</span>
+<span class="amc-opt"><b>D</b>\(4\)</span>
+<span class="amc-opt"><b>E</b>\(5\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The two legs of a right triangle, which are altitudes, have lengths \(2\sqrt3\) and \(6.\) How long is the third altitude of the triangle?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1\)</span><span class="amc-opt"><b>(B)</b> \(2\)</span><span class="amc-opt"><b>(C)</b> \(3\)</span><span class="amc-opt"><b>(D)</b> \(4\)</span><span class="amc-opt"><b>(E)</b> \(5\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">10</span></p>
+<p>从 \(a\) 开始的五个连续正整数的平均数为 \(b\)。从 \(b\) 开始的 \(5\) 个连续整数的平均数是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(a+3\)</span>
+<span class="amc-opt"><b>B</b>\(a+4\)</span>
+<span class="amc-opt"><b>C</b>\(a+5\)</span>
+<span class="amc-opt"><b>D</b>\(a+6\)</span>
+<span class="amc-opt"><b>E</b>\(a+7\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Five positive consecutive integers starting with \(a\) have average \(b.\) What is the average of \(5\) consecutive integers that start with \(b?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(a+3\)</span><span class="amc-opt"><b>(B)</b> \(a+4\)</span><span class="amc-opt"><b>(C)</b> \(a+5\)</span><span class="amc-opt"><b>(D)</b> \(a+6\)</span><span class="amc-opt"><b>(E)</b> \(a+7\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">11</span></p>
+<p>一位打算购买电器的顾客有三张优惠券，但只能使用其中一张：</p>
+<p>优惠券 \(1\)：标价至少为 \(\$50\) 时，减价 \(10\%\)</p>
+<p>优惠券 \(2\)：标价至少为 \(\$100\) 时，减 \(\$ 20\)</p>
+<p>优惠券 \(3\)：对标价超过 \(\$100\) 的部分减价 \(18\%\)</p>
+<p>对下列哪个标价，优惠券 \(1\) 的减价幅度会同时大于优惠券 \(2\) 和优惠券 \(3\)？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\$ 179.95\)</span>
+<span class="amc-opt"><b>B</b>\(\$ 199.95\)</span>
+<span class="amc-opt"><b>C</b>\(\$ 219.95\)</span>
+<span class="amc-opt"><b>D</b>\(\$ 239.95\)</span>
+<span class="amc-opt"><b>E</b>\(\$ 259.95\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A customer who intends to purchase an appliance has three coupons, only one of which may be used:</p>
+<p class="amc-en">Coupon \(1:\) \(10\%\) off the listed price if the listed price is at least \(\$50\)</p>
+<p class="amc-en">Coupon \(2:\) \(\$ 20\) off the listed price if the listed price is at least \(\$100\)</p>
+<p class="amc-en">Coupon \(3:\) \(18\%\) off the amount by which the listed price exceeds \(\$100\)</p>
+<p class="amc-en">For which of the following listed prices will coupon \(1\) offer a greater price reduction than either coupon \(2\) or coupon \(3?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\$ 179.95\)</span><span class="amc-opt"><b>(B)</b> \(\$ 199.95\)</span><span class="amc-opt"><b>(C)</b> \(\$ 219.95\)</span><span class="amc-opt"><b>(D)</b> \(\$ 239.95\)</span><span class="amc-opt"><b>(E)</b> \(\$ 259.95\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">12</span></p>
+<p>一个正六边形边长为 \(6\)。以每个顶点为圆心画半径为 \(3\) 的全等圆弧，形成如图所示的扇形。六边形内部但扇形外部的区域被涂阴影。阴影区域的面积是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2014A/problem/q12-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(27\sqrt{3}-9\pi\)</span>
+<span class="amc-opt"><b>B</b>\(27\sqrt{3}-6\pi\)</span>
+<span class="amc-opt"><b>C</b>\(54\sqrt{3}-18\pi\)</span>
+<span class="amc-opt"><b>D</b>\(54\sqrt{3}-12\pi\)</span>
+<span class="amc-opt"><b>E</b>\(108\sqrt{3}-9\pi\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A regular hexagon has side length \(6.\) Congruent arcs with radius \(3\) are drawn with the center at each of the vertices, creating circular sectors as shown. The region inside the hexagon but outside the sectors is shaded as shown. What is the area of the shaded region?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2014A/problem/q12-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(27\sqrt{3}-9\pi\)</span><span class="amc-opt"><b>(B)</b> \(27\sqrt{3}-6\pi\)</span><span class="amc-opt"><b>(C)</b> \(54\sqrt{3}-18\pi\)</span><span class="amc-opt"><b>(D)</b> \(54\sqrt{3}-12\pi\)</span><span class="amc-opt"><b>(E)</b> \(108\sqrt{3}-9\pi\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">13</span></p>
+<p>等边 \(\triangle ABC\) 的边长为 \(1\)，正方形 \(ABDE\)、\(BCHI\)、\(CAFG\) 都在三角形外侧。六边形 \(DEFGHI\) 的面积是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2014A/problem/q13-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{12+3\sqrt3}4\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac92\)</span>
+<span class="amc-opt"><b>C</b>\(3+\sqrt3\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{6+3\sqrt3}2\)</span>
+<span class="amc-opt"><b>E</b>\(6\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Equilateral \(\triangle ABC\) has side length \(1,\) and squares \(ABDE,\) \(BCHI,\) \(CAFG\) lie outside the triangle. What is the area of hexagon \(DEFGHI?\)</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2014A/problem/q13-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{12+3\sqrt3}4\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac92\)</span><span class="amc-opt"><b>(C)</b> \(3+\sqrt3\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{6+3\sqrt3}2\)</span><span class="amc-opt"><b>(E)</b> \(6\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">14</span></p>
+<p>两条相互垂直的直线交于点 \(A(6,8)\)，它们的 \(y\) 轴截距为 \(P\) 和 \(Q\)，且两个截距之和为零。求 \(\triangle APQ\) 的面积。</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(45\)</span>
+<span class="amc-opt"><b>B</b>\(48\)</span>
+<span class="amc-opt"><b>C</b>\(54\)</span>
+<span class="amc-opt"><b>D</b>\(60\)</span>
+<span class="amc-opt"><b>E</b>\(72\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The \(y\)-intercepts, \(P\) and \(Q,\) of two perpendicular lines intersecting at the point \(A(6,8)\) have a sum of zero. What is the area of \(\triangle APQ?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(45\)</span><span class="amc-opt"><b>(B)</b> \(48\)</span><span class="amc-opt"><b>(C)</b> \(54\)</span><span class="amc-opt"><b>(D)</b> \(60\)</span><span class="amc-opt"><b>(E)</b> \(72\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">15</span></p>
+<p>David 从家开车去机场赶飞机。第一小时他开了 \(35\) 英里，但意识到如果继续按这个速度行驶会迟到 \(1\) 小时。之后他把速度提高 \(15\) 英里每小时，并提前 \(30\) 分钟到达。机场离他家多少英里？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(140\)</span>
+<span class="amc-opt"><b>B</b>\(175\)</span>
+<span class="amc-opt"><b>C</b>\(210\)</span>
+<span class="amc-opt"><b>D</b>\(245\)</span>
+<span class="amc-opt"><b>E</b>\(280\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">David drives from his home to the airport to catch a flight. He drives \(35\) miles in the first hour, but realizes that he will be \(1\) hour late if he continues at this speed. He increases his speed by \(15\) miles per hour for the rest of the way to the airport and arrives \(30\) minutes early. How many miles is the airport from his home?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(140\)</span><span class="amc-opt"><b>(B)</b> \(175\)</span><span class="amc-opt"><b>(C)</b> \(210\)</span><span class="amc-opt"><b>(D)</b> \(245\)</span><span class="amc-opt"><b>(E)</b> \(280\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">16</span></p>
+<p>在长方形 \(ABCD\) 中，\(AB=1\)，\(BC=2\)，点 \(E\)、\(F\)、\(G\) 分别是 \(\overline{BC}\)、\(\overline{CD}\)、\(\overline{AD}\) 的中点。点 \(H\) 是 \(\overline{GE}\) 的中点。阴影区域的面积是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2014A/problem/q16-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac1{12}\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{\sqrt3}{18}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{\sqrt2}{12}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{\sqrt3}{12}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac16\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In rectangle \(ABCD,\) \(AB=1,\) \(BC=2,\) and points \(E,\) \(F,\) and \(G\) are midpoints of \(\overline{BC},\) \(\overline{CD},\) and \(\overline{AD},\) respectively. Point \(H\) is the midpoint of \(\overline{GE}.\) What is the area of the shaded region?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2014A/problem/q16-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac1{12}\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{\sqrt3}{18}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{\sqrt2}{12}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{\sqrt3}{12}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac16\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">17</span></p>
+<p>掷三枚公平的六面骰子。恰有两枚骰子的点数之和等于剩下一枚骰子的点数的概率是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac16\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{13}{72}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac7{36}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac5{24}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac29\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Three fair six-sided dice are rolled. What is the probability that the values shown on two of the dice sum to the value shown on the remaining die?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac16\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{13}{72}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac7{36}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac5{24}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac29\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">18</span></p>
+<p>坐标平面中的一个正方形，其四个顶点的 \(y\) 坐标为 \(0\)、\(1\)、\(4\)、\(5\)。这个正方形的面积是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(16\)</span>
+<span class="amc-opt"><b>B</b>\(17\)</span>
+<span class="amc-opt"><b>C</b>\(25\)</span>
+<span class="amc-opt"><b>D</b>\(26\)</span>
+<span class="amc-opt"><b>E</b>\(27\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A square in the coordinate plane has vertices whose \(y\)-coordinates are \(0,\) \(1,\) \(4,\) and \(5.\) What is the area of the square?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(16\)</span><span class="amc-opt"><b>(B)</b> \(17\)</span><span class="amc-opt"><b>(C)</b> \(25\)</span><span class="amc-opt"><b>(D)</b> \(26\)</span><span class="amc-opt"><b>(E)</b> \(27\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">19</span></p>
+<p>边长分别为 \(1\)、\(2\)、\(3\) 和 \(4\) 的四个立方体如图堆叠。线段 \(\overline{XY}\) 位于边长为 \(3\) 的立方体内部的部分有多长？</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2014A/problem/q19-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{3\sqrt{33}}5\)</span>
+<span class="amc-opt"><b>B</b>\(2\sqrt3\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{2\sqrt{33}}3\)</span>
+<span class="amc-opt"><b>D</b>\(4\)</span>
+<span class="amc-opt"><b>E</b>\(3\sqrt2\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Four cubes with edge lengths \(1,\) \(2,\) \(3,\) and \(4\) are stacked as shown. What is the length of the portion of \(\overline{XY}\) contained in the cube with edge length \(3?\)</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2014A/problem/q19-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{3\sqrt{33}}5\)</span><span class="amc-opt"><b>(B)</b> \(2\sqrt3\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{2\sqrt{33}}3\)</span><span class="amc-opt"><b>(D)</b> \(4\)</span><span class="amc-opt"><b>(E)</b> \(3\sqrt2\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">20</span></p>
+<p>乘积 \((8)(888\dots8)\) 中第二个因子有 \(k\) 位数字。该乘积是一个各位数字和为 \(1000\) 的整数。求 \(k\)。</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(901\)</span>
+<span class="amc-opt"><b>B</b>\(911\)</span>
+<span class="amc-opt"><b>C</b>\(919\)</span>
+<span class="amc-opt"><b>D</b>\(991\)</span>
+<span class="amc-opt"><b>E</b>\(999\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The product \((8)(888\dots8),\) where the second factor has \(k\) digits, is an integer whose digits have a sum of \(1000.\) What is \(k?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(901\)</span><span class="amc-opt"><b>(B)</b> \(911\)</span><span class="amc-opt"><b>(C)</b> \(919\)</span><span class="amc-opt"><b>(D)</b> \(991\)</span><span class="amc-opt"><b>(E)</b> \(999\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">21</span></p>
+<p>正整数 \(a\) 和 \(b\) 使得直线 \(y=ax+5\) 与 \(y=3x+b\) 在 \(x\) 轴上交于同一点。所有可能交点的 \(x\) 坐标之和是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(-20\)</span>
+<span class="amc-opt"><b>B</b>\(-18\)</span>
+<span class="amc-opt"><b>C</b>\(-15\)</span>
+<span class="amc-opt"><b>D</b>\(-12\)</span>
+<span class="amc-opt"><b>E</b>\(-8\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Positive integers \(a\) and \(b\) are such that the graphs of \(y=ax+5\) and \(y=3x+b\) intersect the \(x\)-axis at the same point. What is the sum of all possible \(x\)-coordinates of these points of intersection?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(-20\)</span><span class="amc-opt"><b>(B)</b> \(-18\)</span><span class="amc-opt"><b>(C)</b> \(-15\)</span><span class="amc-opt"><b>(D)</b> \(-12\)</span><span class="amc-opt"><b>(E)</b> \(-8\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">22</span></p>
+<p>在长方形 \(ABCD\) 中，\(\overline{AB}=20\)，\(\overline{BC}=10\)。点 \(E\) 在 \(\overline{CD}\) 上，且 \(\angle CBE=15^\circ\)。求 \(\overline{AE}\) 的长度。</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{20\sqrt3}3\)</span>
+<span class="amc-opt"><b>B</b>\(10\sqrt3\)</span>
+<span class="amc-opt"><b>C</b>\(18\)</span>
+<span class="amc-opt"><b>D</b>\(11\sqrt3\)</span>
+<span class="amc-opt"><b>E</b>\(20\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In rectangle \(ABCD,\) \(\overline{AB}=20\) and \(\overline{BC}=10.\) Let \(E\) be a point on \(\overline{CD}\) such that \(\angle CBE=15^\circ.\) What is \(\overline{AE}?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{20\sqrt3}3\)</span><span class="amc-opt"><b>(B)</b> \(10\sqrt3\)</span><span class="amc-opt"><b>(C)</b> \(18\)</span><span class="amc-opt"><b>(D)</b> \(11\sqrt3\)</span><span class="amc-opt"><b>(E)</b> \(20\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">23</span></p>
+<p>一张长方形纸的长是宽的 \(\sqrt3\) 倍，面积为 \(A\)。这张纸沿相对的长边分成三个相等部分，然后如图从一侧的第一个分点到另一侧的第二个分点画一条虚线。纸沿这条虚线折平，形成的新图形面积为 \(B\)。求 \(B:A\)。</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2014A/problem/q23-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1:2\)</span>
+<span class="amc-opt"><b>B</b>\(3:5\)</span>
+<span class="amc-opt"><b>C</b>\(2:3\)</span>
+<span class="amc-opt"><b>D</b>\(3:4\)</span>
+<span class="amc-opt"><b>E</b>\(4:5\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A rectangular piece of paper whose length is \(\sqrt3\) times the width has area \(A.\) The paper is divided into three equal sections along the opposite lengths, and then a dotted line is drawn from the first divider to the second divider on the opposite side as shown. The paper is then folded flat along this dotted line to create a new shape with area \(B.\) What is the ratio \(B:A?\)</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2014A/problem/q23-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1:2\)</span><span class="amc-opt"><b>(B)</b> \(3:5\)</span><span class="amc-opt"><b>(C)</b> \(2:3\)</span><span class="amc-opt"><b>(D)</b> \(3:4\)</span><span class="amc-opt"><b>(E)</b> \(4:5\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">24</span></p>
+<p>一个自然数序列按如下方式构造：先列出前 \(4\) 个数，然后跳过一个数；再列出接下来的 \(5\) 个数，跳过 \(2\) 个数；再列出 \(6\) 个数，跳过 \(3\) 个数；在第 \(n\) 次迭代中，列出 \(n+3\) 个数并跳过 \(n\) 个数。该序列开头为 \[1,2,3,4,6,7,8,9,10,13\text{。}\]这个序列的第 \(500{,}000\) 个数是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(996,\) \(\!506\)</span>
+<span class="amc-opt"><b>B</b>\(996,\) \(\!507\)</span>
+<span class="amc-opt"><b>C</b>\(996,\) \(\!508\)</span>
+<span class="amc-opt"><b>D</b>\(996,\) \(\!509\)</span>
+<span class="amc-opt"><b>E</b>\(996,\) \(\!510\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A sequence of natural numbers is constructed by listing the first \(4,\) then skipping one, listing the next \(5,\) skipping \(2,\) listing \(6,\) skipping \(3,\) and on the \(n\)th iteration, listing \(n+3\) and skipping \(n.\) The sequence begins \[1,2,3,4,6,7,8,9,10,13.\] What is the \(500{,}000\)th number in the sequence?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(996,\) \(\!506\)</span><span class="amc-opt"><b>(B)</b> \(996,\) \(\!507\)</span><span class="amc-opt"><b>(C)</b> \(996,\) \(\!508\)</span><span class="amc-opt"><b>(D)</b> \(996,\) \(\!509\)</span><span class="amc-opt"><b>(E)</b> \(996,\) \(\!510\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">25</span></p>
+<p>数 \(5^{867}\) 介于 \(2^{2013}\) 和 \(2^{2014}\) 之间。有多少对整数 \((m,n)\) 满足 \(1\leq m\leq 2012\) 且 \[5^n &lt; 2^m &lt; 2^{m+2} &lt; 5^{n+1}\text{？}\]</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(278\)</span>
+<span class="amc-opt"><b>B</b>\(279\)</span>
+<span class="amc-opt"><b>C</b>\(280\)</span>
+<span class="amc-opt"><b>D</b>\(281\)</span>
+<span class="amc-opt"><b>E</b>\(282\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The number \(5^{867}\) is between \(2^{2013}\) and \(2^{2014}.\) How many pairs of integers \((m,n)\) are there such that \(1\leq m\leq 2012\) and \[5^n &lt; 2^m &lt; 2^{m+2} &lt; 5^{n+1}?\]</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(278\)</span><span class="amc-opt"><b>(B)</b> \(279\)</span><span class="amc-opt"><b>(C)</b> \(280\)</span><span class="amc-opt"><b>(D)</b> \(281\)</span><span class="amc-opt"><b>(E)</b> \(282\)</span></p>
+</div>
+  </section>
+
+  
+  <details class="answer" id="answer">
+    <summary>
+      <span class="s-title">查看答案解析与下载</span>
+    </summary>
+    <div class="answer-body">
+      <h3>答案速查</h3>
+<table class="tbl"><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>答案</td><td>C</td><td>C</td><td>E</td><td>B</td><td>C</td><td>A</td><td>B</td><td>D</td><td>C</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr><tr><td>答案</td><td>B</td><td>C</td><td>C</td><td>C</td><td>D</td><td>C</td><td>E</td><td>D</td><td>B</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr><tr><td>答案</td><td>A</td><td>D</td><td>E</td><td>E</td><td>C</td><td>A</td><td>B</td></tr></table>
+<p class="muted">答案串：CCEBCABDCBCCCDCEDBADEECAB</p>
+<h3>逐题解析</h3>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">1</span> 答案 <b>C</b></p>
+<p>先计算括号内的和：\[\begin{aligned} &amp;\dfrac{1}{2} + \dfrac{1}{5} + \dfrac{1}{10} \\ &amp;= \dfrac{5}{10} + \dfrac{2}{10} + \dfrac{1}{10} \\&amp;= \dfrac{4}{5} \end{aligned}\text{。}\]</p>
+<p>因此 \(\left(\dfrac{4}{5}\right)^{-1} = \dfrac{5}{4}\)，最后得到 \[10 \cdot \dfrac{5}{4} = \dfrac{25}{2}\text{。}\]</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">We get that \[\begin{aligned} &amp;\dfrac{1}{2} + \dfrac{1}{5} + \dfrac{1}{10} \\ &amp;= \dfrac{5}{10} + \dfrac{2}{10} + \dfrac{1}{10} \\&amp;= \dfrac{4}{5}. \end{aligned}\]</p>
+<p class="amc-en">Then \(\left(\dfrac{4}{5}\right)^{-1} = \dfrac{5}{4}\) and then finally, \[10 \cdot \dfrac{5}{4} = \dfrac{25}{2}.\]</p>
+<p class="amc-en">Thus, <b>C</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">2</span> 答案 <b>C</b></p>
+<p>这只猫每个完整的一天共吃 \[ \dfrac{1}{3} + \dfrac{1}{4} = \dfrac{7}{12} \] 罐猫粮。经过 \(10\) 个完整的一天，它吃了 \(10\cdot\frac7{12}=\frac{35}{6}\) 罐，还剩 \(\frac16\) 罐。</p>
+<p>它会在下一次早晨喂食时吃完剩余部分。从星期一算作第一个早晨，第十一个早晨是星期四。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The cat eats \[ \dfrac{1}{3} + \dfrac{1}{4} = \dfrac{7}{12} \] cans of food each full day. After \(10\) full days, it has eaten \(10\cdot\frac7{12}=\frac{35}{6}\) cans, leaving \(\frac16\) of a can.</p>
+<p class="amc-en">The cat finishes that remainder during its next morning feeding. The eleventh morning, counting Monday as the first, is Thursday.</p>
+<p class="amc-en">Thus, <b>C</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">3</span> 答案 <b>E</b></p>
+<p>上午 Bridget 卖出 \(24\) 条面包，收入 \(24\cdot\$2.50=\$60\)。</p>
+<p>她还剩 \(24\) 条面包。下午她以半价卖出 \(\frac23\cdot24=16\) 条，收入 \(16\cdot\$1.25=\$20\)。</p>
+<p>剩下的 \(8\) 条卖得 \(\$8\)，所以总收入为 \(\$60+\$20+\$8=\$88\)。成本为 \(48\cdot\$0.75=\$36\)。</p>
+<p>她的利润为 \(\$88-\$36=\$52\)。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In the morning Bridget sells \(24\) loaves for \(24\cdot\$2.50=\$60\).</p>
+<p class="amc-en">She has \(24\) loaves left. In the afternoon she sells \(\frac23\cdot24=16\) loaves at half price, earning \(16\cdot\$1.25=\$20\).</p>
+<p class="amc-en">The remaining \(8\) loaves sell for \(\$8\), so her revenue is \(\$60+\$20+\$8=\$88\). Her cost is \(48\cdot\$0.75=\$36\).</p>
+<p class="amc-en">Her profit is \(\$88-\$36=\$52\).</p>
+<p class="amc-en">Thus, <b>E</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">4</span> 答案 <b>B</b></p>
+<p>蓝色必须在黄色之前且不相邻，所以蓝黄位置只能是 \((1,3)\)、\((1,4)\)、\((2,4)\)。</p>
+<p>每种情况下，橙色和红色填入剩下两个位置，并且橙色必须在红色之前，因此被唯一确定。三种排列依次为：橙、蓝、红、黄；蓝、橙、红、黄；蓝、橙、黄、红。</p>
+<p>共有 \(3\) 种排列。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Blue must come before yellow but not next to it, so they sit in positions \((1,3)\) or \((1,4)\) or \((2,4)\).</p>
+<p class="amc-en">In each case orange and red fill the two remaining spots with orange before red, which is forced. The three orderings are orange, blue, red, yellow; blue, orange, red, yellow; and blue, orange, yellow, red.</p>
+<p class="amc-en">There are \(3\) possible orderings.</p>
+<p class="amc-en">Thus, <b>B</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">5</span> 答案 <b>C</b></p>
+<p>\(45\%\) 的学生低于 \(90\) 分，\(25\%\) 的学生高于 \(90\) 分，所以中位数为 \(90\)。</p>
+<p>平均数为 \(0.10\cdot70\) \(+0.35\cdot80\) \(+0.30\cdot90\) \(+0.25\cdot100=87\)。</p>
+<p>差为 \(90-87=3\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The median is \(90\), because \(45\%\) of the students scored below \(90\) and \(25\%\) scored above \(90\).</p>
+<p class="amc-en">The mean is \(0.10\cdot70\) \(+0.35\cdot80\) \(+0.30\cdot90\) \(+0.25\cdot100=87\).</p>
+<p class="amc-en">The difference is \(90-87=3\).</p>
+<p class="amc-en">Thus, <b>C</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">6</span> 答案 <b>A</b></p>
+<p>先用 \(b\) 乘以 \(\dfrac{d}{a}\)，来调整奶牛数量。</p>
+<p>再乘以 \(\dfrac{e}{c}\)，来调整产奶天数。</p>
+<p>因此产奶量为 \[ b \cdot \dfrac{d}{a} \cdot \dfrac{e}{c} = \dfrac{bde}{ac}\text{。}\]</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">We have to multiply \(b\) by \(\dfrac{d}{a}\) to account for the new number of cows.</p>
+<p class="amc-en">We then have to multiply by \(\dfrac{e}{c}\) to account for the new time that we have.</p>
+<p class="amc-en">This gives us a final answer of \[ b \cdot \dfrac{d}{a} \cdot \dfrac{e}{c} = \dfrac{bde}{ac}. \]</p>
+<p class="amc-en">Thus, <b>A</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">7</span> 答案 <b>B</b></p>
+<p>把两个不等式相加，得到</p>
+<p>\[ x + y \lt a + b\text{，} \] 所以 <b>(I)</b> 必然成立。</p>
+<p>不等式不能直接相减，所以 <b>(II)</b> 不一定成立。</p>
+<p>例如取 \(x = 1\)、\(y = 1\)、\(a = 2\)、\(b = 3\)，就会得到错误的不等式 \(0 \lt -1\)。</p>
+<p><b>(III)</b> 也不一定成立，因为 \(x\) 和 \(y\) 可能都是负数。</p>
+<p>取 \(x = -3\)、\(y = -2\)、\(a = 1\)、\(b = 1\)，则 \(xy = 6\)，而 \(ab = 1\)，所以 <b>(III)</b> 不成立。</p>
+<p><b>(IV)</b> 也有同样的问题。使用同一组数，有 \(\dfrac{x}{y} = 1.5\)，而 \(\dfrac{a}{b} = 1\)。</p>
+<p>因此只有 <b>(I)</b> 必然成立。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Adding the two inequalities together gets us</p>
+<p class="amc-en">\[ x + y \lt a + b, \] which shows that <b>(I)</b> is correct.</p>
+<p class="amc-en">One cannot subtract inequalities, which means that <b>(II)</b> is not necessarily true.</p>
+<p class="amc-en">Consider \(x = 1,\) \(y = 1,\) \(a = 2,\) and \(b = 3\) as a counter-example. This would give us \(0 \lt -1.\)</p>
+<p class="amc-en"><b>(III)</b> is also not always true, since \(x\) and \(y\) might be negative numbers.</p>
+<p class="amc-en">Let \(x = -3,\) \(y = -2,\) \(a = 1,\) and \(b = 1.\) Then \(xy = 6\) and \(ab = 1\) which shows that <b>(III)</b> is wrong.</p>
+<p class="amc-en">The same thing occurs with <b>(IV)</b> . Using the same values as above, we have \(\dfrac{x}{y} = 1.5\) and \(\dfrac{a}{b} = 1.\)</p>
+<p class="amc-en">This shows that <b>(I)</b> is the only true statement.</p>
+<p class="amc-en">Thus, <b>B</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">8</span> 答案 <b>D</b></p>
+<p>注意每个选项都形如 \[ \dfrac{n!(n + 1)!}{2} = \dfrac{(n!)^2(n + 1)}{2}\text{。}\]其中 \((n!)^2\) 已经是完全平方数，所以还需要 \(\dfrac{n + 1}{2}\) 也是完全平方数。</p>
+<p>这说明 \(n + 1\) 必须是完全平方数的两倍。选项中只有 \(n + 1 = 18\)，因此 \(n = 17\)。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Note that all of these answer choices are of the form \[ \dfrac{n!(n + 1)!}{2} = \dfrac{(n!)^2(n + 1)}{2}. \] We have that \((n!)^2\) is square, so we need \(\dfrac{n + 1}{2}\) to be square as well.</p>
+<p class="amc-en">This means that \(n + 1\) must be twice a perfect square. The only choice we have is \(n + 1 = 18,\) which gives us \(n = 17.\)</p>
+<p class="amc-en">Thus, <b>D</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">9</span> 答案 <b>C</b></p>
+<p>三角形面积为 \[ \dfrac{1}{2} \cdot 2\sqrt{3} \cdot 6 = 6\sqrt{3}\text{。} \] 斜边长为 \[ \sqrt{(2\sqrt{3})^2 + 6^2} = \sqrt{48} = 4\sqrt{3}\text{。} \]</p>
+<p>设斜边上的高为 \(h\)， \[ \dfrac{1}{2} \cdot h \cdot 4\sqrt{3} = 6\sqrt{3} \] \[ h = 3\text{。} \]</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">We get that the area of the triangle is \[ \dfrac{1}{2} \cdot 2\sqrt{3} \cdot 6 = 6\sqrt{3}. \] The length of the hypotenuse is \[ \sqrt{(2\sqrt{3})^2 + 6^2} = \sqrt{48} = 4\sqrt{3}. \]</p>
+<p class="amc-en">Dropping the altitude, \(h,\) from the vertex to the hypotenuse, we get that \[ \dfrac{1}{2} \cdot h \cdot 4\sqrt{3} = 6\sqrt{3} \]\[ h = 3. \]</p>
+<p class="amc-en">Thus, <b>C</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">10</span> 答案 <b>B</b></p>
+<p>从 \(x\) 开始的 \(5\) 个连续整数的平均数为 \[ \dfrac{5x + 1 + 2 + 3 + 4}{5} = x + 2\text{。}\]</p>
+<p>因此，从 \(a\) 开始的 \(5\) 个连续整数的平均数为 \(a + 2\)，也就是 \(b\)。</p>
+<p>从 \(b\) 开始的 \(5\) 个连续整数的平均数为 \[b + 2 = a + 4\text{。}\]</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Note that the average of \(5\) consecutive numbers starting with \(x\) is \[ \dfrac{5x + 1 + 2 + 3 + 4}{5} = x + 2. \]</p>
+<p class="amc-en">This means that the average of \(5\) consecutive integers starting with \(a\) is \(a + 2,\) which we know is \(b.\)</p>
+<p class="amc-en">Furthermore, the average of \(5\) consecutive numbers starting with \(b\) is \[b + 2 = a + 4.\]</p>
+<p class="amc-en">Thus, <b>B</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">11</span> 答案 <b>C</b></p>
+<p>设标价为 \(x\)。</p>
+<p>优惠券 \(1\) 使价格变为 \(0.9x\)，优惠券 \(2\) 使价格变为 \(x - 20\)，优惠券 \(3\) 使价格变为 \[ x - 0.18(x - 100) = 0.82x + 18\text{。}\]</p>
+<p>需要同时满足 \[ 0.9x \lt x - 20 \] 和 \[ 0.9x \lt 0.82x + 18\text{。} \] 解这两个不等式，得到 \[200 \lt x \lt 225\text{。} \]</p>
+<p>选项中只有 \(\$ 219.95\) 符合。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let us analyze what these coupons do to an arbitrary price, \(x.\)</p>
+<p class="amc-en">Coupon \(1\) changes this price to \(0.9x.\) Coupon \(2\) changes the price to \(x - 20.\) Coupon \(3\) changes the price to \[ x - 0.18(x - 100) = 0.82x + 18. \]</p>
+<p class="amc-en">We want \[ 0.9x \lt x - 20 \] and \[ 0.9x \lt 0.82x + 18. \] Solving both gives us \[200 \lt x \lt 225. \]</p>
+<p class="amc-en">The only answer choice that works is \(\$ 219.95.\)</p>
+<p class="amc-en">Thus, <b>C</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">12</span> 答案 <b>C</b></p>
+<p>正六边形可以分成 \(6\) 个边长为 \(6\) 的等边三角形。</p>
+<p>边长为 \(s\) 的等边三角形面积为 \[ \dfrac{s^2 \sqrt{3}}{4}\text{。}\]</p>
+<p>因此正六边形的面积为 \[ 6 \cdot \dfrac{6^2 \sqrt{3}}{4} = 54\sqrt{3}\text{。}\]</p>
+<p>正六边形每个内角为 \(120^{\circ}\)，所以六个扇形合起来相当于 \(2\) 个完整圆。</p>
+<p>因此所有扇形的总面积为 \[ 2 \cdot 3^2 \pi = 18\pi\text{。}\]</p>
+<p>所以阴影区域的面积为 \[ 54\sqrt{3} - 18\pi\text{。}\]</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Note that we can split the hexagon up into \(6\) equilateral triangles each with side length \(6.\)</p>
+<p class="amc-en">Recall that the area of an equilateral triangle with side length \(s\) is \[ \dfrac{s^2 \sqrt{3}}{4}. \]</p>
+<p class="amc-en">This means that the area of the hexagon is \[ 6 \cdot \dfrac{6^2 \sqrt{3}}{4} = 54\sqrt{3}. \]</p>
+<p class="amc-en">Since each interior angle of a regular hexagon is \(120^{\circ},\) the six sectors form \(2\) full circles.</p>
+<p class="amc-en">This means that the area of all the sectors is \[ 2 \cdot 3^2 \pi = 18\pi. \]</p>
+<p class="amc-en">The area of the shaded region is then \[ 54\sqrt{3} - 18\pi. \]</p>
+<p class="amc-en">Thus, <b>C</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">13</span> 答案 <b>C</b></p>
+<p>求出各个小块的面积，再把它们相加。</p>
+<p>中央等边三角形的面积为 \[ \dfrac{1^2 \sqrt{3}}{4} = \dfrac{\sqrt{3}}{4}\text{。}\]</p>
+<p>所有正方形的总面积为 \[ 3 \cdot 1^2 = 3\text{。}\]</p>
+<p>另外，\[ \angle EAF = 360^{\circ} - 60^{\circ} - 2 \cdot 90^{\circ}\]\[ = 120^{\circ}\text{。}\]</p>
+<p>又有 \(AE=AF=1\)，且 \(\angle EAF=120^\circ\)。从 \(A\) 向底边作高可得 \(EF=\sqrt3\)，高为 \(\frac12\)，所以 \([EAF]=\frac{\sqrt3}{4}\)。另外两个外侧三角形面积相同。因此它们的总面积为 \(\frac{3\sqrt3}{4}\)。</p>
+<p>总面积为 \[ \dfrac{\sqrt{3}}{4} + \dfrac{3\sqrt{3}}{4} + 3 = 3 + \sqrt{3}\text{。}\]</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">We can find the areas of all the individual pieces and then add them up together.</p>
+<p class="amc-en">The area of the center equilateral triangle is \[ \dfrac{1^2 \sqrt{3}}{4} = \dfrac{\sqrt{3}}{4}. \]</p>
+<p class="amc-en">We have that the areas of all the squares is \[ 3 \cdot 1^2 = 3. \]</p>
+<p class="amc-en">We also have that \[ \angle EAF = 360^{\circ} - 60^{\circ} - 2 \cdot 90^{\circ}\]\[ = 120^{\circ}. \]</p>
+<p class="amc-en">Also, \(AE=AF=1\) and \(\angle EAF=120^\circ\). Dropping the altitude from \(A\) shows that \(EF=\sqrt3\) and the altitude is \(\frac12\), so \([EAF]=\frac{\sqrt3}{4}\). The other two outer triangles have the same area. Thus their combined area is \(\frac{3\sqrt3}{4}\).</p>
+<p class="amc-en">The total area is then \[ \dfrac{\sqrt{3}}{4} + \dfrac{3\sqrt{3}}{4} + 3 = 3 + \sqrt{3}. \]</p>
+<p class="amc-en">Thus, <b>C</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">14</span> 答案 <b>D</b></p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2014A/solution/q14-sol-1.svg" alt="题图" loading="lazy"></p>
+<p>两个 \(y\) 轴截距到原点的距离相等，因为它们的数值之和为 \(0\)。</p>
+<p>设这个距离为 \(z\)。因为两条给定直线互相垂直，\(\triangle APQ\) 在 \(A\) 处为直角。原点是斜边 \(PQ\) 的中点，所以它到 \(P\)、\(Q\) 和 \(A\) 的距离相等。因此 \(A\) 到原点的距离也是 \(z\)。</p>
+<p>由距离公式，\[ z = \sqrt{6^2 + 8^2} = 10\text{。}\]从 \(A\) 到 \(\overline{PQ}\) 的高为 \(6\)（也就是 \(A\) 的 \(x\) 坐标）。</p>
+<p>又有 \(PQ = 2 \cdot 10 = 20\)，所以面积为 \[ [APQ] = \dfrac{1}{2} \cdot 6 \cdot 20 = 60\text{。}\]</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2014A/solution/q14-sol-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-en">We have that the \(y\)-intercepts are an equal distance from the origin since their values sum to \(0.\)</p>
+<p class="amc-en">Let this distance be \(z.\) Because the two given lines are perpendicular, \(\triangle APQ\) is right at \(A\). The origin is the midpoint of its hypotenuse \(PQ\), so it is equidistant from \(P\), \(Q\), and \(A\). Hence the distance from \(A\) to the origin is also \(z\).</p>
+<p class="amc-en">We then know that \[ z = \sqrt{6^2 + 8^2} = 10 \] by the distance formula. We know the altitude from \(A\) to \(\overline{PQ}\) is \(6\) (it is just the \(x\)-value of \(A\)).</p>
+<p class="amc-en">We also know that \(PQ = 2 \cdot 10 = 20,\) which tells us that the area \[ [APQ] = \dfrac{1}{2} \cdot 6 \cdot 20 = 60. \]</p>
+<p class="amc-en">Thus, <b>D</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">15</span> 答案 <b>C</b></p>
+<p>第一小时后，David 的速度为 \(50\) 英里每小时。</p>
+<p>若机场离家 \(x\) 英里，则两种行程时间相差一个半小时，因此 \[\dfrac x{35} - \left(1+\dfrac{x-35}{50}\right) = \dfrac 32\text{。}\]解这个方程：\[\begin{aligned} \dfrac x{35} - \left(1+\dfrac{x-35}{50}\right) &amp;= \dfrac 32\\ \dfrac x{35} - \dfrac{x-35+50}{50} &amp;= \dfrac 32\\ 10x - 7(x+15)&amp;= 525\\ 10x - 7x-105&amp;= 525\\ 3x&amp;= 630\\ x&amp;=210 \end{aligned}\] 所以机场离家 \(x=210\) 英里。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Note that David drives at \(50\) miles per hour after one hour.</p>
+<p class="amc-en">Then, if the airport is \(x\) miles from David’s house, we know that: \[\dfrac x{35} - \left(1+\dfrac{x-35}{50}\right) = \dfrac 32\] We solve this equation as follows: \[\begin{aligned} \dfrac x{35} - \left(1+\dfrac{x-35}{50}\right) &amp;= \dfrac 32\\ \dfrac x{35} - \dfrac{x-35+50}{50} &amp;= \dfrac 32\\ 10x - 7(x+15)&amp;= 525\\ 10x - 7x-105&amp;= 525\\ 3x&amp;= 630\\ x&amp;=210 \end{aligned}\] Therefore, the airport is \(x=210\) miles from David’s house.</p>
+<p class="amc-en">Thus, <b>C</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">16</span> 答案 <b>E</b></p>
+<p>用 \(\triangle DHC\) 的面积减去两个未涂阴影的小三角形。</p>
+<p>把 \(\overline{DH}\) 延长到 \(B\)。令 \(\overline{DB}\) 与 \(\overline{AF}\) 交于 \(X\)。</p>
+<p>有 \(\triangle DXF\sim\triangle BXA\)。由于 \(AB=2\cdot DF\)，对应边成比例，所以 \(BX=2\cdot DX\)。</p>
+<p>这说明 \(DX = \dfrac{1}{3} \cdot DB\)，所以 \(\triangle DXF\) 的高是长方形高度的 \(\dfrac{1}{3}\)。</p>
+<p>\(\triangle DXF\) 的面积为 \[ \dfrac{1}{2} \cdot \dfrac{1}{2} \cdot \dfrac{2}{3} = \dfrac{1}{6}\text{。}\]</p>
+<p>两个未涂阴影小三角形面积合计为 \(2 \cdot \dfrac{1}{6} = \dfrac{1}{3}\)。\(\triangle DHC\) 的面积为 \[ \dfrac{1}{2} \cdot 1 \cdot 1 = \dfrac{1}{2}\text{。}\]</p>
+<p>因此阴影区域面积为 \(\dfrac{1}{2} - \dfrac{1}{3} = \dfrac{1}{6}\)。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">We can find the area of the shaded region by finding the area of \(\triangle DHC\) and subtracting out the two unshaded triangles.</p>
+<p class="amc-en">Extend \(\overline{DH}\) so that it hits \(B.\) Let the intersection of \(\overline{DB}\) and \(\overline{AF}\) be \(X.\)</p>
+<p class="amc-en">We have that \(\triangle DXF\sim\triangle BXA.\) Since \(AB=2\cdot DF\), corresponding sides give \(BX=2\cdot DX\).</p>
+<p class="amc-en">This means that \(DX = \dfrac{1}{3} \cdot DB,\) which means that the altitude of \(\triangle DXF\) is \(\dfrac{1}{3}\) the height of the rectangle.</p>
+<p class="amc-en">The area of \(\triangle DXF\) is then \[ \dfrac{1}{2} \cdot \dfrac{1}{2} \cdot \dfrac{2}{3} = \dfrac{1}{6}. \]</p>
+<p class="amc-en">The area of both unshaded triangles is then \(2 \cdot \dfrac{1}{6} = \dfrac{1}{3}.\) The area of \(\triangle DHC\) is \[ \dfrac{1}{2} \cdot 1 \cdot 1 = \dfrac{1}{2}. \]</p>
+<p class="amc-en">The area of the shaded region is then \(\dfrac{1}{2} - \dfrac{1}{3} = \dfrac{1}{6}.\)</p>
+<p class="amc-en">Thus, <b>E</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">17</span> 答案 <b>D</b></p>
+<p>若一枚骰子的点数是另外两枚之和，它必然是三枚中最大的。</p>
+<p>先选哪一枚是这个和，有 \(3\) 种方式。</p>
+<p>最大骰子的点数不能为 \(1\)，因为两个正整数之和不可能是 \(1\)。</p>
+<p>它取其余每个点数的概率都是 \(\dfrac{1}{6}\)。</p>
+<p>和为 \(2\) 时有 \(1\) 种有序数对，和为 \(3\) 时有 \(2\) 种，和为 \(4\) 时有 \(3\) 种，和为 \(5\) 时有 \(4\) 种，和为 \(6\) 时有 \(5\) 种。</p>
+<p>另外两枚骰子共有 \(6^2 = 36\) 种有序结果，所以所求概率为 \[ 3 \cdot \dfrac{1}{6} \cdot \dfrac{1 + 2 + 3 + 4 + 5}{36} = \dfrac{5}{24}\text{。}\]</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Note that if one die is the sum of the other two dice, then it is strictly greater than the other two dice.</p>
+<p class="amc-en">There are \(3\) ways to choose which of the dice is the sum of the other two, which makes it the greatest.</p>
+<p class="amc-en">This die cannot be \(1,\) since there is no way to sum two positive integers to get \(1.\)</p>
+<p class="amc-en">There is a \(\dfrac{1}{6}\) chance that this die is any of the other numbers.</p>
+<p class="amc-en">There is \(1\) way to get a sum of \(2,\) \(2\) ways for \(3,\) \(3\) for \(4,\) \(4\) for \(5,\) and \(5\) for \(6.\)</p>
+<p class="amc-en">We take these numbers of ways out of a total of \(6^2 = 36\) possibilities. The desired probability is then \[ 3 \cdot \dfrac{1}{6} \cdot \dfrac{1 + 2 + 3 + 4 + 5}{36} = \dfrac{5}{24}. \]</p>
+<p class="amc-en">Thus, <b>D</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">18</span> 答案 <b>B</b></p>
+<p>正方形的一对对角顶点具有相同的 \(y\) 坐标平均值。因此两对对角顶点的 \(y\) 坐标必须分别是 \((0,5)\) 和 \((1,4)\)，因为只有这两对的和相等。特别地，\(y\) 坐标为 \(0\) 的顶点，与 \(y\) 坐标为 \(1\) 和 \(4\) 的顶点相邻。</p>
+<p>设一个顶点为 \(A=(0,0)\)，与它相邻且 \(y\) 坐标为 \(1\) 的顶点为 \(B=(x,1)\)，其中 \(x&gt;0\)。</p>
+<p>把边向量 \((x,1)\) 旋转 \(90^\circ\)，得到下一条边的向量 \((-1,x)\)，所以另一个顶点的纵坐标为 \(x\)。剩余纵坐标为 \(4\) 和 \(5\)，故 \(x=4\)。</p>
+<p>边长的平方为 \(AB^2=x^2+1^2=4^2+1=17\)，也就是正方形的面积。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Opposite vertices of a square have the same average \(y\)-coordinate. Thus the opposite pairs must have \(y\)-coordinates \((0,5)\) and \((1,4)\), the two pairs with equal sum. In particular, a vertex with \(y\)-coordinate \(0\) is adjacent to vertices with \(y\)-coordinates \(1\) and \(4\).</p>
+<p class="amc-en">Let one vertex be \(A=(0,0)\), and let its adjacent vertex with \(y\)-coordinate \(1\) be \(B=(x,1)\) with \(x&gt;0\).</p>
+<p class="amc-en">Rotating the side vector \((x,1)\) by \(90^\circ\) gives the next side vector \((-1,x)\), so another vertex has y-coordinate \(x\). The remaining y-coordinates are \(4\) and \(5\), hence \(x=4\).</p>
+<p class="amc-en">The side length squared is \(AB^2=x^2+1^2=4^2+1=17\), which is the area of the square.</p>
+<p class="amc-en">Thus, <b>B</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">19</span> 答案 <b>A</b></p>
+<p>从 \(X\) 到 \(Y\) 的 \(z\) 轴方向距离为 \[ 1 + 2 + 3 + 4 = 10\text{。}\]</p>
+<p>沿 \(x\) 轴和 \(y\) 轴方向的距离都为 \(4\)。</p>
+<p>因此线段全长为 \[ XY = \sqrt{4^2 + 4^2 + 10^2} = 2\sqrt{33}\text{。}\]</p>
+<p>取坐标 \(X=(0,0,10)\)、\(Y=(4,4,0)\)。直线与边长为 \(3\) 的立方体的上、下表面分别交于 \((\frac65,\frac65,7)\) 和 \((\frac{12}5,\frac{12}5,4)\)。两点都在相应的正方形面内，所以线段位于这个立方体内部的部分确实有 \(3\) 的竖直变化量。</p>
+<p>设所求长度为 \(x\)。由相似三角形可得 \[ \dfrac{x}{3} = \dfrac{2\sqrt{33}}{10} \]\[ x = \dfrac{3\sqrt{33}}{5}\text{。}\]</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The distance between \(X\) and \(Y\) with respect to the \(z\)-axis is \[ 1 + 2 + 3 + 4 = 10. \]</p>
+<p class="amc-en">Both the distances along the \(x\) and \(y\)-axes are \(4.\)</p>
+<p class="amc-en">Then \[ XY = \sqrt{4^2 + 4^2 + 10^2} = 2\sqrt{33}. \]</p>
+<p class="amc-en">Using coordinates \(X=(0,0,10)\) and \(Y=(4,4,0)\), the line meets the top and bottom of the side-\(3\) cube at \((\frac65,\frac65,7)\) and \((\frac{12}5,\frac{12}5,4)\). Both points lie inside those square faces, so the portion inside this cube really does have vertical change \(3\).</p>
+<p class="amc-en">Let the desired length be \(x.\) Then using similar triangles, we have that \[ \dfrac{x}{3} = \dfrac{2\sqrt{33}}{10} \]\[ x = \dfrac{3\sqrt{33}}{5}. \]</p>
+<p class="amc-en">Thus, <b>A</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">20</span> 答案 <b>D</b></p>
+<p>由 \(k\) 个数字 \(8\) 组成的数为 \(8\frac{10^k-1}{9}\)，所以乘积为 \[ \begin{aligned} 64\frac{10^k-1}{9} &amp;=7\cdot10^k\\ &amp;\quad+100\frac{10^{k-2}-1}{9}\\ &amp;\quad+4 \end{aligned}\text{。}\]当 \(k\ge2\) 时，这个数的各位依次是 \(7\)、\(k-2\) 个一，再接 \(0,4\)。</p>
+<p>因此，对任意 \(k \geq 3\)，乘积的各位数字和为 \[ 7 + 4 + 0 + k - 2 = k + 9\text{。}\]</p>
+<p>最后解得 \[ k + 9 = 1000 \] \[ k = 991\text{。}\]</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The \(k\)-digit number made entirely of \(8\)s is \(8\frac{10^k-1}{9}\), so the product is \[ \begin{aligned} 64\frac{10^k-1}{9} &amp;=7\cdot10^k\\ &amp;\quad+100\frac{10^{k-2}-1}{9}\\ &amp;\quad+4. \end{aligned} \] For \(k\ge2\), this is the number whose digits are \(7\), followed by \(k-2\) ones, then \(0,4\).</p>
+<p class="amc-en">This means that for any \(k \geq 3,\) the sum of the digits in the product is \[ 7 + 4 + 0 + k - 2 = k + 9. \]</p>
+<p class="amc-en">Finally, we get \[ k + 9 = 1000 \]\[ k = 991. \]</p>
+<p class="amc-en">Thus, <b>D</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">21</span> 答案 <b>E</b></p>
+<p>两条直线与 \(x\) 轴相交时 \(y = 0\)。因此 \[ 0 = ax + 5\] 且 \[ 0 = 3x + b\text{，} \] 解得 \[ x = -\dfrac{5}{a}\] 和 \[ x = -\dfrac{b}{3}\text{。} \]</p>
+<p>令二者相等，得到 \[ \dfrac{5}{a} = \dfrac{b}{3} \] \[ ab = 15\text{。}\]</p>
+<p>因为 \(a\) 和 \(b\) 都是正整数，所以 \((a, b)\) 只能是 \[ (1, 15)\text{，}\]\[ (3, 5)\text{，}\]\[ (5, 3)\text{，}\]\[(15, 1)\text{。}\]</p>
+<p>对应的 \(x\) 坐标为 \[ x = -5, -\dfrac{5}{3}, -1, -\dfrac{1}{3}\text{。} \] 它们的和为 \(-8\)。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Note that the lines intersect the \(x\)-axis when \(y = 0.\) This gives us \[ 0 = ax + 5\] and \[ 0 = 3x + b, \] which when solved gives us \[ x = -\dfrac{5}{a}\] and \[ x = -\dfrac{b}{3}. \]</p>
+<p class="amc-en">Setting these equal to each other, we have \[ \dfrac{5}{a} = \dfrac{b}{3} \]\[ ab = 15. \]</p>
+<p class="amc-en">We know that \(a\) and \(b\) are positive, which means that the only pairs of values \((a, b)\) that satisfy the above equation are \[ (1, 15),\]\[ (3, 5),\]\[ (5, 3),\] \[(15, 1).\]</p>
+<p class="amc-en">Plugging these values back into the equations gives us \(x\)-values of \[ x = -5, -\dfrac{5}{3}, -1, -\dfrac{1}{3}. \] The sum of all these values is \(-8.\)</p>
+<p class="amc-en">Thus, <b>E</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">22</span> 答案 <b>E</b></p>
+<p>在 \(\overline{CD}\) 上取点 \(E'\)，使 \(AE'=AB=20\)。</p>
+<p>因为 \(AD=10\)，三角形 \(ADE'\) 是 \(30\)-\(60\)-\(90\) 三角形，所以 \(\angle DAE'=60^\circ\)，从而 \(\angle BAE'=30^\circ\)。</p>
+<p>又 \(AE'=AB\)，所以三角形 \(ABE'\) 是等腰三角形，顶点在 \(A\)，顶角为 \(30^\circ\)，两个底角为 \(75^\circ\)。</p>
+<p>于是 \(\angle CBE'=90^\circ-75^\circ=15^\circ\)，因此 \(E'=E\)，所以 \(AE=20\)。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(E'\) be the point on \(\overline{CD}\) such that \(AE'=AB=20\).</p>
+<p class="amc-en">Since \(AD=10\), triangle \(ADE'\) is a \(30\)-\(60\)-\(90\) triangle, so \(\angle DAE'=60^\circ\) and \(\angle BAE'=30^\circ\).</p>
+<p class="amc-en">Also \(AE'=AB\), so triangle \(ABE'\) is isosceles. Its vertex angle at \(A\) is \(30^\circ\), so each base angle is \(75^\circ\).</p>
+<p class="amc-en">Therefore \(\angle CBE'=90^\circ-75^\circ=15^\circ\), so \(E'=E\), and \(AE=20\).</p>
+<p class="amc-en">Thus, <b>E</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">23</span> 答案 <b>C</b></p>
+<p>不妨设长方形宽为 \(1\)，长为 \(\sqrt3\)。</p>
+<p>画出过折线中点的垂线，如图。</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2014A/solution/q23-sol-1.svg" alt="题图" loading="lazy"></p>
+<p>注意 \(QR = \dfrac{2\sqrt3}{3}\)，并且 \[ QT = \sqrt{1^2 + \left(\dfrac{\sqrt3}{3}\right)^2}\] \[ = \sqrt{1 + \dfrac{1}{3}} = \sqrt{\dfrac{4}{3}}\text{。}\]因此 \[ QT = \dfrac{2\sqrt3}{3} = QR\text{。}\]这说明 \(\triangle QRT\) 是等边三角形；同理，\(\triangle RTS\) 也是等边三角形，所以两个三角形全等。</p>
+<p>折叠后，这个三角形区域会发生重叠。长方形面积为 \(1 \cdot \sqrt3 = \sqrt3\)，该三角形的边长为 \(QT = \dfrac{2\sqrt3}{3}\)，所以它的面积为 \[ \left(\dfrac{2\sqrt3}{3}\right)^2 \cdot \dfrac{\sqrt3}{4} = \dfrac{\sqrt3}{3}\text{。}\]折后图形面积为 \[ \sqrt3 - \dfrac{\sqrt3}{3} = \dfrac{2\sqrt3}{3}\text{。}\]所求比值为 \[ \dfrac{2\sqrt3}{3} \div \sqrt3 = \dfrac{2}{3}\text{。}\]因此 \(B:A=2:3\)。所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">WLOG, let the width of the rectangle be \(1\) and the length be \(\sqrt3.\)</p>
+<p class="amc-en">Draw the line perpendicular to the midpoint of the fold, as shown below.</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2014A/solution/q23-sol-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-en">Note that \(QR = \dfrac{2\sqrt3}{3}\) and \[ QT = \sqrt{1^2 + \left(\dfrac{\sqrt3}{3}\right)^2}\]\[ = \sqrt{1 + \dfrac{1}{3}} = \sqrt{\dfrac{4}{3}}. \] This tells us \[ QT = \dfrac{2\sqrt3}{3} = QR. \] This means that \(\triangle QRT\) is equilateral. Similarly, \(\triangle RTS\) is equilateral. This makes the two triangles congruent.</p>
+<p class="amc-en">This means that after the rectangle gets folded, this area will be overlapped. The area of the rectangle is \(1 \cdot \sqrt3 = \sqrt3.\) The side length of this triangle is \(QT = \dfrac{2\sqrt3}{3}.\) The area of it is then \[ \left(\dfrac{2\sqrt3}{3}\right)^2 \cdot \dfrac{\sqrt3}{4} = \dfrac{\sqrt3}{3}. \] The area of the folded figure is then \[ \sqrt3 - \dfrac{\sqrt3}{3} = \dfrac{2\sqrt3}{3}. \] The desired ratio is then \[ \dfrac{2\sqrt3}{3} \div \sqrt3 = \dfrac{2}{3}. \] Therefore \(B:A=2:3\). Thus, <b>C</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">24</span> 答案 <b>A</b></p>
+<p>完整 \(n\) 次迭代后，列出的项数为 \(4+5+\cdots+(n+3)=\frac{n(n+7)}2\)。</p>
+<p>需要最大的 \(n\) 使 \(\frac{n(n+7)}2&lt;500000\)。因为 \(996\cdot1003=998988\)，所以 \(996\) 次迭代后列出了 \(499494\) 项。</p>
+<p>第 \(997\) 次迭代列出的第一个数，是此前所有列出和跳过的数的总数再加一，即 \(996^2+4\cdot996+1=996001\)。</p>
+<p>第 \(500000\) 个列出的数，是下一段中的第 \(500000-499494=506\) 个数，所以它是 \(996001+505=996506\)。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">After \(n\) full iterations, the number of listed terms is \(4+5+\cdots+(n+3)=\frac{n(n+7)}2\).</p>
+<p class="amc-en">We need the largest \(n\) with \(\frac{n(n+7)}2&lt;500000\). Since \(996\cdot1003=998988\), after \(996\) iterations there are \(499494\) listed numbers.</p>
+<p class="amc-en">The first number listed in iteration \(997\) is one more than the total of all listed and skipped numbers so far, namely \(996^2+4\cdot996+1=996001\).</p>
+<p class="amc-en">The \(500000\)th listed number is the \(500000-499494=506\)th number of this next block, so it is \(996001+505=996506\).</p>
+<p class="amc-en">Thus, <b>A</b> is the correct answer.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">25</span> 答案 <b>B</b></p>
+<p>因为 \(2^2&lt;5&lt;2^3\)，每个区间 \((5^n,5^{n+1})\) 中包含两个或三个 \(2\) 的幂。题目的不等式恰好对应含有三个这样的幂的区间。</p>
+<p>对 \(0\le n&lt;867\)，设含两个 \(2\) 的幂的区间有 \(d\) 个，含三个 \(2\) 的幂的区间有 \(t\) 个，则 \(d+t=867\)。</p>
+<p>由 \(2^{2013}&lt;5^{867}&lt;2^{2014}\) 可知，这些区间一共包含 \(2013\) 个 \(2\) 的幂，所以 \(2d+3t=2013\)。</p>
+<p>解这个方程组得到 \(t=279\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since \(2^2&lt;5&lt;2^3\), each interval \((5^n,5^{n+1})\) contains either two or three powers of \(2\). The desired inequality holds exactly for intervals containing three such powers.</p>
+<p class="amc-en">For \(0\le n&lt;867\), let \(d\) be the number of intervals with two powers of \(2\), and let \(t\) be the number with three powers of \(2\). Then \(d+t=867\).</p>
+<p class="amc-en">Because \(2^{2013}&lt;5^{867}&lt;2^{2014}\), these intervals contain \(2013\) powers of \(2\) altogether, so \(2d+3t=2013\).</p>
+<p class="amc-en">Solving the system gives \(t=279\).</p>
+<p class="amc-en">Thus, <b>B</b> is the correct answer.</p>
+</div>
+    </div>
+    <p class="dl-row">
+      
+      <a class="btn" href="https://t.fengg.net/docs-dl/public/download/%E6%95%B0%E5%AD%A6/AMC10(P%E7%89%88)/2014A%20AMC%2010%20%E7%9C%9F%E9%A2%98%E4%B8%8E%E8%A7%A3%E7%AD%94.docx" download="2014A AMC 10 真题与解答.docx" title="2014A AMC 10 真题与解答.docx">下载本题 Word 原文件（含答案解析）</a>
+      
+    </p>
+  </details>
+  
+
+  <nav class="siblings" aria-label="同分类的上一套与下一套">
+    
+    <a class="sib prev" href="/docs/amc10p-2013b/" rel="prev">
+      <i aria-hidden="true">←</i>
+      <span><b>上一套</b><em>2013B AMC 10 真题（P版）</em></span>
+    </a>
+    
+    
+    <a class="sib next" href="/docs/amc10p-2014b/" rel="next">
+      <span><b>下一套</b><em>2014B AMC 10 真题（P版）</em></span>
+      <i aria-hidden="true">→</i>
+    </a>
+    
+  </nav>
+
+  <p class="back"><a href="/c/math/">← 返回数学</a></p>
+</article>
+
+<button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 8.8V19h-2V8.8L6.4 13.4 5 12z" fill="currentColor"/></svg>
+</button>
+
+<script>
+(function () {
+  function openIfHash() {
+    if (location.hash === '#answer') {
+      var el = document.getElementById('answer');
+      if (el) { el.open = true; el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    }
+  }
+  openIfHash();
+  window.addEventListener('hashchange', openIfHash);
+
+  var top = document.querySelector('.to-top');
+  if (top) {
+    function onScroll() {
+      if (window.scrollY > 420) top.classList.add('show');
+      else top.classList.remove('show');
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    top.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // 同分类翻页快捷键：[ 上一套，] 下一套
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var sel = e.key === '[' ? '.sib.prev[href]' : (e.key === ']' ? '.sib.next[href]' : null);
+    if (!sel) return;
+    var a = document.querySelector(sel);
+    if (a) { e.preventDefault(); location.href = a.href; }
+  });
+})();
+</script>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-line">
+      <span>© 2026 Feng</span>
+      <span class="dot">·</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></span>
+    </div>
+    <p class="foot-note">本站内容均来源于网络，版权归原作者所有，仅供学习交流使用，请勿用于商业用途。</p>
+  </div>
+</footer>
+<script>
+(function () {
+  /* ---------- 深色模式 ---------- */
+  var root = document.documentElement;
+  var toggle = document.querySelector('.theme-toggle');
+  function osDark() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function isDark() {
+    var t = root.getAttribute('data-theme');
+    if (t === 'dark') return true;
+    if (t === 'light') return false;
+    return osDark();
+  }
+  function label() {
+    if (!toggle) return;
+    var d = isDark();
+    toggle.setAttribute('aria-label', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('title', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('aria-pressed', d ? 'true' : 'false');
+  }
+  if (toggle) {
+    label();
+    toggle.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) { /* noop */ }
+      label();
+    });
+  }
+  if (window.matchMedia) {
+    var mqDark = window.matchMedia('(prefers-color-scheme: dark)');
+    if (mqDark.addEventListener) mqDark.addEventListener('change', label);
+  }
+
+  /* ---------- 顶部导航 ---------- */
+  var nav = document.querySelector('.nav');
+  var navToggle = document.querySelector('.nav-toggle');
+  if (!nav || !navToggle) return;
+  var mq = window.matchMedia('(max-width: 720px)');
+  function closeAll() {
+    nav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    Array.prototype.forEach.call(nav.querySelectorAll('.open'), function (x) { x.classList.remove('open'); });
+  }
+  navToggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var on = nav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', on ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) {
+    if (!mq.matches) return;
+    var a = e.target.closest ? e.target.closest('a') : null;
+    if (!a) return;
+    var host = a.parentNode;
+    if (host && host.classList.contains('nav-drop') && a.classList.contains('has-caret')) {
+      e.preventDefault();
+      host.classList.toggle('open');
+    }
+  });
+  document.addEventListener('click', function (e) {
+    if (mq.matches && !nav.contains(e.target) && !navToggle.contains(e.target)) closeAll();
+  });
+  // 键盘 Esc 收起移动端菜单
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mq.matches && nav.classList.contains('open')) {
+      closeAll();
+      navToggle.focus();
+    }
+  });
+
+  /* ---------- 搜索快捷键：/ 聚焦，Ctrl(⌘)+K 打开 ---------- */
+  var searchLink = document.querySelector('.nav-s');
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    var typing = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable);
+    if ((e.ctrlKey || e.metaKey) && !e.shiftKey && (e.key === 'k' || e.key === 'K')) {
+      e.preventDefault();
+      var box = document.querySelector('.sbox-input');
+      if (box) { box.focus(); box.select(); }
+      else if (searchLink) location.href = searchLink.href;
+      return;
+    }
+    if (typing || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.key === '/') {
+      var box2 = document.querySelector('.sbox-input');
+      if (box2) { e.preventDefault(); box2.focus(); box2.select(); }
+      else if (searchLink) { e.preventDefault(); location.href = searchLink.href; }
+    }
+  });
+})();
+</script>
+</body>
+</html>

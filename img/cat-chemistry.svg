@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="化学：锥形瓶与苯环">
+  <defs>
+    <linearGradient id="cBg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#fdf8f1"/>
+      <stop offset="0.55" stop-color="#fbeee0"/>
+      <stop offset="1" stop-color="#f4ddc8"/>
+    </linearGradient>
+    <linearGradient id="cLiq" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#f6a552"/>
+      <stop offset="1" stop-color="#d96a1f"/>
+    </linearGradient>
+    <linearGradient id="cGlass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.45"/>
+    </linearGradient>
+    <clipPath id="cFlask">
+      <path d="M418 132 L348 300 Q340 330 372 332 L512 332 Q544 330 536 300 L466 132 Z"/>
+    </clipPath>
+    <pattern id="cGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#d9b795" stroke-opacity="0.34" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="640" height="400" fill="url(#cBg)"/>
+  <rect width="640" height="400" fill="url(#cGrid)"/>
+
+  <!-- 锥形瓶 -->
+  <g>
+    <path d="M418 132 L348 300 Q340 330 372 332 L512 332 Q544 330 536 300 L466 132 Z" fill="url(#cGlass)"/>
+    <g clip-path="url(#cFlask)">
+      <path d="M381 220 L503 220 L536 300 Q544 330 512 332 L372 332 Q340 330 348 300 Z" fill="url(#cLiq)"/>
+      <ellipse cx="440" cy="222" rx="60" ry="7" fill="#ffc98a" fill-opacity="0.55"/>
+      <circle cx="404" cy="286" r="8" fill="#ffd7a6" fill-opacity="0.55"/>
+      <circle cx="462" cy="272" r="5.5" fill="#ffd7a6" fill-opacity="0.5"/>
+      <circle cx="492" cy="300" r="7" fill="#ffd7a6" fill-opacity="0.45"/>
+      <circle cx="430" cy="310" r="4.5" fill="#ffd7a6" fill-opacity="0.4"/>
+    </g>
+    <path d="M418 132 L348 300 Q340 330 372 332 L512 332 Q544 330 536 300 L466 132"
+          fill="none" stroke="#b8744a" stroke-width="3.6" stroke-linejoin="round" stroke-opacity="0.85"/>
+    <path d="M418 132 L418 68 Q418 60 426 60 L456 60 Q464 60 464 68 L464 132"
+          fill="none" stroke="#b8744a" stroke-width="3.6" stroke-linejoin="round" stroke-opacity="0.85"/>
+    <ellipse cx="441" cy="60" rx="23" ry="6.5" fill="#fff8ef" stroke="#b8744a" stroke-width="3" stroke-opacity="0.85"/>
+    <path d="M436 84 L436 126" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-opacity="0.75"/>
+    <path d="M372 268 L360 296" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-opacity="0.5"/>
+  </g>
+
+  <!-- 上升气泡 -->
+  <circle cx="452" cy="112" r="6" fill="none" stroke="#e08a3c" stroke-width="2.4" stroke-opacity="0.7"/>
+  <circle cx="470" cy="92" r="4" fill="none" stroke="#e08a3c" stroke-width="2.2" stroke-opacity="0.55"/>
+
+  <!-- 苯环 -->
+  <g transform="translate(150 132)">
+    <polygon points="0,-48 41.6,-24 41.6,24 0,48 -41.6,24 -41.6,-24" fill="none"
+             stroke="#b8744a" stroke-width="3.4" stroke-opacity="0.8"/>
+    <circle cx="0" cy="0" r="26" fill="none" stroke="#d96a1f" stroke-width="3" stroke-opacity="0.6"/>
+  </g>
+
+  <!-- 分子节点 -->
+  <g stroke="#c98a5a" stroke-width="2.6" stroke-opacity="0.75">
+    <path d="M96 300 L152 330" fill="none"/>
+    <path d="M96 300 L104 356" fill="none"/>
+    <path d="M152 330 L214 312" fill="none"/>
+  </g>
+  <circle cx="96" cy="300" r="9" fill="#d96a1f" fill-opacity="0.85"/>
+  <circle cx="152" cy="330" r="7" fill="#e59a4e" fill-opacity="0.9"/>
+  <circle cx="104" cy="356" r="6" fill="#e59a4e" fill-opacity="0.9"/>
+  <circle cx="214" cy="312" r="8" fill="#d96a1f" fill-opacity="0.8"/>
+
+  <text x="36" y="80" font-family="Georgia,serif" font-size="20" font-style="italic" fill="#b8744a" opacity="0.5">C₆H₆</text>
+  <text x="484" y="380" font-family="Georgia,serif" font-size="20" font-style="italic" fill="#b0602c" opacity="0.4">chemistry</text>
+</svg>

@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<meta charset="utf-8">
+<title>2005A AMC 10 真题（P版） · 竞赛资料库</title>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) { /* 隐私模式下忽略 */ }
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="2005A AMC 10 真题（P版）：数学 · AMC10(P版)，2005A 年，共 25 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+
+<link rel="canonical" href="https://t.fengg.net/docs/amc10p-2005a/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="竞赛资料库">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="2005A AMC 10 真题（P版）">
+<meta property="og:description" content="2005A AMC 10 真题（P版）：数学 · AMC10(P版)，2005A 年，共 25 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+<meta property="og:url" content="https://t.fengg.net/docs/amc10p-2005a/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f7f9">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1318">
+
+
+<link rel="prev" href="/docs/amc10p-2004b/">
+<link rel="next" href="/docs/amc10p-2005b/">
+<link rel="stylesheet" href="/css/style.css?v=20261110e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+
+<link rel="stylesheet" href="/katex/katex.min.css">
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (!window.renderMathInElement) return;
+  var el = document.querySelector('.doc') || document.body;
+  try {
+    renderMathInElement(el, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false }
+      ],
+      throwOnError: false
+    });
+  } catch (e) { /* 公式渲染失败不影响正文 */ }
+});
+</script>
+
+
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/">竞赛资料库</a>
+    <nav class="nav"><a class="nav-a" href="/">首页</a><div class="nav-drop nav-mega"><a class="nav-a has-caret" href="/all/" title="按科目浏览全部题库">题库<i class="caret" aria-hidden="true"></i></a><div class="drop mega"><div class="mega-col" style="--accent:#3776c4"><a class="mega-h" href="/c/astronomy/"><i class="mega-dot" aria-hidden="true"></i>天文<span class="cnt">52</span></a><a class="mega-l" href="/c/astronomy/cnao/">CNAO<span class="cnt">28</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/cnao/prelim/">预赛</a><a class="mega-c" href="/c/astronomy/cnao/final/">决赛</a><a class="mega-c" href="/c/astronomy/cnao/primary/">小学组</a></span><a class="mega-l" href="/c/astronomy/provincial/">省赛<span class="cnt">15</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/provincial/beijing/">北京</a><a class="mega-c" href="/c/astronomy/provincial/guangdong/">广东</a><a class="mega-c" href="/c/astronomy/provincial/zhejiang/">浙江</a><a class="mega-c" href="/c/astronomy/provincial/jiangsu/">江苏</a><a class="mega-c" href="/c/astronomy/provincial/shandong/">山东</a><a class="mega-c" href="/c/astronomy/provincial/taiwan/">中国台湾</a></span><a class="mega-l" href="/c/astronomy/practice/">练习<span class="cnt">9</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/practice/primary/">小学组练习</a><a class="mega-c" href="/c/astronomy/practice/bank/">题库合集</a></span></div><div class="mega-col" style="--accent:#0f8a5f"><a class="mega-h" href="/c/math/"><i class="mega-dot" aria-hidden="true"></i>数学<span class="cnt">290</span></a><a class="mega-l" href="/c/math/amc8/">AMC8<span class="cnt">26</span></a><a class="mega-l" href="/c/math/amc8p/">AMC8(P版)<span class="cnt">41</span></a><a class="mega-l" href="/c/math/amc10p/">AMC10(P版)<span class="cnt">52</span></a><a class="mega-l" href="/c/math/amc12p/">AMC12(P版)<span class="cnt">102</span></a><a class="mega-l" href="/c/math/gzl/">全国中学生数学奥林匹克竞赛<span class="cnt">69</span></a><span class="mega-cs"><a class="mega-c" href="/c/math/gzl/liansai/">联赛（预赛）</a><a class="mega-c" href="/c/math/gzl/final/">决赛（CMO）</a><a class="mega-c" href="/c/math/gzl/province/">各赛区预赛</a></span></div><div class="mega-col" style="--accent:#6c4bb6"><a class="mega-h" href="/c/physics/"><i class="mega-dot" aria-hidden="true"></i>物理<span class="cnt">73</span></a><a class="mega-l" href="/c/physics/national/">全国竞赛<span class="cnt">49</span></a><a class="mega-l" href="/c/physics/asian/">亚洲竞赛<span class="cnt">11</span></a><a class="mega-l" href="/c/physics/international/">国际竞赛<span class="cnt">13</span></a></div><div class="mega-col" style="--accent:#3f8f46"><a class="mega-h" href="/c/biology/"><i class="mega-dot" aria-hidden="true"></i>生物<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/league/">全国中学生生物学联赛<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/competition/">全国中学生生物学竞赛</a></div><div class="mega-col" style="--accent:#c05a2b"><a class="mega-h" href="/c/chemistry/"><i class="mega-dot" aria-hidden="true"></i>化学<span class="cnt">10</span></a><a class="mega-l" href="/c/chemistry/ccho/">全国中学生化学奥林匹克竞赛<span class="cnt">10</span></a></div><div class="mega-col" style="--accent:#1f7a8c"><a class="mega-h" href="/c/earth/"><i class="mega-dot" aria-hidden="true"></i>地球科学<span class="cnt">22</span></a><a class="mega-l" href="/c/earth/national/">全国竞赛<span class="cnt">17</span></a><a class="mega-l" href="/c/earth/international/">国际竞赛<span class="cnt">5</span></a></div><div class="mega-col" style="--accent:#2c8a6e"><a class="mega-h" href="/c/geography/"><i class="mega-dot" aria-hidden="true"></i>地理<span class="cnt">11</span></a><a class="mega-l" href="/c/geography/geokids/">地球小博士<span class="cnt">11</span></a></div><div class="mega-col" style="--accent:#4a5fd0"><a class="mega-h" href="/c/info/"><i class="mega-dot" aria-hidden="true"></i>信息学<span class="cnt">9</span></a><a class="mega-l" href="/c/info/noi/">全国青少年信息学奥林匹克竞赛<span class="cnt">3</span></a><a class="mega-l" href="/c/info/noip/">全国青少年信息学奥林匹克联赛<span class="cnt">1</span></a><a class="mega-l" href="/c/info/csp/">CSP-J/S 非专业级软件能力认证<span class="cnt">1</span></a><a class="mega-l" href="/c/info/apio/">亚洲和太平洋地区信息学奥林匹克<span class="cnt">1</span></a><a class="mega-l" href="/c/info/winter/">NOI 冬令营<span class="cnt">1</span></a><a class="mega-l" href="/c/info/camp/">IOI 中国国家集训队集训<span class="cnt">2</span></a></div><a class="mega-all" href="/all/">全部文档（474 套）<i class="arr" aria-hidden="true">›</i></a></div></div><a class="nav-a" href="/whitelist/">白名单竞赛</a><a class="nav-a" href="/about/">使用说明</a><a class="nav-a nav-s" href="/search/" title="站内搜索（按 / 或 Ctrl+K）"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.9 12.1l4.3 4.3-1.4 1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z" fill="currentColor"/></svg>搜索</a></nav>
+    <div class="head-tools">
+      <button class="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式">
+        <svg class="ic-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12.7 3a8.5 8.5 0 108.3 10.6A7 7 0 0112.7 3z" fill="currentColor"/></svg>
+        <svg class="ic-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12 17a5 5 0 110-10 5 5 0 010 10zm0-13a1 1 0 011 1v1a1 1 0 01-2 0V5a1 1 0 011-1zm0 14a1 1 0 011 1v1a1 1 0 01-2 0v-1a1 1 0 011-1zM4 11h1a1 1 0 010 2H4a1 1 0 010-2zm15 0h1a1 1 0 010 2h-1a1 1 0 010-2zM6.3 5.5l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm11 11l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm.7-11a1 1 0 010 1.4l-.7.7A1 1 0 0115.9 6.2l.7-.7a1 1 0 011.4 0zm-11 11a1 1 0 010 1.4l-.7.7a1 1 0 01-1.4-1.4l.7-.7a1 1 0 011.4 0z" fill="currentColor"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-label="打开分类菜单" aria-expanded="false">分类 ▾</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main" tabindex="-1">
+
+<article class="doc">
+  <nav class="crumb">
+    <a href="/">首页</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/">数学</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/amc10p/">AMC10(P版)</a>
+    
+    <span class="sep">/</span><span>2005A AMC 10 真题（P版）</span>
+  </nav>
+
+  <h1>2005A AMC 10 真题（P版）</h1>
+
+  <div class="meta">
+    <span class="tag">数学</span>
+    <span>2005A 年</span>
+    <span>25 题</span>
+    <span>147 KB</span>
+    <span class="ok">含答案解析</span>
+  </div>
+
+  <div class="toolbar">
+    
+    <a class="btn quiz-btn" href="/quiz/amc10p-2005a/">开始答题 →</a>
+    
+    
+    <a class="btn ghost" href="#answer">跳到答案解析 ↓</a>
+    
+    <button class="btn ghost" type="button" onclick="document.querySelectorAll('details').forEach(function(x){x.open=true});setTimeout(function(){window.print()},60)">打印（含答案）</button>
+    <a class="btn" href="https://t.fengg.net/docs-dl/public/download/%E6%95%B0%E5%AD%A6/AMC10(P%E7%89%88)/2005A%20AMC%2010%20%E7%9C%9F%E9%A2%98%E4%B8%8E%E8%A7%A3%E7%AD%94.docx" download="2005A AMC 10 真题与解答.docx" title="2005A AMC 10 真题与解答.docx">下载 Word 文件</a>
+  </div>
+
+  <section class="paper">
+    <p class="paper-tip">中英双语：每题先中文，后附英文原题；解答在同页下方「查看答案解析与下载」里。</p>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">1</span></p>
+<p>外出就餐时，Mike 和 Joe 各给服务员 \(\$2\) 的小费。Mike 的小费是他账单的 \(10\%\)，Joe 的小费是他账单的 \(20\%\)。他们账单相差多少美元？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(2\)</span>
+<span class="amc-opt"><b>B</b>\(4\)</span>
+<span class="amc-opt"><b>C</b>\(5\)</span>
+<span class="amc-opt"><b>D</b>\(10\)</span>
+<span class="amc-opt"><b>E</b>\(20\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">While eating out, Mike and Joe each tipped their server \(\$2.\) Mike tipped \(10\%\) of his bill and Joe tipped \(20\%\) of his bill. What was the difference, in dollars, between their bills?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(2\)</span><span class="amc-opt"><b>(B)</b> \(4\)</span><span class="amc-opt"><b>(C)</b> \(5\)</span><span class="amc-opt"><b>(D)</b> \(10\)</span><span class="amc-opt"><b>(E)</b> \(20\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">2</span></p>
+<p>对每对满足 \(a \neq b\) 的实数，定义运算 \(\star\) 为 \[ (a \star b) = \frac{a+b}{a-b}\text{。}\]</p>
+<p>求 \(((1 \star 2) \star 3)\) 的值。</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(-\dfrac{2}{3}\)</span>
+<span class="amc-opt"><b>B</b>\(-\dfrac{1}{5}\)</span>
+<span class="amc-opt"><b>C</b>\(0\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{1}{2}\)</span>
+<span class="amc-opt"><b>E</b>这个值未定义。</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For each pair of real numbers \(a \neq b,\) define the operation \(\star\) as \[ (a \star b) = \frac{a+b}{a-b}. \]</p>
+<p class="amc-en">What is the value of \(((1 \star 2) \star 3)?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(-\dfrac{2}{3}\)</span><span class="amc-opt"><b>(B)</b> \(-\dfrac{1}{5}\)</span><span class="amc-opt"><b>(C)</b> \(0\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{1}{2}\)</span><span class="amc-opt"><b>(E)</b> This value is not defined.</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">3</span></p>
+<p>方程 \(2x + 7 = 3\) 和 \(bx - 10 = -2\) 有相同的解 \(x\)。\(b\) 的值是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(-8\)</span>
+<span class="amc-opt"><b>B</b>\(-4\)</span>
+<span class="amc-opt"><b>C</b>\(-2\)</span>
+<span class="amc-opt"><b>D</b>\(4\)</span>
+<span class="amc-opt"><b>E</b>\(8\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The equations \(2x + 7 = 3\) and \(bx - 10 = -2\) have the same solution \(x.\) What is the value of \(b?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(-8\)</span><span class="amc-opt"><b>(B)</b> \(-4\)</span><span class="amc-opt"><b>(C)</b> \(-2\)</span><span class="amc-opt"><b>(D)</b> \(4\)</span><span class="amc-opt"><b>(E)</b> \(8\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">4</span></p>
+<p>一个长方形的对角线长度为 \(x\)，并且长是宽的两倍。这个长方形的面积是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{1}{4}x^2\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{2}{5}x^2\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{1}{2}x^2\)</span>
+<span class="amc-opt"><b>D</b>\(x^2\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{3}{2}x^2\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A rectangle with a diagonal of length \(x\) is twice as long as it is wide. What is the area of the rectangle?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{1}{4}x^2\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{2}{5}x^2\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{1}{2}x^2\)</span><span class="amc-opt"><b>(D)</b> \(x^2\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{3}{2}x^2\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">5</span></p>
+<p>一家商店通常以每扇 \(\$100\) 的价格出售窗户。本周商店推出买四送一活动。Dave 需要七扇窗户，Doug 需要八扇窗户。如果他们一起购买而不是分别购买，会节省多少美元？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(100\)</span>
+<span class="amc-opt"><b>B</b>\(200\)</span>
+<span class="amc-opt"><b>C</b>\(300\)</span>
+<span class="amc-opt"><b>D</b>\(400\)</span>
+<span class="amc-opt"><b>E</b>\(500\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A store normally sells windows at \(\$100\) each. This week the store is offering one free window for each purchase of four. Dave needs seven windows and Doug needs eight windows. How many dollars will they save if they purchase the windows together rather than separately?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(100\)</span><span class="amc-opt"><b>(B)</b> \(200\)</span><span class="amc-opt"><b>(C)</b> \(300\)</span><span class="amc-opt"><b>(D)</b> \(400\)</span><span class="amc-opt"><b>(E)</b> \(500\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">6</span></p>
+<p>\(20\) 个数的平均数为 \(30\)，另外 \(30\) 个数的平均数为 \(20\)。这 \(50\) 个数的平均数是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(23\)</span>
+<span class="amc-opt"><b>B</b>\(24\)</span>
+<span class="amc-opt"><b>C</b>\(25\)</span>
+<span class="amc-opt"><b>D</b>\(26\)</span>
+<span class="amc-opt"><b>E</b>\(27\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The average (mean) of \(20\) numbers is \(30,\) and the average of \(30\) other numbers is \(20.\) What is the average of all \(50\) numbers?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(23\)</span><span class="amc-opt"><b>(B)</b> \(24\)</span><span class="amc-opt"><b>(C)</b> \(25\)</span><span class="amc-opt"><b>(D)</b> \(26\)</span><span class="amc-opt"><b>(E)</b> \(27\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">7</span></p>
+<p>Josh 和 Mike 相距 \(13\) 英里。昨天 Josh 开始骑车去 Mike 家。稍后 Mike 开始骑车去 Josh 家。他们相遇时，Josh 骑行的时间是 Mike 的两倍，速度是 Mike 的五分之四。相遇时 Mike 骑了多少英里？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(4\)</span>
+<span class="amc-opt"><b>B</b>\(5\)</span>
+<span class="amc-opt"><b>C</b>\(6\)</span>
+<span class="amc-opt"><b>D</b>\(7\)</span>
+<span class="amc-opt"><b>E</b>\(8\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Josh and Mike live \(13\) miles apart. Yesterday Josh started to ride his bicycle toward Mike’s house. A little later Mike started to ride his bicycle toward Josh’s house. When they met, Josh had ridden for twice the length of time as Mike and at four-fifths of Mike’s rate. How many miles had Mike ridden when they met?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(4\)</span><span class="amc-opt"><b>(B)</b> \(5\)</span><span class="amc-opt"><b>(C)</b> \(6\)</span><span class="amc-opt"><b>(D)</b> \(7\)</span><span class="amc-opt"><b>(E)</b> \(8\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">8</span></p>
+<p>图中，正方形 \(ABCD\) 的边 \(AB\) 长为 \(\sqrt{50}\)，点 \(E\) 在 \(B\) 和 \(H\) 之间，且 \(BE = 1\)。内正方形 \(EFGH\) 的面积是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2005A/problem/q08-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(25\)</span>
+<span class="amc-opt"><b>B</b>\(32\)</span>
+<span class="amc-opt"><b>C</b>\(36\)</span>
+<span class="amc-opt"><b>D</b>\(40\)</span>
+<span class="amc-opt"><b>E</b>\(42\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In the figure, the length of side \(AB\) of square \(ABCD\) is \(\sqrt{50},\) \(E\) is between \(B\) and \(H,\) and \(BE = 1.\) What is the area of the inner square \(EFGH?\)</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2005A/problem/q08-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(25\)</span><span class="amc-opt"><b>(B)</b> \(32\)</span><span class="amc-opt"><b>(C)</b> \(36\)</span><span class="amc-opt"><b>(D)</b> \(40\)</span><span class="amc-opt"><b>(E)</b> \(42\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">9</span></p>
+<p>三张牌标有 X，另外两张牌标有 O。将这五张牌随机排成一行。排列读作 XOXOX 的概率是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{1}{12}\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{1}{10}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{1}{6}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{1}{4}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{1}{3}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Three tiles are marked X and two other tiles are marked O. The five tiles are randomly arranged in a row. What is the probability that the arrangement reads XOXOX?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{1}{12}\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{1}{10}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{1}{6}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{1}{4}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{1}{3}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">10</span></p>
+<p>有两个 \(a\) 的值使方程 \(4x^2 + ax + 8x + 9 = 0\) 只有一个 \(x\) 的解。这两个 \(a\) 的值之和是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(-16\)</span>
+<span class="amc-opt"><b>B</b>\(-8\)</span>
+<span class="amc-opt"><b>C</b>\(0\)</span>
+<span class="amc-opt"><b>D</b>\(8\)</span>
+<span class="amc-opt"><b>E</b>\(20\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">There are two values of \(a\) for which the equation \(4x^2 + ax + 8x + 9 = 0\) has only one solution for \(x.\) What is the sum of those values of \(a?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(-16\)</span><span class="amc-opt"><b>(B)</b> \(-8\)</span><span class="amc-opt"><b>(C)</b> \(0\)</span><span class="amc-opt"><b>(D)</b> \(8\)</span><span class="amc-opt"><b>(E)</b> \(20\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">11</span></p>
+<p>一个边长为 \(n\) 个单位的木质立方体六个面全部涂红，然后切成 \(n^3\) 个单位小立方体。所有小立方体面的总数中，正好有四分之一是红色的。\(n\) 是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(3\)</span>
+<span class="amc-opt"><b>B</b>\(4\)</span>
+<span class="amc-opt"><b>C</b>\(5\)</span>
+<span class="amc-opt"><b>D</b>\(6\)</span>
+<span class="amc-opt"><b>E</b>\(7\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A wooden cube \(n\) units on a side is painted red on all six faces and then cut into \(n^3\) unit cubes. Exactly one-fourth of the total number of faces of the unit cubes are red. What is \(n?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(3\)</span><span class="amc-opt"><b>(B)</b> \(4\)</span><span class="amc-opt"><b>(C)</b> \(5\)</span><span class="amc-opt"><b>(D)</b> \(6\)</span><span class="amc-opt"><b>(E)</b> \(7\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">12</span></p>
+<p>图中形状称为三叶形，由围绕全等等边三角形的边画圆形扇形构成。若三叶形的水平底边长为 \(2\)，它的面积是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2005A/problem/q12-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{1}{3}\pi + \dfrac{\sqrt{3}}{2}\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{2}{3}\pi\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{2}{3}\pi + \dfrac{\sqrt{3}}{4}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{2}{3}\pi + \dfrac{\sqrt{3}}{3}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{2}{3}\pi + \dfrac{\sqrt{3}}{2}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The figure shown is called a <i>trefoil</i> and is constructed by drawing circular sectors about sides of the congruent equilateral triangles. What is the area of a trefoil whose horizontal base has length \(2?\)</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2005A/problem/q12-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{1}{3}\pi + \dfrac{\sqrt{3}}{2}\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{2}{3}\pi\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{2}{3}\pi + \dfrac{\sqrt{3}}{4}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{2}{3}\pi + \dfrac{\sqrt{3}}{3}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{2}{3}\pi + \dfrac{\sqrt{3}}{2}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">13</span></p>
+<p>有多少个正整数 \(n\) 满足</p>
+<p>\[ (130n)^{50} \gt n^{100} \gt 2^{200}\text{？}\]</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(0\)</span>
+<span class="amc-opt"><b>B</b>\(7\)</span>
+<span class="amc-opt"><b>C</b>\(12\)</span>
+<span class="amc-opt"><b>D</b>\(65\)</span>
+<span class="amc-opt"><b>E</b>\(125\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">How many positive integers \(n\) satisfy the following condition:</p>
+<p class="amc-en">\[ (130n)^{50} \gt n^{100} \gt 2^{200}? \]</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(0\)</span><span class="amc-opt"><b>(B)</b> \(7\)</span><span class="amc-opt"><b>(C)</b> \(12\)</span><span class="amc-opt"><b>(D)</b> \(65\)</span><span class="amc-opt"><b>(E)</b> \(125\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">14</span></p>
+<p>有多少个三位数满足：中间数字是第一个数字和最后一个数字的平均数？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(41\)</span>
+<span class="amc-opt"><b>B</b>\(42\)</span>
+<span class="amc-opt"><b>C</b>\(43\)</span>
+<span class="amc-opt"><b>D</b>\(44\)</span>
+<span class="amc-opt"><b>E</b>\(45\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">How many three-digit numbers satisfy the property that the middle digit is the average of the first and the last digits?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(41\)</span><span class="amc-opt"><b>(B)</b> \(42\)</span><span class="amc-opt"><b>(C)</b> \(43\)</span><span class="amc-opt"><b>(D)</b> \(44\)</span><span class="amc-opt"><b>(E)</b> \(45\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">15</span></p>
+<p>有多少个正立方数能整除 \(3! \cdot 5! \cdot 7!\)？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(2\)</span>
+<span class="amc-opt"><b>B</b>\(3\)</span>
+<span class="amc-opt"><b>C</b>\(4\)</span>
+<span class="amc-opt"><b>D</b>\(5\)</span>
+<span class="amc-opt"><b>E</b>\(6\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">How many positive cubes divide \(3! \cdot 5! \cdot 7!?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(2\)</span><span class="amc-opt"><b>(B)</b> \(3\)</span><span class="amc-opt"><b>(C)</b> \(4\)</span><span class="amc-opt"><b>(D)</b> \(5\)</span><span class="amc-opt"><b>(E)</b> \(6\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">16</span></p>
+<p>一个两位数减去它的各位数字之和后，结果的个位数字是 \(6\)。有多少个两位数满足这个性质？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(5\)</span>
+<span class="amc-opt"><b>B</b>\(7\)</span>
+<span class="amc-opt"><b>C</b>\(9\)</span>
+<span class="amc-opt"><b>D</b>\(10\)</span>
+<span class="amc-opt"><b>E</b>\(19\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The sum of the digits of a two-digit number is subtracted from the number. The units digit of the result is \(6.\) How many two-digit numbers have this property?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(5\)</span><span class="amc-opt"><b>(B)</b> \(7\)</span><span class="amc-opt"><b>(C)</b> \(9\)</span><span class="amc-opt"><b>(D)</b> \(10\)</span><span class="amc-opt"><b>(E)</b> \(19\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">17</span></p>
+<p>在图中的五角星中，字母 \(A\)、\(B\)、\(C\)、\(D\) 和 \(E\) 分别被数字 \(3\)、\(5\)、\(6\)、\(7\) 和 \(9\) 替换，但顺序不一定如此。线段 \(AB\)、\(BC\)、\(CD\)、\(DE\) 和 \(EA\) 两端数字的和形成一个等差数列，顺序不一定相同。这个等差数列的中间项是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2005A/problem/q17-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(9\)</span>
+<span class="amc-opt"><b>B</b>\(10\)</span>
+<span class="amc-opt"><b>C</b>\(11\)</span>
+<span class="amc-opt"><b>D</b>\(12\)</span>
+<span class="amc-opt"><b>E</b>\(13\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In the five-sided star shown, the letters \(A,\) \(B,\) \(C,\) \(D,\) and \(E\) are replaced by the numbers \(3,\) \(5,\) \(6,\) \(7,\) and \(9,\) although not necessarily in this order. The sums of the numbers at the ends of the line segments \(AB,\) \(BC,\) \(CD,\) \(DE,\) and \(EA\) form an arithmetic sequence, although not necessarily in this order. What is the middle term of the arithmetic sequence?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2005A/problem/q17-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(9\)</span><span class="amc-opt"><b>(B)</b> \(10\)</span><span class="amc-opt"><b>(C)</b> \(11\)</span><span class="amc-opt"><b>(D)</b> \(12\)</span><span class="amc-opt"><b>(E)</b> \(13\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">18</span></p>
+<p>A 队和 B 队进行系列赛，先赢三场的队伍赢得系列赛。每场比赛两队获胜概率相同，没有平局，且各场结果相互独立。已知 B 队赢了第二场，且 A 队赢得系列赛，那么 B 队赢第一场的概率是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{1}{5}\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{1}{4}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{1}{3}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{1}{2}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{2}{3}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Team A and team B play a series. The first team to win three games wins the series. Each team is equally likely to win each game, there are no ties, and the outcomes of the individual games are independent. If team B wins the second game and team A wins the series, what is the probability that team B wins the first game?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{1}{5}\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{1}{4}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{1}{3}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{1}{2}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{2}{3}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">19</span></p>
+<p>三个一英寸正方形的底边放在同一直线上。中间的正方形被取出并旋转 \(45^\circ\)，如图所示。然后将它居中并放回原位置，直到它接触相邻两个正方形。点 \(B\) 距原来正方形底边所在直线多少英寸？</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2005A/problem/q19-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1\)</span>
+<span class="amc-opt"><b>B</b>\(\sqrt{2}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{3}{2}\)</span>
+<span class="amc-opt"><b>D</b>\(\sqrt{2} + \dfrac{1}{2}\)</span>
+<span class="amc-opt"><b>E</b>\(2\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Three one-inch squares are placed with their bases on a line. The center square is lifted out and rotated \(45^\circ,\) as shown. Then it is centered and lowered into its original location until it touches both of the adjoining squares. How many inches is the point \(B\) from the line on which the bases of the original squares were placed?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2005A/problem/q19-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(1\)</span><span class="amc-opt"><b>(B)</b> \(\sqrt{2}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{3}{2}\)</span><span class="amc-opt"><b>(D)</b> \(\sqrt{2} + \dfrac{1}{2}\)</span><span class="amc-opt"><b>(E)</b> \(2\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">20</span></p>
+<p>一个等角八边形有四条边长为 \(1\)，四条边长为 \(\dfrac{\sqrt{2}}{2}\)，并且任意两条相邻边长度不同。这个八边形的面积是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{7}{2}\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{7\sqrt{2}}{2}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{5 + 4\sqrt{2}}{2}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{4 + 5\sqrt{2}}{2}\)</span>
+<span class="amc-opt"><b>E</b>\(7\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">An equiangular octagon has four sides of length \(1\) and four sides of length \(\dfrac{\sqrt{2}}{2},\) arranged so that no two consecutive sides have the same length. What is the area of the octagon?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{7}{2}\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{7\sqrt{2}}{2}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{5 + 4\sqrt{2}}{2}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{4 + 5\sqrt{2}}{2}\)</span><span class="amc-opt"><b>(E)</b> \(7\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">21</span></p>
+<p>对多少个正整数 \(n\)，\(1 + 2 + \cdots + n\) 能整除 \(6n\)？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(3\)</span>
+<span class="amc-opt"><b>B</b>\(5\)</span>
+<span class="amc-opt"><b>C</b>\(7\)</span>
+<span class="amc-opt"><b>D</b>\(9\)</span>
+<span class="amc-opt"><b>E</b>\(11\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For how many positive integers \(n\) does \(1 + 2 + \cdots + n\) evenly divide \(6n?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(3\)</span><span class="amc-opt"><b>(B)</b> \(5\)</span><span class="amc-opt"><b>(C)</b> \(7\)</span><span class="amc-opt"><b>(D)</b> \(9\)</span><span class="amc-opt"><b>(E)</b> \(11\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">22</span></p>
+<p>设 \(S\) 为最小的 \(2005\) 个正的 \(4\) 的倍数组成的集合，\(T\) 为最小的 \(2005\) 个正的 \(6\) 的倍数组成的集合。\(S\) 和 \(T\) 有多少个共同元素？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(166\)</span>
+<span class="amc-opt"><b>B</b>\(333\)</span>
+<span class="amc-opt"><b>C</b>\(500\)</span>
+<span class="amc-opt"><b>D</b>\(668\)</span>
+<span class="amc-opt"><b>E</b>\(1001\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(S\) be the set of the \(2005\) smallest positive multiples of \(4,\) and let \(T\) be the set of the \(2005\) smallest positive multiples of \(6.\) How many elements are common to \(S\) and \(T?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(166\)</span><span class="amc-opt"><b>(B)</b> \(333\)</span><span class="amc-opt"><b>(C)</b> \(500\)</span><span class="amc-opt"><b>(D)</b> \(668\)</span><span class="amc-opt"><b>(E)</b> \(1001\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">23</span></p>
+<p>令 \(AB\) 为一个圆的直径，点 \(C\) 在 \(AB\) 上且 \(2 \cdot AC = BC\)。点 \(D\) 和 \(E\) 在圆上，使得 \(DC \perp AB\)，且 \(DE\) 是另一条直径。\(\triangle DCE\) 的面积与 \(\triangle ABD\) 的面积之比是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc10p/2005A/problem/q23-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{1}{6}\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{1}{4}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{1}{3}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{1}{2}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{2}{3}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(AB\) be a diameter of a circle and \(C\) be a point on \(AB\) with \(2 \cdot AC = BC.\) Let \(D\) and \(E\) be points on the circle such that \(DC \perp AB\) and \(DE\) is a second diameter. What is the ratio of the area of \(\triangle DCE\) to the area of \(\triangle ABD?\)</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc10p/2005A/problem/q23-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{1}{6}\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{1}{4}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{1}{3}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{1}{2}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{2}{3}\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">24</span></p>
+<p>对每个正整数 \(m \gt 1\)，令 \(P(m)\) 表示 \(m\) 的最大质因数。有多少个正整数 \(n\) 同时满足 \(P(n) = \sqrt{n}\) 和 \(P(n + 48) = \sqrt{n + 48}\)？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(0\)</span>
+<span class="amc-opt"><b>B</b>\(1\)</span>
+<span class="amc-opt"><b>C</b>\(3\)</span>
+<span class="amc-opt"><b>D</b>\(4\)</span>
+<span class="amc-opt"><b>E</b>\(5\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For each positive integer \(m \gt 1,\) let \(P(m)\) denote the greatest prime factor of \(m.\) For how many positive integers \(n\) is it true that both \(P(n) = \sqrt{n}\) and \(P(n + 48) = \sqrt{n + 48}?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(0\)</span><span class="amc-opt"><b>(B)</b> \(1\)</span><span class="amc-opt"><b>(C)</b> \(3\)</span><span class="amc-opt"><b>(D)</b> \(4\)</span><span class="amc-opt"><b>(E)</b> \(5\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">25</span></p>
+<p>在 \(\triangle ABC\) 中，\(AB = 25\)，\(BC = 39\)，\(AC = 42\)。点 \(D\) 和 \(E\) 分别在 \(AB\) 和 \(AC\) 上，且 \(AD = 19\)、\(AE = 14\)。求三角形 \(ADE\) 的面积与四边形 \(BCED\) 的面积之比。</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{266}{1521}\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{19}{75}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{1}{3}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{19}{56}\)</span>
+<span class="amc-opt"><b>E</b>\(1\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In \(\triangle ABC\) we have \(AB = 25,\) \(BC = 39,\) and \(AC = 42.\) Points \(D\) and \(E\) are on \(AB\) and \(AC\) respectively, with \(AD = 19\) and \(AE = 14.\) What is the ratio of the area of triangle \(ADE\) to the area of the quadrilateral \(BCED?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(\dfrac{266}{1521}\)</span><span class="amc-opt"><b>(B)</b> \(\dfrac{19}{75}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{1}{3}\)</span><span class="amc-opt"><b>(D)</b> \(\dfrac{19}{56}\)</span><span class="amc-opt"><b>(E)</b> \(1\)</span></p>
+</div>
+  </section>
+
+  
+  <details class="answer" id="answer">
+    <summary>
+      <span class="s-title">查看答案解析与下载</span>
+    </summary>
+    <div class="answer-body">
+      <h3>答案速查</h3>
+<table class="tbl"><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>答案</td><td>D</td><td>C</td><td>B</td><td>B</td><td>A</td><td>B</td><td>B</td><td>C</td><td>B</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr><tr><td>答案</td><td>A</td><td>B</td><td>B</td><td>E</td><td>E</td><td>E</td><td>D</td><td>D</td><td>A</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr><tr><td>答案</td><td>D</td><td>A</td><td>B</td><td>D</td><td>C</td><td>B</td><td>D</td></tr></table>
+<p class="muted">答案串：DCBBABBCBABBEEEDDADABDCBD</p>
+<h3>逐题解析</h3>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">1</span> 答案 <b>D</b></p>
+<p>Mike 的 \(\$2\) 小费是账单的 \(10\%\)，所以他的账单是 \(2 \times 10 = 20\) 美元。Joe 的 \(\$2\) 小费是账单的 \(20\%\)，所以他的账单是 \(2 \times 5 = 10\) 美元。差为 \(20 - 10 = 10\) 美元。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Mike’s \(\$2\) tip is \(10\%\) of his bill, so his bill is \(2 \times 10 = 20\) dollars. Joe’s \(\$2\) tip is \(20\%\) of his bill, so his bill is \(2 \times 5 = 10\) dollars. The difference is \(20 - 10 = 10\) dollars.</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">2</span> 答案 <b>C</b></p>
+<p>首先，\((1 \star 2) = \dfrac{1+2}{1-2} = \dfrac{3}{-1} = -3\)。然后，\((-3 \star 3) = \dfrac{-3+3}{-3-3} = \dfrac{0}{-6} = 0\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">First \((1 \star 2) = \dfrac{1+2}{1-2} = \dfrac{3}{-1} = -3.\) Then \((-3 \star 3) = \dfrac{-3+3}{-3-3} = \dfrac{0}{-6} = 0.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">3</span> 答案 <b>B</b></p>
+<p>由 \(2x + 7 = 3\) 得 \(x = -2\)。代入另一个方程，\(-2b - 10 = -2\)，所以 \(-2b = 8\)，\(b = -4\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">From \(2x + 7 = 3\) we get \(x = -2.\) Substituting, \(-2b - 10 = -2,\) so \(-2b = 8\) and \(b = -4.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">4</span> 答案 <b>B</b></p>
+<p>设宽为 \(w\)，长为 \(2w\)。由勾股定理，\(x^2 = w^2 + (2w)^2 = 5w^2\)，所以 \(w^2 = \dfrac{x^2}{5}\)。长方形面积为 \(w \cdot 2w = 2w^2 = \dfrac{2}{5}x^2\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let the width be \(w,\) so the length is \(2w.\) Then \(x^2 = w^2 + (2w)^2 = 5w^2,\) giving \(w^2 = \dfrac{x^2}{5}.\) The area is \(w \cdot 2w = 2w^2 = \dfrac{2}{5}x^2.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">5</span> 答案 <b>A</b></p>
+<p>Dave 单独购买时，付 \(6\) 扇的钱并得到一扇免费窗户，达到 \(7\) 扇，共 \(\$600\)；Doug 单独购买时，付 \(7\) 扇的钱并得到一扇免费窗户，达到 \(8\) 扇，共 \(\$700\)。分别购买总共 \(\$1300\)。一起购买需要 \(15\) 扇窗户，买 \(12\) 扇可获得 \(3\) 扇免费窗户，共 \(\$1200\)。节省 \(1300 - 1200 = 100\) 美元。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Alone, Dave pays for \(6\) windows and receives one free to reach \(7,\) costing \(\$600;\) Doug pays for \(7\) and receives one free to reach \(8,\) costing \(\$700.\) Separately they pay \(\$1300.\) Together they need \(15\) windows: buying \(12\) yields \(3\) free, for \(\$1200.\) The savings are \(1300 - 1200 = 100\) dollars.</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">6</span> 答案 <b>B</b></p>
+<p>两组数的总和为 \(20 \cdot 30 + 30 \cdot 20 = 600 + 600\) \(= 1200\)。所以这 \(50\) 个数的平均数为 \(\dfrac{1200}{50} = 24\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The combined sum is \(20 \cdot 30 + 30 \cdot 20 = 600 + 600\) \(= 1200.\) The average of all \(50\) numbers is \(\dfrac{1200}{50} = 24.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">7</span> 答案 <b>B</b></p>
+<p>设 Mike 骑了 \(m\) 英里。Josh 的速度是 Mike 的 \(\frac{4}{5}\)，时间是 Mike 的 \(2\) 倍，所以 Josh 的距离为 \(\frac{8}{5}m\)。两人合计骑了 \(13\) 英里，因此 \(m + \frac{8}{5}m = \frac{13}{5}m = 13\)，得到 \(m = 5\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let Mike ride \(m\) miles. Josh rides \(\frac{4}{5}\) the rate for \(2\) times the time, so Josh’s distance is \(\frac{8}{5}m.\) Together they cover \(13,\) so \(m + \frac{8}{5}m = \frac{13}{5}m = 13,\) giving \(m = 5.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">8</span> 答案 <b>C</b></p>
+<p>三角形 \(ABH\)、\(BCE\)、\(CDF\) 和 \(DAG\) 是全等直角三角形。在 \(\triangle BCE\) 中，斜边 \(BC = \sqrt{50}\)，且 \(BE = 1\)，所以 \(CE = \sqrt{50 - 1} = 7\)。因为 \(BH = CE = 7\)，且 \(E\) 在 \(BH\) 上、\(BE = 1\)，所以内正方形边长 \(EH = 7 - 1 = 6\)，面积为 \(6^2 = 36\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The triangles \(ABH,\) \(BCE,\) \(CDF,\) and \(DAG\) are congruent right triangles. In \(\triangle BCE\) the hypotenuse is \(BC = \sqrt{50}\) and \(BE = 1,\) so \(CE = \sqrt{50 - 1} = 7.\) Since \(BH = CE = 7\) and \(E\) lies on \(BH\) with \(BE = 1,\) the inner square’s side is \(EH = 7 - 1 = 6,\) giving area \(6^2 = 36.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">9</span> 答案 <b>B</b></p>
+<p>三个 X 的位置可以是 \(\binom{5}{3} = 10\) 种等可能选择，其中只有一种位置选择产生 XOXOX，所以概率为 \(\dfrac{1}{10}\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The three X positions can be any of \(\binom{5}{3} = 10\) equally likely choices, and exactly one of them produces XOXOX. So the probability is \(\dfrac{1}{10}.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">10</span> 答案 <b>A</b></p>
+<p>方程可写为 \(4x^2 + (a+8)x + 9 = 0\)，它只有一个解当且仅当判别式 \((a+8)^2 - 144 = 0\)。所以 \(a + 8 = \pm 12\)，即 \(a = 4\) 或 \(a = -20\)，二者之和为 \(-16\)。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Writing the equation as \(4x^2 + (a+8)x + 9 = 0,\) there is one solution exactly when the discriminant \((a+8)^2 - 144 = 0.\) Then \(a + 8 = \pm 12,\) so \(a = 4\) or \(a = -20,\) and their sum is \(-16.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">11</span> 答案 <b>B</b></p>
+<p>小立方体共有 \(6n^3\) 个面，其中来自原立方体外表面的红色面共有 \(6n^2\) 个。因此 \(\dfrac{6n^2}{6n^3} = \dfrac{1}{n} = \dfrac{1}{4}\)，所以 \(n = 4\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The unit cubes have \(6n^3\) faces total, of which the original surface accounts for \(6n^2\) red faces. Then \(\dfrac{6n^2}{6n^3} = \dfrac{1}{n} = \dfrac{1}{4},\) so \(n = 4.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">12</span> 答案 <b>B</b></p>
+<p>底边长 \(2\) 等于两个半径，所以半径为 \(1\)。这个三叶形由四个等边三角形和四个圆弓形组成，它们可以重新拼成四个半径为 \(1\)、圆心角为 \(60^\circ\) 的扇形，总面积为 \(4 \cdot \dfrac{60}{360}\pi (1)^2 = \dfrac{2}{3}\pi\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since the base \(2\) equals two radii, the radius is \(1.\) The trefoil is made of four equilateral triangles and four circular segments, which reassemble into four \(60^\circ\) sectors of a circle of radius \(1.\) Their total area is \(4 \cdot \dfrac{60}{360}\pi (1)^2 = \dfrac{2}{3}\pi.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">13</span> 答案 <b>E</b></p>
+<p>取第 \(50\) 次方根，条件变为 \(130n \gt n^2 \gt 2^4 = 16\)。由 \(n^2 \gt 16\) 得 \(n \gt 4\)，由 \(130n \gt n^2\) 得 \(n \lt 130\)。所以 \(n\) 可以是整数 \(5, 6, \ldots, 129\)，共有 \(125\) 个。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Taking \(50\)th roots, the condition becomes \(130n \gt n^2 \gt 2^4 = 16.\) From \(n^2 \gt 16\) we get \(n \gt 4,\) and from \(130n \gt n^2\) we get \(n \lt 130.\) So \(n\) ranges over the integers \(5, 6, \ldots, 129,\) which is \(125\) values.</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">14</span> 答案 <b>E</b></p>
+<p>首位和末位数字必须奇偶性相同，平均数才是一个数字。若二者都为奇数，有 \(5 \cdot 5 = 25\) 对。若二者都为偶数，且首位非零，有 \(4 \cdot 5 = 20\) 对。每一对首末数字唯一确定中间数字，所以共有 \(25 + 20 = 45\) 个三位数。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The first and last digits must have the same parity so their average is a digit. Both odd gives \(5 \cdot 5 = 25\) pairs. Both even, with a nonzero leading digit, gives \(4 \cdot 5 = 20\) pairs. Each pair fixes the middle digit, for a total of \(25 + 20 = 45\) numbers.</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">15</span> 答案 <b>E</b></p>
+<p>质因数分解为 \(3! \cdot 5! \cdot 7! = 2^8 \cdot 3^4 \cdot 5^2 \cdot 7\)。立方数因子的质数指数必须是 \(3\) 的倍数：\(2\) 的指数可为 \(0\)、\(3\) 或 \(6\)，有 \(3\) 种；\(3\) 的指数可为 \(0\) 或 \(3\)，有 \(2\) 种；\(5\) 和 \(7\) 的指数只能为 \(0\)。因此共有 \(3 \cdot 2 \cdot 1 \cdot 1 = 6\) 个立方数因子。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">As a product of primes, \(3! \cdot 5! \cdot 7! = 2^8 \cdot 3^4 \cdot 5^2 \cdot 7.\) A cube divisor uses exponents that are multiples of \(3:\) the exponent of \(2\) can be \(0,\) \(3,\) or \(6\) (\(3\) choices), the exponent of \(3\) can be \(0\) or \(3\) (\(2\) choices), and the exponents of \(5\) and \(7\) must be \(0.\) That gives \(3 \cdot 2 \cdot 1 \cdot 1 = 6\) cubes.</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">16</span> 答案 <b>D</b></p>
+<p>若这个两位数为 \(10a + b\)，则 \((10a + b) - (a + b) = 9a\)。\(9a\) 的个位数字为 \(6\) 只在 \(a = 4\) 时发生，因为 \(9 \cdot 4 = 36\)。此时 \(b\) 可以是 \(0\) 到 \(9\) 中任意数字，所以从 \(40\) 到 \(49\) 共有十个数。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If the number is \(10a + b,\) then \((10a + b) - (a + b) = 9a.\) The units digit of \(9a\) is \(6\) only when \(a = 4,\) since \(9 \cdot 4 = 36.\) The digit \(b\) can then be anything from \(0\) to \(9,\) giving the ten numbers \(40\) through \(49.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">17</span> 答案 <b>D</b></p>
+<p>每个数字都是两条线段的端点，所以五个线段和的总和为 \(2(3 + 5 + 6 + 7 + 9) = 60\)。五项等差数列的中间项等于平均数，因此为 \(\dfrac{60}{5} = 12\)。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Every number is an endpoint of two segments, so the five segment sums total \(2(3 + 5 + 6 + 7 + 9) = 60.\) The middle term of a five-term arithmetic sequence equals its mean, which is \(\dfrac{60}{5} = 12.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">18</span> 答案 <b>A</b></p>
+<p>假设五场都进行，则所有五场结果序列等可能。要求 B 赢第 \(2\) 场且 A 最终以三场胜利赢得系列赛，得到以下等可能序列：</p>
+<p>\[ \begin{gathered} \text{BBAAA}, \quad \text{ABBAA}, \\ \text{ABABA}, \quad \text{ABAAB}, \\ \text{ABAAA} \end{gathered}\text{。}\]</p>
+<p>其中只有 BBAAA 的第一场是 B 赢，所以概率为 \(\dfrac{1}{5}\)。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Suppose all five games are played, so every sequence of five results is equally likely. Requiring that B wins game \(2\) and A ends up with the series (three wins) leaves the equally likely sequences</p>
+<p class="amc-en">\[ \begin{gathered} \text{BBAAA}, \quad \text{ABBAA}, \\ \text{ABABA}, \quad \text{ABAAB}, \\ \text{ABAAA}. \end{gathered} \]</p>
+<p class="amc-en">Only in BBAAA does team B win the first game, so the probability is \(\dfrac{1}{5}.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">19</span> 答案 <b>D</b></p>
+<p>旋转后的正方形向下移动时，它的两条下边落在相邻正方形的内侧上角，这些角的高度为 \(1\)。下顶点位于两角正中，所以每个角与它的水平距离为 \(\tfrac12\)。下边斜率的绝对值为 \(1\)，因此从下顶点到角会升高 \(\tfrac12\)。所以下顶点的高度是 \(1-\tfrac12=\tfrac12\)。</p>
+<p>点 \(B\) 是对角顶点，比下顶点高一条长度为 \(\sqrt2\) 的完整竖直对角线。因此它的高度是 \(\tfrac12+\sqrt2\)。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">When lowered, the rotated square’s two lower edges rest on the inner top corners of the adjoining squares, which are at height \(1.\) The bottom vertex is centered between those corners, so each corner is horizontally \(\tfrac12\) unit from it. A lower edge has slope \(1\) in magnitude, so it rises \(\tfrac12\) unit on the way to a corner. Therefore the bottom vertex is at height \(1-\tfrac12=\tfrac12.\)</p>
+<p class="amc-en">Point \(B\) is the opposite vertex, a full vertical diagonal of length \(\sqrt2\) higher. Its height is therefore \(\tfrac12+\sqrt2.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">20</span> 答案 <b>A</b></p>
+<p>延长四条长为 \(1\) 的边可形成一个正方形。每条短边 \(\dfrac{\sqrt{2}}{2}\) 是等腰直角三角形的斜边，对应直角边为 \(\dfrac{1}{2}\)，因此八边形可看作从边长 \(1 + 2 \cdot \frac{1}{2} = 2\) 的正方形四角切去四个这样的三角形，面积为 \(2^2 - 4 \cdot \frac{1}{2}\left(\frac{1}{2}\right)^2 = 4 - \frac{1}{2} = \dfrac{7}{2}\)。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Extend the four sides of length \(1\) to form a square. Each short side \(\dfrac{\sqrt{2}}{2}\) is the hypotenuse of an isosceles right triangle with legs \(\dfrac{1}{2},\) and cutting these four corners from a square of side \(1 + 2 \cdot \frac{1}{2} = 2\) gives the octagon. Its area is \(2^2 - 4 \cdot \frac{1}{2}\left(\frac{1}{2}\right)^2 = 4 - \frac{1}{2} = \dfrac{7}{2}.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">21</span> 答案 <b>B</b></p>
+<p>由 \(1 + 2 + \cdots + n = \dfrac{n(n+1)}{2}\) 可知，商为 \(\dfrac{6n}{\frac{n(n+1)}{2}} = \dfrac{12}{n+1}\)。它是整数当且仅当 \(n + 1\) 整除 \(12\)。\(12\) 的因数中不小于 \(2\) 的有 \(2\)、\(3\)、\(4\)、\(6\)、\(12\)，对应 \(n = 1\)、\(2\)、\(3\)、\(5\)、\(11\)，共五个值。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since \(1 + 2 + \cdots + n = \dfrac{n(n+1)}{2},\) the quotient is \(\dfrac{6n}{\frac{n(n+1)}{2}} = \dfrac{12}{n+1},\) which is an integer exactly when \(n + 1\) divides \(12.\) The divisors of \(12\) that are at least \(2\) are \(2,\) \(3,\) \(4,\) \(6,\) \(12,\) giving \(n = 1,\) \(2,\) \(3,\) \(5,\) \(11\) — five values.</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">22</span> 答案 <b>D</b></p>
+<p>\(S\) 和 \(T\) 的共同元素是 \(\operatorname{lcm}(4,6) = 12\) 的倍数。集合 \(S\) 包含不超过 \(4 \cdot 2005 = 8020\) 的 \(4\) 的倍数，而 \(T\) 最大到 \(6 \cdot 2005 = 12{,}030\)，所以上界由 \(8020\) 决定。共同元素是不超过该上界的 \(12\) 的倍数，共有 \(\left\lfloor \dfrac{8020}{12} \right\rfloor = 668\) 个。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The elements common to \(S\) and \(T\) are the multiples of \(\operatorname{lcm}(4,6) = 12.\) Now \(S\) contains multiples of \(4\) up to \(4 \cdot 2005 = 8020,\) while \(T\) reaches up to \(6 \cdot 2005 = 12{,}030,\) so the common elements are the multiples of \(12\) not exceeding \(8020.\) There are \(\left\lfloor \dfrac{8020}{12} \right\rfloor = 668\) of them.</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">23</span> 答案 <b>C</b></p>
+<p>设 \(O\) 是圆心。由 \(2 \cdot AC = BC\) 且 \(AC + BC = AB\)，得 \(AC = \dfrac{AB}{3}\)，因此 \(CO = \dfrac{AB}{2} - \dfrac{AB}{3} = \dfrac{AB}{6}\)。三角形 \(DCO\) 和 \(DAB\) 的顶点 \(D\) 相同，底边 \(CO\) 与 \(AB\) 在同一直线上，所以 \([\triangle DCO] = \dfrac{CO}{AB}[\triangle DAB]\) \(= \dfrac{1}{6}[\triangle DAB]\)。又因为 \(O\) 是 \(DE\) 的中点，\([\triangle DCE] = 2\,[\triangle DCO]\) \(= \dfrac{1}{3}[\triangle DAB]\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(O\) be the center. From \(2 \cdot AC = BC\) and \(AC + BC = AB,\) we get \(AC = \dfrac{AB}{3},\) so \(CO = \dfrac{AB}{2} - \dfrac{AB}{3} = \dfrac{AB}{6}.\) Triangles \(DCO\) and \(DAB\) share the apex \(D\) with bases \(CO\) and \(AB\) on the same line, so \([\triangle DCO] = \dfrac{CO}{AB}[\triangle DAB]\) \(= \dfrac{1}{6}[\triangle DAB].\) Because \(O\) is the midpoint of \(DE,\) \([\triangle DCE] = 2\,[\triangle DCO]\) \(= \dfrac{1}{3}[\triangle DAB].\)</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">24</span> 答案 <b>B</b></p>
+<p>条件 \(P(n) = \sqrt{n}\) 表示 \(n\) 是某个质数 \(q\) 的平方；同理 \(n + 48 = p^2\)，其中 \(p\) 是质数。因此 \(48 = p^2 - q^2 = (p - q)(p + q)\)。检查 \(48\) 的同奇偶因数分解，只有 \(p - q = 2,\ p + q = 24\) 给出质数，得到 \((p, q) = (13, 11)\)，所以 \(n = 121\)。因此恰好有一个这样的 \(n\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The condition \(P(n) = \sqrt{n}\) means \(n\) is the square of a prime \(q,\) and likewise \(n + 48 = p^2\) for a prime \(p.\) Then \(48 = p^2 - q^2 = (p - q)(p + q).\) Checking the same-parity factorizations of \(48,\) only \(p - q = 2,\ p + q = 24\) yields primes, giving \((p, q) = (13, 11)\) and \(n = 121.\) So there is exactly one such \(n.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">25</span> 答案 <b>D</b></p>
+<p>三角形 \(ADE\) 和 \(ABC\) 共用角 \(A\)，所以 \[ \begin{aligned} \dfrac{[ADE]}{[ABC]} &amp;= \dfrac{AD \cdot AE}{AB \cdot AC} \\ &amp;= \dfrac{19 \cdot 14}{25 \cdot 42} \\ &amp;= \dfrac{266}{1050} \\ &amp;= \dfrac{19}{75} \end{aligned}\text{。}\]又因为 \([BCED] = [ABC] - [ADE]\)，所以 \(\dfrac{[ADE]}{[BCED]} = \dfrac{19}{75 - 19} = \dfrac{19}{56}\)。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Triangles \(ADE\) and \(ABC\) share angle \(A,\) so \[ \begin{aligned} \dfrac{[ADE]}{[ABC]} &amp;= \dfrac{AD \cdot AE}{AB \cdot AC} \\ &amp;= \dfrac{19 \cdot 14}{25 \cdot 42} \\ &amp;= \dfrac{266}{1050} \\ &amp;= \dfrac{19}{75}. \end{aligned} \] Since \([BCED] = [ABC] - [ADE],\) we get \(\dfrac{[ADE]}{[BCED]} = \dfrac{19}{75 - 19} = \dfrac{19}{56}.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div>
+    </div>
+    <p class="dl-row">
+      
+      <a class="btn" href="https://t.fengg.net/docs-dl/public/download/%E6%95%B0%E5%AD%A6/AMC10(P%E7%89%88)/2005A%20AMC%2010%20%E7%9C%9F%E9%A2%98%E4%B8%8E%E8%A7%A3%E7%AD%94.docx" download="2005A AMC 10 真题与解答.docx" title="2005A AMC 10 真题与解答.docx">下载本题 Word 原文件（含答案解析）</a>
+      
+    </p>
+  </details>
+  
+
+  <nav class="siblings" aria-label="同分类的上一套与下一套">
+    
+    <a class="sib prev" href="/docs/amc10p-2004b/" rel="prev">
+      <i aria-hidden="true">←</i>
+      <span><b>上一套</b><em>2004B AMC 10 真题（P版）</em></span>
+    </a>
+    
+    
+    <a class="sib next" href="/docs/amc10p-2005b/" rel="next">
+      <span><b>下一套</b><em>2005B AMC 10 真题（P版）</em></span>
+      <i aria-hidden="true">→</i>
+    </a>
+    
+  </nav>
+
+  <p class="back"><a href="/c/math/">← 返回数学</a></p>
+</article>
+
+<button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 8.8V19h-2V8.8L6.4 13.4 5 12z" fill="currentColor"/></svg>
+</button>
+
+<script>
+(function () {
+  function openIfHash() {
+    if (location.hash === '#answer') {
+      var el = document.getElementById('answer');
+      if (el) { el.open = true; el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    }
+  }
+  openIfHash();
+  window.addEventListener('hashchange', openIfHash);
+
+  var top = document.querySelector('.to-top');
+  if (top) {
+    function onScroll() {
+      if (window.scrollY > 420) top.classList.add('show');
+      else top.classList.remove('show');
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    top.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // 同分类翻页快捷键：[ 上一套，] 下一套
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var sel = e.key === '[' ? '.sib.prev[href]' : (e.key === ']' ? '.sib.next[href]' : null);
+    if (!sel) return;
+    var a = document.querySelector(sel);
+    if (a) { e.preventDefault(); location.href = a.href; }
+  });
+})();
+</script>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-line">
+      <span>© 2026 Feng</span>
+      <span class="dot">·</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></span>
+    </div>
+    <p class="foot-note">本站内容均来源于网络，版权归原作者所有，仅供学习交流使用，请勿用于商业用途。</p>
+  </div>
+</footer>
+<script>
+(function () {
+  /* ---------- 深色模式 ---------- */
+  var root = document.documentElement;
+  var toggle = document.querySelector('.theme-toggle');
+  function osDark() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function isDark() {
+    var t = root.getAttribute('data-theme');
+    if (t === 'dark') return true;
+    if (t === 'light') return false;
+    return osDark();
+  }
+  function label() {
+    if (!toggle) return;
+    var d = isDark();
+    toggle.setAttribute('aria-label', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('title', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('aria-pressed', d ? 'true' : 'false');
+  }
+  if (toggle) {
+    label();
+    toggle.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) { /* noop */ }
+      label();
+    });
+  }
+  if (window.matchMedia) {
+    var mqDark = window.matchMedia('(prefers-color-scheme: dark)');
+    if (mqDark.addEventListener) mqDark.addEventListener('change', label);
+  }
+
+  /* ---------- 顶部导航 ---------- */
+  var nav = document.querySelector('.nav');
+  var navToggle = document.querySelector('.nav-toggle');
+  if (!nav || !navToggle) return;
+  var mq = window.matchMedia('(max-width: 720px)');
+  function closeAll() {
+    nav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    Array.prototype.forEach.call(nav.querySelectorAll('.open'), function (x) { x.classList.remove('open'); });
+  }
+  navToggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var on = nav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', on ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) {
+    if (!mq.matches) return;
+    var a = e.target.closest ? e.target.closest('a') : null;
+    if (!a) return;
+    var host = a.parentNode;
+    if (host && host.classList.contains('nav-drop') && a.classList.contains('has-caret')) {
+      e.preventDefault();
+      host.classList.toggle('open');
+    }
+  });
+  document.addEventListener('click', function (e) {
+    if (mq.matches && !nav.contains(e.target) && !navToggle.contains(e.target)) closeAll();
+  });
+  // 键盘 Esc 收起移动端菜单
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mq.matches && nav.classList.contains('open')) {
+      closeAll();
+      navToggle.focus();
+    }
+  });
+
+  /* ---------- 搜索快捷键：/ 聚焦，Ctrl(⌘)+K 打开 ---------- */
+  var searchLink = document.querySelector('.nav-s');
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    var typing = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable);
+    if ((e.ctrlKey || e.metaKey) && !e.shiftKey && (e.key === 'k' || e.key === 'K')) {
+      e.preventDefault();
+      var box = document.querySelector('.sbox-input');
+      if (box) { box.focus(); box.select(); }
+      else if (searchLink) location.href = searchLink.href;
+      return;
+    }
+    if (typing || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.key === '/') {
+      var box2 = document.querySelector('.sbox-input');
+      if (box2) { e.preventDefault(); box2.focus(); box2.select(); }
+      else if (searchLink) { e.preventDefault(); location.href = searchLink.href; }
+    }
+  });
+})();
+</script>
+</body>
+</html>

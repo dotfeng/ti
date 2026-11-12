@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<meta charset="utf-8">
+<title>答题 · 2016A AMC 12 真题（P版） · 竞赛资料库</title>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) { /* 隐私模式下忽略 */ }
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="2016A AMC 12 真题（P版）：数学 · AMC12(P版)，2016A 年，共 25 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+
+<link rel="canonical" href="https://t.fengg.net/quiz/amc12p-2016a/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="竞赛资料库">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="答题 · 2016A AMC 12 真题（P版）">
+<meta property="og:description" content="2016A AMC 12 真题（P版）：数学 · AMC12(P版)，2016A 年，共 25 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+<meta property="og:url" content="https://t.fengg.net/quiz/amc12p-2016a/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f7f9">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1318">
+
+
+<link rel="prev" href="/docs/amc12p-2015b/">
+<link rel="next" href="/docs/amc12p-2016b/">
+<link rel="stylesheet" href="/css/style.css?v=20261110e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+
+<link rel="stylesheet" href="/katex/katex.min.css">
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (!window.renderMathInElement) return;
+  var el = document.querySelector('.doc') || document.body;
+  try {
+    renderMathInElement(el, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false }
+      ],
+      throwOnError: false
+    });
+  } catch (e) { /* 公式渲染失败不影响正文 */ }
+});
+</script>
+
+
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/">竞赛资料库</a>
+    <nav class="nav"><a class="nav-a" href="/">首页</a><div class="nav-drop nav-mega"><a class="nav-a has-caret" href="/all/" title="按科目浏览全部题库">题库<i class="caret" aria-hidden="true"></i></a><div class="drop mega"><div class="mega-col" style="--accent:#3776c4"><a class="mega-h" href="/c/astronomy/"><i class="mega-dot" aria-hidden="true"></i>天文<span class="cnt">52</span></a><a class="mega-l" href="/c/astronomy/cnao/">CNAO<span class="cnt">28</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/cnao/prelim/">预赛</a><a class="mega-c" href="/c/astronomy/cnao/final/">决赛</a><a class="mega-c" href="/c/astronomy/cnao/primary/">小学组</a></span><a class="mega-l" href="/c/astronomy/provincial/">省赛<span class="cnt">15</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/provincial/beijing/">北京</a><a class="mega-c" href="/c/astronomy/provincial/guangdong/">广东</a><a class="mega-c" href="/c/astronomy/provincial/zhejiang/">浙江</a><a class="mega-c" href="/c/astronomy/provincial/jiangsu/">江苏</a><a class="mega-c" href="/c/astronomy/provincial/shandong/">山东</a><a class="mega-c" href="/c/astronomy/provincial/taiwan/">中国台湾</a></span><a class="mega-l" href="/c/astronomy/practice/">练习<span class="cnt">9</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/practice/primary/">小学组练习</a><a class="mega-c" href="/c/astronomy/practice/bank/">题库合集</a></span></div><div class="mega-col" style="--accent:#0f8a5f"><a class="mega-h" href="/c/math/"><i class="mega-dot" aria-hidden="true"></i>数学<span class="cnt">290</span></a><a class="mega-l" href="/c/math/amc8/">AMC8<span class="cnt">26</span></a><a class="mega-l" href="/c/math/amc8p/">AMC8(P版)<span class="cnt">41</span></a><a class="mega-l" href="/c/math/amc10p/">AMC10(P版)<span class="cnt">52</span></a><a class="mega-l" href="/c/math/amc12p/">AMC12(P版)<span class="cnt">102</span></a><a class="mega-l" href="/c/math/gzl/">全国中学生数学奥林匹克竞赛<span class="cnt">69</span></a><span class="mega-cs"><a class="mega-c" href="/c/math/gzl/liansai/">联赛（预赛）</a><a class="mega-c" href="/c/math/gzl/final/">决赛（CMO）</a><a class="mega-c" href="/c/math/gzl/province/">各赛区预赛</a></span></div><div class="mega-col" style="--accent:#6c4bb6"><a class="mega-h" href="/c/physics/"><i class="mega-dot" aria-hidden="true"></i>物理<span class="cnt">73</span></a><a class="mega-l" href="/c/physics/national/">全国竞赛<span class="cnt">49</span></a><a class="mega-l" href="/c/physics/asian/">亚洲竞赛<span class="cnt">11</span></a><a class="mega-l" href="/c/physics/international/">国际竞赛<span class="cnt">13</span></a></div><div class="mega-col" style="--accent:#3f8f46"><a class="mega-h" href="/c/biology/"><i class="mega-dot" aria-hidden="true"></i>生物<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/league/">全国中学生生物学联赛<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/competition/">全国中学生生物学竞赛</a></div><div class="mega-col" style="--accent:#c05a2b"><a class="mega-h" href="/c/chemistry/"><i class="mega-dot" aria-hidden="true"></i>化学<span class="cnt">10</span></a><a class="mega-l" href="/c/chemistry/ccho/">全国中学生化学奥林匹克竞赛<span class="cnt">10</span></a></div><div class="mega-col" style="--accent:#1f7a8c"><a class="mega-h" href="/c/earth/"><i class="mega-dot" aria-hidden="true"></i>地球科学<span class="cnt">22</span></a><a class="mega-l" href="/c/earth/national/">全国竞赛<span class="cnt">17</span></a><a class="mega-l" href="/c/earth/international/">国际竞赛<span class="cnt">5</span></a></div><div class="mega-col" style="--accent:#2c8a6e"><a class="mega-h" href="/c/geography/"><i class="mega-dot" aria-hidden="true"></i>地理<span class="cnt">11</span></a><a class="mega-l" href="/c/geography/geokids/">地球小博士<span class="cnt">11</span></a></div><div class="mega-col" style="--accent:#4a5fd0"><a class="mega-h" href="/c/info/"><i class="mega-dot" aria-hidden="true"></i>信息学<span class="cnt">9</span></a><a class="mega-l" href="/c/info/noi/">全国青少年信息学奥林匹克竞赛<span class="cnt">3</span></a><a class="mega-l" href="/c/info/noip/">全国青少年信息学奥林匹克联赛<span class="cnt">1</span></a><a class="mega-l" href="/c/info/csp/">CSP-J/S 非专业级软件能力认证<span class="cnt">1</span></a><a class="mega-l" href="/c/info/apio/">亚洲和太平洋地区信息学奥林匹克<span class="cnt">1</span></a><a class="mega-l" href="/c/info/winter/">NOI 冬令营<span class="cnt">1</span></a><a class="mega-l" href="/c/info/camp/">IOI 中国国家集训队集训<span class="cnt">2</span></a></div><a class="mega-all" href="/all/">全部文档（474 套）<i class="arr" aria-hidden="true">›</i></a></div></div><a class="nav-a" href="/whitelist/">白名单竞赛</a><a class="nav-a" href="/about/">使用说明</a><a class="nav-a nav-s" href="/search/" title="站内搜索（按 / 或 Ctrl+K）"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.9 12.1l4.3 4.3-1.4 1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z" fill="currentColor"/></svg>搜索</a></nav>
+    <div class="head-tools">
+      <button class="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式">
+        <svg class="ic-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12.7 3a8.5 8.5 0 108.3 10.6A7 7 0 0112.7 3z" fill="currentColor"/></svg>
+        <svg class="ic-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12 17a5 5 0 110-10 5 5 0 010 10zm0-13a1 1 0 011 1v1a1 1 0 01-2 0V5a1 1 0 011-1zm0 14a1 1 0 011 1v1a1 1 0 01-2 0v-1a1 1 0 011-1zM4 11h1a1 1 0 010 2H4a1 1 0 010-2zm15 0h1a1 1 0 010 2h-1a1 1 0 010-2zM6.3 5.5l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm11 11l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm.7-11a1 1 0 010 1.4l-.7.7A1 1 0 0115.9 6.2l.7-.7a1 1 0 011.4 0zm-11 11a1 1 0 010 1.4l-.7.7a1 1 0 01-1.4-1.4l.7-.7a1 1 0 011.4 0z" fill="currentColor"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-label="打开分类菜单" aria-expanded="false">分类 ▾</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main" tabindex="-1">
+
+<article class="doc quiz-page">
+  <nav class="crumb">
+    <a href="/">首页</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/">数学</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/amc12p/">AMC12(P版)</a>
+    
+    <span class="sep">/</span>
+    <a href="/docs/amc12p-2016a/">2016A AMC 12 真题（P版）</a>
+    <span class="sep">/</span><span>答题模式</span>
+  </nav>
+
+  <div class="qz-top" id="qzTop">
+    <div class="qz-top-l">
+      <h1 class="qz-title">2016A AMC 12 真题（P版）</h1>
+      <p class="qz-sub">
+        <span class="qz-pill">答题模式</span>
+        <span>共 25 题</span>
+      </p>
+    </div>
+    <div class="qz-top-r">
+      <div class="qz-timer" id="qzTimer">
+        <span class="qz-timer-k">答题耗时</span>
+        <b id="qzClock">00:00</b>
+      </div>
+      <div class="qz-side">
+        <span class="qz-progress" id="qzProgress">已答 0 / 25</span>
+        <a class="qz-back" href="/docs/amc12p-2016a/">← 返回展示模式</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="qz-note" id="qzNote">
+    <p class="qz-note-h">答题前请先了解</p>
+    <ul>
+      <li>本模式为<strong>一次性自测</strong>：不记录作答、不统计历史、不生成错题集，刷新或关闭本页即全部清空。</li>
+      <li>提交后立即判分，并在每题下方展开正确答案与解析；<strong>填空题只给参考答案，不参与判分</strong>。</li>
+      <li>没做完也可以提交：点「提交答卷」时会提示还剩几题，确认后照常判分，<strong>未作答的题目按答错计</strong>；原卷标注「作废 / 不计成绩」的题目不计分。</li>
+      <li>题目内容与展示模式完全一致，可随时点右上角返回展示模式查阅。</li>
+    </ul>
+    <button class="btn qz-start" id="qzStart" type="button">开始答题（点击后开始计时）</button>
+  </div>
+
+  <form class="qz-form" id="qzForm" hidden>
+    <section class="qz-q" id="q1" data-no="1" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">1</span><span class="qz-flag">单选</span></div>
+<p>下面式子的值是多少：\[\dfrac{11!-10!}{9!}\text{？}\]</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q1" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(99\)</span></label>
+<label class="qz-opt"><input type="radio" name="q1" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(100\)</span></label>
+<label class="qz-opt"><input type="radio" name="q1" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(110\)</span></label>
+<label class="qz-opt"><input type="radio" name="q1" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(121\)</span></label>
+<label class="qz-opt"><input type="radio" name="q1" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(132\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">What is the value of \[\dfrac{11!-10!}{9!}?\]</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>分解分子可得 \[ \begin{gathered} \dfrac{11!-10!}{9!}\\ =\dfrac{10!(11-1)}{9!}\\ =\dfrac{10\cdot 9!\cdot 10}{9!}\\ =100 \end{gathered}\text{。}\]</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Factoring the numerator gives \[ \begin{gathered} \dfrac{11!-10!}{9!}\\ =\dfrac{10!(11-1)}{9!}\\ =\dfrac{10\cdot 9!\cdot 10}{9!}\\ =100. \end{gathered} \]</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q2" data-no="2" data-type="single" data-ans="C">
+<div class="qz-qhead"><span class="qz-badge">2</span><span class="qz-flag">单选</span></div>
+<p>当 \(x\) 为何值时，\(10^x\cdot 100^{2x}=1000^5\)？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q2" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q2" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(2\)</span></label>
+<label class="qz-opt"><input type="radio" name="q2" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(3\)</span></label>
+<label class="qz-opt"><input type="radio" name="q2" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(4\)</span></label>
+<label class="qz-opt"><input type="radio" name="q2" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(5\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">For what value of \(x\) does \(10^x\cdot 100^{2x}=1000^5?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>因为 \(100=10^2\)，\(1000=10^3\)，方程变为 \[ 10^x\cdot 10^{4x}=10^{15}\text{，} \] 所以 \(10^{5x}=10^{15}\)。于是 \(5x=15\)，得到 \(x=3\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since \(100=10^2\) and \(1000=10^3,\) the equation becomes \[ 10^x\cdot 10^{4x}=10^{15}, \] so \(10^{5x}=10^{15}.\) Then \(5x=15,\) giving \(x=3.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q3" data-no="3" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">3</span><span class="qz-flag">单选</span></div>
+<p>对所有实数 \(x\) 和满足 \(y\neq 0\) 的实数 \(y\)，余数函数可定义为 \[ \text{rem}(x,y)=x-y\left\lfloor \dfrac{x}{y}\right\rfloor\text{，} \] 其中 \(\left\lfloor \dfrac{x}{y}\right\rfloor\) 表示小于或等于 \(\dfrac{x}{y}\) 的最大整数。 \(\text{rem}\left(\dfrac{3}{8},-\dfrac{2}{5}\right)\) 的值是多少？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q3" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(-\dfrac{3}{8}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q3" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(-\dfrac{1}{40}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q3" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(0\)</span></label>
+<label class="qz-opt"><input type="radio" name="q3" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(\dfrac{3}{8}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q3" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(\dfrac{31}{40}\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">The remainder function can be defined for all real numbers \(x\) and \(y\) with \(y\neq 0\) by \[ \text{rem}(x,y)=x-y\left\lfloor \dfrac{x}{y}\right\rfloor, \] where \(\left\lfloor \dfrac{x}{y}\right\rfloor\) denotes the greatest integer less than or equal to \(\dfrac{x}{y}.\) What is the value of \(\text{rem}\left(\dfrac{3}{8},-\dfrac{2}{5}\right)?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>首先， \[ \begin{gathered} \dfrac{x}{y}=\dfrac{\frac{3}{8}}{-\frac{2}{5}}\\ =\dfrac{3}{8}\cdot\left(-\dfrac{5}{2}\right)\\ =-\dfrac{15}{16} \end{gathered}\text{，}\] 所以 \(\left\lfloor -\dfrac{15}{16}\right\rfloor=-1\)。</p>
+<p>因此 \[ \begin{gathered} \text{rem}\left(\dfrac{3}{8},-\dfrac{2}{5}\right)\\ =\dfrac{3}{8}-\left(-\dfrac{2}{5}\right)(-1)\\ =\dfrac{3}{8}-\dfrac{2}{5}\\ =\dfrac{15-16}{40}\\ =-\dfrac{1}{40} \end{gathered}\text{。}\]</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">First, \[ \begin{gathered} \dfrac{x}{y}=\dfrac{\frac{3}{8}}{-\frac{2}{5}}\\ =\dfrac{3}{8}\cdot\left(-\dfrac{5}{2}\right)\\ =-\dfrac{15}{16}, \end{gathered} \] and \(\left\lfloor -\dfrac{15}{16}\right\rfloor=-1.\)</p>
+<p class="amc-en">Therefore \[ \begin{gathered} \text{rem}\left(\dfrac{3}{8},-\dfrac{2}{5}\right)\\ =\dfrac{3}{8}-\left(-\dfrac{2}{5}\right)(-1)\\ =\dfrac{3}{8}-\dfrac{2}{5}\\ =\dfrac{15-16}{40}\\ =-\dfrac{1}{40}. \end{gathered} \]</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q4" data-no="4" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">4</span><span class="qz-flag">单选</span></div>
+<p>\(7\) 个数据值 \(60\)，\(100\)，\(x\)，\(40\)，\(50\)，\(200\)，\(90\) 的平均数、中位数和众数都等于 \(x\)。\(x\) 的值是多少？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q4" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(50\)</span></label>
+<label class="qz-opt"><input type="radio" name="q4" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(60\)</span></label>
+<label class="qz-opt"><input type="radio" name="q4" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(75\)</span></label>
+<label class="qz-opt"><input type="radio" name="q4" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(90\)</span></label>
+<label class="qz-opt"><input type="radio" name="q4" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(100\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">The mean, median, and mode of the \(7\) data values \(60,\) \(100,\) \(x,\) \(40,\) \(50,\) \(200,\) \(90\) are all equal to \(x.\) What is the value of \(x?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>由平均数条件， \[ \begin{gathered} \small \dfrac{60+100+x+40+50+200+90}{7}\\ =\dfrac{540+x}{7}\\ =x\text{，} \end{gathered} \] 所以 \(540+x=7x\)，得到 \(x=90\)。</p>
+<p>按非降序排列，数据为 \(40, 50, 60, 90, 90, 100, 200\)，所以中位数为 \(90\)，众数也为 \(90\)，符合要求。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The mean condition gives \[ \begin{gathered} \small \dfrac{60+100+x+40+50+200+90}{7}\\ =\dfrac{540+x}{7}\\ =x, \end{gathered} \] so \(540+x=7x\) and \(x=90.\)</p>
+<p class="amc-en">In nondecreasing order the data are \(40, 50, 60, 90, 90, 100, 200,\) so the median is \(90\) and the mode is \(90,\) as required.</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q5" data-no="5" data-type="single" data-ans="E">
+<div class="qz-qhead"><span class="qz-badge">5</span><span class="qz-flag">单选</span></div>
+<p>Goldbach 猜想指出：每个大于 \(2\) 的偶整数都可以写成两个质数之和，例如 \(2016=13+2003\)。到目前为止，还没有人能证明该猜想为真，也没有人找到反例证明它为假。一个反例应当是什么？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q5" value="A"><span class="qz-mark">A</span><span class="qz-txt">一个大于 \(2\) 且可以写成两个质数之和的奇整数</span></label>
+<label class="qz-opt"><input type="radio" name="q5" value="B"><span class="qz-mark">B</span><span class="qz-txt">一个大于 \(2\) 且不能写成两个质数之和的奇整数</span></label>
+<label class="qz-opt"><input type="radio" name="q5" value="C"><span class="qz-mark">C</span><span class="qz-txt">一个大于 \(2\) 且可以写成两个非质数之和的偶整数</span></label>
+<label class="qz-opt"><input type="radio" name="q5" value="D"><span class="qz-mark">D</span><span class="qz-txt">一个大于 \(2\) 且可以写成两个质数之和的偶整数</span></label>
+<label class="qz-opt"><input type="radio" name="q5" value="E"><span class="qz-mark">E</span><span class="qz-txt">一个大于 \(2\) 且不能写成两个质数之和的偶整数</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Goldbach’s conjecture states that every even integer greater than \(2\) can be written as the sum of two prime numbers (for example, \(2016=13+2003\)). So far, no one has been able to prove that the conjecture is true, and no one has found a counterexample to show that the conjecture is false. What would a counterexample consist of?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>反例必须满足“大于 \(2\) 的偶整数”这个前提，同时不满足“可以写成两个质数之和”这个结论。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A counterexample must satisfy the hypothesis of being an even integer greater than \(2\) while failing the conclusion that it can be written as the sum of two prime numbers.</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q6" data-no="6" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">6</span><span class="qz-flag">单选</span></div>
+<p>一个由 \(2016\) 枚硬币组成的三角形阵列，第一行有 \(1\) 枚，第二行有 \(2\) 枚，第三行有 \(3\) 枚，依此类推，直到第 \(N\) 行有 \(N\) 枚。\(N\) 的各位数字之和是多少？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q6" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(6\)</span></label>
+<label class="qz-opt"><input type="radio" name="q6" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(7\)</span></label>
+<label class="qz-opt"><input type="radio" name="q6" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(8\)</span></label>
+<label class="qz-opt"><input type="radio" name="q6" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(9\)</span></label>
+<label class="qz-opt"><input type="radio" name="q6" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(10\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">A triangular array of \(2016\) coins has \(1\) coin in the first row, \(2\) coins in the second row, \(3\) coins in the third row, and so on up to \(N\) coins in the \(N\)th row. What is the sum of the digits of \(N?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>硬币总数为 \[ \begin{gathered} 1+2+\cdots+N\\ =\dfrac{N(N+1)}{2}\\ =2016\text{，} \end{gathered} \] 所以 \(N(N+1)=4032\)。因为 \(63\cdot 64=4032\)，所以 \(N=63\)，其各位数字之和为 \(6+3=9\)。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The total number of coins is \[ \begin{gathered} 1+2+\cdots+N\\ =\dfrac{N(N+1)}{2}\\ =2016, \end{gathered} \] so \(N(N+1)=4032.\) Since \(63\cdot 64=4032,\) we have \(N=63,\) and the sum of its digits is \(6+3=9.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q7" data-no="7" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">7</span><span class="qz-flag">单选</span></div>
+<p>下列哪一项描述了 \(x^2(x+y+1)=y^2(x+y+1)\) 的图像？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q7" value="A"><span class="qz-mark">A</span><span class="qz-txt">两条平行直线</span></label>
+<label class="qz-opt"><input type="radio" name="q7" value="B"><span class="qz-mark">B</span><span class="qz-txt">两条相交直线</span></label>
+<label class="qz-opt"><input type="radio" name="q7" value="C"><span class="qz-mark">C</span><span class="qz-txt">三条直线都经过同一个公共点</span></label>
+<label class="qz-opt"><input type="radio" name="q7" value="D"><span class="qz-mark">D</span><span class="qz-txt">三条直线不全经过同一个公共点</span></label>
+<label class="qz-opt"><input type="radio" name="q7" value="E"><span class="qz-mark">E</span><span class="qz-txt">一条直线和一条抛物线</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Which of these describes the graph of \(x^2(x+y+1)=y^2(x+y+1)?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>将所有项移到一边，得到 \[ (x^2-y^2)(x+y+1)=0\text{，} \] 再分解为 \[ (x-y)(x+y)(x+y+1)=0\text{。} \] 因此图像是直线 \(x=y\)、\(x=-y\) 和 \(x+y+1=0\) 的并集。</p>
+<p>前两条直线交于原点，但第三条直线 \(x+y=-1\) 与 \(x+y=0\) 平行，不经过原点。因此，图像由三条不全经过同一个公共点的直线组成。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Moving all terms to one side gives \[ (x^2-y^2)(x+y+1)=0, \] which factors as \[ (x-y)(x+y)(x+y+1)=0. \] The graph is therefore the union of the lines \(x=y,\) \(x=-y,\) and \(x+y+1=0.\)</p>
+<p class="amc-en">The first two lines intersect at the origin, but the third line \(x+y=-1\) is parallel to \(x+y=0\) and does not pass through the origin. So the graph consists of three lines that do not all pass through a common point.</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q8" data-no="8" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">8</span><span class="qz-flag">单选</span></div>
+<p>给定的 \(8\times 5\) 长方形中，阴影区域的面积是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc12p/2016A/problem/q08-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q8" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(4\tfrac{3}{4}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q8" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(5\)</span></label>
+<label class="qz-opt"><input type="radio" name="q8" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(5\tfrac{1}{4}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q8" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(6\tfrac{1}{2}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q8" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(8\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">What is the area of the shaded region of the given \(8\times 5\) rectangle?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc12p/2016A/problem/q08-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>从长方形左上角到右下角的对角线将阴影区域分成四个三角形，它们都在长方形中心相遇。</p>
+<p>其中两个三角形的水平底边长为 \(1\)，高为 \(\frac12\cdot 5=\frac52\)；另外两个三角形的竖直底边长为 \(1\)，高为 \(\frac12\cdot 8=4\)。总面积为 \[ \begin{gathered} 2\cdot\dfrac12\cdot 1\cdot\dfrac52\\ {}+2\cdot\dfrac12\cdot 1\cdot 4\\ =\dfrac52+4\\ =\dfrac{13}{2} \end{gathered}\text{。}\]</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The diagonal of the rectangle from the upper-left corner to the lower-right corner divides the shaded region into four triangles, all meeting at the center of the rectangle.</p>
+<p class="amc-en">Two of these triangles have a horizontal base of length \(1\) and altitude \(\frac12\cdot 5=\frac52,\) and the other two have a vertical base of length \(1\) and altitude \(\frac12\cdot 8=4.\) The total area is \[ \begin{gathered} 2\cdot\dfrac12\cdot 1\cdot\dfrac52\\ {}+2\cdot\dfrac12\cdot 1\cdot 4\\ =\dfrac52+4\\ =\dfrac{13}{2}. \end{gathered} \]</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q9" data-no="9" data-type="single" data-ans="E">
+<div class="qz-qhead"><span class="qz-badge">9</span><span class="qz-flag">单选</span></div>
+<p>在这个单位正方形内有五个全等的小阴影正方形，它们内部互不重叠。如图，中间正方形每条边的中点分别与另外四个小正方形的一个顶点重合。它们的公共边长为 \(\dfrac{a-\sqrt{2}}{b}\)，其中 \(a\)、\(b\) 为正整数。\(a+b\) 是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc12p/2016A/problem/q09-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q9" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(7\)</span></label>
+<label class="qz-opt"><input type="radio" name="q9" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(8\)</span></label>
+<label class="qz-opt"><input type="radio" name="q9" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(9\)</span></label>
+<label class="qz-opt"><input type="radio" name="q9" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(10\)</span></label>
+<label class="qz-opt"><input type="radio" name="q9" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(11\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">The five small shaded squares inside this unit square are congruent and have disjoint interiors. The midpoint of each side of the middle square coincides with one of the vertices of the other four small squares as shown. The common side length is \(\dfrac{a-\sqrt{2}}{b},\) where \(a\) and \(b\) are positive integers. What is \(a+b?\)</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc12p/2016A/problem/q09-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>设公共边长为 \(x\)。单位正方形的对角线长为 \(\sqrt{2}\)，由两条各长 \(x\sqrt2\) 的小正方形对角线和一条长为 \(x\) 的小正方形边组成，所以 \[ 2x\sqrt2+x=\sqrt2\text{。} \]</p>
+<p>解得 \[ \begin{gathered} x=\dfrac{\sqrt2}{2\sqrt2+1}\\ =\dfrac{\sqrt2\,(2\sqrt2-1)}{(2\sqrt2+1)(2\sqrt2-1)}\\ =\dfrac{4-\sqrt2}{7}\text{。} \end{gathered} \] 因此 \(a=4\)、\(b=7\)，所以 \(a+b=11\)。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(x\) be the common side length. The diagonal of the unit square has length \(\sqrt{2}\) and consists of two small-square diagonals (each \(x\sqrt2\)) plus one small-square side length \(x,\) so \[ 2x\sqrt2+x=\sqrt2. \]</p>
+<p class="amc-en">Solving, \[ \begin{gathered} x=\dfrac{\sqrt2}{2\sqrt2+1}\\ =\dfrac{\sqrt2\,(2\sqrt2-1)}{(2\sqrt2+1)(2\sqrt2-1)}\\ =\dfrac{4-\sqrt2}{7}. \end{gathered} \] Thus \(a=4,\) \(b=7,\) and \(a+b=11.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q10" data-no="10" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">10</span><span class="qz-flag">单选</span></div>
+<p>五位朋友坐在电影院同一排的 \(5\) 个座位上，座位从左到右编号为 \(1\) 到 \(5\)。（“左”和“右”从坐在座位上的人的视角看。） 电影中途 Ada 去大厅买爆米花。她回来时发现 Bea 向右移动了两个座位，Ceci 向左移动了一个座位，Dee 和 Edie 交换了座位，并给 Ada 留下了一个端座。Ada 起身前坐在哪个座位？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q10" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q10" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(2\)</span></label>
+<label class="qz-opt"><input type="radio" name="q10" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(3\)</span></label>
+<label class="qz-opt"><input type="radio" name="q10" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(4\)</span></label>
+<label class="qz-opt"><input type="radio" name="q10" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(5\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Five friends sat in a movie theater in a row containing \(5\) seats, numbered \(1\) to \(5\) from left to right. (The directions “left” and “right” are from the point of view of the people as they sit in the seats.) During the movie Ada went to the lobby to get some popcorn. When she returned, she found that Bea had moved two seats to the right, Ceci had moved one seat to the left, and Dee and Edie had switched seats, leaving an end seat for Ada. In which seat had Ada been sitting before she got up?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>五位朋友的总位移为零。Dee 和 Edie 交换座位，所以两人的位移相互抵消。Bea 移动 \(+2\) 个座位，Ceci 移动 \(-1\) 个座位，净位移为 \(+1\)，所以 Ada 必须移动 \(-1\) 个座位才能抵消。</p>
+<p>Ada 回来后坐在端座；既然她向左移动了一个座位，该端座只能是 \(1\) 号座，所以她原来坐在 \(2\) 号座。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The net displacement of all five friends is zero. Dee and Edie swapped seats, so their movements cancel. Bea moved \(+2\) and Ceci moved \(-1,\) a net of \(+1,\) so Ada must move \(-1\) to balance.</p>
+<p class="amc-en">Ada returns to an end seat; since she moved one seat to the left, that seat must be seat \(1,\) so she had been sitting in seat \(2.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q11" data-no="11" data-type="single" data-ans="E">
+<div class="qz-qhead"><span class="qz-badge">11</span><span class="qz-flag">单选</span></div>
+<p>某夏令营的 \(100\) 名学生每人都会唱歌、跳舞或表演。有些学生有不止一种才艺，但没有学生三种才艺都会。有 \(42\) 名学生不会唱歌，\(65\) 名学生不会跳舞，\(29\) 名学生不会表演。有多少名学生正好有两种才艺？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q11" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(16\)</span></label>
+<label class="qz-opt"><input type="radio" name="q11" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(25\)</span></label>
+<label class="qz-opt"><input type="radio" name="q11" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(36\)</span></label>
+<label class="qz-opt"><input type="radio" name="q11" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(49\)</span></label>
+<label class="qz-opt"><input type="radio" name="q11" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(64\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Each of the \(100\) students in a certain summer camp can either sing, dance, or act. Some students have more than one talent, but no student has all three talents. There are \(42\) students who cannot sing, \(65\) students who cannot dance, and \(29\) students who cannot act. How many students have two of these talents?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>会唱歌、跳舞、表演的人数分别为 \(100-42=58\)、\(100-65=35\)、\(100-29=71\)，总和为 \(58+35+71=164\)。</p>
+<p>因为没有人三种才艺都会，每个学生有一种或两种才艺，所以只有一种才艺的学生被数一次，有两种才艺的学生被数两次。因此，被重复计算的人数为 \(164-100=64\)。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The numbers who can sing, dance, and act are \(100-42=58,\) \(100-65=35,\) and \(100-29=71,\) respectively, for a total of \(58+35+71=164.\)</p>
+<p class="amc-en">Since no student has all three talents, each student has one or two talents, so single-talent students are counted once and two-talent students are counted twice. The number counted twice is \(164-100=64.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q12" data-no="12" data-type="single" data-ans="C">
+<div class="qz-qhead"><span class="qz-badge">12</span><span class="qz-flag">单选</span></div>
+<p>在 \(\triangle ABC\) 中，\(AB=6\)、\(BC=7\)、\(CA=8\)。点 \(D\) 在 \(\overline{BC}\) 上，且 \(\overline{AD}\) 平分 \(\angle BAC\)。点 \(E\) 在 \(\overline{AC}\) 上，且 \(\overline{BE}\) 平分 \(\angle ABC\)。两条角平分线交于 \(F\)。比值 \(AF:FD\) 是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc12p/2016A/problem/q12-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q12" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(3:2\)</span></label>
+<label class="qz-opt"><input type="radio" name="q12" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(5:3\)</span></label>
+<label class="qz-opt"><input type="radio" name="q12" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(2:1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q12" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(7:3\)</span></label>
+<label class="qz-opt"><input type="radio" name="q12" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(5:2\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">In \(\triangle ABC,\) \(AB=6,\) \(BC=7,\) and \(CA=8.\) Point \(D\) lies on \(\overline{BC},\) and \(\overline{AD}\) bisects \(\angle BAC.\) Point \(E\) lies on \(\overline{AC},\) and \(\overline{BE}\) bisects \(\angle ABC.\) The bisectors intersect at \(F.\) What is the ratio \(AF:FD?\)</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc12p/2016A/problem/q12-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>在 \(\triangle ABC\) 中应用角平分线定理，得到 \(BD:DC=AB:AC=6:8\)，所以 \(BD=\dfrac{6}{6+8}\cdot 7=3\)。</p>
+<p>在 \(\triangle ABD\) 中，\(BF\) 平分 \(\angle ABD\)，再次应用角平分线定理可得 \[ \begin{gathered} AF:FD=AB:BD\\ =6:3=2:1 \end{gathered}\text{。}\]</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Applying the Angle Bisector Theorem to \(\triangle ABC\) gives \(BD:DC=AB:AC=6:8,\) so \(BD=\dfrac{6}{6+8}\cdot 7=3.\)</p>
+<p class="amc-en">Now \(BF\) lies along the bisector of \(\angle ABD\) in \(\triangle ABD,\) so by the Angle Bisector Theorem again, \[ \begin{gathered} AF:FD=AB:BD\\ =6:3=2:1. \end{gathered} \]</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q13" data-no="13" data-type="single" data-ans="A">
+<div class="qz-qhead"><span class="qz-badge">13</span><span class="qz-flag">单选</span></div>
+<p>设 \(N\) 是 \(5\) 的正倍数。一个红球和 \(N\) 个绿球随机排成一行。令 \(P(N)\) 为至少 \(\dfrac{3}{5}\) 的绿球在红球同一侧的概率。已知 \(P(5)=1\)，并且当 \(N\) 变大时 \(P(N)\) 趋近于 \(\dfrac{4}{5}\)。使 \(P(N)\lt\dfrac{321}{400}\) 的最小 \(N\) 的各位数字之和是多少？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q13" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(12\)</span></label>
+<label class="qz-opt"><input type="radio" name="q13" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(14\)</span></label>
+<label class="qz-opt"><input type="radio" name="q13" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(16\)</span></label>
+<label class="qz-opt"><input type="radio" name="q13" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(18\)</span></label>
+<label class="qz-opt"><input type="radio" name="q13" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(20\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Let \(N\) be a positive multiple of \(5.\) One red ball and \(N\) green balls are arranged in a line in random order. Let \(P(N)\) be the probability that at least \(\dfrac{3}{5}\) of the green balls are on the same side of the red ball. Observe that \(P(5)=1\) and that \(P(N)\) approaches \(\dfrac{4}{5}\) as \(N\) grows large. What is the sum of the digits of the least value of \(N\) such that \(P(N)\lt\dfrac{321}{400}?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>写 \(N=5k\)。从一端开始，将红球的可能位置编号为 \(0,1,\ldots,5k\)，共有 \(5k+1\) 个等可能位置。</p>
+<p>红球两侧的绿球都少于 \(\dfrac{3}{5}\) 的情形，恰好对应红球位于 \(2k+1,2k+2,\ldots,3k-1\) 中的某个位置，共有 \(k-1\) 个。因此 \[ P(N)=1-\dfrac{k-1}{5k+1}=\dfrac{4k+2}{5k+1}\text{。}\]</p>
+<p>解不等式 \(\dfrac{4k+2}{5k+1}\lt\dfrac{321}{400}\)，得到 \(400(4k+2)\lt 321(5k+1)\)，即 \(1600k+800\lt 1605k+321\)，所以 \(5k\gt 479\)，也就是 \(k\gt 95.8\)。因此 \(k=96\)、\(N=480\)，其各位数字之和为 \(4+8+0=12\)。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Write \(N=5k.\) Number the positions of the red ball \(0,1,\ldots,5k\) from one end; there are \(5k+1\) equally likely positions.</p>
+<p class="amc-en">Fewer than \(\dfrac{3}{5}\) of the green balls lie on each side exactly when the red ball is in one of the positions \(2k+1,2k+2,\ldots,3k-1,\) which is \(k-1\) positions. Hence \[ P(N)=1-\dfrac{k-1}{5k+1}=\dfrac{4k+2}{5k+1}. \]</p>
+<p class="amc-en">Solving \(\dfrac{4k+2}{5k+1}\lt\dfrac{321}{400}\) gives \(400(4k+2)\lt 321(5k+1),\) so \(1600k+800\lt 1605k+321\) and \(5k\gt 479,\) meaning \(k\gt 95.8.\) Thus \(k=96\) and \(N=480,\) whose digit sum is \(4+8+0=12.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q14" data-no="14" data-type="single" data-ans="C">
+<div class="qz-qhead"><span class="qz-badge">14</span><span class="qz-flag">单选</span></div>
+<p>一个立方体的每个顶点都要标上 \(1\) 到 \(8\) 中的一个整数，每个整数恰用一次，并且每个面的四个顶点数字之和都相同。通过旋转立方体可以互相得到的标法视为相同。有多少种不同的标法？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q14" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q14" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(3\)</span></label>
+<label class="qz-opt"><input type="radio" name="q14" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(6\)</span></label>
+<label class="qz-opt"><input type="radio" name="q14" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(12\)</span></label>
+<label class="qz-opt"><input type="radio" name="q14" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(24\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Each vertex of a cube is to be labeled with an integer from \(1\) through \(8,\) with each integer being used once, in such a way that the sum of the four numbers on the vertices of a face is the same for each face. Arrangements that can be obtained from each other through rotations of the cube are considered to be the same. How many different arrangements are possible?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>每个顶点属于 \(3\) 个面，所以 \(6S=3(1+2+\cdots+8)=108\)，从而每个面的和为 \(S=18\)。</p>
+<p>包含 \(1\) 且和为 \(18\) 的四元子集是 \(\{1,2,7,8\}\)，\(\{1,3,6,8\}\)，\(\{1,4,5,8\}\)，和 \(\{1,4,6,7\}\)。其中只有一个不含 \(8\)，所以经过 \(1\) 的三个不同面中至少有两个包含 \(8\)。立方体的两个顶点恰好在相邻时才共同位于两个面上；因此 \(1\) 和 \(8\) 相邻。</p>
+<p>旋转立方体，使 \(1\) 位于左下前顶点，\(8\) 位于右下前顶点。经过 \(1\) 而不含 \(8\) 的唯一一个面必须放置 \(4,6,7\)，它们有 \(3!=6\) 种排列。每种排列都会迫使 \(5,3,2\) 位于三个相对顶点，其余各面的和也都为 \(18\)。因此共有 \(6\) 种标法。</p>
+<p>因此，正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Each vertex belongs to \(3\) faces, so \(6S=3(1+2+\cdots+8)=108,\) giving each face-sum \(S=18.\)</p>
+<p class="amc-en">The four-element subsets containing \(1\) with sum \(18\) are \(\{1,2,7,8\},\) \(\{1,3,6,8\},\) \(\{1,4,5,8\},\) and \(\{1,4,6,7\}.\) Only one omits \(8,\) so at least two of the three distinct faces through \(1\) contain \(8.\) Two vertices of a cube lie on two common faces exactly when they are adjacent; hence \(1\) and \(8\) are adjacent.</p>
+<p class="amc-en">Rotate the cube so that \(1\) is at the lower-left-front vertex and \(8\) at the lower-right-front vertex. The unique face through \(1\) that does not contain \(8\) must use \(4,6,7,\) and these can be placed in \(3!=6\) orders. Each order forces \(5,3,2\) at the three opposite vertices, and the remaining face sums are then \(18.\) Hence there are \(6\) arrangements.</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q15" data-no="15" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">15</span><span class="qz-flag">单选</span></div>
+<p>圆心为 \(P\)、\(Q\)、\(R\)、半径分别为 \(1\)、\(2\)、\(3\) 的三个圆位于直线 \(l\) 的同侧，并分别在 \(P'\)、\(Q'\)、\(R'\) 处与 \(l\) 相切，其中 \(Q'\) 在 \(P'\) 与 \(R'\) 之间。圆心为 \(Q\) 的圆与另外两个圆都外切。\(\triangle PQR\) 的面积是多少？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q15" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(0\)</span></label>
+<label class="qz-opt"><input type="radio" name="q15" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(\sqrt{\dfrac{2}{3}}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q15" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q15" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(\sqrt{6}-\sqrt{2}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q15" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(\sqrt{\dfrac{3}{2}}\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Circles with centers \(P,\) \(Q,\) and \(R,\) having radii \(1,\) \(2,\) and \(3,\) respectively, lie on the same side of line \(l\) and are tangent to \(l\) at \(P',\) \(Q',\) and \(R',\) respectively, with \(Q'\) between \(P'\) and \(R'.\) The circle with center \(Q\) is externally tangent to each of the other two circles. What is the area of \(\triangle PQR?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>三个圆心到直线 \(l\) 的高度分别为 \(1\)、\(2\)、\(3\)。由于圆 \(Q\) 与圆 \(P\) 外切，\(PQ=3\)，所以水平距离为 \(P'Q'=\sqrt{3^2-1^2}=\sqrt{8}\)。同理，圆 \(Q\) 与圆 \(R\) 外切，\(QR=5\)，所以 \(Q'R'=\sqrt{5^2-1^2}=\sqrt{24}\)。</p>
+<p>取 \(P=(0,1)\)、\(Q=(\sqrt8,2)\)、\(R=(\sqrt8+\sqrt{24},3)\)。由鞋带公式，面积为 \[ \begin{gathered} \small \dfrac12\left|\sqrt8(3-1)+(\sqrt8+\sqrt{24})(1-2)\right|\\ =\dfrac12\left(\sqrt{24}-\sqrt8\right)\\ =\sqrt6-\sqrt2 \end{gathered}\text{。}\]</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The centers lie at heights \(1,\) \(2,\) and \(3\) above line \(l.\) Since circle \(Q\) is externally tangent to circle \(P,\) we have \(PQ=3,\) so the horizontal distance is \(P'Q'=\sqrt{3^2-1^2}=\sqrt{8}.\) Since circle \(Q\) is tangent to circle \(R,\) we have \(QR=5,\) so \(Q'R'=\sqrt{5^2-1^2}=\sqrt{24}.\)</p>
+<p class="amc-en">Place \(P=(0,1),\) \(Q=(\sqrt8,2),\) and \(R=(\sqrt8+\sqrt{24},3).\) By the shoelace formula, the area is \[ \begin{gathered} \small \dfrac12\left|\sqrt8(3-1)+(\sqrt8+\sqrt{24})(1-2)\right|\\ =\dfrac12\left(\sqrt{24}-\sqrt8\right)\\ =\sqrt6-\sqrt2. \end{gathered} \]</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q16" data-no="16" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">16</span><span class="qz-flag">单选</span></div>
+<p>将 \(y=\log_3 x\)、\(y=\log_x 3\)、\(y=\log_{\frac{1}{3}} x\) 以及 \(y=\log_x\dfrac{1}{3}\) 的图像画在同一坐标系中。平面上有多少个 \(x\) 坐标为正的点位于两条或更多条图像上？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q16" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(2\)</span></label>
+<label class="qz-opt"><input type="radio" name="q16" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(3\)</span></label>
+<label class="qz-opt"><input type="radio" name="q16" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(4\)</span></label>
+<label class="qz-opt"><input type="radio" name="q16" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(5\)</span></label>
+<label class="qz-opt"><input type="radio" name="q16" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(6\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">The graphs of \(y=\log_3 x,\) \(y=\log_x 3,\) \(y=\log_{\frac{1}{3}} x,\) and \(y=\log_x\dfrac{1}{3}\) are plotted on the same set of axes. How many points in the plane with positive \(x\)-coordinates lie on two or more of the graphs?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>令 \(u=\log_3 x\)，则 \(\log_x 3=\dfrac1u\)，\(\log_{\frac{1}{3}}x=-u\)，且 \(\log_x\dfrac13=-\dfrac1u\)。两条图像相交时，\(u,\dfrac1u,-u,-\dfrac1u\) 中有两个相等，并且对应的 \(x\gt 0\) 有效。</p>
+<p>令 \(u=\dfrac1u\) 得 \(u=\pm1\)，所以 \(x=3\) 或 \(x=\dfrac13\)；令 \(-u=-\dfrac1u\) 得到同样的值。令 \(u=-u\) 得 \(u=0\)，即 \(x=1\)，此时 \(\log_3 x\) 与 \(\log_{\frac{1}{3}}x\) 都等于 \(0\)。其余配对没有实数解。</p>
+<p>不同交点为 \((1,0)\)、\((3,1)\)、\(\left(\dfrac13,-1\right)\)、\((3,-1)\) 和 \(\left(\dfrac13,1\right)\)，所以共有 \(5\) 个。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(u=\log_3 x.\) Then \(\log_x 3=\dfrac1u,\) \(\log_{\frac{1}{3}}x=-u,\) and \(\log_x\dfrac13=-\dfrac1u.\) Two graphs meet where two of \(u,\dfrac1u,-u,-\dfrac1u\) are equal for some valid \(x\gt 0.\)</p>
+<p class="amc-en">Setting \(u=\dfrac1u\) gives \(u=\pm1,\) so \(x=3\) or \(x=\dfrac13;\) setting \(-u=-\dfrac1u\) gives the same values. Setting \(u=-u\) gives \(u=0,\) i.e. \(x=1,\) where \(\log_3 x\) and \(\log_{\frac{1}{3}}x\) are both \(0.\) The remaining pairings have no real solution.</p>
+<p class="amc-en">The distinct intersection points are \((1,0),\) \((3,1),\) \(\left(\dfrac13,-1\right),\) \((3,-1),\) and \(\left(\dfrac13,1\right),\) so there are \(5.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q17" data-no="17" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">17</span><span class="qz-flag">单选</span></div>
+<p>设 \(ABCD\) 是正方形。令 \(E\)、\(F\)、\(G\)、\(H\) 分别为以 \(\overline{AB}\)、\(\overline{BC}\)、\(\overline{CD}\)、\(\overline{DA}\) 为底、且在正方形外侧的等边三角形的中心。正方形 \(EFGH\) 的面积与正方形 \(ABCD\) 的面积之比是多少？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q17" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q17" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(\dfrac{2+\sqrt{3}}{3}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q17" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(\sqrt{2}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q17" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(\dfrac{\sqrt{2}+\sqrt{3}}{2}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q17" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(\sqrt{3}\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Let \(ABCD\) be a square. Let \(E,\) \(F,\) \(G,\) and \(H\) be the centers, respectively, of equilateral triangles with bases \(\overline{AB},\) \(\overline{BC},\) \(\overline{CD},\) and \(\overline{DA},\) each exterior to the square. What is the ratio of the area of square \(EFGH\) to the area of square \(ABCD?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>设正方形 \(ABCD\) 的边长为 \(6\)。每个等边三角形的高为 \(3\sqrt3\)，其中心到正方形相应边的距离是该高的 \(\frac13\)，即 \(\sqrt3\)。</p>
+<p>正方形 \(ABCD\) 的对角线长为 \(6\sqrt2\)。正方形 \(EFGH\) 的对角线等于 \(ABCD\) 的边长加上两段长为 \(\sqrt3\) 的距离，即 \(6+2\sqrt3\)。面积比等于对角线长度之比的平方：\[ \begin{gathered} \left(\dfrac{6+2\sqrt3}{6\sqrt2}\right)^2\\ =\left(\dfrac{3+\sqrt3}{3\sqrt2}\right)^2\\ =\dfrac{12+6\sqrt3}{18}\\ =\dfrac{2+\sqrt3}{3} \end{gathered}\text{。}\]</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let square \(ABCD\) have side length \(6.\) Each equilateral triangle has height \(3\sqrt3,\) and its center lies \(\frac13\) of that height, namely \(\sqrt3,\) from the square’s side.</p>
+<p class="amc-en">Square \(ABCD\) has diagonal \(6\sqrt2.\) Square \(EFGH\) has diagonal equal to the side of \(ABCD\) plus twice \(\sqrt3,\) namely \(6+2\sqrt3.\) The area ratio is the square of the ratio of diagonals: \[ \begin{gathered} \left(\dfrac{6+2\sqrt3}{6\sqrt2}\right)^2\\ =\left(\dfrac{3+\sqrt3}{3\sqrt2}\right)^2\\ =\dfrac{12+6\sqrt3}{18}\\ =\dfrac{2+\sqrt3}{3}. \end{gathered} \]</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q18" data-no="18" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">18</span><span class="qz-flag">单选</span></div>
+<p>对某个正整数 \(n\)，数 \(110n^3\) 有 \(110\) 个正整数因数，其中包括 \(1\) 和 \(110n^3\) 本身。数 \(81n^4\) 有多少个正整数因数？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q18" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(110\)</span></label>
+<label class="qz-opt"><input type="radio" name="q18" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(191\)</span></label>
+<label class="qz-opt"><input type="radio" name="q18" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(261\)</span></label>
+<label class="qz-opt"><input type="radio" name="q18" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(325\)</span></label>
+<label class="qz-opt"><input type="radio" name="q18" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(425\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">For some positive integer \(n,\) the number \(110n^3\) has \(110\) positive integer divisors, including \(1\) and the number \(110n^3.\) How many positive integer divisors does the number \(81n^4\) have?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>数 \(110n^3\) 能被三个不同的质数 \(2,5,11\) 整除。若其质因数指数为 \(r_1,r_2,\ldots\)，则 \((r_1+1)(r_2+1)\cdots=110\)，其中 \(110=2\cdot5\cdot11\)。因为已经至少有三个大于 \(1\) 的因数，所以恰好只有三个，这说明没有其他质数整除 \(n\)。</p>
+<p>\(110n^3\) 中的每个指数都满足 \(1\pmod3\)，因此每个因数个数中的因子 \(r_i+1\) 都满足 \(2\pmod3\)。因数 \(2,5,11\) 都具有这种形式，所以指数按某种顺序为 \(1,4,10\)。从 \(110\) 中已有的指数减去 \(1\)，再除以 \(3\)，得到 \(n\) 中的指数按某种顺序为 \(0,1,3\)。因此 \(n=pq^3\)，其中不同质数 \(p,q\) 选自 \(2,5,11\)。</p>
+<p>所以 \(n^4\) 中的指数为 \(4\) 和 \(12\)，而 \(81=3^4\) 引入第三个质数，因为 \(n\) 不能被 \(3\) 整除。因此 \(81n^4\) 的因数个数为 \[ \begin{gathered} (4+1)(4+1)(12+1)\\ =5\cdot5\cdot13\\ =325 \end{gathered}\text{。}\]</p>
+<p>因此，正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The number \(110n^3\) is divisible by the three distinct primes \(2,5,11.\) If its prime exponents are \(r_1,r_2,\ldots,\) then \((r_1+1)(r_2+1)\cdots=110,\) where \(110=2\cdot5\cdot11.\) Because there are already at least three factors greater than \(1,\) there are exactly three, so no other prime divides \(n.\)</p>
+<p class="amc-en">Each exponent in \(110n^3\) is \(1\pmod3,\) so each divisor-count factor \(r_i+1\) is \(2\pmod3.\) The factors \(2,5,11\) all have that form, so the exponents are \(1,4,10\) in some order. After subtracting the exponent \(1\) from \(110\) and dividing by \(3,\) the exponents in \(n\) are \(0,1,3\) in some order. Thus \(n=pq^3\) for two distinct primes \(p,q\) chosen from \(2,5,11.\)</p>
+<p class="amc-en">Consequently \(n^4\) has exponents \(4\) and \(12,\) while \(81=3^4\) introduces a third prime because \(n\) is not divisible by \(3.\) Hence the number of divisors of \(81n^4\) is \[ \begin{gathered} (4+1)(4+1)(12+1)\\ =5\cdot5\cdot13\\ =325. \end{gathered} \]</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q19" data-no="19" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">19</span><span class="qz-flag">单选</span></div>
+<p>Jerry 从实数轴上的 \(0\) 出发。他投掷一枚公平硬币 \(8\) 次。若正面朝上，他向正方向移动 \(1\) 单位；若反面朝上，他向负方向移动 \(1\) 单位。他在这个过程中某一时刻到达 \(4\) 的概率为 \(\dfrac{a}{b}\)，其中 \(a\) 和 \(b\) 是互质正整数。\(a+b\) 是多少？（例如，若投掷序列为 HTHHHHHH，他成功。）</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q19" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(69\)</span></label>
+<label class="qz-opt"><input type="radio" name="q19" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(151\)</span></label>
+<label class="qz-opt"><input type="radio" name="q19" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(257\)</span></label>
+<label class="qz-opt"><input type="radio" name="q19" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(293\)</span></label>
+<label class="qz-opt"><input type="radio" name="q19" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(313\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Jerry starts at \(0\) on the real number line. He tosses a fair coin \(8\) times. When he gets heads, he moves \(1\) unit in the positive direction; when he gets tails, he moves \(1\) unit in the negative direction. The probability that he reaches \(4\) at some time during this process is \(\dfrac{a}{b},\) where \(a\) and \(b\) are relatively prime positive integers. What is \(a+b?\) (For example, he succeeds if his sequence of tosses is HTHHHHHH.)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>统计 \(8\) 次投掷中累计总和达到过 \(4\) 的序列数。如果反面至多出现 \(2\) 次，他一定能达到 \(4\)，贡献 \[ \begin{gathered} \binom80+\binom81+\binom82\\ =1+8+28\\ =37 \end{gathered} \] 个序列。</p>
+<p>恰有 \(3\) 次反面时，他只能在第 \(4\) 次或第 \(6\) 次投掷首次达到 \(4\)。要在第 \(4\) 次达到，前四次必须全为正面，之后剩下的那个正面有 \(4\) 个可能位置。否则第 \(5\) 和第 \(6\) 次是正面，前四次中有一次反面，最后两次是反面，同样有 \(4\) 种可能。因此这一情形贡献 \(8\) 个序列。恰有 \(4\) 次反面时，只有 HHHHTTTT 可行，贡献 \(1\) 个序列。正面少于 \(4\) 次时不可能达到 \(4\)。</p>
+<p>所以有利序列共有 \(37+8+1=46\) 个，全部序列有 \(2^8=256\) 个，概率为 \(\dfrac{46}{256}=\dfrac{23}{128}\)。因此 \(a+b=23+128=151\)。</p>
+<p>因此，正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Count the sequences of \(8\) tosses whose running total reaches \(4.\) With at most \(2\) tails he certainly reaches \(4,\) contributing \[ \begin{gathered} \binom80+\binom81+\binom82\\ =1+8+28\\ =37 \end{gathered} \] sequences.</p>
+<p class="amc-en">With exactly \(3\) tails, he can first reach \(4\) on toss \(4\) or toss \(6.\) Reaching it on toss \(4\) requires four initial heads, after which the remaining head has \(4\) possible positions. Otherwise, tosses \(5\) and \(6\) are heads, one of the first four tosses is a tail, and the last two are tails, again giving \(4\) possibilities. Thus this case contributes \(8.\) With exactly \(4\) tails, only HHHHTTTT works, giving \(1.\) He cannot reach \(4\) with fewer than \(4\) heads.</p>
+<p class="amc-en">So there are \(37+8+1=46\) favorable sequences out of \(2^8=256,\) a probability of \(\dfrac{46}{256}=\dfrac{23}{128}.\) Then \(a+b=23+128=151.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q20" data-no="20" data-type="single" data-ans="A">
+<div class="qz-qhead"><span class="qz-badge">20</span><span class="qz-flag">单选</span></div>
+<p>二元运算 \(\diamond\) 满足：对所有非零实数 \(a\)、\(b\)、\(c\)，\(a\diamond(b\diamond c)=(a\diamond b)\cdot c\)，且 \(a\diamond a=1\)。（这里的点 \(\cdot\) 表示通常的乘法。）方程 \(2016\diamond(6\diamond x)=100\) 的解可写为 \(\dfrac{p}{q}\)，其中 \(p\)、\(q\) 是互质正整数。\(p+q\) 是多少？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q20" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(109\)</span></label>
+<label class="qz-opt"><input type="radio" name="q20" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(201\)</span></label>
+<label class="qz-opt"><input type="radio" name="q20" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(301\)</span></label>
+<label class="qz-opt"><input type="radio" name="q20" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(3049\)</span></label>
+<label class="qz-opt"><input type="radio" name="q20" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(33{,}601\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">A binary operation \(\diamond\) has the properties that \(a\diamond(b\diamond c)=(a\diamond b)\cdot c\) and that \(a\diamond a=1\) for all nonzero real numbers \(a,\) \(b,\) and \(c.\) (Here the dot \(\cdot\) represents the usual multiplication operation.) The solution to the equation \(2016\diamond(6\diamond x)=100\) can be written as \(\dfrac{p}{q},\) where \(p\) and \(q\) are relatively prime positive integers. What is \(p+q?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>令 \(b=c=a\)，得到 \(a\diamond 1=a\diamond(a\diamond a)\) \(=(a\diamond a)\cdot a=a\)。再令 \(c=b\)，得到 \(a=a\diamond 1\) \(=a\diamond(b\diamond b)=(a\diamond b)\cdot b\)，所以 \(a\diamond b=\dfrac{a}{b}\)。</p>
+<p>因此 \[ \begin{gathered} 2016\diamond(6\diamond x)\\ =2016\diamond\dfrac{6}{x}\\ =\dfrac{2016}{\frac{6}{x}}\\ =336x=100 \end{gathered}\text{，}\] 所以 \(x=\dfrac{100}{336}=\dfrac{25}{84}\)，且 \(p+q=25+84=109\)。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Setting \(b=c=a\) gives \(a\diamond 1=a\diamond(a\diamond a)\) \(=(a\diamond a)\cdot a=a.\) Then setting \(c=b\) gives \(a=a\diamond 1\) \(=a\diamond(b\diamond b)=(a\diamond b)\cdot b,\) so \(a\diamond b=\dfrac{a}{b}.\)</p>
+<p class="amc-en">Therefore \[ \begin{gathered} 2016\diamond(6\diamond x)\\ =2016\diamond\dfrac{6}{x}\\ =\dfrac{2016}{\frac{6}{x}}\\ =336x=100, \end{gathered} \] so \(x=\dfrac{100}{336}=\dfrac{25}{84}\) and \(p+q=25+84=109.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q21" data-no="21" data-type="single" data-ans="E">
+<div class="qz-qhead"><span class="qz-badge">21</span><span class="qz-flag">单选</span></div>
+<p>一个四边形内接于半径为 \(200\sqrt{2}\) 的圆。该四边形的三条边长为 \(200\)。第四条边长是多少？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q21" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(200\)</span></label>
+<label class="qz-opt"><input type="radio" name="q21" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(200\sqrt{2}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q21" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(200\sqrt{3}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q21" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(300\sqrt{2}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q21" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(500\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">A quadrilateral is inscribed in a circle of radius \(200\sqrt{2}.\) Three of the sides of this quadrilateral have length \(200.\) What is the length of its fourth side?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>设长为 \(200\) 的边所对的圆心角为 \(\theta\)，圆的半径为 \(R=200\sqrt2\)。对以圆心为顶点的等腰三角形应用余弦定理，得到 \[ \begin{gathered} 200^2=2R^2(1-\cos\theta)\\ =160000(1-\cos\theta) \end{gathered}\text{，}\] 所以 \(\cos\theta=\dfrac34\)。</p>
+<p>三条相等的边占据三段圆心角均为 \(\theta\) 的连续弧，所以第四段弧的圆心角为 \(2\pi-3\theta\)。它所对的弦与圆心角为 \(3\theta\) 的弦等长，并且 \[ \begin{gathered} \cos 3\theta=4\cos^3\theta-3\cos\theta\\ =4\cdot\dfrac{27}{64}-\dfrac94\\ =-\dfrac{9}{16} \end{gathered}\text{。}\] 它的长度平方为 \[ \begin{gathered} 2R^2(1-\cos 3\theta)\\ =160000\left(1+\dfrac{9}{16}\right)\\ =160000\cdot\dfrac{25}{16}\\ =250000 \end{gathered}\text{，}\] 所以第四条边长为 \(500\)。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(\theta\) be the central angle subtending a side of length \(200,\) with radius \(R=200\sqrt2.\) By the law of cosines on the isosceles triangle from the center, \[ \begin{gathered} 200^2=2R^2(1-\cos\theta)\\ =160000(1-\cos\theta), \end{gathered} \] so \(\cos\theta=\dfrac34.\)</p>
+<p class="amc-en">The three equal sides use three consecutive arcs of angle \(\theta,\) so the fourth arc has angle \(2\pi-3\theta.\) Its chord has the same length as a chord with central angle \(3\theta,\) and \[ \begin{gathered} \cos 3\theta=4\cos^3\theta-3\cos\theta\\ =4\cdot\dfrac{27}{64}-\dfrac94\\ =-\dfrac{9}{16}. \end{gathered} \] Its length squared is \[ \begin{gathered} 2R^2(1-\cos 3\theta)\\ =160000\left(1+\dfrac{9}{16}\right)\\ =160000\cdot\dfrac{25}{16}\\ =250000, \end{gathered} \] so the fourth side is \(500.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q22" data-no="22" data-type="single" data-ans="A">
+<div class="qz-qhead"><span class="qz-badge">22</span><span class="qz-flag">单选</span></div>
+<p>有多少个正整数有序三元组 \((x,y,z)\) 满足 \(\text{lcm}(x,y)=72\)，\(\text{lcm}(x,z)=600\)，且 \(\text{lcm}(y,z)=900\)？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q22" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(15\)</span></label>
+<label class="qz-opt"><input type="radio" name="q22" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(16\)</span></label>
+<label class="qz-opt"><input type="radio" name="q22" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(24\)</span></label>
+<label class="qz-opt"><input type="radio" name="q22" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(27\)</span></label>
+<label class="qz-opt"><input type="radio" name="q22" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(64\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">How many ordered triples \((x,y,z)\) of positive integers satisfy \(\text{lcm}(x,y)=72,\) \(\text{lcm}(x,z)=600,\) and \(\text{lcm}(y,z)=900?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>因为 \(\text{lcm}(x,y)=2^3\cdot3^2\)，且 \(\text{lcm}(x,z)=2^3\cdot3\cdot5^2\)，所以 \(5^2\) 整除 \(z\)，而 \(x\) 和 \(y\) 都不能被 \(5\) 整除。同理，\(3^2\) 整除 \(y\)，而 \(x\) 和 \(z\) 都不能被 \(3^2\) 整除；此外，\(x\) 必须含有因子 \(2^3\)。</p>
+<p>写 \(x=2^3\cdot3^{\,j}\)、\(y=2^{\,k}\cdot3^2\)、\(z=2^{\,m}\cdot3^{\,n}\cdot5^2\)，最小公倍数条件要求 \(\max(j,n)=1\)，且 \(\max(k,m)=2\)。第一对可以取 \((1,0),(0,1),(1,1)\)，第二对可以取 \((2,0),(2,1),(2,2),(0,2),(1,2)\)，因此共有 \(3\cdot5=15\) 个有序三元组。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Because \(\text{lcm}(x,y)=2^3\cdot3^2\) and \(\text{lcm}(x,z)=2^3\cdot3\cdot5^2,\) the factor \(5^2\) divides \(z\) while neither \(x\) nor \(y\) is divisible by \(5.\) Also \(3^2\) divides \(y,\) while neither \(x\) nor \(z\) is divisible by \(3^2,\) and \(x\) must have the factor \(2^3.\)</p>
+<p class="amc-en">Writing \(x=2^3\cdot3^{\,j},\) \(y=2^{\,k}\cdot3^2,\) and \(z=2^{\,m}\cdot3^{\,n}\cdot5^2,\) the lcm conditions require \(\max(j,n)=1\) and \(\max(k,m)=2.\) The first pair can be \((1,0),(0,1),(1,1),\) and the second can be \((2,0),(2,1),(2,2),(0,2),(1,2).\) Thus there are \(3\cdot5=15\) ordered triples.</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q23" data-no="23" data-type="single" data-ans="C">
+<div class="qz-qhead"><span class="qz-badge">23</span><span class="qz-flag">单选</span></div>
+<p>从区间 \([0,1]\) 中独立随机选取三个数。所选三个数能作为一个面积为正的三角形的边长的概率是多少？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q23" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(\dfrac{1}{6}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q23" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(\dfrac{1}{3}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q23" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(\dfrac{1}{2}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q23" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(\dfrac{2}{3}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q23" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(\dfrac{5}{6}\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Three numbers in the interval \([0,1]\) are chosen independently and at random. What is the probability that the chosen numbers are the side lengths of a triangle with positive area?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>有序三元组 \((x,y,z)\) 填满体积为 \(1\) 的单位立方体。不能构成三角形，恰好意味着某个数大于或等于另外两个数之和。</p>
+<p>区域 \(z\ge x+y\) 是一个四面体，顶点为 \((0,0,0),(0,0,1),(0,1,1),(1,0,1)\)，体积为 \(\frac16\)。类似地，区域 \(x\ge y+z\) 和 \(y\ge x+z\) 的体积也各为 \(\frac16\)，而且内部互不相交。因此不能构成三角形的概率为 \(3\cdot\frac16=\frac12\)，能构成三角形的概率为 \(1-\frac12=\frac12\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The ordered triples \((x,y,z)\) fill the unit cube of volume \(1.\) They fail to form a triangle exactly when one value is at least the sum of the other two.</p>
+<p class="amc-en">The region \(z\ge x+y\) is a tetrahedron with vertices \((0,0,0),(0,0,1),(0,1,1),(1,0,1)\) of volume \(\frac16.\) The analogous regions \(x\ge y+z\) and \(y\ge x+z\) also have volume \(\frac16\) and have disjoint interiors. So the failure probability is \(3\cdot\frac16=\frac12,\) and the triangle probability is \(1-\frac12=\frac12.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q24" data-no="24" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">24</span><span class="qz-flag">单选</span></div>
+<p>存在一个最小正实数 \(a\)，使得存在正实数 \(b\)，并且多项式 \(x^3-ax^2+bx-a\) 的所有根都是实数。事实上，对这个 \(a\) 值，\(b\) 是唯一的。这个 \(b\) 的值是多少？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q24" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(8\)</span></label>
+<label class="qz-opt"><input type="radio" name="q24" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(9\)</span></label>
+<label class="qz-opt"><input type="radio" name="q24" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(10\)</span></label>
+<label class="qz-opt"><input type="radio" name="q24" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(11\)</span></label>
+<label class="qz-opt"><input type="radio" name="q24" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(12\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">There is a smallest positive real number \(a\) such that there exists a positive real number \(b\) such that all the roots of the polynomial \(x^3-ax^2+bx-a\) are real. In fact, for this value of \(a\) the value of \(b\) is unique. What is this value of \(b?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>由韦达定理，实根 \(r,s,t\) 满足 \(r+s+t=a\)，\(rs+st+tr=b\)，且 \(rst=a\)，所以 \(r+s+t=rst\)。</p>
+<p>乘积为正，说明三个根全为正，或有两个根为负。在后一种情形中，将根写成 \(-u,-v,w\)，其中 \(u,v,w\gt0\)。和为正迫使 \(w\gt u+v\)，于是 \(b=uv-w(u+v)\lt0\)，矛盾。因此三个根都为正。</p>
+<p>由算术平均数与几何平均数不等式，\(27rst\le(r+s+t)^3=(rst)^3\)，所以 \(a=rst\ge 3\sqrt3\)，等号成立当且仅当 \(r=s=t=\sqrt3\)。在这个最小的 \(a\) 下，\[ \begin{gathered} b=rs+st+tr\\ =3r^2=3\cdot 3=9 \end{gathered}\text{。}\]</p>
+<p>因此，正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">By Vieta’s formulas, the real roots \(r,s,t\) satisfy \(r+s+t=a,\) \(rs+st+tr=b,\) and \(rst=a,\) so \(r+s+t=rst.\)</p>
+<p class="amc-en">The positive product means either all three roots are positive or two are negative. In the latter case write the roots as \(-u,-v,w\) with \(u,v,w\gt0.\) The positive sum forces \(w\gt u+v,\) and then \(b=uv-w(u+v)\lt0,\) a contradiction. Hence all three roots are positive.</p>
+<p class="amc-en">By the AM-GM inequality, \(27rst\le(r+s+t)^3=(rst)^3,\) so \(a=rst\ge 3\sqrt3,\) with equality if and only if \(r=s=t=\sqrt3.\) At this smallest \(a,\) \[ \begin{gathered} b=rs+st+tr\\ =3r^2=3\cdot 3=9. \end{gathered} \]</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q25" data-no="25" data-type="single" data-ans="E">
+<div class="qz-qhead"><span class="qz-badge">25</span><span class="qz-flag">单选</span></div>
+<p>设 \(k\) 为正整数。Bernardo 和 Silvia 轮流在黑板上写数和擦数：Bernardo 先写下最小的 \(k+1\) 位完全平方数。每当 Bernardo 写下一个数，Silvia 就擦去它的最后 \(k\) 位数字。然后 Bernardo 写下下一个完全平方数，Silvia 再擦去最后 \(k\) 位，如此继续，直到黑板上最后留下的两个数相差至少 \(2\)。令 \(f(k)\) 为黑板上没有出现过的最小正整数。例如，当 \(k=1\) 时，Bernardo 写下的数为 \(16\)，\(25\)，\(36\)，\(49\) 和 \(64\)；Silvia 擦除后黑板上显示的数为 \(1\)，\(2\)，\(3\)，\(4\) 和 \(6\)，因此 \(f(1)=5\)。求 \(f(2)+f(4)\) \(+f(6)+\cdots+f(2016)\) 的各位数字之和。</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q25" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(7986\)</span></label>
+<label class="qz-opt"><input type="radio" name="q25" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(8002\)</span></label>
+<label class="qz-opt"><input type="radio" name="q25" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(8030\)</span></label>
+<label class="qz-opt"><input type="radio" name="q25" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(8048\)</span></label>
+<label class="qz-opt"><input type="radio" name="q25" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(8064\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Let \(k\) be a positive integer. Bernardo and Silvia take turns writing and erasing numbers on a blackboard as follows: Bernardo starts by writing the smallest perfect square with \(k+1\) digits. Every time Bernardo writes a number, Silvia erases the last \(k\) digits of it. Bernardo then writes the next perfect square, Silvia erases the last \(k\) digits of it, and this process continues until the last two numbers that remain on the board differ by at least \(2.\) Let \(f(k)\) be the smallest positive integer not written on the board. For example, if \(k=1,\) then the numbers that Bernardo writes are \(16,\) \(25,\) \(36,\) \(49,\) and \(64,\) and the numbers showing on the board after Silvia erases are \(1,\) \(2,\) \(3,\) \(4,\) and \(6,\) and thus \(f(1)=5.\) What is the sum of the digits of \(f(2)+f(4)\) \(+f(6)+\cdots+f(2016)?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>取 \(k=2j\)。最小的 \(k+1\) 位完全平方数是 \(10^{k}=(10^{j})^2\)。Silvia 擦除数字后，黑板上显示的数为 \(\left\lfloor \frac{n^2}{10^{k}}\right\rfloor\)，其中 \(n=10^{j}, 10^{j}+1,\ldots\)。</p>
+<p>令 \(M=10^k\)。从 \(n\) 到 \(n+1\) 要出现至少为 \(2\) 的跳跃，需要 \((n+1)^2-n^2=2n+1\gt M\)，因此写 \(n=\frac{M}{2}+m\)，其中 \(m\ge0\)。当 \(m=0\) 时跳跃只有 \(1\)，所以第一次更大的跳跃满足 \(m\ge1\)。令 \(A=\left\lfloor \frac{n^2}{M}\right\rfloor\)，\(B=\left\lfloor\frac{(n+1)^2}{M}\right\rfloor\)。因为 \(M\) 能被 \(4\) 整除，\[ \begin{aligned} A&amp;=\dfrac M4+m+\left\lfloor\dfrac{m^2}{M}\right\rfloor,\\ B&amp;=\dfrac M4+m+1\\ &amp;\quad{}+\left\lfloor\dfrac{(m+1)^2}{M}\right\rfloor \end{aligned}\text{。}\]</p>
+<p>因此第一次至少为 \(2\) 的跳跃出现在使 \(m^2\lt M\le(m+1)^2\) 成立的最小 \(m\) 处。因为 \(\sqrt M=10^j\)，所以 \(m=10^j-1\)。间隙之前最后显示的数是 \(\frac{M}{4}+10^j-1\)，所以最小的未出现正整数为 \[f(2j)=\dfrac{10^{2j}}4+10^j\text{。}\]</p>
+<p>对 \(j=1,\ldots,1008\) 求和，得到 \[ \begin{gathered} \sum_{j=1}^{1008}f(2j)\\ =25\sum_{j=0}^{1007}10^{2j}\\ {}+10\sum_{j=0}^{1007}10^{j}\\ =\underbrace{2525\cdots25}_{2016\text{ 位数字}}\\ {}+\underbrace{111\cdots10}_{1009\text{ 位数字}} \end{gathered}\text{。}\] 相加时没有进位，所以各位数字之和为 \(1008\cdot(2+5)\) \(+1008\cdot 1=1008\cdot 8=8064\)。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Take \(k=2j.\) The smallest perfect square with \(k+1\) digits is \(10^{k}=(10^{j})^2,\) and after Silvia erases, the numbers shown are \(\left\lfloor \frac{n^2}{10^{k}}\right\rfloor\) for \(n=10^{j}, 10^{j}+1,\ldots\)</p>
+<p class="amc-en">Put \(M=10^k.\) A jump of at least \(2\) from \(n\) to \(n+1\) requires \((n+1)^2-n^2=2n+1\gt M,\) so write \(n=\frac{M}{2}+m\) with \(m\ge0.\) The case \(m=0\) gives a jump of only \(1,\) so the first larger jump has \(m\ge1.\) Let \(A=\left\lfloor \frac{n^2}{M}\right\rfloor\) and \(B=\left\lfloor\frac{(n+1)^2}{M}\right\rfloor.\) Because \(M\) is divisible by \(4,\) \[ \begin{aligned} A&amp;=\dfrac M4+m+\left\lfloor\dfrac{m^2}{M}\right\rfloor,\\ B&amp;=\dfrac M4+m+1\\ &amp;\quad{}+\left\lfloor\dfrac{(m+1)^2}{M}\right\rfloor. \end{aligned} \]</p>
+<p class="amc-en">Therefore the first jump of at least \(2\) occurs at the first \(m\) for which \(m^2\lt M\le(m+1)^2.\) Since \(\sqrt M=10^j,\) this is \(m=10^j-1.\) The last displayed value before the gap is \(\frac{M}{4}+10^j-1,\) so the smallest missing integer is \[f(2j)=\dfrac{10^{2j}}4+10^j.\]</p>
+<p class="amc-en">Summing over \(j=1,\ldots,1008,\) \[ \begin{gathered} \sum_{j=1}^{1008}f(2j)\\ =25\sum_{j=0}^{1007}10^{2j}\\ {}+10\sum_{j=0}^{1007}10^{j}\\ =\underbrace{2525\cdots25}_{2016\text{ digits}}\\ {}+\underbrace{111\cdots10}_{1009\text{ digits}}. \end{gathered} \] There are no carries, so the digit sum is \(1008\cdot(2+5)\) \(+1008\cdot 1=1008\cdot 8=8064.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div></div>
+</section>
+  </form>
+
+  <div class="qz-foot" id="qzFoot" hidden>
+    <div class="qz-summary" id="qzSummary" hidden></div>
+    <button class="btn qz-submit" id="qzSubmit" type="button">提交答卷</button>
+    <p class="qz-tip" id="qzTip">提交前可随时修改选择；提交后不可更改，成绩不会保存。</p>
+  </div>
+
+  <p class="back"><a href="/docs/amc12p-2016a/">← 返回展示模式</a></p>
+</article>
+
+<button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 8.8V19h-2V8.8L6.4 13.4 5 12z" fill="currentColor"/></svg>
+</button>
+
+<script>
+(function () {
+  var form = document.getElementById('qzForm');
+  var note = document.getElementById('qzNote');
+  var startBtn = document.getElementById('qzStart');
+  var clock = document.getElementById('qzClock');
+  var foot = document.getElementById('qzFoot');
+  var submitBtn = document.getElementById('qzSubmit');
+  var summary = document.getElementById('qzSummary');
+  var tip = document.getElementById('qzTip');
+  var progEl = document.getElementById('qzProgress');
+  var topBar = document.getElementById('qzTop');
+  if (!form || !startBtn) return;
+
+  var qs = Array.prototype.slice.call(form.querySelectorAll('.qz-q'));
+  // 判分题：有选项且有答案（原卷作废 / 数据缺失的题不计分）
+  var graded = qs.filter(function (s) {
+    return s.getAttribute('data-type') !== 'blank' && s.getAttribute('data-ans');
+  });
+  var ungraded = qs.filter(function (s) { return s.getAttribute('data-type') !== 'blank' && !s.getAttribute('data-ans'); });
+  var blankN = qs.filter(function (s) { return s.getAttribute('data-type') === 'blank'; }).length;
+  var t0 = 0, tid = null, started = false, done = false;
+
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function fmt(ms) {
+    var s = Math.floor(ms / 1000);
+    var m = Math.floor(s / 60); s = s % 60;
+    var h = Math.floor(m / 60); m = m % 60;
+    return h ? (h + ':' + pad(m) + ':' + pad(s)) : (pad(m) + ':' + pad(s));
+  }
+  function tick() { clock.textContent = fmt(Date.now() - t0); }
+  function startTimer() {
+    t0 = Date.now(); tick();
+    tid = setInterval(tick, 1000);
+  }
+  function stopTimer() { if (tid) { clearInterval(tid); tid = null; } }
+
+  function picked(sec) {
+    var ins = sec.querySelectorAll('input');
+    var v = [];
+    for (var i = 0; i < ins.length; i++) if (ins[i].checked) v.push(ins[i].value);
+    return v.sort().join('');
+  }
+  function answeredCount() {
+    var n = 0;
+    graded.forEach(function (sec) {
+      if (sec.querySelector('input:checked')) n++;
+    });
+    return n;
+  }
+  function refreshProgress() {
+    var dn = answeredCount();
+    if (progEl) progEl.textContent = '已答 ' + dn + ' / ' + graded.length;
+    if (tip) {
+      tip.textContent = dn < graded.length
+        ? '还有 ' + (graded.length - dn) + ' 题未作答，未作答的题目提交后判为答错。'
+        : '已全部作答，提交前可随时修改；提交后不可更改，成绩不会保存。';
+    }
+    // 兼容不支持 :has() 的浏览器：把选中态同步到 label 的 class
+    var labels = form.querySelectorAll('.qz-opt');
+    for (var i = 0; i < labels.length; i++) {
+      var inp = labels[i].querySelector('input');
+      if (inp && inp.checked) labels[i].classList.add('on');
+      else labels[i].classList.remove('on');
+    }
+  }
+
+  // 开始答题
+  startBtn.addEventListener('click', function () {
+    note.hidden = true;
+    form.hidden = false;
+    foot.hidden = false;
+    started = true;
+    startTimer();
+    refreshProgress();
+    var y = topBar ? topBar.getBoundingClientRect().bottom + window.scrollY - 70 : 0;
+    window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+  });
+
+  form.addEventListener('change', refreshProgress);
+  form.addEventListener('input', refreshProgress);
+  form.addEventListener('submit', function (e) { e.preventDefault(); });
+
+  // 提交判分（只做一次，不存任何记录）
+  function grade() {
+    if (!started || done) return;
+    var blankCount = qs.length - graded.length;
+    done = true;
+    var right = 0, wrong = 0;
+    var used = Date.now() - t0;
+    stopTimer();
+
+    qs.forEach(function (sec) {
+      var type = sec.getAttribute('data-type');
+      var ans = (sec.getAttribute('data-ans') || '').toUpperCase();
+      var res = sec.querySelector('.qz-res');
+      var head = sec.querySelector('.qz-res-head');
+      var ins = sec.querySelectorAll('input');
+      var mine = type === 'blank' ? '' : picked(sec);
+
+      for (var i = 0; i < ins.length; i++) ins[i].disabled = true;
+
+      if (type === 'blank') {
+        sec.classList.add('is-skip');
+        if (head) head.innerHTML = '<span class="qz-tag skip">不判分</span>填空题：以下为参考答案与解析';
+        if (res) res.hidden = false;
+        return;
+      }
+      if (!ans) {
+        sec.classList.add('is-skip');
+        for (var k = 0; k < ins.length; k++) ins[k].disabled = true;
+        if (head) head.innerHTML = '<span class="qz-tag skip">不计分</span>本题无标准答案（原卷作废或缺项）';
+        if (res) res.hidden = false;
+        return;
+      }
+      var ok = mine !== '' && mine === ans.split('').sort().join('');
+      if (ok) {
+        right++;
+        sec.classList.add('is-right');
+        if (head) head.innerHTML = '<span class="qz-tag ok">答对</span>正确答案 <b>' + ans + '</b>';
+      } else {
+        wrong++;
+        sec.classList.add('is-wrong');
+        if (head) {
+          head.innerHTML = '<span class="qz-tag bad">答错</span>正确答案 <b>' + ans + '</b>' +
+            '<span class="qz-mine">你的答案 ' + (mine || '未作答') + '</span>';
+        }
+      }
+      if (res) res.hidden = false;
+    });
+
+    var total = graded.length;
+    var rate = total ? Math.round(right / total * 100) : 0;
+    summary.hidden = false;
+    summary.innerHTML =
+      '<div class="qz-score"><b>' + right + '</b><span>/ ' + total + '</span></div>' +
+      '<div class="qz-detail">' +
+        '<p>答对 <b class="c-ok">' + right + '</b> 题，答错 <b class="c-bad">' + wrong + '</b> 题' +
+        (blankCount ? '，另填空 <b>' + blankN + '</b> 题、无标准答案 <b>' + ungraded.length + '</b> 题不参与判分' : '') + '</p>' +
+        '<p>正确率 ' + rate + '% · 答题耗时 ' + fmt(used) + '</p>' +
+      '</div>';
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = '已提交';
+    tip.textContent = '本页仅作一次性判题：不记录作答、不生成错题集，成绩不会保存。需重做请刷新页面。';
+    window.scrollTo({ top: summary.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' });
+  }
+
+  // 点击提交：有未答题先确认一次，确认后照常判分（未答按答错计）
+  function trySubmit() {
+    if (!started || done) return;
+    var left = graded.length - answeredCount();
+    if (left > 0) {
+      if (!window.confirm('还有 ' + left + ' 题未作答，未作答的题目将按答错计算。确定提交吗？')) return;
+    }
+    grade();
+  }
+
+  submitBtn.addEventListener('click', trySubmit);
+
+  // 回到顶部
+  var top = document.querySelector('.to-top');
+  if (top) {
+    function onScroll() {
+      if (window.scrollY > 420) top.classList.add('show');
+      else top.classList.remove('show');
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    top.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  }
+})();
+</script>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-line">
+      <span>© 2026 Feng</span>
+      <span class="dot">·</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></span>
+    </div>
+    <p class="foot-note">本站内容均来源于网络，版权归原作者所有，仅供学习交流使用，请勿用于商业用途。</p>
+  </div>
+</footer>
+<script>
+(function () {
+  /* ---------- 深色模式 ---------- */
+  var root = document.documentElement;
+  var toggle = document.querySelector('.theme-toggle');
+  function osDark() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function isDark() {
+    var t = root.getAttribute('data-theme');
+    if (t === 'dark') return true;
+    if (t === 'light') return false;
+    return osDark();
+  }
+  function label() {
+    if (!toggle) return;
+    var d = isDark();
+    toggle.setAttribute('aria-label', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('title', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('aria-pressed', d ? 'true' : 'false');
+  }
+  if (toggle) {
+    label();
+    toggle.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) { /* noop */ }
+      label();
+    });
+  }
+  if (window.matchMedia) {
+    var mqDark = window.matchMedia('(prefers-color-scheme: dark)');
+    if (mqDark.addEventListener) mqDark.addEventListener('change', label);
+  }
+
+  /* ---------- 顶部导航 ---------- */
+  var nav = document.querySelector('.nav');
+  var navToggle = document.querySelector('.nav-toggle');
+  if (!nav || !navToggle) return;
+  var mq = window.matchMedia('(max-width: 720px)');
+  function closeAll() {
+    nav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    Array.prototype.forEach.call(nav.querySelectorAll('.open'), function (x) { x.classList.remove('open'); });
+  }
+  navToggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var on = nav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', on ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) {
+    if (!mq.matches) return;
+    var a = e.target.closest ? e.target.closest('a') : null;
+    if (!a) return;
+    var host = a.parentNode;
+    if (host && host.classList.contains('nav-drop') && a.classList.contains('has-caret')) {
+      e.preventDefault();
+      host.classList.toggle('open');
+    }
+  });
+  document.addEventListener('click', function (e) {
+    if (mq.matches && !nav.contains(e.target) && !navToggle.contains(e.target)) closeAll();
+  });
+  // 键盘 Esc 收起移动端菜单
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mq.matches && nav.classList.contains('open')) {
+      closeAll();
+      navToggle.focus();
+    }
+  });
+
+  /* ---------- 搜索快捷键：/ 聚焦，Ctrl(⌘)+K 打开 ---------- */
+  var searchLink = document.querySelector('.nav-s');
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    var typing = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable);
+    if ((e.ctrlKey || e.metaKey) && !e.shiftKey && (e.key === 'k' || e.key === 'K')) {
+      e.preventDefault();
+      var box = document.querySelector('.sbox-input');
+      if (box) { box.focus(); box.select(); }
+      else if (searchLink) location.href = searchLink.href;
+      return;
+    }
+    if (typing || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.key === '/') {
+      var box2 = document.querySelector('.sbox-input');
+      if (box2) { e.preventDefault(); box2.focus(); box2.select(); }
+      else if (searchLink) { e.preventDefault(); location.href = searchLink.href; }
+    }
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<meta charset="utf-8">
+<title>答题 · 1963 AMC 12 真题（P版） · 竞赛资料库</title>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) { /* 隐私模式下忽略 */ }
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="1963 AMC 12 真题（P版）：数学 · AMC12(P版)，1963 年，共 40 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+
+<link rel="canonical" href="https://t.fengg.net/quiz/amc12p-1963/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="竞赛资料库">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="答题 · 1963 AMC 12 真题（P版）">
+<meta property="og:description" content="1963 AMC 12 真题（P版）：数学 · AMC12(P版)，1963 年，共 40 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+<meta property="og:url" content="https://t.fengg.net/quiz/amc12p-1963/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f7f9">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1318">
+
+
+<link rel="prev" href="/docs/amc12p-1962/">
+<link rel="next" href="/docs/amc12p-1964/">
+<link rel="stylesheet" href="/css/style.css?v=20261110e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+
+<link rel="stylesheet" href="/katex/katex.min.css">
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (!window.renderMathInElement) return;
+  var el = document.querySelector('.doc') || document.body;
+  try {
+    renderMathInElement(el, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false }
+      ],
+      throwOnError: false
+    });
+  } catch (e) { /* 公式渲染失败不影响正文 */ }
+});
+</script>
+
+
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/">竞赛资料库</a>
+    <nav class="nav"><a class="nav-a" href="/">首页</a><div class="nav-drop nav-mega"><a class="nav-a has-caret" href="/all/" title="按科目浏览全部题库">题库<i class="caret" aria-hidden="true"></i></a><div class="drop mega"><div class="mega-col" style="--accent:#3776c4"><a class="mega-h" href="/c/astronomy/"><i class="mega-dot" aria-hidden="true"></i>天文<span class="cnt">52</span></a><a class="mega-l" href="/c/astronomy/cnao/">CNAO<span class="cnt">28</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/cnao/prelim/">预赛</a><a class="mega-c" href="/c/astronomy/cnao/final/">决赛</a><a class="mega-c" href="/c/astronomy/cnao/primary/">小学组</a></span><a class="mega-l" href="/c/astronomy/provincial/">省赛<span class="cnt">15</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/provincial/beijing/">北京</a><a class="mega-c" href="/c/astronomy/provincial/guangdong/">广东</a><a class="mega-c" href="/c/astronomy/provincial/zhejiang/">浙江</a><a class="mega-c" href="/c/astronomy/provincial/jiangsu/">江苏</a><a class="mega-c" href="/c/astronomy/provincial/shandong/">山东</a><a class="mega-c" href="/c/astronomy/provincial/taiwan/">中国台湾</a></span><a class="mega-l" href="/c/astronomy/practice/">练习<span class="cnt">9</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/practice/primary/">小学组练习</a><a class="mega-c" href="/c/astronomy/practice/bank/">题库合集</a></span></div><div class="mega-col" style="--accent:#0f8a5f"><a class="mega-h" href="/c/math/"><i class="mega-dot" aria-hidden="true"></i>数学<span class="cnt">290</span></a><a class="mega-l" href="/c/math/amc8/">AMC8<span class="cnt">26</span></a><a class="mega-l" href="/c/math/amc8p/">AMC8(P版)<span class="cnt">41</span></a><a class="mega-l" href="/c/math/amc10p/">AMC10(P版)<span class="cnt">52</span></a><a class="mega-l" href="/c/math/amc12p/">AMC12(P版)<span class="cnt">102</span></a><a class="mega-l" href="/c/math/gzl/">全国中学生数学奥林匹克竞赛<span class="cnt">69</span></a><span class="mega-cs"><a class="mega-c" href="/c/math/gzl/liansai/">联赛（预赛）</a><a class="mega-c" href="/c/math/gzl/final/">决赛（CMO）</a><a class="mega-c" href="/c/math/gzl/province/">各赛区预赛</a></span></div><div class="mega-col" style="--accent:#6c4bb6"><a class="mega-h" href="/c/physics/"><i class="mega-dot" aria-hidden="true"></i>物理<span class="cnt">73</span></a><a class="mega-l" href="/c/physics/national/">全国竞赛<span class="cnt">49</span></a><a class="mega-l" href="/c/physics/asian/">亚洲竞赛<span class="cnt">11</span></a><a class="mega-l" href="/c/physics/international/">国际竞赛<span class="cnt">13</span></a></div><div class="mega-col" style="--accent:#3f8f46"><a class="mega-h" href="/c/biology/"><i class="mega-dot" aria-hidden="true"></i>生物<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/league/">全国中学生生物学联赛<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/competition/">全国中学生生物学竞赛</a></div><div class="mega-col" style="--accent:#c05a2b"><a class="mega-h" href="/c/chemistry/"><i class="mega-dot" aria-hidden="true"></i>化学<span class="cnt">10</span></a><a class="mega-l" href="/c/chemistry/ccho/">全国中学生化学奥林匹克竞赛<span class="cnt">10</span></a></div><div class="mega-col" style="--accent:#1f7a8c"><a class="mega-h" href="/c/earth/"><i class="mega-dot" aria-hidden="true"></i>地球科学<span class="cnt">22</span></a><a class="mega-l" href="/c/earth/national/">全国竞赛<span class="cnt">17</span></a><a class="mega-l" href="/c/earth/international/">国际竞赛<span class="cnt">5</span></a></div><div class="mega-col" style="--accent:#2c8a6e"><a class="mega-h" href="/c/geography/"><i class="mega-dot" aria-hidden="true"></i>地理<span class="cnt">11</span></a><a class="mega-l" href="/c/geography/geokids/">地球小博士<span class="cnt">11</span></a></div><div class="mega-col" style="--accent:#4a5fd0"><a class="mega-h" href="/c/info/"><i class="mega-dot" aria-hidden="true"></i>信息学<span class="cnt">9</span></a><a class="mega-l" href="/c/info/noi/">全国青少年信息学奥林匹克竞赛<span class="cnt">3</span></a><a class="mega-l" href="/c/info/noip/">全国青少年信息学奥林匹克联赛<span class="cnt">1</span></a><a class="mega-l" href="/c/info/csp/">CSP-J/S 非专业级软件能力认证<span class="cnt">1</span></a><a class="mega-l" href="/c/info/apio/">亚洲和太平洋地区信息学奥林匹克<span class="cnt">1</span></a><a class="mega-l" href="/c/info/winter/">NOI 冬令营<span class="cnt">1</span></a><a class="mega-l" href="/c/info/camp/">IOI 中国国家集训队集训<span class="cnt">2</span></a></div><a class="mega-all" href="/all/">全部文档（474 套）<i class="arr" aria-hidden="true">›</i></a></div></div><a class="nav-a" href="/whitelist/">白名单竞赛</a><a class="nav-a" href="/about/">使用说明</a><a class="nav-a nav-s" href="/search/" title="站内搜索（按 / 或 Ctrl+K）"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.9 12.1l4.3 4.3-1.4 1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z" fill="currentColor"/></svg>搜索</a></nav>
+    <div class="head-tools">
+      <button class="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式">
+        <svg class="ic-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12.7 3a8.5 8.5 0 108.3 10.6A7 7 0 0112.7 3z" fill="currentColor"/></svg>
+        <svg class="ic-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12 17a5 5 0 110-10 5 5 0 010 10zm0-13a1 1 0 011 1v1a1 1 0 01-2 0V5a1 1 0 011-1zm0 14a1 1 0 011 1v1a1 1 0 01-2 0v-1a1 1 0 011-1zM4 11h1a1 1 0 010 2H4a1 1 0 010-2zm15 0h1a1 1 0 010 2h-1a1 1 0 010-2zM6.3 5.5l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm11 11l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm.7-11a1 1 0 010 1.4l-.7.7A1 1 0 0115.9 6.2l.7-.7a1 1 0 011.4 0zm-11 11a1 1 0 010 1.4l-.7.7a1 1 0 01-1.4-1.4l.7-.7a1 1 0 011.4 0z" fill="currentColor"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-label="打开分类菜单" aria-expanded="false">分类 ▾</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main" tabindex="-1">
+
+<article class="doc quiz-page">
+  <nav class="crumb">
+    <a href="/">首页</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/">数学</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/amc12p/">AMC12(P版)</a>
+    
+    <span class="sep">/</span>
+    <a href="/docs/amc12p-1963/">1963 AMC 12 真题（P版）</a>
+    <span class="sep">/</span><span>答题模式</span>
+  </nav>
+
+  <div class="qz-top" id="qzTop">
+    <div class="qz-top-l">
+      <h1 class="qz-title">1963 AMC 12 真题（P版）</h1>
+      <p class="qz-sub">
+        <span class="qz-pill">答题模式</span>
+        <span>共 40 题</span>
+      </p>
+    </div>
+    <div class="qz-top-r">
+      <div class="qz-timer" id="qzTimer">
+        <span class="qz-timer-k">答题耗时</span>
+        <b id="qzClock">00:00</b>
+      </div>
+      <div class="qz-side">
+        <span class="qz-progress" id="qzProgress">已答 0 / 40</span>
+        <a class="qz-back" href="/docs/amc12p-1963/">← 返回展示模式</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="qz-note" id="qzNote">
+    <p class="qz-note-h">答题前请先了解</p>
+    <ul>
+      <li>本模式为<strong>一次性自测</strong>：不记录作答、不统计历史、不生成错题集，刷新或关闭本页即全部清空。</li>
+      <li>提交后立即判分，并在每题下方展开正确答案与解析；<strong>填空题只给参考答案，不参与判分</strong>。</li>
+      <li>没做完也可以提交：点「提交答卷」时会提示还剩几题，确认后照常判分，<strong>未作答的题目按答错计</strong>；原卷标注「作废 / 不计成绩」的题目不计分。</li>
+      <li>题目内容与展示模式完全一致，可随时点右上角返回展示模式查阅。</li>
+    </ul>
+    <button class="btn qz-start" id="qzStart" type="button">开始答题（点击后开始计时）</button>
+  </div>
+
+  <form class="qz-form" id="qzForm" hidden>
+    <section class="qz-q" id="q1" data-no="1" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">1</span><span class="qz-flag">单选</span></div>
+<p>以下哪一点<i>不在</i>函数 \(y=\dfrac{x}{x+1}\) 的图像上？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q1" value="A"><span class="qz-mark">A</span><span class="qz-txt">\((0,0)\)</span></label>
+<label class="qz-opt"><input type="radio" name="q1" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(\left(-\dfrac12,-1\right)\)</span></label>
+<label class="qz-opt"><input type="radio" name="q1" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(\left(\dfrac12,\dfrac13\right)\)</span></label>
+<label class="qz-opt"><input type="radio" name="q1" value="D"><span class="qz-mark">D</span><span class="qz-txt">\((-1,1)\)</span></label>
+<label class="qz-opt"><input type="radio" name="q1" value="E"><span class="qz-mark">E</span><span class="qz-txt">\((-2,2)\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Which one of the following points is <i>not</i> on the graph of \(y=\dfrac{x}{x+1}?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>表达式 \(\frac{x}{x+1}\) 在 \(x=-1\) 时没有定义。因此，横坐标为 \(-1\) 的点不可能在其图像上。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The expression \(\frac{x}{x+1}\) is undefined when \(x=-1.\) Therefore no point whose first coordinate is \(-1\) can lie on its graph.</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q2" data-no="2" data-type="single" data-ans="A">
+<div class="qz-qhead"><span class="qz-badge">2</span><span class="qz-flag">单选</span></div>
+<p>设 \(n=x-y^{x-y}\)。求 \(n\) 在 \(x=2\) 且 \(y=-2\) 时的值。</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q2" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(-14\)</span></label>
+<label class="qz-opt"><input type="radio" name="q2" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(0\)</span></label>
+<label class="qz-opt"><input type="radio" name="q2" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q2" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(18\)</span></label>
+<label class="qz-opt"><input type="radio" name="q2" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(256\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Let \(n=x-y^{x-y}.\) Find \(n\) when \(x=2\) and \(y=-2.\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>这里 \(x-y=2-(-2)=4\)，所以 \[n=2-(-2)^4=2-16=-14\text{。}\]</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Here \(x-y=2-(-2)=4,\) so \[n=2-(-2)^4=2-16=-14.\]</p>
+<p class="amc-en">Therefore, the correct answer is <b>A</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q3" data-no="3" data-type="single" data-ans="E">
+<div class="qz-qhead"><span class="qz-badge">3</span><span class="qz-flag">单选</span></div>
+<p>若 \(x+1\) 的倒数是 \(x-1\)，则 \(x\) 等于：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q3" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(0\)</span></label>
+<label class="qz-opt"><input type="radio" name="q3" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q3" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(-1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q3" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(\pm1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q3" value="E"><span class="qz-mark">E</span><span class="qz-txt">以上都不是</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">If the reciprocal of \(x+1\) is \(x-1,\) then \(x\) equals:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>方程为 \(\frac1{x+1}=x-1\)。因此 \(1=x^2-1\)，所以 \(x=\pm\sqrt2\)。这两个值都不在选项中。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The equation is \(\frac1{x+1}=x-1.\) Hence \(1=x^2-1,\) so \(x=\pm\sqrt2.\) Neither value is listed.</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q4" data-no="4" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">4</span><span class="qz-flag">单选</span></div>
+<p>当 \(k\) 取何值时，方程 \(y=x^2\) 与 \(y=3x+k\) 有两个相同的解？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q4" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(\dfrac49\)</span></label>
+<label class="qz-opt"><input type="radio" name="q4" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(-\dfrac49\)</span></label>
+<label class="qz-opt"><input type="radio" name="q4" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(\dfrac94\)</span></label>
+<label class="qz-opt"><input type="radio" name="q4" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(-\dfrac94\)</span></label>
+<label class="qz-opt"><input type="radio" name="q4" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(\pm\dfrac94\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">For what value(s) of \(k\) does the pair of equations \(y=x^2\) and \(y=3x+k\) have two identical solutions?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>交点满足 \(x^2-3x-k=0\)。要有两个相同的解，必须满足 \[(-3)^2-4(1)(-k)=9+4k=0\text{，}\]从而 \(k=-\frac{9}{4}\)。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Intersections satisfy \(x^2-3x-k=0.\) Two identical solutions require \[(-3)^2-4(1)(-k)=9+4k=0,\] giving \(k=-\frac{9}{4}.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q5" data-no="5" data-type="single" data-ans="E">
+<div class="qz-qhead"><span class="qz-badge">5</span><span class="qz-flag">单选</span></div>
+<p>若 \(x\) 和 \(\log_{10}x\) 都是实数，并且 \(\log_{10}x\lt0\)，则：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q5" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(x\lt0\)</span></label>
+<label class="qz-opt"><input type="radio" name="q5" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(-1\lt x\lt1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q5" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(0\lt x\leq1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q5" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(-1\lt x\lt0\)</span></label>
+<label class="qz-opt"><input type="radio" name="q5" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(0\lt x\lt1\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">If \(x\) and \(\log_{10}x\) are real numbers and \(\log_{10}x\lt0,\) then:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>对数为实数要求 \(x\gt0\)。由于底数 \(10\) 大于 \(1\)，\(\log_{10}x\lt0=\log_{10}1\) 推出 \(x\lt1\)。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The logarithm is real only for \(x\gt0.\) Since base \(10\) is greater than \(1,\) \(\log_{10}x\lt0=\log_{10}1\) implies \(x\lt1.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q6" data-no="6" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">6</span><span class="qz-flag">单选</span></div>
+<p>三角形 \(BAD\) 在 \(B\) 点为直角。线段 \(AD\) 上有一点 \(C\)，满足 \(AC=CD\) 且 \(AB=BC\)。角 \(DAB\) 的度数是：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q6" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(67\dfrac12\)</span></label>
+<label class="qz-opt"><input type="radio" name="q6" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(60\)</span></label>
+<label class="qz-opt"><input type="radio" name="q6" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(45\)</span></label>
+<label class="qz-opt"><input type="radio" name="q6" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(30\)</span></label>
+<label class="qz-opt"><input type="radio" name="q6" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(22\dfrac12\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Triangle \(BAD\) is right-angled at \(B.\) On \(AD\) there is a point \(C\) for which \(AC=CD\) and \(AB=BC.\) The magnitude of angle \(DAB,\) in degrees, is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>因为 \(C\) 是斜边 \(AD\) 的中点，所以 \(AC=BC=CD\)。又因为 \(AB=BC\)，三角形 \(ABC\) 是等边三角形。因此 \(\angle DAB=\angle CAB=60^\circ\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since \(C\) is the midpoint of hypotenuse \(AD,\) \(AC=BC=CD.\) Given \(AB=BC,\) triangle \(ABC\) is equilateral. Thus \(\angle DAB=\angle CAB=60^\circ.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q7" data-no="7" data-type="single" data-ans="A">
+<div class="qz-qhead"><span class="qz-badge">7</span><span class="qz-flag">单选</span></div>
+<p>给出以下四个方程：</p>
+<p>\[ \begin{aligned} (1)\quad&amp;3y-2x=12,\\ (2)\quad&amp;-2x-3y=10,\\ (3)\quad&amp;3y+2x=12,\\ (4)\quad&amp;2y+3x=10 \end{aligned}\text{。}\]</p>
+<p>其中表示两条垂直直线的一组是：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q7" value="A"><span class="qz-mark">A</span><span class="qz-txt">\((1)\) 和 \((4)\)</span></label>
+<label class="qz-opt"><input type="radio" name="q7" value="B"><span class="qz-mark">B</span><span class="qz-txt">\((1)\) 和 \((3)\)</span></label>
+<label class="qz-opt"><input type="radio" name="q7" value="C"><span class="qz-mark">C</span><span class="qz-txt">\((1)\) 和 \((2)\)</span></label>
+<label class="qz-opt"><input type="radio" name="q7" value="D"><span class="qz-mark">D</span><span class="qz-txt">\((2)\) 和 \((4)\)</span></label>
+<label class="qz-opt"><input type="radio" name="q7" value="E"><span class="qz-mark">E</span><span class="qz-txt">\((2)\) 和 \((3)\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Given the four equations:</p>
+<p class="amc-en">\[ \begin{aligned} (1)\quad&amp;3y-2x=12,\\ (2)\quad&amp;-2x-3y=10,\\ (3)\quad&amp;3y+2x=12,\\ (4)\quad&amp;2y+3x=10. \end{aligned} \]</p>
+<p class="amc-en">The pair representing perpendicular lines is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>直线 \((1)\) 的斜率是 \(\frac{2}{3}\)，直线 \((4)\) 的斜率是 \(-\frac{3}{2}\)。它们的积为 \(-1\)，所以这两条直线互相垂直。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Line \((1)\) has slope \(\frac{2}{3},\) and line \((4)\) has slope \(-\frac{3}{2}.\) Their product is \(-1,\) so these two lines are perpendicular.</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q8" data-no="8" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">8</span><span class="qz-flag">单选</span></div>
+<p>最小正整数 \(x\) 是多少，能使 \(1260x=N^3\) 成立？其中 \(N\) 是整数。</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q8" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(1050\)</span></label>
+<label class="qz-opt"><input type="radio" name="q8" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(1260\)</span></label>
+<label class="qz-opt"><input type="radio" name="q8" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(1260^2\)</span></label>
+<label class="qz-opt"><input type="radio" name="q8" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(7350\)</span></label>
+<label class="qz-opt"><input type="radio" name="q8" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(44{,}100\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">The smallest positive integer \(x\) for which \(1260x=N^3,\) where \(N\) is an integer, is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>因为 \(1260=2^2\cdot3^2\cdot5\cdot7\)，要使每个指数都能被 \(3\) 整除，最小的乘数是 \[2\cdot3\cdot5^2\cdot7^2=7350\text{。}\]</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since \(1260=2^2\cdot3^2\cdot5\cdot7,\) the least multiplier making every exponent divisible by \(3\) is \[2\cdot3\cdot5^2\cdot7^2=7350.\]</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q9" data-no="9" data-type="single" data-ans="C">
+<div class="qz-qhead"><span class="qz-badge">9</span><span class="qz-flag">单选</span></div>
+<p>在 \(\left(a-\dfrac1{\sqrt a}\right)^7\) 的展开式中，\(a^{-\frac{1}{2}}\) 的系数是：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q9" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(-7\)</span></label>
+<label class="qz-opt"><input type="radio" name="q9" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(7\)</span></label>
+<label class="qz-opt"><input type="radio" name="q9" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(-21\)</span></label>
+<label class="qz-opt"><input type="radio" name="q9" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(21\)</span></label>
+<label class="qz-opt"><input type="radio" name="q9" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(35\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">In the expansion of \(\left(a-\dfrac1{\sqrt a}\right)^7\) the coefficient of \(a^{-\frac{1}{2}}\) is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>恰好选取 \(-a^{-\frac{1}{2}}\) 共 \(r\) 次所得项的指数为 \(7-r-\frac{r}{2}=7-\frac{3r}{2}\)。令它等于 \(-\frac{1}{2}\)，得到 \(r=5\)。该项的系数是 \(\binom75(-1)^5=-21\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The term using \(-a^{-\frac{1}{2}}\) exactly \(r\) times has exponent \(7-r-\frac{r}{2}=7-\frac{3r}{2}.\) Setting this to \(-\frac{1}{2}\) gives \(r=5.\) Its coefficient is \(\binom75(-1)^5=-21.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>C</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q10" data-no="10" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">10</span><span class="qz-flag">单选</span></div>
+<p>在正方形内部取一点 \(P\)，该正方形的边长为 \(a\)，所取点到两个相邻顶点的距离以及到这两个顶点对边的距离都相等。若 \(d\) 表示这个公共距离，则 \(d\) 等于：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q10" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(\dfrac{3a}{5}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q10" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(\dfrac{5a}{8}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q10" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(\dfrac{3a}{8}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q10" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(\dfrac{a\sqrt2}{2}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q10" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(\dfrac a2\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Point \(P\) is taken interior to a square with side-length \(a\) and such that it is equally distant from two consecutive vertices and from the side opposite these vertices. If \(d\) represents the common distance, then \(d\) equals:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>令对边的高度为 \(0\)，两个顶点的高度为 \(a\)。则 \(P=(\frac{a}{2},d)\)。顶点距离与 \(d\) 相等，故 \[\left(\frac a2\right)^2+(a-d)^2=d^2\text{，}\]所以 \(\frac{5a^2}{4}=2ad\)，从而 \(d=\frac{5a}{8}\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Place the opposite side at height \(0\) and the two vertices at height \(a.\) Then \(P=(\frac{a}{2},d).\) Equality of the vertex distance and \(d\) gives \[\left(\frac a2\right)^2+(a-d)^2=d^2,\] so \(\frac{5a^2}{4}=2ad\) and \(d=\frac{5a}{8}.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q11" data-no="11" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">11</span><span class="qz-flag">单选</span></div>
+<p>一组 \(50\) 个数的算术平均数是 \(38\)。若从中去掉 \(45\) 和 \(55\) 这两个数，剩余各数的算术平均数是：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q11" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(38.5\)</span></label>
+<label class="qz-opt"><input type="radio" name="q11" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(37.5\)</span></label>
+<label class="qz-opt"><input type="radio" name="q11" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(37\)</span></label>
+<label class="qz-opt"><input type="radio" name="q11" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(36.5\)</span></label>
+<label class="qz-opt"><input type="radio" name="q11" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(36\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">The arithmetic mean of a set of \(50\) numbers is \(38.\) If two numbers of the set, namely \(45\) and \(55,\) are discarded, the arithmetic mean of the remaining set of numbers is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>原来的总和是 \(50\cdot38=1900\)。去掉 \(45+55=100\) 后，剩余各数之和为 \(1800\)，所以新的平均数为 \(\frac{1800}{48}=37.5\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The original sum is \(50\cdot38=1900.\) After removing \(45+55=100,\) the remaining sum is \(1800,\) so the new mean is \(\frac{1800}{48}=37.5.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q12" data-no="12" data-type="single" data-ans="E">
+<div class="qz-qhead"><span class="qz-badge">12</span><span class="qz-flag">单选</span></div>
+<p>平行四边形 \(PQRS\) 的三个顶点是 \(P(-3,-2)\)、\(Q(1,-5)\)、\(R(9,1)\)，其中 \(P\) 与 \(R\) 是对角顶点。顶点 \(S\) 的两个坐标之和是：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q12" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(13\)</span></label>
+<label class="qz-opt"><input type="radio" name="q12" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(12\)</span></label>
+<label class="qz-opt"><input type="radio" name="q12" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(11\)</span></label>
+<label class="qz-opt"><input type="radio" name="q12" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(10\)</span></label>
+<label class="qz-opt"><input type="radio" name="q12" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(9\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Three vertices of parallelogram \(PQRS\) are \(P(-3,-2),\) \(Q(1,-5),\) \(R(9,1)\) with \(P\) and \(R\) diagonally opposite. The sum of the coordinates of vertex \(S\) is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>因为 \(P+R=Q+S\)，所以 \[ \begin{aligned} S&amp;=P+R-Q\\ &amp;=(-3,-2)+(9,1)-(1,-5)\\ &amp;=(5,4) \end{aligned}\text{。}\]坐标之和为 \(5+4=9\)。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since \(P+R=Q+S,\) \[ \begin{aligned} S&amp;=P+R-Q\\ &amp;=(-3,-2)+(9,1)-(1,-5)\\ &amp;=(5,4). \end{aligned} \] The coordinate sum is \(5+4=9.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>E</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q13" data-no="13" data-type="single" data-ans="E">
+<div class="qz-qhead"><span class="qz-badge">13</span><span class="qz-flag">单选</span></div>
+<p>若 \(2^a+2^b=3^c+3^d\)，则整数 \(a\)、\(b\)、\(c\)、\(d\) 中最多有几个可以是负数？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q13" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(4\)</span></label>
+<label class="qz-opt"><input type="radio" name="q13" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(3\)</span></label>
+<label class="qz-opt"><input type="radio" name="q13" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(2\)</span></label>
+<label class="qz-opt"><input type="radio" name="q13" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q13" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(0\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">If \(2^a+2^b=3^c+3^d,\) the number of integers \(a,\) \(b,\) \(c,\) \(d\) which can possibly be negative is, at most:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>化为最简分数后，左边的分母只能是 \(2\) 的幂，右边的分母只能是 \(3\) 的幂。两边相等就迫使两边都是整数。若 \(c\) 或 \(d\) 为负数，\(3^c+3^d\) 的分母中仍会含因数 \(3\)。因此 \(c,d\geq0\)。</p>
+<p>同理，\(a\) 或 \(b\) 为负数时，和为整数的唯一特殊情形是 \(a=b=-1\)，此时和为 \(1\)。但 \(3^c+3^d\geq2\)。所以也有 \(a,b\geq0\)，没有一个可以是负数。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In lowest terms, the left side can have only a power of \(2\) in its denominator, while the right side can have only a power of \(3.\) Equality therefore forces both sides to be integers. If either \(c\) or \(d\) were negative, \(3^c+3^d\) would retain a factor \(3\) in its denominator. Thus \(c,d\geq0.\)</p>
+<p class="amc-en">Likewise, negative \(a\) or \(b\) can give an integer only in the exceptional case \(a=b=-1,\) whose sum is \(1.\) But \(3^c+3^d\geq2.\) Hence \(a,b\geq0\) as well, so none can be negative.</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q14" data-no="14" data-type="single" data-ans="A">
+<div class="qz-qhead"><span class="qz-badge">14</span><span class="qz-flag">单选</span></div>
+<p>给定方程 \(x^2+kx+6=0\) 和 \(x^2-kx+6=0\)。如果适当排列两方程的根后，第二个方程的每个根都比第一个方程的对应根大 \(5\)，那么 \(k\) 等于：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q14" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(5\)</span></label>
+<label class="qz-opt"><input type="radio" name="q14" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(-5\)</span></label>
+<label class="qz-opt"><input type="radio" name="q14" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(7\)</span></label>
+<label class="qz-opt"><input type="radio" name="q14" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(-7\)</span></label>
+<label class="qz-opt"><input type="radio" name="q14" value="E"><span class="qz-mark">E</span><span class="qz-txt">以上都不是</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Given the equations \(x^2+kx+6=0\) and \(x^2-kx+6=0.\) If, when the roots of the equations are suitably listed, each root of the second equation is \(5\) more than the corresponding root of the first equation, then \(k\) equals:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>第一个方程的两根之和为 \(-k\)，第二个方程的两根之和为 \(k\)。因为两个根都增加了 \(5\)，所以 \(k=-k+10\)，从而 \(k=5\)。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The first pair of roots has sum \(-k,\) while the second has sum \(k.\) Since both roots increase by \(5,\) \(k=-k+10,\) so \(k=5.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>A</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q15" data-no="15" data-type="single" data-ans="C">
+<div class="qz-qhead"><span class="qz-badge">15</span><span class="qz-flag">单选</span></div>
+<p>一个圆内切于等边三角形，一个正方形内接于该圆。三角形面积与正方形面积之比是：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q15" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(\sqrt3:1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q15" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(\sqrt3:\sqrt2\)</span></label>
+<label class="qz-opt"><input type="radio" name="q15" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(3\sqrt3:2\)</span></label>
+<label class="qz-opt"><input type="radio" name="q15" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(3:\sqrt2\)</span></label>
+<label class="qz-opt"><input type="radio" name="q15" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(3:2\sqrt2\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">A circle is inscribed in an equilateral triangle, and a square is inscribed in the circle. The ratio of the area of the triangle to the area of the square is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>若圆的半径为 \(r\)，则等边三角形的边长为 \(2\sqrt3r\)，面积为 \(3\sqrt3r^2\)。正方形的边长为 \(r\sqrt2\)，面积为 \(2r^2\)。所求比为 \(3\sqrt3:2\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If the circle has radius \(r,\) the equilateral triangle has side \(2\sqrt3r\) and area \(3\sqrt3r^2.\) The square has side \(r\sqrt2\) and area \(2r^2.\) The ratio is \(3\sqrt3:2.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q16" data-no="16" data-type="single" data-ans="C">
+<div class="qz-qhead"><span class="qz-badge">16</span><span class="qz-flag">单选</span></div>
+<p>三个非零数 \(a\)、\(b\)、\(c\) 成等差数列。把 \(a\) 增加 \(1\) 或把 \(c\) 增加 \(2\)，所得三个数都成等比数列。则 \(b\) 等于：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q16" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(16\)</span></label>
+<label class="qz-opt"><input type="radio" name="q16" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(14\)</span></label>
+<label class="qz-opt"><input type="radio" name="q16" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(12\)</span></label>
+<label class="qz-opt"><input type="radio" name="q16" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(10\)</span></label>
+<label class="qz-opt"><input type="radio" name="q16" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(8\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Three numbers \(a,\) \(b,\) \(c,\) none zero, form an arithmetic progression. Increasing \(a\) by \(1\) or increasing \(c\) by \(2\) results in a geometric progression. Then \(b\) equals:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>这些条件给出 \[ \begin{gathered} 2b=a+c,\\ b^2=(a+1)c,\qquad b^2=a(c+2) \end{gathered}\text{。}\]比较后两个等式，得 \(c=2a\)。因此 \(b=\frac{3a}{2}\)，并且 \(\frac{9a^2}{4}=2a(a+1)\)。由于 \(a\ne0\)，得 \(a=8\)，所以 \(b=12\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The conditions give \[ \begin{gathered} 2b=a+c,\\ b^2=(a+1)c,\qquad b^2=a(c+2). \end{gathered} \] Comparing the last two yields \(c=2a.\) Thus \(b=\frac{3a}{2},\) and \(\frac{9a^2}{4}=2a(a+1).\) Since \(a\ne0,\) \(a=8,\) so \(b=12.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>C</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q17" data-no="17" data-type="single" data-ans="A">
+<div class="qz-qhead"><span class="qz-badge">17</span><span class="qz-flag">单选</span></div>
+<p>表达式</p>
+<p>\[ \frac{\dfrac{a}{a+y}+\dfrac{y}{a-y}} {\dfrac{y}{a+y}-\dfrac{a}{a-y}}\text{，}\]</p>
+<p>其中 \(a\) 为实数且 \(a\ne0\)，对于下列哪些取值，表达式的值为 \(-1\)？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q17" value="A"><span class="qz-mark">A</span><span class="qz-txt">除两个实数值外的所有 \(y\)</span></label>
+<label class="qz-opt"><input type="radio" name="q17" value="B"><span class="qz-mark">B</span><span class="qz-txt">仅两个实数值的 \(y\)</span></label>
+<label class="qz-opt"><input type="radio" name="q17" value="C"><span class="qz-mark">C</span><span class="qz-txt">所有实数值的 \(y\)</span></label>
+<label class="qz-opt"><input type="radio" name="q17" value="D"><span class="qz-mark">D</span><span class="qz-txt">仅一个实数值的 \(y\)</span></label>
+<label class="qz-opt"><input type="radio" name="q17" value="E"><span class="qz-mark">E</span><span class="qz-txt">没有实数值的 \(y\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">The expression</p>
+<p class="amc-en">\[ \frac{\dfrac{a}{a+y}+\dfrac{y}{a-y}} {\dfrac{y}{a+y}-\dfrac{a}{a-y}}, \]</p>
+<p class="amc-en">\(a\) real, \(a\ne0,\) has the value \(-1\) for:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>当 \(y\ne\pm a\) 时，分子化简为 \(\frac{a^2+y^2}{a^2-y^2}\)，分母恰为它的相反数。因此商为 \(-1\)。当 \(y=a\) 或 \(y=-a\) 时，原式没有定义。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For \(y\ne\pm a,\) the numerator simplifies to \(\frac{a^2+y^2}{a^2-y^2}\) and the denominator to its negative. Their quotient is therefore \(-1.\) The two values \(y=a\) and \(y=-a\) are undefined.</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q18" data-no="18" data-type="single" data-ans="A">
+<div class="qz-qhead"><span class="qz-badge">18</span><span class="qz-flag">单选</span></div>
+<p>弦 \(EF\) 是弦 \(BC\) 的垂直平分线，并与其交于 \(M\)。在 \(B\) 与 \(M\) 之间取一点 \(U\)，延长 \(EU\) 与圆交于 \(A\)。对于任意如此选取的 \(U\)，三角形 \(EUM\) 与下列哪个三角形相似？</p>
+<p><img class="amc-fig" src="/img/papers/amc12p/1963/problem/q18-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q18" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(EFA\)</span></label>
+<label class="qz-opt"><input type="radio" name="q18" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(EFC\)</span></label>
+<label class="qz-opt"><input type="radio" name="q18" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(ABM\)</span></label>
+<label class="qz-opt"><input type="radio" name="q18" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(ABU\)</span></label>
+<label class="qz-opt"><input type="radio" name="q18" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(FMC\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Chord \(EF\) is the perpendicular bisector of chord \(BC,\) intersecting it in \(M.\) Between \(B\) and \(M\) point \(U\) is taken, and \(EU\) extended meets the circle in \(A.\) Then, for any selection of \(U,\) as described, triangle \(EUM\) is similar to triangle:</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc12p/1963/problem/q18-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>因为 \(EF\) 是直径，所以 \(\angle EAF=90^\circ\)。又因为 \(EF\perp BC\)，所以 \(\angle EMU=90^\circ\)。由于 \(E,U,A\) 共线，两个三角形在 \(E\) 点有同一个锐角。因此 \(\triangle EUM\sim\triangle EFA\)。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since \(EF\) is a diameter, \(\angle EAF=90^\circ.\) Also \(EF\perp BC,\) so \(\angle EMU=90^\circ.\) Because \(E,U,A\) are collinear, the two triangles share the same acute angle at \(E.\) Hence \(\triangle EUM\sim\triangle EFA.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>A</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q19" data-no="19" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">19</span><span class="qz-flag">单选</span></div>
+<p>清点 \(n\) 个彩球，其中一些是红球，另一些是黑球。最先清点的 \(50\) 个球中有 \(49\) 个红球；此后每清点 \(8\) 个球，就有 \(7\) 个红球。如果清点的所有球中至少有 \(90\%\) 是红球，那么 \(n\) 的最大值是：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q19" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(225\)</span></label>
+<label class="qz-opt"><input type="radio" name="q19" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(210\)</span></label>
+<label class="qz-opt"><input type="radio" name="q19" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(200\)</span></label>
+<label class="qz-opt"><input type="radio" name="q19" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(180\)</span></label>
+<label class="qz-opt"><input type="radio" name="q19" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(175\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">In counting \(n\) colored balls, some red and some black, it was found that \(49\) of the first \(50\) counted were red. Thereafter, \(7\) out of every \(8\) counted were red. If, in all, \(90\%\) or more of the balls counted were red, the maximum value of \(n\) is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>条件为 \[49+\frac78(n-50)\geq\frac9{10}n\text{。}\]化简得 \(\frac{21}{4}\geq \frac{n}{40}\)，所以 \(n\leq210\)。最大值为 \(210\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The condition is \[49+\frac78(n-50)\geq\frac9{10}n.\] Simplifying gives \(\frac{21}{4}\geq \frac{n}{40},\) so \(n\leq210.\) The maximum is \(210.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q20" data-no="20" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">20</span><span class="qz-flag">单选</span></div>
+<p>\(R\) 点与 \(S\) 点相距 \(76\) 英里。两人分别从这两点同时出发，相向而行。从 \(R\) 点出发的人始终以每小时 \(4\dfrac12\) 英里的速度行走；从 \(S\) 点出发的人第一小时以每小时 \(3\dfrac14\) 英里的速度行走，第二小时以每小时 \(3\dfrac34\) 英里的速度行走，之后各小时的速度依次成等差数列。若两人在整数小时后相遇，且相遇点到 \(R\) 点比到 \(S\) 点近 \(x\) 英里，则 \(x\) 是：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q20" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(10\)</span></label>
+<label class="qz-opt"><input type="radio" name="q20" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(8\)</span></label>
+<label class="qz-opt"><input type="radio" name="q20" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(6\)</span></label>
+<label class="qz-opt"><input type="radio" name="q20" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(4\)</span></label>
+<label class="qz-opt"><input type="radio" name="q20" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(2\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Two men at points \(R\) and \(S,\) \(76\) miles apart, set out at the same time to walk towards each other. The man at \(R\) walks uniformly at \(4\dfrac12\) miles per hour; the man at \(S\) walks at \(3\dfrac14\) miles per hour for the first hour, at \(3\dfrac34\) miles per hour for the second hour, and so on, in arithmetic progression. If the men meet \(x\) miles nearer \(R\) than \(S\) in an integral number of hours, then \(x\) is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>在 \(h\) 小时内，第一个人走了 \(\frac{9h}{2}\) 英里。第二个人走过的路程是等差数列之和 \[ \begin{aligned} &amp;\frac h2\left(2\cdot\frac{13}{4} +(h-1)\frac12\right)\\ &amp;\qquad=3h+\frac{h^2}{4} \end{aligned}\text{。}\]两人的路程之和为 \(76\)，得到 \(h^2+30h-304=0\)，其正根为 \(h=8\)。他们分别走了 \(36\) 英里和 \(40\) 英里，因此相遇点到 \(R\) 点比到 \(S\) 点近 \(4\) 英里。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In \(h\) hours the first man walks \(\frac{9h}{2}.\) The second walks an arithmetic-series total \[ \begin{aligned} &amp;\frac h2\left(2\cdot\frac{13}{4} +(h-1)\frac12\right)\\ &amp;\qquad=3h+\frac{h^2}{4}. \end{aligned} \] Their distances sum to \(76,\) giving \(h^2+30h-304=0,\) whose positive root is \(h=8.\) They walk \(36\) and \(40\) miles, so the meeting point is \(4\) miles nearer \(R\) than \(S.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q21" data-no="21" data-type="single" data-ans="E">
+<div class="qz-qhead"><span class="qz-badge">21</span><span class="qz-flag">单选</span></div>
+<p>表达式 \(x^2-y^2-z^2+2yz+x+y-z\) 具有：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q21" value="A"><span class="qz-mark">A</span><span class="qz-txt">没有系数和指数均为整数的一次因式</span></label>
+<label class="qz-opt"><input type="radio" name="q21" value="B"><span class="qz-mark">B</span><span class="qz-txt">因式 \(-x+y+z\)</span></label>
+<label class="qz-opt"><input type="radio" name="q21" value="C"><span class="qz-mark">C</span><span class="qz-txt">因式 \(x-y-z+1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q21" value="D"><span class="qz-mark">D</span><span class="qz-txt">因式 \(x+y-z+1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q21" value="E"><span class="qz-mark">E</span><span class="qz-txt">因式 \(x-y+z+1\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">The expression \(x^2-y^2-z^2+2yz+x+y-z\) has:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>令 \(u=y-z\)。两部分可分解为 \[ \begin{gathered} x^2-u^2=(x+u)(x-u),\\ x+u=(x+u)\cdot1 \end{gathered}\text{。}\]因此整个表达式是 \((x+u)(x-u+1)\)，它的一个因式是 \(x-y+z+1\)。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(u=y-z.\) The two groups factor as \[ \begin{gathered} x^2-u^2=(x+u)(x-u),\\ x+u=(x+u)\cdot1. \end{gathered} \] Thus the whole expression is \((x+u)(x-u+1),\) and one factor is \(x-y+z+1.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>E</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q22" data-no="22" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">22</span><span class="qz-flag">单选</span></div>
+<p>锐角三角形 \(ABC\) 内接于以 \(O\) 为圆心的圆，且 \(\overset{\frown}{AB}=120^\circ\)、\(\overset{\frown}{BC}=72^\circ\)。取一点 \(E\) 于劣弧 \(AC\) 上，使 \(OE\) 垂直于 \(AC\)。角 \(OBE\) 与角 \(BAC\) 的度数之比是：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q22" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(\dfrac5{18}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q22" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(\dfrac29\)</span></label>
+<label class="qz-opt"><input type="radio" name="q22" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(\dfrac14\)</span></label>
+<label class="qz-opt"><input type="radio" name="q22" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(\dfrac13\)</span></label>
+<label class="qz-opt"><input type="radio" name="q22" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(\dfrac49\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Acute-angled triangle \(ABC\) is inscribed in a circle with center at \(O;\) \(\overset{\frown}{AB}=120^\circ\) and \(\overset{\frown}{BC}=72^\circ.\) A point \(E\) is taken in minor arc \(AC\) such that \(OE\) is perpendicular to \(AC.\) Then the ratio of the magnitudes of angles \(OBE\) and \(BAC\) is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>劣弧 \(AC\) 的度数为 \(360^\circ-120^\circ-72^\circ=168^\circ\)。因为 \(OE\perp AC\)，所以 \(E\) 平分该弧，故 \(\angle BOE=72^\circ+84^\circ=156^\circ\)。等腰三角形 \(OBE\) 给出 \(\angle OBE=12^\circ\)，而 \(\angle BAC=\frac{72^\circ}{2}=36^\circ\)。二者之比为 \(\frac{1}{3}\)。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Minor arc \(AC\) has measure \(360^\circ-120^\circ-72^\circ=168^\circ.\) Since \(OE\perp AC,\) \(E\) bisects that arc, so \(\angle BOE=72^\circ+84^\circ=156^\circ.\) Isosceles triangle \(OBE\) gives \(\angle OBE=12^\circ,\) while \(\angle BAC=\frac{72^\circ}{2}=36^\circ.\) Their ratio is \(\frac{1}{3}.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q23" data-no="23" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">23</span><span class="qz-flag">单选</span></div>
+<p>\(A\) 先给 \(B\) 与 \(B\) 原有钱数相同的美分，再给 \(C\) 与 \(C\) 原有钱数相同的美分。接着，\(B\) 同样分别给 \(A\) 和 \(C\) 与他们当时各自钱数相同的美分。最后，\(C\) 也同样分别给 \(A\) 和 \(B\) 与他们当时各自钱数相同的美分。如果最终每人都有 \(16\) 美分，那么 \(A\) 最初有多少美分？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q23" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(24\)</span></label>
+<label class="qz-opt"><input type="radio" name="q23" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(26\)</span></label>
+<label class="qz-opt"><input type="radio" name="q23" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(28\)</span></label>
+<label class="qz-opt"><input type="radio" name="q23" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(30\)</span></label>
+<label class="qz-opt"><input type="radio" name="q23" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(32\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">\(A\) gives \(B\) as many cents as \(B\) has and \(C\) as many cents as \(C\) has. Similarly, \(B\) then gives \(A\) and \(C\) as many cents as each then has. \(C\), similarly, then gives \(A\) and \(B\) as many cents as each then has. If each finally has \(16\) cents, with how many cents does \(A\) start?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>逆向还原这些交易。\(C\) 给钱之前，三人的钱数为 \((8,8,32)\)。\(B\) 给钱之前，钱数为 \((4,28,16)\)。\(A\) 给钱之前，\(B\) 和 \(C\) 必须分别有 \(14\) 和 \(8\) 美分，而 \(A\) 有 \(4+14+8=26\) 美分。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Reverse the transactions. Before \(C\) gives, the holdings are \((8,8,32).\) Before \(B\) gives, they are \((4,28,16).\) Before \(A\) gives, \(B\) and \(C\) must have had \(14\) and \(8,\) while \(A\) had \(4+14+8=26.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q24" data-no="24" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">24</span><span class="qz-flag">单选</span></div>
+<p>考虑形如 \(x^2+bx+c=0\) 的方程。若系数 \(b\) 和 \(c\) 都从整数集合 \(\{1,2,3,4,5,6\}\) 中选取，其中有多少个方程具有实根？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q24" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(20\)</span></label>
+<label class="qz-opt"><input type="radio" name="q24" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(19\)</span></label>
+<label class="qz-opt"><input type="radio" name="q24" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(18\)</span></label>
+<label class="qz-opt"><input type="radio" name="q24" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(17\)</span></label>
+<label class="qz-opt"><input type="radio" name="q24" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(16\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Consider equations of the form \(x^2+bx+c=0.\) How many such equations have real roots and have coefficients \(b\) and \(c\) selected from the set of integers \(\{1,2,3,4,5,6\}?\)</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>当 \(c\) 依次等于 \(1\)、\(2\)、\(3\)、\(4\)、\(5\) 和 \(6\) 时，条件 \(b^2\geq4c\) 相应地允许 \(5\)、\(4\)、\(3\)、\(3\)、\(2\) 和 \(2\) 个给定集合中的 \(b\) 值。它们的总和为 \(5+4+3+3+2+2=19\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For \(c\) equal to \(1,\) \(2,\) \(3,\) \(4,\) \(5,\) and \(6,\) the condition \(b^2\geq4c\) permits respectively \(5,\) \(4,\) \(3,\) \(3,\) \(2,\) and \(2\) values of \(b\) in the given set. Their sum is \(5+4+3+3+2+2=19.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q25" data-no="25" data-type="single" data-ans="A">
+<div class="qz-qhead"><span class="qz-badge">25</span><span class="qz-flag">单选</span></div>
+<p>在正方形 \(ABCD\) 的边 \(AD\) 上取一点 \(F\)。过 \(C\) 作 \(CF\) 的垂线，与 \(AB\) 的延长线交于 \(E\)。\(ABCD\) 的面积为 \(256\) 平方英寸，三角形 \(CEF\) 的面积为 \(200\) 平方英寸。则 \(BE\) 的长度为多少英寸？</p>
+<p><img class="amc-fig" src="/img/papers/amc12p/1963/problem/q25-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q25" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(12\)</span></label>
+<label class="qz-opt"><input type="radio" name="q25" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(14\)</span></label>
+<label class="qz-opt"><input type="radio" name="q25" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(15\)</span></label>
+<label class="qz-opt"><input type="radio" name="q25" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(16\)</span></label>
+<label class="qz-opt"><input type="radio" name="q25" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(20\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Point \(F\) is taken in side \(AD\) of square \(ABCD.\) At \(C\) a perpendicular is drawn to \(CF,\) meeting \(AB\) extended at \(E.\) The area of \(ABCD\) is \(256\) square inches and the area of triangle \(CEF\) is \(200\) square inches. Then the number of inches in \(BE\) is:</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc12p/1963/problem/q25-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>互余的锐角和正方形的等边给出 \(\triangle CDF\cong\triangle CBE\)，从而 \(CF=CE\)。由于 \(CF\perp CE\)，\[ \begin{aligned} 200=[CEF] &amp;=\frac12 CE\cdot CF\\ &amp;=\frac12CE^2 \end{aligned}\text{，}\]所以 \(CE=20\)。正方形边长为 \(16\)，在直角三角形 \(CBE\) 中，\(BE=\sqrt{20^2-16^2}=12\)。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The complementary acute angles and the equal square sides give \(\triangle CDF\cong\triangle CBE,\) hence \(CF=CE.\) Since \(CF\perp CE,\) \[ \begin{aligned} 200=[CEF] &amp;=\frac12 CE\cdot CF\\ &amp;=\frac12CE^2, \end{aligned} \] so \(CE=20.\) The square side is \(16,\) and right triangle \(CBE\) gives \(BE=\sqrt{20^2-16^2}=12.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>A</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q26" data-no="26" data-type="single" data-ans="E">
+<div class="qz-qhead"><span class="qz-badge">26</span><span class="qz-flag">单选</span></div>
+<p><b>形式 I。</b>考虑以下命题：</p>
+<p>\[ \begin{aligned} (1)\quad&amp;p\land\neg q\land r,\\ (2)\quad&amp;\neg p\land\neg q\land r,\\ (3)\quad&amp;p\land\neg q\land\neg r,\\ (4)\quad&amp;\neg p\land q\land r \end{aligned}\text{，}\]</p>
+<p>其中 \(p\)、\(q\)、\(r\) 是命题。以上有多少个能推出 \((p\to q)\to r\) 为真？</p>
+<p><b>形式 II。</b>考虑以下命题：\((1)\) \(p\) 和 \(r\) 为真且 \(q\) 为假；\((2)\) \(r\) 为真且 \(p\) 和 \(q\) 为假；\((3)\) \(p\) 为真且 \(q\) 和 \(r\) 为假；\((4)\) \(q\) 和 \(r\) 为真且 \(p\) 为假。以上有多少个能推出命题“\(r\) 可由‘\(p\) 蕴含 \(q\)’推出”为真？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q26" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(0\)</span></label>
+<label class="qz-opt"><input type="radio" name="q26" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q26" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(2\)</span></label>
+<label class="qz-opt"><input type="radio" name="q26" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(3\)</span></label>
+<label class="qz-opt"><input type="radio" name="q26" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(4\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en"><b>Form I.</b> Consider the statements</p>
+<p class="amc-en">\[ \begin{aligned} (1)\quad&amp;p\land\neg q\land r,\\ (2)\quad&amp;\neg p\land\neg q\land r,\\ (3)\quad&amp;p\land\neg q\land\neg r,\\ (4)\quad&amp;\neg p\land q\land r, \end{aligned} \]</p>
+<p class="amc-en">where \(p,\) \(q,\) \(r\) are propositions. How many of these imply the truth of \((p\to q)\to r?\)</p>
+<p class="amc-en"><b>Form II.</b> Consider the statements \((1)\) \(p\) and \(r\) are true and \(q\) is false, \((2)\) \(r\) is true and \(p\) and \(q\) are false, \((3)\) \(p\) is true and \(q\) and \(r\) are false, \((4)\) \(q\) and \(r\) are true and \(p\) is false. How many of these imply the truth of the statement “\(r\) is implied by the statement that \(p\) implies \(q\)”?</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>在情形 \((1)\) 和 \((3)\) 中，\(p\to q\) 为假，所以外层蕴含为真。在情形 \((2)\) 和 \((4)\) 中，\(p\to q\) 为真，而 \(r\) 也为真，所以外层蕴含仍为真。因此四个命题都能推出它。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In cases \((1)\) and \((3),\) \(p\to q\) is false, so the outer implication is true. In cases \((2)\) and \((4),\) \(p\to q\) is true, but \(r\) is also true, so the outer implication is again true. All four statements imply it.</p>
+<p class="amc-en">Thus, the correct answer is <b>E</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q27" data-no="27" data-type="single" data-ans="C">
+<div class="qz-qhead"><span class="qz-badge">27</span><span class="qz-flag">单选</span></div>
+<p>在平面上画六条直线，其中任意两条都不平行，任意三条都不共点。它们把平面分成的区域数是：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q27" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(16\)</span></label>
+<label class="qz-opt"><input type="radio" name="q27" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(20\)</span></label>
+<label class="qz-opt"><input type="radio" name="q27" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(22\)</span></label>
+<label class="qz-opt"><input type="radio" name="q27" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(24\)</span></label>
+<label class="qz-opt"><input type="radio" name="q27" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(26\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Six straight lines are drawn in a plane with no two parallel and no three concurrent. The number of regions into which they divide the plane is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>依次画出的直线分别新增 \(1,2,\ldots,6\) 个区域。因此区域总数为 \[ 1+\sum_{k=1}^{6}k=1+21=22\text{。}\]</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Successive lines create \(1,2,\ldots,6\) new regions. Thus the total is \[ 1+\sum_{k=1}^{6}k=1+21=22. \]</p>
+<p class="amc-en">Therefore, the correct answer is <b>C</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q28" data-no="28" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">28</span><span class="qz-flag">单选</span></div>
+<p>已知方程 \(3x^2-4x+k=0\) 有实根。使该方程两根之积最大的 \(k\) 值是：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q28" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(\dfrac{16}{9}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q28" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(\dfrac{16}{3}\)</span></label>
+<label class="qz-opt"><input type="radio" name="q28" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(\dfrac49\)</span></label>
+<label class="qz-opt"><input type="radio" name="q28" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(\dfrac43\)</span></label>
+<label class="qz-opt"><input type="radio" name="q28" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(-\dfrac43\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Given the equation \(3x^2-4x+k=0\) with real roots. The value of \(k\) for which the product of the roots of the equation is a maximum is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>有实根要求 \(16-12k\geq0\)，所以 \(k\leq\frac{4}{3}\)。两根之积为 \(\frac{k}{3}\)，它随 \(k\) 增大。因此在 \(k=\frac{4}{3}\) 时达到最大。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Real roots require \(16-12k\geq0,\) so \(k\leq\frac{4}{3}.\) The root product is \(\frac{k}{3},\) which increases with \(k.\) It is therefore largest at \(k=\frac{4}{3}.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q29" data-no="29" data-type="single" data-ans="C">
+<div class="qz-qhead"><span class="qz-badge">29</span><span class="qz-flag">单选</span></div>
+<p>一个竖直向上发射的质点在 \(t\) 秒末到达 \(s\) 英尺的高度，其中 \(s=160t-16t^2\)。它能达到的最大高度是：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q29" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(800\)</span></label>
+<label class="qz-opt"><input type="radio" name="q29" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(640\)</span></label>
+<label class="qz-opt"><input type="radio" name="q29" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(400\)</span></label>
+<label class="qz-opt"><input type="radio" name="q29" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(320\)</span></label>
+<label class="qz-opt"><input type="radio" name="q29" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(160\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">A particle projected vertically upward reaches, at the end of \(t\) seconds, an elevation of \(s\) feet where \(s=160t-16t^2.\) The highest elevation is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>顶点对应的时刻为 \(t=-\frac{160}{2\cdot-16}=5\)。此时 \[s(5)=160(5)-16(25)=400\text{。}\]</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The vertex occurs at \(t=-\frac{160}{2\cdot-16}=5.\) Then \[s(5)=160(5)-16(25)=400.\]</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q30" data-no="30" data-type="single" data-ans="C">
+<div class="qz-qhead"><span class="qz-badge">30</span><span class="qz-flag">单选</span></div>
+<p>设</p>
+<p>\[ F=\log\frac{1+x}{1-x}\text{。}\]</p>
+<p>求新函数 \(G\)：把 \(x\) 在 \(F\) 中的每一次出现都替换为</p>
+<p>\[ \frac{3x+x^3}{1+3x^2}\text{，}\]</p>
+<p>并化简。化简后的 \(G\) 等于：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q30" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(-F\)</span></label>
+<label class="qz-opt"><input type="radio" name="q30" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(F\)</span></label>
+<label class="qz-opt"><input type="radio" name="q30" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(3F\)</span></label>
+<label class="qz-opt"><input type="radio" name="q30" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(F^3\)</span></label>
+<label class="qz-opt"><input type="radio" name="q30" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(F^3-F\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Let</p>
+<p class="amc-en">\[ F=\log\frac{1+x}{1-x}. \]</p>
+<p class="amc-en">Form a new function \(G\) by replacing each \(x\) in \(F\) by</p>
+<p class="amc-en">\[ \frac{3x+x^3}{1+3x^2}, \]</p>
+<p class="amc-en">and simplify. The simplified expression \(G\) is equal to:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>令 \(u=\frac{3x+x^3}{1+3x^2}\)，则 \[ \begin{aligned} \frac{1+u}{1-u} &amp;=\frac{1+3x+3x^2+x^3} {1-3x+3x^2-x^3}\\ &amp;=\left(\frac{1+x}{1-x}\right)^3 \end{aligned}\text{。}\]因此 \(G=\log(\frac{1+x}{1-x})^3\)，所以 \(G=3F\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For \(u=\frac{3x+x^3}{1+3x^2},\) \[ \begin{aligned} \frac{1+u}{1-u} &amp;=\frac{1+3x+3x^2+x^3} {1-3x+3x^2-x^3}\\ &amp;=\left(\frac{1+x}{1-x}\right)^3. \end{aligned} \] Therefore \(G=\log(\frac{1+x}{1-x})^3,\) so \(G=3F.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q31" data-no="31" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">31</span><span class="qz-flag">单选</span></div>
+<p>方程 \(2x+3y=763\) 的正整数解共有：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q31" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(255\)</span></label>
+<label class="qz-opt"><input type="radio" name="q31" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(254\)</span></label>
+<label class="qz-opt"><input type="radio" name="q31" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(128\)</span></label>
+<label class="qz-opt"><input type="radio" name="q31" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(127\)</span></label>
+<label class="qz-opt"><input type="radio" name="q31" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(0\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">The number of solutions in positive integers of \(2x+3y=763\) is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>\(y\) 必须为奇数，才能使 \(763-3y\) 为偶数；正数条件给出 \(1\leq y\leq253\)。奇数 \(1\)、\(3\)、\(\ldots\) 和 \(253\) 共有 \(\frac{253+1}{2}=127\) 个。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">We need \(y\) odd so that \(763-3y\) is even, and positivity gives \(1\leq y\leq253.\) The odd values \(1,\) \(3,\) \(\ldots,\) and \(253\) number \(\frac{253+1}{2}=127.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q32" data-no="32" data-type="single" data-ans="A">
+<div class="qz-qhead"><span class="qz-badge">32</span><span class="qz-flag">单选</span></div>
+<p>矩形 \(R\) 的边长为 \(a\) 和 \(b\)，其中 \(a\lt b\)。现要得到一个边长为 \(x\) 和 \(y\) 的矩形，其中 \(x\lt a\)、\(y\lt a\)，使它的周长是 \(R\) 的三分之一，面积也是 \(R\) 的三分之一。这样的不同矩形共有：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q32" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(0\)</span></label>
+<label class="qz-opt"><input type="radio" name="q32" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q32" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(2\)</span></label>
+<label class="qz-opt"><input type="radio" name="q32" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(4\)</span></label>
+<label class="qz-opt"><input type="radio" name="q32" value="E"><span class="qz-mark">E</span><span class="qz-txt">无穷多个</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">The dimensions of a rectangle \(R\) are \(a\) and \(b,\) \(a\lt b.\) It is required to obtain a rectangle with dimensions \(x\) and \(y,\) \(x\lt a,\) \(y\lt a,\) so that its perimeter is one-third that of \(R,\) and its area is one-third that of \(R.\) The number of such (different) rectangles is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>这些条件给出 \(3(x+y)=a+b\) 和 \(3xy=ab\)。相除得到 \[\frac1x+\frac1y=\frac1a+\frac1b\text{。}\]但是 \(x\lt a\) 且 \(y\lt a\) 使左边大于 \(\frac{2}{a}\)，而 \(a\lt b\) 使右边小于 \(\frac{2}{a}\)。这不可能成立。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The conditions give \(3(x+y)=a+b\) and \(3xy=ab.\) Dividing yields \[\frac1x+\frac1y=\frac1a+\frac1b.\] But \(x\lt a\) and \(y\lt a\) make the left side greater than \(\frac{2}{a},\) while \(a\lt b\) makes the right side less than \(\frac{2}{a}.\) This is impossible.</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q33" data-no="33" data-type="single" data-ans="A">
+<div class="qz-qhead"><span class="qz-badge">33</span><span class="qz-flag">单选</span></div>
+<p>已知直线 \(y=\dfrac34x+6\)，另有直线 \(L\) 与它平行且相距 \(4\) 个单位。下列哪一个可能是 \(L\) 的方程？</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q33" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(y=\dfrac34x+1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q33" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(y=\dfrac34x\)</span></label>
+<label class="qz-opt"><input type="radio" name="q33" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(y=\dfrac34x-\dfrac23\)</span></label>
+<label class="qz-opt"><input type="radio" name="q33" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(y=\dfrac34x-1\)</span></label>
+<label class="qz-opt"><input type="radio" name="q33" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(y=\dfrac34x+2\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Given the line \(y=\dfrac34x+6\) and a line \(L\) parallel to the given line and \(4\) units from it. A possible equation for \(L\) is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>已知直线可写成 \(3x-4y+24=0\)。平行直线 \(y=\frac{3x}{4}+b\) 可写成 \(3x-4y+4b=0\)，所以两直线间的距离为 \(\frac{|24-4b|}{5}\)。令它等于 \(4\)，得到 \(|6-b|=5\)，从而 \(b=1\) 或 \(11\)。选项 A 是可能的。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The given line is \(3x-4y+24=0.\) A parallel line \(y=\frac{3x}{4}+b\) is \(3x-4y+4b=0,\) so the distance is \(\frac{|24-4b|}{5}.\) Setting this equal to \(4\) gives \(|6-b|=5,\) hence \(b=1\) or \(11.\) Choice A is possible.</p>
+<p class="amc-en">Thus, the correct answer is <b>A</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q34" data-no="34" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">34</span><span class="qz-flag">单选</span></div>
+<p>在三角形 \(ABC\) 中，边 \(a=\sqrt3\)，边 \(b=\sqrt3\)，且边 \(c\gt3\)。设 \(x\) 是满足“边 \(c\) 所对角的度数必大于 \(x\)”的最大数，则 \(x\) 等于：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q34" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(150\)</span></label>
+<label class="qz-opt"><input type="radio" name="q34" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(120\)</span></label>
+<label class="qz-opt"><input type="radio" name="q34" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(105\)</span></label>
+<label class="qz-opt"><input type="radio" name="q34" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(90\)</span></label>
+<label class="qz-opt"><input type="radio" name="q34" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(60\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">In triangle \(ABC,\) side \(a=\sqrt3,\) side \(b=\sqrt3,\) and side \(c\gt3.\) Let \(x\) be the largest number such that the magnitude, in degrees, of the angle opposite side \(c\) exceeds \(x.\) Then \(x\) equals:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>余弦定理给出 \[\cos C=\frac{3+3-c^2}{2\sqrt3\sqrt3}=\frac{6-c^2}{6}\text{。}\]因为 \(c\gt3\)，所以 \(\cos C\lt-\frac{1}{2}\)，从而 \(C\gt120^\circ\)。角度可以趋近 \(120^\circ\)，只要 \(c\) 从右侧趋近 \(3\)，所以能保证的最大下界是 \(120\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The law of cosines gives \[\cos C=\frac{3+3-c^2}{2\sqrt3\sqrt3}=\frac{6-c^2}{6}.\] Since \(c\gt3,\) \(\cos C\lt-\frac{1}{2},\) so \(C\gt120^\circ.\) Values can approach \(120^\circ\) as \(c\) approaches \(3\) from above, so the largest guaranteed bound is \(120.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q35" data-no="35" data-type="single" data-ans="B">
+<div class="qz-qhead"><span class="qz-badge">35</span><span class="qz-flag">单选</span></div>
+<p>一个三角形的三边长都是整数，面积也是整数。其中一边长为 \(21\)，周长为 \(48\)。最短边的长度是：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q35" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(8\)</span></label>
+<label class="qz-opt"><input type="radio" name="q35" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(10\)</span></label>
+<label class="qz-opt"><input type="radio" name="q35" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(12\)</span></label>
+<label class="qz-opt"><input type="radio" name="q35" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(14\)</span></label>
+<label class="qz-opt"><input type="radio" name="q35" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(16\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">The lengths of the sides of a triangle are integers, and its area is also an integer. One side is \(21\) and the perimeter is \(48.\) The shortest side is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>设另外两边为 \(x\) 和 \(27-x\)，并令 \(x\leq27-x\)。半周长是 \(24\)，所以海伦公式给出 \[ \begin{aligned} K^2 &amp;=24\cdot3(24-x)(x-3)\\ &amp;=72(24-x)(x-3) \end{aligned}\text{。}\]三角形不等式给出 \(4\leq x\leq13\)。逐一检查这些整数，当 \(x=4,\ldots,9\) 时该表达式都不是完全平方数；当 \(x=10\) 时，它等于 \(72\cdot14\cdot7=7056=84^2\)。因此最短边长为 \(10\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let the other sides be \(x\) and \(27-x,\) with \(x\leq27-x.\) The semiperimeter is \(24,\) so Heron’s formula gives \[ \begin{aligned} K^2 &amp;=24\cdot3(24-x)(x-3)\\ &amp;=72(24-x)(x-3). \end{aligned} \] The triangle inequalities give \(4\leq x\leq13.\) Checking these integers, the expression is not a square for \(x=4,\ldots,9,\) while at \(x=10\) it is \(72\cdot14\cdot7=7056=84^2.\) Thus the shortest side is \(10.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>B</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q36" data-no="36" data-type="single" data-ans="C">
+<div class="qz-qhead"><span class="qz-badge">36</span><span class="qz-flag">单选</span></div>
+<p>某人起初有 \(64\) 美分，共下注 \(6\) 次，赢三次、输三次，输赢的次序随机，每次获胜和失败的概率相同。每次下注金额都是下注时剩余钱数的一半，则最终结果是：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q36" value="A"><span class="qz-mark">A</span><span class="qz-txt">损失 \(27\) 美分</span></label>
+<label class="qz-opt"><input type="radio" name="q36" value="B"><span class="qz-mark">B</span><span class="qz-txt">获利 \(27\) 美分</span></label>
+<label class="qz-opt"><input type="radio" name="q36" value="C"><span class="qz-mark">C</span><span class="qz-txt">损失 \(37\) 美分</span></label>
+<label class="qz-opt"><input type="radio" name="q36" value="D"><span class="qz-mark">D</span><span class="qz-txt">既没有获利也没有损失</span></label>
+<label class="qz-opt"><input type="radio" name="q36" value="E"><span class="qz-mark">E</span><span class="qz-txt">获利或损失取决于输赢的次序</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">A person starting with \(64\) cents and making \(6\) bets, wins three times and loses three times, the wins and losses occurring in random order. The chance for a win is equal to the chance for a loss. If each wager is for half the money remaining at the time of the bet, then the final result is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>三胜三负之后，剩余钱数（单位：美分）为 \[ \begin{aligned} 64\left(\frac32\right)^3 \left(\frac12\right)^3 &amp;=64\cdot\frac{27}{64}\\ &amp;=27 \end{aligned}\text{。}\]因此无论次序如何，损失都是 \(64-27=37\) 美分。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">After three wins and three losses, the amount, in cents, is \[ \begin{aligned} 64\left(\frac32\right)^3 \left(\frac12\right)^3 &amp;=64\cdot\frac{27}{64}\\ &amp;=27. \end{aligned} \] The loss is \(64-27=37\) cents, regardless of order.</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q37" data-no="37" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">37</span><span class="qz-flag">单选</span></div>
+<p>直线上的点 \(P_1\)、\(P_2\)、\(\ldots\)、\(P_7\) 按此顺序排列，但间距不一定相等。在该直线上任取一点 \(P\)，令 \(s\) 为以下无向线段长度之和：</p>
+<p>\[ PP_1,\ PP_2,\ \ldots,\ PP_7\text{。}\]</p>
+<p>则 \(s\) 取得最小值的充要条件是点 \(P\) 位于：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q37" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(P_1\) 与 \(P_7\) 的中点</span></label>
+<label class="qz-opt"><input type="radio" name="q37" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(P_2\) 与 \(P_6\) 的中点</span></label>
+<label class="qz-opt"><input type="radio" name="q37" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(P_3\) 与 \(P_5\) 的中点</span></label>
+<label class="qz-opt"><input type="radio" name="q37" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(P_4\) 处</span></label>
+<label class="qz-opt"><input type="radio" name="q37" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(P_1\) 处</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Given points \(P_1,\) \(P_2,\) \(\ldots,\) \(P_7\) on a straight line, in the order stated (not necessarily evenly spaced). Let \(P\) be an arbitrarily selected point on the line and let \(s\) be the sum of the undirected lengths</p>
+<p class="amc-en">\[ PP_1,\ PP_2,\ \ldots,\ PP_7. \]</p>
+<p class="amc-en">Then \(s\) is smallest if and only if the point \(P\) is:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>对任意一对 \(P_i,P_{8-i}\)，距离之和 \(PP_i+PP_{8-i}\) 在 \(P\) 位于它们之间时最小。这三个区间都包含 \(P_4\)。剩余的一项 \(PP_4\) 仅在 \(P=P_4\) 时达到最小。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">For any pair \(P_i,P_{8-i},\) the sum \(PP_i+PP_{8-i}\) is minimized when \(P\) lies between them. The three such intervals all contain \(P_4.\) The remaining term \(PP_4\) is uniquely minimized at \(P=P_4.\)</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q38" data-no="38" data-type="single" data-ans="E">
+<div class="qz-qhead"><span class="qz-badge">38</span><span class="qz-flag">单选</span></div>
+<p>点 \(F\) 位于平行四边形 \(ABCD\) 的边 \(AD\) 的延长线上。\(BF\) 与对角线 \(AC\) 交于 \(E\)，与边 \(DC\) 交于 \(G\)。若 \(EF=32\) 且 \(GF=24\)，则 \(BE\) 等于：</p>
+<p><img class="amc-fig" src="/img/papers/amc12p/1963/problem/q38-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q38" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(4\)</span></label>
+<label class="qz-opt"><input type="radio" name="q38" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(8\)</span></label>
+<label class="qz-opt"><input type="radio" name="q38" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(10\)</span></label>
+<label class="qz-opt"><input type="radio" name="q38" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(12\)</span></label>
+<label class="qz-opt"><input type="radio" name="q38" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(16\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">Point \(F\) is taken on the extension of side \(AD\) of parallelogram \(ABCD.\) \(BF\) intersects diagonal \(AC\) at \(E\) and side \(DC\) at \(G.\) If \(EF=32\) and \(GF=24,\) then \(BE\) equals:</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc12p/1963/problem/q38-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>取仿射坐标 \(A=0\)、\(B=u\)、\(D=v\)、\(C=u+v\)，以及 \(F=tv\)。\(FB\) 上一点可写为 \(su+t(1-s)v\)。与 \(DC\) 相交得到 \(s_G=\frac{t-1}{t}\)，与 \(AC\) 相交得到 \(s_E=\frac{t}{t+1}\)。因此 \[ \begin{aligned} \frac{GF}{EF} &amp;=\frac{s_G}{s_E} =\frac{t^2-1}{t^2}\\ &amp;=\frac{24}{32}=\frac34 \end{aligned}\text{，}\]所以 \(t=2\)，且 \(s_E=\frac{2}{3}\)。于是 \(EF=(\frac{2}{3})FB=32\)，从而 \(FB=48\)，\(BE=16\)。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Use affine coordinates \(A=0,\) \(B=u,\) \(D=v,\) \(C=u+v,\) and \(F=tv.\) A point on \(FB\) is \(su+t(1-s)v.\) Intersecting \(DC\) gives \(s_G=\frac{t-1}{t},\) while intersecting \(AC\) gives \(s_E=\frac{t}{t+1}.\) Therefore \[ \begin{aligned} \frac{GF}{EF} &amp;=\frac{s_G}{s_E} =\frac{t^2-1}{t^2}\\ &amp;=\frac{24}{32}=\frac34, \end{aligned} \] so \(t=2\) and \(s_E=\frac{2}{3}.\) Thus \(EF=(\frac{2}{3})FB=32,\) making \(FB=48\) and \(BE=16.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>E</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q39" data-no="39" data-type="single" data-ans="D">
+<div class="qz-qhead"><span class="qz-badge">39</span><span class="qz-flag">单选</span></div>
+<p>在三角形 \(ABC\) 中，作线段 \(CE\) 和 \(AD\)，使 \(\dfrac{CD}{DB}=\dfrac31\) 且 \(\dfrac{AE}{EB}=\dfrac32\)。</p>
+<p>设 \(r=\dfrac{CP}{PE}\)，其中 \(P\) 是 \(CE\) 与 \(AD\) 的交点。则 \(r\) 等于：</p>
+<p><img class="amc-fig" src="/img/papers/amc12p/1963/problem/q39-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q39" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(3\)</span></label>
+<label class="qz-opt"><input type="radio" name="q39" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(\dfrac32\)</span></label>
+<label class="qz-opt"><input type="radio" name="q39" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(4\)</span></label>
+<label class="qz-opt"><input type="radio" name="q39" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(5\)</span></label>
+<label class="qz-opt"><input type="radio" name="q39" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(\dfrac52\)</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">In triangle \(ABC\) lines \(CE\) and \(AD\) are drawn so that \(\dfrac{CD}{DB}=\dfrac31\) and \(\dfrac{AE}{EB}=\dfrac32.\)</p>
+<p class="amc-en">Let \(r=\dfrac{CP}{PE},\) where \(P\) is the intersection point of \(CE\) and \(AD.\) Then \(r\) equals:</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc12p/1963/problem/q39-1.svg" alt="题图" loading="lazy"></p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>比 \(AE:EB=3:2\) 对应质量 \(m_A=2\) 和 \(m_B=3\)。比 \(CD:DB=3:1\) 随即给出 \(m_C=1\)。点 \(E\) 的质量为 \(m_A+m_B=5\)，所以在塞瓦线 \(CE\) 上，\[\frac{CP}{PE}=\frac{m_E}{m_C}=\frac51=5\text{。}\]</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The ratio \(AE:EB=3:2\) is represented by masses \(m_A=2\) and \(m_B=3.\) The ratio \(CD:DB=3:1\) then gives \(m_C=1.\) Point \(E\) has mass \(m_A+m_B=5,\) so along cevian \(CE,\) \[\frac{CP}{PE}=\frac{m_E}{m_C}=\frac51=5.\]</p>
+<p class="amc-en">Thus, the correct answer is <b>D</b>.</p>
+</div></div>
+</section>
+<section class="qz-q" id="q40" data-no="40" data-type="single" data-ans="C">
+<div class="qz-qhead"><span class="qz-badge">40</span><span class="qz-flag">单选</span></div>
+<p>若数 \(x\) 满足方程 \(\sqrt[3]{x+9}-\sqrt[3]{x-9}=3\)，则 \(x^2\) 介于：</p>
+<div class="qz-opts">
+<label class="qz-opt"><input type="radio" name="q40" value="A"><span class="qz-mark">A</span><span class="qz-txt">\(55\) 与 \(65\) 之间</span></label>
+<label class="qz-opt"><input type="radio" name="q40" value="B"><span class="qz-mark">B</span><span class="qz-txt">\(65\) 与 \(75\) 之间</span></label>
+<label class="qz-opt"><input type="radio" name="q40" value="C"><span class="qz-mark">C</span><span class="qz-txt">\(75\) 与 \(85\) 之间</span></label>
+<label class="qz-opt"><input type="radio" name="q40" value="D"><span class="qz-mark">D</span><span class="qz-txt">\(85\) 与 \(95\) 之间</span></label>
+<label class="qz-opt"><input type="radio" name="q40" value="E"><span class="qz-mark">E</span><span class="qz-txt">\(95\) 与 \(105\) 之间</span></label>
+</div>
+<p class="amc-lang">English（选项同上方）</p>
+<p class="amc-en">If \(x\) is a number satisfying the equation \(\sqrt[3]{x+9}-\sqrt[3]{x-9}=3,\) then \(x^2\) is between:</p>
+<div class="qz-res" hidden>
+<p class="qz-res-head"></p>
+<div class="qz-res-body">
+<p>令 \(u=\sqrt[3]{x+9}\)，\(v=\sqrt[3]{x-9}\)。则 \(u-v=3\)，并且 \[ \begin{aligned} 18&amp;=u^3-v^3\\ &amp;=(u-v)(u^2+uv+v^2) \end{aligned}\text{，}\]所以 \(u^2+uv+v^2=6\)。与 \((u-v)^2=9\) 比较，得 \(uv=-1\)。因此 \((u+v)^2=5\)。对 \(2u=3\pm\sqrt5\) 两边取立方，得到 \(x=\pm4\sqrt5\)；无论哪种情形，\(x^2=80\)，介于 \(75\) 与 \(85\) 之间。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(u=\sqrt[3]{x+9}\) and \(v=\sqrt[3]{x-9}.\) Then \(u-v=3\) and \[ \begin{aligned} 18&amp;=u^3-v^3\\ &amp;=(u-v)(u^2+uv+v^2), \end{aligned} \] so \(u^2+uv+v^2=6.\) Comparing with \((u-v)^2=9\) gives \(uv=-1.\) Hence \((u+v)^2=5.\) Cubing \(2u=3\pm\sqrt5\) gives \(x=\pm4\sqrt5,\) and either way \(x^2=80,\) between \(75\) and \(85.\)</p>
+<p class="amc-en">Therefore, the correct answer is <b>C</b>.</p>
+</div></div>
+</section>
+  </form>
+
+  <div class="qz-foot" id="qzFoot" hidden>
+    <div class="qz-summary" id="qzSummary" hidden></div>
+    <button class="btn qz-submit" id="qzSubmit" type="button">提交答卷</button>
+    <p class="qz-tip" id="qzTip">提交前可随时修改选择；提交后不可更改，成绩不会保存。</p>
+  </div>
+
+  <p class="back"><a href="/docs/amc12p-1963/">← 返回展示模式</a></p>
+</article>
+
+<button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 8.8V19h-2V8.8L6.4 13.4 5 12z" fill="currentColor"/></svg>
+</button>
+
+<script>
+(function () {
+  var form = document.getElementById('qzForm');
+  var note = document.getElementById('qzNote');
+  var startBtn = document.getElementById('qzStart');
+  var clock = document.getElementById('qzClock');
+  var foot = document.getElementById('qzFoot');
+  var submitBtn = document.getElementById('qzSubmit');
+  var summary = document.getElementById('qzSummary');
+  var tip = document.getElementById('qzTip');
+  var progEl = document.getElementById('qzProgress');
+  var topBar = document.getElementById('qzTop');
+  if (!form || !startBtn) return;
+
+  var qs = Array.prototype.slice.call(form.querySelectorAll('.qz-q'));
+  // 判分题：有选项且有答案（原卷作废 / 数据缺失的题不计分）
+  var graded = qs.filter(function (s) {
+    return s.getAttribute('data-type') !== 'blank' && s.getAttribute('data-ans');
+  });
+  var ungraded = qs.filter(function (s) { return s.getAttribute('data-type') !== 'blank' && !s.getAttribute('data-ans'); });
+  var blankN = qs.filter(function (s) { return s.getAttribute('data-type') === 'blank'; }).length;
+  var t0 = 0, tid = null, started = false, done = false;
+
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function fmt(ms) {
+    var s = Math.floor(ms / 1000);
+    var m = Math.floor(s / 60); s = s % 60;
+    var h = Math.floor(m / 60); m = m % 60;
+    return h ? (h + ':' + pad(m) + ':' + pad(s)) : (pad(m) + ':' + pad(s));
+  }
+  function tick() { clock.textContent = fmt(Date.now() - t0); }
+  function startTimer() {
+    t0 = Date.now(); tick();
+    tid = setInterval(tick, 1000);
+  }
+  function stopTimer() { if (tid) { clearInterval(tid); tid = null; } }
+
+  function picked(sec) {
+    var ins = sec.querySelectorAll('input');
+    var v = [];
+    for (var i = 0; i < ins.length; i++) if (ins[i].checked) v.push(ins[i].value);
+    return v.sort().join('');
+  }
+  function answeredCount() {
+    var n = 0;
+    graded.forEach(function (sec) {
+      if (sec.querySelector('input:checked')) n++;
+    });
+    return n;
+  }
+  function refreshProgress() {
+    var dn = answeredCount();
+    if (progEl) progEl.textContent = '已答 ' + dn + ' / ' + graded.length;
+    if (tip) {
+      tip.textContent = dn < graded.length
+        ? '还有 ' + (graded.length - dn) + ' 题未作答，未作答的题目提交后判为答错。'
+        : '已全部作答，提交前可随时修改；提交后不可更改，成绩不会保存。';
+    }
+    // 兼容不支持 :has() 的浏览器：把选中态同步到 label 的 class
+    var labels = form.querySelectorAll('.qz-opt');
+    for (var i = 0; i < labels.length; i++) {
+      var inp = labels[i].querySelector('input');
+      if (inp && inp.checked) labels[i].classList.add('on');
+      else labels[i].classList.remove('on');
+    }
+  }
+
+  // 开始答题
+  startBtn.addEventListener('click', function () {
+    note.hidden = true;
+    form.hidden = false;
+    foot.hidden = false;
+    started = true;
+    startTimer();
+    refreshProgress();
+    var y = topBar ? topBar.getBoundingClientRect().bottom + window.scrollY - 70 : 0;
+    window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+  });
+
+  form.addEventListener('change', refreshProgress);
+  form.addEventListener('input', refreshProgress);
+  form.addEventListener('submit', function (e) { e.preventDefault(); });
+
+  // 提交判分（只做一次，不存任何记录）
+  function grade() {
+    if (!started || done) return;
+    var blankCount = qs.length - graded.length;
+    done = true;
+    var right = 0, wrong = 0;
+    var used = Date.now() - t0;
+    stopTimer();
+
+    qs.forEach(function (sec) {
+      var type = sec.getAttribute('data-type');
+      var ans = (sec.getAttribute('data-ans') || '').toUpperCase();
+      var res = sec.querySelector('.qz-res');
+      var head = sec.querySelector('.qz-res-head');
+      var ins = sec.querySelectorAll('input');
+      var mine = type === 'blank' ? '' : picked(sec);
+
+      for (var i = 0; i < ins.length; i++) ins[i].disabled = true;
+
+      if (type === 'blank') {
+        sec.classList.add('is-skip');
+        if (head) head.innerHTML = '<span class="qz-tag skip">不判分</span>填空题：以下为参考答案与解析';
+        if (res) res.hidden = false;
+        return;
+      }
+      if (!ans) {
+        sec.classList.add('is-skip');
+        for (var k = 0; k < ins.length; k++) ins[k].disabled = true;
+        if (head) head.innerHTML = '<span class="qz-tag skip">不计分</span>本题无标准答案（原卷作废或缺项）';
+        if (res) res.hidden = false;
+        return;
+      }
+      var ok = mine !== '' && mine === ans.split('').sort().join('');
+      if (ok) {
+        right++;
+        sec.classList.add('is-right');
+        if (head) head.innerHTML = '<span class="qz-tag ok">答对</span>正确答案 <b>' + ans + '</b>';
+      } else {
+        wrong++;
+        sec.classList.add('is-wrong');
+        if (head) {
+          head.innerHTML = '<span class="qz-tag bad">答错</span>正确答案 <b>' + ans + '</b>' +
+            '<span class="qz-mine">你的答案 ' + (mine || '未作答') + '</span>';
+        }
+      }
+      if (res) res.hidden = false;
+    });
+
+    var total = graded.length;
+    var rate = total ? Math.round(right / total * 100) : 0;
+    summary.hidden = false;
+    summary.innerHTML =
+      '<div class="qz-score"><b>' + right + '</b><span>/ ' + total + '</span></div>' +
+      '<div class="qz-detail">' +
+        '<p>答对 <b class="c-ok">' + right + '</b> 题，答错 <b class="c-bad">' + wrong + '</b> 题' +
+        (blankCount ? '，另填空 <b>' + blankN + '</b> 题、无标准答案 <b>' + ungraded.length + '</b> 题不参与判分' : '') + '</p>' +
+        '<p>正确率 ' + rate + '% · 答题耗时 ' + fmt(used) + '</p>' +
+      '</div>';
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = '已提交';
+    tip.textContent = '本页仅作一次性判题：不记录作答、不生成错题集，成绩不会保存。需重做请刷新页面。';
+    window.scrollTo({ top: summary.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' });
+  }
+
+  // 点击提交：有未答题先确认一次，确认后照常判分（未答按答错计）
+  function trySubmit() {
+    if (!started || done) return;
+    var left = graded.length - answeredCount();
+    if (left > 0) {
+      if (!window.confirm('还有 ' + left + ' 题未作答，未作答的题目将按答错计算。确定提交吗？')) return;
+    }
+    grade();
+  }
+
+  submitBtn.addEventListener('click', trySubmit);
+
+  // 回到顶部
+  var top = document.querySelector('.to-top');
+  if (top) {
+    function onScroll() {
+      if (window.scrollY > 420) top.classList.add('show');
+      else top.classList.remove('show');
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    top.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  }
+})();
+</script>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-line">
+      <span>© 2026 Feng</span>
+      <span class="dot">·</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></span>
+    </div>
+    <p class="foot-note">本站内容均来源于网络，版权归原作者所有，仅供学习交流使用，请勿用于商业用途。</p>
+  </div>
+</footer>
+<script>
+(function () {
+  /* ---------- 深色模式 ---------- */
+  var root = document.documentElement;
+  var toggle = document.querySelector('.theme-toggle');
+  function osDark() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function isDark() {
+    var t = root.getAttribute('data-theme');
+    if (t === 'dark') return true;
+    if (t === 'light') return false;
+    return osDark();
+  }
+  function label() {
+    if (!toggle) return;
+    var d = isDark();
+    toggle.setAttribute('aria-label', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('title', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('aria-pressed', d ? 'true' : 'false');
+  }
+  if (toggle) {
+    label();
+    toggle.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) { /* noop */ }
+      label();
+    });
+  }
+  if (window.matchMedia) {
+    var mqDark = window.matchMedia('(prefers-color-scheme: dark)');
+    if (mqDark.addEventListener) mqDark.addEventListener('change', label);
+  }
+
+  /* ---------- 顶部导航 ---------- */
+  var nav = document.querySelector('.nav');
+  var navToggle = document.querySelector('.nav-toggle');
+  if (!nav || !navToggle) return;
+  var mq = window.matchMedia('(max-width: 720px)');
+  function closeAll() {
+    nav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    Array.prototype.forEach.call(nav.querySelectorAll('.open'), function (x) { x.classList.remove('open'); });
+  }
+  navToggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var on = nav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', on ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) {
+    if (!mq.matches) return;
+    var a = e.target.closest ? e.target.closest('a') : null;
+    if (!a) return;
+    var host = a.parentNode;
+    if (host && host.classList.contains('nav-drop') && a.classList.contains('has-caret')) {
+      e.preventDefault();
+      host.classList.toggle('open');
+    }
+  });
+  document.addEventListener('click', function (e) {
+    if (mq.matches && !nav.contains(e.target) && !navToggle.contains(e.target)) closeAll();
+  });
+  // 键盘 Esc 收起移动端菜单
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mq.matches && nav.classList.contains('open')) {
+      closeAll();
+      navToggle.focus();
+    }
+  });
+
+  /* ---------- 搜索快捷键：/ 聚焦，Ctrl(⌘)+K 打开 ---------- */
+  var searchLink = document.querySelector('.nav-s');
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    var typing = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable);
+    if ((e.ctrlKey || e.metaKey) && !e.shiftKey && (e.key === 'k' || e.key === 'K')) {
+      e.preventDefault();
+      var box = document.querySelector('.sbox-input');
+      if (box) { box.focus(); box.select(); }
+      else if (searchLink) location.href = searchLink.href;
+      return;
+    }
+    if (typing || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.key === '/') {
+      var box2 = document.querySelector('.sbox-input');
+      if (box2) { e.preventDefault(); box2.focus(); box2.select(); }
+      else if (searchLink) { e.preventDefault(); location.href = searchLink.href; }
+    }
+  });
+})();
+</script>
+</body>
+</html>

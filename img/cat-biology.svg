@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="生物：叶片与细胞">
+  <defs>
+    <linearGradient id="bBg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#f6fbf1"/>
+      <stop offset="0.55" stop-color="#e9f5e0"/>
+      <stop offset="1" stop-color="#d6ecce"/>
+    </linearGradient>
+    <linearGradient id="bLeaf" x1="0.15" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#8fce7a"/>
+      <stop offset="0.55" stop-color="#5cab52"/>
+      <stop offset="1" stop-color="#3c8a41"/>
+    </linearGradient>
+    <linearGradient id="bCell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#d9efcf" stop-opacity="0.92"/>
+    </linearGradient>
+    <pattern id="bGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#9ccb8a" stroke-opacity="0.3" stroke-width="1"/>
+    </pattern>
+    <clipPath id="bLeafClip">
+      <path d="M430 46 C566 76 590 216 430 352 C270 216 294 76 430 46 Z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="640" height="400" fill="url(#bBg)"/>
+  <rect width="640" height="400" fill="url(#bGrid)"/>
+
+  <!-- 叶片 -->
+  <g transform="rotate(-6 430 200)">
+    <path d="M430 336 L430 378" fill="none" stroke="#2f7237" stroke-width="5" stroke-linecap="round" stroke-opacity="0.7"/>
+    <path d="M430 46 C566 76 590 216 430 352 C270 216 294 76 430 46 Z" fill="url(#bLeaf)"/>
+    <path d="M430 50 C556 80 578 214 430 346" fill="none" stroke="#2f7237" stroke-width="2" stroke-opacity="0.25"/>
+    <path d="M430 54 L430 344" fill="none" stroke="#f3fbe9" stroke-width="3.4" stroke-linecap="round" stroke-opacity="0.9"/>
+    <g clip-path="url(#bLeafClip)" fill="none" stroke="#f3fbe9" stroke-width="2.6" stroke-linecap="round" stroke-opacity="0.78">
+      <path d="M430 104 C470 112 500 132 518 162"/>
+      <path d="M430 104 C390 112 360 132 342 162"/>
+      <path d="M430 158 C474 168 506 190 524 222"/>
+      <path d="M430 158 C386 168 354 190 336 222"/>
+      <path d="M430 214 C470 224 498 246 514 274"/>
+      <path d="M430 214 C390 224 362 246 346 274"/>
+      <path d="M430 268 C462 278 484 296 496 316"/>
+      <path d="M430 268 C398 278 376 296 364 316"/>
+    </g>
+  </g>
+
+  <!-- 细胞群 -->
+  <g>
+    <circle cx="132" cy="146" r="62" fill="url(#bCell)" stroke="#6aab5f" stroke-width="3" stroke-opacity="0.75"/>
+    <circle cx="132" cy="146" r="24" fill="#5cab52" fill-opacity="0.34" stroke="#3c8a41" stroke-width="2" stroke-opacity="0.6"/>
+    <circle cx="126" cy="140" r="7" fill="#3c8a41" fill-opacity="0.55"/>
+
+    <circle cx="214" cy="212" r="52" fill="url(#bCell)" stroke="#6aab5f" stroke-width="3" stroke-opacity="0.7"/>
+    <circle cx="214" cy="212" r="20" fill="#5cab52" fill-opacity="0.34" stroke="#3c8a41" stroke-width="2" stroke-opacity="0.6"/>
+    <circle cx="209" cy="207" r="6" fill="#3c8a41" fill-opacity="0.55"/>
+
+    <circle cx="110" cy="264" r="44" fill="url(#bCell)" stroke="#6aab5f" stroke-width="3" stroke-opacity="0.62"/>
+    <circle cx="110" cy="264" r="17" fill="#5cab52" fill-opacity="0.34" stroke="#3c8a41" stroke-width="2" stroke-opacity="0.55"/>
+  </g>
+
+  <text x="42" y="366" font-family="Georgia,serif" font-size="19" font-style="italic" fill="#3c8a41" opacity="0.58">6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂</text>
+  <text x="474" y="380" font-family="Georgia,serif" font-size="20" font-style="italic" fill="#2f7237" opacity="0.4">biology</text>
+</svg>

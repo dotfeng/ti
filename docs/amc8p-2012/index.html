@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<meta charset="utf-8">
+<title>2012 年 AMC 8 真题（P版） · 竞赛资料库</title>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) { /* 隐私模式下忽略 */ }
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="2012 年 AMC 8 真题（P版）：数学 · AMC8(P版)，2012 年，共 25 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+
+<link rel="canonical" href="https://t.fengg.net/docs/amc8p-2012/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="竞赛资料库">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="2012 年 AMC 8 真题（P版）">
+<meta property="og:description" content="2012 年 AMC 8 真题（P版）：数学 · AMC8(P版)，2012 年，共 25 题，含答案解析。可在线阅读，并提供文档下载与打印。">
+<meta property="og:url" content="https://t.fengg.net/docs/amc8p-2012/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f7f9">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1318">
+
+
+<link rel="prev" href="/docs/amc8p-2011/">
+<link rel="next" href="/docs/amc8p-2013/">
+<link rel="stylesheet" href="/css/style.css?v=20261110e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+
+<link rel="stylesheet" href="/katex/katex.min.css">
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (!window.renderMathInElement) return;
+  var el = document.querySelector('.doc') || document.body;
+  try {
+    renderMathInElement(el, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false }
+      ],
+      throwOnError: false
+    });
+  } catch (e) { /* 公式渲染失败不影响正文 */ }
+});
+</script>
+
+
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/">竞赛资料库</a>
+    <nav class="nav"><a class="nav-a" href="/">首页</a><div class="nav-drop nav-mega"><a class="nav-a has-caret" href="/all/" title="按科目浏览全部题库">题库<i class="caret" aria-hidden="true"></i></a><div class="drop mega"><div class="mega-col" style="--accent:#3776c4"><a class="mega-h" href="/c/astronomy/"><i class="mega-dot" aria-hidden="true"></i>天文<span class="cnt">52</span></a><a class="mega-l" href="/c/astronomy/cnao/">CNAO<span class="cnt">28</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/cnao/prelim/">预赛</a><a class="mega-c" href="/c/astronomy/cnao/final/">决赛</a><a class="mega-c" href="/c/astronomy/cnao/primary/">小学组</a></span><a class="mega-l" href="/c/astronomy/provincial/">省赛<span class="cnt">15</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/provincial/beijing/">北京</a><a class="mega-c" href="/c/astronomy/provincial/guangdong/">广东</a><a class="mega-c" href="/c/astronomy/provincial/zhejiang/">浙江</a><a class="mega-c" href="/c/astronomy/provincial/jiangsu/">江苏</a><a class="mega-c" href="/c/astronomy/provincial/shandong/">山东</a><a class="mega-c" href="/c/astronomy/provincial/taiwan/">中国台湾</a></span><a class="mega-l" href="/c/astronomy/practice/">练习<span class="cnt">9</span></a><span class="mega-cs"><a class="mega-c" href="/c/astronomy/practice/primary/">小学组练习</a><a class="mega-c" href="/c/astronomy/practice/bank/">题库合集</a></span></div><div class="mega-col" style="--accent:#0f8a5f"><a class="mega-h" href="/c/math/"><i class="mega-dot" aria-hidden="true"></i>数学<span class="cnt">290</span></a><a class="mega-l" href="/c/math/amc8/">AMC8<span class="cnt">26</span></a><a class="mega-l" href="/c/math/amc8p/">AMC8(P版)<span class="cnt">41</span></a><a class="mega-l" href="/c/math/amc10p/">AMC10(P版)<span class="cnt">52</span></a><a class="mega-l" href="/c/math/amc12p/">AMC12(P版)<span class="cnt">102</span></a><a class="mega-l" href="/c/math/gzl/">全国中学生数学奥林匹克竞赛<span class="cnt">69</span></a><span class="mega-cs"><a class="mega-c" href="/c/math/gzl/liansai/">联赛（预赛）</a><a class="mega-c" href="/c/math/gzl/final/">决赛（CMO）</a><a class="mega-c" href="/c/math/gzl/province/">各赛区预赛</a></span></div><div class="mega-col" style="--accent:#6c4bb6"><a class="mega-h" href="/c/physics/"><i class="mega-dot" aria-hidden="true"></i>物理<span class="cnt">73</span></a><a class="mega-l" href="/c/physics/national/">全国竞赛<span class="cnt">49</span></a><a class="mega-l" href="/c/physics/asian/">亚洲竞赛<span class="cnt">11</span></a><a class="mega-l" href="/c/physics/international/">国际竞赛<span class="cnt">13</span></a></div><div class="mega-col" style="--accent:#3f8f46"><a class="mega-h" href="/c/biology/"><i class="mega-dot" aria-hidden="true"></i>生物<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/league/">全国中学生生物学联赛<span class="cnt">7</span></a><a class="mega-l" href="/c/biology/competition/">全国中学生生物学竞赛</a></div><div class="mega-col" style="--accent:#c05a2b"><a class="mega-h" href="/c/chemistry/"><i class="mega-dot" aria-hidden="true"></i>化学<span class="cnt">10</span></a><a class="mega-l" href="/c/chemistry/ccho/">全国中学生化学奥林匹克竞赛<span class="cnt">10</span></a></div><div class="mega-col" style="--accent:#1f7a8c"><a class="mega-h" href="/c/earth/"><i class="mega-dot" aria-hidden="true"></i>地球科学<span class="cnt">22</span></a><a class="mega-l" href="/c/earth/national/">全国竞赛<span class="cnt">17</span></a><a class="mega-l" href="/c/earth/international/">国际竞赛<span class="cnt">5</span></a></div><div class="mega-col" style="--accent:#2c8a6e"><a class="mega-h" href="/c/geography/"><i class="mega-dot" aria-hidden="true"></i>地理<span class="cnt">11</span></a><a class="mega-l" href="/c/geography/geokids/">地球小博士<span class="cnt">11</span></a></div><div class="mega-col" style="--accent:#4a5fd0"><a class="mega-h" href="/c/info/"><i class="mega-dot" aria-hidden="true"></i>信息学<span class="cnt">9</span></a><a class="mega-l" href="/c/info/noi/">全国青少年信息学奥林匹克竞赛<span class="cnt">3</span></a><a class="mega-l" href="/c/info/noip/">全国青少年信息学奥林匹克联赛<span class="cnt">1</span></a><a class="mega-l" href="/c/info/csp/">CSP-J/S 非专业级软件能力认证<span class="cnt">1</span></a><a class="mega-l" href="/c/info/apio/">亚洲和太平洋地区信息学奥林匹克<span class="cnt">1</span></a><a class="mega-l" href="/c/info/winter/">NOI 冬令营<span class="cnt">1</span></a><a class="mega-l" href="/c/info/camp/">IOI 中国国家集训队集训<span class="cnt">2</span></a></div><a class="mega-all" href="/all/">全部文档（474 套）<i class="arr" aria-hidden="true">›</i></a></div></div><a class="nav-a" href="/whitelist/">白名单竞赛</a><a class="nav-a" href="/about/">使用说明</a><a class="nav-a nav-s" href="/search/" title="站内搜索（按 / 或 Ctrl+K）"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.9 12.1l4.3 4.3-1.4 1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z" fill="currentColor"/></svg>搜索</a></nav>
+    <div class="head-tools">
+      <button class="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式">
+        <svg class="ic-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12.7 3a8.5 8.5 0 108.3 10.6A7 7 0 0112.7 3z" fill="currentColor"/></svg>
+        <svg class="ic-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12 17a5 5 0 110-10 5 5 0 010 10zm0-13a1 1 0 011 1v1a1 1 0 01-2 0V5a1 1 0 011-1zm0 14a1 1 0 011 1v1a1 1 0 01-2 0v-1a1 1 0 011-1zM4 11h1a1 1 0 010 2H4a1 1 0 010-2zm15 0h1a1 1 0 010 2h-1a1 1 0 010-2zM6.3 5.5l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm11 11l.7.7a1 1 0 01-1.4 1.4l-.7-.7a1 1 0 011.4-1.4zm.7-11a1 1 0 010 1.4l-.7.7A1 1 0 0115.9 6.2l.7-.7a1 1 0 011.4 0zm-11 11a1 1 0 010 1.4l-.7.7a1 1 0 01-1.4-1.4l.7-.7a1 1 0 011.4 0z" fill="currentColor"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-label="打开分类菜单" aria-expanded="false">分类 ▾</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main" tabindex="-1">
+
+<article class="doc">
+  <nav class="crumb">
+    <a href="/">首页</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/">数学</a>
+    
+    <span class="sep">/</span>
+    <a href="/c/math/amc8p/">AMC8(P版)</a>
+    
+    <span class="sep">/</span><span>2012 年 AMC 8 真题（P版）</span>
+  </nav>
+
+  <h1>2012 年 AMC 8 真题（P版）</h1>
+
+  <div class="meta">
+    <span class="tag">数学</span>
+    <span>2012 年</span>
+    <span>25 题</span>
+    <span>126 KB</span>
+    <span class="ok">含答案解析</span>
+  </div>
+
+  <div class="toolbar">
+    
+    <a class="btn quiz-btn" href="/quiz/amc8p-2012/">开始答题 →</a>
+    
+    
+    <a class="btn ghost" href="#answer">跳到答案解析 ↓</a>
+    
+    <button class="btn ghost" type="button" onclick="document.querySelectorAll('details').forEach(function(x){x.open=true});setTimeout(function(){window.print()},60)">打印（含答案）</button>
+    <a class="btn" href="https://t.fengg.net/docs-dl/public/download/%E6%95%B0%E5%AD%A6/AMC8(P%E7%89%88)/2012%20AMC%208%20%E7%9C%9F%E9%A2%98%E4%B8%8E%E8%A7%A3%E7%AD%94.docx" download="2012 AMC 8 真题与解答.docx" title="2012 AMC 8 真题与解答.docx">下载 Word 文件</a>
+  </div>
+
+  <section class="paper">
+    <p class="paper-tip">中英双语：每题先中文，后附英文原题；解答在同页下方「查看答案解析与下载」里。</p>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">1</span></p>
+<p>Rachelle 用 \(3\) 磅肉为家人做 \(8\) 个汉堡。她要为社区野餐做 \(24\) 个汉堡，需要多少磅肉？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(6\)</span>
+<span class="amc-opt"><b>B</b>\(6\dfrac23\)</span>
+<span class="amc-opt"><b>C</b>\(7\dfrac12\)</span>
+<span class="amc-opt"><b>D</b>\(8\)</span>
+<span class="amc-opt"><b>E</b>\(9\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Rachelle uses \(3\) pounds of meat to make \(8\) hamburgers for her family. How many pounds of meat does she need to make \(24\) hamburgers for a neighborhood picnic?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 6 \)</span><span class="amc-opt"><b>(B)</b> \( 6\dfrac23 \)</span><span class="amc-opt"><b>(C)</b> \( 7\dfrac12 \)</span><span class="amc-opt"><b>(D)</b> \( 8 \)</span><span class="amc-opt"><b>(E)</b> \( 9 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">2</span></p>
+<p>在 East Westmore 县，统计学家估计每 \(8\) 小时出生一个婴儿，每天死亡一人。四舍五入到最接近的百位，East Westmore 每年人口增加多少人？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(600\)</span>
+<span class="amc-opt"><b>B</b>\(700\)</span>
+<span class="amc-opt"><b>C</b>\(800\)</span>
+<span class="amc-opt"><b>D</b>\(900\)</span>
+<span class="amc-opt"><b>E</b>\(1000\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In the county of East Westmore, statisticians estimate there is a baby born every \( 8 \) hours and a death every day. To the nearest hundred, how many people are added to the population of East Westmore each year?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 600 \)</span><span class="amc-opt"><b>(B)</b> \( 700 \)</span><span class="amc-opt"><b>(C)</b> \( 800 \)</span><span class="amc-opt"><b>(D)</b> \( 900 \)</span><span class="amc-opt"><b>(E)</b> \( 1000 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">3</span></p>
+<p>二月 \(13\) 日，<i>The Oshkosh Northwester</i> 刊登的白昼时长为 \(10\) 小时 \(24\) 分钟，日出时间为 \(6:57\text{ AM}\) 并把日落时间标为 \(8:15\text{PM}\)，而白昼时长和日出时间是正确的，但日落时间是错误的。太阳实际什么时候落下？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(5\):\(10\text{ PM}\)</span>
+<span class="amc-opt"><b>B</b>\(5\):\(21\text{ PM}\)</span>
+<span class="amc-opt"><b>C</b>\(5\):\(41\text{ PM}\)</span>
+<span class="amc-opt"><b>D</b>\(5\):\(57\text{ PM}\)</span>
+<span class="amc-opt"><b>E</b>\(6\):\(03\text{ PM}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">On February \(13\) <i>The Oshkosh Northwester</i> listed the length of daylight as \(10\) hours and \(24\) minutes, the sunrise as \(6:57\text{ AM},\) and the sunset as \( 8:15\text{PM} .\) The length of daylight and sunrise were correct, but the sunset was wrong. When did the sun really set?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 5\):\(10\text{ PM}\)</span><span class="amc-opt"><b>(B)</b> \(5\):\(21\text{ PM}\)</span><span class="amc-opt"><b>(C)</b> \( 5\):\(41\text{ PM}\)</span><span class="amc-opt"><b>(D)</b> \( 5\):\(57\text{ PM}\)</span><span class="amc-opt"><b>(E)</b> \( 6\):\(03\text{ PM} \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">4</span></p>
+<p>Peter 一家晚餐订了一个切成 \(12\) 片的披萨。Peter 吃了一片，又和弟弟 Paul 平分了另一片。Peter 吃了这个披萨的几分之几？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{1}{24}\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{1}{12}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{1}{8}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{1}{6}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{1}{4}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Peter’s family ordered a \(12\)-slice pizza for dinner. Peter ate one slice and shared another slice equally with his brother Paul. What fraction of the pizza did Peter eat?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( \dfrac{1}{24} \)</span><span class="amc-opt"><b>(B)</b> \( \dfrac{1}{12} \)</span><span class="amc-opt"><b>(C)</b> \( \dfrac{1}{8} \)</span><span class="amc-opt"><b>(D)</b> \( \dfrac{1}{6} \)</span><span class="amc-opt"><b>(E)</b> \( \dfrac{1}{4} \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">5</span></p>
+<p>图中所有角都是直角，边长以厘米为单位给出。注意图形不是按比例绘制的。\(X\) 是多少厘米？</p>
+<p><img class="amc-fig" src="/img/papers/amc8p/2012/problem/q05-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1\)</span>
+<span class="amc-opt"><b>B</b>\(2\)</span>
+<span class="amc-opt"><b>C</b>\(3\)</span>
+<span class="amc-opt"><b>D</b>\(4\)</span>
+<span class="amc-opt"><b>E</b>\(5\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In the diagram, all angles are right angles and the lengths of the sides are given in centimeters. Note the diagram is not drawn to scale. What is \(X\), in centimeters?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc8p/2012/problem/q05-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 1 \)</span><span class="amc-opt"><b>(B)</b> \( 2 \)</span><span class="amc-opt"><b>(C)</b> \( 3 \)</span><span class="amc-opt"><b>(D)</b> \( 4 \)</span><span class="amc-opt"><b>(E)</b> \( 5 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">6</span></p>
+<p>一张长方形照片放入相框后，照片四周形成宽二英寸的边框。照片高 \(8\) 英寸、宽 \(10\) 英寸。边框的面积是多少平方英寸？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(36\)</span>
+<span class="amc-opt"><b>B</b>\(40\)</span>
+<span class="amc-opt"><b>C</b>\(64\)</span>
+<span class="amc-opt"><b>D</b>\(72\)</span>
+<span class="amc-opt"><b>E</b>\(88\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A rectangular photograph is placed in a frame that forms a border two inches wide on all sides of the photograph. The photograph measures \(8\) inches high and \(10\) inches wide. What is the area of the border, in square inches?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 36 \)</span><span class="amc-opt"><b>(B)</b> \( 40 \)</span><span class="amc-opt"><b>(C)</b> \( 64 \)</span><span class="amc-opt"><b>(D)</b> \( 72 \)</span><span class="amc-opt"><b>(E)</b> \( 88 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">7</span></p>
+<p>Isabella 的数学课要进行四次满分为 \(100\) 分的测试。她的目标是四次测试的平均分至少达到 \(95\)。她前两次测试成绩是 \(97\) 和 \(91\)。看到第三次测试成绩后，她意识到自己仍然可以达到目标。她第三次测试最低可能得多少分？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(90\)</span>
+<span class="amc-opt"><b>B</b>\(92\)</span>
+<span class="amc-opt"><b>C</b>\(95\)</span>
+<span class="amc-opt"><b>D</b>\(96\)</span>
+<span class="amc-opt"><b>E</b>\(97\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Isabella must take four \(100\)-point tests in her math class. Her goal is to achieve an average grade of at least \(95\) on the tests. Her first two test scores were \(97\) and \(91.\) After seeing her score on the third test, she realized that she could still reach her goal. What is the lowest possible score she could have made on the third test?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 90 \)</span><span class="amc-opt"><b>(B)</b> \( 92 \)</span><span class="amc-opt"><b>(C)</b> \( 95 \)</span><span class="amc-opt"><b>(D)</b> \( 96 \)</span><span class="amc-opt"><b>(E)</b> \( 97 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">8</span></p>
+<p>一家商店广告称“今天促销所有商品半价”。此外，一张优惠券可在促销价基础上再享受 \(20\%\) 的折扣。使用优惠券后，今天的价格相对于原价的折扣率是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(10\)</span>
+<span class="amc-opt"><b>B</b>\(33\)</span>
+<span class="amc-opt"><b>C</b>\(40\)</span>
+<span class="amc-opt"><b>D</b>\(60\)</span>
+<span class="amc-opt"><b>E</b>\(70\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A shop advertises that everything is “half price in today’s sale.” In addition, a coupon gives a \(20\%\) discount on sale prices. Using the coupon, the price today represents what percentage discount off the original price?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 10 \)</span><span class="amc-opt"><b>(B)</b> \( 33 \)</span><span class="amc-opt"><b>(C)</b> \( 40 \)</span><span class="amc-opt"><b>(D)</b> \( 60 \)</span><span class="amc-opt"><b>(E)</b> \( 70 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">9</span></p>
+<p>Fort Worth Zoo 有一些两条腿的鸟和一些四条腿的哺乳动物。Margie 某次参观动物园时数到 \(200\) 个头和 \(522\) 条腿。Margie 数到的动物中有多少是两条腿的鸟？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(61\)</span>
+<span class="amc-opt"><b>B</b>\(122\)</span>
+<span class="amc-opt"><b>C</b>\(139\)</span>
+<span class="amc-opt"><b>D</b>\(150\)</span>
+<span class="amc-opt"><b>E</b>\(161\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The Fort Worth Zoo has a number of two-legged birds and a number of four-legged mammals. On one visit to the zoo, Margie counted \(200\) heads and \(522\) legs. How many of the animals that Margie counted were two-legged birds?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 61 \)</span><span class="amc-opt"><b>(B)</b> \( 122 \)</span><span class="amc-opt"><b>(C)</b> \( 139 \)</span><span class="amc-opt"><b>(D)</b> \( 150 \)</span><span class="amc-opt"><b>(E)</b> \( 161 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">10</span></p>
+<p>使用 \(2012\) 的四个数字，可以组成多少个大于 \(1000\) 的 \(4\) 位数？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(6\)</span>
+<span class="amc-opt"><b>B</b>\(7\)</span>
+<span class="amc-opt"><b>C</b>\(8\)</span>
+<span class="amc-opt"><b>D</b>\(9\)</span>
+<span class="amc-opt"><b>E</b>\(12\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">How many \(4\)-digit numbers greater than \(1000\) are there that use the four digits of \(2012?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 6 \)</span><span class="amc-opt"><b>(B)</b> \( 7 \)</span><span class="amc-opt"><b>(C)</b> \( 8 \)</span><span class="amc-opt"><b>(D)</b> \( 9 \)</span><span class="amc-opt"><b>(E)</b> \( 12 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">11</span></p>
+<p>正整数 \(3\)、\(4\)、\(5\)、\(6\)、\(6\)、\(7\) 和 \(x\) 的平均数、中位数和唯一众数都相等。\(x\) 的值是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(5\)</span>
+<span class="amc-opt"><b>B</b>\(6\)</span>
+<span class="amc-opt"><b>C</b>\(7\)</span>
+<span class="amc-opt"><b>D</b>\(11\)</span>
+<span class="amc-opt"><b>E</b>\(12\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The mean, median, and unique mode of the positive integers \(3,\) \(4,\) \(5,\) \(6,\) \(6,\) \(7,\) and \(x\) are all equal. What is the value of \(x?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 5 \)</span><span class="amc-opt"><b>(B)</b> \( 6 \)</span><span class="amc-opt"><b>(C)</b> \( 7 \)</span><span class="amc-opt"><b>(D)</b> \( 11 \)</span><span class="amc-opt"><b>(E)</b> \( 12 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">12</span></p>
+<p>\(13^{2012}\) 的个位数字是什么？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(1\)</span>
+<span class="amc-opt"><b>B</b>\(3\)</span>
+<span class="amc-opt"><b>C</b>\(5\)</span>
+<span class="amc-opt"><b>D</b>\(7\)</span>
+<span class="amc-opt"><b>E</b>\(9\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">What is the units digit of \(13^{2012}?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 1 \)</span><span class="amc-opt"><b>(B)</b> \( 3 \)</span><span class="amc-opt"><b>(C)</b> \( 5 \)</span><span class="amc-opt"><b>(D)</b> \( 7 \)</span><span class="amc-opt"><b>(E)</b> \( 9 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">13</span></p>
+<p>Jamar 在学校书店买了一些铅笔，每支铅笔价格超过一美分，共支付 \(\$1.43\)。Sharona 买了同样的铅笔，共支付 \(\$1.87\)。Sharona 比 Jamar 多买了多少支铅笔？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(2\)</span>
+<span class="amc-opt"><b>B</b>\(3\)</span>
+<span class="amc-opt"><b>C</b>\(4\)</span>
+<span class="amc-opt"><b>D</b>\(5\)</span>
+<span class="amc-opt"><b>E</b>\(6\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Jamar bought some pencils costing more than a penny each at the school bookstore and paid \(\$1.43.\) Sharona bought some of the same pencils and paid \(\$1.87.\) How many more pencils did Sharona buy than Jamar?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 2 \)</span><span class="amc-opt"><b>(B)</b> \( 3 \)</span><span class="amc-opt"><b>(C)</b> \( 4 \)</span><span class="amc-opt"><b>(D)</b> \( 5 \)</span><span class="amc-opt"><b>(E)</b> \( 6 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">14</span></p>
+<p>在中学橄榄球联盟 BIG N 中，每支球队与其他每支球队恰好比赛一次。如果 \(2012\) 赛季共进行了 \(21\) 场联盟比赛，那么 BIG N 联盟有多少支球队？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(6\)</span>
+<span class="amc-opt"><b>B</b>\(7\)</span>
+<span class="amc-opt"><b>C</b>\(8\)</span>
+<span class="amc-opt"><b>D</b>\(9\)</span>
+<span class="amc-opt"><b>E</b>\(10\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In the BIG N, a middle school football conference, each team plays every other team exactly once. If a total of \(21\) conference games were played during the \(2012\) season, how many teams were members of the BIG N conference?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 6 \)</span><span class="amc-opt"><b>(B)</b> \( 7 \)</span><span class="amc-opt"><b>(C)</b> \( 8 \)</span><span class="amc-opt"><b>(D)</b> \( 9 \)</span><span class="amc-opt"><b>(E)</b> \( 10 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">15</span></p>
+<p>大于 \(2\) 且除以 \(3\)、\(4\)、\(5\) 或 \(6\) 时余数都为 \(2\) 的最小数，位于哪两个数之间？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(40\) 和 \(50\)</span>
+<span class="amc-opt"><b>B</b>\(51\) 和 \(55\)</span>
+<span class="amc-opt"><b>C</b>\(56\) 和 \(60\)</span>
+<span class="amc-opt"><b>D</b>\(61\) 和 \(65\)</span>
+<span class="amc-opt"><b>E</b>\(66\) 和 \(99\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The smallest number greater than \(2\) that leaves a remainder of \(2\) when divided by \(3,\) \(4,\) \(5,\) or \(6\) lies between what numbers?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \(40\) and \(50\)</span><span class="amc-opt"><b>(B)</b> \(51\) and \(55\)</span><span class="amc-opt"><b>(C)</b> \(56\) and \(60\)</span><span class="amc-opt"><b>(D)</b> \(61\) and \(65\)</span><span class="amc-opt"><b>(E)</b> \(66\) and \(99\)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">16</span></p>
+<p>数字 \(0\)、\(1\)、\(2\)、\(3\)、\(4\)、\(5\)、\(6\)、\(7\)、\(8\) 和 \(9\) 各使用一次，组成两个五位数，使它们的和尽可能大。下列哪一个可能是其中一个数？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(76531\)</span>
+<span class="amc-opt"><b>B</b>\(86724\)</span>
+<span class="amc-opt"><b>C</b>\(87431\)</span>
+<span class="amc-opt"><b>D</b>\(96240\)</span>
+<span class="amc-opt"><b>E</b>\(97403\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Each of the digits \(0,\) \(1,\) \(2,\) \(3,\) \(4,\) \(5,\) \(6,\) \(7,\) \(8,\) and \(9\) is used only once to make two five-digit numbers so that they have the largest possible sum. Which of the following could be one of the numbers?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 76531 \)</span><span class="amc-opt"><b>(B)</b> \( 86724 \)</span><span class="amc-opt"><b>(C)</b> \( 87431 \)</span><span class="amc-opt"><b>(D)</b> \( 96240 \)</span><span class="amc-opt"><b>(E)</b> \( 97403 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">17</span></p>
+<p>一个边长为整数的正方形被切成 \(10\) 个正方形，所有小正方形边长都是整数，并且至少 \(8\) 个小正方形的面积为 \(1\)。原正方形边长的最小可能值是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(3\)</span>
+<span class="amc-opt"><b>B</b>\(4\)</span>
+<span class="amc-opt"><b>C</b>\(5\)</span>
+<span class="amc-opt"><b>D</b>\(6\)</span>
+<span class="amc-opt"><b>E</b>\(7\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A square with an integer side length is cut into \(10\) squares, all of which have integer side length and at least \(8\) of which have area \(1.\) What is the smallest possible value of the length of the side of the original square?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 3 \)</span><span class="amc-opt"><b>(B)</b> \( 4 \)</span><span class="amc-opt"><b>(C)</b> \( 5 \)</span><span class="amc-opt"><b>(D)</b> \( 6 \)</span><span class="amc-opt"><b>(E)</b> \( 7 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">18</span></p>
+<p>最小的正整数是多少，要求它既不是质数也不是平方数，并且没有小于 \(50\) 的质因数？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(3127\)</span>
+<span class="amc-opt"><b>B</b>\(3133\)</span>
+<span class="amc-opt"><b>C</b>\(3137\)</span>
+<span class="amc-opt"><b>D</b>\(3139\)</span>
+<span class="amc-opt"><b>E</b>\(3149\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">What is the smallest positive integer that is neither prime nor square and that has no prime factor less than \(50?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 3127 \)</span><span class="amc-opt"><b>(B)</b> \( 3133 \)</span><span class="amc-opt"><b>(C)</b> \( 3137 \)</span><span class="amc-opt"><b>(D)</b> \( 3139 \)</span><span class="amc-opt"><b>(E)</b> \( 3149 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">19</span></p>
+<p>一个罐子里有红色、绿色和蓝色弹珠。除了 \(6\) 个以外全是红弹珠，除了 \(8\) 个以外全是绿弹珠，除了 \(4\) 个以外全是蓝弹珠。罐子里有多少个弹珠？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(6\)</span>
+<span class="amc-opt"><b>B</b>\(8\)</span>
+<span class="amc-opt"><b>C</b>\(9\)</span>
+<span class="amc-opt"><b>D</b>\(10\)</span>
+<span class="amc-opt"><b>E</b>\(18\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In a jar of red, green, and blue marbles, all but \(6\) are red marbles, all but \(8\) are green, and all but \(4\) are blue. How many marbles are in the jar?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 6 \)</span><span class="amc-opt"><b>(B)</b> \( 8 \)</span><span class="amc-opt"><b>(C)</b> \( 9 \)</span><span class="amc-opt"><b>(D)</b> \( 10 \)</span><span class="amc-opt"><b>(E)</b> \( 18 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">20</span></p>
+<p>三个数 \(\frac{5}{19} \)、\(\frac{7}{21} \) 和 \(\frac{9}{23} \) 按从小到大排列的正确顺序是什么？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{9}{23} \lt \dfrac{7}{21} \lt \dfrac{5}{19}\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{5}{19} \lt \dfrac{7}{21} \lt
+\dfrac{9}{23}\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{9}{23} \lt \dfrac{5}{19} \lt \dfrac{7}{21}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{5}{19} \lt \dfrac{9}{23} \lt \dfrac{7}{21}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{7}{21} \lt \dfrac{5}{19} \lt \dfrac{9}{23}\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">What is the correct ordering of the three numbers \( \frac{5}{19} ,\) \( \frac{7}{21} ,\) and \( \frac{9}{23} ,\) in increasing order?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( \dfrac{9}{23} \lt \dfrac{7}{21} \lt \dfrac{5}{19}\)</span><span class="amc-opt"><b>(B)</b> \( \dfrac{5}{19} \lt \dfrac{7}{21} \lt
+\dfrac{9}{23}\)</span><span class="amc-opt"><b>(C)</b> \(\dfrac{9}{23} \lt \dfrac{5}{19} \lt \dfrac{7}{21} \)</span><span class="amc-opt"><b>(D)</b> \( \dfrac{5}{19} \lt \dfrac{9}{23} \lt \dfrac{7}{21}\)</span><span class="amc-opt"><b>(E)</b> \(\dfrac{7}{21} \lt \dfrac{5}{19} \lt \dfrac{9}{23} \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">21</span></p>
+<p>Marla 有一个边长 \(10\) 英尺的大白色立方体。她还有足够覆盖 \(300\) 平方英尺的绿色油漆。Marla 用完所有油漆，在每个面上画出一个居中的白色正方形，周围是绿色边框。每个白色正方形的面积是多少平方英尺？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(5\sqrt2\)</span>
+<span class="amc-opt"><b>B</b>\(10\)</span>
+<span class="amc-opt"><b>C</b>\(10\sqrt2\)</span>
+<span class="amc-opt"><b>D</b>\(50\)</span>
+<span class="amc-opt"><b>E</b>\(50\sqrt2\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Marla has a large white cube that has an edge of \(10\) feet. She also has enough green paint to cover \(300\) square feet. Marla uses all the paint to create a white square centered on each face, surrounded by a green border. What is the area of one of the white squares, in square feet?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 5\sqrt2 \)</span><span class="amc-opt"><b>(B)</b> \( 10 \)</span><span class="amc-opt"><b>(C)</b> \( 10\sqrt2 \)</span><span class="amc-opt"><b>(D)</b> \( 50 \)</span><span class="amc-opt"><b>(E)</b> \( 50\sqrt2 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">22</span></p>
+<p>设 \(R\) 是一个由九个互不相同整数构成的集合。其中六个元素是 \(2\)、\(3\)、\(4\)、\(6\)、\(9\) 和 \(14\)。\(R\) 的中位数可能有多少个不同的值？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(4\)</span>
+<span class="amc-opt"><b>B</b>\(5\)</span>
+<span class="amc-opt"><b>C</b>\(6\)</span>
+<span class="amc-opt"><b>D</b>\(7\)</span>
+<span class="amc-opt"><b>E</b>\(8\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(R\) be a set of nine distinct integers. Six of the elements of the set are \(2,\) \(3,\) \(4,\) \(6,\) \(9,\) and \(14.\) What is the number of possible values of the median of \(R?\)</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 4 \)</span><span class="amc-opt"><b>(B)</b> \( 5 \)</span><span class="amc-opt"><b>(C)</b> \( 6 \)</span><span class="amc-opt"><b>(D)</b> \( 7 \)</span><span class="amc-opt"><b>(E)</b> \( 8 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">23</span></p>
+<p>一个等边三角形和一个正六边形周长相等。如果三角形面积为 \(4\)，那么六边形面积是多少？</p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(4\)</span>
+<span class="amc-opt"><b>B</b>\(5\)</span>
+<span class="amc-opt"><b>C</b>\(6\)</span>
+<span class="amc-opt"><b>D</b>\(4\sqrt3\)</span>
+<span class="amc-opt"><b>E</b>\(6\sqrt3\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">An equilateral triangle and a regular hexagon have equal perimeters. If the triangle’s area is \(4\), what is the area of the hexagon?</p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( 4 \)</span><span class="amc-opt"><b>(B)</b> \( 5 \)</span><span class="amc-opt"><b>(C)</b> \( 6 \)</span><span class="amc-opt"><b>(D)</b> \( 4\sqrt3 \)</span><span class="amc-opt"><b>(E)</b> \( 6\sqrt3 \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">24</span></p>
+<p>一个半径为 \(2\) 的圆被分成四段全等圆弧。将这四段圆弧连接成图中的星形。星形面积与原圆面积之比是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc8p/2012/problem/q24-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{4-\pi}{\pi}\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{1}\pi\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{\sqrt2}{\pi}\)</span>
+<span class="amc-opt"><b>D</b>\(\dfrac{\pi-1}{\pi}\)</span>
+<span class="amc-opt"><b>E</b>\(\dfrac{3}\pi\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A circle of radius \(2\) is cut into four congruent arcs. The four arcs are joined to form the star figure shown. What is the ratio of the area of the star figure to the area of the original circle?</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc8p/2012/problem/q24-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( \dfrac{4-\pi}{\pi} \)</span><span class="amc-opt"><b>(B)</b> \( \dfrac{1}\pi \)</span><span class="amc-opt"><b>(C)</b> \( \dfrac{\sqrt2}{\pi} \)</span><span class="amc-opt"><b>(D)</b> \( \dfrac{\pi-1}{\pi} \)</span><span class="amc-opt"><b>(E)</b> \( \dfrac{3}\pi \)</span></p>
+</div>
+<div class="amc-q">
+<p class="amc-no"><span class="amc-badge">25</span></p>
+<p>一个面积为 \(4\) 的正方形内接于一个面积为 \(5\) 的正方形，较小正方形的每个顶点分别在较大正方形的一条边上。较小正方形的一个顶点将较大正方形的一条边分成两段，长度分别为 \(a\) 和 \(b\)。\(ab \) 的值是多少？</p>
+<p><img class="amc-fig" src="/img/papers/amc8p/2012/problem/q25-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts">
+<span class="amc-opt"><b>A</b>\(\dfrac{1}5\)</span>
+<span class="amc-opt"><b>B</b>\(\dfrac{2}5\)</span>
+<span class="amc-opt"><b>C</b>\(\dfrac{1}{2}\)</span>
+<span class="amc-opt"><b>D</b>\(1\)</span>
+<span class="amc-opt"><b>E</b>\(4\)</span>
+</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">A square with area \(4\) is inscribed in a square with area \(5\), with one vertex of the smaller square on each side of the larger square. A vertex of the smaller square divides a side of the larger square into two segments, one of length \(a\) and the other of length \(b\). What is the value of \( ab ?\)</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc8p/2012/problem/q25-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-opts amc-en"><span class="amc-opt"><b>(A)</b> \( \dfrac{1}5 \)</span><span class="amc-opt"><b>(B)</b> \( \dfrac{2}5 \)</span><span class="amc-opt"><b>(C)</b> \( \dfrac{1}{2} \)</span><span class="amc-opt"><b>(D)</b> \( 1 \)</span><span class="amc-opt"><b>(E)</b> \( 4 \)</span></p>
+</div>
+  </section>
+
+  
+  <details class="answer" id="answer">
+    <summary>
+      <span class="s-title">查看答案解析与下载</span>
+    </summary>
+    <div class="answer-body">
+      <h3>答案速查</h3>
+<table class="tbl"><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>答案</td><td>E</td><td>B</td><td>B</td><td>C</td><td>E</td><td>E</td><td>B</td><td>D</td><td>C</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr><tr><td>答案</td><td>D</td><td>D</td><td>A</td><td>C</td><td>B</td><td>D</td><td>C</td><td>B</td><td>A</td></tr></table>
+<table class="tbl"><tr><td>题号</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr><tr><td>答案</td><td>C</td><td>B</td><td>D</td><td>D</td><td>C</td><td>A</td><td>C</td></tr></table>
+<p class="muted">答案串：EBBCEEBDCDDACBDCBACBDDCAC</p>
+<h3>逐题解析</h3>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">1</span> 答案 <b>E</b></p>
+<p>\(8\) 个汉堡是 \(24\) 个汉堡的 \(\dfrac{1}{3}\)，所以 \(3\) 磅也是所需肉量的 \(\dfrac{1}{3}\)。因此总肉量为 \(\dfrac{1}{\dfrac{1}{3}} \cdot 3 = 3\cdot3 = 9\)。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If we have \(8\) hamburgers, we have \(\dfrac{1}{3}\) of the \(24\) hamburgers. This means we have \(\dfrac{1}{3} \) of the meat when we have \(3\) pounds. The total amount of meat is therefore \(\dfrac{1}{\dfrac{1}{3}} \cdot 3 = 3\cdot3 = 9.\)</p>
+<p class="amc-en">Thus, the answer is <b>E</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">2</span> 答案 <b>B</b></p>
+<p>每 \(8\) 小时出生 \(1\) 个婴儿，所以每 \(24\) 小时出生 \(3\) 个婴儿。因此每天有 \(3\) 人出生、\(1\) 人死亡，平均每天人口净增加 \(2\) 人。一年有 \(365\) 天，每天净增加 \(2\) 人，所以一年净增加约 \(2\cdot 365 = 730 \) 人，约为 \(700\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since we have \(1\) birth every \(8\) hours, we have \(3\) births every \(24\) hours. Therefore, we have \(3\) births a day and \(1\) death a day. The net change in population every day should be on average \(2.\) Since we have \(365\) days in a year and \(2\) added to the population every day, the net change in population should be around \(2\cdot 365 = 730 .\) This is approximately \(700.\)</p>
+<p class="amc-en">Thus, the answer is <b>B</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">3</span> 答案 <b>B</b></p>
+<p>从 \(6:57 \text{AM}\) 起 \(10\) 小时后是 \(4:57 \text{PM} \)。也就是说，日出后 \(10\) 小时 \(3\) 分钟是 \(5:00 \text{PM} \)。距日落还有 \(21\) 分钟，所以实际日落时间是 \(5:21 \text{PM} \)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since \(10\) hours after \(6:57 \text{AM} \) is \(4:57 \text{PM} ,\) we can then say \(10\) hours and \(3\) minutes after sunrise is \(5:00 \text{PM} .\) We then have \(21\) more minutes until sunset, so sunset is \(5:21 \text{PM} .\)</p>
+<p class="amc-en">Thus, the answer is <b>B</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">4</span> 答案 <b>C</b></p>
+<p>Peter 吃了 \(1\) 整片，又吃了他分得的那片的 \(\dfrac 12\)。</p>
+<p>因此他吃了整个披萨的 \(\dfrac{\frac{3}{2}}{12}\)，也就是 \(\dfrac 18\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Peter ate \(1\) full slice, and he ate \(\dfrac 12 \) of the slice that he split.</p>
+<p class="amc-en">Therefore, he ate \( \dfrac{\frac{3}{2}}{12} \) of the pizza, which is equivalent to \(\dfrac 18.\)</p>
+<p class="amc-en">Thus, the answer is <b>C</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">5</span> 答案 <b>E</b></p>
+<p>先从右侧高度相加求图形总高度，得 \(1+2+1+6 = 10\)。</p>
+<p>再从左侧高度相加，得 \(1+1+1+2+X = 5+X\)。</p>
+<p>两个高度相同，所以 \(10=5+X \)，因此 \(X = 5\)。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">First, we can find the height of the object by getting the sum of the heights on the right. Therefore, the height is \(1+2+1+6 = 10.\)</p>
+<p class="amc-en">Next, we can find the height of the object by getting the sum of the heights on the left. Therefore, the height is \(1+1+1+2+X = 5+X.\)</p>
+<p class="amc-en">Since the heights are the same, we know \(10=5+X ,\) so \(X = 5.\)</p>
+<p class="amc-en">Thus, the answer is <b>E</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">6</span> 答案 <b>E</b></p>
+<p>每一边都增加 \(2\) 英寸，所以高度和宽度各总共增加 \(4\) 英寸。外部长方形尺寸为 \(12 \times 14\)，面积为 \(12\cdot 14 = 168\)。</p>
+<p>照片本身面积为 \(8 \cdot 10 =80\)。</p>
+<p>因此边框面积为 \(168-80=88\)。</p>
+<p>所以正确答案是 <b>E</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If we add \(2\) inches on each side, we add \(4\) inches total on both sides. This means that the dimensions of the outer part of the frame are \(12 \times 14.\) The area of this is \(12\cdot 14 = 168.\)</p>
+<p class="amc-en">However, we must take out the area of the inner part of the frame which has area \(8 \cdot 10 =80.\)</p>
+<p class="amc-en">Therefore, the total area is \(168-80=88.\)</p>
+<p class="amc-en">Thus, the answer is <b>E</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">7</span> 答案 <b>B</b></p>
+<p>若平均分为 \(95\)，四次测试总分为 \(95\cdot 4 = 380 \)。由于已知前两次成绩，后两次测试总分是 \(380\) 减去前两次成绩。</p>
+<p>后两次测试总分必须为 \(380-91-97 = 192\)。因此后两次成绩之和为 \(192\)。</p>
+<p>要使第三次成绩最低，就让第四次成绩最高，为 \(100\)。于是第三次成绩为 \(192 -100 = 92\)。</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">If the average is \(95,\) then the sum of the tests is \(95\cdot 4 = 380 .\) Since we have the first two tests, the sum of the last two tests is \(380\) minus the first two scores.</p>
+<p class="amc-en">This makes the sum of the last two scores equal to \(380-91-97 = 192.\) Her last two scores therefore have a sum of \(192.\)</p>
+<p class="amc-en">Given the sum of the tests we try to minimize one score, then we must maximize the other test. Therefore, we maximize the fourth test by making it \(100.\) This would make the third test equal to \(192 -100 = 92.\)</p>
+<p class="amc-en">Thus, the answer is <b>B</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">8</span> 答案 <b>D</b></p>
+<p>设原价为 \(p\)。半价后价格为 \(0.5p\)。</p>
+<p>再打 \(20\%\) 折扣表示支付价格的 \(80\%\)，所以最终价格为 \(0.5p\cdot 0.8 =0.4p\)。</p>
+<p>因此减少了 \(0.6p\)，折扣率为 \(\dfrac{0.6p}{p} = 0.6\)，即 \(60\%\)。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(p\) be the original price. If everything is half off, we have the new price as \(0.5p.\)</p>
+<p class="amc-en">Having a \(20\%\) discount makes it such that we keep \(80\%\) of the price, so the price is \(0.5p\cdot 0.8 =0.4p.\)</p>
+<p class="amc-en">This would have \(0.6p\) off, so we get a discount of \(\dfrac{0.6p}{p} = 0.6,\) which is \(60\%.\)</p>
+<p class="amc-en">Thus, the answer is <b>D</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">9</span> 答案 <b>C</b></p>
+<p>设 \(f\) 为 \(4\) 条腿动物的数量，\(t\) 为 \(2\) 条腿动物的数量。</p>
+<p>数腿得到 \(2t+4f = 522\)，数头得到 \(t + f = 200\)。将第二式乘以四，得 \(4t+4f = 800\)。减去第一式，得到 \(2t = 278 \implies t = 139\)。因此有 \(139\) 只两条腿的鸟。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(f\) be the number of animals with \(4\) legs and let \(t\) be the number of animals with \(2\) legs.</p>
+<p class="amc-en">Counting the number of legs yields \(2t+4f = 522\) and counting the number of heads yields \(t + f = 200.\) This means \(4t+4f = 800,\) and subtracting the first equation from the second yields \(2t = 278 \implies t = 139.\) This means there are \(139\) two-legged birds.</p>
+<p class="amc-en">Thus, the answer is <b>C</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">10</span> 答案 <b>D</b></p>
+<p>\(0\) 不能放在千位。因此有 \(3\) 个位置可放。放好零后，数字 \(1\) 有 \(3\) 个可用位置，两个 \(2\) 自动占据剩余位置。因此共有 \(3\cdot 3 = 9\) 个数。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">First, we can’t have the \(0\) in the thousands position. Therefore, we have \(3\) spots we can put it. Then, we have \(3\) available positions for the \(1,\) and then the two \(2\)s are placed. This makes it such that we have \(3\cdot 3 = 9\) combinations.</p>
+<p class="amc-en">Thus, the answer is <b>D</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">11</span> 答案 <b>D</b></p>
+<p>已列出的数中，除 \(6\) 外每个数只出现一次，而 \(6\) 出现两次。若 \(x\) 等于其他已列出的数，就会有两个众数，不再有唯一众数。因此唯一众数必须是 \(6\)，平均数也必须是 \(6\)。共有 \(7\) 个数，所以总和为 \(6\cdot 7 = 42\)。另一方面，总和还等于 \[3+4+5+6+6+7+x\] \[= 31+x \] \[= 42\text{，}\]所以 \(x = 11\)。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Every listed value except \(6\) appears once while \(6\) appears twice. If \(x\) equals any of the other listed values, then we have two modes, which means we do not have a unique mode. Otherwise, the only value that shows up more than once is \(6\) making that the unique mode. This also means \(6\) is the mean. Since there are \(7\) elements, the sum of the elements is \(6\cdot 7 = 42.\) The sum is also \[3+4+5+6+6+7+x\] \[= 31+x \]\[= 42,\] so \(x = 11.\)</p>
+<p class="amc-en">Thus, the answer is <b>D</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">12</span> 答案 <b>A</b></p>
+<p>要求个位数字，只需计算 \(13^{2012} \mod 10\)。</p>
+<p>\[\begin{align*}13^{2012} &amp;\equiv 3^{2012} \mod 10\\&amp;\equiv 81^{503} \mod 10\\&amp;\equiv 1^{503} \mod 10\\&amp;\equiv 1 \mod 10\end{align*}\]</p>
+<p>这说明 \(13^{2012}\) 的个位数字与 \(1\) 相同，所以 \(13^{2012}\) 的个位数字是 \(1\)。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">We have to find \(13^{2012} \mod 10.\) The following is true:</p>
+<p class="amc-en">\[\begin{align*}13^{2012} &amp;\equiv 3^{2012} \mod 10\\&amp;\equiv 81^{503} \mod 10\\&amp;\equiv 1^{503} \mod 10\\&amp;\equiv 1 \mod 10\end{align*}\]</p>
+<p class="amc-en">This means \(13^{2012}\) has the same units digit as \(1,\) so the units digit of \(13^{2012} \) is \(1.\)</p>
+<p class="amc-en">Thus, the answer is <b>A</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">13</span> 答案 <b>C</b></p>
+<p>设每支铅笔价格为 \(c\) 美分。则 \(c\) 同时整除 \(143\) 和 \(187\)，且 \(c\gt1\)。</p>
+<p>因为 \(143=11\cdot13\)，且 \(187=11\cdot17\)，最大公因数是 \(11\)。所以每支铅笔 \(11\) 美分。</p>
+<p>Sharona 多付了 \(187-143=44\) 美分，所以她多买了 \(\frac{44}{11}=4\) 支铅笔。所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(c\) be the price of one pencil in cents. Then \(c\) divides both \(143\) and \(187\), and \(c\gt1\).</p>
+<p class="amc-en">Since \(143=11\cdot13\) and \(187=11\cdot17\), the greatest common divisor is \(11\). Thus each pencil costs \(11\) cents.</p>
+<p class="amc-en">Sharona paid \(187-143=44\) cents more, so she bought \(\frac{44}{11}=4\) more pencils. Thus, the answer is <b>C</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">14</span> 答案 <b>B</b></p>
+<p>若有 \(N\) 支球队，每支球队要与 \(N-1\) 支球队比赛。不过，每场比赛涉及 \(2\) 支球队，所以把 \(N\) 与 \(N-1\) 相乘会把每场比赛数两次。因此 \(N(N-1) = 42\)。这给出 \[N^2 -N +0.25 = 42.25\] 从而 \[(N-0.5)^2 = 6.5^2\text{，}\]于是 \[N-0.5 = 6.5\]\[ N = 7\]</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Each of the \(N\) teams plays \(N-1\) games. However, \(2\) teams play each game, so multiplying \(N\) and \(N-1\) would be twice the number of games. Therefore, we know \(N(N-1) = 42.\) This leads to \[N^2 -N +0.25 = 42.25\] which implies \[(N-0.5)^2 = 6.5^2. \] In turn, this suggests: \[N-0.5 = 6.5\]\[ N = 7\]</p>
+<p class="amc-en">Thus, the answer is <b>B</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">15</span> 答案 <b>D</b></p>
+<p>设这个数为 \(x\)。因为它除以 \(3\)、\(4\)、\(5\) 和 \(6\) 时余数都是 \(2\)，所以 \(x-2\) 是 \(3\)、\(4\)、\(5\) 和 \(6\) 的公倍数。这表示 \(x-2\) 是 \(\operatorname{lcm}(3,4,5,6)\) 的倍数，而这个最小公倍数是 \(60\)。因此 \(x-2\) 必须是 \(60\) 的倍数。下一个满足条件的数出现在 \(x-2 = 60 \implies x = 62 \) 时。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let the number be \(x.\) Since it leaves a remainder of \(2\) when divided by \(3\), \(4\), \(5\), and \(6,\) we know \(x-2\) is a multiple of \(3\), \(4\), \(5\), and \(6.\) This means \(x-2 \) is a multiple of \(\operatorname{lcm}(3,4,5,6)\), which is \(60.\) Therefore, \(x-2\) must be a multiple of \(60.\) The next number such that this occurs is when \(x-2 = 60 \implies x = 62 .\)</p>
+<p class="amc-en">Thus, the answer is <b>D</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">16</span> 答案 <b>C</b></p>
+<p>要让两个五位数的和最大，从左到右的各位数字应尽可能大。因此两个数的第一位必须是 \(9\) 或 \(8\)，第二位是 \(7\) 或 \(6\)，第三位是 \(5\) 或 \(4\)，第四位是 \(3\) 或 \(2\)，最后一位是 \(1\) 或 \(0\)。</p>
+<p>给出的数中，唯一满足这种位置要求的是 \(87431\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">To construct two five-digit numbers, the digits in the largest place values must be as great as possible. Therefore, the leftmost digits must be the greatest two digits. This means the first digit must be either \(9\) or \(8,\) the second digit must be either \(7\) or \(6,\) the third digit must be either \(5\) or \(4,\) the fourth digit must be either \(3\) or \(2,\) and the last digit must be either \(1\) or \(0.\)</p>
+<p class="amc-en">The only one of the given numbers that satisfy this is \(87431.\)</p>
+<p class="amc-en">Thus, the answer is <b>C</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">17</span> 答案 <b>B</b></p>
+<p>因为这 \(10\) 个小正方形的边长都是正整数，所以每个小正方形的面积至少为 \(1\)，总面积至少为 \(10\)。边长不超过 \(3\) 的整数边长正方形面积至多为 \(3^2=9\)，所以大正方形的边长不能小于 \(4\)。</p>
+<p>下图把一个 \(4\times4\) 正方形切成十个整数边长的正方形，其中八个是单位正方形。因此边长 \(4\) 可以达到，而且是最小值。</p>
+<p><img class="amc-fig" src="/img/papers/amc8p/2012/solution/q17-sol-1.svg" alt="题图" loading="lazy"></p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Since all \(10\) squares have positive integer side lengths, each has area at least \(1\). Their total area is therefore at least \(10\). A square with integer side length at most \(3\) has area at most \(3^2=9\), so its side length cannot be less than \(4\).</p>
+<p class="amc-en">The following configuration cuts a \(4\times4\) square into ten integer-sided squares, eight of which are unit squares. Therefore side length \(4\) is attainable and is the minimum.</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc8p/2012/solution/q17-sol-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-en">Thus, the answer is <b>B</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">18</span> 答案 <b>A</b></p>
+<p>这个数是合数，不是质数，并且没有小于 \(50\) 的质因数。因此最小可能的质因数是 \(53\)、\(59\)、\(61\)，依此类推。</p>
+<p>像 \(53^2\) 这样的平方数不允许，而 \(53^3\) 远大于 \(53\cdot59\)。最小的非平方合数是 \(53\cdot59=3127\)。</p>
+<p>所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The number is composite, not prime, and has no prime factor below \(50\). The smallest possible prime factors are therefore \(53\), \(59\), \(61\), and so on.</p>
+<p class="amc-en">A square such as \(53^2\) is not allowed, and \(53^3\) is much larger than \(53\cdot59\). The smallest allowed nonsquare composite is \(53\cdot59=3127\).</p>
+<p class="amc-en">Thus, the answer is <b>A</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">19</span> 答案 <b>C</b></p>
+<p>设红、绿、蓝弹珠数分别为 \(r,g,b\)。由题意可知 \[r+g+b -r=6\text{，}\]\[r+g+b-g = 8\text{，}\]\[ r+g+b-b = 4\text{。}\]把这些方程相加，得到 \(3(r+g+b) -(r+g+b) = 18\)。因此 \(2(r+g+b) = 18\)，所以 \(r+g+b = 9\)。也就是说，弹珠总数为 \(9\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let \(r,g,b\) be the number of red marbles, green marbles, and blue marbles respectively. We then know \[r+g+b -r=6,\]\[r+g+b-g = 8,\]\[ r+g+b-b = 4\] by the statements given. Adding these equations yields \(3(r+g+b) -(r+g+b) = 18.\) This would mean \(2(r+g+b) = 18,\) so \(r+g+b = 9.\) Therefore, the sum of all of the marbles is \(9.\)</p>
+<p class="amc-en">Thus, the answer is <b>C</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">20</span> 答案 <b>B</b></p>
+<p>中间的分数为 \(\dfrac{7}{21}=\dfrac13\)。又因为 \(3\cdot5=15\lt19\)，所以 \(\dfrac{5}{19}\lt\dfrac13\)；因为 \(3\cdot9=27\gt23\)，所以 \(\dfrac{9}{23}\gt\dfrac13\)。因此 \[\dfrac{5}{19}\lt\dfrac{7}{21}\lt\dfrac{9}{23}\text{。}\]</p>
+<p>所以正确答案是 <b>B</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The middle fraction is \(\dfrac{7}{21}=\dfrac13\). Also, \(\dfrac{5}{19}\lt\dfrac13\) because \(3\cdot5=15\lt19\), while \(\dfrac{9}{23}\gt\dfrac13\) because \(3\cdot9=27\gt23\). Therefore \[\dfrac{5}{19}\lt\dfrac{7}{21}\lt\dfrac{9}{23}.\]</p>
+<p class="amc-en">Thus, the answer is <b>B</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">21</span> 答案 <b>D</b></p>
+<p>立方体总表面积为 \(6\cdot 10\cdot 10 = 600\)。因此未被绿色覆盖的面积为 \(600-300 = 300\) 平方英尺，平均到每个面是 \(\dfrac{300}{6} = 50\) 平方英尺。</p>
+<p>所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The total surface area is \(6\cdot 10\cdot 10 = 600.\) Therefore, \(600-300 = 300\) square feet aren’t covered. This would be \( \dfrac{300}{6} = 50 \) square feet per face.</p>
+<p class="amc-en">Thus, the answer is <b>D</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">22</span> 答案 <b>D</b></p>
+<p>九个互不相同整数排序后，中位数是第五个数。</p>
+<p>中位数不能小于 \(3\)，否则 \(3\)、\(4\)、\(6\)、\(9\) 和 \(14\) 已经给出至少五个更大的元素。中位数也不能大于 \(9\)，否则 \(2\)、\(3\)、\(4\)、\(6\) 和 \(9\) 已经给出至少五个更小的元素。</p>
+<p>从 \(3\) 到 \(9\) 的每个整数都可以通过适当选择另外三个整数成为中位数。因此可能的中位数有 \(7\) 个。所以正确答案是 <b>D</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">In a sorted set of nine distinct integers, the median is the fifth number.</p>
+<p class="amc-en">The median cannot be below \(3\), since then \(3\), \(4\), \(6\), \(9\), and \(14\) would already give at least five larger elements. It cannot be above \(9\), since \(2\), \(3\), \(4\), \(6\), and \(9\) would already give at least five smaller elements.</p>
+<p class="amc-en">Each integer from \(3\) through \(9\) can be made the median by choosing the three missing integers appropriately. Therefore there are \(7\) possible medians. Thus, the answer is <b>D</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">23</span> 答案 <b>C</b></p>
+<p>设三角形边长为 \(s\)。其周长为 \(3s\)，所以六边形边长为 \(\frac{3s}{6} = \frac s2\)。</p>
+<p><img class="amc-fig" src="/img/papers/amc8p/2012/solution/q23-sol-1.svg" alt="题图" loading="lazy"></p>
+<p>如图，正六边形可分成 \(6\) 个边长为 \(\dfrac{s}{2}\) 的等边三角形。每个小三角形是原三角形按比例 \(\dfrac{1}{2}\) 缩小得到的，所以面积缩小为 \((\dfrac{1}{2})^2 = \dfrac{1}{4} \)。因此每个小三角形面积为 \(4 \cdot \dfrac{1}{4} = 1\)。共有 \(6\) 个，所以六边形面积为 \(6\cdot 1 = 6\)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">Let the side length of the triangle be \(s.\) This means the perimeter is \(3s.\) Therefore, the side length for the hexagon is \( \frac{3s}{6} = \frac s2.\)</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc8p/2012/solution/q23-sol-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-en">A hexagon can be made of \(6\) equilateral triangles with side length \( \dfrac{s}{2} \) as shown above. Each triangle is the original triangle scaled down by \(\dfrac{1}{2},\) so the area is scaled down by \( (\dfrac{1}{2})^2 = \dfrac{1}{4} .\) Therefore, the area of each of these triangles is \(4 \cdot \dfrac{1}{4} = 1.\) Since there are \(6\) of them, the area is \(6\cdot 1 = 6.\)</p>
+<p class="amc-en">Thus, the answer is <b>C</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">24</span> 答案 <b>A</b></p>
+<p>原圆面积为 \(\pi\cdot2^2=4\pi\)。</p>
+<p><img class="amc-fig" src="/img/papers/amc8p/2012/solution/q24-sol-1.svg" alt="题图" loading="lazy"></p>
+<p>连接四个四分之一圆弧端点形成一个正方形。这个正方形的两条对角线分别是 \(4\) 和 \(4\)，所以面积为 \(\frac12\cdot4\cdot4=8\)。</p>
+<p>圆内但正方形外的部分面积为 \(4\pi-8\)。这四块与正方形内但星形外的四块全等。</p>
+<p><img class="amc-fig" src="/img/papers/amc8p/2012/solution/q24-sol-2.svg" alt="题图" loading="lazy"></p>
+<p>因此星形面积为 \(8-(4\pi-8)=16-4\pi\)。所求比值为 \(\dfrac{16-4\pi}{4\pi}=\dfrac{4-\pi}{\pi}\)。所以正确答案是 <b>A</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en">The area of the original circle is \(\pi\cdot2^2=4\pi\).</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc8p/2012/solution/q24-sol-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-en">Join the four quarter-circle endpoints to form a square. The square has diagonals \(4\) and \(4\), so its area is \(\frac12\cdot4\cdot4=8\).</p>
+<p class="amc-en">The part inside the circle but outside this square has area \(4\pi-8\). Those four pieces are congruent to the pieces inside the square but outside the star.</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc8p/2012/solution/q24-sol-2.svg" alt="题图" loading="lazy"></p>
+<p class="amc-en">Thus the star area is \(8-(4\pi-8)=16-4\pi\). The desired ratio is \(\dfrac{16-4\pi}{4\pi}=\dfrac{4-\pi}{\pi}\). Thus, the answer is <b>A</b> .</p>
+</div>
+<div class="amc-q amc-sol">
+<p class="amc-ans"><span class="amc-badge">25</span> 答案 <b>C</b></p>
+<p><img class="amc-fig" src="/img/papers/amc8p/2012/solution/q25-sol-1.svg" alt="题图" loading="lazy"></p>
+<p>四个三角形都可以通过旋转互相得到，所以它们全等。因此可以如图标出 \(a\)。两个正方形之间的总面积为 \(5-4 = 1\)，所以有 \(4\) 个全等三角形的总面积为 \(1\)。每个三角形面积为 \(\dfrac{1}{4}\)。每个三角形的面积也等于 \(\frac {ab}2\)，所以 \(\frac{ab}2 = \dfrac{1}{4}\)。因此 \(ab = \dfrac{1}{2} \)。</p>
+<p>所以正确答案是 <b>C</b>。</p>
+<p class="amc-lang">English</p>
+<p class="amc-en"><img class="amc-fig" src="/img/papers/amc8p/2012/solution/q25-sol-1.svg" alt="题图" loading="lazy"></p>
+<p class="amc-en">Since all the triangles can be made from each other by rotating them around, they are all congruent. Therefore, we can place the \(a\) as we have. The total area of the triangles is \(5-4 = 1,\) so we have \( 4 \) congruent triangles with a combined area of \(1.\) This means the area of each triangle is \( \dfrac{1}{4}.\) The area of each triangle is also \( \frac {ab}2,\) so \( \frac{ab}2 = \dfrac{1}{4}.\) This means \(ab = \dfrac{1}{2} .\)</p>
+<p class="amc-en">Thus, the correct answer is <b>C</b> .</p>
+</div>
+    </div>
+    <p class="dl-row">
+      
+      <a class="btn" href="https://t.fengg.net/docs-dl/public/download/%E6%95%B0%E5%AD%A6/AMC8(P%E7%89%88)/2012%20AMC%208%20%E7%9C%9F%E9%A2%98%E4%B8%8E%E8%A7%A3%E7%AD%94.docx" download="2012 AMC 8 真题与解答.docx" title="2012 AMC 8 真题与解答.docx">下载本题 Word 原文件（含答案解析）</a>
+      
+    </p>
+  </details>
+  
+
+  <nav class="siblings" aria-label="同分类的上一套与下一套">
+    
+    <a class="sib prev" href="/docs/amc8p-2011/" rel="prev">
+      <i aria-hidden="true">←</i>
+      <span><b>上一套</b><em>2011 年 AMC 8 真题（P版）</em></span>
+    </a>
+    
+    
+    <a class="sib next" href="/docs/amc8p-2013/" rel="next">
+      <span><b>下一套</b><em>2013 年 AMC 8 真题（P版）</em></span>
+      <i aria-hidden="true">→</i>
+    </a>
+    
+  </nav>
+
+  <p class="back"><a href="/c/math/">← 返回数学</a></p>
+</article>
+
+<button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 8.8V19h-2V8.8L6.4 13.4 5 12z" fill="currentColor"/></svg>
+</button>
+
+<script>
+(function () {
+  function openIfHash() {
+    if (location.hash === '#answer') {
+      var el = document.getElementById('answer');
+      if (el) { el.open = true; el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    }
+  }
+  openIfHash();
+  window.addEventListener('hashchange', openIfHash);
+
+  var top = document.querySelector('.to-top');
+  if (top) {
+    function onScroll() {
+      if (window.scrollY > 420) top.classList.add('show');
+      else top.classList.remove('show');
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    top.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // 同分类翻页快捷键：[ 上一套，] 下一套
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var sel = e.key === '[' ? '.sib.prev[href]' : (e.key === ']' ? '.sib.next[href]' : null);
+    if (!sel) return;
+    var a = document.querySelector(sel);
+    if (a) { e.preventDefault(); location.href = a.href; }
+  });
+})();
+</script>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-line">
+      <span>© 2026 Feng</span>
+      <span class="dot">·</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></span>
+    </div>
+    <p class="foot-note">本站内容均来源于网络，版权归原作者所有，仅供学习交流使用，请勿用于商业用途。</p>
+  </div>
+</footer>
+<script>
+(function () {
+  /* ---------- 深色模式 ---------- */
+  var root = document.documentElement;
+  var toggle = document.querySelector('.theme-toggle');
+  function osDark() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function isDark() {
+    var t = root.getAttribute('data-theme');
+    if (t === 'dark') return true;
+    if (t === 'light') return false;
+    return osDark();
+  }
+  function label() {
+    if (!toggle) return;
+    var d = isDark();
+    toggle.setAttribute('aria-label', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('title', d ? '切换到浅色模式' : '切换到深色模式');
+    toggle.setAttribute('aria-pressed', d ? 'true' : 'false');
+  }
+  if (toggle) {
+    label();
+    toggle.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) { /* noop */ }
+      label();
+    });
+  }
+  if (window.matchMedia) {
+    var mqDark = window.matchMedia('(prefers-color-scheme: dark)');
+    if (mqDark.addEventListener) mqDark.addEventListener('change', label);
+  }
+
+  /* ---------- 顶部导航 ---------- */
+  var nav = document.querySelector('.nav');
+  var navToggle = document.querySelector('.nav-toggle');
+  if (!nav || !navToggle) return;
+  var mq = window.matchMedia('(max-width: 720px)');
+  function closeAll() {
+    nav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    Array.prototype.forEach.call(nav.querySelectorAll('.open'), function (x) { x.classList.remove('open'); });
+  }
+  navToggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var on = nav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', on ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) {
+    if (!mq.matches) return;
+    var a = e.target.closest ? e.target.closest('a') : null;
+    if (!a) return;
+    var host = a.parentNode;
+    if (host && host.classList.contains('nav-drop') && a.classList.contains('has-caret')) {
+      e.preventDefault();
+      host.classList.toggle('open');
+    }
+  });
+  document.addEventListener('click', function (e) {
+    if (mq.matches && !nav.contains(e.target) && !navToggle.contains(e.target)) closeAll();
+  });
+  // 键盘 Esc 收起移动端菜单
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mq.matches && nav.classList.contains('open')) {
+      closeAll();
+      navToggle.focus();
+    }
+  });
+
+  /* ---------- 搜索快捷键：/ 聚焦，Ctrl(⌘)+K 打开 ---------- */
+  var searchLink = document.querySelector('.nav-s');
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    var typing = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable);
+    if ((e.ctrlKey || e.metaKey) && !e.shiftKey && (e.key === 'k' || e.key === 'K')) {
+      e.preventDefault();
+      var box = document.querySelector('.sbox-input');
+      if (box) { box.focus(); box.select(); }
+      else if (searchLink) location.href = searchLink.href;
+      return;
+    }
+    if (typing || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.key === '/') {
+      var box2 = document.querySelector('.sbox-input');
+      if (box2) { e.preventDefault(); box2.focus(); box2.select(); }
+      else if (searchLink) { e.preventDefault(); location.href = searchLink.href; }
+    }
+  });
+})();
+</script>
+</body>
+</html>
